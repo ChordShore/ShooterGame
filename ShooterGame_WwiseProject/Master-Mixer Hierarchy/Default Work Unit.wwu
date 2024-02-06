@@ -9,6 +9,98 @@
 							<ObjectRef Name="System" ID="{DDAEEB21-4CAC-4E5A-AE98-EA7AEA6809A1}" WorkUnitID="{DD8991F0-D99B-4EAF-BEF2-5E473AAC3745}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Diegetic" ID="{0B750C85-EB1C-448A-9D15-8D1F0D4C6BD6}">
+							<ChildrenList>
+								<Bus Name="1P" ID="{C2425282-D625-4B90-ADDA-FC4971FE1BFB}">
+									<ChildrenList>
+										<Bus Name="1P_3D" ID="{C4A28A45-596E-4C18-AB77-BD9E3577DCC9}">
+											<ChildrenList>
+												<Bus Name="1P_Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}">
+													<PropertyList>
+														<Property Name="Color" Type="int16" Value="4"/>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+													</PropertyList>
+												</Bus>
+											</ChildrenList>
+										</Bus>
+										<Bus Name="1P_2D" ID="{AF0E6324-CEEE-452E-AD41-ECD9C2383C55}">
+											<ChildrenList>
+												<Bus Name="1P_Dialogue" ID="{80C87677-6DFA-46DD-8E4C-337CF0B1357D}">
+													<PropertyList>
+														<Property Name="Color" Type="int16" Value="11"/>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+													</PropertyList>
+												</Bus>
+												<Bus Name="1P_Foley" ID="{AFADED97-9376-47EE-8E61-63C3E2539C84}">
+													<PropertyList>
+														<Property Name="Color" Type="int16" Value="2"/>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+													</PropertyList>
+												</Bus>
+												<Bus Name="1P_Items" ID="{37718E87-198C-4650-BC59-3AC05063F1D4}">
+													<PropertyList>
+														<Property Name="Color" Type="int16" Value="8"/>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+													</PropertyList>
+												</Bus>
+												<Bus Name="1P_Weapons" ID="{1BC77837-C5B2-4563-B3F7-CF715B366F0C}">
+													<PropertyList>
+														<Property Name="Color" Type="int16" Value="10"/>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+													</PropertyList>
+												</Bus>
+											</ChildrenList>
+										</Bus>
+									</ChildrenList>
+								</Bus>
+								<Bus Name="3P" ID="{4688BD37-478F-464A-951C-21EC12E45BA8}">
+									<ChildrenList>
+										<Bus Name="3P_Dialogue" ID="{6931BC9D-3C00-42B3-AFA4-E38B95036EB6}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="11"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+										</Bus>
+										<Bus Name="3P_Foley" ID="{BDE7EA28-B177-48D3-A89E-DD0763999ABF}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="2"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+										</Bus>
+										<Bus Name="3P_Items" ID="{5D5B9568-CFB5-4519-8C60-DEECAA088385}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="8"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+										</Bus>
+										<Bus Name="3P_Weapons" ID="{7CDA1A70-7851-48B9-BA8A-C1984121CAB4}">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="10"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+										</Bus>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Non-Diegetic" ID="{23395B5E-B13C-48B4-AFA0-9A3158AD2C61}">
+							<ChildrenList>
+								<Bus Name="Interface" ID="{42B4D428-17C2-4C3C-AA6E-6AB8C22C5805}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="13"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+								</Bus>
+								<Bus Name="Stingers" ID="{14F313A7-2F5E-4100-BC04-AAE99EC1A71C}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="6"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

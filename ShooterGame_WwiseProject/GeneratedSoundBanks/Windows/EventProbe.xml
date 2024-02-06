@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{5B868E5C-813C-9139-4E06-5F2EE140178E}">
+			<ObjectPath>\SoundBanks\Default Work Unit\EventProbe</ObjectPath>
+			<ShortName>EventProbe</ShortName>
+			<Path>EventProbe.bnk</Path>
+			<Plugins>
+				<Custom>
+					<Plugin Id="1041093470" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Default Work Unit\Event Probe\Sine Pip\Tone Generator" GUID="{0AD6A0A9-22FC-4FE9-B47C-29C90175D05E}" LibName="Wwise Tone Generator" LibId="6684674"/>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="1041093470"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="2417113" Name="Stop_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Stop_Sine_Pip" GUID="{312E45E1-62F2-40F8-9A00-7BB4DADF8D33}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{FC7E3273-1EFE-82F1-ABAA-FC586FA1C403}</FileHash>
+</SoundBanksInfo>

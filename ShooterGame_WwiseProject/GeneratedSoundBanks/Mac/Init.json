@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{F56A610C-C7C4-F874-B68B-7ADDF94EBB7A}",
+    "Hash": "{DABB9718-DC8E-4BDA-E8AA-D71F16186496}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -36,14 +36,116 @@
     },
     "Busses": [
      {
+      "Id": "511093812",
+      "Name": "3P",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\3P",
+      "GUID": "{4688BD37-478F-464A-951C-21EC12E45BA8}"
+     },
+     {
+      "Id": "544648986",
+      "Name": "1P",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\1P",
+      "GUID": "{C2425282-D625-4B90-ADDA-FC4971FE1BFB}"
+     },
+     {
+      "Id": "768949178",
+      "Name": "1P_Foley",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\1P\\1P_2D\\1P_Foley",
+      "GUID": "{AFADED97-9376-47EE-8E61-63C3E2539C84}"
+     },
+     {
+      "Id": "858727008",
+      "Name": "1P_Weapons",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\1P\\1P_2D\\1P_Weapons",
+      "GUID": "{1BC77837-C5B2-4563-B3F7-CF715B366F0C}"
+     },
+     {
+      "Id": "1088520938",
+      "Name": "Interface",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Non-Diegetic\\Interface",
+      "GUID": "{42B4D428-17C2-4C3C-AA6E-6AB8C22C5805}"
+     },
+     {
+      "Id": "1091382381",
+      "Name": "3P_Dialogue",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\3P\\3P_Dialogue",
+      "GUID": "{6931BC9D-3C00-42B3-AFA4-E38B95036EB6}"
+     },
+     {
+      "Id": "1316532907",
+      "Name": "Diegetic",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic",
+      "GUID": "{0B750C85-EB1C-448A-9D15-8D1F0D4C6BD6}"
+     },
+     {
+      "Id": "2420281969",
+      "Name": "Non-Diegetic",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Non-Diegetic",
+      "GUID": "{23395B5E-B13C-48B4-AFA0-9A3158AD2C61}"
+     },
+     {
+      "Id": "2663061541",
+      "Name": "1P_Ambience",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\1P\\1P_3D\\1P_Ambience",
+      "GUID": "{50E91ED7-30B7-46DB-9728-3124B4D7FD49}"
+     },
+     {
+      "Id": "2940432316",
+      "Name": "Stingers",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Non-Diegetic\\Stingers",
+      "GUID": "{14F313A7-2F5E-4100-BC04-AAE99EC1A71C}"
+     },
+     {
+      "Id": "3254751713",
+      "Name": "3P_Items",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\3P\\3P_Items",
+      "GUID": "{5D5B9568-CFB5-4519-8C60-DEECAA088385}"
+     },
+     {
+      "Id": "3613396523",
+      "Name": "1P_Dialogue",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\1P\\1P_2D\\1P_Dialogue",
+      "GUID": "{80C87677-6DFA-46DD-8E4C-337CF0B1357D}"
+     },
+     {
       "Id": "3803692087",
       "Name": "Master Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     },
+     {
+      "Id": "3953420087",
+      "Name": "1P_Items",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\1P\\1P_2D\\1P_Items",
+      "GUID": "{37718E87-198C-4650-BC59-3AC05063F1D4}"
+     },
+     {
+      "Id": "3969239896",
+      "Name": "3P_Foley",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\3P\\3P_Foley",
+      "GUID": "{BDE7EA28-B177-48D3-A89E-DD0763999ABF}"
+     },
+     {
+      "Id": "4143123718",
+      "Name": "3P_Weapons",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\3P\\3P_Weapons",
+      "GUID": "{7CDA1A70-7851-48B9-BA8A-C1984121CAB4}"
+     },
+     {
+      "Id": "4210635220",
+      "Name": "1P_3D",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\1P\\1P_3D",
+      "GUID": "{C4A28A45-596E-4C18-AB77-BD9E3577DCC9}"
+     },
+     {
+      "Id": "4227412775",
+      "Name": "1P_2D",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\1P\\1P_2D",
+      "GUID": "{AF0E6324-CEEE-452E-AD41-ECD9C2383C55}"
      }
     ]
    }
   ],
-  "FileHash": "{D1A8ABA0-925F-10D3-5189-5E33B5C82A83}"
+  "FileHash": "{7F65FD0F-C461-9B67-D30D-82B159A0B3B8}"
  }
 }

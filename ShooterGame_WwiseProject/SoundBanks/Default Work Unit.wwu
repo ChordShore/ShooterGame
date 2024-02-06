@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F3BCBBC4-DE13-4935-89BC-9CFF3A124C9B}" SchemaVersion="110">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{F3BCBBC4-DE13-4935-89BC-9CFF3A124C9B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F3BCBBC4-DE13-4935-89BC-9CFF3A124C9B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="EventProbe" ID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Stop_Sine_Pip" ID="{312E45E1-62F2-40F8-9A00-7BB4DADF8D33}" WorkUnitID="{A7D81DF1-BACF-494A-B3FA-FB37BECA0E9D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Sine_Pip" ID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" WorkUnitID="{A7D81DF1-BACF-494A-B3FA-FB37BECA0E9D}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A7D81DF1-BACF-494A-B3FA-FB37BECA0E9D}" SchemaVersion="110">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{A7D81DF1-BACF-494A-B3FA-FB37BECA0E9D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A7D81DF1-BACF-494A-B3FA-FB37BECA0E9D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Event Probe" ID="{FAAFBCF4-76E8-4E8D-AC87-E6646C69836A}" ShortID="1054990005">
+					<ChildrenList>
+						<Event Name="Stop_Sine_Pip" ID="{312E45E1-62F2-40F8-9A00-7BB4DADF8D33}">
+							<ChildrenList>
+								<Action Name="" ID="{D8D53587-ED9E-4268-8001-C05892E355D3}" ShortID="577221915">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sine Pip" ID="{AF6D3756-12D4-4384-8D92-157758C323FB}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Sine_Pip" ID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}">
+							<ChildrenList>
+								<Action Name="" ID="{06D4DCBD-417D-49D6-A173-63C3737310A5}" ShortID="610868800">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sine Pip" ID="{AF6D3756-12D4-4384-8D92-157758C323FB}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
