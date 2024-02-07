@@ -6,6 +6,21 @@
 				<Property Name="Color" Type="int16" Value="2"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Players" ID="{167D7310-37A5-45BF-96E3-9E659E002E84}" ShortID="104979984">
+					<ChildrenList>
+						<Event Name="FOL_Land" ID="{9C0F3AE6-505C-4DC2-80DF-1A0F23DFE402}"/>
+						<Event Name="FOL_Bodyfall" ID="{8C389BC0-A8E4-4172-B60A-4329D5567561}"/>
+						<Event Name="FOL_Jump" ID="{54BD1D82-A9B7-48F0-B383-0DB48BD03160}"/>
+						<Event Name="FOL_Footstep" ID="{C7AF60A9-905E-4C25-94DB-228933B96D51}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Props" ID="{9C6C28EC-B810-4AC6-833B-CC1E85297900}" ShortID="715449244">
+					<ChildrenList>
+						<Event Name="FOL_Trashcan_Collision" ID="{83AF3510-8046-4206-B4B6-E1A12D72AC55}"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

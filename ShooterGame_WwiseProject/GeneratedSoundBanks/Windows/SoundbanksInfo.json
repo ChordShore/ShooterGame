@@ -18,30 +18,336 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{85C8678B-D164-C5AC-B90A-448EF2968EFA}",
+    "Hash": "{5CCE4777-6BEF-735D-52E6-D2A78F379682}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
-    "Path": "Ambience.bnk"
+    "Path": "Ambience.bnk",
+    "Events": [
+     {
+      "Id": "3458088700",
+      "Name": "AMB_ForceField_LP",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\AMB_ForceField_LP",
+      "GUID": "{427593F0-92C8-4CA8-8FCD-C163A0B02BEC}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2655039608",
+      "Name": "AMB_Gust_OS",
+      "ObjectPath": "\\Events\\Ambience\\Winds\\AMB_Gust_OS",
+      "GUID": "{B1473C73-10B0-46BB-AA72-8ABA06D25E40}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3989182605",
+      "Name": "AMB_Highrise_Atrium_LP",
+      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\AMB_Highrise_Atrium_LP",
+      "GUID": "{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3938849847",
+      "Name": "AMB_Highrise_Atrium_OS",
+      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\AMB_Highrise_Atrium_OS",
+      "GUID": "{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "529118812",
+      "Name": "AMB_Highrise_Room_LP",
+      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\AMB_Highrise_Room_LP",
+      "GUID": "{3F5A1E50-6729-4C3C-9937-D8C443065D63}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "579451542",
+      "Name": "AMB_Highrise_Room_OS",
+      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\AMB_Highrise_Room_OS",
+      "GUID": "{4E65C91A-3866-4E84-B034-94A7E371ECB7}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "654286798",
+      "Name": "AMB_Holograph_FadeIn",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\AMB_Holograph_FadeIn",
+      "GUID": "{0CA6B7EC-BFB1-453C-A0AD-7B7626EF8FB5}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1031253329",
+      "Name": "AMB_Holograph_FadeOut",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\AMB_Holograph_FadeOut",
+      "GUID": "{65B7B589-76CC-48C2-8C87-74F03B903131}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "255040524",
+      "Name": "AMB_Hovercar_Passbys",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\AMB_Hovercar_Passbys",
+      "GUID": "{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "113052211",
+      "Name": "AMB_LogoSign_LP",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\AMB_LogoSign_LP",
+      "GUID": "{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "126199104",
+      "Name": "AMB_PhoneBox_LP",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\AMB_PhoneBox_LP",
+      "GUID": "{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "4289637934",
+      "Name": "AMB_Sanctuary_Interior_LP",
+      "ObjectPath": "\\Events\\Ambience\\Rooms\\Sanctuary\\AMB_Sanctuary_Interior_LP",
+      "GUID": "{E0C0B0EC-54DC-4DDD-A80E-89DAB367CD0D}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "4272860344",
+      "Name": "AMB_Sanctuary_Interior_OS",
+      "ObjectPath": "\\Events\\Ambience\\Rooms\\Sanctuary\\AMB_Sanctuary_Interior_OS",
+      "GUID": "{F74B57D9-49B1-4424-8D25-E7555C92DD26}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3140124040",
+      "Name": "AMB_StreetLamp_LP",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\AMB_StreetLamp_LP",
+      "GUID": "{82B95D5C-4BE9-4DFC-9A31-59E8AEF7E2FC}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1421480464",
+      "Name": "AMB_Wind_LP_Play",
+      "ObjectPath": "\\Events\\Ambience\\Winds\\AMB_Wind_LP_Play",
+      "GUID": "{451D4E5B-8927-43A0-B087-ADAC45076303}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "4065032882",
+      "Name": "AMB_Wind_LP_Stop",
+      "ObjectPath": "\\Events\\Ambience\\Winds\\AMB_Wind_LP_Stop",
+      "GUID": "{9A9D67BE-050E-4625-84C0-CA2A508AC15D}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
    },
    {
     "Id": "247557814",
     "Type": "User",
     "GUID": "{E4E1B551-3907-4673-8D70-D72000D8EB19}",
     "Language": "SFX",
-    "Hash": "{1C15E9AD-9731-2769-310C-A12CD2D7792B}",
+    "Hash": "{3D6A2156-CDC5-136D-A6E7-49F27AF886DD}",
     "ObjectPath": "\\SoundBanks\\Foley\\Foley",
     "ShortName": "Foley",
-    "Path": "Foley.bnk"
+    "Path": "Foley.bnk",
+    "Events": [
+     {
+      "Id": "1891391704",
+      "Name": "FOL_Bodyfall",
+      "ObjectPath": "\\Events\\Foley\\Players\\FOL_Bodyfall",
+      "GUID": "{8C389BC0-A8E4-4172-B60A-4329D5567561}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "507352889",
+      "Name": "FOL_Footstep",
+      "ObjectPath": "\\Events\\Foley\\Players\\FOL_Footstep",
+      "GUID": "{C7AF60A9-905E-4C25-94DB-228933B96D51}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3639315175",
+      "Name": "FOL_Jump",
+      "ObjectPath": "\\Events\\Foley\\Players\\FOL_Jump",
+      "GUID": "{54BD1D82-A9B7-48F0-B383-0DB48BD03160}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1318050460",
+      "Name": "FOL_Land",
+      "ObjectPath": "\\Events\\Foley\\Players\\FOL_Land",
+      "GUID": "{9C0F3AE6-505C-4DC2-80DF-1A0F23DFE402}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "378132258",
+      "Name": "FOL_Trashcan_Collision",
+      "ObjectPath": "\\Events\\Foley\\Props\\FOL_Trashcan_Collision",
+      "GUID": "{83AF3510-8046-4206-B4B6-E1A12D72AC55}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
    },
    {
     "Id": "1088520938",
     "Type": "User",
     "GUID": "{573044D3-F4B2-4E02-98DE-DB94AFF2E612}",
     "Language": "SFX",
-    "Hash": "{6A35BB38-ED66-72B6-B741-D08448B1D7F9}",
+    "Hash": "{4D496E02-C01C-9987-99AE-7E4E264C8659}",
     "ObjectPath": "\\SoundBanks\\Interface\\Interface",
     "ShortName": "Interface",
-    "Path": "Interface.bnk"
+    "Path": "Interface.bnk",
+    "Events": [
+     {
+      "Id": "2024222415",
+      "Name": "UI_Back",
+      "ObjectPath": "\\Events\\Interface\\UI_Back",
+      "GUID": "{32DFEDEB-BEBD-4ABD-8599-F3C5B60EA2C5}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3849884716",
+      "Name": "UI_GameExit",
+      "ObjectPath": "\\Events\\Interface\\UI_GameExit",
+      "GUID": "{BB6CCA85-3AEF-4126-9378-2B04F34DA47D}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2329456136",
+      "Name": "UI_GameStart",
+      "ObjectPath": "\\Events\\Interface\\UI_GameStart",
+      "GUID": "{FE00AC28-1F9F-4478-BBC3-167E138EDD7D}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2118900976",
+      "Name": "UI_Hover",
+      "ObjectPath": "\\Events\\Interface\\UI_Hover",
+      "GUID": "{D082A9DE-0CF3-4065-BC7C-2DC9B72827E7}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "744082660",
+      "Name": "UI_Message_Rx",
+      "ObjectPath": "\\Events\\Interface\\UI_Message_Rx",
+      "GUID": "{E5C050F8-A900-4B22-BD83-071DA08C548D}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "710527246",
+      "Name": "UI_Message_Tx",
+      "ObjectPath": "\\Events\\Interface\\UI_Message_Tx",
+      "GUID": "{D943BCE6-1205-442B-95E0-FEE781E4675A}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3282376362",
+      "Name": "UI_Open",
+      "ObjectPath": "\\Events\\Interface\\UI_Open",
+      "GUID": "{6C5B9896-C85B-4C81-9A18-2E209CB1511A}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2774129122",
+      "Name": "UI_Select",
+      "ObjectPath": "\\Events\\Interface\\UI_Select",
+      "GUID": "{6B03FFA1-97C0-485E-9EBF-12CBA8A85029}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3006080354",
+      "Name": "UI_Toggle",
+      "ObjectPath": "\\Events\\Interface\\UI_Toggle",
+      "GUID": "{797C0C31-AE30-4A12-9686-6408980D163E}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
    },
    {
     "Id": "1355168291",
@@ -188,20 +494,194 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "SFX",
-    "Hash": "{9F82C371-54B8-F516-7314-26CCD8AD41A4}",
+    "Hash": "{1441CEC8-D933-A478-0EFD-11086CD55D24}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
-    "Path": "Weapons.bnk"
+    "Path": "Weapons.bnk",
+    "Events": [
+     {
+      "Id": "1694533419",
+      "Name": "AR_Dryfire_OS",
+      "ObjectPath": "\\Events\\Weapons\\Dryfire\\AR_Dryfire_OS",
+      "GUID": "{1F162533-308D-4AB5-8A18-0D6E326EB1D8}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1260320770",
+      "Name": "AR_Equip_OS",
+      "ObjectPath": "\\Events\\Weapons\\Equip\\AR_Equip_OS",
+      "GUID": "{66D3D001-9957-4751-8B24-0C0AAD610ED4}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1997498208",
+      "Name": "AR_Projectile_Impact_OS",
+      "ObjectPath": "\\Events\\Weapons\\Impact\\AR_Projectile_Impact_OS",
+      "GUID": "{873F24AE-5010-4080-8DFB-1C765AEC4801}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "626126160",
+      "Name": "AR_Projectile_Passby_LP",
+      "ObjectPath": "\\Events\\Weapons\\Passby\\AR_Projectile_Passby_LP",
+      "GUID": "{DF281450-0700-404B-9DFD-8DBDC054CD38}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "429698657",
+      "Name": "AR_Reload_OS",
+      "ObjectPath": "\\Events\\Weapons\\Reload\\AR_Reload_OS",
+      "GUID": "{6E436856-4CBE-4BA5-B184-21225058CE02}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "767763506",
+      "Name": "AR_Shoot_Fire_LP",
+      "ObjectPath": "\\Events\\Weapons\\Shoot\\AR_Shoot_Fire_LP",
+      "GUID": "{027202E3-540C-4144-873B-7DCDD76899B6}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2167454730",
+      "Name": "AR_Shoot_Tail_OS",
+      "ObjectPath": "\\Events\\Weapons\\Shoot\\AR_Shoot_Tail_OS",
+      "GUID": "{C84ED690-D24D-4016-BF07-03673BF558D4}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2758834436",
+      "Name": "FOL_Aim_AR",
+      "ObjectPath": "\\Events\\Weapons\\Aim\\FOL_Aim_AR",
+      "GUID": "{59353546-680F-45BB-AFE9-59C7938042FE}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2792389872",
+      "Name": "FOL_Aim_GL",
+      "ObjectPath": "\\Events\\Weapons\\Aim\\FOL_Aim_GL",
+      "GUID": "{D4723596-57DC-4383-9871-DB9982C8E7A7}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1764852559",
+      "Name": "GL_Dryfire_OS",
+      "ObjectPath": "\\Events\\Weapons\\Dryfire\\GL_Dryfire_OS",
+      "GUID": "{EA2CD592-0394-4A84-919F-75A9F11F65BC}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3314806526",
+      "Name": "GL_Equip_OS",
+      "ObjectPath": "\\Events\\Weapons\\Equip\\GL_Equip_OS",
+      "GUID": "{15EF0405-429D-40BE-8769-103D030DBF08}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "417218604",
+      "Name": "GL_Projectile_Impact_OS",
+      "ObjectPath": "\\Events\\Weapons\\Impact\\GL_Projectile_Impact_OS",
+      "GUID": "{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "803741676",
+      "Name": "GL_Projectile_Passby_LP",
+      "ObjectPath": "\\Events\\Weapons\\Passby\\GL_Projectile_Passby_LP",
+      "GUID": "{566534D1-0C06-45CC-8878-334A29476347}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "464045509",
+      "Name": "GL_Reload_OS",
+      "ObjectPath": "\\Events\\Weapons\\Reload\\GL_Reload_OS",
+      "GUID": "{778E484F-B81F-4DFB-8587-4CEA07B594B0}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "4165048480",
+      "Name": "GL_Shoot_Fire_OS",
+      "ObjectPath": "\\Events\\Weapons\\Shoot\\GL_Shoot_Fire_OS",
+      "GUID": "{314DB4B5-5CD0-4B6E-8803-898906F3175F}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
    },
    {
     "Id": "2151963051",
     "Type": "User",
     "GUID": "{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}",
     "Language": "SFX",
-    "Hash": "{0ED75ABA-77C8-81FC-B3F7-4ECEFAEEEAC1}",
+    "Hash": "{7CAED8A1-2B85-8537-33D4-D92C5D17E8E4}",
     "ObjectPath": "\\SoundBanks\\Items\\Items",
     "ShortName": "Items",
-    "Path": "Items.bnk"
+    "Path": "Items.bnk",
+    "Events": [
+     {
+      "Id": "2152172383",
+      "Name": "ITM_Ammo_Pickup",
+      "ObjectPath": "\\Events\\Items\\ITM_Ammo_Pickup",
+      "GUID": "{84FD3B5D-FFEB-4DA1-8126-1EC11F4895C5}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3787053379",
+      "Name": "ITM_Health_Pickup",
+      "ObjectPath": "\\Events\\Items\\ITM_Health_Pickup",
+      "GUID": "{15331CA7-0E4D-4141-A281-BABB2A8B29CA}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
    },
    {
     "Id": "2856640531",
@@ -258,10 +738,32 @@
     "Type": "User",
     "GUID": "{48619421-745A-41D0-B25B-8A5D77FC95C8}",
     "Language": "SFX",
-    "Hash": "{42EC100F-31E2-2B27-45F5-A7735C9B9A1C}",
+    "Hash": "{484A5F8B-FC4D-2EC2-A457-EA36F54DFFD7}",
     "ObjectPath": "\\SoundBanks\\Stingers\\Stingers",
     "ShortName": "Stingers",
-    "Path": "Stingers.bnk"
+    "Path": "Stingers.bnk",
+    "Events": [
+     {
+      "Id": "799145393",
+      "Name": "STN_Death",
+      "ObjectPath": "\\Events\\Stingers\\STN_Death",
+      "GUID": "{47D1188F-6C7A-49D1-B93A-3F3E2E58D2D9}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1107702071",
+      "Name": "STN_Respawn",
+      "ObjectPath": "\\Events\\Stingers\\STN_Respawn",
+      "GUID": "{BBB29E50-6BB3-4588-B482-6A65A05E69A3}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
    },
    {
     "Id": "3930136735",
@@ -274,6 +776,6 @@
     "Path": "Dialogue.bnk"
    }
   ],
-  "FileHash": "{54B48287-FE7E-D7C7-B58B-BA19DF5AC851}"
+  "FileHash": "{42AFE78F-1570-0006-81BF-D9A9F5F81DAD}"
  }
 }

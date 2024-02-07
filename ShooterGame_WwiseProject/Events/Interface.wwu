@@ -6,6 +6,17 @@
 				<Property Name="Color" Type="int16" Value="13"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="UI_GameExit" ID="{BB6CCA85-3AEF-4126-9378-2B04F34DA47D}"/>
+				<Event Name="UI_GameStart" ID="{FE00AC28-1F9F-4478-BBC3-167E138EDD7D}"/>
+				<Event Name="UI_Back" ID="{32DFEDEB-BEBD-4ABD-8599-F3C5B60EA2C5}"/>
+				<Event Name="UI_Hover" ID="{D082A9DE-0CF3-4065-BC7C-2DC9B72827E7}"/>
+				<Event Name="UI_Message_Rx" ID="{E5C050F8-A900-4B22-BD83-071DA08C548D}"/>
+				<Event Name="UI_Message_Tx" ID="{D943BCE6-1205-442B-95E0-FEE781E4675A}"/>
+				<Event Name="UI_Open" ID="{6C5B9896-C85B-4C81-9A18-2E209CB1511A}"/>
+				<Event Name="UI_Select" ID="{6B03FFA1-97C0-485E-9EBF-12CBA8A85029}"/>
+				<Event Name="UI_Toggle" ID="{797C0C31-AE30-4A12-9686-6408980D163E}"/>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

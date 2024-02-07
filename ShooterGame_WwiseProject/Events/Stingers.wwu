@@ -6,6 +6,10 @@
 				<Property Name="Color" Type="int16" Value="6"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="STN_Death" ID="{47D1188F-6C7A-49D1-B93A-3F3E2E58D2D9}"/>
+				<Event Name="STN_Respawn" ID="{BBB29E50-6BB3-4588-B482-6A65A05E69A3}"/>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

@@ -10,12 +10,164 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "SFX",
-    "Hash": "{9F82C371-54B8-F516-7314-26CCD8AD41A4}",
+    "Hash": "{1441CEC8-D933-A478-0EFD-11086CD55D24}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
-    "Path": "Weapons.bnk"
+    "Path": "Weapons.bnk",
+    "Events": [
+     {
+      "Id": "1694533419",
+      "Name": "AR_Dryfire_OS",
+      "ObjectPath": "\\Events\\Weapons\\Dryfire\\AR_Dryfire_OS",
+      "GUID": "{1F162533-308D-4AB5-8A18-0D6E326EB1D8}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1260320770",
+      "Name": "AR_Equip_OS",
+      "ObjectPath": "\\Events\\Weapons\\Equip\\AR_Equip_OS",
+      "GUID": "{66D3D001-9957-4751-8B24-0C0AAD610ED4}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1997498208",
+      "Name": "AR_Projectile_Impact_OS",
+      "ObjectPath": "\\Events\\Weapons\\Impact\\AR_Projectile_Impact_OS",
+      "GUID": "{873F24AE-5010-4080-8DFB-1C765AEC4801}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "626126160",
+      "Name": "AR_Projectile_Passby_LP",
+      "ObjectPath": "\\Events\\Weapons\\Passby\\AR_Projectile_Passby_LP",
+      "GUID": "{DF281450-0700-404B-9DFD-8DBDC054CD38}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "429698657",
+      "Name": "AR_Reload_OS",
+      "ObjectPath": "\\Events\\Weapons\\Reload\\AR_Reload_OS",
+      "GUID": "{6E436856-4CBE-4BA5-B184-21225058CE02}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "767763506",
+      "Name": "AR_Shoot_Fire_LP",
+      "ObjectPath": "\\Events\\Weapons\\Shoot\\AR_Shoot_Fire_LP",
+      "GUID": "{027202E3-540C-4144-873B-7DCDD76899B6}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2167454730",
+      "Name": "AR_Shoot_Tail_OS",
+      "ObjectPath": "\\Events\\Weapons\\Shoot\\AR_Shoot_Tail_OS",
+      "GUID": "{C84ED690-D24D-4016-BF07-03673BF558D4}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2758834436",
+      "Name": "FOL_Aim_AR",
+      "ObjectPath": "\\Events\\Weapons\\Aim\\FOL_Aim_AR",
+      "GUID": "{59353546-680F-45BB-AFE9-59C7938042FE}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2792389872",
+      "Name": "FOL_Aim_GL",
+      "ObjectPath": "\\Events\\Weapons\\Aim\\FOL_Aim_GL",
+      "GUID": "{D4723596-57DC-4383-9871-DB9982C8E7A7}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1764852559",
+      "Name": "GL_Dryfire_OS",
+      "ObjectPath": "\\Events\\Weapons\\Dryfire\\GL_Dryfire_OS",
+      "GUID": "{EA2CD592-0394-4A84-919F-75A9F11F65BC}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3314806526",
+      "Name": "GL_Equip_OS",
+      "ObjectPath": "\\Events\\Weapons\\Equip\\GL_Equip_OS",
+      "GUID": "{15EF0405-429D-40BE-8769-103D030DBF08}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "417218604",
+      "Name": "GL_Projectile_Impact_OS",
+      "ObjectPath": "\\Events\\Weapons\\Impact\\GL_Projectile_Impact_OS",
+      "GUID": "{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "803741676",
+      "Name": "GL_Projectile_Passby_LP",
+      "ObjectPath": "\\Events\\Weapons\\Passby\\GL_Projectile_Passby_LP",
+      "GUID": "{566534D1-0C06-45CC-8878-334A29476347}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "464045509",
+      "Name": "GL_Reload_OS",
+      "ObjectPath": "\\Events\\Weapons\\Reload\\GL_Reload_OS",
+      "GUID": "{778E484F-B81F-4DFB-8587-4CEA07B594B0}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "4165048480",
+      "Name": "GL_Shoot_Fire_OS",
+      "ObjectPath": "\\Events\\Weapons\\Shoot\\GL_Shoot_Fire_OS",
+      "GUID": "{314DB4B5-5CD0-4B6E-8803-898906F3175F}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
    }
   ],
-  "FileHash": "{2BB20ED6-E5E5-B343-C8FA-B481BD57BB76}"
+  "FileHash": "{19ADFB89-F3B2-F02C-0FFB-B26746DA997A}"
  }
 }

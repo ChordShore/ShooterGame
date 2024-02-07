@@ -10,12 +10,34 @@
     "Type": "User",
     "GUID": "{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}",
     "Language": "SFX",
-    "Hash": "{0ED75ABA-77C8-81FC-B3F7-4ECEFAEEEAC1}",
+    "Hash": "{7CAED8A1-2B85-8537-33D4-D92C5D17E8E4}",
     "ObjectPath": "\\SoundBanks\\Items\\Items",
     "ShortName": "Items",
-    "Path": "Items.bnk"
+    "Path": "Items.bnk",
+    "Events": [
+     {
+      "Id": "2152172383",
+      "Name": "ITM_Ammo_Pickup",
+      "ObjectPath": "\\Events\\Items\\ITM_Ammo_Pickup",
+      "GUID": "{84FD3B5D-FFEB-4DA1-8126-1EC11F4895C5}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3787053379",
+      "Name": "ITM_Health_Pickup",
+      "ObjectPath": "\\Events\\Items\\ITM_Health_Pickup",
+      "GUID": "{15331CA7-0E4D-4141-A281-BABB2A8B29CA}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
    }
   ],
-  "FileHash": "{A5168C12-CA24-C18C-D397-637AEEB81EB1}"
+  "FileHash": "{A5931938-A622-4979-274F-2D741CFDB969}"
  }
 }

@@ -2,13 +2,20 @@
 <WwiseDocument Type="WorkUnit" ID="{3417FF40-B8AB-4B62-8E04-AFE4B6805769}" SchemaVersion="110">
 	<SoundBanks>
 		<WorkUnit Name="Items" ID="{3417FF40-B8AB-4B62-8E04-AFE4B6805769}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<SoundBank Name="Items" ID="{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="8"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="ITM_Health_Pickup" ID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" WorkUnitID="{0E5622DA-6C29-4E4C-BC89-DC295860A9A7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ITM_Ammo_Pickup" ID="{84FD3B5D-FFEB-4DA1-8126-1EC11F4895C5}" WorkUnitID="{0E5622DA-6C29-4E4C-BC89-DC295860A9A7}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

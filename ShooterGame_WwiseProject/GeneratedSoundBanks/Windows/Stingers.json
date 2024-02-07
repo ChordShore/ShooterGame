@@ -10,12 +10,34 @@
     "Type": "User",
     "GUID": "{48619421-745A-41D0-B25B-8A5D77FC95C8}",
     "Language": "SFX",
-    "Hash": "{42EC100F-31E2-2B27-45F5-A7735C9B9A1C}",
+    "Hash": "{484A5F8B-FC4D-2EC2-A457-EA36F54DFFD7}",
     "ObjectPath": "\\SoundBanks\\Stingers\\Stingers",
     "ShortName": "Stingers",
-    "Path": "Stingers.bnk"
+    "Path": "Stingers.bnk",
+    "Events": [
+     {
+      "Id": "799145393",
+      "Name": "STN_Death",
+      "ObjectPath": "\\Events\\Stingers\\STN_Death",
+      "GUID": "{47D1188F-6C7A-49D1-B93A-3F3E2E58D2D9}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1107702071",
+      "Name": "STN_Respawn",
+      "ObjectPath": "\\Events\\Stingers\\STN_Respawn",
+      "GUID": "{BBB29E50-6BB3-4588-B482-6A65A05E69A3}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
    }
   ],
-  "FileHash": "{C87BC53C-9CF6-0270-A690-006191F681A8}"
+  "FileHash": "{0FC8C491-07F6-EF6F-2FA3-0100825E5A13}"
  }
 }

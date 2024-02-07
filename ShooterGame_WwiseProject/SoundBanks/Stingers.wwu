@@ -2,13 +2,20 @@
 <WwiseDocument Type="WorkUnit" ID="{8E43DB98-2B51-4625-AC1B-C93DCEE1F4FD}" SchemaVersion="110">
 	<SoundBanks>
 		<WorkUnit Name="Stingers" ID="{8E43DB98-2B51-4625-AC1B-C93DCEE1F4FD}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="6"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<SoundBank Name="Stingers" ID="{48619421-745A-41D0-B25B-8A5D77FC95C8}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="6"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="STN_Respawn" ID="{BBB29E50-6BB3-4588-B482-6A65A05E69A3}" WorkUnitID="{DA00B3DB-2379-4ABE-AA86-0A8043420502}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="STN_Death" ID="{47D1188F-6C7A-49D1-B93A-3F3E2E58D2D9}" WorkUnitID="{DA00B3DB-2379-4ABE-AA86-0A8043420502}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

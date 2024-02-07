@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2940432316" Type="User" GUID="{48619421-745A-41D0-B25B-8A5D77FC95C8}" Language="SFX" Hash="{42EC100F-31E2-2B27-45F5-A7735C9B9A1C}">
+		<SoundBank Id="2940432316" Type="User" GUID="{48619421-745A-41D0-B25B-8A5D77FC95C8}" Language="SFX" Hash="{484A5F8B-FC4D-2EC2-A457-EA36F54DFFD7}">
 			<ObjectPath>\SoundBanks\Stingers\Stingers</ObjectPath>
 			<ShortName>Stingers</ShortName>
 			<Path>Stingers.bnk</Path>
+			<Events>
+				<Event Id="799145393" Name="STN_Death" ObjectPath="\Events\Stingers\STN_Death" GUID="{47D1188F-6C7A-49D1-B93A-3F3E2E58D2D9}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1107702071" Name="STN_Respawn" ObjectPath="\Events\Stingers\STN_Respawn" GUID="{BBB29E50-6BB3-4588-B482-6A65A05E69A3}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DEBBC2CF-75DB-CBFC-20EE-3ED7BF8B5A16}</FileHash>
+	<FileHash>{B66078E9-59E2-1841-EEEB-94307937B545}</FileHash>
 </SoundBanksInfo>

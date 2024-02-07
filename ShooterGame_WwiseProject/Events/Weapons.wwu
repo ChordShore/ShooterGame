@@ -6,6 +6,51 @@
 				<Property Name="Color" Type="int16" Value="10"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Dryfire" ID="{BF46B6AC-A959-4B31-A454-A0C8D52A3D5E}" ShortID="321101203">
+					<ChildrenList>
+						<Event Name="AR_Dryfire_OS" ID="{1F162533-308D-4AB5-8A18-0D6E326EB1D8}"/>
+						<Event Name="GL_Dryfire_OS" ID="{EA2CD592-0394-4A84-919F-75A9F11F65BC}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Equip" ID="{CFDA3348-BA55-4740-9EB8-DCAEA16B3E58}" ShortID="63979681">
+					<ChildrenList>
+						<Event Name="GL_Equip_OS" ID="{15EF0405-429D-40BE-8769-103D030DBF08}"/>
+						<Event Name="AR_Equip_OS" ID="{66D3D001-9957-4751-8B24-0C0AAD610ED4}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Passby" ID="{4FE35F46-9F34-4BFF-9FC3-E4FC881E80B5}" ShortID="370377988">
+					<ChildrenList>
+						<Event Name="GL_Projectile_Passby_LP" ID="{566534D1-0C06-45CC-8878-334A29476347}"/>
+						<Event Name="AR_Projectile_Passby_LP" ID="{DF281450-0700-404B-9DFD-8DBDC054CD38}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Impact" ID="{0D7078B8-AB17-44FE-910C-C990EA663D3E}" ShortID="1014513988">
+					<ChildrenList>
+						<Event Name="AR_Projectile_Impact_OS" ID="{873F24AE-5010-4080-8DFB-1C765AEC4801}"/>
+						<Event Name="GL_Projectile_Impact_OS" ID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Reload" ID="{1823D21B-08E2-4204-A0C9-1359CEC93ABA}" ShortID="988796305">
+					<ChildrenList>
+						<Event Name="GL_Reload_OS" ID="{778E484F-B81F-4DFB-8587-4CEA07B594B0}"/>
+						<Event Name="AR_Reload_OS" ID="{6E436856-4CBE-4BA5-B184-21225058CE02}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Shoot" ID="{7BBFB490-CAE0-4B15-AAE7-853265D511D4}" ShortID="842662391">
+					<ChildrenList>
+						<Event Name="AR_Shoot_Tail_OS" ID="{C84ED690-D24D-4016-BF07-03673BF558D4}"/>
+						<Event Name="AR_Shoot_Fire_LP" ID="{027202E3-540C-4144-873B-7DCDD76899B6}"/>
+						<Event Name="GL_Shoot_Fire_OS" ID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Aim" ID="{96593D20-720A-46D0-9DDF-300531A5A06B}" ShortID="842878821">
+					<ChildrenList>
+						<Event Name="FOL_Aim_AR" ID="{59353546-680F-45BB-AFE9-59C7938042FE}"/>
+						<Event Name="FOL_Aim_GL" ID="{D4723596-57DC-4383-9871-DB9982C8E7A7}"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>
