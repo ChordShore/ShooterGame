@@ -2,6 +2,10 @@
 <WwiseDocument Type="WorkUnit" ID="{20BE0795-7455-4CA3-828E-F9A931FD597B}" SchemaVersion="110">
 	<Attenuations>
 		<WorkUnit Name="Weapons" ID="{20BE0795-7455-4CA3-828E-F9A931FD597B}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<Attenuation Name="ATN_GL_Projectile_Impact" ID="{AF13FE37-9168-4E64-8078-F2969D5E100C}" ShortID="156239110">
 					<CurveUsageInfoList>

@@ -146,18 +146,18 @@
 								<Action Name="" ID="{9688B892-FEDC-4F58-95F4-0D7D8E864CE4}" ShortID="611311653">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Noise Pip" ID="{A876FB26-65FA-4102-807C-4C838D794AA4}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
+											<ObjectRef Name="AMB_StreetLamp_LP" ID="{547F9306-FBCE-4EE7-88C6-557493CA9F98}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AMB_LogoSign_LP" ID="{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}">
+						<Event Name="AMB_UnrealSign_LP" ID="{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}">
 							<ChildrenList>
 								<Action Name="" ID="{AE289769-5F3C-45E6-8431-4F5D20C7D90C}" ShortID="798681416">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Noise Pip" ID="{A876FB26-65FA-4102-807C-4C838D794AA4}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
+											<ObjectRef Name="AMB_UnrealSigns_LP" ID="{590D5A02-2C18-4FE7-9702-6D4F182282B8}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -194,7 +194,7 @@
 								<Action Name="" ID="{8F680334-819F-4BED-B222-8282CB071A9A}" ShortID="1036611982">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Sine Pip" ID="{AF6D3756-12D4-4384-8D92-157758C323FB}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
+											<ObjectRef Name="AMB_Wind_Gust_OS" ID="{8408FD5C-3EE0-4C6B-8168-AB37779B996C}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
