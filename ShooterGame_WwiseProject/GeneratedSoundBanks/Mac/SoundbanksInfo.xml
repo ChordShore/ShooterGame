@@ -9,27 +9,128 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{5CCE4777-6BEF-735D-52E6-D2A78F379682}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{59A13075-A53E-D4CB-58E7-AB210D955AFF}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
+			<Plugins>
+				<Custom>
+					<Plugin Id="155127469" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Winds\AMB_Wind_Bed_LP\Tone Generator" GUID="{15D380C5-6AC7-4E6F-92CF-A703CDBEC0AD}" LibName="Wwise Tone Generator" LibId="6684674"/>
+					<Plugin Id="185023353" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Highrise_Atrium_LP\Tone Generator" GUID="{3FE8C878-90B7-4379-8206-D23148C8D6D4}" LibName="Wwise Tone Generator" LibId="6684674"/>
+					<Plugin Id="662823536" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Default Work Unit\Event Probe\Noise Pip\Tone Generator" GUID="{D709502B-A7EF-4821-AC15-3F25D3551059}" LibName="Wwise Tone Generator" LibId="6684674"/>
+					<Plugin Id="670518875" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Highrise_Room_LP\Tone Generator" GUID="{2F742312-C8FE-4793-953E-F073964409E7}" LibName="Wwise Tone Generator" LibId="6684674"/>
+					<Plugin Id="888333020" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_BarrierFence\AMB_BarrierFence_LP\Tone Generator" GUID="{3D1B64D9-A2EA-44DD-AE5F-14A3C4290D80}" LibName="Wwise Tone Generator" LibId="6684674"/>
+					<Plugin Id="950824542" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_PhoneBox\AMB_PhoneBox_LP\Tone Generator" GUID="{04BE263F-DD28-41C2-B99C-8FFE4BD5FB6C}" LibName="Wwise Tone Generator" LibId="6684674"/>
+					<Plugin Id="1041093470" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Default Work Unit\Event Probe\Sine Pip\Tone Generator" GUID="{0AD6A0A9-22FC-4FE9-B47C-29C90175D05E}" LibName="Wwise Tone Generator" LibId="6684674"/>
+				</Custom>
+			</Plugins>
 			<Events>
-				<Event Id="3458088700" Name="AMB_ForceField_LP" ObjectPath="\Events\Ambience\Emitters\AMB_ForceField_LP" GUID="{427593F0-92C8-4CA8-8FCD-C163A0B02BEC}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2655039608" Name="AMB_Gust_OS" ObjectPath="\Events\Ambience\Winds\AMB_Gust_OS" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3989182605" Name="AMB_Highrise_Atrium_LP" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_LP" GUID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3938849847" Name="AMB_Highrise_Atrium_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_OS" GUID="{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="529118812" Name="AMB_Highrise_Room_LP" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Room_LP" GUID="{3F5A1E50-6729-4C3C-9937-D8C443065D63}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="579451542" Name="AMB_Highrise_Room_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Room_OS" GUID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="654286798" Name="AMB_Holograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\AMB_Holograph_FadeIn" GUID="{0CA6B7EC-BFB1-453C-A0AD-7B7626EF8FB5}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1031253329" Name="AMB_Holograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\AMB_Holograph_FadeOut" GUID="{65B7B589-76CC-48C2-8C87-74F03B903131}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="255040524" Name="AMB_Hovercar_Passbys" ObjectPath="\Events\Ambience\Emitters\AMB_Hovercar_Passbys" GUID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="113052211" Name="AMB_LogoSign_LP" ObjectPath="\Events\Ambience\Emitters\AMB_LogoSign_LP" GUID="{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="126199104" Name="AMB_PhoneBox_LP" ObjectPath="\Events\Ambience\Emitters\AMB_PhoneBox_LP" GUID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="4289637934" Name="AMB_Sanctuary_Interior_LP" ObjectPath="\Events\Ambience\Rooms\Sanctuary\AMB_Sanctuary_Interior_LP" GUID="{E0C0B0EC-54DC-4DDD-A80E-89DAB367CD0D}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="4272860344" Name="AMB_Sanctuary_Interior_OS" ObjectPath="\Events\Ambience\Rooms\Sanctuary\AMB_Sanctuary_Interior_OS" GUID="{F74B57D9-49B1-4424-8D25-E7555C92DD26}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3140124040" Name="AMB_StreetLamp_LP" ObjectPath="\Events\Ambience\Emitters\AMB_StreetLamp_LP" GUID="{82B95D5C-4BE9-4DFC-9A31-59E8AEF7E2FC}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1421480464" Name="AMB_Wind_LP_Play" ObjectPath="\Events\Ambience\Winds\AMB_Wind_LP_Play" GUID="{451D4E5B-8927-43A0-B087-ADAC45076303}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="4065032882" Name="AMB_Wind_LP_Stop" ObjectPath="\Events\Ambience\Winds\AMB_Wind_LP_Stop" GUID="{9A9D67BE-050E-4625-84C0-CA2A508AC15D}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="511358421" Name="AMB_BarrierFence_LP" ObjectPath="\Events\Ambience\Emitters\AMB_BarrierFence_LP" GUID="{427593F0-92C8-4CA8-8FCD-C163A0B02BEC}" MaxAttenuation="3300" DurationType="OneShot" DurationMin="30" DurationMax="30">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="888333020"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="3989182605" Name="AMB_Highrise_Atrium_LP" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_LP" GUID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}" MaxAttenuation="20000" DurationType="OneShot" DurationMin="10" DurationMax="10">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="185023353"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="3938849847" Name="AMB_Highrise_Atrium_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_OS" GUID="{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}" MaxAttenuation="2500" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="1041093470"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="529118812" Name="AMB_Highrise_Room_LP" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Room_LP" GUID="{3F5A1E50-6729-4C3C-9937-D8C443065D63}" MaxAttenuation="20000" DurationType="OneShot" DurationMin="10" DurationMax="10">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="670518875"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="579451542" Name="AMB_Highrise_Room_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Room_OS" GUID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}" MaxAttenuation="2500" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="1041093470"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="3385126647" Name="AMB_HovercarTraffic_Passbys" ObjectPath="\Events\Ambience\Emitters\AMB_HovercarTraffic_Passbys" GUID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}" DurationType="OneShot" DurationMin="5" DurationMax="5">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="662823536"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="113052211" Name="AMB_LogoSign_LP" ObjectPath="\Events\Ambience\Emitters\AMB_LogoSign_LP" GUID="{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}" DurationType="OneShot" DurationMin="5" DurationMax="5">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="662823536"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="126199104" Name="AMB_PhoneBox_LP" ObjectPath="\Events\Ambience\Emitters\AMB_PhoneBox_LP" GUID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" MaxAttenuation="2500" DurationType="OneShot" DurationMin="30" DurationMax="30">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="950824542"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="4289637934" Name="AMB_Sanctuary_Interior_LP" ObjectPath="\Events\Ambience\Rooms\Sanctuary\AMB_Sanctuary_Interior_LP" GUID="{E0C0B0EC-54DC-4DDD-A80E-89DAB367CD0D}" DurationType="OneShot" DurationMin="5" DurationMax="5">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="662823536"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="4272860344" Name="AMB_Sanctuary_Interior_OS" ObjectPath="\Events\Ambience\Rooms\Sanctuary\AMB_Sanctuary_Interior_OS" GUID="{F74B57D9-49B1-4424-8D25-E7555C92DD26}" MaxAttenuation="2500" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="1041093470"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="3140124040" Name="AMB_StreetLamp_LP" ObjectPath="\Events\Ambience\Emitters\AMB_StreetLamp_LP" GUID="{82B95D5C-4BE9-4DFC-9A31-59E8AEF7E2FC}" DurationType="OneShot" DurationMin="5" DurationMax="5">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="662823536"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\AMB_UnrealHolograph_FadeIn" GUID="{0CA6B7EC-BFB1-453C-A0AD-7B7626EF8FB5}" DurationType="OneShot" DurationMin="5" DurationMax="5">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="662823536"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\AMB_UnrealHolograph_FadeOut" GUID="{65B7B589-76CC-48C2-8C87-74F03B903131}" MaxAttenuation="2500" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="1041093470"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="1352684599" Name="AMB_Wind_All_Stop" ObjectPath="\Events\Ambience\Winds\AMB_Wind_All_Stop" GUID="{9A9D67BE-050E-4625-84C0-CA2A508AC15D}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3887825550" Name="AMB_Wind_Bed_LP_Start" ObjectPath="\Events\Ambience\Winds\AMB_Wind_Bed_LP_Start" GUID="{451D4E5B-8927-43A0-B087-ADAC45076303}" DurationType="OneShot" DurationMin="10" DurationMax="10">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="155127469"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="2065716790" Name="AMB_Wind_Gust_OS_Start" ObjectPath="\Events\Ambience\Winds\AMB_Wind_Gust_OS_Start" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="2500" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="1041093470"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{3D6A2156-CDC5-136D-A6E7-49F27AF886DD}">
@@ -122,7 +223,26 @@
 				<Event Id="3787053379" Name="ITM_Health_Pickup" ObjectPath="\Events\Items\ITM_Health_Pickup" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{5B868E5C-813C-9139-4E06-5F2EE140178E}">
+		<SoundBank Id="2762262784" Type="Event" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" Language="SFX" Hash="{F3B42B2C-4668-D7F6-BBB2-C238C64C7956}">
+			<ObjectPath>AMB_UnrealHolograph_LP</ObjectPath>
+			<ShortName>AMB_UnrealHolograph_LP</ShortName>
+			<Path>Event/AMB_UnrealHolograph_LP.bnk</Path>
+			<Plugins>
+				<Custom>
+					<Plugin Id="933028433" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_UnrealHolograph\AMB_UnrealHolograph_LP\Tone Generator" GUID="{133F1C69-F32D-4132-B6C5-AC779B8C4F07}" LibName="Wwise Tone Generator" LibId="6684674"/>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="2762262784" Name="AMB_UnrealHolograph_LP" ObjectPath="\Events\Ambience\Emitters\AMB_UnrealHolograph_LP" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="20000" DurationType="OneShot" DurationMin="10" DurationMax="10">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="933028433"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{5C22467D-A860-E656-D0F7-8B44E83CA6D0}">
 			<ObjectPath>\SoundBanks\Default Work Unit\EventProbe</ObjectPath>
 			<ShortName>EventProbe</ShortName>
 			<Path>EventProbe.bnk</Path>
@@ -132,7 +252,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="2500" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1041093470"/>
@@ -157,5 +277,5 @@
 			<Path>Dialogue.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{73036A3D-F321-FA4D-C3B7-642D15737479}</FileHash>
+	<FileHash>{4697D438-E555-B53D-E3D2-3F9292BCEBA9}</FileHash>
 </SoundBanksInfo>

@@ -1,0 +1,52 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "2762262784",
+    "Type": "Event",
+    "GUID": "{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}",
+    "Language": "SFX",
+    "Hash": "{F3B42B2C-4668-D7F6-BBB2-C238C64C7956}",
+    "ObjectPath": "AMB_UnrealHolograph_LP",
+    "ShortName": "AMB_UnrealHolograph_LP",
+    "Path": "Event/AMB_UnrealHolograph_LP.bnk",
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "933028433",
+       "Name": "Tone Generator",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Emitters\\AMB_UnrealHolograph\\AMB_UnrealHolograph_LP\\Tone Generator",
+       "GUID": "{133F1C69-F32D-4132-B6C5-AC779B8C4F07}",
+       "LibName": "Wwise Tone Generator",
+       "LibId": "6684674"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "2762262784",
+      "Name": "AMB_UnrealHolograph_LP",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\AMB_UnrealHolograph_LP",
+      "GUID": "{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}",
+      "MaxAttenuation": "20000",
+      "DurationType": "OneShot",
+      "DurationMin": "10",
+      "DurationMax": "10",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "933028433"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{3E89AFFF-2EBD-F77A-B576-2A90625DA6E9}"
+ }
+}

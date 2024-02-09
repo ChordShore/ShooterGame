@@ -16,7 +16,7 @@
 										<Action Name="" ID="{EADCF19B-4611-4760-96C7-05D01B932A54}" ShortID="503205910">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Noise Pip" ID="{A876FB26-65FA-4102-807C-4C838D794AA4}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
+													<ObjectRef Name="AMB_Highrise_Atrium_LP" ID="{6AFBDECA-3AD0-4676-92B0-33AF1CB85521}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -38,7 +38,7 @@
 										<Action Name="" ID="{A0CC8C29-ADA2-4127-894B-7AB8B4EBD684}" ShortID="471129952">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Noise Pip" ID="{A876FB26-65FA-4102-807C-4C838D794AA4}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
+													<ObjectRef Name="AMB_Highrise_Room_LP" ID="{C985A30E-FDD4-457A-A79F-78619E2D34D0}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -87,18 +87,18 @@
 				</Folder>
 				<Folder Name="Emitters" ID="{1037CD1B-8BE1-479A-BDFB-55A3DF463511}" ShortID="398808452">
 					<ChildrenList>
-						<Event Name="AMB_ForceField_LP" ID="{427593F0-92C8-4CA8-8FCD-C163A0B02BEC}">
+						<Event Name="AMB_BarrierFence_LP" ID="{427593F0-92C8-4CA8-8FCD-C163A0B02BEC}">
 							<ChildrenList>
 								<Action Name="" ID="{EFFC5F03-48D8-46AB-B0B0-DEC533855A7D}" ShortID="374733739">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Sine Pip" ID="{AF6D3756-12D4-4384-8D92-157758C323FB}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
+											<ObjectRef Name="AMB_BarrierFence_LP" ID="{21B05601-534E-4D7E-BA20-A9C79FE23DBC}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AMB_Holograph_FadeIn" ID="{0CA6B7EC-BFB1-453C-A0AD-7B7626EF8FB5}">
+						<Event Name="AMB_UnrealHolograph_FadeIn" ID="{0CA6B7EC-BFB1-453C-A0AD-7B7626EF8FB5}">
 							<ChildrenList>
 								<Action Name="" ID="{2009AAA9-712A-4A69-BEA9-01C81ED0DD0C}" ShortID="259279540">
 									<ReferenceList>
@@ -109,7 +109,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AMB_Holograph_FadeOut" ID="{65B7B589-76CC-48C2-8C87-74F03B903131}">
+						<Event Name="AMB_UnrealHolograph_FadeOut" ID="{65B7B589-76CC-48C2-8C87-74F03B903131}">
 							<ChildrenList>
 								<Action Name="" ID="{57BCF324-D4D4-44F6-80BD-45A27409D2A9}" ShortID="862494284">
 									<PropertyList>
@@ -135,7 +135,7 @@
 								<Action Name="" ID="{5AC65C0A-0689-43FA-B1F8-63C17C80462C}" ShortID="659594679">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Noise Pip" ID="{A876FB26-65FA-4102-807C-4C838D794AA4}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
+											<ObjectRef Name="AMB_PhoneBox_LP" ID="{AE960BD0-3C81-4719-93C5-4B68C55E44C1}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -163,7 +163,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AMB_Hovercar_Passbys" ID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}">
+						<Event Name="AMB_HovercarTraffic_Passbys" ID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}">
 							<ChildrenList>
 								<Action Name="" ID="{A0D1E0F1-8686-4E38-A372-E6C0C30054AC}" ShortID="671832817">
 									<ReferenceList>
@@ -174,11 +174,22 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="AMB_UnrealHolograph_LP" ID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}">
+							<ChildrenList>
+								<Action Name="" ID="{BD8DFDA4-7D52-441E-AAD5-2EB8FF9B0921}" ShortID="2501739">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB_UnrealHolograph_LP" ID="{B4D1D511-83CE-42EA-B8FF-0B22ED42B990}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Winds" ID="{58D23941-85E3-40E3-8628-74FF4CAD6ACB}" ShortID="265060731">
 					<ChildrenList>
-						<Event Name="AMB_Gust_OS" ID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}">
+						<Event Name="AMB_Wind_Gust_OS_Start" ID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}">
 							<ChildrenList>
 								<Action Name="" ID="{8F680334-819F-4BED-B222-8282CB071A9A}" ShortID="1036611982">
 									<ReferenceList>
@@ -189,26 +200,36 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AMB_Wind_LP_Start" ID="{451D4E5B-8927-43A0-B087-ADAC45076303}">
+						<Event Name="AMB_Wind_Bed_LP_Start" ID="{451D4E5B-8927-43A0-B087-ADAC45076303}">
 							<ChildrenList>
 								<Action Name="" ID="{E7FB1D5F-6C95-465D-85A9-E3BAF38C5D7D}" ShortID="513254247">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Noise Pip" ID="{A876FB26-65FA-4102-807C-4C838D794AA4}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
+											<ObjectRef Name="AMB_Wind_Bed_LP" ID="{C20194AC-F8E3-4210-BD43-0722C1C1BE02}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AMB_Wind_LP_Stop" ID="{9A9D67BE-050E-4625-84C0-CA2A508AC15D}">
+						<Event Name="AMB_Wind_All_Stop" ID="{9A9D67BE-050E-4625-84C0-CA2A508AC15D}">
 							<ChildrenList>
+								<Action Name="" ID="{15EAE1AC-5AE2-4516-AFB2-BFAA1743BBAE}" ShortID="568613120">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB_Wind_Gust_OS" ID="{8408FD5C-3EE0-4C6B-8168-AB37779B996C}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{77091783-4F0D-44AC-BA92-C332D544759C}" ShortID="434940947">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Noise Pip" ID="{A876FB26-65FA-4102-807C-4C838D794AA4}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
+											<ObjectRef Name="AMB_Wind_Bed_LP" ID="{C20194AC-F8E3-4210-BD43-0722C1C1BE02}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

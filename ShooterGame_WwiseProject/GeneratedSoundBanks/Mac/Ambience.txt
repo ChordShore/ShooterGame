@@ -1,18 +1,27 @@
 Event	ID	Name			Wwise Object Path	Notes
 	113052211	AMB_LogoSign_LP			\Ambience\Emitters\AMB_LogoSign_LP	
 	126199104	AMB_PhoneBox_LP			\Ambience\Emitters\AMB_PhoneBox_LP	
-	255040524	AMB_Hovercar_Passbys			\Ambience\Emitters\AMB_Hovercar_Passbys	
+	511358421	AMB_BarrierFence_LP			\Ambience\Emitters\AMB_BarrierFence_LP	
 	529118812	AMB_Highrise_Room_LP			\Ambience\Rooms\Highrise\AMB_Highrise_Room_LP	
 	579451542	AMB_Highrise_Room_OS			\Ambience\Rooms\Highrise\AMB_Highrise_Room_OS	
-	654286798	AMB_Holograph_FadeIn			\Ambience\Emitters\AMB_Holograph_FadeIn	
-	1031253329	AMB_Holograph_FadeOut			\Ambience\Emitters\AMB_Holograph_FadeOut	
-	1421480464	AMB_Wind_LP_Play			\Ambience\Winds\AMB_Wind_LP_Play	
-	2655039608	AMB_Gust_OS			\Ambience\Winds\AMB_Gust_OS	
+	652591751	AMB_UnrealHolograph_FadeIn			\Ambience\Emitters\AMB_UnrealHolograph_FadeIn	
+	1352684599	AMB_Wind_All_Stop			\Ambience\Winds\AMB_Wind_All_Stop	
+	2065716790	AMB_Wind_Gust_OS_Start			\Ambience\Winds\AMB_Wind_Gust_OS_Start	
 	3140124040	AMB_StreetLamp_LP			\Ambience\Emitters\AMB_StreetLamp_LP	
-	3458088700	AMB_ForceField_LP			\Ambience\Emitters\AMB_ForceField_LP	
+	3385126647	AMB_HovercarTraffic_Passbys			\Ambience\Emitters\AMB_HovercarTraffic_Passbys	
+	3686232698	AMB_UnrealHolograph_FadeOut			\Ambience\Emitters\AMB_UnrealHolograph_FadeOut	
+	3887825550	AMB_Wind_Bed_LP_Start			\Ambience\Winds\AMB_Wind_Bed_LP_Start	
 	3938849847	AMB_Highrise_Atrium_OS			\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_OS	
 	3989182605	AMB_Highrise_Atrium_LP			\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_LP	
-	4065032882	AMB_Wind_LP_Stop			\Ambience\Winds\AMB_Wind_LP_Stop	
 	4272860344	AMB_Sanctuary_Interior_OS			\Ambience\Rooms\Sanctuary\AMB_Sanctuary_Interior_OS	
 	4289637934	AMB_Sanctuary_Interior_LP			\Ambience\Rooms\Sanctuary\AMB_Sanctuary_Interior_LP	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	155127469	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Ambience\AMB_Winds\AMB_Wind_Bed_LP\Tone Generator	
+	185023353	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Highrise_Atrium_LP\Tone Generator	
+	662823536	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\Event Probe\Noise Pip\Tone Generator	
+	670518875	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Highrise_Room_LP\Tone Generator	
+	888333020	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_BarrierFence\AMB_BarrierFence_LP\Tone Generator	
+	950824542	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_PhoneBox\AMB_PhoneBox_LP\Tone Generator	
+	1041093470	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\Event Probe\Sine Pip\Tone Generator	
 
