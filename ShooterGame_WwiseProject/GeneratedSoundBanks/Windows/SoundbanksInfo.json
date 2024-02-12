@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{807A0AC9-CE3E-1788-EC40-9BCA4D7FEF8B}",
+    "Hash": "{C96FDF80-1718-C26E-33B5-F373D0449975}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -75,7 +75,7 @@
       {
        "Id": "888333020",
        "Name": "Tone Generator",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_BarrierFence\\AMB_BarrierFence_LP\\Tone Generator",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Emitters\\AMB_BarrierFence\\AMB_BarrierFence_LP\\Tone Generator",
        "GUID": "{3D1B64D9-A2EA-44DD-AE5F-14A3C4290D80}",
        "LibName": "Wwise Tone Generator",
        "LibId": "6684674"
@@ -112,7 +112,7 @@
       "Name": "AMB_BarrierFence_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\AMB_BarrierFence_LP",
       "GUID": "{427593F0-92C8-4CA8-8FCD-C163A0B02BEC}",
-      "MaxAttenuation": "3300",
+      "MaxAttenuation": "700",
       "DurationType": "OneShot",
       "DurationMin": "30",
       "DurationMax": "30",
@@ -146,7 +146,7 @@
       "Name": "AMB_Highrise_Atrium_OS",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\AMB_Highrise_Atrium_OS",
       "GUID": "{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}",
-      "MaxAttenuation": "2500",
+      "MaxAttenuation": "700",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "1",
@@ -180,7 +180,7 @@
       "Name": "AMB_Highrise_Room_OS",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\AMB_Highrise_Room_OS",
       "GUID": "{4E65C91A-3866-4E84-B034-94A7E371ECB7}",
-      "MaxAttenuation": "2500",
+      "MaxAttenuation": "700",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "1",
@@ -213,7 +213,7 @@
       "Name": "AMB_PhoneBox_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\AMB_PhoneBox_LP",
       "GUID": "{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}",
-      "MaxAttenuation": "2500",
+      "MaxAttenuation": "700",
       "DurationType": "OneShot",
       "DurationMin": "30",
       "DurationMax": "30",
@@ -246,7 +246,7 @@
       "Name": "AMB_Sanctuary_Interior_OS",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Sanctuary\\AMB_Sanctuary_Interior_OS",
       "GUID": "{F74B57D9-49B1-4424-8D25-E7555C92DD26}",
-      "MaxAttenuation": "2500",
+      "MaxAttenuation": "700",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "1",
@@ -296,7 +296,7 @@
       "Name": "AMB_UnrealHolograph_FadeOut",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\AMB_UnrealHolograph_FadeOut",
       "GUID": "{65B7B589-76CC-48C2-8C87-74F03B903131}",
-      "MaxAttenuation": "2500",
+      "MaxAttenuation": "700",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "1",
@@ -328,7 +328,7 @@
      {
       "Id": "1352684599",
       "Name": "AMB_Wind_All_Stop",
-      "ObjectPath": "\\Events\\Ambience\\Winds\\AMB_Wind_All_Stop",
+      "ObjectPath": "\\Events\\Ambience\\Winds\\Highrise\\AMB_Wind_All_Stop",
       "GUID": "{9A9D67BE-050E-4625-84C0-CA2A508AC15D}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -336,9 +336,9 @@
       "DurationMax": "0"
      },
      {
-      "Id": "3887825550",
-      "Name": "AMB_Wind_Bed_LP_Start",
-      "ObjectPath": "\\Events\\Ambience\\Winds\\AMB_Wind_Bed_LP_Start",
+      "Id": "50366077",
+      "Name": "AMB_Wind_Atrium_Bed_LP_Start",
+      "ObjectPath": "\\Events\\Ambience\\Winds\\Highrise\\AMB_Wind_Atrium_Bed_LP_Start",
       "GUID": "{451D4E5B-8927-43A0-B087-ADAC45076303}",
       "DurationType": "OneShot",
       "DurationMin": "10",
@@ -352,11 +352,11 @@
       }
      },
      {
-      "Id": "2065716790",
-      "Name": "AMB_Wind_Gust_OS_Start",
-      "ObjectPath": "\\Events\\Ambience\\Winds\\AMB_Wind_Gust_OS_Start",
+      "Id": "3891222715",
+      "Name": "AMB_Wind_Atrium_Gust_OS_Start",
+      "ObjectPath": "\\Events\\Ambience\\Winds\\Highrise\\AMB_Wind_Atrium_Gust_OS_Start",
       "GUID": "{B1473C73-10B0-46BB-AA72-8ABA06D25E40}",
-      "MaxAttenuation": "2500",
+      "MaxAttenuation": "700",
       "DurationType": "OneShot",
       "DurationMin": "10",
       "DurationMax": "10",
@@ -837,6 +837,47 @@
     ]
    },
    {
+    "Id": "2066715139",
+    "Type": "Event",
+    "GUID": "{C06F853C-5C33-42EF-985F-5CF0E077DB55}",
+    "Language": "SFX",
+    "Hash": "{942BAFAD-768E-E950-3D51-D01196825CEE}",
+    "ObjectPath": "AMB_Wind_Balcony_Gust_OS_Start",
+    "ShortName": "AMB_Wind_Balcony_Gust_OS_Start",
+    "Path": "Event/AMB_Wind_Balcony_Gust_OS_Start.bnk",
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "1035667954",
+       "Name": "Tone Generator",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Winds\\AMB_Wind_Gust_OS\\Tone Generator",
+       "GUID": "{8436C310-A71C-4829-BA84-8AF5046D81A8}",
+       "LibName": "Wwise Tone Generator",
+       "LibId": "6684674"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "2066715139",
+      "Name": "AMB_Wind_Balcony_Gust_OS_Start",
+      "ObjectPath": "\\Events\\Ambience\\Winds\\Highrise\\AMB_Wind_Balcony_Gust_OS_Start",
+      "GUID": "{C06F853C-5C33-42EF-985F-5CF0E077DB55}",
+      "MaxAttenuation": "700",
+      "DurationType": "OneShot",
+      "DurationMin": "10",
+      "DurationMax": "10",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "1035667954"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
     "Id": "2151963051",
     "Type": "User",
     "GUID": "{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}",
@@ -873,7 +914,7 @@
     "Type": "Event",
     "GUID": "{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}",
     "Language": "SFX",
-    "Hash": "{116F2ED7-F16F-7E03-7C53-C7F5A02F42FC}",
+    "Hash": "{CBE1FDD0-F1AB-6130-104D-6C6D305D87B2}",
     "ObjectPath": "AMB_UnrealHolograph_LP",
     "ShortName": "AMB_UnrealHolograph_LP",
     "Path": "Event/AMB_UnrealHolograph_LP.bnk",
@@ -914,7 +955,7 @@
     "Type": "User",
     "GUID": "{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}",
     "Language": "SFX",
-    "Hash": "{5C22467D-A860-E656-D0F7-8B44E83CA6D0}",
+    "Hash": "{44699B25-F81A-56DB-E061-F0903AA7C3CB}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\EventProbe",
     "ShortName": "EventProbe",
     "Path": "EventProbe.bnk",
@@ -936,7 +977,7 @@
       "Name": "Play_Sine_Pip",
       "ObjectPath": "\\Events\\Default Work Unit\\Event Probe\\Play_Sine_Pip",
       "GUID": "{79D376DC-67FF-49D5-8EFA-4F594DD02674}",
-      "MaxAttenuation": "2500",
+      "MaxAttenuation": "700",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "1",
@@ -1003,6 +1044,6 @@
     "Path": "Dialogue.bnk"
    }
   ],
-  "FileHash": "{497A84CE-9345-77ED-B29B-C39DD70AF6E6}"
+  "FileHash": "{06280984-D1F6-1819-1A44-987EFB16A2B9}"
  }
 }

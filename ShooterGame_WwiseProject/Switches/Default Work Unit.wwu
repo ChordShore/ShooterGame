@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{ECB4FF3E-F275-463C-9725-86A07FDE6049}" SchemaVersion="110">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{ECB4FF3E-F275-463C-9725-86A07FDE6049}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{ECB4FF3E-F275-463C-9725-86A07FDE6049}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Physical Materials" ID="{00001A61-7CDF-4C8A-A382-85127E2C672F}" ShortID="874190649">
+					<ChildrenList>
+						<SwitchGroup Name="SW_Physical_Material" ID="{E561EBF9-47C4-4F13-A827-CF892AA0C054}">
+							<ChildrenList>
+								<Switch Name="M_Concrete" ID="{7793252A-8C3B-42B3-A5BE-5BD85E592AF5}"/>
+								<Switch Name="M_Default" ID="{C99CD84A-F66C-47CB-9F08-8948FA3CD2DA}"/>
+								<Switch Name="M_Dirt" ID="{02773C27-1839-4638-A2AF-91E103D925E3}"/>
+								<Switch Name="M_Flesh" ID="{72A6A11D-4F6E-4C8C-8BBE-4F013F5716DA}"/>
+								<Switch Name="M_Glass" ID="{467993A2-3942-43B0-9602-E4FADF206889}"/>
+								<Switch Name="M_Grass" ID="{63A5F2DE-9D45-455C-A02A-A165A88A6A74}"/>
+								<Switch Name="M_Metal" ID="{73EE52DF-CCB9-4B60-A98D-A85FE8F582CA}"/>
+								<Switch Name="M_Tile" ID="{B4FDF75B-8B11-4F10-9CA5-B65DC3769474}"/>
+								<Switch Name="M_Water" ID="{551B58A9-136B-4897-AF30-2F4229E1719A}"/>
+								<Switch Name="M_Wood" ID="{6E998D2E-9A9D-49A2-9BAB-C06728770720}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

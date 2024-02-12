@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{807A0AC9-CE3E-1788-EC40-9BCA4D7FEF8B}",
+    "Hash": "{C96FDF80-1718-C26E-33B5-F373D0449975}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -67,7 +67,7 @@
       {
        "Id": "888333020",
        "Name": "Tone Generator",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_BarrierFence\\AMB_BarrierFence_LP\\Tone Generator",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Emitters\\AMB_BarrierFence\\AMB_BarrierFence_LP\\Tone Generator",
        "GUID": "{3D1B64D9-A2EA-44DD-AE5F-14A3C4290D80}",
        "LibName": "Wwise Tone Generator",
        "LibId": "6684674"
@@ -104,7 +104,7 @@
       "Name": "AMB_BarrierFence_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\AMB_BarrierFence_LP",
       "GUID": "{427593F0-92C8-4CA8-8FCD-C163A0B02BEC}",
-      "MaxAttenuation": "3300",
+      "MaxAttenuation": "700",
       "DurationType": "OneShot",
       "DurationMin": "30",
       "DurationMax": "30",
@@ -138,7 +138,7 @@
       "Name": "AMB_Highrise_Atrium_OS",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\AMB_Highrise_Atrium_OS",
       "GUID": "{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}",
-      "MaxAttenuation": "2500",
+      "MaxAttenuation": "700",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "1",
@@ -172,7 +172,7 @@
       "Name": "AMB_Highrise_Room_OS",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\AMB_Highrise_Room_OS",
       "GUID": "{4E65C91A-3866-4E84-B034-94A7E371ECB7}",
-      "MaxAttenuation": "2500",
+      "MaxAttenuation": "700",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "1",
@@ -205,7 +205,7 @@
       "Name": "AMB_PhoneBox_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\AMB_PhoneBox_LP",
       "GUID": "{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}",
-      "MaxAttenuation": "2500",
+      "MaxAttenuation": "700",
       "DurationType": "OneShot",
       "DurationMin": "30",
       "DurationMax": "30",
@@ -238,7 +238,7 @@
       "Name": "AMB_Sanctuary_Interior_OS",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Sanctuary\\AMB_Sanctuary_Interior_OS",
       "GUID": "{F74B57D9-49B1-4424-8D25-E7555C92DD26}",
-      "MaxAttenuation": "2500",
+      "MaxAttenuation": "700",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "1",
@@ -288,7 +288,7 @@
       "Name": "AMB_UnrealHolograph_FadeOut",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\AMB_UnrealHolograph_FadeOut",
       "GUID": "{65B7B589-76CC-48C2-8C87-74F03B903131}",
-      "MaxAttenuation": "2500",
+      "MaxAttenuation": "700",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "1",
@@ -320,7 +320,7 @@
      {
       "Id": "1352684599",
       "Name": "AMB_Wind_All_Stop",
-      "ObjectPath": "\\Events\\Ambience\\Winds\\AMB_Wind_All_Stop",
+      "ObjectPath": "\\Events\\Ambience\\Winds\\Highrise\\AMB_Wind_All_Stop",
       "GUID": "{9A9D67BE-050E-4625-84C0-CA2A508AC15D}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -328,9 +328,9 @@
       "DurationMax": "0"
      },
      {
-      "Id": "3887825550",
-      "Name": "AMB_Wind_Bed_LP_Start",
-      "ObjectPath": "\\Events\\Ambience\\Winds\\AMB_Wind_Bed_LP_Start",
+      "Id": "50366077",
+      "Name": "AMB_Wind_Atrium_Bed_LP_Start",
+      "ObjectPath": "\\Events\\Ambience\\Winds\\Highrise\\AMB_Wind_Atrium_Bed_LP_Start",
       "GUID": "{451D4E5B-8927-43A0-B087-ADAC45076303}",
       "DurationType": "OneShot",
       "DurationMin": "10",
@@ -344,11 +344,11 @@
       }
      },
      {
-      "Id": "2065716790",
-      "Name": "AMB_Wind_Gust_OS_Start",
-      "ObjectPath": "\\Events\\Ambience\\Winds\\AMB_Wind_Gust_OS_Start",
+      "Id": "3891222715",
+      "Name": "AMB_Wind_Atrium_Gust_OS_Start",
+      "ObjectPath": "\\Events\\Ambience\\Winds\\Highrise\\AMB_Wind_Atrium_Gust_OS_Start",
       "GUID": "{B1473C73-10B0-46BB-AA72-8ABA06D25E40}",
-      "MaxAttenuation": "2500",
+      "MaxAttenuation": "700",
       "DurationType": "OneShot",
       "DurationMin": "10",
       "DurationMax": "10",
@@ -363,6 +363,6 @@
     ]
    }
   ],
-  "FileHash": "{048CDF39-6627-DCF0-70F8-9330B1032658}"
+  "FileHash": "{DD80D000-DEE5-FAD5-01FD-73B11CDE6739}"
  }
 }
