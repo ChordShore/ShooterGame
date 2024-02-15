@@ -1,8 +1,33 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3383676643	SAT_Location			\Default Work Unit\SAT_Location	
+
+State	ID	Name	State Group			Notes
+	748895195	None	SAT_Location			
+	2730119150	Outdoors	SAT_Location			
+	4103860031	Indoors	SAT_Location			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
+	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
+	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
+	1755085759	Wood_Deep			\Factory Acoustic Textures\Textures\Wood_Deep	
+	1873957695	Anechoic			\Factory Acoustic Textures\Textures\Anechoic	
+	1970351858	Fabric			\Factory Acoustic Textures\Textures\Fabric	
+	2058049674	Wood			\Factory Acoustic Textures\Textures\Wood	
+	2412606308	Carpet			\Factory Acoustic Textures\Textures\Carpet	
+	2637588553	Tile			\Factory Acoustic Textures\Textures\Tile	
+	2928161104	Curtains			\Factory Acoustic Textures\Textures\Curtains	
+	3195498748	Cork_Tiles			\Factory Acoustic Textures\Textures\Cork_Tiles	
+	3670307564	Drywall			\Factory Acoustic Textures\Textures\Drywall	
+	4168643977	Acoustic_Banner			\Factory Acoustic Textures\Textures\Acoustic_Banner	
+	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	511093812	3P			\Default Work Unit\Master Audio Bus\Diegetic\3P	
 	544648986	1P			\Default Work Unit\Master Audio Bus\Diegetic\1P	
 	768949178	1P_Foley			\Default Work Unit\Master Audio Bus\Diegetic\1P\1P_2D\1P_Foley	
 	858727008	1P_Weapons			\Default Work Unit\Master Audio Bus\Diegetic\1P\1P_2D\1P_Weapons	
+	1063494187	Auxilliaries			\Default Work Unit\Master Audio Bus\Diegetic\Auxilliaries	
 	1088520938	Interface			\Default Work Unit\Master Audio Bus\Non-Diegetic\Interface	
 	1091382381	3P_Dialogue			\Default Work Unit\Master Audio Bus\Diegetic\3P\3P_Dialogue	
 	1316532907	Diegetic			\Default Work Unit\Master Audio Bus\Diegetic	
@@ -17,6 +42,10 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	4143123718	3P_Weapons			\Default Work Unit\Master Audio Bus\Diegetic\3P\3P_Weapons	
 	4210635220	1P_3D			\Default Work Unit\Master Audio Bus\Diegetic\1P\1P_3D	
 	4227412775	1P_2D			\Default Work Unit\Master Audio Bus\Diegetic\1P\1P_2D	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	348963605	Reverb			\Default Work Unit\Master Audio Bus\Diegetic\Auxilliaries\Reverb	
+	1752382405	Early_Reflections			\Default Work Unit\Master Audio Bus\Diegetic\Auxilliaries\Early_Reflections	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

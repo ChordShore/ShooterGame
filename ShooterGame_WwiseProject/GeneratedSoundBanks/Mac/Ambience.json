@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{C96FDF80-1718-C26E-33B5-F373D0449975}",
+    "Hash": "{53C6C626-C67E-3FC6-97F1-0F648865D778}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -114,7 +114,15 @@
          "Id": "888333020"
         }
        ]
-      }
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "1752382405",
+        "Name": "Early_Reflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxilliaries\\Early_Reflections",
+        "GUID": "{871922EF-FE54-4857-93D5-4C87E88FC7D9}"
+       }
+      ]
      },
      {
       "Id": "3989182605",
@@ -363,6 +371,6 @@
     ]
    }
   ],
-  "FileHash": "{219683D7-2511-0284-B14D-E22CAA408BC9}"
+  "FileHash": "{1C27A849-5A6D-A25F-FBDE-09F17D2303B0}"
  }
 }

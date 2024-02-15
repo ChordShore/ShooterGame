@@ -82,6 +82,28 @@
 										</Bus>
 									</ChildrenList>
 								</Bus>
+								<Bus Name="Auxilliaries" ID="{639A62DF-CA02-438D-9BA0-A89D32368F6D}">
+									<ChildrenList>
+										<AuxBus Name="Reverb" ID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}"/>
+										<AuxBus Name="Early_Reflections" ID="{871922EF-FE54-4857-93D5-4C87E88FC7D9}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>768</Value>
+													</ValueList>
+												</Property>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Reflect" CompanyID="0" PluginID="171" PluginType="3">
+													<ObjectRef Name="Reflect_Simplified" ID="{26D1B778-1690-400C-9DBA-3B2CDEE9B3AE}" WorkUnitID="{923039AD-F8B4-46D4-BDA7-CB5A6EE595E0}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+									</ChildrenList>
+								</Bus>
 							</ChildrenList>
 						</Bus>
 						<Bus Name="Non-Diegetic" ID="{23395B5E-B13C-48B4-AFA0-9A3158AD2C61}">
