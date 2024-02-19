@@ -11,6 +11,20 @@
     "StaticLib": "AkToneSource"
    },
    {
+    "LibName": "Wwise Delay",
+    "LibId": "6946819",
+    "Type": "Effect",
+    "DLL": "AkDelay",
+    "StaticLib": "AkDelayFX"
+   },
+   {
+    "LibName": "Wwise RoomVerb",
+    "LibId": "7733251",
+    "Type": "Effect",
+    "DLL": "AkRoomVerb",
+    "StaticLib": "AkRoomVerbFX"
+   },
+   {
     "LibName": "System",
     "LibId": "11403271",
     "Type": "AudioDevice"
@@ -21,6 +35,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{3D76BBD5-943A-1D09-A431-81D14FFAC05F}"
+  "FileHash": "{988AA2DA-264E-8017-98FB-8550201BAAAD}"
  }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{53C6C626-C67E-3FC6-97F1-0F648865D778}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{D5093C8A-D940-E3C2-A543-53592F29043D}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -26,11 +26,8 @@
 							<PluginRef Id="888333020"/>
 						</Custom>
 					</PluginRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="1752382405" Name="Early_Reflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxilliaries\Early_Reflections" GUID="{871922EF-FE54-4857-93D5-4C87E88FC7D9}"/>
-					</AuxBusRefs>
 				</Event>
-				<Event Id="3989182605" Name="AMB_Highrise_Atrium_LP" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_LP" GUID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}" MaxAttenuation="20000" DurationType="OneShot" DurationMin="10" DurationMax="10">
+				<Event Id="3989182605" Name="AMB_Highrise_Atrium_LP" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_LP" GUID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}" MaxAttenuation="20000" DurationType="OneShot" DurationMin="20" DurationMax="20">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="185023353"/>
@@ -44,7 +41,7 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="529118812" Name="AMB_Highrise_Room_LP" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Room_LP" GUID="{3F5A1E50-6729-4C3C-9937-D8C443065D63}" MaxAttenuation="20000" DurationType="OneShot" DurationMin="10" DurationMax="10">
+				<Event Id="529118812" Name="AMB_Highrise_Room_LP" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Room_LP" GUID="{3F5A1E50-6729-4C3C-9937-D8C443065D63}" MaxAttenuation="20000" DurationType="OneShot" DurationMin="20" DurationMax="20">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="670518875"/>
@@ -132,5 +129,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{479AC1AC-30B2-3361-51C9-6F979742B465}</FileHash>
+	<FileHash>{274274BF-D989-8C7D-5515-39C7A8C25831}</FileHash>
 </SoundBanksInfo>

@@ -64,22 +64,37 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<SourcePlugin Name="Tone Generator" ID="{15D380C5-6AC7-4E6F-92CF-A703CDBEC0AD}" ShortID="155127469" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+								<AudioFileSource Name="WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed" ID="{2ADDE332-B510-4E62-8DA1-7922A6F92A89}">
 									<PropertyList>
-										<Property Name="FixDur" Type="Real32" Value="10"/>
-										<Property Name="WaveGain" Type="Real32" Value="-20"/>
-										<Property Name="WaveType" Type="int32" Value="5"/>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="9697.6"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="6.67059088937093"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="11.7975739696313"/>
+										<Property Name="LoopBegin" Type="Real64" Value="12.2937336225597"/>
+										<Property Name="LoopEnd" Type="Real64" Value="58.2711947939262"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="76.2432"/>
 									</PropertyList>
 									<Language>SFX</Language>
-								</SourcePlugin>
+									<AudioFile>WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="293619390"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Tone Generator" ID="{15D380C5-6AC7-4E6F-92CF-A703CDBEC0AD}" Platform="Linked"/>
+								<ActiveSource Name="WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed" ID="{2ADDE332-B510-4E62-8DA1-7922A6F92A89}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="AMB_Emitters" ID="{86D471BA-BC16-451D-B000-3F324B278937}" ShortID="84804490">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-96</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -283,9 +298,6 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 								</Reference>
-								<Reference Name="ReflectionsAuxSend">
-									<ObjectRef Name="Early_Reflections" ID="{871922EF-FE54-4857-93D5-4C87E88FC7D9}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="AMB_BarrierFence_LP" ID="{21B05601-534E-4D7E-BA20-A9C79FE23DBC}" ShortID="155906301">
@@ -343,12 +355,19 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="AMB_Highrise" ID="{B1AA0A72-4A6A-4850-9D41-3DAD3AFDE1F1}" ShortID="1011135215">
+							<PropertyList>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="Atrium_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -371,8 +390,8 @@
 									<ChildrenList>
 										<SourcePlugin Name="Tone Generator" ID="{3FE8C878-90B7-4379-8206-D23148C8D6D4}" ShortID="185023353" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
 											<PropertyList>
-												<Property Name="FixDur" Type="Real32" Value="10"/>
-												<Property Name="StartFreq" Type="Real32" Value="400"/>
+												<Property Name="FixDur" Type="Real32" Value="20"/>
+												<Property Name="StartFreq" Type="Real32" Value="100"/>
 												<Property Name="WaveGain" Type="Real32" Value="-20"/>
 												<Property Name="WaveType" Type="int32" Value="1"/>
 											</PropertyList>
@@ -402,7 +421,7 @@
 									<ChildrenList>
 										<SourcePlugin Name="Tone Generator" ID="{2F742312-C8FE-4793-953E-F073964409E7}" ShortID="670518875" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
 											<PropertyList>
-												<Property Name="FixDur" Type="Real32" Value="10"/>
+												<Property Name="FixDur" Type="Real32" Value="20"/>
 												<Property Name="StartFreq" Type="Real32" Value="200"/>
 												<Property Name="WaveGain" Type="Real32" Value="-20"/>
 												<Property Name="WaveType" Type="int32" Value="1"/>

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{53C6C626-C67E-3FC6-97F1-0F648865D778}",
+    "Hash": "{D5093C8A-D940-E3C2-A543-53592F29043D}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -114,15 +114,7 @@
          "Id": "888333020"
         }
        ]
-      },
-      "AuxBusRefs": [
-       {
-        "Id": "1752382405",
-        "Name": "Early_Reflections",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxilliaries\\Early_Reflections",
-        "GUID": "{871922EF-FE54-4857-93D5-4C87E88FC7D9}"
-       }
-      ]
+      }
      },
      {
       "Id": "3989182605",
@@ -131,8 +123,8 @@
       "GUID": "{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}",
       "MaxAttenuation": "20000",
       "DurationType": "OneShot",
-      "DurationMin": "10",
-      "DurationMax": "10",
+      "DurationMin": "20",
+      "DurationMax": "20",
       "PluginRefs": {
        "Custom": [
         {
@@ -165,8 +157,8 @@
       "GUID": "{3F5A1E50-6729-4C3C-9937-D8C443065D63}",
       "MaxAttenuation": "20000",
       "DurationType": "OneShot",
-      "DurationMin": "10",
-      "DurationMax": "10",
+      "DurationMin": "20",
+      "DurationMax": "20",
       "PluginRefs": {
        "Custom": [
         {
@@ -371,6 +363,6 @@
     ]
    }
   ],
-  "FileHash": "{1C27A849-5A6D-A25F-FBDE-09F17D2303B0}"
+  "FileHash": "{914BD839-8489-18B7-9378-8C05B6331784}"
  }
 }

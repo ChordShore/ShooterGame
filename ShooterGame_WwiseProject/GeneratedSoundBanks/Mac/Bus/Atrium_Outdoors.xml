@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="2760958213" Type="Bus" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}" Language="SFX" Hash="{571D94A9-76B9-0F2F-5C95-AC078CA48041}">
+			<ObjectPath>Atrium_Outdoors</ObjectPath>
+			<ShortName>Atrium_Outdoors</ShortName>
+			<Path>Bus/Atrium_Outdoors.bnk</Path>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" ObjectPath="\Effects\Factory Effects\RoomVerb\Exteriors\Have_U_Ever_Been_Outside" GUID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
+			<AuxBusses>
+				<AuxBus Id="2760958213" Name="Atrium_Outdoors" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_Outdoors" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{690B01CA-3668-CB23-E038-D30B88BE773D}</FileHash>
+</SoundBanksInfo>

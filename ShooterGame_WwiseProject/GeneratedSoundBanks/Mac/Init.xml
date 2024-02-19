@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{8EBA9017-2F35-61A9-E932-7D94F0ABB9DD}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{1D8B3924-A984-64B2-F407-08C25451B0C2}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" ObjectPath="\Effects\Factory Effects\RoomVerb\Exteriors\Have_U_Ever_Been_Outside" GUID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="1159390747" Name="Room_Medium_Tiled" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Medium_Tiled" GUID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="2180422931" Name="One_Tap_Quarter_Second" ObjectPath="\Effects\Factory Effects\Delay\One_Tap_Quarter_Second" GUID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" LibName="Wwise Delay" LibId="6946819"/>
+					<Plugin Id="2995775460" Name="Room_Small" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Small" GUID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" ObjectPath="\Audio Devices\Default Work Unit\No_Output" GUID="{F61791D9-22A4-4E2F-9309-529F94FD0850}" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" ObjectPath="\Audio Devices\Default Work Unit\System" GUID="{DDAEEB21-4CAC-4E5A-AE98-EA7AEA6809A1}" LibName="System" LibId="11403271"/>
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="432164595" Name="Auxiliaries" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries" GUID="{639A62DF-CA02-438D-9BA0-A89D32368F6D}"/>
 				<Bus Id="511093812" Name="3P" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\3P" GUID="{4688BD37-478F-464A-951C-21EC12E45BA8}"/>
 				<Bus Id="544648986" Name="1P" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\1P" GUID="{C2425282-D625-4B90-ADDA-FC4971FE1BFB}"/>
 				<Bus Id="768949178" Name="1P_Foley" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\1P\1P_2D\1P_Foley" GUID="{AFADED97-9376-47EE-8E61-63C3E2539C84}"/>
 				<Bus Id="858727008" Name="1P_Weapons" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\1P\1P_2D\1P_Weapons" GUID="{1BC77837-C5B2-4563-B3F7-CF715B366F0C}"/>
-				<Bus Id="1063494187" Name="Auxilliaries" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxilliaries" GUID="{639A62DF-CA02-438D-9BA0-A89D32368F6D}"/>
 				<Bus Id="1088520938" Name="Interface" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic\Interface" GUID="{42B4D428-17C2-4C3C-AA6E-6AB8C22C5805}"/>
 				<Bus Id="1091382381" Name="3P_Dialogue" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\3P\3P_Dialogue" GUID="{6931BC9D-3C00-42B3-AFA4-E38B95036EB6}"/>
 				<Bus Id="1316532907" Name="Diegetic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic" GUID="{0B750C85-EB1C-448A-9D15-8D1F0D4C6BD6}"/>
 				<Bus Id="2420281969" Name="Non-Diegetic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic" GUID="{23395B5E-B13C-48B4-AFA0-9A3158AD2C61}"/>
 				<Bus Id="2663061541" Name="1P_Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\1P\1P_3D\1P_Ambience" GUID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}"/>
 				<Bus Id="2940432316" Name="Stingers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic\Stingers" GUID="{14F313A7-2F5E-4100-BC04-AAE99EC1A71C}"/>
+				<Bus Id="3074349213" Name="Sanctuary" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Sanctuary" GUID="{5BA6AF2C-2325-4C30-8363-C8F3B4D195B0}"/>
+				<Bus Id="3240358146" Name="Highrise" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise" GUID="{596C5B51-663F-4CD9-9F06-6A282DAF1573}"/>
 				<Bus Id="3254751713" Name="3P_Items" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\3P\3P_Items" GUID="{5D5B9568-CFB5-4519-8C60-DEECAA088385}"/>
 				<Bus Id="3613396523" Name="1P_Dialogue" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\1P\1P_2D\1P_Dialogue" GUID="{80C87677-6DFA-46DD-8E4C-337CF0B1357D}"/>
 				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
@@ -33,19 +41,45 @@
 				<Bus Id="4227412775" Name="1P_2D" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\1P\1P_2D" GUID="{AF0E6324-CEEE-452E-AD41-ECD9C2383C55}"/>
 			</Busses>
 			<AuxBusses>
-				<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxilliaries\Reverb" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}"/>
-				<AuxBus Id="1752382405" Name="Early_Reflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxilliaries\Early_Reflections" GUID="{871922EF-FE54-4857-93D5-4C87E88FC7D9}"/>
+				<AuxBus Id="356517711" Name="Atrium_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2180422931"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="888529951" Name="Atrium_PhoneRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_PhoneRoom" GUID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1159390747"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="1083576654" Name="Atrium_SpawnRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_SpawnRoom" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2995775460"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="2760958213" Name="Atrium_Outdoors" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_Outdoors" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
 			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="1228207839" Name="PAR_Heartbeat" ObjectPath="\Game Parameters\Default Work Unit\PAR_Heartbeat" GUID="{1A7627A7-5A7D-470D-B1E0-2B091B679836}"/>
 				<GameParameter Id="1714946050" Name="PAR_Breaths" ObjectPath="\Game Parameters\Default Work Unit\PAR_Breaths" GUID="{AD59135C-7832-4545-A14C-AA5DD622DAAC}"/>
 			</GameParameters>
 			<StateGroups>
-				<StateGroup Id="3383676643" Name="SAT_Location" ObjectPath="\States\Default Work Unit\SAT_Location" GUID="{686E9A02-FA99-467B-99D7-939C1DC93153}">
+				<StateGroup Id="1777405841" Name="STA_Location" ObjectPath="\States\Default Work Unit\STA_Location" GUID="{686E9A02-FA99-467B-99D7-939C1DC93153}">
 					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\SAT_Location\None" GUID="{05BC4704-4528-42BF-8FF0-1F5E28FBD976}"/>
-						<State Id="2730119150" Name="Outdoors" ObjectPath="\States\Default Work Unit\SAT_Location\Outdoors" GUID="{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"/>
-						<State Id="4103860031" Name="Indoors" ObjectPath="\States\Default Work Unit\SAT_Location\Indoors" GUID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\STA_Location\None" GUID="{05BC4704-4528-42BF-8FF0-1F5E28FBD976}"/>
+						<State Id="3768889528" Name="STA_Indoors" ObjectPath="\States\Default Work Unit\STA_Location\STA_Indoors" GUID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
+						<State Id="4157082203" Name="STA_Outdoors" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors" GUID="{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -187,5 +221,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4403BA11-2131-92A0-1C7D-2C8E1CBB147B}</FileHash>
+	<FileHash>{98ACD948-306A-4087-C6D9-14B5C9AAB5DF}</FileHash>
 </SoundBanksInfo>

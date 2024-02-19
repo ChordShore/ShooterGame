@@ -1,10 +1,10 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	3383676643	SAT_Location			\Default Work Unit\SAT_Location	
+	1777405841	STA_Location			\Default Work Unit\STA_Location	
 
 State	ID	Name	State Group			Notes
-	748895195	None	SAT_Location			
-	2730119150	Outdoors	SAT_Location			
-	4103860031	Indoors	SAT_Location			
+	748895195	None	STA_Location			
+	3768889528	STA_Indoors	STA_Location			
+	4157082203	STA_Outdoors	STA_Location			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
@@ -23,17 +23,19 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	432164595	Auxiliaries			\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries	
 	511093812	3P			\Default Work Unit\Master Audio Bus\Diegetic\3P	
 	544648986	1P			\Default Work Unit\Master Audio Bus\Diegetic\1P	
 	768949178	1P_Foley			\Default Work Unit\Master Audio Bus\Diegetic\1P\1P_2D\1P_Foley	
 	858727008	1P_Weapons			\Default Work Unit\Master Audio Bus\Diegetic\1P\1P_2D\1P_Weapons	
-	1063494187	Auxilliaries			\Default Work Unit\Master Audio Bus\Diegetic\Auxilliaries	
 	1088520938	Interface			\Default Work Unit\Master Audio Bus\Non-Diegetic\Interface	
 	1091382381	3P_Dialogue			\Default Work Unit\Master Audio Bus\Diegetic\3P\3P_Dialogue	
 	1316532907	Diegetic			\Default Work Unit\Master Audio Bus\Diegetic	
 	2420281969	Non-Diegetic			\Default Work Unit\Master Audio Bus\Non-Diegetic	
 	2663061541	1P_Ambience			\Default Work Unit\Master Audio Bus\Diegetic\1P\1P_3D\1P_Ambience	
 	2940432316	Stingers			\Default Work Unit\Master Audio Bus\Non-Diegetic\Stingers	
+	3074349213	Sanctuary			\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Sanctuary	
+	3240358146	Highrise			\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise	
 	3254751713	3P_Items			\Default Work Unit\Master Audio Bus\Diegetic\3P\3P_Items	
 	3613396523	1P_Dialogue			\Default Work Unit\Master Audio Bus\Diegetic\1P\1P_2D\1P_Dialogue	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
@@ -44,8 +46,16 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	4227412775	1P_2D			\Default Work Unit\Master Audio Bus\Diegetic\1P\1P_2D	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	348963605	Reverb			\Default Work Unit\Master Audio Bus\Diegetic\Auxilliaries\Reverb	
-	1752382405	Early_Reflections			\Default Work Unit\Master Audio Bus\Diegetic\Auxilliaries\Early_Reflections	
+	356517711	Atrium_EarlyReflections			\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_EarlyReflections	
+	888529951	Atrium_PhoneRoom			\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_PhoneRoom	
+	1083576654	Atrium_SpawnRoom			\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_SpawnRoom	
+	2760958213	Atrium_Outdoors			\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_Outdoors	
+
+Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
+	2180422931	One_Tap_Quarter_Second	Wwise Delay			
+	2995775460	Room_Small	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
