@@ -7,86 +7,6 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<ActorMixer Name="AMB_Winds" ID="{B65B04DC-7335-424B-B8AB-36CF707EB1DD}" ShortID="1055663204">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="AMB_Wind_Gust_OS" ID="{8408FD5C-3EE0-4C6B-8168-AB37779B996C}" ShortID="21379039">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="ATN_PhoneBox" ID="{4296B408-0CD1-463A-A8F4-B6EC4597E3EC}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<SourcePlugin Name="Tone Generator" ID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" ShortID="1035667954" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
-									<PropertyList>
-										<Property Name="FixDur" Type="Real32" Value="10"/>
-										<Property Name="StartFreq" Type="Real32" Value="715"/>
-										<Property Name="WaveGain" Type="Real32" Value="-20"/>
-									</PropertyList>
-									<Language>SFX</Language>
-								</SourcePlugin>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Tone Generator" ID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="AMB_Wind_Bed_LP" ID="{C20194AC-F8E3-4210-BD43-0722C1C1BE02}" ShortID="813663190">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-96</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed" ID="{2ADDE332-B510-4E62-8DA1-7922A6F92A89}">
-									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="9697.6"/>
-										<Property Name="FadeInDuration" Type="Real64" Value="6.67059088937093"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="11.7975739696313"/>
-										<Property Name="LoopBegin" Type="Real64" Value="12.2937336225597"/>
-										<Property Name="LoopEnd" Type="Real64" Value="58.2711947939262"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="76.2432"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="293619390"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed" ID="{2ADDE332-B510-4E62-8DA1-7922A6F92A89}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</ActorMixer>
 				<ActorMixer Name="AMB_Emitters" ID="{86D471BA-BC16-451D-B000-3F324B278937}" ShortID="84804490">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
@@ -338,13 +258,6 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="AMB_Rooms" ID="{5DBCCFA9-63F7-4FB0-97CC-64EC2152779D}" ShortID="806116999">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-96</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -356,6 +269,7 @@
 					<ChildrenList>
 						<ActorMixer Name="AMB_Highrise" ID="{B1AA0A72-4A6A-4850-9D41-3DAD3AFDE1F1}" ShortID="1011135215">
 							<PropertyList>
+								<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
 								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
@@ -367,41 +281,10 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 								</Reference>
 								<Reference Name="ReflectionsAuxSend">
-									<ObjectRef Name="Atrium_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+									<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="AMB_Highrise_Atrium_LP" ID="{6AFBDECA-3AD0-4676-92B0-33AF1CB85521}" ShortID="831326113">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="ATN_UnrealHolograph" ID="{044D3425-A485-4809-96BA-ED930F9C1310}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<SourcePlugin Name="Tone Generator" ID="{3FE8C878-90B7-4379-8206-D23148C8D6D4}" ShortID="185023353" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
-											<PropertyList>
-												<Property Name="FixDur" Type="Real32" Value="20"/>
-												<Property Name="StartFreq" Type="Real32" Value="100"/>
-												<Property Name="WaveGain" Type="Real32" Value="-20"/>
-												<Property Name="WaveType" Type="int32" Value="1"/>
-											</PropertyList>
-											<Language>SFX</Language>
-										</SourcePlugin>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Tone Generator" ID="{3FE8C878-90B7-4379-8206-D23148C8D6D4}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="AMB_Highrise_Room_LP" ID="{C985A30E-FDD4-457A-A79F-78619E2D34D0}" ShortID="186338023">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -433,9 +316,77 @@
 										<ActiveSource Name="Tone Generator" ID="{2F742312-C8FE-4793-953E-F073964409E7}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="AMB_Highrise_Atrium_LP" ID="{C20194AC-F8E3-4210-BD43-0722C1C1BE02}" ShortID="813663190">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed" ID="{2ADDE332-B510-4E62-8DA1-7922A6F92A89}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="9697.6"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="6.67059088937093"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="11.7975739696313"/>
+												<Property Name="LoopBegin" Type="Real64" Value="12.2937336225597"/>
+												<Property Name="LoopEnd" Type="Real64" Value="58.2711947939262"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="76.2432"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="293619390"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed" ID="{2ADDE332-B510-4E62-8DA1-7922A6F92A89}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_Wind_Gust_OS" ID="{8408FD5C-3EE0-4C6B-8168-AB37779B996C}" ShortID="21379039">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATN_PhoneBox" ID="{4296B408-0CD1-463A-A8F4-B6EC4597E3EC}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Tone Generator" ID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" ShortID="1035667954" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+											<PropertyList>
+												<Property Name="FixDur" Type="Real32" Value="10"/>
+												<Property Name="StartFreq" Type="Real32" Value="715"/>
+												<Property Name="WaveGain" Type="Real32" Value="-20"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Tone Generator" ID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
-						<ActorMixer Name="AMB_Sanctuary" ID="{EA249DF0-EE7B-472E-842E-4735B45B74FB}" ShortID="526309963">
+						<ActorMixer Name="AMB_Sanctuary" ID="{E93B694C-F91A-4E88-8959-7953E8646B48}" ShortID="854632588">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>

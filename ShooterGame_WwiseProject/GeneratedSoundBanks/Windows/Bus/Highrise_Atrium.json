@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3466276443",
+    "Type": "Bus",
+    "GUID": "{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}",
+    "Language": "SFX",
+    "Hash": "{5EC2256B-ED34-454D-6D3B-9781A056417C}",
+    "ObjectPath": "Highrise_Atrium",
+    "ShortName": "Highrise_Atrium",
+    "Path": "Bus/Highrise_Atrium.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "48620415",
+       "Name": "Have_U_Ever_Been_Outside",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Exteriors\\Have_U_Ever_Been_Outside",
+       "GUID": "{FE29AE8D-FD86-4652-A95D-68D32F5760EC}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "3466276443",
+      "Name": "Highrise_Atrium",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_Atrium",
+      "GUID": "{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "48620415"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{B80C78B3-C3FA-8E2B-CFF2-450B7963F65F}"
+ }
+}

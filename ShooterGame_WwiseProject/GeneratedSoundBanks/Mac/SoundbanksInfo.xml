@@ -9,21 +9,25 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{D5093C8A-D940-E3C2-A543-53592F29043D}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{BD7AA8DA-6542-96F6-EFD6-A36FDE6C1187}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
+			<Media>
+				<File Id="293619390" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed.wav</ShortName>
+					<CachePath>SFX/WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed_51D207A8.wem</CachePath>
+				</File>
+			</Media>
 			<Plugins>
 				<Custom>
 					<Plugin Id="77241653" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_StreetLamp\AMB_StreetLamp_LP\Tone Generator" GUID="{AB85DFF6-17D3-4C4E-8F46-9B4495EF83EF}" LibName="Wwise Tone Generator" LibId="6684674"/>
-					<Plugin Id="155127469" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Winds\AMB_Wind_Bed_LP\Tone Generator" GUID="{15D380C5-6AC7-4E6F-92CF-A703CDBEC0AD}" LibName="Wwise Tone Generator" LibId="6684674"/>
-					<Plugin Id="185023353" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Highrise_Atrium_LP\Tone Generator" GUID="{3FE8C878-90B7-4379-8206-D23148C8D6D4}" LibName="Wwise Tone Generator" LibId="6684674"/>
 					<Plugin Id="272314916" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_UnrealSigns\AMB_UnrealSigns_LP\Tone Generator" GUID="{D8C37E7D-5B4D-4F84-835A-0F99639CD775}" LibName="Wwise Tone Generator" LibId="6684674"/>
 					<Plugin Id="662823536" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Default Work Unit\Event Probe\Noise Pip\Tone Generator" GUID="{D709502B-A7EF-4821-AC15-3F25D3551059}" LibName="Wwise Tone Generator" LibId="6684674"/>
 					<Plugin Id="670518875" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Highrise_Room_LP\Tone Generator" GUID="{2F742312-C8FE-4793-953E-F073964409E7}" LibName="Wwise Tone Generator" LibId="6684674"/>
 					<Plugin Id="888333020" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_BarrierFence\AMB_BarrierFence_LP\Tone Generator" GUID="{3D1B64D9-A2EA-44DD-AE5F-14A3C4290D80}" LibName="Wwise Tone Generator" LibId="6684674"/>
 					<Plugin Id="950824542" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_PhoneBox\AMB_PhoneBox_LP\Tone Generator" GUID="{04BE263F-DD28-41C2-B99C-8FFE4BD5FB6C}" LibName="Wwise Tone Generator" LibId="6684674"/>
-					<Plugin Id="1035667954" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Winds\AMB_Wind_Gust_OS\Tone Generator" GUID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" LibName="Wwise Tone Generator" LibId="6684674"/>
+					<Plugin Id="1035667954" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Wind_Gust_OS\Tone Generator" GUID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" LibName="Wwise Tone Generator" LibId="6684674"/>
 					<Plugin Id="1041093470" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Default Work Unit\Event Probe\Sine Pip\Tone Generator" GUID="{0AD6A0A9-22FC-4FE9-B47C-29C90175D05E}" LibName="Wwise Tone Generator" LibId="6684674"/>
 				</Custom>
 			</Plugins>
@@ -35,14 +39,32 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="3989182605" Name="AMB_Highrise_Atrium_LP" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_LP" GUID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}" MaxAttenuation="20000" DurationType="OneShot" DurationMin="20" DurationMax="20">
+				<Event Id="1782404537" Name="AMB_Highrise_Atrium_Drones_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_Drones_OS" GUID="{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}" MaxAttenuation="700" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="185023353"/>
+							<PluginRef Id="1041093470"/>
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="3938849847" Name="AMB_Highrise_Atrium_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_OS" GUID="{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}" MaxAttenuation="700" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="1019282361" Name="AMB_Highrise_Atrium_Gust_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_Gust_OS" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="700" DurationType="OneShot" DurationMin="10" DurationMax="10">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="1035667954"/>
+						</Custom>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="3989182605" Name="AMB_Highrise_Atrium_LP" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_LP" GUID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}" DurationType="OneShot" DurationMin="76.2432" DurationMax="76.2432">
+					<MediaRefs>
+						<MediaRef Id="293619390"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2757392698" Name="AMB_Highrise_Room_Drones_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Room_Drones_OS" GUID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}" MaxAttenuation="700" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1041093470"/>
@@ -55,13 +77,9 @@
 							<PluginRef Id="670518875"/>
 						</Custom>
 					</PluginRefs>
-				</Event>
-				<Event Id="579451542" Name="AMB_Highrise_Room_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Room_OS" GUID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}" MaxAttenuation="700" DurationType="OneShot" DurationMin="1" DurationMax="1">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="1041093470"/>
-						</Custom>
-					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="3385126647" Name="AMB_HovercarTraffic_Passbys" ObjectPath="\Events\Ambience\Emitters\AMB_HovercarTraffic_Passbys" GUID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}" DurationType="OneShot" DurationMin="5" DurationMax="5">
 					<PluginRefs>
@@ -119,20 +137,35 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="1352684599" Name="AMB_Wind_All_Stop" ObjectPath="\Events\Ambience\Winds\Highrise\AMB_Wind_All_Stop" GUID="{9A9D67BE-050E-4625-84C0-CA2A508AC15D}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="50366077" Name="AMB_Wind_Atrium_Bed_LP_Start" ObjectPath="\Events\Ambience\Winds\Highrise\AMB_Wind_Atrium_Bed_LP_Start" GUID="{451D4E5B-8927-43A0-B087-ADAC45076303}" DurationType="OneShot" DurationMin="10" DurationMax="10">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="155127469"/>
-						</Custom>
-					</PluginRefs>
+				<Event Id="1534744560" Name="AMB_Wind_Atrium_Bed_LP" ObjectPath="\Events\Ambience\Winds\Highrise\AMB_Wind_Atrium_Bed_LP" GUID="{451D4E5B-8927-43A0-B087-ADAC45076303}" DurationType="OneShot" DurationMin="76.2432" DurationMax="76.2432">
+					<MediaRefs>
+						<MediaRef Id="293619390"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
-				<Event Id="3891222715" Name="AMB_Wind_Atrium_Gust_OS_Start" ObjectPath="\Events\Ambience\Winds\Highrise\AMB_Wind_Atrium_Gust_OS_Start" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="700" DurationType="OneShot" DurationMin="10" DurationMax="10">
+			</Events>
+		</SoundBank>
+		<SoundBank Id="165326850" Type="Event" GUID="{C06F853C-5C33-42EF-985F-5CF0E077DB55}" Language="SFX" Hash="{632BDFF4-32F1-8010-F3D2-532E47F8EF5A}">
+			<ObjectPath>AMB_Wind_Balcony_Gust_OS</ObjectPath>
+			<ShortName>AMB_Wind_Balcony_Gust_OS</ShortName>
+			<Path>Event/AMB_Wind_Balcony_Gust_OS.bnk</Path>
+			<Plugins>
+				<Custom>
+					<Plugin Id="1035667954" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Wind_Gust_OS\Tone Generator" GUID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" LibName="Wwise Tone Generator" LibId="6684674"/>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="165326850" Name="AMB_Wind_Balcony_Gust_OS" ObjectPath="\Events\Ambience\Winds\Highrise\AMB_Wind_Balcony_Gust_OS" GUID="{C06F853C-5C33-42EF-985F-5CF0E077DB55}" MaxAttenuation="700" DurationType="OneShot" DurationMin="10" DurationMax="10">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1035667954"/>
 						</Custom>
 					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
@@ -147,63 +180,6 @@
 				<Event Id="1318050460" Name="FOL_Land" ObjectPath="\Events\Foley\Players\FOL_Land" GUID="{9C0F3AE6-505C-4DC2-80DF-1A0F23DFE402}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="378132258" Name="FOL_Trashcan_Collision" ObjectPath="\Events\Foley\Props\FOL_Trashcan_Collision" GUID="{83AF3510-8046-4206-B4B6-E1A12D72AC55}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
-		</SoundBank>
-		<SoundBank Id="356517711" Type="Bus" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" Language="SFX" Hash="{422907A1-8C57-ABB4-F59C-0A6D1F01E768}">
-			<ObjectPath>Atrium_EarlyReflections</ObjectPath>
-			<ShortName>Atrium_EarlyReflections</ShortName>
-			<Path>Bus/Atrium_EarlyReflections.bnk</Path>
-			<Plugins>
-				<ShareSets>
-					<Plugin Id="2180422931" Name="One_Tap_Quarter_Second" ObjectPath="\Effects\Factory Effects\Delay\One_Tap_Quarter_Second" GUID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" LibName="Wwise Delay" LibId="6946819"/>
-				</ShareSets>
-			</Plugins>
-			<AuxBusses>
-				<AuxBus Id="356517711" Name="Atrium_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}">
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="2180422931"/>
-						</ShareSets>
-					</PluginRefs>
-				</AuxBus>
-			</AuxBusses>
-		</SoundBank>
-		<SoundBank Id="888529951" Type="Bus" GUID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}" Language="SFX" Hash="{F7CA7A9D-B6B2-A62C-AF01-6668BE9429FD}">
-			<ObjectPath>Atrium_PhoneRoom</ObjectPath>
-			<ShortName>Atrium_PhoneRoom</ShortName>
-			<Path>Bus/Atrium_PhoneRoom.bnk</Path>
-			<Plugins>
-				<ShareSets>
-					<Plugin Id="1159390747" Name="Room_Medium_Tiled" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Medium_Tiled" GUID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" LibName="Wwise RoomVerb" LibId="7733251"/>
-				</ShareSets>
-			</Plugins>
-			<AuxBusses>
-				<AuxBus Id="888529951" Name="Atrium_PhoneRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_PhoneRoom" GUID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}">
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="1159390747"/>
-						</ShareSets>
-					</PluginRefs>
-				</AuxBus>
-			</AuxBusses>
-		</SoundBank>
-		<SoundBank Id="1083576654" Type="Bus" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}" Language="SFX" Hash="{7B105621-2AB8-9D78-942F-8B0AD99EF36F}">
-			<ObjectPath>Atrium_SpawnRoom</ObjectPath>
-			<ShortName>Atrium_SpawnRoom</ShortName>
-			<Path>Bus/Atrium_SpawnRoom.bnk</Path>
-			<Plugins>
-				<ShareSets>
-					<Plugin Id="2995775460" Name="Room_Small" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Small" GUID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" LibName="Wwise RoomVerb" LibId="7733251"/>
-				</ShareSets>
-			</Plugins>
-			<AuxBusses>
-				<AuxBus Id="1083576654" Name="Atrium_SpawnRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_SpawnRoom" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}">
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="2995775460"/>
-						</ShareSets>
-					</PluginRefs>
-				</AuxBus>
-			</AuxBusses>
 		</SoundBank>
 		<SoundBank Id="1088520938" Type="User" GUID="{573044D3-F4B2-4E02-98DE-DB94AFF2E612}" Language="SFX" Hash="{4D496E02-C01C-9987-99AE-7E4E264C8659}">
 			<ObjectPath>\SoundBanks\Interface\Interface</ObjectPath>
@@ -221,7 +197,26 @@
 				<Event Id="3006080354" Name="UI_Toggle" ObjectPath="\Events\Interface\UI_Toggle" GUID="{797C0C31-AE30-4A12-9686-6408980D163E}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{1D8B3924-A984-64B2-F407-08C25451B0C2}">
+		<SoundBank Id="1257150314" Type="Bus" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}" Language="SFX" Hash="{0CE1FF86-534F-349A-C0A6-4D2011ACC1E9}">
+			<ObjectPath>Highrise_Spawn</ObjectPath>
+			<ShortName>Highrise_Spawn</ShortName>
+			<Path>Bus/Highrise_Spawn.bnk</Path>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2995775460" Name="Room_Small" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Small" GUID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
+			<AuxBusses>
+				<AuxBus Id="1257150314" Name="Highrise_Spawn" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Spawn" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2995775460"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{30091ABB-C7BD-0E8A-1D20-01C170774F75}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -261,31 +256,31 @@
 				<Bus Id="4227412775" Name="1P_2D" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\1P\1P_2D" GUID="{AF0E6324-CEEE-452E-AD41-ECD9C2383C55}"/>
 			</Busses>
 			<AuxBusses>
-				<AuxBus Id="356517711" Name="Atrium_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}">
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="2180422931"/>
-						</ShareSets>
-					</PluginRefs>
-				</AuxBus>
-				<AuxBus Id="888529951" Name="Atrium_PhoneRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_PhoneRoom" GUID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}">
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="1159390747"/>
-						</ShareSets>
-					</PluginRefs>
-				</AuxBus>
-				<AuxBus Id="1083576654" Name="Atrium_SpawnRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_SpawnRoom" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}">
+				<AuxBus Id="1257150314" Name="Highrise_Spawn" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Spawn" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}">
 					<PluginRefs>
 						<ShareSets>
 							<PluginRef Id="2995775460"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
-				<AuxBus Id="2760958213" Name="Atrium_Outdoors" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_Outdoors" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}">
+				<AuxBus Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2180422931"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3466276443" Name="Highrise_Atrium" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Atrium" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}">
 					<PluginRefs>
 						<ShareSets>
 							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3814800052" Name="Highrise_Room" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Room" GUID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1159390747"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
@@ -462,25 +457,6 @@
 				<Event Id="4165048480" Name="GL_Shoot_Fire_OS" ObjectPath="\Events\Weapons\Shoot\GL_Shoot_Fire_OS" GUID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2066715139" Type="Event" GUID="{C06F853C-5C33-42EF-985F-5CF0E077DB55}" Language="SFX" Hash="{942BAFAD-768E-E950-3D51-D01196825CEE}">
-			<ObjectPath>AMB_Wind_Balcony_Gust_OS_Start</ObjectPath>
-			<ShortName>AMB_Wind_Balcony_Gust_OS_Start</ShortName>
-			<Path>Event/AMB_Wind_Balcony_Gust_OS_Start.bnk</Path>
-			<Plugins>
-				<Custom>
-					<Plugin Id="1035667954" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Winds\AMB_Wind_Gust_OS\Tone Generator" GUID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" LibName="Wwise Tone Generator" LibId="6684674"/>
-				</Custom>
-			</Plugins>
-			<Events>
-				<Event Id="2066715139" Name="AMB_Wind_Balcony_Gust_OS_Start" ObjectPath="\Events\Ambience\Winds\Highrise\AMB_Wind_Balcony_Gust_OS_Start" GUID="{C06F853C-5C33-42EF-985F-5CF0E077DB55}" MaxAttenuation="700" DurationType="OneShot" DurationMin="10" DurationMax="10">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="1035667954"/>
-						</Custom>
-					</PluginRefs>
-				</Event>
-			</Events>
-		</SoundBank>
 		<SoundBank Id="2151963051" Type="User" GUID="{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}" Language="SFX" Hash="{7CAED8A1-2B85-8537-33D4-D92C5D17E8E4}">
 			<ObjectPath>\SoundBanks\Items\Items</ObjectPath>
 			<ShortName>Items</ShortName>
@@ -490,26 +466,7 @@
 				<Event Id="3787053379" Name="ITM_Health_Pickup" ObjectPath="\Events\Items\ITM_Health_Pickup" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2760958213" Type="Bus" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}" Language="SFX" Hash="{571D94A9-76B9-0F2F-5C95-AC078CA48041}">
-			<ObjectPath>Atrium_Outdoors</ObjectPath>
-			<ShortName>Atrium_Outdoors</ShortName>
-			<Path>Bus/Atrium_Outdoors.bnk</Path>
-			<Plugins>
-				<ShareSets>
-					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" ObjectPath="\Effects\Factory Effects\RoomVerb\Exteriors\Have_U_Ever_Been_Outside" GUID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" LibName="Wwise RoomVerb" LibId="7733251"/>
-				</ShareSets>
-			</Plugins>
-			<AuxBusses>
-				<AuxBus Id="2760958213" Name="Atrium_Outdoors" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_Outdoors" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}">
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="48620415"/>
-						</ShareSets>
-					</PluginRefs>
-				</AuxBus>
-			</AuxBusses>
-		</SoundBank>
-		<SoundBank Id="2762262784" Type="Event" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" Language="SFX" Hash="{CBE1FDD0-F1AB-6130-104D-6C6D305D87B2}">
+		<SoundBank Id="2762262784" Type="Event" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" Language="SFX" Hash="{07579F9C-9050-A769-3317-558B35F16E57}">
 			<ObjectPath>AMB_UnrealHolograph_LP</ObjectPath>
 			<ShortName>AMB_UnrealHolograph_LP</ShortName>
 			<Path>Event/AMB_UnrealHolograph_LP.bnk</Path>
@@ -557,11 +514,68 @@
 				<Event Id="1107702071" Name="STN_Respawn" ObjectPath="\Events\Stingers\STN_Respawn" GUID="{BBB29E50-6BB3-4588-B482-6A65A05E69A3}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="3348775760" Type="Bus" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" Language="SFX" Hash="{CF541A90-3EF4-0066-ED1F-4473442B13C8}">
+			<ObjectPath>Highrise_EarlyReflections</ObjectPath>
+			<ShortName>Highrise_EarlyReflections</ShortName>
+			<Path>Bus/Highrise_EarlyReflections.bnk</Path>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2180422931" Name="One_Tap_Quarter_Second" ObjectPath="\Effects\Factory Effects\Delay\One_Tap_Quarter_Second" GUID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" LibName="Wwise Delay" LibId="6946819"/>
+				</ShareSets>
+			</Plugins>
+			<AuxBusses>
+				<AuxBus Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2180422931"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
+		<SoundBank Id="3466276443" Type="Bus" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}" Language="SFX" Hash="{5EC2256B-ED34-454D-6D3B-9781A056417C}">
+			<ObjectPath>Highrise_Atrium</ObjectPath>
+			<ShortName>Highrise_Atrium</ShortName>
+			<Path>Bus/Highrise_Atrium.bnk</Path>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" ObjectPath="\Effects\Factory Effects\RoomVerb\Exteriors\Have_U_Ever_Been_Outside" GUID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
+			<AuxBusses>
+				<AuxBus Id="3466276443" Name="Highrise_Atrium" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Atrium" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
+		<SoundBank Id="3814800052" Type="Bus" GUID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}" Language="SFX" Hash="{582FB5C3-89CE-6106-6C31-06F5D2350C1E}">
+			<ObjectPath>Highrise_Room</ObjectPath>
+			<ShortName>Highrise_Room</ShortName>
+			<Path>Bus/Highrise_Room.bnk</Path>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="1159390747" Name="Room_Medium_Tiled" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Medium_Tiled" GUID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
+			<AuxBusses>
+				<AuxBus Id="3814800052" Name="Highrise_Room" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Room" GUID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1159390747"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
 		<SoundBank Id="3930136735" Type="User" GUID="{7A85834B-145E-4D66-B5E4-6F0A84F44414}" Language="SFX" Hash="{047A71A6-BDF7-B6EE-5A5B-D6BD4AF8B3C2}">
 			<ObjectPath>\SoundBanks\Dialogue\Dialogue</ObjectPath>
 			<ShortName>Dialogue</ShortName>
 			<Path>Dialogue.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{01D70C32-2DE4-5ADD-236F-8B36CC02A182}</FileHash>
+	<FileHash>{53CE986C-590B-3649-82D3-CA0284059059}</FileHash>
 </SoundBanksInfo>

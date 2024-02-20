@@ -10,10 +10,20 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{D5093C8A-D940-E3C2-A543-53592F29043D}",
+    "Hash": "{BD7AA8DA-6542-96F6-EFD6-A36FDE6C1187}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
+    "Media": [
+     {
+      "Id": "293619390",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed.wav",
+      "CachePath": "SFX/WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed_51D207A8.wem"
+     }
+    ],
     "Plugins": {
      "Custom": [
       {
@@ -21,22 +31,6 @@
        "Name": "Tone Generator",
        "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Emitters\\AMB_StreetLamp\\AMB_StreetLamp_LP\\Tone Generator",
        "GUID": "{AB85DFF6-17D3-4C4E-8F46-9B4495EF83EF}",
-       "LibName": "Wwise Tone Generator",
-       "LibId": "6684674"
-      },
-      {
-       "Id": "155127469",
-       "Name": "Tone Generator",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Winds\\AMB_Wind_Bed_LP\\Tone Generator",
-       "GUID": "{15D380C5-6AC7-4E6F-92CF-A703CDBEC0AD}",
-       "LibName": "Wwise Tone Generator",
-       "LibId": "6684674"
-      },
-      {
-       "Id": "185023353",
-       "Name": "Tone Generator",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Rooms\\AMB_Highrise\\AMB_Highrise_Atrium_LP\\Tone Generator",
-       "GUID": "{3FE8C878-90B7-4379-8206-D23148C8D6D4}",
        "LibName": "Wwise Tone Generator",
        "LibId": "6684674"
       },
@@ -83,7 +77,7 @@
       {
        "Id": "1035667954",
        "Name": "Tone Generator",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Winds\\AMB_Wind_Gust_OS\\Tone Generator",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Rooms\\AMB_Highrise\\AMB_Wind_Gust_OS\\Tone Generator",
        "GUID": "{8436C310-A71C-4829-BA84-8AF5046D81A8}",
        "LibName": "Wwise Tone Generator",
        "LibId": "6684674"
@@ -117,27 +111,74 @@
       }
      },
      {
-      "Id": "3989182605",
-      "Name": "AMB_Highrise_Atrium_LP",
-      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\AMB_Highrise_Atrium_LP",
-      "GUID": "{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}",
-      "MaxAttenuation": "20000",
+      "Id": "1782404537",
+      "Name": "AMB_Highrise_Atrium_Drones_OS",
+      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\AMB_Highrise_Atrium_Drones_OS",
+      "GUID": "{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}",
+      "MaxAttenuation": "700",
       "DurationType": "OneShot",
-      "DurationMin": "20",
-      "DurationMax": "20",
+      "DurationMin": "1",
+      "DurationMax": "1",
       "PluginRefs": {
        "Custom": [
         {
-         "Id": "185023353"
+         "Id": "1041093470"
         }
        ]
       }
      },
      {
-      "Id": "3938849847",
-      "Name": "AMB_Highrise_Atrium_OS",
-      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\AMB_Highrise_Atrium_OS",
-      "GUID": "{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}",
+      "Id": "1019282361",
+      "Name": "AMB_Highrise_Atrium_Gust_OS",
+      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\AMB_Highrise_Atrium_Gust_OS",
+      "GUID": "{B1473C73-10B0-46BB-AA72-8ABA06D25E40}",
+      "MaxAttenuation": "700",
+      "DurationType": "OneShot",
+      "DurationMin": "10",
+      "DurationMax": "10",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "1035667954"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
+     },
+     {
+      "Id": "3989182605",
+      "Name": "AMB_Highrise_Atrium_LP",
+      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\AMB_Highrise_Atrium_LP",
+      "GUID": "{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}",
+      "DurationType": "OneShot",
+      "DurationMin": "76.2432",
+      "DurationMax": "76.2432",
+      "MediaRefs": [
+       {
+        "Id": "293619390"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
+     },
+     {
+      "Id": "2757392698",
+      "Name": "AMB_Highrise_Room_Drones_OS",
+      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\AMB_Highrise_Room_Drones_OS",
+      "GUID": "{4E65C91A-3866-4E84-B034-94A7E371ECB7}",
       "MaxAttenuation": "700",
       "DurationType": "OneShot",
       "DurationMin": "1",
@@ -165,24 +206,15 @@
          "Id": "670518875"
         }
        ]
-      }
-     },
-     {
-      "Id": "579451542",
-      "Name": "AMB_Highrise_Room_OS",
-      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\AMB_Highrise_Room_OS",
-      "GUID": "{4E65C91A-3866-4E84-B034-94A7E371ECB7}",
-      "MaxAttenuation": "700",
-      "DurationType": "OneShot",
-      "DurationMin": "1",
-      "DurationMax": "1",
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "1041093470"
-        }
-       ]
-      }
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
      },
      {
       "Id": "3385126647",
@@ -318,51 +350,30 @@
       }
      },
      {
-      "Id": "1352684599",
-      "Name": "AMB_Wind_All_Stop",
-      "ObjectPath": "\\Events\\Ambience\\Winds\\Highrise\\AMB_Wind_All_Stop",
-      "GUID": "{9A9D67BE-050E-4625-84C0-CA2A508AC15D}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
-      "Id": "50366077",
-      "Name": "AMB_Wind_Atrium_Bed_LP_Start",
-      "ObjectPath": "\\Events\\Ambience\\Winds\\Highrise\\AMB_Wind_Atrium_Bed_LP_Start",
+      "Id": "1534744560",
+      "Name": "AMB_Wind_Atrium_Bed_LP",
+      "ObjectPath": "\\Events\\Ambience\\Winds\\Highrise\\AMB_Wind_Atrium_Bed_LP",
       "GUID": "{451D4E5B-8927-43A0-B087-ADAC45076303}",
       "DurationType": "OneShot",
-      "DurationMin": "10",
-      "DurationMax": "10",
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "155127469"
-        }
-       ]
-      }
-     },
-     {
-      "Id": "3891222715",
-      "Name": "AMB_Wind_Atrium_Gust_OS_Start",
-      "ObjectPath": "\\Events\\Ambience\\Winds\\Highrise\\AMB_Wind_Atrium_Gust_OS_Start",
-      "GUID": "{B1473C73-10B0-46BB-AA72-8ABA06D25E40}",
-      "MaxAttenuation": "700",
-      "DurationType": "OneShot",
-      "DurationMin": "10",
-      "DurationMax": "10",
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "1035667954"
-        }
-       ]
-      }
+      "DurationMin": "76.2432",
+      "DurationMax": "76.2432",
+      "MediaRefs": [
+       {
+        "Id": "293619390"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{444461AA-3DB9-4B82-8A11-E4B87FEAF808}"
+  "FileHash": "{0F83FA19-2D05-4909-D3E0-20BD99384857}"
  }
 }

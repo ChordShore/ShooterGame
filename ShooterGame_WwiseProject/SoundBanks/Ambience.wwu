@@ -13,11 +13,10 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ObjectInclusionList>
-						<ObjectRef Name="AMB_Wind_Atrium_Bed_LP_Start" ID="{451D4E5B-8927-43A0-B087-ADAC45076303}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AMB_Wind_Atrium_Bed_LP" ID="{451D4E5B-8927-43A0-B087-ADAC45076303}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_Sanctuary_Interior_OS" ID="{F74B57D9-49B1-4424-8D25-E7555C92DD26}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_UnrealHolograph_FadeIn" ID="{0CA6B7EC-BFB1-453C-A0AD-7B7626EF8FB5}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="AMB_Wind_All_Stop" ID="{9A9D67BE-050E-4625-84C0-CA2A508AC15D}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="AMB_Wind_Atrium_Gust_OS_Start" ID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AMB_Highrise_Atrium_Gust_OS" ID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_UnrealHolograph_FadeOut" ID="{65B7B589-76CC-48C2-8C87-74F03B903131}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_Highrise_Atrium_LP" ID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_UnrealSign_LP" ID="{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
@@ -26,8 +25,8 @@
 						<ObjectRef Name="AMB_HovercarTraffic_Passbys" ID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_Sanctuary_Interior_LP" ID="{E0C0B0EC-54DC-4DDD-A80E-89DAB367CD0D}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_StreetLamp_LP" ID="{82B95D5C-4BE9-4DFC-9A31-59E8AEF7E2FC}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="AMB_Highrise_Room_OS" ID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="AMB_Highrise_Atrium_OS" ID="{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AMB_Highrise_Room_Drones_OS" ID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AMB_Highrise_Atrium_Drones_OS" ID="{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_PhoneBox_LP" ID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "1257150314",
+    "Type": "Bus",
+    "GUID": "{55F14D17-2EFA-4F39-8772-765885B7CB75}",
+    "Language": "SFX",
+    "Hash": "{0CE1FF86-534F-349A-C0A6-4D2011ACC1E9}",
+    "ObjectPath": "Highrise_Spawn",
+    "ShortName": "Highrise_Spawn",
+    "Path": "Bus/Highrise_Spawn.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2995775460",
+       "Name": "Room_Small",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Small",
+       "GUID": "{577F1466-A63B-47F7-98BD-C56E433F8B5D}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "1257150314",
+      "Name": "Highrise_Spawn",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_Spawn",
+      "GUID": "{55F14D17-2EFA-4F39-8772-765885B7CB75}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2995775460"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{539315F7-307F-D924-DD9C-E66A2678755C}"
+ }
+}

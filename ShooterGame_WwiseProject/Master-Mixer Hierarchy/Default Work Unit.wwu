@@ -86,28 +86,28 @@
 									<ChildrenList>
 										<Bus Name="Highrise" ID="{596C5B51-663F-4CD9-9F06-6A282DAF1573}">
 											<ChildrenList>
-												<AuxBus Name="Atrium_Outdoors" ID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}">
+												<AuxBus Name="Highrise_Atrium" ID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}">
 													<ReferenceList>
 														<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 															<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 														</Reference>
 													</ReferenceList>
 												</AuxBus>
-												<AuxBus Name="Atrium_SpawnRoom" ID="{55F14D17-2EFA-4F39-8772-765885B7CB75}">
+												<AuxBus Name="Highrise_Spawn" ID="{55F14D17-2EFA-4F39-8772-765885B7CB75}">
 													<ReferenceList>
 														<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 															<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 														</Reference>
 													</ReferenceList>
 												</AuxBus>
-												<AuxBus Name="Atrium_PhoneRoom" ID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}">
+												<AuxBus Name="Highrise_Room" ID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}">
 													<ReferenceList>
 														<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 															<ObjectRef Name="Room_Medium_Tiled" ID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 														</Reference>
 													</ReferenceList>
 												</AuxBus>
-												<AuxBus Name="Atrium_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}">
+												<AuxBus Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}">
 													<ReferenceList>
 														<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 															<ObjectRef Name="One_Tap_Quarter_Second" ID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>

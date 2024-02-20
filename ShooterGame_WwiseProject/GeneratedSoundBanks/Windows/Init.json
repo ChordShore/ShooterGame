@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{3AC6EB13-CE83-8A9C-820C-A70FBD99344E}",
+    "Hash": "{EF6E1088-08B1-947B-8B5A-F537E3385F04}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -198,35 +198,9 @@
     ],
     "AuxBusses": [
      {
-      "Id": "356517711",
-      "Name": "Atrium_EarlyReflections",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Atrium_EarlyReflections",
-      "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}",
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "2180422931"
-        }
-       ]
-      }
-     },
-     {
-      "Id": "888529951",
-      "Name": "Atrium_PhoneRoom",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Atrium_PhoneRoom",
-      "GUID": "{37B304F5-72C5-4988-84FA-0475BEFB7C26}",
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "1159390747"
-        }
-       ]
-      }
-     },
-     {
-      "Id": "1083576654",
-      "Name": "Atrium_SpawnRoom",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Atrium_SpawnRoom",
+      "Id": "1257150314",
+      "Name": "Highrise_Spawn",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_Spawn",
       "GUID": "{55F14D17-2EFA-4F39-8772-765885B7CB75}",
       "PluginRefs": {
        "ShareSets": [
@@ -237,14 +211,40 @@
       }
      },
      {
-      "Id": "2760958213",
-      "Name": "Atrium_Outdoors",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Atrium_Outdoors",
+      "Id": "3348775760",
+      "Name": "Highrise_EarlyReflections",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+      "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2180422931"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3466276443",
+      "Name": "Highrise_Atrium",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_Atrium",
       "GUID": "{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}",
       "PluginRefs": {
        "ShareSets": [
         {
          "Id": "48620415"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3814800052",
+      "Name": "Highrise_Room",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_Room",
+      "GUID": "{37B304F5-72C5-4988-84FA-0475BEFB7C26}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1159390747"
         }
        ]
       }
@@ -778,6 +778,6 @@
     ]
    }
   ],
-  "FileHash": "{699F1854-36E6-E0F2-2EB0-35B1F7725017}"
+  "FileHash": "{7B7EA3FD-A515-49F2-7A65-98A1B65C2893}"
  }
 }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="1257150314" Type="Bus" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}" Language="SFX" Hash="{0CE1FF86-534F-349A-C0A6-4D2011ACC1E9}">
+			<ObjectPath>Highrise_Spawn</ObjectPath>
+			<ShortName>Highrise_Spawn</ShortName>
+			<Path>Bus/Highrise_Spawn.bnk</Path>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2995775460" Name="Room_Small" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Small" GUID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
+			<AuxBusses>
+				<AuxBus Id="1257150314" Name="Highrise_Spawn" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Spawn" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2995775460"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{97C38457-772E-088A-087A-0ABE8AD1305C}</FileHash>
+</SoundBanksInfo>

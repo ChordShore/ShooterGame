@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3814800052",
+    "Type": "Bus",
+    "GUID": "{37B304F5-72C5-4988-84FA-0475BEFB7C26}",
+    "Language": "SFX",
+    "Hash": "{582FB5C3-89CE-6106-6C31-06F5D2350C1E}",
+    "ObjectPath": "Highrise_Room",
+    "ShortName": "Highrise_Room",
+    "Path": "Bus/Highrise_Room.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "1159390747",
+       "Name": "Room_Medium_Tiled",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Medium_Tiled",
+       "GUID": "{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "3814800052",
+      "Name": "Highrise_Room",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_Room",
+      "GUID": "{37B304F5-72C5-4988-84FA-0475BEFB7C26}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1159390747"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{8C1EBF80-67DC-05ED-0109-0DCA74DC5D03}"
+ }
+}

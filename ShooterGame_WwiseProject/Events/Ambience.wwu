@@ -13,16 +13,42 @@
 							<ChildrenList>
 								<Event Name="AMB_Highrise_Atrium_LP" ID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}">
 									<ChildrenList>
-										<Action Name="" ID="{EADCF19B-4611-4760-96C7-05D01B932A54}" ShortID="503205910">
+										<Action Name="" ID="{4ED6A091-B5FE-4BD2-83F4-FCD61C95E072}" ShortID="307665764">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="AMB_Highrise_Atrium_LP" ID="{6AFBDECA-3AD0-4676-92B0-33AF1CB85521}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+													<ObjectRef Name="AMB_Highrise_Atrium_LP" ID="{C20194AC-F8E3-4210-BD43-0722C1C1BE02}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{0A53352C-FC14-4C16-990F-C782283DCB85}" ShortID="985540910">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Highrise_Room_LP" ID="{C985A30E-FDD4-457A-A79F-78619E2D34D0}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{EADCF19B-4611-4760-96C7-05D01B932A54}" ShortID="503205910">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Highrise_Atrium_LP" ID="{C20194AC-F8E3-4210-BD43-0722C1C1BE02}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="AMB_Highrise_Atrium_OS" ID="{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}">
+								<Event Name="AMB_Highrise_Atrium_Drones_OS" ID="{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}">
 									<ChildrenList>
 										<Action Name="" ID="{77C1202D-2035-47F9-8C87-7DF7F7B55136}" ShortID="426616805">
 											<ReferenceList>
@@ -35,7 +61,33 @@
 								</Event>
 								<Event Name="AMB_Highrise_Room_LP" ID="{3F5A1E50-6729-4C3C-9937-D8C443065D63}">
 									<ChildrenList>
+										<Action Name="" ID="{AAC9176E-191F-4EA5-BE5E-936162E7FC5E}" ShortID="698135779">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Highrise_Room_LP" ID="{C985A30E-FDD4-457A-A79F-78619E2D34D0}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{2E89267A-CE8A-4298-AB2B-CEC94EED9D2E}" ShortID="1048761604">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Highrise_Atrium_LP" ID="{C20194AC-F8E3-4210-BD43-0722C1C1BE02}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 										<Action Name="" ID="{A0CC8C29-ADA2-4127-894B-7AB8B4EBD684}" ShortID="471129952">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="AMB_Highrise_Room_LP" ID="{C985A30E-FDD4-457A-A79F-78619E2D34D0}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
@@ -44,12 +96,23 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="AMB_Highrise_Room_OS" ID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}">
+								<Event Name="AMB_Highrise_Room_Drones_OS" ID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}">
 									<ChildrenList>
 										<Action Name="" ID="{1667DF98-4E71-4445-933E-6F8DCD1E5637}" ShortID="1024250975">
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Sine Pip" ID="{AF6D3756-12D4-4384-8D92-157758C323FB}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="AMB_Highrise_Atrium_Gust_OS" ID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}">
+									<ChildrenList>
+										<Action Name="" ID="{8F680334-819F-4BED-B222-8282CB071A9A}" ShortID="1036611982">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Wind_Gust_OS" ID="{8408FD5C-3EE0-4C6B-8168-AB37779B996C}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -191,53 +254,29 @@
 					<ChildrenList>
 						<Folder Name="Highrise" ID="{8D08F1D4-A955-4161-8AA8-884F45A33E09}" ShortID="1025002644">
 							<ChildrenList>
-								<Event Name="AMB_Wind_All_Stop" ID="{9A9D67BE-050E-4625-84C0-CA2A508AC15D}">
-									<ChildrenList>
-										<Action Name="" ID="{15EAE1AC-5AE2-4516-AFB2-BFAA1743BBAE}" ShortID="568613120">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="AMB_Wind_Gust_OS" ID="{8408FD5C-3EE0-4C6B-8168-AB37779B996C}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{77091783-4F0D-44AC-BA92-C332D544759C}" ShortID="434940947">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="AMB_Wind_Bed_LP" ID="{C20194AC-F8E3-4210-BD43-0722C1C1BE02}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="AMB_Wind_Atrium_Gust_OS_Start" ID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}">
-									<ChildrenList>
-										<Action Name="" ID="{8F680334-819F-4BED-B222-8282CB071A9A}" ShortID="1036611982">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="AMB_Wind_Gust_OS" ID="{8408FD5C-3EE0-4C6B-8168-AB37779B996C}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="AMB_Wind_Atrium_Bed_LP_Start" ID="{451D4E5B-8927-43A0-B087-ADAC45076303}">
+								<Event Name="AMB_Wind_Atrium_Bed_LP" ID="{451D4E5B-8927-43A0-B087-ADAC45076303}">
 									<ChildrenList>
 										<Action Name="" ID="{E7FB1D5F-6C95-465D-85A9-E3BAF38C5D7D}" ShortID="513254247">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="AMB_Wind_Bed_LP" ID="{C20194AC-F8E3-4210-BD43-0722C1C1BE02}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+													<ObjectRef Name="AMB_Highrise_Atrium_LP" ID="{C20194AC-F8E3-4210-BD43-0722C1C1BE02}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{DCFC9EB7-B4B8-4EC6-9416-7496D668CC71}" ShortID="289218840">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Highrise_Atrium_" ID="{6AFBDECA-3AD0-4676-92B0-33AF1CB85521}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="AMB_Wind_Balcony_Gust_OS_Start" ID="{C06F853C-5C33-42EF-985F-5CF0E077DB55}">
+								<Event Name="AMB_Wind_Balcony_Gust_OS" ID="{C06F853C-5C33-42EF-985F-5CF0E077DB55}">
 									<ChildrenList>
 										<Action Name="" ID="{2FDBB527-E867-4117-B5A3-CBE532913AC2}" ShortID="482815621">
 											<ReferenceList>

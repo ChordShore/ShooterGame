@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3814800052" Type="Bus" GUID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}" Language="SFX" Hash="{582FB5C3-89CE-6106-6C31-06F5D2350C1E}">
+			<ObjectPath>Highrise_Room</ObjectPath>
+			<ShortName>Highrise_Room</ShortName>
+			<Path>Bus/Highrise_Room.bnk</Path>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="1159390747" Name="Room_Medium_Tiled" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Medium_Tiled" GUID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
+			<AuxBusses>
+				<AuxBus Id="3814800052" Name="Highrise_Room" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Room" GUID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1159390747"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{07C5A27A-2906-EEC7-C944-32F6FB469417}</FileHash>
+</SoundBanksInfo>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{3AC6EB13-CE83-8A9C-820C-A70FBD99344E}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{EF6E1088-08B1-947B-8B5A-F537E3385F04}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -41,31 +41,31 @@
 				<Bus Id="4227412775" Name="1P_2D" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\1P\1P_2D" GUID="{AF0E6324-CEEE-452E-AD41-ECD9C2383C55}"/>
 			</Busses>
 			<AuxBusses>
-				<AuxBus Id="356517711" Name="Atrium_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}">
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="2180422931"/>
-						</ShareSets>
-					</PluginRefs>
-				</AuxBus>
-				<AuxBus Id="888529951" Name="Atrium_PhoneRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_PhoneRoom" GUID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}">
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="1159390747"/>
-						</ShareSets>
-					</PluginRefs>
-				</AuxBus>
-				<AuxBus Id="1083576654" Name="Atrium_SpawnRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_SpawnRoom" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}">
+				<AuxBus Id="1257150314" Name="Highrise_Spawn" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Spawn" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}">
 					<PluginRefs>
 						<ShareSets>
 							<PluginRef Id="2995775460"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
-				<AuxBus Id="2760958213" Name="Atrium_Outdoors" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Atrium_Outdoors" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}">
+				<AuxBus Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2180422931"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3466276443" Name="Highrise_Atrium" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Atrium" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}">
 					<PluginRefs>
 						<ShareSets>
 							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3814800052" Name="Highrise_Room" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Room" GUID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1159390747"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
@@ -221,5 +221,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B41537C2-3AD7-EBFC-A626-27AB2A8ABACB}</FileHash>
+	<FileHash>{1E83D659-4968-4DAD-44CF-42D48E2CB8E2}</FileHash>
 </SoundBanksInfo>
