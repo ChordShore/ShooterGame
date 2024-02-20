@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{BD7AA8DA-6542-96F6-EFD6-A36FDE6C1187}",
+    "Hash": "{A662F561-E797-8063-029B-1AD26FC370E2}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -55,6 +55,14 @@
        "Name": "Tone Generator",
        "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Rooms\\AMB_Highrise\\AMB_Highrise_Room_LP\\Tone Generator",
        "GUID": "{2F742312-C8FE-4793-953E-F073964409E7}",
+       "LibName": "Wwise Tone Generator",
+       "LibId": "6684674"
+      },
+      {
+       "Id": "828416877",
+       "Name": "Tone Generator",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Rooms\\AMB_Highrise\\AMB_Highrise_Spawn_LP\\Tone Generator",
+       "GUID": "{EC578A08-42E9-4CF5-9C2C-6D5B7CD7A48A}",
        "LibName": "Wwise Tone Generator",
        "LibId": "6684674"
       },
@@ -204,6 +212,31 @@
        "Custom": [
         {
          "Id": "670518875"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
+     },
+     {
+      "Id": "676002056",
+      "Name": "AMB_Highrise_Spawn_LP",
+      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\AMB_Highrise_Spawn_LP",
+      "GUID": "{1C364EAC-CAE6-4664-ACA8-6E418F9C7859}",
+      "MaxAttenuation": "20000",
+      "DurationType": "OneShot",
+      "DurationMin": "20",
+      "DurationMax": "20",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "828416877"
         }
        ]
       },
@@ -374,6 +407,6 @@
     ]
    }
   ],
-  "FileHash": "{0F83FA19-2D05-4909-D3E0-20BD99384857}"
+  "FileHash": "{94BFC2A8-7144-42C3-246E-CBC7A7E7C954}"
  }
 }

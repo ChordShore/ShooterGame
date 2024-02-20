@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{BD7AA8DA-6542-96F6-EFD6-A36FDE6C1187}",
+    "Hash": "{A662F561-E797-8063-029B-1AD26FC370E2}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -63,6 +63,14 @@
        "Name": "Tone Generator",
        "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Rooms\\AMB_Highrise\\AMB_Highrise_Room_LP\\Tone Generator",
        "GUID": "{2F742312-C8FE-4793-953E-F073964409E7}",
+       "LibName": "Wwise Tone Generator",
+       "LibId": "6684674"
+      },
+      {
+       "Id": "828416877",
+       "Name": "Tone Generator",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Rooms\\AMB_Highrise\\AMB_Highrise_Spawn_LP\\Tone Generator",
+       "GUID": "{EC578A08-42E9-4CF5-9C2C-6D5B7CD7A48A}",
        "LibName": "Wwise Tone Generator",
        "LibId": "6684674"
       },
@@ -212,6 +220,31 @@
        "Custom": [
         {
          "Id": "670518875"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
+     },
+     {
+      "Id": "676002056",
+      "Name": "AMB_Highrise_Spawn_LP",
+      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\AMB_Highrise_Spawn_LP",
+      "GUID": "{1C364EAC-CAE6-4664-ACA8-6E418F9C7859}",
+      "MaxAttenuation": "20000",
+      "DurationType": "OneShot",
+      "DurationMin": "20",
+      "DurationMax": "20",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "828416877"
         }
        ]
       },
@@ -599,7 +632,7 @@
     "Type": "Bus",
     "GUID": "{55F14D17-2EFA-4F39-8772-765885B7CB75}",
     "Language": "SFX",
-    "Hash": "{0CE1FF86-534F-349A-C0A6-4D2011ACC1E9}",
+    "Hash": "{F459CB92-EA66-104A-B526-B7EE7F666764}",
     "ObjectPath": "Highrise_Spawn",
     "ShortName": "Highrise_Spawn",
     "Path": "Bus/Highrise_Spawn.bnk",
@@ -636,7 +669,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{EF6E1088-08B1-947B-8B5A-F537E3385F04}",
+    "Hash": "{23788A15-7DF2-11EB-E2C6-6E65BD19536F}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -1726,7 +1759,7 @@
     "Type": "Bus",
     "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}",
     "Language": "SFX",
-    "Hash": "{CF541A90-3EF4-0066-ED1F-4473442B13C8}",
+    "Hash": "{2BC4BC3E-B148-3614-DDDE-65547040EB91}",
     "ObjectPath": "Highrise_EarlyReflections",
     "ShortName": "Highrise_EarlyReflections",
     "Path": "Bus/Highrise_EarlyReflections.bnk",
@@ -1763,7 +1796,7 @@
     "Type": "Bus",
     "GUID": "{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}",
     "Language": "SFX",
-    "Hash": "{5EC2256B-ED34-454D-6D3B-9781A056417C}",
+    "Hash": "{A0052B69-BD68-EF44-27FB-7CA3D476E4E4}",
     "ObjectPath": "Highrise_Atrium",
     "ShortName": "Highrise_Atrium",
     "Path": "Bus/Highrise_Atrium.bnk",
@@ -1800,7 +1833,7 @@
     "Type": "Bus",
     "GUID": "{37B304F5-72C5-4988-84FA-0475BEFB7C26}",
     "Language": "SFX",
-    "Hash": "{582FB5C3-89CE-6106-6C31-06F5D2350C1E}",
+    "Hash": "{7E8452B5-8C39-7E3F-94D5-9CC9C6C77BB3}",
     "ObjectPath": "Highrise_Room",
     "ShortName": "Highrise_Room",
     "Path": "Bus/Highrise_Room.bnk",
@@ -1843,6 +1876,6 @@
     "Path": "Dialogue.bnk"
    }
   ],
-  "FileHash": "{47D8EFD2-9B7B-6128-DC09-DC7A0CC2982A}"
+  "FileHash": "{3CC1B5A1-4A0A-14CD-9272-7DEBEE9161A3}"
  }
 }
