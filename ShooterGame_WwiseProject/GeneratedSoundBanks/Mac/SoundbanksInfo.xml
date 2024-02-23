@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{A662F561-E797-8063-029B-1AD26FC370E2}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{3F2C4EA7-D0C3-7DDA-2EA4-0FFC4E7B038D}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -24,11 +24,11 @@
 					<Plugin Id="77241653" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_StreetLamp\AMB_StreetLamp_LP\Tone Generator" GUID="{AB85DFF6-17D3-4C4E-8F46-9B4495EF83EF}" LibName="Wwise Tone Generator" LibId="6684674"/>
 					<Plugin Id="272314916" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_UnrealSigns\AMB_UnrealSigns_LP\Tone Generator" GUID="{D8C37E7D-5B4D-4F84-835A-0F99639CD775}" LibName="Wwise Tone Generator" LibId="6684674"/>
 					<Plugin Id="662823536" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Default Work Unit\Event Probe\Noise Pip\Tone Generator" GUID="{D709502B-A7EF-4821-AC15-3F25D3551059}" LibName="Wwise Tone Generator" LibId="6684674"/>
-					<Plugin Id="670518875" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Highrise_Room_LP\Tone Generator" GUID="{2F742312-C8FE-4793-953E-F073964409E7}" LibName="Wwise Tone Generator" LibId="6684674"/>
-					<Plugin Id="828416877" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Highrise_Spawn_LP\Tone Generator" GUID="{EC578A08-42E9-4CF5-9C2C-6D5B7CD7A48A}" LibName="Wwise Tone Generator" LibId="6684674"/>
+					<Plugin Id="670518875" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Highrise_LP\AMB_Highrise_Room_LP\Tone Generator" GUID="{2F742312-C8FE-4793-953E-F073964409E7}" LibName="Wwise Tone Generator" LibId="6684674"/>
+					<Plugin Id="828416877" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Highrise_LP\AMB_Highrise_Spawn_LP\Tone Generator" GUID="{EC578A08-42E9-4CF5-9C2C-6D5B7CD7A48A}" LibName="Wwise Tone Generator" LibId="6684674"/>
 					<Plugin Id="888333020" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_BarrierFence\AMB_BarrierFence_LP\Tone Generator" GUID="{3D1B64D9-A2EA-44DD-AE5F-14A3C4290D80}" LibName="Wwise Tone Generator" LibId="6684674"/>
 					<Plugin Id="950824542" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_PhoneBox\AMB_PhoneBox_LP\Tone Generator" GUID="{04BE263F-DD28-41C2-B99C-8FFE4BD5FB6C}" LibName="Wwise Tone Generator" LibId="6684674"/>
-					<Plugin Id="1035667954" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Wind_Gust_OS\Tone Generator" GUID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" LibName="Wwise Tone Generator" LibId="6684674"/>
+					<Plugin Id="1035667954" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Highrise_OS\AMB_Wind_Gust_OS\Tone Generator" GUID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" LibName="Wwise Tone Generator" LibId="6684674"/>
 					<Plugin Id="1041093470" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Default Work Unit\Event Probe\Sine Pip\Tone Generator" GUID="{0AD6A0A9-22FC-4FE9-B47C-29C90175D05E}" LibName="Wwise Tone Generator" LibId="6684674"/>
 				</Custom>
 			</Plugins>
@@ -47,17 +47,14 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="1019282361" Name="AMB_Highrise_Atrium_Gust_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_Gust_OS" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="700" DurationType="OneShot" DurationMin="10" DurationMax="10">
+				<Event Id="1019282361" Name="AMB_Highrise_Atrium_Gust_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_Gust_OS" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" DurationType="OneShot" DurationMin="10" DurationMax="10">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1035667954"/>
 						</Custom>
 					</PluginRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
-					</AuxBusRefs>
 				</Event>
-				<Event Id="3989182605" Name="AMB_Highrise_Atrium_LP" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_LP" GUID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}" DurationType="OneShot" DurationMin="76.2432" DurationMax="76.2432">
+				<Event Id="3989182605" Name="AMB_Highrise_Atrium_LP" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_LP" GUID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}" MaxAttenuation="100" DurationType="OneShot" DurationMin="76.2432" DurationMax="76.2432">
 					<MediaRefs>
 						<MediaRef Id="293619390"/>
 					</MediaRefs>
@@ -72,7 +69,7 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="529118812" Name="AMB_Highrise_Room_LP" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Room_LP" GUID="{3F5A1E50-6729-4C3C-9937-D8C443065D63}" MaxAttenuation="20000" DurationType="OneShot" DurationMin="20" DurationMax="20">
+				<Event Id="529118812" Name="AMB_Highrise_Room_LP" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Room_LP" GUID="{3F5A1E50-6729-4C3C-9937-D8C443065D63}" MaxAttenuation="100" DurationType="OneShot" DurationMin="20" DurationMax="20">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="670518875"/>
@@ -82,7 +79,7 @@
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="676002056" Name="AMB_Highrise_Spawn_LP" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Spawn_LP" GUID="{1C364EAC-CAE6-4664-ACA8-6E418F9C7859}" MaxAttenuation="20000" DurationType="OneShot" DurationMin="20" DurationMax="20">
+				<Event Id="676002056" Name="AMB_Highrise_Spawn_LP" ObjectPath="\Events\Ambience\Rooms\Highrise\AMB_Highrise_Spawn_LP" GUID="{1C364EAC-CAE6-4664-ACA8-6E418F9C7859}" MaxAttenuation="100" DurationType="OneShot" DurationMin="20" DurationMax="20">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="828416877"/>
@@ -148,7 +145,7 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="1534744560" Name="AMB_Wind_Atrium_Bed_LP" ObjectPath="\Events\Ambience\Winds\Highrise\AMB_Wind_Atrium_Bed_LP" GUID="{451D4E5B-8927-43A0-B087-ADAC45076303}" DurationType="OneShot" DurationMin="76.2432" DurationMax="76.2432">
+				<Event Id="1534744560" Name="AMB_Wind_Atrium_Bed_LP" ObjectPath="\Events\Ambience\Winds\Highrise\AMB_Wind_Atrium_Bed_LP" GUID="{451D4E5B-8927-43A0-B087-ADAC45076303}" MaxAttenuation="100" DurationType="OneShot" DurationMin="76.2432" DurationMax="76.2432">
 					<MediaRefs>
 						<MediaRef Id="293619390"/>
 					</MediaRefs>
@@ -158,25 +155,22 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="165326850" Type="Event" GUID="{C06F853C-5C33-42EF-985F-5CF0E077DB55}" Language="SFX" Hash="{632BDFF4-32F1-8010-F3D2-532E47F8EF5A}">
+		<SoundBank Id="165326850" Type="Event" GUID="{C06F853C-5C33-42EF-985F-5CF0E077DB55}" Language="SFX" Hash="{8832D166-863F-B3C9-3D59-DFAB0392C252}">
 			<ObjectPath>AMB_Wind_Balcony_Gust_OS</ObjectPath>
 			<ShortName>AMB_Wind_Balcony_Gust_OS</ShortName>
 			<Path>Event/AMB_Wind_Balcony_Gust_OS.bnk</Path>
 			<Plugins>
 				<Custom>
-					<Plugin Id="1035667954" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Wind_Gust_OS\Tone Generator" GUID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" LibName="Wwise Tone Generator" LibId="6684674"/>
+					<Plugin Id="1035667954" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Highrise_OS\AMB_Wind_Gust_OS\Tone Generator" GUID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" LibName="Wwise Tone Generator" LibId="6684674"/>
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="165326850" Name="AMB_Wind_Balcony_Gust_OS" ObjectPath="\Events\Ambience\Winds\Highrise\AMB_Wind_Balcony_Gust_OS" GUID="{C06F853C-5C33-42EF-985F-5CF0E077DB55}" MaxAttenuation="700" DurationType="OneShot" DurationMin="10" DurationMax="10">
+				<Event Id="165326850" Name="AMB_Wind_Balcony_Gust_OS" ObjectPath="\Events\Ambience\Winds\Highrise\AMB_Wind_Balcony_Gust_OS" GUID="{C06F853C-5C33-42EF-985F-5CF0E077DB55}" DurationType="OneShot" DurationMin="10" DurationMax="10">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1035667954"/>
 						</Custom>
 					</PluginRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
-					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
@@ -588,5 +582,5 @@
 			<Path>Dialogue.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BEF94480-15E0-AE1C-6F25-632B8ED1F233}</FileHash>
+	<FileHash>{0F107098-E2CD-84E7-1D9D-AB7F3D097053}</FileHash>
 </SoundBanksInfo>

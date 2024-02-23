@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="165326850" Type="Event" GUID="{C06F853C-5C33-42EF-985F-5CF0E077DB55}" Language="SFX" Hash="{632BDFF4-32F1-8010-F3D2-532E47F8EF5A}">
+		<SoundBank Id="165326850" Type="Event" GUID="{C06F853C-5C33-42EF-985F-5CF0E077DB55}" Language="SFX" Hash="{8832D166-863F-B3C9-3D59-DFAB0392C252}">
 			<ObjectPath>AMB_Wind_Balcony_Gust_OS</ObjectPath>
 			<ShortName>AMB_Wind_Balcony_Gust_OS</ShortName>
 			<Path>Event/AMB_Wind_Balcony_Gust_OS.bnk</Path>
 			<Plugins>
 				<Custom>
-					<Plugin Id="1035667954" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Wind_Gust_OS\Tone Generator" GUID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" LibName="Wwise Tone Generator" LibId="6684674"/>
+					<Plugin Id="1035667954" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Highrise_OS\AMB_Wind_Gust_OS\Tone Generator" GUID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" LibName="Wwise Tone Generator" LibId="6684674"/>
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="165326850" Name="AMB_Wind_Balcony_Gust_OS" ObjectPath="\Events\Ambience\Winds\Highrise\AMB_Wind_Balcony_Gust_OS" GUID="{C06F853C-5C33-42EF-985F-5CF0E077DB55}" MaxAttenuation="700" DurationType="OneShot" DurationMin="10" DurationMax="10">
+				<Event Id="165326850" Name="AMB_Wind_Balcony_Gust_OS" ObjectPath="\Events\Ambience\Winds\Highrise\AMB_Wind_Balcony_Gust_OS" GUID="{C06F853C-5C33-42EF-985F-5CF0E077DB55}" DurationType="OneShot" DurationMin="10" DurationMax="10">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1035667954"/>
 						</Custom>
 					</PluginRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
-					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{52AC7EC8-DAEF-19B0-CFAA-D47BB38D24E8}</FileHash>
+	<FileHash>{E6478CD4-4EAB-1B49-1A06-40851F4FBE6E}</FileHash>
 </SoundBanksInfo>
