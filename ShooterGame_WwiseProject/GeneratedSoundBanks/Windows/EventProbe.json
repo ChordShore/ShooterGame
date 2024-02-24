@@ -10,12 +10,20 @@
     "Type": "User",
     "GUID": "{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}",
     "Language": "SFX",
-    "Hash": "{44699B25-F81A-56DB-E061-F0903AA7C3CB}",
+    "Hash": "{495B3093-8FE3-C166-DC67-1E16CBAEB69F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\EventProbe",
     "ShortName": "EventProbe",
     "Path": "EventProbe.bnk",
     "Plugins": {
      "Custom": [
+      {
+       "Id": "662823536",
+       "Name": "Tone Generator",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Event Probe\\Noise Pip\\Tone Generator",
+       "GUID": "{D709502B-A7EF-4821-AC15-3F25D3551059}",
+       "LibName": "Wwise Tone Generator",
+       "LibId": "6684674"
+      },
       {
        "Id": "1041093470",
        "Name": "Tone Generator",
@@ -49,14 +57,20 @@
       "Name": "Stop_Sine_Pip",
       "ObjectPath": "\\Events\\Default Work Unit\\Event Probe\\Stop_Sine_Pip",
       "GUID": "{312E45E1-62F2-40F8-9A00-7BB4DADF8D33}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "5",
+      "DurationMax": "5",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "662823536"
+        }
+       ]
+      }
      }
     ]
    }
   ],
-  "FileHash": "{1B339C00-85D8-FB8D-9CA8-15564EA4E0A8}"
+  "FileHash": "{A561DA7E-AE00-A91F-5D57-62712E9F47D5}"
  }
 }

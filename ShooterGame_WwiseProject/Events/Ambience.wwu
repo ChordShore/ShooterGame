@@ -11,12 +11,11 @@
 					<ChildrenList>
 						<Folder Name="Highrise" ID="{CD0CB659-0667-4F4C-8BC2-6288D2D53648}" ShortID="898712053">
 							<ChildrenList>
-								<Event Name="AMB_Highrise_Atrium_LP" ID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}">
+								<Event Name="AMB_Highrise_Atrium" ID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}">
 									<ChildrenList>
-										<Action Name="" ID="{4ED6A091-B5FE-4BD2-83F4-FCD61C95E072}" ShortID="307665764">
+										<Action Name="" ID="{42AE8C05-7965-4301-9B4D-E296688A1A51}" ShortID="542414162">
 											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="Scope" Type="int16" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -24,25 +23,15 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{0A53352C-FC14-4C16-990F-C782283DCB85}" ShortID="985540910">
+										<Action Name="" ID="{44C258AF-A911-46A0-9A86-C4B381F781A6}" ShortID="636057461">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
 												<Property Name="Scope" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="AMB_Highrise_Room_LP" ID="{C985A30E-FDD4-457A-A79F-78619E2D34D0}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{EADCF19B-4611-4760-96C7-05D01B932A54}" ShortID="503205910">
-											<PropertyList>
-												<Property Name="FadeTime" Type="Real64" Value="1.5"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="AMB_Highrise_Atrium_LP" ID="{C20194AC-F8E3-4210-BD43-0722C1C1BE02}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -59,12 +48,11 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="AMB_Highrise_Room_LP" ID="{3F5A1E50-6729-4C3C-9937-D8C443065D63}">
+								<Event Name="AMB_Highrise_Room" ID="{3F5A1E50-6729-4C3C-9937-D8C443065D63}">
 									<ChildrenList>
-										<Action Name="" ID="{AAC9176E-191F-4EA5-BE5E-936162E7FC5E}" ShortID="698135779">
+										<Action Name="" ID="{A0CC8C29-ADA2-4127-894B-7AB8B4EBD684}" ShortID="471129952">
 											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="Scope" Type="int16" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -72,25 +60,15 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{2E89267A-CE8A-4298-AB2B-CEC94EED9D2E}" ShortID="1048761604">
+										<Action Name="" ID="{A755A3B0-1E00-444A-AD4F-72A8FD8A5680}" ShortID="878348884">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
 												<Property Name="Scope" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="AMB_Highrise_Atrium_LP" ID="{C20194AC-F8E3-4210-BD43-0722C1C1BE02}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{A0CC8C29-ADA2-4127-894B-7AB8B4EBD684}" ShortID="471129952">
-											<PropertyList>
-												<Property Name="FadeTime" Type="Real64" Value="1.5"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="AMB_Highrise_Room_LP" ID="{C985A30E-FDD4-457A-A79F-78619E2D34D0}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -120,21 +98,9 @@
 								</Event>
 								<Event Name="AMB_Highrise_Spawn_LP" ID="{1C364EAC-CAE6-4664-ACA8-6E418F9C7859}">
 									<ChildrenList>
-										<Action Name="" ID="{A6E22484-46D6-4045-B87B-483967FA87EF}" ShortID="354145827">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="Scope" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="AMB_Highrise_Room_LP" ID="{C985A30E-FDD4-457A-A79F-78619E2D34D0}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 										<Action Name="" ID="{7C5B7349-0CCA-4210-A59C-31331C0312AC}" ShortID="323694256">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="FadeTime" Type="Real64" Value="1.5"/>
 												<Property Name="Scope" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -144,9 +110,6 @@
 											</ReferenceList>
 										</Action>
 										<Action Name="" ID="{CB5A4126-AA5F-4881-AC67-D1FB68F1F388}" ShortID="765146383">
-											<PropertyList>
-												<Property Name="FadeTime" Type="Real64" Value="1.5"/>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="AMB_Highrise_Spawn_LP" ID="{C0055459-A4FD-4983-816D-D9E165DDE3D1}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>

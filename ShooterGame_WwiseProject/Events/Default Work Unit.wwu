@@ -7,9 +7,20 @@
 					<ChildrenList>
 						<Event Name="Stop_Sine_Pip" ID="{312E45E1-62F2-40F8-9A00-7BB4DADF8D33}">
 							<ChildrenList>
+								<Action Name="" ID="{D7C4A596-E6F8-45D2-9621-D8CC850C5D83}" ShortID="157577110">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Noise Pip" ID="{A876FB26-65FA-4102-807C-4C838D794AA4}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{D8D53587-ED9E-4268-8001-C05892E355D3}" ShortID="577221915">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -22,9 +33,23 @@
 						<Event Name="Play_Sine_Pip" ID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}">
 							<ChildrenList>
 								<Action Name="" ID="{06D4DCBD-417D-49D6-A173-63C3737310A5}" ShortID="610868800">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Sine Pip" ID="{AF6D3756-12D4-4384-8D92-157758C323FB}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6DD70B8C-A7E8-421D-967C-6772459250CB}" ShortID="786767486">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Noise Pip" ID="{A876FB26-65FA-4102-807C-4C838D794AA4}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

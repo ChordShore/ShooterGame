@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{72935EEC-AE66-4EC6-93B8-CFA18216F97B}" SchemaVersion="110">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{72935EEC-AE66-4EC6-93B8-CFA18216F97B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{72935EEC-AE66-4EC6-93B8-CFA18216F97B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Room Tone Transitions" ID="{2E65A0AE-75D6-46B0-8800-794DF3FF1B7E}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="AMB_Highrise_Room" ID="{3F5A1E50-6729-4C3C-9937-D8C443065D63}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMB_Highrise_Atrium" ID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
