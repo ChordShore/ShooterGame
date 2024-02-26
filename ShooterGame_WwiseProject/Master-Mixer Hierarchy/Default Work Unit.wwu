@@ -12,76 +12,6 @@
 					<ChildrenList>
 						<Bus Name="Diegetic" ID="{0B750C85-EB1C-448A-9D15-8D1F0D4C6BD6}">
 							<ChildrenList>
-								<Bus Name="1P" ID="{C2425282-D625-4B90-ADDA-FC4971FE1BFB}">
-									<ChildrenList>
-										<Bus Name="1P_3D" ID="{C4A28A45-596E-4C18-AB77-BD9E3577DCC9}">
-											<ChildrenList>
-												<Bus Name="1P_Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}">
-													<PropertyList>
-														<Property Name="Color" Type="int16" Value="4"/>
-														<Property Name="OverrideColor" Type="bool" Value="True"/>
-													</PropertyList>
-												</Bus>
-											</ChildrenList>
-										</Bus>
-										<Bus Name="1P_2D" ID="{AF0E6324-CEEE-452E-AD41-ECD9C2383C55}">
-											<ChildrenList>
-												<Bus Name="1P_Dialogue" ID="{80C87677-6DFA-46DD-8E4C-337CF0B1357D}">
-													<PropertyList>
-														<Property Name="Color" Type="int16" Value="11"/>
-														<Property Name="OverrideColor" Type="bool" Value="True"/>
-													</PropertyList>
-												</Bus>
-												<Bus Name="1P_Foley" ID="{AFADED97-9376-47EE-8E61-63C3E2539C84}">
-													<PropertyList>
-														<Property Name="Color" Type="int16" Value="2"/>
-														<Property Name="OverrideColor" Type="bool" Value="True"/>
-													</PropertyList>
-												</Bus>
-												<Bus Name="1P_Items" ID="{37718E87-198C-4650-BC59-3AC05063F1D4}">
-													<PropertyList>
-														<Property Name="Color" Type="int16" Value="8"/>
-														<Property Name="OverrideColor" Type="bool" Value="True"/>
-													</PropertyList>
-												</Bus>
-												<Bus Name="1P_Weapons" ID="{1BC77837-C5B2-4563-B3F7-CF715B366F0C}">
-													<PropertyList>
-														<Property Name="Color" Type="int16" Value="10"/>
-														<Property Name="OverrideColor" Type="bool" Value="True"/>
-													</PropertyList>
-												</Bus>
-											</ChildrenList>
-										</Bus>
-									</ChildrenList>
-								</Bus>
-								<Bus Name="3P" ID="{4688BD37-478F-464A-951C-21EC12E45BA8}">
-									<ChildrenList>
-										<Bus Name="3P_Dialogue" ID="{6931BC9D-3C00-42B3-AFA4-E38B95036EB6}">
-											<PropertyList>
-												<Property Name="Color" Type="int16" Value="11"/>
-												<Property Name="OverrideColor" Type="bool" Value="True"/>
-											</PropertyList>
-										</Bus>
-										<Bus Name="3P_Foley" ID="{BDE7EA28-B177-48D3-A89E-DD0763999ABF}">
-											<PropertyList>
-												<Property Name="Color" Type="int16" Value="2"/>
-												<Property Name="OverrideColor" Type="bool" Value="True"/>
-											</PropertyList>
-										</Bus>
-										<Bus Name="3P_Items" ID="{5D5B9568-CFB5-4519-8C60-DEECAA088385}">
-											<PropertyList>
-												<Property Name="Color" Type="int16" Value="8"/>
-												<Property Name="OverrideColor" Type="bool" Value="True"/>
-											</PropertyList>
-										</Bus>
-										<Bus Name="3P_Weapons" ID="{7CDA1A70-7851-48B9-BA8A-C1984121CAB4}">
-											<PropertyList>
-												<Property Name="Color" Type="int16" Value="10"/>
-												<Property Name="OverrideColor" Type="bool" Value="True"/>
-											</PropertyList>
-										</Bus>
-									</ChildrenList>
-								</Bus>
 								<Bus Name="Auxiliaries" ID="{639A62DF-CA02-438D-9BA0-A89D32368F6D}">
 									<ChildrenList>
 										<Bus Name="Highrise" ID="{596C5B51-663F-4CD9-9F06-6A282DAF1573}">
@@ -129,6 +59,40 @@
 											</ChildrenList>
 										</Bus>
 										<Bus Name="Sanctuary" ID="{5BA6AF2C-2325-4C30-8363-C8F3B4D195B0}"/>
+									</ChildrenList>
+								</Bus>
+								<Bus Name="Foley" ID="{AFADED97-9376-47EE-8E61-63C3E2539C84}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="2"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+								</Bus>
+								<Bus Name="Weapons" ID="{1BC77837-C5B2-4563-B3F7-CF715B366F0C}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="10"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+								</Bus>
+								<Bus Name="Items" ID="{37718E87-198C-4650-BC59-3AC05063F1D4}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="8"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+								</Bus>
+								<Bus Name="Dialogue" ID="{80C87677-6DFA-46DD-8E4C-337CF0B1357D}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="11"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+								</Bus>
+								<Bus Name="Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="4"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Bus Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}"/>
+										<Bus Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}"/>
 									</ChildrenList>
 								</Bus>
 							</ChildrenList>

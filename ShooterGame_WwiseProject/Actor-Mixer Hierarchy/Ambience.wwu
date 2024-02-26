@@ -7,42 +7,35 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<ActorMixer Name="AMB_Emitters" ID="{86D471BA-BC16-451D-B000-3F324B278937}" ShortID="84804490">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-96</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
+				<ActorMixer Name="AMB_Emitters" ID="{60AC03C0-D57D-4126-A4BF-F5803643840F}" ShortID="561244845">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+							<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<ActorMixer Name="AMB_PhoneBox" ID="{B8CA52DB-DDD3-4A2B-BCB0-69E190CFED6F}" ShortID="473321145">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-								</Reference>
-							</ReferenceList>
+						<Folder Name="AMB_Emitters_Dynamic" ID="{2C7A6EA4-D906-4919-A90F-8B14E7E6752E}" ShortID="852099741">
 							<ChildrenList>
-								<Sound Name="AMB_PhoneBox_LP" ID="{AE960BD0-3C81-4719-93C5-4B68C55E44C1}" ShortID="988803056">
+								<ActorMixer Name="AMB_BarrierFence" ID="{4534AEA2-330F-47C5-BB3A-053115549B20}" ShortID="856351668">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="ReflectionsVolume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="ATN_PhoneBox" ID="{4296B408-0CD1-463A-A8F4-B6EC4597E3EC}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 										</Reference>
@@ -51,215 +44,287 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<SourcePlugin Name="Tone Generator" ID="{04BE263F-DD28-41C2-B99C-8FFE4BD5FB6C}" ShortID="950824542" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+										<Sound Name="AMB_BarrierFence_LP" ID="{21B05601-534E-4D7E-BA20-A9C79FE23DBC}" ShortID="155906301">
 											<PropertyList>
-												<Property Name="FixDur" Type="Real32" Value="30"/>
-												<Property Name="StartFreq" Type="Real32" Value="500"/>
-												<Property Name="WaveGain" Type="Real32" Value="-20"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
-											<Language>SFX</Language>
-										</SourcePlugin>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATN_BarrierFence" ID="{7E23D20A-2350-48DF-AC62-C1B2A99A6FC0}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Tone Generator" ID="{3D1B64D9-A2EA-44DD-AE5F-14A3C4290D80}" ShortID="888333020" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+													<PropertyList>
+														<Property Name="FixDur" Type="Real32" Value="30"/>
+														<Property Name="StartFreq" Type="Real32" Value="155"/>
+														<Property Name="WaveGain" Type="Real32" Value="-20"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{712C7E1F-FF2C-40FD-97A3-2C0E79DBEA67}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="Tone Generator" ID="{3D1B64D9-A2EA-44DD-AE5F-14A3C4290D80}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Tone Generator" ID="{04BE263F-DD28-41C2-B99C-8FFE4BD5FB6C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</ActorMixer>
 							</ChildrenList>
-						</ActorMixer>
-						<ActorMixer Name="AMB_UnrealHolograph" ID="{59EABB7B-B549-47D9-83A3-01449C01EF5F}" ShortID="10162776">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-								</Reference>
-							</ReferenceList>
+						</Folder>
+						<Folder Name="AMB_Emitters_Static" ID="{F2492005-8E3A-468C-9DFF-77B307301DB6}" ShortID="97315065">
 							<ChildrenList>
-								<Sound Name="AMB_UnrealHolograph_LP" ID="{B4D1D511-83CE-42EA-B8FF-0B22ED42B990}" ShortID="990094801">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-									</PropertyList>
+								<ActorMixer Name="AMB_PhoneBox" ID="{B8CA52DB-DDD3-4A2B-BCB0-69E190CFED6F}" ShortID="473321145">
 									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="ATN_UnrealHolograph" ID="{044D3425-A485-4809-96BA-ED930F9C1310}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+											<ObjectRef Name="Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<SourcePlugin Name="Tone Generator" ID="{133F1C69-F32D-4132-B6C5-AC779B8C4F07}" ShortID="933028433" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+										<Sound Name="AMB_PhoneBox_LP" ID="{AE960BD0-3C81-4719-93C5-4B68C55E44C1}" ShortID="988803056">
 											<PropertyList>
-												<Property Name="FixDur" Type="Real32" Value="10"/>
-												<Property Name="WaveGain" Type="Real32" Value="-20"/>
-												<Property Name="WaveType" Type="int32" Value="5"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
-											<Language>SFX</Language>
-										</SourcePlugin>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATN_PhoneBox" ID="{4296B408-0CD1-463A-A8F4-B6EC4597E3EC}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Tone Generator" ID="{04BE263F-DD28-41C2-B99C-8FFE4BD5FB6C}" ShortID="950824542" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+													<PropertyList>
+														<Property Name="FixDur" Type="Real32" Value="30"/>
+														<Property Name="StartFreq" Type="Real32" Value="500"/>
+														<Property Name="WaveGain" Type="Real32" Value="-20"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Tone Generator" ID="{04BE263F-DD28-41C2-B99C-8FFE4BD5FB6C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Tone Generator" ID="{133F1C69-F32D-4132-B6C5-AC779B8C4F07}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</ActorMixer>
-						<ActorMixer Name="AMB_StreetLamp" ID="{680FC3D1-F955-4069-B677-8A89E9885F67}" ShortID="658006216">
-							<PropertyList>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="AMB_StreetLamp_LP" ID="{547F9306-FBCE-4EE7-88C6-557493CA9F98}" ShortID="978582004">
+								</ActorMixer>
+								<ActorMixer Name="AMB_StreetLamp" ID="{680FC3D1-F955-4069-B677-8A89E9885F67}" ShortID="658006216">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="ATN_StreetLamp" ID="{ACD7E5FE-C203-41ED-AADE-49B51DEB2447}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+											<ObjectRef Name="Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<SourcePlugin Name="Tone Generator" ID="{AB85DFF6-17D3-4C4E-8F46-9B4495EF83EF}" ShortID="77241653" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+										<Sound Name="AMB_StreetLamp_LP" ID="{547F9306-FBCE-4EE7-88C6-557493CA9F98}" ShortID="978582004">
 											<PropertyList>
-												<Property Name="FixDur" Type="Real32" Value="30"/>
-												<Property Name="StartFreq" Type="Real32" Value="500"/>
-												<Property Name="WaveGain" Type="Real32" Value="-20"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
-											<Language>SFX</Language>
-										</SourcePlugin>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATN_StreetLamp" ID="{ACD7E5FE-C203-41ED-AADE-49B51DEB2447}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Tone Generator" ID="{AB85DFF6-17D3-4C4E-8F46-9B4495EF83EF}" ShortID="77241653" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+													<PropertyList>
+														<Property Name="FixDur" Type="Real32" Value="30"/>
+														<Property Name="StartFreq" Type="Real32" Value="500"/>
+														<Property Name="WaveGain" Type="Real32" Value="-20"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Tone Generator" ID="{AB85DFF6-17D3-4C4E-8F46-9B4495EF83EF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Tone Generator" ID="{AB85DFF6-17D3-4C4E-8F46-9B4495EF83EF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</ActorMixer>
-						<ActorMixer Name="AMB_UnrealSigns" ID="{CA2AEBEB-8FBD-497E-BF8F-76F75BF428C5}" ShortID="746517449">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="AMB_UnrealSigns_LP" ID="{590D5A02-2C18-4FE7-9702-6D4F182282B8}" ShortID="1027681041">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-									</PropertyList>
+								</ActorMixer>
+								<ActorMixer Name="AMB_UnrealHolograph" ID="{59EABB7B-B549-47D9-83A3-01449C01EF5F}" ShortID="10162776">
 									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="ATN_StreetLamp" ID="{ACD7E5FE-C203-41ED-AADE-49B51DEB2447}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+											<ObjectRef Name="Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<SourcePlugin Name="Tone Generator" ID="{D8C37E7D-5B4D-4F84-835A-0F99639CD775}" ShortID="272314916" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+										<Sound Name="AMB_UnrealHolograph_LP" ID="{B4D1D511-83CE-42EA-B8FF-0B22ED42B990}" ShortID="990094801">
 											<PropertyList>
-												<Property Name="FixDur" Type="Real32" Value="30"/>
-												<Property Name="StartFreq" Type="Real32" Value="700"/>
-												<Property Name="WaveGain" Type="Real32" Value="-20"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
-											<Language>SFX</Language>
-										</SourcePlugin>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATN_UnrealHolograph" ID="{044D3425-A485-4809-96BA-ED930F9C1310}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Tone Generator" ID="{133F1C69-F32D-4132-B6C5-AC779B8C4F07}" ShortID="933028433" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+													<PropertyList>
+														<Property Name="FixDur" Type="Real32" Value="10"/>
+														<Property Name="WaveGain" Type="Real32" Value="-20"/>
+														<Property Name="WaveType" Type="int32" Value="5"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Tone Generator" ID="{133F1C69-F32D-4132-B6C5-AC779B8C4F07}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Tone Generator" ID="{D8C37E7D-5B4D-4F84-835A-0F99639CD775}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</ActorMixer>
-						<ActorMixer Name="AMB_BarrierFence" ID="{4534AEA2-330F-47C5-BB3A-053115549B20}" ShortID="856351668">
-							<PropertyList>
-								<Property Name="GameAuxSendVolume" Type="Real64">
-									<ValueList>
-										<Value>-9</Value>
-									</ValueList>
-								</Property>
-								<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
-								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="ReflectionsVolume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="AMB_BarrierFence_LP" ID="{21B05601-534E-4D7E-BA20-A9C79FE23DBC}" ShortID="155906301">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-									</PropertyList>
+								</ActorMixer>
+								<ActorMixer Name="AMB_UnrealSigns" ID="{CA2AEBEB-8FBD-497E-BF8F-76F75BF428C5}" ShortID="746517449">
 									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="ATN_BarrierFence" ID="{7E23D20A-2350-48DF-AC62-C1B2A99A6FC0}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+											<ObjectRef Name="Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<SourcePlugin Name="Tone Generator" ID="{3D1B64D9-A2EA-44DD-AE5F-14A3C4290D80}" ShortID="888333020" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+										<Sound Name="AMB_UnrealSigns_LP" ID="{590D5A02-2C18-4FE7-9702-6D4F182282B8}" ShortID="1027681041">
 											<PropertyList>
-												<Property Name="FixDur" Type="Real32" Value="30"/>
-												<Property Name="StartFreq" Type="Real32" Value="155"/>
-												<Property Name="WaveGain" Type="Real32" Value="-20"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
-											<Language>SFX</Language>
-										</SourcePlugin>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATN_StreetLamp" ID="{ACD7E5FE-C203-41ED-AADE-49B51DEB2447}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Tone Generator" ID="{D8C37E7D-5B4D-4F84-835A-0F99639CD775}" ShortID="272314916" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+													<PropertyList>
+														<Property Name="FixDur" Type="Real32" Value="30"/>
+														<Property Name="StartFreq" Type="Real32" Value="700"/>
+														<Property Name="WaveGain" Type="Real32" Value="-20"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Tone Generator" ID="{D8C37E7D-5B4D-4F84-835A-0F99639CD775}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<PositioningInfo>
-										<Panner Name="" ID="{712C7E1F-FF2C-40FD-97A3-2C0E79DBEA67}"/>
-									</PositioningInfo>
-									<ActiveSourceList>
-										<ActiveSource Name="Tone Generator" ID="{3D1B64D9-A2EA-44DD-AE5F-14A3C4290D80}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</ActorMixer>
 							</ChildrenList>
-						</ActorMixer>
+						</Folder>
 					</ChildrenList>
 				</ActorMixer>
-				<Folder Name="AMB_Rooms" ID="{37F2DCC5-9E95-4605-80A1-E37FD46FF4E1}" ShortID="897974939">
+				<ActorMixer Name="AMB_Rooms" ID="{54E35A16-0D2B-4FEF-BAB8-D0B560F293F3}" ShortID="494085559">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+						</Reference>
+					</ReferenceList>
 					<ChildrenList>
-						<Folder Name="AMB_Highrise" ID="{C4C416B0-4E5E-40FF-9BC3-76FE2A884BEF}" ShortID="896869461">
+						<Folder Name="AMB_Rooms_Dynamic" ID="{A3DD4DF6-0131-4287-857A-9727233B9D40}" ShortID="352778244">
+							<ChildrenList>
+								<ActorMixer Name="AMB_Sanctuary_OS" ID="{BC581D76-05C5-4D52-9384-C37FB921687F}" ShortID="918917643">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+									</ReferenceList>
+								</ActorMixer>
+								<ActorMixer Name="AMB_Highrise_OS" ID="{B8790566-86DD-4E01-854C-28BAF48C2F3D}" ShortID="376638653">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="AMB_Wind_Gust_OS" ID="{8408FD5C-3EE0-4C6B-8168-AB37779B996C}" ShortID="21379039">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Tone Generator" ID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" ShortID="1035667954" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+													<PropertyList>
+														<Property Name="FixDur" Type="Real32" Value="10"/>
+														<Property Name="StartFreq" Type="Real32" Value="715"/>
+														<Property Name="WaveGain" Type="Real32" Value="-20"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Tone Generator" ID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="AMB_Rooms_Static" ID="{C4C416B0-4E5E-40FF-9BC3-76FE2A884BEF}" ShortID="896869461">
 							<ChildrenList>
 								<ActorMixer Name="AMB_Highrise_LP" ID="{B1AA0A72-4A6A-4850-9D41-3DAD3AFDE1F1}" ShortID="1011135215">
 									<PropertyList>
@@ -275,7 +340,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+											<ObjectRef Name="Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 										</Reference>
 										<Reference Name="ReflectionsAuxSend">
 											<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
@@ -387,7 +452,7 @@
 										</Sound>
 									</ChildrenList>
 								</ActorMixer>
-								<ActorMixer Name="AMB_Highrise_OS" ID="{B8790566-86DD-4E01-854C-28BAF48C2F3D}" ShortID="376638653">
+								<ActorMixer Name="AMB_Sanctuary_LP" ID="{4C7422FF-F4EF-4DAC-B96E-24DA04D0B86B}" ShortID="795555583">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -396,44 +461,11 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 										</Reference>
 									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="AMB_Wind_Gust_OS" ID="{8408FD5C-3EE0-4C6B-8168-AB37779B996C}" ShortID="21379039">
-											<PropertyList>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-												</Reference>
-												<Reference Name="ReflectionsAuxSend">
-													<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<SourcePlugin Name="Tone Generator" ID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" ShortID="1035667954" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
-													<PropertyList>
-														<Property Name="FixDur" Type="Real32" Value="10"/>
-														<Property Name="StartFreq" Type="Real32" Value="715"/>
-														<Property Name="WaveGain" Type="Real32" Value="-20"/>
-													</PropertyList>
-													<Language>SFX</Language>
-												</SourcePlugin>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Tone Generator" ID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="AMB_Sanctuary" ID="{A3DD4DF6-0131-4287-857A-9727233B9D40}" ShortID="352778244"/>
 					</ChildrenList>
-				</Folder>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
