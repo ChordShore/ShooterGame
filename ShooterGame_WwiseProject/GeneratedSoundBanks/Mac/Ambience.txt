@@ -1,36 +1,55 @@
 Event	ID	Name			Wwise Object Path	Notes
-	126199104	AMB_PhoneBox_LP			\Ambience\Emitters\AMB_PhoneBox_LP	
-	511358421	AMB_BarrierFence_LP			\Ambience\Emitters\AMB_BarrierFence_LP	
-	652591751	AMB_UnrealHolograph_FadeIn			\Ambience\Emitters\AMB_UnrealHolograph_FadeIn	
-	676002056	AMB_Highrise_Spawn_LP			\Ambience\Rooms\Highrise\AMB_Highrise_Spawn_LP	
-	1019282361	AMB_Highrise_Atrium_Gust_OS			\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_Gust_OS	
-	1534744560	AMB_Wind_Atrium_Bed_LP			\Ambience\Winds\Highrise\AMB_Wind_Atrium_Bed_LP	
-	1782404537	AMB_Highrise_Atrium_Drones_OS			\Ambience\Rooms\Highrise\AMB_Highrise_Atrium_Drones_OS	
-	2038711805	AMB_Highrise_Room			\Ambience\Rooms\Highrise\AMB_Highrise_Room	
-	2448096698	AMB_Highrise_Atrium			\Ambience\Rooms\Highrise\AMB_Highrise_Atrium	
-	2757392698	AMB_Highrise_Room_Drones_OS			\Ambience\Rooms\Highrise\AMB_Highrise_Room_Drones_OS	
-	2794177527	AMB_UnrealSign_LP			\Ambience\Emitters\AMB_UnrealSign_LP	
-	3140124040	AMB_StreetLamp_LP			\Ambience\Emitters\AMB_StreetLamp_LP	
-	3385126647	AMB_HovercarTraffic_Passbys			\Ambience\Emitters\AMB_HovercarTraffic_Passbys	
-	3686232698	AMB_UnrealHolograph_FadeOut			\Ambience\Emitters\AMB_UnrealHolograph_FadeOut	
+	126199104	AMB_PhoneBox_LP			\Ambience\Emitters\Highrise\Static\AMB_PhoneBox_LP	
+	511358421	AMB_BarrierFence_LP			\Ambience\Emitters\Highrise\Dynamic\AMB_BarrierFence_LP	
+	652591751	AMB_UnrealHolograph_FadeIn			\Ambience\Unused\AMB_UnrealHolograph_FadeIn	
+	897733389	AMB_HoverCars			\Ambience\Emitters\Highrise\Dynamic\AMB_HoverCars	
+	1019282361	AMB_Highrise_Atrium_Gust_OS			\Ambience\Rooms\Highrise\Dynamic\AMB_Highrise_Atrium_Gust_OS	
+	1040217121	AMB_Highrise_Spawn			\Ambience\Rooms\Highrise\Static\AMB_Highrise_Spawn	
+	1534744560	AMB_Wind_Atrium_Bed_LP			\Ambience\Unused\Winds\Highrise\AMB_Wind_Atrium_Bed_LP	
+	1782404537	AMB_Highrise_Atrium_Drones_OS			\Ambience\Rooms\Highrise\Dynamic\AMB_Highrise_Atrium_Drones_OS	
+	2038711805	AMB_Highrise_Room			\Ambience\Rooms\Highrise\Static\AMB_Highrise_Room	
+	2448096698	AMB_Highrise_Atrium			\Ambience\Rooms\Highrise\Static\AMB_Highrise_Atrium	
+	2757392698	AMB_Highrise_Room_Drones_OS			\Ambience\Rooms\Highrise\Dynamic\AMB_Highrise_Room_Drones_OS	
+	2794177527	AMB_UnrealSign_LP			\Ambience\Emitters\Highrise\Static\AMB_UnrealSign_LP	
+	3140124040	AMB_StreetLamp_LP			\Ambience\Emitters\Highrise\Static\AMB_StreetLamp_LP	
+	3686232698	AMB_UnrealHolograph_FadeOut			\Ambience\Unused\AMB_UnrealHolograph_FadeOut	
 	4272860344	AMB_Sanctuary_Interior_OS			\Ambience\Rooms\Sanctuary\AMB_Sanctuary_Interior_OS	
 	4289637934	AMB_Sanctuary_Interior_LP			\Ambience\Rooms\Sanctuary\AMB_Sanctuary_Interior_LP	
 
 Effect plug-ins	ID	Name	Type				Notes
 	1272037051	Room_Tone	Wwise Parametric EQ			
+	1845424741	Tremolo_HoverCars	Wwise Tremolo			
+	2258521792	Brick_Wall_Minus_1dB_Peak_Slow_Release	Wwise Peak Limiter			
 	3157003241	Test	Wwise Parametric EQ			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	77241653	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_StreetLamp\AMB_StreetLamp_LP\Tone Generator	
-	272314916	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_UnrealSigns\AMB_UnrealSigns_LP\Tone Generator	
 	662823536	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\Event Probe\Noise Pip\Tone Generator	
-	828416877	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Highrise_LP\AMB_Highrise_Spawn_LP\Tone Generator	
-	888333020	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_BarrierFence\AMB_BarrierFence_LP\Tone Generator	
-	950824542	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_PhoneBox\AMB_PhoneBox_LP\Tone Generator	
-	1035667954	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Highrise_OS\AMB_Wind_Gust_OS\Tone Generator	
+	1035667954	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\Highrise\Dynamic\AMB_Highrise_OS\AMB_Wind_Gust_OS\Tone Generator	
 	1041093470	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\Event Probe\Sine Pip\Tone Generator	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	293619390	AMB_Highrise_Atrium_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed_C5579977.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Highrise_LP\AMB_Highrise_Atrium_LP		24397920
-	400710580	AMB_Highrise_Room_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu_C5579977.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\AMB_Highrise\AMB_Highrise_LP\AMB_Highrise_Room_LP		23068768
+	51555955	AMB_Emitters_HovercarPassbys_Mid_3	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Emitters_HovercarPassbys_Mid_3_7550AD36.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\AMB_HoverCars_LP\HoverCar_Mids_OS\AMB_Emitters_HovercarPassbys_Mid_3		288096
+	88913986	AMB_StreetLamp_Buzz_OS_2	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_StreetLamp_Buzz_OS_2_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Static\AMB_StreetLamp\AMB_StreetLamp_Buzz_OS\AMB_StreetLamp_Buzz_OS_2		264096
+	91730085	AMB_StreetLamp_Buzz_OS_4	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_StreetLamp_Buzz_OS_4_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Static\AMB_StreetLamp\AMB_StreetLamp_Buzz_OS\AMB_StreetLamp_Buzz_OS_4		168096
+	121824528	AMB_Emitters_HovercarPassbys_Low_4	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Emitters_HovercarPassbys_Low_4_7550AD36.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\AMB_HoverCars_LP\HoverCar_Lows_OS\AMB_Emitters_HovercarPassbys_Low_4		288096
+	123575965	AMB_Emitters_HovercarPassbys_Mid_4	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Emitters_HovercarPassbys_Mid_4_7550AD36.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\AMB_HoverCars_LP\HoverCar_Mids_OS\AMB_Emitters_HovercarPassbys_Mid_4		288096
+	175461088	AMB_StreetLamp_Hum_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_StreetLamp_Hum_LP_F2673BE7.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Static\AMB_StreetLamp\AMB_StreetLamp_Hum_LP		1899764
+	202292048	AMB_StreetLamp_Buzz_OS_5	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_StreetLamp_Buzz_OS_5_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Static\AMB_StreetLamp\AMB_StreetLamp_Buzz_OS\AMB_StreetLamp_Buzz_OS_5		192096
+	208379746	AMB_Emitters_HovercarPassbys_High_1	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Emitters_HovercarPassbys_High_1_171778DF.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\AMB_HoverCars_LP\HoverCar_Highs_OS\AMB_Emitters_HovercarPassbys_High_1		153696
+	218188666	AMB_UnrealSign_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\Emitters_UnrealSign_1B9F70D9.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Static\AMB_UnrealSign\AMB_UnrealSign_LP		1504896
+	247336745	AMB_StreetLamp_Buzz_OS_1	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_StreetLamp_Buzz_OS_1_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Static\AMB_StreetLamp\AMB_StreetLamp_Buzz_OS\AMB_StreetLamp_Buzz_OS_1		165856
+	293619390	AMB_Highrise_Atrium_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed_C5579977.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\Highrise\Static\AMB_Highrise_LP\AMB_Highrise_Atrium_LP		24397920
+	296674999	AMB_Emitters_HovercarPassbys_High_2	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Emitters_HovercarPassbys_High_2_171778DF.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\AMB_HoverCars_LP\HoverCar_Highs_OS\AMB_Emitters_HovercarPassbys_High_2		153696
+	321294528	AMB_StreetLamp_Buzz_OS_3	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_StreetLamp_Buzz_OS_3_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Static\AMB_StreetLamp\AMB_StreetLamp_Buzz_OS\AMB_StreetLamp_Buzz_OS_3		240096
+	345896536	AMB_Emitters_HovercarPassbys_High_4	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Emitters_HovercarPassbys_High_4_171778DF.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\AMB_HoverCars_LP\HoverCar_Highs_OS\AMB_Emitters_HovercarPassbys_High_4		153696
+	400710580	AMB_Highrise_Spawn_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu_C5579977.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\Highrise\Static\AMB_Highrise_LP\AMB_Highrise_Spawn_LP		23068768
+	407858808	AMB_Emitters_HovercarPassbys_Low_1	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Emitters_HovercarPassbys_Low_1_7550AD36.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\AMB_HoverCars_LP\HoverCar_Lows_OS\AMB_Emitters_HovercarPassbys_Low_1		288096
+	419807917	AMB_Emitters_HovercarPassbys_Mid_2	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Emitters_HovercarPassbys_Mid_2_7550AD36.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\AMB_HoverCars_LP\HoverCar_Mids_OS\AMB_Emitters_HovercarPassbys_Mid_2		288096
+	429780900	AMB_StreetLamp_Buzz_OS_6	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_StreetLamp_Buzz_OS_6_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Static\AMB_StreetLamp\AMB_StreetLamp_Buzz_OS\AMB_StreetLamp_Buzz_OS_6		240096
+	435493927	AMB_Emitters_HovercarPassbys_High_3	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Emitters_HovercarPassbys_High_3_171778DF.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\AMB_HoverCars_LP\HoverCar_Highs_OS\AMB_Emitters_HovercarPassbys_High_3		153696
+	515725994	AMB_StreetLamp_Buzz_OS_7	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_StreetLamp_Buzz_OS_7_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Static\AMB_StreetLamp\AMB_StreetLamp_Buzz_OS\AMB_StreetLamp_Buzz_OS_7		144096
+	537312981	AMB_PhoneBox_DialTone_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_PhoneBox_DialTone_LP_730BDA3F.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Static\AMB_PhoneBox\AMB_PhoneBox_DialTone_LP		1891612
+	666585169	AMB_Emitters_HovercarPassbys_Low_2	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Emitters_HovercarPassbys_Low_2_7550AD36.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\AMB_HoverCars_LP\HoverCar_Lows_OS\AMB_Emitters_HovercarPassbys_Low_2		288096
+	924565868	AMB_Emitters_HovercarPassbys_Mid_1	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Emitters_HovercarPassbys_Mid_1_7550AD36.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\AMB_HoverCars_LP\HoverCar_Mids_OS\AMB_Emitters_HovercarPassbys_Mid_1		288096
+	1041432378	AMB_BarrierFence_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_BarrierFence_LP_3860FEB7.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_BarrierFence\AMB_BarrierFence_LP		1965552
 

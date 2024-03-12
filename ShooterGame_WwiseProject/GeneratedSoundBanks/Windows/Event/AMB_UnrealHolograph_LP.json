@@ -10,43 +10,38 @@
     "Type": "Event",
     "GUID": "{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}",
     "Language": "SFX",
-    "Hash": "{07579F9C-9050-A769-3317-558B35F16E57}",
+    "Hash": "{811AF7A5-20BF-4E34-267F-EB09ADE20AD5}",
     "ObjectPath": "AMB_UnrealHolograph_LP",
     "ShortName": "AMB_UnrealHolograph_LP",
     "Path": "Event/AMB_UnrealHolograph_LP.bnk",
-    "Plugins": {
-     "Custom": [
-      {
-       "Id": "933028433",
-       "Name": "Tone Generator",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Emitters\\AMB_UnrealHolograph\\AMB_UnrealHolograph_LP\\Tone Generator",
-       "GUID": "{133F1C69-F32D-4132-B6C5-AC779B8C4F07}",
-       "LibName": "Wwise Tone Generator",
-       "LibId": "6684674"
-      }
-     ]
-    },
+    "Media": [
+     {
+      "Id": "456057735",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Emitters_UnrealHolograph_Main_LP.wav",
+      "Path": "Media/456057735.wem",
+      "CachePath": "SFX/Emitters_UnrealHolograph_Main_LP_28CAED99.wem"
+     }
+    ],
     "Events": [
      {
       "Id": "2762262784",
       "Name": "AMB_UnrealHolograph_LP",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\AMB_UnrealHolograph_LP",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_UnrealHolograph_LP",
       "GUID": "{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}",
       "MaxAttenuation": "20000",
-      "DurationType": "OneShot",
-      "DurationMin": "10",
-      "DurationMax": "10",
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "933028433"
-        }
-       ]
-      }
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "456057735"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{5CED30A1-7945-2D52-CE77-8B221AA8A848}"
+  "FileHash": "{8B363333-19B8-5502-7774-CAA8D101AB2B}"
  }
 }

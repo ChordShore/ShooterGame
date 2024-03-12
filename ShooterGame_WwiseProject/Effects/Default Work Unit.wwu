@@ -6,7 +6,7 @@
 				<Effect Name="Room_Tone" ID="{13426B94-4BD9-4C2E-8BE9-74477EB7C566}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 					<PropertyList>
 						<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
-						<Property Name="FrequencyBand3" Type="Real32" Value="522"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="292"/>
 						<Property Name="OnOffBand1" Type="bool" Value="False"/>
 						<Property Name="OnOffBand2" Type="bool" Value="False"/>
 					</PropertyList>
@@ -17,6 +17,14 @@
 						<Property Name="FrequencyBand3" Type="Real32" Value="20000"/>
 						<Property Name="OnOffBand1" Type="bool" Value="False"/>
 						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Tremolo_HoverCars" ID="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+					<PropertyList>
+						<Property Name="ModDepth" Type="Real32" Value="60"/>
+						<Property Name="ModFrequency" Type="Real32" Value="14"/>
+						<Property Name="ModPWM" Type="Real32" Value="0"/>
+						<Property Name="ModSmoothing" Type="Real32" Value="38"/>
 					</PropertyList>
 				</Effect>
 			</ChildrenList>

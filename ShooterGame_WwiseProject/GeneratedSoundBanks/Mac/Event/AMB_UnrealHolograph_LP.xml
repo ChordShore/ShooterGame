@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2762262784" Type="Event" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" Language="SFX" Hash="{07579F9C-9050-A769-3317-558B35F16E57}">
+		<SoundBank Id="2762262784" Type="Event" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" Language="SFX" Hash="{811AF7A5-20BF-4E34-267F-EB09ADE20AD5}">
 			<ObjectPath>AMB_UnrealHolograph_LP</ObjectPath>
 			<ShortName>AMB_UnrealHolograph_LP</ShortName>
 			<Path>Event/AMB_UnrealHolograph_LP.bnk</Path>
-			<Plugins>
-				<Custom>
-					<Plugin Id="933028433" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\AMB_UnrealHolograph\AMB_UnrealHolograph_LP\Tone Generator" GUID="{133F1C69-F32D-4132-B6C5-AC779B8C4F07}" LibName="Wwise Tone Generator" LibId="6684674"/>
-				</Custom>
-			</Plugins>
+			<Media>
+				<File Id="456057735" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Emitters_UnrealHolograph_Main_LP.wav</ShortName>
+					<Path>Media/456057735.wem</Path>
+					<CachePath>SFX/Emitters_UnrealHolograph_Main_LP_28CAED99.wem</CachePath>
+				</File>
+			</Media>
 			<Events>
-				<Event Id="2762262784" Name="AMB_UnrealHolograph_LP" ObjectPath="\Events\Ambience\Emitters\AMB_UnrealHolograph_LP" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="20000" DurationType="OneShot" DurationMin="10" DurationMax="10">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="933028433"/>
-						</Custom>
-					</PluginRefs>
+				<Event Id="2762262784" Name="AMB_UnrealHolograph_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealHolograph_LP" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="20000" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="456057735"/>
+					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AFD8F112-826C-2F4E-4156-62E602C3A119}</FileHash>
+	<FileHash>{10714F2B-A194-EC0D-C9FD-E5FF867F2488}</FileHash>
 </SoundBanksInfo>
