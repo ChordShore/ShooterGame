@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{0B8ED503-5741-BFE4-33A3-B3581DF951A5}",
+    "Hash": "{A01817B2-0A4E-604A-65DB-FBA696A9E9B6}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -184,6 +184,14 @@
       "CachePath": "SFX/AMB_PhoneBox_DialTone_LP_730BDA3F.wem"
      },
      {
+      "Id": "539953251",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB_PhoneBox_ErrorRecording_OS.wav",
+      "CachePath": "SFX/AMB_PhoneBox_ErrorRecording_OS_C35F038A.wem"
+     },
+     {
       "Id": "666585169",
       "Language": "SFX",
       "Streaming": "false",
@@ -198,6 +206,14 @@
       "Location": "Memory",
       "ShortName": "AMB_Emitters_HovercarPassbys_Mid_1.wav",
       "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Mid_1_7550AD36.wem"
+     },
+     {
+      "Id": "992552206",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB_PhoneBox_ErrorRecording_OS.wav",
+      "CachePath": "SFX/AMB_PhoneBox_ErrorRecording_OS_4F030B8A.wem"
      },
      {
       "Id": "1041432378",
@@ -316,7 +332,7 @@
       "Name": "AMB_Highrise_Atrium_Drones_OS",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Dynamic\\AMB_Highrise_Atrium_Drones_OS",
       "GUID": "{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}",
-      "MaxAttenuation": "700",
+      "MaxAttenuation": "1900",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "1",
@@ -376,7 +392,7 @@
       "Name": "AMB_Highrise_Room_Drones_OS",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Dynamic\\AMB_Highrise_Room_Drones_OS",
       "GUID": "{4E65C91A-3866-4E84-B034-94A7E371ECB7}",
-      "MaxAttenuation": "700",
+      "MaxAttenuation": "1900",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "1",
@@ -470,11 +486,17 @@
       "Name": "AMB_PhoneBox_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_PhoneBox_LP",
       "GUID": "{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}",
-      "MaxAttenuation": "1000",
+      "MaxAttenuation": "1900",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "537312981"
+       },
+       {
+        "Id": "539953251"
+       },
+       {
+        "Id": "992552206"
        }
       ]
      },
@@ -499,7 +521,7 @@
       "Name": "AMB_Sanctuary_Interior_OS",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Sanctuary\\AMB_Sanctuary_Interior_OS",
       "GUID": "{F74B57D9-49B1-4424-8D25-E7555C92DD26}",
-      "MaxAttenuation": "700",
+      "MaxAttenuation": "1900",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "1",
@@ -516,7 +538,7 @@
       "Name": "AMB_StreetLamp_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_StreetLamp_LP",
       "GUID": "{82B95D5C-4BE9-4DFC-9A31-59E8AEF7E2FC}",
-      "MaxAttenuation": "1000",
+      "MaxAttenuation": "2000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -566,7 +588,7 @@
       "Name": "AMB_UnrealHolograph_FadeOut",
       "ObjectPath": "\\Events\\Ambience\\Unused\\AMB_UnrealHolograph_FadeOut",
       "GUID": "{65B7B589-76CC-48C2-8C87-74F03B903131}",
-      "MaxAttenuation": "700",
+      "MaxAttenuation": "1900",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "1",
@@ -583,7 +605,7 @@
       "Name": "AMB_UnrealSign_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_UnrealSign_LP",
       "GUID": "{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}",
-      "MaxAttenuation": "1000",
+      "MaxAttenuation": "2300",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -621,6 +643,6 @@
     ]
    }
   ],
-  "FileHash": "{AC3B70E5-CB90-D877-2981-3345EBB1954B}"
+  "FileHash": "{D8D17F81-CD57-F57C-231D-5F4ACFF55745}"
  }
 }
