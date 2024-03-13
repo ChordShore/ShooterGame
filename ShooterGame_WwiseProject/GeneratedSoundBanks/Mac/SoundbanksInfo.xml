@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{A01817B2-0A4E-604A-65DB-FBA696A9E9B6}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{F91D333B-055E-0501-34FC-4BA2A47E7C64}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -151,7 +151,7 @@
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1782404537" Name="AMB_Highrise_Atrium_Drones_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\Dynamic\AMB_Highrise_Atrium_Drones_OS" GUID="{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}" MaxAttenuation="1900" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="1782404537" Name="AMB_Highrise_Atrium_Drones_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\Dynamic\AMB_Highrise_Atrium_Drones_OS" GUID="{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}" MaxAttenuation="8700" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1041093470"/>
@@ -164,6 +164,9 @@
 							<PluginRef Id="1035667954"/>
 						</Custom>
 					</PluginRefs>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="1915357068" Name="AMB_HoverCars_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_HoverCars_LP" GUID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}"/>
+					</ActionPostEvent>
 				</Event>
 				<Event Id="2038711805" Name="AMB_Highrise_Room" ObjectPath="\Events\Ambience\Rooms\Highrise\Static\AMB_Highrise_Room" GUID="{3F5A1E50-6729-4C3C-9937-D8C443065D63}" DurationType="Infinite">
 					<MediaRefs>
@@ -178,7 +181,7 @@
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="2757392698" Name="AMB_Highrise_Room_Drones_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\Dynamic\AMB_Highrise_Room_Drones_OS" GUID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}" MaxAttenuation="1900" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="2757392698" Name="AMB_Highrise_Room_Drones_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\Dynamic\AMB_Highrise_Room_Drones_OS" GUID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}" MaxAttenuation="8700" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1041093470"/>
@@ -198,7 +201,7 @@
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="897733389" Name="AMB_HoverCars" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_HoverCars" GUID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}" MaxAttenuation="6000" DurationType="Infinite">
+				<Event Id="1915357068" Name="AMB_HoverCars_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_HoverCars_LP" GUID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}" MaxAttenuation="6000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="51555955"/>
 						<MediaRef Id="121824528"/>
@@ -232,7 +235,7 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="4272860344" Name="AMB_Sanctuary_Interior_OS" ObjectPath="\Events\Ambience\Rooms\Sanctuary\AMB_Sanctuary_Interior_OS" GUID="{F74B57D9-49B1-4424-8D25-E7555C92DD26}" MaxAttenuation="1900" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="4272860344" Name="AMB_Sanctuary_Interior_OS" ObjectPath="\Events\Ambience\Rooms\Sanctuary\AMB_Sanctuary_Interior_OS" GUID="{F74B57D9-49B1-4424-8D25-E7555C92DD26}" MaxAttenuation="8700" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1041093470"/>
@@ -258,7 +261,7 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Unused\AMB_UnrealHolograph_FadeOut" GUID="{65B7B589-76CC-48C2-8C87-74F03B903131}" MaxAttenuation="1900" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Unused\AMB_UnrealHolograph_FadeOut" GUID="{65B7B589-76CC-48C2-8C87-74F03B903131}" MaxAttenuation="8700" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1041093470"/>
@@ -314,6 +317,25 @@
 				<Event Id="3639315175" Name="FOL_Jump" ObjectPath="\Events\Foley\Players\FOL_Jump" GUID="{54BD1D82-A9B7-48F0-B383-0DB48BD03160}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1318050460" Name="FOL_Land" ObjectPath="\Events\Foley\Players\FOL_Land" GUID="{9C0F3AE6-505C-4DC2-80DF-1A0F23DFE402}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="378132258" Name="FOL_Trashcan_Collision" ObjectPath="\Events\Foley\Props\FOL_Trashcan_Collision" GUID="{83AF3510-8046-4206-B4B6-E1A12D72AC55}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="896607520" Type="Event" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" Language="SFX" Hash="{E5BCB1A5-DEDB-8519-1DEA-C2C3A51E2AD5}">
+			<ObjectPath>AMB_UnrealHolograph_FadeIn_OS</ObjectPath>
+			<ShortName>AMB_UnrealHolograph_FadeIn_OS</ShortName>
+			<Path>Event/AMB_UnrealHolograph_FadeIn_OS.bnk</Path>
+			<Media>
+				<File Id="619272686" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Emitters_UnrealHolograph_FadeIn_OS.wav</ShortName>
+					<Path>Media/619272686.wem</Path>
+					<CachePath>SFX/Emitters_UnrealHolograph_FadeIn_OS_5920140F.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="896607520" Name="AMB_UnrealHolograph_FadeIn_OS" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealHolograph_FadeIn_OS" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="8700" DurationType="OneShot" DurationMin="6.233227" DurationMax="6.233227">
+					<MediaRefs>
+						<MediaRef Id="619272686"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 		<SoundBank Id="1088520938" Type="User" GUID="{573044D3-F4B2-4E02-98DE-DB94AFF2E612}" Language="SFX" Hash="{4D496E02-C01C-9987-99AE-7E4E264C8659}">
@@ -586,6 +608,25 @@
 				<Event Id="4165048480" Name="GL_Shoot_Fire_OS" ObjectPath="\Events\Weapons\Shoot\GL_Shoot_Fire_OS" GUID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="1695319799" Type="Event" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" Language="SFX" Hash="{C9F8C233-6202-2E28-2ED9-3948896E5CB9}">
+			<ObjectPath>AMB_UnrealHolograph_FadeOut_OS</ObjectPath>
+			<ShortName>AMB_UnrealHolograph_FadeOut_OS</ShortName>
+			<Path>Event/AMB_UnrealHolograph_FadeOut_OS.bnk</Path>
+			<Media>
+				<File Id="425050702" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Emitters_UnrealHolograph_FadeOut_OS.wav</ShortName>
+					<Path>Media/425050702.wem</Path>
+					<CachePath>SFX/Emitters_UnrealHolograph_FadeOut_OS_C706C5CF.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1695319799" Name="AMB_UnrealHolograph_FadeOut_OS" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealHolograph_FadeOut_OS" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="8700" DurationType="OneShot" DurationMin="5.25" DurationMax="5.25">
+					<MediaRefs>
+						<MediaRef Id="425050702"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="2151963051" Type="User" GUID="{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}" Language="SFX" Hash="{7CAED8A1-2B85-8537-33D4-D92C5D17E8E4}">
 			<ObjectPath>\SoundBanks\Items\Items</ObjectPath>
 			<ShortName>Items</ShortName>
@@ -595,7 +636,7 @@
 				<Event Id="3787053379" Name="ITM_Health_Pickup" ObjectPath="\Events\Items\ITM_Health_Pickup" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2762262784" Type="Event" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" Language="SFX" Hash="{8A2B8A93-E473-FDE7-80D3-DB0A2EA0C25A}">
+		<SoundBank Id="2762262784" Type="Event" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" Language="SFX" Hash="{1B4988D6-E778-6D58-090B-F5C3C70B7CDF}">
 			<ObjectPath>AMB_UnrealHolograph_LP</ObjectPath>
 			<ShortName>AMB_UnrealHolograph_LP</ShortName>
 			<Path>Event/AMB_UnrealHolograph_LP.bnk</Path>
@@ -603,18 +644,18 @@
 				<File Id="456057735" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Emitters_UnrealHolograph_Main_LP.wav</ShortName>
 					<Path>Media/456057735.wem</Path>
-					<CachePath>SFX/Emitters_UnrealHolograph_Main_LP_28CAED99.wem</CachePath>
+					<CachePath>SFX/Emitters_UnrealHolograph_Main_LP_825A38FC.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2762262784" Name="AMB_UnrealHolograph_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealHolograph_LP" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="20000" DurationType="Infinite">
+				<Event Id="2762262784" Name="AMB_UnrealHolograph_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealHolograph_LP" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="8700" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="456057735"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{4BB1D474-A901-8D9C-250C-A0FC84794371}">
+		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{181F5AC2-1C13-4010-5389-C7CEC0DC6730}">
 			<ObjectPath>\SoundBanks\Default Work Unit\EventProbe</ObjectPath>
 			<ShortName>EventProbe</ShortName>
 			<Path>EventProbe.bnk</Path>
@@ -625,7 +666,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="1900" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="8700" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1041093470"/>
@@ -713,5 +754,5 @@
 			<Path>Dialogue.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B7EDEF5C-0475-B09A-2D87-4943DA7F63E7}</FileHash>
+	<FileHash>{FCF1A1A7-0599-7015-8CCC-79BD08D3A311}</FileHash>
 </SoundBanksInfo>

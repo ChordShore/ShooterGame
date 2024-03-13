@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2762262784" Type="Event" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" Language="SFX" Hash="{8A2B8A93-E473-FDE7-80D3-DB0A2EA0C25A}">
+		<SoundBank Id="2762262784" Type="Event" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" Language="SFX" Hash="{1B4988D6-E778-6D58-090B-F5C3C70B7CDF}">
 			<ObjectPath>AMB_UnrealHolograph_LP</ObjectPath>
 			<ShortName>AMB_UnrealHolograph_LP</ShortName>
 			<Path>Event/AMB_UnrealHolograph_LP.bnk</Path>
@@ -9,11 +9,11 @@
 				<File Id="456057735" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Emitters_UnrealHolograph_Main_LP.wav</ShortName>
 					<Path>Media/456057735.wem</Path>
-					<CachePath>SFX/Emitters_UnrealHolograph_Main_LP_28CAED99.wem</CachePath>
+					<CachePath>SFX/Emitters_UnrealHolograph_Main_LP_825A38FC.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2762262784" Name="AMB_UnrealHolograph_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealHolograph_LP" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="20000" DurationType="Infinite">
+				<Event Id="2762262784" Name="AMB_UnrealHolograph_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealHolograph_LP" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="8700" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="456057735"/>
 					</MediaRefs>
@@ -21,5 +21,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C1071243-A792-12BB-9CAF-780DADE913AF}</FileHash>
+	<FileHash>{DED9524D-EDD4-04E3-4332-49FC9F8096EB}</FileHash>
 </SoundBanksInfo>

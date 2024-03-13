@@ -1,0 +1,49 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "896607520",
+    "Type": "Event",
+    "GUID": "{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}",
+    "Language": "SFX",
+    "Hash": "{E5BCB1A5-DEDB-8519-1DEA-C2C3A51E2AD5}",
+    "ObjectPath": "AMB_UnrealHolograph_FadeIn_OS",
+    "ShortName": "AMB_UnrealHolograph_FadeIn_OS",
+    "Path": "Event/AMB_UnrealHolograph_FadeIn_OS.bnk",
+    "Media": [
+     {
+      "Id": "619272686",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Emitters_UnrealHolograph_FadeIn_OS.wav",
+      "Path": "Media/619272686.wem",
+      "CachePath": "SFX/Emitters_UnrealHolograph_FadeIn_OS_5920140F.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "896607520",
+      "Name": "AMB_UnrealHolograph_FadeIn_OS",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_UnrealHolograph_FadeIn_OS",
+      "GUID": "{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}",
+      "MaxAttenuation": "8700",
+      "DurationType": "OneShot",
+      "DurationMin": "6.233227",
+      "DurationMax": "6.233227",
+      "MediaRefs": [
+       {
+        "Id": "619272686"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{828FCB8D-EACE-A667-833A-18D51D77C051}"
+ }
+}

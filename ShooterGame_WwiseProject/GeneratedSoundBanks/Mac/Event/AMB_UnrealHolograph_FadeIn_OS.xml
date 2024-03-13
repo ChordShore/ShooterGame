@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="896607520" Type="Event" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" Language="SFX" Hash="{E5BCB1A5-DEDB-8519-1DEA-C2C3A51E2AD5}">
+			<ObjectPath>AMB_UnrealHolograph_FadeIn_OS</ObjectPath>
+			<ShortName>AMB_UnrealHolograph_FadeIn_OS</ShortName>
+			<Path>Event/AMB_UnrealHolograph_FadeIn_OS.bnk</Path>
+			<Media>
+				<File Id="619272686" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Emitters_UnrealHolograph_FadeIn_OS.wav</ShortName>
+					<Path>Media/619272686.wem</Path>
+					<CachePath>SFX/Emitters_UnrealHolograph_FadeIn_OS_5920140F.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="896607520" Name="AMB_UnrealHolograph_FadeIn_OS" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealHolograph_FadeIn_OS" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="8700" DurationType="OneShot" DurationMin="6.233227" DurationMax="6.233227">
+					<MediaRefs>
+						<MediaRef Id="619272686"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{97442136-15E5-6D9B-7131-53DB65CDB231}</FileHash>
+</SoundBanksInfo>
