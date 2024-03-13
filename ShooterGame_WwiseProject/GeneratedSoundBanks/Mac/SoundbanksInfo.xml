@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{F91D333B-055E-0501-34FC-4BA2A47E7C64}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{F1D38467-F6F8-3B16-F9B5-E096067F9420}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -319,7 +319,7 @@
 				<Event Id="378132258" Name="FOL_Trashcan_Collision" ObjectPath="\Events\Foley\Props\FOL_Trashcan_Collision" GUID="{83AF3510-8046-4206-B4B6-E1A12D72AC55}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="896607520" Type="Event" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" Language="SFX" Hash="{E5BCB1A5-DEDB-8519-1DEA-C2C3A51E2AD5}">
+		<SoundBank Id="896607520" Type="Event" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" Language="SFX" Hash="{D36FF867-E542-7910-556A-1132739966E0}">
 			<ObjectPath>AMB_UnrealHolograph_FadeIn_OS</ObjectPath>
 			<ShortName>AMB_UnrealHolograph_FadeIn_OS</ShortName>
 			<Path>Event/AMB_UnrealHolograph_FadeIn_OS.bnk</Path>
@@ -608,7 +608,7 @@
 				<Event Id="4165048480" Name="GL_Shoot_Fire_OS" ObjectPath="\Events\Weapons\Shoot\GL_Shoot_Fire_OS" GUID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1695319799" Type="Event" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" Language="SFX" Hash="{C9F8C233-6202-2E28-2ED9-3948896E5CB9}">
+		<SoundBank Id="1695319799" Type="Event" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" Language="SFX" Hash="{3E122EFB-B8D9-4716-6939-8A640A19E2FC}">
 			<ObjectPath>AMB_UnrealHolograph_FadeOut_OS</ObjectPath>
 			<ShortName>AMB_UnrealHolograph_FadeOut_OS</ShortName>
 			<Path>Event/AMB_UnrealHolograph_FadeOut_OS.bnk</Path>
@@ -636,7 +636,7 @@
 				<Event Id="3787053379" Name="ITM_Health_Pickup" ObjectPath="\Events\Items\ITM_Health_Pickup" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2762262784" Type="Event" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" Language="SFX" Hash="{1B4988D6-E778-6D58-090B-F5C3C70B7CDF}">
+		<SoundBank Id="2762262784" Type="Event" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" Language="SFX" Hash="{1AA93885-3F99-BDE2-50B2-E5ADF889CD93}">
 			<ObjectPath>AMB_UnrealHolograph_LP</ObjectPath>
 			<ShortName>AMB_UnrealHolograph_LP</ShortName>
 			<Path>Event/AMB_UnrealHolograph_LP.bnk</Path>
@@ -754,5 +754,5 @@
 			<Path>Dialogue.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FCF1A1A7-0599-7015-8CCC-79BD08D3A311}</FileHash>
+	<FileHash>{07A9C9F6-FD4A-C730-B0E5-29323FF7E340}</FileHash>
 </SoundBanksInfo>
