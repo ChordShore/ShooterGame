@@ -10,42 +10,24 @@
     "Type": "Event",
     "GUID": "{C06F853C-5C33-42EF-985F-5CF0E077DB55}",
     "Language": "SFX",
-    "Hash": "{6E19223B-431A-9917-EF0A-F8045B88B2D2}",
+    "Hash": "{CBAAE8E1-3B77-2048-1D76-D8EAE88CAA09}",
     "ObjectPath": "AMB_Wind_Balcony_Gust_OS",
     "ShortName": "AMB_Wind_Balcony_Gust_OS",
     "Path": "Event/AMB_Wind_Balcony_Gust_OS.bnk",
-    "Plugins": {
-     "Custom": [
-      {
-       "Id": "1035667954",
-       "Name": "Tone Generator",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Rooms\\Highrise\\Dynamic\\AMB_Highrise_OS\\AMB_Wind_Gust_OS\\Tone Generator",
-       "GUID": "{8436C310-A71C-4829-BA84-8AF5046D81A8}",
-       "LibName": "Wwise Tone Generator",
-       "LibId": "6684674"
-      }
-     ]
-    },
     "Events": [
      {
       "Id": "165326850",
       "Name": "AMB_Wind_Balcony_Gust_OS",
       "ObjectPath": "\\Events\\Ambience\\Unused\\Winds\\Highrise\\AMB_Wind_Balcony_Gust_OS",
       "GUID": "{C06F853C-5C33-42EF-985F-5CF0E077DB55}",
+      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "10",
-      "DurationMax": "10",
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "1035667954"
-        }
-       ]
-      }
+      "DurationMin": "0",
+      "DurationMax": "0"
      }
     ]
    }
   ],
-  "FileHash": "{325479F4-725E-0174-7040-A54245206ABD}"
+  "FileHash": "{1222183A-7714-3F99-0090-66752479807E}"
  }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{B38E604E-5128-FD73-1D4F-5BE4CBF74D08}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{7AF90EA2-B87C-26D2-E838-080DD40430C8}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -114,7 +114,6 @@
 			<Plugins>
 				<Custom>
 					<Plugin Id="662823536" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Default Work Unit\Event Probe\Noise Pip\Tone Generator" GUID="{D709502B-A7EF-4821-AC15-3F25D3551059}" LibName="Wwise Tone Generator" LibId="6684674"/>
-					<Plugin Id="1035667954" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\Highrise\Dynamic\AMB_Highrise_OS\AMB_Wind_Gust_OS\Tone Generator" GUID="{8436C310-A71C-4829-BA84-8AF5046D81A8}" LibName="Wwise Tone Generator" LibId="6684674"/>
 					<Plugin Id="1041093470" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Default Work Unit\Event Probe\Sine Pip\Tone Generator" GUID="{0AD6A0A9-22FC-4FE9-B47C-29C90175D05E}" LibName="Wwise Tone Generator" LibId="6684674"/>
 				</Custom>
 				<ShareSets>
@@ -150,12 +149,7 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="1019282361" Name="AMB_Highrise_Atrium_Gust_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\Dynamic\AMB_Highrise_Atrium_Gust_OS" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" DurationType="OneShot" DurationMin="10" DurationMax="10">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="1035667954"/>
-						</Custom>
-					</PluginRefs>
+				<Event Id="1019282361" Name="AMB_Highrise_Atrium_Gust_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\Dynamic\AMB_Highrise_Atrium_Gust_OS" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionPostEvent>
 						<ActionPostEventEntry Id="1915357068" Name="AMB_HoverCars_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_HoverCars_LP" GUID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}"/>
 					</ActionPostEvent>
@@ -193,7 +187,7 @@
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1915357068" Name="AMB_HoverCars_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_HoverCars_LP" GUID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}" MaxAttenuation="6000" DurationType="Infinite">
+				<Event Id="1915357068" Name="AMB_HoverCars_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_HoverCars_LP" GUID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}" MaxAttenuation="4000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="51555955"/>
 						<MediaRef Id="121824528"/>
@@ -281,5 +275,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9ABEDD61-DE36-2E60-301C-65274549BB45}</FileHash>
+	<FileHash>{A5F3CC9B-4E76-1A58-1CA7-840CAF8B0CEF}</FileHash>
 </SoundBanksInfo>

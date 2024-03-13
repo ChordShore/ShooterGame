@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{B38E604E-5128-FD73-1D4F-5BE4CBF74D08}",
+    "Hash": "{7AF90EA2-B87C-26D2-E838-080DD40430C8}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -235,14 +235,6 @@
        "LibId": "6684674"
       },
       {
-       "Id": "1035667954",
-       "Name": "Tone Generator",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Rooms\\Highrise\\Dynamic\\AMB_Highrise_OS\\AMB_Wind_Gust_OS\\Tone Generator",
-       "GUID": "{8436C310-A71C-4829-BA84-8AF5046D81A8}",
-       "LibName": "Wwise Tone Generator",
-       "LibId": "6684674"
-      },
-      {
        "Id": "1041093470",
        "Name": "Tone Generator",
        "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Event Probe\\Sine Pip\\Tone Generator",
@@ -350,15 +342,8 @@
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Dynamic\\AMB_Highrise_Atrium_Gust_OS",
       "GUID": "{B1473C73-10B0-46BB-AA72-8ABA06D25E40}",
       "DurationType": "OneShot",
-      "DurationMin": "10",
-      "DurationMax": "10",
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "1035667954"
-        }
-       ]
-      },
+      "DurationMin": "0",
+      "DurationMax": "0",
       "ActionPostEvent": [
        {
         "Id": "1915357068",
@@ -444,7 +429,7 @@
       "Name": "AMB_HoverCars_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_HoverCars_LP",
       "GUID": "{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}",
-      "MaxAttenuation": "6000",
+      "MaxAttenuation": "4000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -651,6 +636,6 @@
     ]
    }
   ],
-  "FileHash": "{11EE20C7-4729-E3F5-E954-F1F10CB2C3C6}"
+  "FileHash": "{FE374A96-D92D-0E27-589C-633D47B98A26}"
  }
 }
