@@ -6,6 +6,28 @@
 				<Property Name="Color" Type="int16" Value="2"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<ActorMixer Name="1P" ID="{9376CAE0-816B-45FD-AFB3-C7E84C63518D}" ShortID="505824189">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+				<ActorMixer Name="3P" ID="{79EB5111-6E3C-40EB-A880-2DEF0FC0B4DC}" ShortID="517456537">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

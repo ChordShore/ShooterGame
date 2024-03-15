@@ -17,7 +17,7 @@
 											<ChildrenList>
 												<Action Name="" ID="{42AE8C05-7965-4301-9B4D-E296688A1A51}" ShortID="542414162">
 													<PropertyList>
-														<Property Name="FadeTime" Type="Real64" Value="1"/>
+														<Property Name="FadeTime" Type="Real64" Value="0.2"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
@@ -37,6 +37,30 @@
 														</Reference>
 													</ReferenceList>
 												</Action>
+												<Action Name="" ID="{057431FD-DC7E-4947-9257-5B4EDD875181}" ShortID="541459120">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+														<Property Name="Scope" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_Highrise_Spawn_LP" ID="{1DE249F2-38B5-4CD8-932F-B2C53F5597CA}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{F5315316-F480-4ADE-8EEE-BFF8ADD68BC2}" ShortID="576385328">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+														<Property Name="Scope" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_Highrise_Drones_OS" ID="{53FAFEC3-E750-4552-8A08-2A993F768ECF}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
 											</ChildrenList>
 										</Event>
 										<Event Name="AMB_Highrise_Room" ID="{3F5A1E50-6729-4C3C-9937-D8C443065D63}">
@@ -48,6 +72,13 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="AMB_Highrise_Room_LP" ID="{C985A30E-FDD4-457A-A79F-78619E2D34D0}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{E2EC14AC-E098-4F40-B93C-A1C722C17923}" ShortID="648179205">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_Highrise_Drones_OS" ID="{53FAFEC3-E750-4552-8A08-2A993F768ECF}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -69,7 +100,7 @@
 											<ChildrenList>
 												<Action Name="" ID="{CB5A4126-AA5F-4881-AC67-D1FB68F1F388}" ShortID="765146383">
 													<PropertyList>
-														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+														<Property Name="FadeTime" Type="Real64" Value="0.2"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
@@ -77,10 +108,17 @@
 														</Reference>
 													</ReferenceList>
 												</Action>
+												<Action Name="" ID="{7E0850B5-BD28-4576-A3A1-B95CA86FEFCA}" ShortID="788774500">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_Highrise_Drones_OS" ID="{53FAFEC3-E750-4552-8A08-2A993F768ECF}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
 												<Action Name="" ID="{7C5B7349-0CCA-4210-A59C-31331C0312AC}" ShortID="323694256">
 													<PropertyList>
 														<Property Name="ActionType" Type="int16" Value="2"/>
-														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+														<Property Name="FadeTime" Type="Real64" Value="1"/>
 														<Property Name="Scope" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList>
@@ -97,10 +135,10 @@
 									<ChildrenList>
 										<Event Name="AMB_Highrise_Room_Drones_OS" ID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}">
 											<ChildrenList>
-												<Action Name="" ID="{1667DF98-4E71-4445-933E-6F8DCD1E5637}" ShortID="1024250975">
+												<Action Name="" ID="{3F374E00-74F5-414F-9F07-D2B3FDDC685A}" ShortID="714858775">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Sine Pip" ID="{AF6D3756-12D4-4384-8D92-157758C323FB}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
+															<ObjectRef Name="AMB_Highrise_Drones_OS" ID="{53FAFEC3-E750-4552-8A08-2A993F768ECF}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -111,7 +149,7 @@
 												<Action Name="" ID="{8F680334-819F-4BED-B222-8282CB071A9A}" ShortID="1036611982">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="AMB_Highrise_Atrium_Gusts_OS" ID="{201EE223-F7C0-422A-856B-C831EA93654F}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+															<ObjectRef Name="AMB_Highrise_Gusts_OS" ID="{201EE223-F7C0-422A-856B-C831EA93654F}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -127,45 +165,8 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="AMB_Highrise_Atrium_Drones_OS" ID="{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}">
-											<ChildrenList>
-												<Action Name="" ID="{77C1202D-2035-47F9-8C87-7DF7F7B55136}" ShortID="426616805">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Sine Pip" ID="{AF6D3756-12D4-4384-8D92-157758C323FB}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
 									</ChildrenList>
 								</Folder>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="Sanctuary" ID="{C805B48D-395F-403D-BBC2-932D84AAAD9C}" ShortID="986614160">
-							<ChildrenList>
-								<Event Name="AMB_Sanctuary_Interior_LP" ID="{E0C0B0EC-54DC-4DDD-A80E-89DAB367CD0D}">
-									<ChildrenList>
-										<Action Name="" ID="{8DDA7EB2-F607-4D0F-AFA1-5694E0FE29C1}" ShortID="278811325">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Noise Pip" ID="{A876FB26-65FA-4102-807C-4C838D794AA4}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="AMB_Sanctuary_Interior_OS" ID="{F74B57D9-49B1-4424-8D25-E7555C92DD26}">
-									<ChildrenList>
-										<Action Name="" ID="{805F61EC-8DD0-4CC0-A098-EA438AE37160}" ShortID="144120265">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Sine Pip" ID="{AF6D3756-12D4-4384-8D92-157758C323FB}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -307,62 +308,6 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-									</ChildrenList>
-								</Folder>
-							</ChildrenList>
-						</Folder>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Unused" ID="{6F752DBB-3844-430E-B07B-8B91CF878A8D}" ShortID="357923280">
-					<ChildrenList>
-						<Event Name="AMB_UnrealHolograph_FadeOut" ID="{65B7B589-76CC-48C2-8C87-74F03B903131}">
-							<ChildrenList>
-								<Action Name="" ID="{57BCF324-D4D4-44F6-80BD-45A27409D2A9}" ShortID="862494284">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Noise Pip" ID="{A876FB26-65FA-4102-807C-4C838D794AA4}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{27820625-B502-4803-AB01-BE0740290E8B}" ShortID="765919728">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Sine Pip" ID="{AF6D3756-12D4-4384-8D92-157758C323FB}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="AMB_UnrealHolograph_FadeIn" ID="{0CA6B7EC-BFB1-453C-A0AD-7B7626EF8FB5}">
-							<ChildrenList>
-								<Action Name="" ID="{2009AAA9-712A-4A69-BEA9-01C81ED0DD0C}" ShortID="259279540">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Noise Pip" ID="{A876FB26-65FA-4102-807C-4C838D794AA4}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Folder Name="Winds" ID="{58D23941-85E3-40E3-8628-74FF4CAD6ACB}" ShortID="265060731">
-							<ChildrenList>
-								<Folder Name="Highrise" ID="{8D08F1D4-A955-4161-8AA8-884F45A33E09}" ShortID="1025002644">
-									<ChildrenList>
-										<Event Name="AMB_Wind_Atrium_Bed_LP" ID="{451D4E5B-8927-43A0-B087-ADAC45076303}">
-											<ChildrenList>
-												<Action Name="" ID="{E7FB1D5F-6C95-465D-85A9-E3BAF38C5D7D}" ShortID="513254247">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_Highrise_Atrium_LP" ID="{C20194AC-F8E3-4210-BD43-0722C1C1BE02}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="AMB_Wind_Balcony_Gust_OS" ID="{C06F853C-5C33-42EF-985F-5CF0E077DB55}"/>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>

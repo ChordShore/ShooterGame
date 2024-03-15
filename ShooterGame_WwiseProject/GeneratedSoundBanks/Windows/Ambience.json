@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{7AF90EA2-B87C-26D2-E838-080DD40430C8}",
+    "Hash": "{B4CFB0B0-2031-B13D-1613-3C45526B7A36}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed.wav",
-      "CachePath": "SFX/WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed_C5579977.wem"
+      "CachePath": "SFX/WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed_F929C939.wem"
      },
      {
       "Id": "296674999",
@@ -133,7 +133,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu.wav",
-      "CachePath": "SFX/WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu_C5579977.wem"
+      "CachePath": "SFX/WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu_16D0B8B0.wem"
+     },
+     {
+      "Id": "406003256",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WINDDsgn_Wind Gusts_PSE_BW-BD3HL_EhmvY.wav",
+      "CachePath": "SFX/WINDDsgn_Wind Gusts_PSE_BW-BD3HL_EhmvY_BED9FF1C.wem"
      },
      {
       "Id": "407858808",
@@ -152,6 +160,14 @@
       "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Mid_2_7550AD36.wem"
      },
      {
+      "Id": "425050702",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Emitters_UnrealHolograph_FadeOut_OS.wav",
+      "CachePath": "SFX/Emitters_UnrealHolograph_FadeOut_OS_C706C5CF.wem"
+     },
+     {
       "Id": "429780900",
       "Language": "SFX",
       "Streaming": "false",
@@ -166,6 +182,14 @@
       "Location": "Memory",
       "ShortName": "AMB_Emitters_HovercarPassbys_High_3.wav",
       "CachePath": "SFX/AMB_Emitters_HovercarPassbys_High_3_171778DF.wem"
+     },
+     {
+      "Id": "456057735",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Emitters_UnrealHolograph_Main_LP.wav",
+      "CachePath": "SFX/Emitters_UnrealHolograph_Main_LP_825A38FC.wem"
      },
      {
       "Id": "515725994",
@@ -192,12 +216,28 @@
       "CachePath": "SFX/AMB_PhoneBox_ErrorRecording_OS_C35F038A.wem"
      },
      {
+      "Id": "619272686",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Emitters_UnrealHolograph_FadeIn_OS.wav",
+      "CachePath": "SFX/Emitters_UnrealHolograph_FadeIn_OS_5920140F.wem"
+     },
+     {
       "Id": "666585169",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AMB_Emitters_HovercarPassbys_Low_2.wav",
       "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Low_2_7550AD36.wem"
+     },
+     {
+      "Id": "912562636",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WINDDsgn_Drone Alien Planet_PSE_BW-BD3HL_PGEno.wav",
+      "CachePath": "SFX/WINDDsgn_Drone Alien Planet_PSE_BW-BD3HL_PGEno_307596F0.wem"
      },
      {
       "Id": "924565868",
@@ -216,6 +256,14 @@
       "CachePath": "SFX/AMB_PhoneBox_ErrorRecording_OS_4F030B8A.wem"
      },
      {
+      "Id": "1010981282",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu.wav",
+      "CachePath": "SFX/WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu_0C88C4D2.wem"
+     },
+     {
       "Id": "1041432378",
       "Language": "SFX",
       "Streaming": "false",
@@ -225,24 +273,6 @@
      }
     ],
     "Plugins": {
-     "Custom": [
-      {
-       "Id": "662823536",
-       "Name": "Tone Generator",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Event Probe\\Noise Pip\\Tone Generator",
-       "GUID": "{D709502B-A7EF-4821-AC15-3F25D3551059}",
-       "LibName": "Wwise Tone Generator",
-       "LibId": "6684674"
-      },
-      {
-       "Id": "1041093470",
-       "Name": "Tone Generator",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Event Probe\\Sine Pip\\Tone Generator",
-       "GUID": "{0AD6A0A9-22FC-4FE9-B47C-29C90175D05E}",
-       "LibName": "Wwise Tone Generator",
-       "LibId": "6684674"
-      }
-     ],
      "ShareSets": [
       {
        "Id": "1272037051",
@@ -309,31 +339,6 @@
          "Id": "3157003241"
         }
        ]
-      },
-      "AuxBusRefs": [
-       {
-        "Id": "3348775760",
-        "Name": "Highrise_EarlyReflections",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
-        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
-       }
-      ]
-     },
-     {
-      "Id": "1782404537",
-      "Name": "AMB_Highrise_Atrium_Drones_OS",
-      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Dynamic\\AMB_Highrise_Atrium_Drones_OS",
-      "GUID": "{31A370C2-67D8-4ECC-88EC-C3C13A643BBB}",
-      "MaxAttenuation": "8700",
-      "DurationType": "OneShot",
-      "DurationMin": "1",
-      "DurationMax": "1",
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "1041093470"
-        }
-       ]
       }
      },
      {
@@ -341,9 +346,13 @@
       "Name": "AMB_Highrise_Atrium_Gust_OS",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Dynamic\\AMB_Highrise_Atrium_Gust_OS",
       "GUID": "{B1473C73-10B0-46BB-AA72-8ABA06D25E40}",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
+      "MaxAttenuation": "6000",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "406003256"
+       }
+      ],
       "ActionPostEvent": [
        {
         "Id": "1915357068",
@@ -361,7 +370,10 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "400710580"
+        "Id": "912562636"
+       },
+       {
+        "Id": "1010981282"
        }
       ],
       "PluginRefs": {
@@ -370,32 +382,21 @@
          "Id": "1272037051"
         }
        ]
-      },
-      "AuxBusRefs": [
-       {
-        "Id": "3348775760",
-        "Name": "Highrise_EarlyReflections",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
-        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
-       }
-      ]
+      }
      },
      {
       "Id": "2757392698",
       "Name": "AMB_Highrise_Room_Drones_OS",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Dynamic\\AMB_Highrise_Room_Drones_OS",
       "GUID": "{4E65C91A-3866-4E84-B034-94A7E371ECB7}",
-      "MaxAttenuation": "8700",
       "DurationType": "OneShot",
-      "DurationMin": "1",
-      "DurationMax": "1",
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "1041093470"
-        }
-       ]
-      }
+      "DurationMin": "9.230821",
+      "DurationMax": "9.230821",
+      "MediaRefs": [
+       {
+        "Id": "912562636"
+       }
+      ]
      },
      {
       "Id": "1040217121",
@@ -406,6 +407,9 @@
       "MediaRefs": [
        {
         "Id": "400710580"
+       },
+       {
+        "Id": "912562636"
        }
       ],
       "PluginRefs": {
@@ -414,22 +418,14 @@
          "Id": "1272037051"
         }
        ]
-      },
-      "AuxBusRefs": [
-       {
-        "Id": "3348775760",
-        "Name": "Highrise_EarlyReflections",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
-        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
-       }
-      ]
+      }
      },
      {
       "Id": "1915357068",
       "Name": "AMB_HoverCars_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_HoverCars_LP",
       "GUID": "{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}",
-      "MaxAttenuation": "4000",
+      "MaxAttenuation": "6000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -479,7 +475,7 @@
       "Name": "AMB_PhoneBox_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_PhoneBox_LP",
       "GUID": "{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}",
-      "MaxAttenuation": "1900",
+      "MaxAttenuation": "2000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -492,39 +488,6 @@
         "Id": "992552206"
        }
       ]
-     },
-     {
-      "Id": "4289637934",
-      "Name": "AMB_Sanctuary_Interior_LP",
-      "ObjectPath": "\\Events\\Ambience\\Rooms\\Sanctuary\\AMB_Sanctuary_Interior_LP",
-      "GUID": "{E0C0B0EC-54DC-4DDD-A80E-89DAB367CD0D}",
-      "DurationType": "OneShot",
-      "DurationMin": "5",
-      "DurationMax": "5",
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "662823536"
-        }
-       ]
-      }
-     },
-     {
-      "Id": "4272860344",
-      "Name": "AMB_Sanctuary_Interior_OS",
-      "ObjectPath": "\\Events\\Ambience\\Rooms\\Sanctuary\\AMB_Sanctuary_Interior_OS",
-      "GUID": "{F74B57D9-49B1-4424-8D25-E7555C92DD26}",
-      "MaxAttenuation": "8700",
-      "DurationType": "OneShot",
-      "DurationMin": "1",
-      "DurationMax": "1",
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "1041093470"
-        }
-       ]
-      }
      },
      {
       "Id": "3140124040",
@@ -561,37 +524,47 @@
       ]
      },
      {
-      "Id": "652591751",
-      "Name": "AMB_UnrealHolograph_FadeIn",
-      "ObjectPath": "\\Events\\Ambience\\Unused\\AMB_UnrealHolograph_FadeIn",
-      "GUID": "{0CA6B7EC-BFB1-453C-A0AD-7B7626EF8FB5}",
+      "Id": "896607520",
+      "Name": "AMB_UnrealHolograph_FadeIn_OS",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_UnrealHolograph_FadeIn_OS",
+      "GUID": "{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}",
+      "MaxAttenuation": "8300",
       "DurationType": "OneShot",
-      "DurationMin": "5",
-      "DurationMax": "5",
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "662823536"
-        }
-       ]
-      }
+      "DurationMin": "6.233227",
+      "DurationMax": "6.233227",
+      "MediaRefs": [
+       {
+        "Id": "619272686"
+       }
+      ]
      },
      {
-      "Id": "3686232698",
-      "Name": "AMB_UnrealHolograph_FadeOut",
-      "ObjectPath": "\\Events\\Ambience\\Unused\\AMB_UnrealHolograph_FadeOut",
-      "GUID": "{65B7B589-76CC-48C2-8C87-74F03B903131}",
-      "MaxAttenuation": "8700",
+      "Id": "1695319799",
+      "Name": "AMB_UnrealHolograph_FadeOut_OS",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_UnrealHolograph_FadeOut_OS",
+      "GUID": "{E3EEEB5D-9B58-43DF-8E87-C18F76699081}",
+      "MaxAttenuation": "8300",
       "DurationType": "OneShot",
-      "DurationMin": "1",
-      "DurationMax": "1",
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "1041093470"
-        }
-       ]
-      }
+      "DurationMin": "5.25",
+      "DurationMax": "5.25",
+      "MediaRefs": [
+       {
+        "Id": "425050702"
+       }
+      ]
+     },
+     {
+      "Id": "2762262784",
+      "Name": "AMB_UnrealHolograph_LP",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_UnrealHolograph_LP",
+      "GUID": "{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}",
+      "MaxAttenuation": "8300",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "456057735"
+       }
+      ]
      },
      {
       "Id": "2794177527",
@@ -605,37 +578,10 @@
         "Id": "218188666"
        }
       ]
-     },
-     {
-      "Id": "1534744560",
-      "Name": "AMB_Wind_Atrium_Bed_LP",
-      "ObjectPath": "\\Events\\Ambience\\Unused\\Winds\\Highrise\\AMB_Wind_Atrium_Bed_LP",
-      "GUID": "{451D4E5B-8927-43A0-B087-ADAC45076303}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "293619390"
-       }
-      ],
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "3157003241"
-        }
-       ]
-      },
-      "AuxBusRefs": [
-       {
-        "Id": "3348775760",
-        "Name": "Highrise_EarlyReflections",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
-        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
-       }
-      ]
      }
     ]
    }
   ],
-  "FileHash": "{62D8DA7C-6C9D-C2FC-E0AF-A55F78B13052}"
+  "FileHash": "{8A0C0062-CFEA-E871-8D70-B29648880E45}"
  }
 }

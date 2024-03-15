@@ -20,9 +20,9 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Folder Name="Highrise" ID="{138A0AB3-D651-473B-8CAA-F27AFA635670}" ShortID="899445661">
+						<Folder Name="Dynamic" ID="{2C7A6EA4-D906-4919-A90F-8B14E7E6752E}" ShortID="852099741">
 							<ChildrenList>
-								<Folder Name="Dynamic" ID="{2C7A6EA4-D906-4919-A90F-8B14E7E6752E}" ShortID="852099741">
+								<Folder Name="Highrise" ID="{138A0AB3-D651-473B-8CAA-F27AFA635670}" ShortID="899445661">
 									<ChildrenList>
 										<ActorMixer Name="AMB_BarrierFence" ID="{4534AEA2-330F-47C5-BB3A-053115549B20}" ShortID="856351668">
 											<PropertyList>
@@ -43,7 +43,7 @@
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>-2</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -55,7 +55,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+													<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -116,9 +116,18 @@
 										</ActorMixer>
 										<ActorMixer Name="AMB_HoverCars" ID="{6A12B4A7-158F-4D6C-BABC-953504BEB8BE}" ShortID="856935690">
 											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATN_HoverCar" ID="{3C63DC8E-EFE4-4A9C-BE7D-2D1F586A51FE}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 												</Reference>
@@ -126,7 +135,7 @@
 													<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+													<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -156,7 +165,7 @@
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2">
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5">
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{F555415A-C79C-4649-807B-455FEDA1CFAA}">
@@ -186,7 +195,6 @@
 													<ChildrenList>
 														<RandomSequenceContainer Name="HoverCar_Lows_OS" ID="{B595E852-07C4-4BB7-B861-8F470A60A0DA}" ShortID="161928108">
 															<PropertyList>
-																<Property Name="3DPosition" Type="int16" Value="1"/>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="InitialDelay" Type="Real64">
 																	<ModifierList>
@@ -210,10 +218,9 @@
 																	</ModifierList>
 																</Property>
 																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="60"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-3</Value>
+																		<Value>-8</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -413,7 +420,6 @@
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="HoverCar_Highs_OS" ID="{4D2CDC2B-8735-427B-B98A-9187A32BC120}" ShortID="184274830">
 															<PropertyList>
-																<Property Name="3DPosition" Type="int16" Value="1"/>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="InitialDelay" Type="Real64">
 																	<ModifierList>
@@ -442,10 +448,9 @@
 																	</ModifierList>
 																</Property>
 																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="60"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-3</Value>
+																		<Value>-11</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -624,7 +629,6 @@
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="HoverCar_Mids_OS" ID="{2A99834A-5387-4D29-8150-BB36D6029EB7}" ShortID="543972413">
 															<PropertyList>
-																<Property Name="3DPosition" Type="int16" Value="1"/>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Pitch" Type="int32">
@@ -641,10 +645,9 @@
 																	</ModifierList>
 																</Property>
 																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="60"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-3</Value>
+																		<Value>-8</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -862,7 +865,11 @@
 										</ActorMixer>
 									</ChildrenList>
 								</Folder>
-								<Folder Name="Static" ID="{F2492005-8E3A-468C-9DFF-77B307301DB6}" ShortID="97315065">
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Static" ID="{F2492005-8E3A-468C-9DFF-77B307301DB6}" ShortID="97315065">
+							<ChildrenList>
+								<Folder Name="Highrise" ID="{B911BA4B-2C8D-4FF2-AEFF-379F32BD88E2}" ShortID="247851112">
 									<ChildrenList>
 										<ActorMixer Name="AMB_StreetLamp" ID="{B8CA52DB-DDD3-4A2B-BCB0-69E190CFED6F}" ShortID="473321145">
 											<PropertyList>
@@ -870,7 +877,7 @@
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-6</Value>
+														<Value>-8</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -882,7 +889,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+													<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -976,7 +983,7 @@
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-17</Value>
+																<Value>-21</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1147,10 +1154,83 @@
 												</RandomSequenceContainer>
 											</ChildrenList>
 										</ActorMixer>
+										<ActorMixer Name="AMB_UnrealSign" ID="{CA2AEBEB-8FBD-497E-BF8F-76F75BF428C5}" ShortID="746517449">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATN_UnrealSign" ID="{AB893DBD-799F-4429-9641-0F1A338D76F9}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AMB_UnrealSign_LP" ID="{590D5A02-2C18-4FE7-9702-6D4F182282B8}" ShortID="1027681041">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-14</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATN_StreetLamp" ID="{ACD7E5FE-C203-41ED-AADE-49B51DEB2447}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Emitters_UnrealSign" ID="{BF49E7E9-1AB2-4957-BE2E-E2835C3C68A1}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="1642.105"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.245931283905967"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.195298372513562"/>
+																<Property Name="LoopBegin" Type="Real64" Value="1.28028933092224"/>
+																<Property Name="LoopEnd" Type="Real64" Value="6.77757685352622"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0650994575045208"/>
+																<Property Name="TrimEnd" Type="Real64" Value="7.90235081374322"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Emitters_UnrealSign.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="218188666"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Emitters_UnrealSign" ID="{BF49E7E9-1AB2-4957-BE2E-E2835C3C68A1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</ActorMixer>
 										<ActorMixer Name="AMB_PhoneBox" ID="{680FC3D1-F955-4069-B677-8A89E9885F67}" ShortID="658006216">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -1160,7 +1240,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+													<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -1355,12 +1435,8 @@
 										<ActorMixer Name="AMB_UnrealHolograph" ID="{59EABB7B-B549-47D9-83A3-01449C01EF5F}" ShortID="10162776">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -1370,7 +1446,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+													<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -1494,74 +1570,6 @@
 												</Sound>
 											</ChildrenList>
 										</ActorMixer>
-										<ActorMixer Name="AMB_UnrealSign" ID="{CA2AEBEB-8FBD-497E-BF8F-76F75BF428C5}" ShortID="746517449">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="1"/>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-1</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="ATN_UnrealSign" ID="{AB893DBD-799F-4429-9641-0F1A338D76F9}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-												</Reference>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="AMB_UnrealSign_LP" ID="{590D5A02-2C18-4FE7-9702-6D4F182282B8}" ShortID="1027681041">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-14</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="ATN_StreetLamp" ID="{ACD7E5FE-C203-41ED-AADE-49B51DEB2447}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-														</Reference>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Emitters_UnrealSign" ID="{BF49E7E9-1AB2-4957-BE2E-E2835C3C68A1}">
-															<PropertyList>
-																<Property Name="CrossfadeDuration" Type="Real64" Value="1642.105"/>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.245931283905967"/>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.195298372513562"/>
-																<Property Name="LoopBegin" Type="Real64" Value="1.28028933092224"/>
-																<Property Name="LoopEnd" Type="Real64" Value="6.77757685352622"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.0650994575045208"/>
-																<Property Name="TrimEnd" Type="Real64" Value="7.90235081374322"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Emitters_UnrealSign.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="218188666"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Emitters_UnrealSign" ID="{BF49E7E9-1AB2-4957-BE2E-E2835C3C68A1}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</ActorMixer>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>
@@ -1578,21 +1586,82 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Folder Name="Highrise" ID="{99572769-9447-4520-B11D-1380B181790D}" ShortID="158238427">
+						<Folder Name="Dynamic" ID="{A3DD4DF6-0131-4287-857A-9727233B9D40}" ShortID="352778244">
 							<ChildrenList>
-								<Folder Name="Dynamic" ID="{A3DD4DF6-0131-4287-857A-9727233B9D40}" ShortID="352778244">
+								<Folder Name="Highrise" ID="{1CEA1CD1-FEF2-433F-8DE4-C21167142F3B}" ShortID="934107978">
 									<ChildrenList>
-										<ActorMixer Name="AMB_Highrise_OS" ID="{B8790566-86DD-4E01-854C-28BAF48C2F3D}" ShortID="376638653">
+										<RandomSequenceContainer Name="AMB_Highrise_Gusts_OS" ID="{201EE223-F7C0-422A-856B-C831EA93654F}" ShortID="958055632">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>30</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>700</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{D4F62FF4-4B64-4149-AD9D-ABC1128648B7}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATN_WindGust" ID="{4BF033E2-2AD8-4196-B297-462EC5E81771}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+													<ObjectRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="AMB_Highrise_Atrium_Drones_OS" ID="{53FAFEC3-E750-4552-8A08-2A993F768ECF}" ShortID="173561476">
+												<Sound Name="WINDDsgn_Wind Gusts_PSE_BW-BD3HL_EhmvY" ID="{D146F584-7410-4A65-A716-7D3A52363F44}" ShortID="357701178">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>400</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -1601,191 +1670,329 @@
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 														</Reference>
 													</ReferenceList>
-												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="AMB_Highrise_Atrium_Gusts_OS" ID="{201EE223-F7C0-422A-856B-C831EA93654F}" ShortID="958055632">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-												</RandomSequenceContainer>
+													<ChildrenList>
+														<AudioFileSource Name="WINDDsgn_Wind Gusts_PSE_BW-BD3HL_EhmvY" ID="{DAD73864-5D41-4D65-80B3-D34BA66673C2}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="3.54039370786517"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="4.28932314606741"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="31.1826984269663"/>
+																<Property Name="TrimEnd" Type="Real64" Value="42.552808988764"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>WINDDsgn_Wind Gusts_PSE_BW-BD3HL_EhmvY.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="406003256"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WINDDsgn_Wind Gusts_PSE_BW-BD3HL_EhmvY" ID="{DAD73864-5D41-4D65-80B3-D34BA66673C2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-										</ActorMixer>
-									</ChildrenList>
-								</Folder>
-								<Folder Name="Static" ID="{C4C416B0-4E5E-40FF-9BC3-76FE2A884BEF}" ShortID="896869461">
-									<ChildrenList>
-										<ActorMixer Name="AMB_Highrise_LP" ID="{B1AA0A72-4A6A-4850-9D41-3DAD3AFDE1F1}" ShortID="1011135215">
+											<PositioningInfo>
+												<Position Name="" ID="{03C37722-BD32-4338-B033-8930CDC9C21E}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="5"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="AMB_Highrise_Gusts_OS_Path_C" ID="{ACD8E4C4-6571-4996-B4F2-65EC2794B0CF}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="50"/>
+																<Property Name="RandomY" Type="Real64" Value="25"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>100</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="AMB_Highrise_Gusts_OS_Path_L" ID="{4B56BA75-EA11-4BD6-8FB1-DAB06F220671}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="50"/>
+																<Property Name="RandomY" Type="Real64" Value="25"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>50</XPos>
+																	<YPos>100</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="AMB_Highrise_Gusts_OS_Path_R" ID="{4AA949F8-6F2D-4582-9A83-E91928CEA361}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="50"/>
+																<Property Name="RandomY" Type="Real64" Value="25"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-50</XPos>
+																	<YPos>100</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="AMB_Highrise_Drones_OS" ID="{53FAFEC3-E750-4552-8A08-2A993F768ECF}" ShortID="173561476">
 											<PropertyList>
-												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-												<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
-												<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>25</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>70</Value>
+													</ValueList>
+												</Property>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-1200</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="8">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{969BE8E2-6516-48B2-BA5E-6FB4ED565288}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="4"/>
+																	<Property Name="Min" Type="Real64" Value="-4"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+													<ObjectRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="WINDDsgn_Drone Alien Planet_PSE_BW-BD3HL_PGEno" ID="{3E15076E-72BB-402B-9135-51473BD4E65B}" ShortID="866084995">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WINDDsgn_Drone Alien Planet_PSE_BW-BD3HL_PGEno" ID="{22588AD8-D715-413D-B29F-FF8C11A42F67}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="2.15845393258427"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="3.61541033707864"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="35.4526058426966"/>
+																<Property Name="TrimEnd" Type="Real64" Value="39.0680161797753"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>WINDDsgn_Drone Alien Planet_PSE_BW-BD3HL_PGEno.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="912562636"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WINDDsgn_Drone Alien Planet_PSE_BW-BD3HL_PGEno" ID="{22588AD8-D715-413D-B29F-FF8C11A42F67}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Static" ID="{C4C416B0-4E5E-40FF-9BC3-76FE2A884BEF}" ShortID="896869461">
+							<ChildrenList>
+								<Folder Name="Highrise" ID="{700479D9-F438-433A-AB88-60865049296A}" ShortID="692183520">
+									<ChildrenList>
+										<Sound Name="AMB_Highrise_Atrium_LP" ID="{C20194AC-F8E3-4210-BD43-0722C1C1BE02}" ShortID="813663190">
+											<PropertyList>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="Test" ID="{B809AB14-B291-422C-911F-3EFDE4043744}" WorkUnitID="{2B949421-4224-488B-A3C2-FF31E814EF2E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 												<Reference Name="ReflectionsAuxSend">
 													<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="AMB_Highrise_Room_LP" ID="{C985A30E-FDD4-457A-A79F-78619E2D34D0}" ShortID="186338023">
+												<AudioFileSource Name="WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed" ID="{2ADDE332-B510-4E62-8DA1-7922A6F92A89}">
 													<PropertyList>
-														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-														<Property Name="OverrideEffect" Type="bool" Value="True"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-14</Value>
-															</ValueList>
-														</Property>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="21401.6"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="2.2844404494382"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="2.45577348314606"/>
+														<Property Name="LoopBegin" Type="Real64" Value="24.3864017977528"/>
+														<Property Name="LoopEnd" Type="Real64" Value="105.826703820225"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-															<ObjectRef Name="Room_Tone" ID="{13426B94-4BD9-4C2E-8BE9-74477EB7C566}" WorkUnitID="{2B949421-4224-488B-A3C2-FF31E814EF2E}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu" ID="{374370A6-E461-4791-8A16-1D1C55878294}">
-															<PropertyList>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="400710580"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu" ID="{374370A6-E461-4791-8A16-1D1C55878294}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_Highrise_Atrium_LP" ID="{C20194AC-F8E3-4210-BD43-0722C1C1BE02}" ShortID="813663190">
-													<PropertyList>
-														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-														<Property Name="OverrideEffect" Type="bool" Value="True"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-15</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-															<ObjectRef Name="Test" ID="{B809AB14-B291-422C-911F-3EFDE4043744}" WorkUnitID="{2B949421-4224-488B-A3C2-FF31E814EF2E}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed" ID="{2ADDE332-B510-4E62-8DA1-7922A6F92A89}">
-															<PropertyList>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="293619390"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed" ID="{2ADDE332-B510-4E62-8DA1-7922A6F92A89}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_Highrise_Spawn_LP" ID="{1DE249F2-38B5-4CD8-932F-B2C53F5597CA}" ShortID="618021615">
-													<PropertyList>
-														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-														<Property Name="OverrideEffect" Type="bool" Value="True"/>
-														<Property Name="Pitch" Type="int32">
-															<ValueList>
-																<Value>950</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-14</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-															<ObjectRef Name="Room_Tone" ID="{13426B94-4BD9-4C2E-8BE9-74477EB7C566}" WorkUnitID="{2B949421-4224-488B-A3C2-FF31E814EF2E}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu" ID="{F7CB793E-7764-42D8-8E90-7DEC6F5BE92E}">
-															<PropertyList>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="400710580"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu" ID="{F7CB793E-7764-42D8-8E90-7DEC6F5BE92E}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+													<Language>SFX</Language>
+													<AudioFile>WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="293619390"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</ActorMixer>
+											<ActiveSourceList>
+												<ActiveSource Name="WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed" ID="{2ADDE332-B510-4E62-8DA1-7922A6F92A89}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Highrise_Room_LP" ID="{C985A30E-FDD4-457A-A79F-78619E2D34D0}" ShortID="186338023">
+											<PropertyList>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-14</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="Room_Tone" ID="{13426B94-4BD9-4C2E-8BE9-74477EB7C566}" WorkUnitID="{2B949421-4224-488B-A3C2-FF31E814EF2E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu" ID="{374370A6-E461-4791-8A16-1D1C55878294}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="12963.481"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="4.15797692883895"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="4.91397273408239"/>
+														<Property Name="LoopBegin" Type="Real64" Value="22.2478765543071"/>
+														<Property Name="LoopEnd" Type="Real64" Value="100.115444494382"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.96998352059925"/>
+														<Property Name="TrimEnd" Type="Real64" Value="115.775357602996"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1010981282"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu" ID="{374370A6-E461-4791-8A16-1D1C55878294}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Highrise_Spawn_LP" ID="{1DE249F2-38B5-4CD8-932F-B2C53F5597CA}" ShortID="618021615">
+											<PropertyList>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>950</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="Room_Tone" ID="{13426B94-4BD9-4C2E-8BE9-74477EB7C566}" WorkUnitID="{2B949421-4224-488B-A3C2-FF31E814EF2E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu" ID="{F7CB793E-7764-42D8-8E90-7DEC6F5BE92E}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="18654.765"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="5.39997003745318"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="9.39594786516854"/>
+														<Property Name="LoopBegin" Type="Real64" Value="21.8158789513109"/>
+														<Property Name="LoopEnd" Type="Real64" Value="89.2615047191011"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.48398621722846"/>
+														<Property Name="TrimEnd" Type="Real64" Value="115.721357902622"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="400710580"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu" ID="{F7CB793E-7764-42D8-8E90-7DEC6F5BE92E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</Folder>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="Sanctuary" ID="{6CEC5890-5527-42F1-B776-27DD6DCD7D82}" ShortID="112392502">
-							<ChildrenList>
-								<ActorMixer Name="AMB_Sanctuary_LP" ID="{4C7422FF-F4EF-4DAC-B96E-24DA04D0B86B}" ShortID="795555583">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-										</Reference>
-									</ReferenceList>
-								</ActorMixer>
-								<ActorMixer Name="AMB_Sanctuary_OS" ID="{BC581D76-05C5-4D52-9384-C37FB921687F}" ShortID="918917643">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-										</Reference>
-									</ReferenceList>
-								</ActorMixer>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
