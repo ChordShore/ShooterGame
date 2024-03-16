@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{400987D4-59EC-F951-948A-C8E2F50A7C86}">
+		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{40F0D55F-FAA3-077E-98F9-612AAB438D27}">
 			<ObjectPath>\SoundBanks\Default Work Unit\EventProbe</ObjectPath>
 			<ShortName>EventProbe</ShortName>
 			<Path>EventProbe.bnk</Path>
@@ -12,7 +12,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="8300" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="8500" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1041093470"/>
@@ -29,5 +29,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FD357004-9225-54A3-AFF1-66C6C909B23A}</FileHash>
+	<FileHash>{41914ABC-F879-CDAF-B7C5-42DA06C01287}</FileHash>
 </SoundBanksInfo>
