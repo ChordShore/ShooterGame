@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{7A3B7195-3779-4EDC-629F-F71F99E1F722}",
+    "Hash": "{3BE0FFAB-ED60-2126-FB78-0EEDCA4279A2}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -104,12 +104,12 @@
       "CachePath": "SFX/AMB_StreetLamp_Buzz_OS_1_10C4C929.wem"
      },
      {
-      "Id": "293619390",
+      "Id": "288927093",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed.wav",
-      "CachePath": "SFX/WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed_F929C939.wem"
+      "ShortName": "AMB_Rooms_Room.wav",
+      "CachePath": "SFX/AMB_Rooms_Room_841A0E8A.wem"
      },
      {
       "Id": "296674999",
@@ -134,14 +134,6 @@
       "Location": "Memory",
       "ShortName": "AMB_Emitters_HovercarPassbys_High_4.wav",
       "CachePath": "SFX/AMB_Emitters_HovercarPassbys_High_4_171778DF.wem"
-     },
-     {
-      "Id": "400710580",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu.wav",
-      "CachePath": "SFX/WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu_16D0B8B0.wem"
      },
      {
       "Id": "406003256",
@@ -200,6 +192,14 @@
       "CachePath": "SFX/Emitters_UnrealHolograph_Main_LP_825A38FC.wem"
      },
      {
+      "Id": "509626040",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB_Rooms_Atrium.wav",
+      "CachePath": "SFX/AMB_Rooms_Atrium_38BDB388.wem"
+     },
+     {
       "Id": "515725994",
       "Language": "SFX",
       "Streaming": "false",
@@ -256,20 +256,20 @@
       "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Mid_1_7550AD36.wem"
      },
      {
+      "Id": "972560287",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB_Rooms_Room.wav",
+      "CachePath": "SFX/AMB_Rooms_Room_AAE9CE7B.wem"
+     },
+     {
       "Id": "992552206",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AMB_PhoneBox_ErrorRecording_OS.wav",
       "CachePath": "SFX/AMB_PhoneBox_ErrorRecording_OS_4F030B8A.wem"
-     },
-     {
-      "Id": "1010981282",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu.wav",
-      "CachePath": "SFX/WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu_0C88C4D2.wem"
      },
      {
       "Id": "1041432378",
@@ -282,14 +282,6 @@
     ],
     "Plugins": {
      "ShareSets": [
-      {
-       "Id": "1272037051",
-       "Name": "Room_Tone",
-       "ObjectPath": "\\Effects\\Default Work Unit\\Room_Tone",
-       "GUID": "{13426B94-4BD9-4C2E-8BE9-74477EB7C566}",
-       "LibName": "Wwise Parametric EQ",
-       "LibId": "6881283"
-      },
       {
        "Id": "1845424741",
        "Name": "Tremolo_HoverCars",
@@ -305,14 +297,6 @@
        "GUID": "{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}",
        "LibName": "Wwise Peak Limiter",
        "LibId": "7208963"
-      },
-      {
-       "Id": "3157003241",
-       "Name": "Test",
-       "ObjectPath": "\\Effects\\Default Work Unit\\Test",
-       "GUID": "{B809AB14-B291-422C-911F-3EFDE4043744}",
-       "LibName": "Wwise Parametric EQ",
-       "LibId": "6881283"
       }
      ]
     },
@@ -322,7 +306,7 @@
       "Name": "AMB_BarrierFence_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_BarrierFence_LP",
       "GUID": "{427593F0-92C8-4CA8-8FCD-C163A0B02BEC}",
-      "MaxAttenuation": "2500",
+      "MaxAttenuation": "2700",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -335,19 +319,13 @@
       "Name": "AMB_Highrise_Atrium",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Static\\AMB_Highrise_Atrium",
       "GUID": "{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}",
+      "MaxAttenuation": "1000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "293619390"
+        "Id": "509626040"
        }
-      ],
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "3157003241"
-        }
-       ]
-      }
+      ]
      },
      {
       "Id": "1019282361",
@@ -375,28 +353,23 @@
       "Name": "AMB_Highrise_Room",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Static\\AMB_Highrise_Room",
       "GUID": "{3F5A1E50-6729-4C3C-9937-D8C443065D63}",
+      "MaxAttenuation": "1000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "912562636"
+        "Id": "288927093"
        },
        {
-        "Id": "1010981282"
+        "Id": "912562636"
        }
-      ],
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "1272037051"
-        }
-       ]
-      }
+      ]
      },
      {
       "Id": "2757392698",
       "Name": "AMB_Highrise_Room_Drones_OS",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Dynamic\\AMB_Highrise_Room_Drones_OS",
       "GUID": "{4E65C91A-3866-4E84-B034-94A7E371ECB7}",
+      "MaxAttenuation": "1000",
       "DurationType": "OneShot",
       "DurationMin": "9.230821",
       "DurationMax": "9.230821",
@@ -411,22 +384,16 @@
       "Name": "AMB_Highrise_Spawn",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Static\\AMB_Highrise_Spawn",
       "GUID": "{1C364EAC-CAE6-4664-ACA8-6E418F9C7859}",
+      "MaxAttenuation": "1000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "400710580"
+        "Id": "912562636"
        },
        {
-        "Id": "912562636"
+        "Id": "972560287"
        }
-      ],
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "1272037051"
-        }
-       ]
-      }
+      ]
      },
      {
       "Id": "1915357068",
@@ -483,7 +450,7 @@
       "Name": "AMB_PhoneBox_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_PhoneBox_LP",
       "GUID": "{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}",
-      "MaxAttenuation": "2500",
+      "MaxAttenuation": "2200",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -579,7 +546,7 @@
       "Name": "AMB_UnrealSign_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_UnrealSign_LP",
       "GUID": "{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}",
-      "MaxAttenuation": "2200",
+      "MaxAttenuation": "2000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -795,7 +762,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{74D695D6-6660-3106-0C86-580A4FEC7CCB}",
+    "Hash": "{EB764F11-8F1A-8C76-BBA6-63B39F585CBD}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -1737,7 +1704,7 @@
     "Type": "User",
     "GUID": "{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}",
     "Language": "SFX",
-    "Hash": "{40F0D55F-FAA3-077E-98F9-612AAB438D27}",
+    "Hash": "{5F967A1D-4C64-D039-8E2C-C4B6EA600959}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\EventProbe",
     "ShortName": "EventProbe",
     "Path": "EventProbe.bnk",
@@ -1951,6 +1918,6 @@
     "Path": "Dialogue.bnk"
    }
   ],
-  "FileHash": "{8044DA17-5C65-B033-5516-179DFCCE08BA}"
+  "FileHash": "{0281DC23-89D6-9543-C9D2-1F993E78A6B3}"
  }
 }

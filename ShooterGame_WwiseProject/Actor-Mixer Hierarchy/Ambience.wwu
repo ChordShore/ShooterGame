@@ -42,11 +42,6 @@
 													</ValueList>
 												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-2</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -71,7 +66,7 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-8</Value>
+																<Value>-7</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -128,7 +123,7 @@
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-5</Value>
+														<Value>-96</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -188,6 +183,11 @@
 														</Property>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
@@ -875,6 +875,11 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -1057,11 +1062,6 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-8</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -1081,7 +1081,7 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-19</Value>
+																<Value>-27</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1165,7 +1165,7 @@
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-21</Value>
+																<Value>-29</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1341,11 +1341,6 @@
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-5</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -1365,7 +1360,7 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-14</Value>
+																<Value>-19</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1410,11 +1405,6 @@
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-5</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -1434,7 +1424,7 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-16</Value>
+																<Value>-21</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1523,7 +1513,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-2</Value>
+																<Value>-7</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1705,7 +1695,7 @@
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-12</Value>
+																<Value>-14</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1740,7 +1730,7 @@
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-12</Value>
+																<Value>-14</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1779,7 +1769,14 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="AMB_Rooms" ID="{54E35A16-0D2B-4FEF-BAB8-D0B560F293F3}" ShortID="494085559">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="ATN_Room" ID="{F2D880EA-D79D-4649-A829-4DE00ED188E9}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 						</Reference>
@@ -1805,18 +1802,20 @@
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-630</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-18</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-												</Reference>
-												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-													<ObjectRef Name="Test" ID="{B809AB14-B291-422C-911F-3EFDE4043744}" WorkUnitID="{2B949421-4224-488B-A3C2-FF31E814EF2E}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
@@ -1841,9 +1840,24 @@
 														<MediaID ID="293619390"/>
 													</MediaIDList>
 												</AudioFileSource>
+												<AudioFileSource Name="AMB_Rooms_Atrium" ID="{D13E6EE5-8096-4010-9616-EB42FAADAFE1}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="1606.328"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.569777083333333"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.693641666666668"/>
+														<Property Name="LoopBegin" Type="Real64" Value="6.874484375"/>
+														<Property Name="LoopEnd" Type="Real64" Value="21.1189114583333"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AMB_Rooms_Atrium.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="509626040"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="WINDVege_Amb Abandoned City_PSE_BW-BD3HL_gXaed" ID="{2ADDE332-B510-4E62-8DA1-7922A6F92A89}" Platform="Linked"/>
+												<ActiveSource Name="AMB_Rooms_Atrium" ID="{D13E6EE5-8096-4010-9616-EB42FAADAFE1}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -1947,6 +1961,11 @@
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-430</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-14</Value>
@@ -1956,9 +1975,6 @@
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-												</Reference>
-												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-													<ObjectRef Name="Room_Tone" ID="{13426B94-4BD9-4C2E-8BE9-74477EB7C566}" WorkUnitID="{2B949421-4224-488B-A3C2-FF31E814EF2E}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
@@ -1985,9 +2001,24 @@
 														<MediaID ID="1010981282"/>
 													</MediaIDList>
 												</AudioFileSource>
+												<AudioFileSource Name="AMB_Rooms_Room" ID="{99E76441-58AE-4271-AB7C-E84D12DA6B59}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="2759.964"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.379025688244048"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.24855520833334"/>
+														<Property Name="LoopBegin" Type="Real64" Value="5.72997658110119"/>
+														<Property Name="LoopEnd" Type="Real64" Value="19.1630928850446"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AMB_Rooms_Room.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="288927093"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu" ID="{374370A6-E461-4791-8A16-1D1C55878294}" Platform="Linked"/>
+												<ActiveSource Name="AMB_Rooms_Room" ID="{99E76441-58AE-4271-AB7C-E84D12DA6B59}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -2009,21 +2040,18 @@
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
-														<Value>950</Value>
+														<Value>-260</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-19</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-												</Reference>
-												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-													<ObjectRef Name="Room_Tone" ID="{13426B94-4BD9-4C2E-8BE9-74477EB7C566}" WorkUnitID="{2B949421-4224-488B-A3C2-FF31E814EF2E}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
@@ -2050,9 +2078,24 @@
 														<MediaID ID="400710580"/>
 													</MediaIDList>
 												</AudioFileSource>
+												<AudioFileSource Name="AMB_Rooms_Room" ID="{CD7F3C43-E8AB-4A2E-AF39-6F0E729C8B6E}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="2299.97"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.858381705729166"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="2.66432763206845"/>
+														<Property Name="LoopBegin" Type="Real64" Value="6.40999325706845"/>
+														<Property Name="LoopEnd" Type="Real64" Value="19.3749013578869"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AMB_Rooms_Room.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="972560287"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="WINDDsgn_Amb Strange Wind_PSE_BW-BD3HL_rctVu" ID="{F7CB793E-7764-42D8-8E90-7DEC6F5BE92E}" Platform="Linked"/>
+												<ActiveSource Name="AMB_Rooms_Room" ID="{CD7F3C43-E8AB-4A2E-AF39-6F0E729C8B6E}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
