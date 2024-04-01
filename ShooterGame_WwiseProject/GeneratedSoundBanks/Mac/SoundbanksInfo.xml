@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{783268CC-24C3-DF89-C390-26A94F2785E2}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{1B6F9B5E-2D68-F7E9-A125-FA8A8A8FFC1F}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -162,7 +162,7 @@
 						<MediaRef Id="288927093"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2757392698" Name="AMB_Highrise_Room_Drones_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\Dynamic\AMB_Highrise_Room_Drones_OS" GUID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}" MaxAttenuation="1000" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2757392698" Name="AMB_Highrise_Room_Drones_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\Dynamic\AMB_Highrise_Room_Drones_OS" GUID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1040217121" Name="AMB_Highrise_Spawn" ObjectPath="\Events\Ambience\Rooms\Highrise\Static\AMB_Highrise_Spawn" GUID="{1C364EAC-CAE6-4664-ACA8-6E418F9C7859}" MaxAttenuation="1000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="972560287"/>
@@ -621,5 +621,5 @@
 			<Path>Dialogue.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A64C5F90-A4FC-69D1-9370-E0CB848158E9}</FileHash>
+	<FileHash>{B34EF7C5-468A-3463-A48C-4F5419BA90D2}</FileHash>
 </SoundBanksInfo>

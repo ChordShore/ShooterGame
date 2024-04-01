@@ -1012,6 +1012,82 @@
 												</RandomSequenceContainer>
 											</ChildrenList>
 										</ActorMixer>
+										<ActorMixer Name="AMB_ScifiDrones" ID="{F8CA7FF3-FE47-4BB4-980E-7E9296E98800}" ShortID="1041390785">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="AMB_Highrise_Room_OS" ID="{53FAFEC3-E750-4552-8A08-2A993F768ECF}" ShortID="173561476">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>25</Value>
+															</ValueList>
+														</Property>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>70</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-1200</Value>
+															</ValueList>
+														</Property>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="8">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{969BE8E2-6516-48B2-BA5E-6FB4ED565288}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="4"/>
+																			<Property Name="Min" Type="Real64" Value="-4"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATN_Room" ID="{F2D880EA-D79D-4649-A829-4DE00ED188E9}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</ActorMixer>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>
@@ -1834,59 +1910,6 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="AMB_Highrise_Room_OS" ID="{53FAFEC3-E750-4552-8A08-2A993F768ECF}" ShortID="173561476">
-											<PropertyList>
-												<Property Name="Highpass" Type="int16">
-													<ValueList>
-														<Value>25</Value>
-													</ValueList>
-												</Property>
-												<Property Name="InitialDelay" Type="Real64">
-													<ValueList>
-														<Value>2</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Lowpass" Type="int16">
-													<ValueList>
-														<Value>70</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Pitch" Type="int32">
-													<ValueList>
-														<Value>-1200</Value>
-													</ValueList>
-												</Property>
-												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="8">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{969BE8E2-6516-48B2-BA5E-6FB4ED565288}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="4"/>
-																	<Property Name="Min" Type="Real64" Value="-4"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-5</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-												</Reference>
-											</ReferenceList>
-										</RandomSequenceContainer>
 										<Sound Name="AMB_Highrise_Room_LP" ID="{C985A30E-FDD4-457A-A79F-78619E2D34D0}" ShortID="186338023">
 											<PropertyList>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
