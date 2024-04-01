@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{3BE0FFAB-ED60-2126-FB78-0EEDCA4279A2}",
+    "Hash": "{783268CC-24C3-DF89-C390-26A94F2785E2}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AMB_Rooms_Room.wav",
-      "CachePath": "SFX/AMB_Rooms_Room_841A0E8A.wem"
+      "CachePath": "SFX/AMB_Rooms_Room_B32DB8AF.wem"
      },
      {
       "Id": "296674999",
@@ -126,14 +126,6 @@
       "Location": "Memory",
       "ShortName": "AMB_Emitters_HovercarPassbys_High_4.wav",
       "CachePath": "SFX/AMB_Emitters_HovercarPassbys_High_4_171778DF.wem"
-     },
-     {
-      "Id": "406003256",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "WINDDsgn_Wind Gusts_PSE_BW-BD3HL_EhmvY.wav",
-      "CachePath": "SFX/WINDDsgn_Wind Gusts_PSE_BW-BD3HL_EhmvY_BED9FF1C.wem"
      },
      {
       "Id": "407858808",
@@ -189,7 +181,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AMB_Rooms_Atrium.wav",
-      "CachePath": "SFX/AMB_Rooms_Atrium_38BDB388.wem"
+      "CachePath": "SFX/AMB_Rooms_Atrium_B05EE500.wem"
      },
      {
       "Id": "515725994",
@@ -232,14 +224,6 @@
       "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Low_2_7550AD36.wem"
      },
      {
-      "Id": "912562636",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "WINDDsgn_Drone Alien Planet_PSE_BW-BD3HL_PGEno.wav",
-      "CachePath": "SFX/WINDDsgn_Drone Alien Planet_PSE_BW-BD3HL_PGEno_307596F0.wem"
-     },
-     {
       "Id": "924565868",
       "Language": "SFX",
       "Streaming": "false",
@@ -253,7 +237,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AMB_Rooms_Room.wav",
-      "CachePath": "SFX/AMB_Rooms_Room_AAE9CE7B.wem"
+      "CachePath": "SFX/AMB_Rooms_Room_76076572.wem"
      },
      {
       "Id": "992552206",
@@ -326,11 +310,6 @@
       "GUID": "{B1473C73-10B0-46BB-AA72-8ABA06D25E40}",
       "MaxAttenuation": "5000",
       "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "406003256"
-       }
-      ],
       "ActionPostEvent": [
        {
         "Id": "1915357068",
@@ -350,9 +329,6 @@
       "MediaRefs": [
        {
         "Id": "288927093"
-       },
-       {
-        "Id": "912562636"
        }
       ]
      },
@@ -363,13 +339,8 @@
       "GUID": "{4E65C91A-3866-4E84-B034-94A7E371ECB7}",
       "MaxAttenuation": "1000",
       "DurationType": "OneShot",
-      "DurationMin": "9.230821",
-      "DurationMax": "9.230821",
-      "MediaRefs": [
-       {
-        "Id": "912562636"
-       }
-      ]
+      "DurationMin": "0",
+      "DurationMax": "0"
      },
      {
       "Id": "1040217121",
@@ -379,9 +350,6 @@
       "MaxAttenuation": "1000",
       "DurationType": "Infinite",
       "MediaRefs": [
-       {
-        "Id": "912562636"
-       },
        {
         "Id": "972560287"
        }
@@ -549,6 +517,6 @@
     ]
    }
   ],
-  "FileHash": "{11CAAC2A-B8B9-DF86-89B7-EBAC0E079BF9}"
+  "FileHash": "{A280235E-6074-152F-8F28-10DE32A1260B}"
  }
 }
