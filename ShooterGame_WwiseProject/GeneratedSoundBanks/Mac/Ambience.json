@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{1B6F9B5E-2D68-F7E9-A125-FA8A8A8FFC1F}",
+    "Hash": "{B7FE8019-C081-36B1-B70A-43D197666339}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
     "Media": [
+     {
+      "Id": "16287048",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB_Rooms_Atrium.wav",
+      "CachePath": "SFX/AMB_Rooms_Atrium_25FFC62C.wem"
+     },
      {
       "Id": "51555955",
       "Language": "SFX",
@@ -88,6 +96,14 @@
       "CachePath": "SFX/Emitters_UnrealSign_1B9F70D9.wem"
      },
      {
+      "Id": "229272092",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB_Rooms_Spawn.wav",
+      "CachePath": "SFX/AMB_Rooms_Spawn_25FFC62C.wem"
+     },
+     {
       "Id": "247336745",
       "Language": "SFX",
       "Streaming": "false",
@@ -101,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AMB_Rooms_Room.wav",
-      "CachePath": "SFX/AMB_Rooms_Room_B32DB8AF.wem"
+      "CachePath": "SFX/AMB_Rooms_Room_25FFC62C.wem"
      },
      {
       "Id": "296674999",
@@ -176,14 +192,6 @@
       "CachePath": "SFX/Emitters_UnrealHolograph_Main_LP_825A38FC.wem"
      },
      {
-      "Id": "509626040",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_Rooms_Atrium.wav",
-      "CachePath": "SFX/AMB_Rooms_Atrium_B05EE500.wem"
-     },
-     {
       "Id": "515725994",
       "Language": "SFX",
       "Streaming": "false",
@@ -232,14 +240,6 @@
       "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Mid_1_7550AD36.wem"
      },
      {
-      "Id": "972560287",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_Rooms_Room.wav",
-      "CachePath": "SFX/AMB_Rooms_Room_76076572.wem"
-     },
-     {
       "Id": "992552206",
       "Language": "SFX",
       "Streaming": "false",
@@ -282,7 +282,7 @@
       "Name": "AMB_BarrierFence_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_BarrierFence_LP",
       "GUID": "{427593F0-92C8-4CA8-8FCD-C163A0B02BEC}",
-      "MaxAttenuation": "2700",
+      "MaxAttenuation": "3500",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -295,11 +295,11 @@
       "Name": "AMB_Highrise_Atrium",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Static\\AMB_Highrise_Atrium",
       "GUID": "{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}",
-      "MaxAttenuation": "1000",
+      "MaxAttenuation": "2000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "509626040"
+        "Id": "16287048"
        }
       ]
      },
@@ -308,23 +308,17 @@
       "Name": "AMB_Highrise_Atrium_Gust_OS",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Dynamic\\AMB_Highrise_Atrium_Gust_OS",
       "GUID": "{B1473C73-10B0-46BB-AA72-8ABA06D25E40}",
-      "MaxAttenuation": "5000",
-      "DurationType": "Infinite",
-      "ActionPostEvent": [
-       {
-        "Id": "1915357068",
-        "Name": "AMB_HoverCars_LP",
-        "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_HoverCars_LP",
-        "GUID": "{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}"
-       }
-      ]
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      },
      {
       "Id": "2038711805",
       "Name": "AMB_Highrise_Room",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Static\\AMB_Highrise_Room",
       "GUID": "{3F5A1E50-6729-4C3C-9937-D8C443065D63}",
-      "MaxAttenuation": "1000",
+      "MaxAttenuation": "2000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -337,6 +331,7 @@
       "Name": "AMB_Highrise_Room_Drones_OS",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Dynamic\\AMB_Highrise_Room_Drones_OS",
       "GUID": "{4E65C91A-3866-4E84-B034-94A7E371ECB7}",
+      "MaxAttenuation": "0",
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0"
@@ -346,11 +341,11 @@
       "Name": "AMB_Highrise_Spawn",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Static\\AMB_Highrise_Spawn",
       "GUID": "{1C364EAC-CAE6-4664-ACA8-6E418F9C7859}",
-      "MaxAttenuation": "1000",
+      "MaxAttenuation": "2000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "972560287"
+        "Id": "229272092"
        }
       ]
      },
@@ -359,7 +354,7 @@
       "Name": "AMB_HoverCars_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_HoverCars_LP",
       "GUID": "{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}",
-      "MaxAttenuation": "5000",
+      "MaxAttenuation": "2000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -409,7 +404,7 @@
       "Name": "AMB_PhoneBox_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_PhoneBox_LP",
       "GUID": "{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}",
-      "MaxAttenuation": "2200",
+      "MaxAttenuation": "2500",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -428,7 +423,7 @@
       "Name": "AMB_StreetLamp_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_StreetLamp_LP",
       "GUID": "{82B95D5C-4BE9-4DFC-9A31-59E8AEF7E2FC}",
-      "MaxAttenuation": "2000",
+      "MaxAttenuation": "1500",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -462,10 +457,10 @@
       "Name": "AMB_UnrealHolograph_FadeIn_OS",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_UnrealHolograph_FadeIn_OS",
       "GUID": "{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}",
-      "MaxAttenuation": "8500",
+      "MaxAttenuation": "10500",
       "DurationType": "OneShot",
-      "DurationMin": "6.233227",
-      "DurationMax": "6.233227",
+      "DurationMin": "7.853374",
+      "DurationMax": "7.853374",
       "MediaRefs": [
        {
         "Id": "619272686"
@@ -477,10 +472,10 @@
       "Name": "AMB_UnrealHolograph_FadeOut_OS",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_UnrealHolograph_FadeOut_OS",
       "GUID": "{E3EEEB5D-9B58-43DF-8E87-C18F76699081}",
-      "MaxAttenuation": "8500",
+      "MaxAttenuation": "10500",
       "DurationType": "OneShot",
-      "DurationMin": "5.25",
-      "DurationMax": "5.25",
+      "DurationMin": "6.614586",
+      "DurationMax": "6.614586",
       "MediaRefs": [
        {
         "Id": "425050702"
@@ -492,7 +487,7 @@
       "Name": "AMB_UnrealHolograph_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_UnrealHolograph_LP",
       "GUID": "{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}",
-      "MaxAttenuation": "8500",
+      "MaxAttenuation": "11000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -505,7 +500,7 @@
       "Name": "AMB_UnrealSign_LP",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_UnrealSign_LP",
       "GUID": "{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}",
-      "MaxAttenuation": "2000",
+      "MaxAttenuation": "1800",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -516,6 +511,6 @@
     ]
    }
   ],
-  "FileHash": "{68470DA4-474D-A393-0BF2-11DCD9A958D8}"
+  "FileHash": "{A79BAF11-FA01-955D-3160-A1AA47845844}"
  }
 }
