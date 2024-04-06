@@ -2,13 +2,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	126199104	AMB_PhoneBox_LP			\Ambience\Emitters\Highrise\Static\AMB_PhoneBox_LP	
 	511358421	AMB_BarrierFence_LP			\Ambience\Emitters\Highrise\Dynamic\AMB_BarrierFence_LP	
 	896607520	AMB_UnrealHolograph_FadeIn_OS			\Ambience\Emitters\Highrise\Static\AMB_UnrealHolograph_FadeIn_OS	
-	1019282361	AMB_Highrise_Atrium_Gust_OS			\Ambience\Rooms\Highrise\Dynamic\AMB_Highrise_Atrium_Gust_OS	
-	1040217121	AMB_Highrise_Spawn			\Ambience\Rooms\Highrise\Static\AMB_Highrise_Spawn	
+	1040217121	AMB_Highrise_Spawn			\Ambience\Rooms\Highrise\Indoors\AMB_Highrise_Spawn	
 	1695319799	AMB_UnrealHolograph_FadeOut_OS			\Ambience\Emitters\Highrise\Static\AMB_UnrealHolograph_FadeOut_OS	
 	1915357068	AMB_HoverCars_LP			\Ambience\Emitters\Highrise\Dynamic\AMB_HoverCars_LP	
-	2038711805	AMB_Highrise_Room			\Ambience\Rooms\Highrise\Static\AMB_Highrise_Room	
-	2448096698	AMB_Highrise_Atrium			\Ambience\Rooms\Highrise\Static\AMB_Highrise_Atrium	
-	2757392698	AMB_Highrise_Room_Drones_OS			\Ambience\Rooms\Highrise\Dynamic\AMB_Highrise_Room_Drones_OS	
+	2038711805	AMB_Highrise_Room			\Ambience\Rooms\Highrise\Indoors\AMB_Highrise_Room	
+	2090045424	AMB_WindGusts			\Ambience\Emitters\Highrise\Dynamic\AMB_WindGusts	
+	2448096698	AMB_Highrise_Atrium			\Ambience\Rooms\Highrise\Outdoors\AMB_Highrise_Atrium	
+	2757392698	AMB_Highrise_Room_Drones_OS			\Ambience\Emitters\Highrise\Dynamic\AMB_Highrise_Room_Drones_OS	
 	2762262784	AMB_UnrealHolograph_LP			\Ambience\Emitters\Highrise\Static\AMB_UnrealHolograph_LP	
 	2794177527	AMB_UnrealSign_LP			\Ambience\Emitters\Highrise\Static\AMB_UnrealSign_LP	
 	3140124040	AMB_StreetLamp_LP			\Ambience\Emitters\Highrise\Static\AMB_StreetLamp_LP	
@@ -46,6 +46,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	619272686	AMB_UnrealHolograph_FadeIn_OS	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\Emitters_UnrealHolograph_FadeIn_OS_5920140F.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Static\AMB_UnrealHolograph\AMB_UnrealHolograph_FadeAnimations\AMB_UnrealHolograph_FadeIn_OS		1196876
 	666585169	AMB_Emitters_HovercarPassbys_Low_2	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Emitters_HovercarPassbys_Low_2_7550AD36.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\AMB_HoverCars_LP\HoverCar_Lows_OS\AMB_Emitters_HovercarPassbys_Low_2		288096
 	924565868	AMB_Emitters_HovercarPassbys_Mid_1	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Emitters_HovercarPassbys_Mid_1_7550AD36.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\AMB_HoverCars_LP\HoverCar_Mids_OS\AMB_Emitters_HovercarPassbys_Mid_1		288096
+	928573754	AMB_WindGust_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Emitter_WindGusts_DEC75B5C.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_WindGusts\AMB_WindGust_LP		4992144
 	992552206	AMB_PhoneBox_ErrorRecording_OS	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_PhoneBox_ErrorRecording_OS_4F030B8A.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Static\AMB_PhoneBox\AMB_PhoneBox_ErrorRecording_LP\AMB_ErrorRecording_Sequencer\AMB_PhoneBox_ErrorRecording_OS		1681360
 	1041432378	AMB_BarrierFence_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_BarrierFence_LP_3860FEB7.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_BarrierFence\AMB_BarrierFence_LP		1965552
 

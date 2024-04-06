@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{B7FE8019-C081-36B1-B70A-43D197666339}",
+    "Hash": "{753FB99D-553D-5C73-C276-3774CDF57D3C}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -240,6 +240,14 @@
       "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Mid_1_7550AD36.wem"
      },
      {
+      "Id": "928573754",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB_Emitter_WindGusts.wav",
+      "CachePath": "SFX/AMB_Emitter_WindGusts_DEC75B5C.wem"
+     },
+     {
       "Id": "992552206",
       "Language": "SFX",
       "Streaming": "false",
@@ -293,7 +301,7 @@
      {
       "Id": "2448096698",
       "Name": "AMB_Highrise_Atrium",
-      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Static\\AMB_Highrise_Atrium",
+      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Outdoors\\AMB_Highrise_Atrium",
       "GUID": "{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}",
       "MaxAttenuation": "2000",
       "DurationType": "Infinite",
@@ -304,19 +312,9 @@
       ]
      },
      {
-      "Id": "1019282361",
-      "Name": "AMB_Highrise_Atrium_Gust_OS",
-      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Dynamic\\AMB_Highrise_Atrium_Gust_OS",
-      "GUID": "{B1473C73-10B0-46BB-AA72-8ABA06D25E40}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
       "Id": "2038711805",
       "Name": "AMB_Highrise_Room",
-      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Static\\AMB_Highrise_Room",
+      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Indoors\\AMB_Highrise_Room",
       "GUID": "{3F5A1E50-6729-4C3C-9937-D8C443065D63}",
       "MaxAttenuation": "2000",
       "DurationType": "Infinite",
@@ -329,7 +327,7 @@
      {
       "Id": "2757392698",
       "Name": "AMB_Highrise_Room_Drones_OS",
-      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Dynamic\\AMB_Highrise_Room_Drones_OS",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_Highrise_Room_Drones_OS",
       "GUID": "{4E65C91A-3866-4E84-B034-94A7E371ECB7}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -339,7 +337,7 @@
      {
       "Id": "1040217121",
       "Name": "AMB_Highrise_Spawn",
-      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Static\\AMB_Highrise_Spawn",
+      "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Indoors\\AMB_Highrise_Spawn",
       "GUID": "{1C364EAC-CAE6-4664-ACA8-6E418F9C7859}",
       "MaxAttenuation": "2000",
       "DurationType": "Infinite",
@@ -507,10 +505,23 @@
         "Id": "218188666"
        }
       ]
+     },
+     {
+      "Id": "2090045424",
+      "Name": "AMB_WindGusts",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_WindGusts",
+      "GUID": "{B1473C73-10B0-46BB-AA72-8ABA06D25E40}",
+      "MaxAttenuation": "4500",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "928573754"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{A79BAF11-FA01-955D-3160-A1AA47845844}"
+  "FileHash": "{C8E07E45-F007-18DF-D5C7-7CDF3117ED87}"
  }
 }

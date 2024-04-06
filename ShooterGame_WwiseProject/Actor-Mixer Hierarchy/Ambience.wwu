@@ -46,6 +46,288 @@
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 														</Reference>
 													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="AMB_WindGusts_009" ID="{4476FEAA-9020-46CE-81CF-8C97F9EA09B2}" ShortID="222731930">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="ATN_WindGust" ID="{4BF033E2-2AD8-4196-B297-462EC5E81771}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_WindGusts_009" ID="{9C6F77B1-5F8A-4444-BE39-8EAC0F7AD490}">
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_WindGusts_009.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="290019270"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_WindGusts_009" ID="{9C6F77B1-5F8A-4444-BE39-8EAC0F7AD490}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_WindGusts_002" ID="{09A5AE9C-9571-4D28-BB0A-68BB05A30047}" ShortID="869982422">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="ATN_WindGust" ID="{4BF033E2-2AD8-4196-B297-462EC5E81771}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_WindGusts_002" ID="{3BA1B4C2-1684-4E40-9D81-ACE7D7C7D59E}">
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_WindGusts_002.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="771245269"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_WindGusts_002" ID="{3BA1B4C2-1684-4E40-9D81-ACE7D7C7D59E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_WindGusts_003" ID="{220562DC-7FC4-48E0-AF6B-F456F7444FEF}" ShortID="371729857">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="ATN_WindGust" ID="{4BF033E2-2AD8-4196-B297-462EC5E81771}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_WindGusts_003" ID="{5CCE2327-AAD6-460C-A11F-9345DA47E77A}">
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_WindGusts_003.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="381713692"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_WindGusts_003" ID="{5CCE2327-AAD6-460C-A11F-9345DA47E77A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_WindGusts_001" ID="{9364A2B1-0BBF-4F1F-9681-E4B97D228DBA}" ShortID="619138858">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="ATN_WindGust" ID="{4BF033E2-2AD8-4196-B297-462EC5E81771}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_WindGusts_001" ID="{74CF5786-965F-4BB3-8F31-59B5107D824F}">
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_WindGusts_001.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="102297866"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_WindGusts_001" ID="{74CF5786-965F-4BB3-8F31-59B5107D824F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_WindGusts_005" ID="{423F5067-E62B-4A7A-90A1-A1266187F47E}" ShortID="744161764">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="ATN_WindGust" ID="{4BF033E2-2AD8-4196-B297-462EC5E81771}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_WindGusts_005" ID="{2EDF683B-A834-413D-928E-9D2BFAD4384A}">
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_WindGusts_005.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="342227533"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_WindGusts_005" ID="{2EDF683B-A834-413D-928E-9D2BFAD4384A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_WindGusts_008" ID="{28B22434-95FD-4541-8876-9DABA64E0B75}" ShortID="68467382">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="ATN_WindGust" ID="{4BF033E2-2AD8-4196-B297-462EC5E81771}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_WindGusts_008" ID="{EA33F5DF-0DC3-4DB7-A11F-70CE86FA90DC}">
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_WindGusts_008.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1039541146"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_WindGusts_008" ID="{EA33F5DF-0DC3-4DB7-A11F-70CE86FA90DC}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_WindGusts_006" ID="{1CD63604-1F81-4BC3-AB68-FA8C63C8F22A}" ShortID="851667578">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="ATN_WindGust" ID="{4BF033E2-2AD8-4196-B297-462EC5E81771}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_WindGusts_006" ID="{7C5409F2-6215-4B91-BEF1-0444AE209BA7}">
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_WindGusts_006.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="349220338"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_WindGusts_006" ID="{7C5409F2-6215-4B91-BEF1-0444AE209BA7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_WindGusts_010" ID="{651269C7-5906-4C07-B1E3-2A293F8E3969}" ShortID="94671684">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="ATN_WindGust" ID="{4BF033E2-2AD8-4196-B297-462EC5E81771}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_WindGusts_010" ID="{175C6808-0601-4179-AA23-00ED58AEC12E}">
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_WindGusts_010.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="271371283"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_WindGusts_010" ID="{175C6808-0601-4179-AA23-00ED58AEC12E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_WindGusts_004" ID="{AEEADFF7-F456-45DD-89CA-FE9FB62DA467}" ShortID="935779528">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="ATN_WindGust" ID="{4BF033E2-2AD8-4196-B297-462EC5E81771}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_WindGusts_004" ID="{6543200B-D486-4A30-B36C-3E264CBF1AFC}">
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_WindGusts_004.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="877029507"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_WindGusts_004" ID="{6543200B-D486-4A30-B36C-3E264CBF1AFC}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_WindGusts_007" ID="{8FA9667D-5671-470B-BB9F-11850BA5C13C}" ShortID="560452776">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="ATN_WindGust" ID="{4BF033E2-2AD8-4196-B297-462EC5E81771}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_WindGusts_007" ID="{4D17DCF9-7B5D-4706-8605-7264CCF19155}">
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_WindGusts_007.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="880697477"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_WindGusts_007" ID="{4D17DCF9-7B5D-4706-8605-7264CCF19155}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
 												</RandomSequenceContainer>
 											</ChildrenList>
 										</ActorMixer>
@@ -2053,12 +2335,8 @@
 										<ActorMixer Name="AMB_WindGusts" ID="{3814D4CC-23D3-489C-9708-9EA1BE85580A}" ShortID="520269343">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -2072,346 +2350,15 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="AMB_WindGust_OS" ID="{201EE223-F7C0-422A-856B-C831EA93654F}" ShortID="958055632">
+												<Sound Name="AMB_WindGust_LP" ID="{C95996A4-33BF-4957-A310-E96D0EC57040}" ShortID="1018156113">
 													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="1"/>
-														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-														<Property Name="Highpass" Type="int16">
-															<ValueList>
-																<Value>30</Value>
-															</ValueList>
-														</Property>
-														<Property Name="InitialDelay" Type="Real64">
-															<ValueList>
-																<Value>2</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Lowpass" Type="int16">
-															<ValueList>
-																<Value>6</Value>
-															</ValueList>
-														</Property>
-														<Property Name="MakeUpGain" Type="Real64">
-															<ValueList>
-																<Value>3</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Pitch" Type="int32">
-															<ValueList>
-																<Value>700</Value>
-															</ValueList>
-														</Property>
-														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{D4F62FF4-4B64-4149-AD9D-ABC1128648B7}">
-																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
-																			<Property Name="Max" Type="Real64" Value="2"/>
-																			<Property Name="Min" Type="Real64" Value="-2"/>
-																		</PropertyList>
-																	</Modifier>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-6</Value>
+																<Value>-17</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="ATN_WindGust" ID="{4BF033E2-2AD8-4196-B297-462EC5E81771}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-														</Reference>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="AMB_WindGusts_001" ID="{9364A2B1-0BBF-4F1F-9681-E4B97D228DBA}" ShortID="619138858">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_WindGusts_001" ID="{74CF5786-965F-4BB3-8F31-59B5107D824F}">
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_WindGusts_001.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="102297866"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_WindGusts_001" ID="{74CF5786-965F-4BB3-8F31-59B5107D824F}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="AMB_WindGusts_002" ID="{09A5AE9C-9571-4D28-BB0A-68BB05A30047}" ShortID="869982422">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_WindGusts_002" ID="{3BA1B4C2-1684-4E40-9D81-ACE7D7C7D59E}">
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_WindGusts_002.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="771245269"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_WindGusts_002" ID="{3BA1B4C2-1684-4E40-9D81-ACE7D7C7D59E}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="AMB_WindGusts_003" ID="{220562DC-7FC4-48E0-AF6B-F456F7444FEF}" ShortID="371729857">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_WindGusts_003" ID="{5CCE2327-AAD6-460C-A11F-9345DA47E77A}">
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_WindGusts_003.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="381713692"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_WindGusts_003" ID="{5CCE2327-AAD6-460C-A11F-9345DA47E77A}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="AMB_WindGusts_004" ID="{AEEADFF7-F456-45DD-89CA-FE9FB62DA467}" ShortID="935779528">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_WindGusts_004" ID="{6543200B-D486-4A30-B36C-3E264CBF1AFC}">
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_WindGusts_004.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="877029507"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_WindGusts_004" ID="{6543200B-D486-4A30-B36C-3E264CBF1AFC}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="AMB_WindGusts_005" ID="{423F5067-E62B-4A7A-90A1-A1266187F47E}" ShortID="744161764">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_WindGusts_005" ID="{2EDF683B-A834-413D-928E-9D2BFAD4384A}">
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_WindGusts_005.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="342227533"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_WindGusts_005" ID="{2EDF683B-A834-413D-928E-9D2BFAD4384A}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="AMB_WindGusts_006" ID="{1CD63604-1F81-4BC3-AB68-FA8C63C8F22A}" ShortID="851667578">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_WindGusts_006" ID="{7C5409F2-6215-4B91-BEF1-0444AE209BA7}">
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_WindGusts_006.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="349220338"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_WindGusts_006" ID="{7C5409F2-6215-4B91-BEF1-0444AE209BA7}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="AMB_WindGusts_007" ID="{8FA9667D-5671-470B-BB9F-11850BA5C13C}" ShortID="560452776">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_WindGusts_007" ID="{4D17DCF9-7B5D-4706-8605-7264CCF19155}">
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_WindGusts_007.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="880697477"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_WindGusts_007" ID="{4D17DCF9-7B5D-4706-8605-7264CCF19155}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="AMB_WindGusts_008" ID="{28B22434-95FD-4541-8876-9DABA64E0B75}" ShortID="68467382">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_WindGusts_008" ID="{EA33F5DF-0DC3-4DB7-A11F-70CE86FA90DC}">
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_WindGusts_008.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="1039541146"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_WindGusts_008" ID="{EA33F5DF-0DC3-4DB7-A11F-70CE86FA90DC}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="AMB_WindGusts_009" ID="{4476FEAA-9020-46CE-81CF-8C97F9EA09B2}" ShortID="222731930">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_WindGusts_009" ID="{9C6F77B1-5F8A-4444-BE39-8EAC0F7AD490}">
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_WindGusts_009.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="290019270"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_WindGusts_009" ID="{9C6F77B1-5F8A-4444-BE39-8EAC0F7AD490}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="AMB_WindGusts_010" ID="{651269C7-5906-4C07-B1E3-2A293F8E3969}" ShortID="94671684">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_WindGusts_010" ID="{175C6808-0601-4179-AA23-00ED58AEC12E}">
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_WindGusts_010.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="271371283"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_WindGusts_010" ID="{175C6808-0601-4179-AA23-00ED58AEC12E}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-													<PositioningInfo>
-														<Position Name="" ID="{03C37722-BD32-4338-B033-8930CDC9C21E}">
-															<PropertyList>
-																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-																<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="5"/>
-															</PropertyList>
-															<ChildrenList>
-																<Path2D Name="AMB_Highrise_Gusts_OS_Path_C" ID="{ACD8E4C4-6571-4996-B4F2-65EC2794B0CF}">
-																	<PropertyList>
-																		<Property Name="RandomX" Type="Real64" Value="50"/>
-																		<Property Name="RandomY" Type="Real64" Value="25"/>
-																	</PropertyList>
-																	<PointList>
-																		<Point>
-																			<XPos>0</XPos>
-																			<YPos>100</YPos>
-																			<Flags>12</Flags>
-																			<Time>0</Time>
-																		</Point>
-																	</PointList>
-																</Path2D>
-																<Path2D Name="AMB_Highrise_Gusts_OS_Path_L" ID="{4B56BA75-EA11-4BD6-8FB1-DAB06F220671}">
-																	<PropertyList>
-																		<Property Name="RandomX" Type="Real64" Value="50"/>
-																		<Property Name="RandomY" Type="Real64" Value="25"/>
-																	</PropertyList>
-																	<PointList>
-																		<Point>
-																			<XPos>50</XPos>
-																			<YPos>100</YPos>
-																			<Flags>12</Flags>
-																			<Time>0</Time>
-																		</Point>
-																	</PointList>
-																</Path2D>
-																<Path2D Name="AMB_Highrise_Gusts_OS_Path_R" ID="{4AA949F8-6F2D-4582-9A83-E91928CEA361}">
-																	<PropertyList>
-																		<Property Name="RandomX" Type="Real64" Value="50"/>
-																		<Property Name="RandomY" Type="Real64" Value="25"/>
-																	</PropertyList>
-																	<PointList>
-																		<Point>
-																			<XPos>-50</XPos>
-																			<YPos>100</YPos>
-																			<Flags>12</Flags>
-																			<Time>0</Time>
-																		</Point>
-																	</PointList>
-																</Path2D>
-															</ChildrenList>
-														</Position>
-													</PositioningInfo>
-												</RandomSequenceContainer>
-												<Sound Name="AMB_WindGust_LP" ID="{C95996A4-33BF-4957-A310-E96D0EC57040}" ShortID="1018156113">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -2420,6 +2367,26 @@
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 														</Reference>
 													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_Emitter_WindGusts" ID="{DC138BEA-0AA3-40CC-A749-0154DC1995CC}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="3000"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="1"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.5"/>
+																<Property Name="LoopBegin" Type="Real64" Value="3"/>
+																<Property Name="LoopEnd" Type="Real64" Value="22"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_Emitter_WindGusts.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="928573754"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_Emitter_WindGusts" ID="{DC138BEA-0AA3-40CC-A749-0154DC1995CC}" Platform="Linked"/>
+													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
 										</ActorMixer>
@@ -2614,7 +2581,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-20</Value>
+																<Value>-25</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>

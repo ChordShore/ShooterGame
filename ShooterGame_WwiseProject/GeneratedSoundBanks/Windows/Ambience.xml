@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{B7FE8019-C081-36B1-B70A-43D197666339}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{753FB99D-553D-5C73-C276-3774CDF57D3C}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -118,6 +118,10 @@
 					<ShortName>AMB_Emitters_HovercarPassbys_Mid_1.wav</ShortName>
 					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Mid_1_7550AD36.wem</CachePath>
 				</File>
+				<File Id="928573754" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_Emitter_WindGusts.wav</ShortName>
+					<CachePath>SFX/AMB_Emitter_WindGusts_DEC75B5C.wem</CachePath>
+				</File>
 				<File Id="992552206" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_PhoneBox_ErrorRecording_OS.wav</ShortName>
 					<CachePath>SFX/AMB_PhoneBox_ErrorRecording_OS_4F030B8A.wem</CachePath>
@@ -139,19 +143,18 @@
 						<MediaRef Id="1041432378"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2448096698" Name="AMB_Highrise_Atrium" ObjectPath="\Events\Ambience\Rooms\Highrise\Static\AMB_Highrise_Atrium" GUID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}" MaxAttenuation="2000" DurationType="Infinite">
+				<Event Id="2448096698" Name="AMB_Highrise_Atrium" ObjectPath="\Events\Ambience\Rooms\Highrise\Outdoors\AMB_Highrise_Atrium" GUID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}" MaxAttenuation="2000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="16287048"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1019282361" Name="AMB_Highrise_Atrium_Gust_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\Dynamic\AMB_Highrise_Atrium_Gust_OS" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2038711805" Name="AMB_Highrise_Room" ObjectPath="\Events\Ambience\Rooms\Highrise\Static\AMB_Highrise_Room" GUID="{3F5A1E50-6729-4C3C-9937-D8C443065D63}" MaxAttenuation="2000" DurationType="Infinite">
+				<Event Id="2038711805" Name="AMB_Highrise_Room" ObjectPath="\Events\Ambience\Rooms\Highrise\Indoors\AMB_Highrise_Room" GUID="{3F5A1E50-6729-4C3C-9937-D8C443065D63}" MaxAttenuation="2000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="288927093"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2757392698" Name="AMB_Highrise_Room_Drones_OS" ObjectPath="\Events\Ambience\Rooms\Highrise\Dynamic\AMB_Highrise_Room_Drones_OS" GUID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1040217121" Name="AMB_Highrise_Spawn" ObjectPath="\Events\Ambience\Rooms\Highrise\Static\AMB_Highrise_Spawn" GUID="{1C364EAC-CAE6-4664-ACA8-6E418F9C7859}" MaxAttenuation="2000" DurationType="Infinite">
+				<Event Id="2757392698" Name="AMB_Highrise_Room_Drones_OS" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_Highrise_Room_Drones_OS" GUID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1040217121" Name="AMB_Highrise_Spawn" ObjectPath="\Events\Ambience\Rooms\Highrise\Indoors\AMB_Highrise_Spawn" GUID="{1C364EAC-CAE6-4664-ACA8-6E418F9C7859}" MaxAttenuation="2000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="229272092"/>
 					</MediaRefs>
@@ -215,8 +218,13 @@
 						<MediaRef Id="218188666"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2090045424" Name="AMB_WindGusts" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_WindGusts" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="4500" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="928573754"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{15F63FDF-B31C-E39C-4E63-B22D7E1FD6AF}</FileHash>
+	<FileHash>{BB338885-55B8-2595-D689-2EB1C9C8D0A8}</FileHash>
 </SoundBanksInfo>
