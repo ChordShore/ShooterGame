@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/WwiseIOHookImpl.h"
@@ -208,9 +208,12 @@ AKRESULT FWwiseIOHookImpl::Read(
 			{
 				UE_LOG(LogWwiseFileHandler, Verbose, TEXT("FWwiseIOHookImpl::Read [%p]: No callback reading data"), AK_FILEHANDLE_TO_UINTPTR(hFile));
 			}
-			SCOPED_WWISEFILEHANDLER_EVENT_3(TEXT("FWwiseIOHookImpl::Read SoundEngine Callback"));
-			FWwiseAsyncCycleCounter CallbackCycleCounter(GET_STATID(STAT_WwiseFileHandlerSoundEngineCallbackLatency));
-			InTransferInfo->pCallback(InTransferInfo, InResult);
+			else
+			{
+				SCOPED_WWISEFILEHANDLER_EVENT_3(TEXT("FWwiseIOHookImpl::Read SoundEngine Callback"));
+				FWwiseAsyncCycleCounter CallbackCycleCounter(GET_STATID(STAT_WwiseFileHandlerSoundEngineCallbackLatency));
+				InTransferInfo->pCallback(InTransferInfo, InResult);
+			}
 		});
 	return Result;
 }
@@ -294,9 +297,13 @@ AKRESULT FWwiseIOHookImpl::Write(
 			{
 				UE_LOG(LogWwiseFileHandler, Verbose, TEXT("FWwiseIOHookImpl::Write [%p]: No callback reading data"), AK_FILEHANDLE_TO_UINTPTR(hFile));
 			}
-			SCOPED_WWISEFILEHANDLER_EVENT_3(TEXT("FWwiseIOHookImpl::Write SoundEngine Callback"));
-			FWwiseAsyncCycleCounter CallbackCycleCounter(GET_STATID(STAT_WwiseFileHandlerSoundEngineCallbackLatency));
-			InTransferInfo->pCallback(InTransferInfo, InResult);
+			else
+			{
+				SCOPED_WWISEFILEHANDLER_EVENT_3(TEXT("FWwiseIOHookImpl::Write SoundEngine Callback"));
+				FWwiseAsyncCycleCounter CallbackCycleCounter(GET_STATID(STAT_WwiseFileHandlerSoundEngineCallbackLatency));
+				InTransferInfo->pCallback(InTransferInfo, InResult);
+			}
+
 		});
 	return Result;
 }

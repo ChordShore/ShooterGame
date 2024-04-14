@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "MovieSceneAkAudioRTPCTrackEditor.h"
@@ -219,8 +219,8 @@ public:
 							[
 								SNew(SEditableTextBox)
 								.HintText(LOCTEXT("AkAudioRTPCNameHint", "Name of the AkAudioRTPC"))
-								.OnTextCommitted(this, &SCreateAkAudioRTPCSectionDialog::OnEventNameCommited)
-								.OnTextChanged(this, &SCreateAkAudioRTPCSectionDialog::OnEventNameCommited, ETextCommit::Default)
+								.OnTextCommitted(this, &SCreateAkAudioRTPCSectionDialog::OnEventNameCommitted)
+								.OnTextChanged(this, &SCreateAkAudioRTPCSectionDialog::OnEventNameCommitted, ETextCommit::Default)
 								.MinDesiredWidth(200)
 								.RevertTextOnEscape(true)
 							]
@@ -275,7 +275,7 @@ protected:
 
 private:
 
-	void OnEventNameCommited(const FText& InText, ETextCommit::Type InCommitType)
+	void OnEventNameCommitted(const FText& InText, ETextCommit::Type InCommitType)
 	{
 		Options->RTPCName = InText.ToString();
 

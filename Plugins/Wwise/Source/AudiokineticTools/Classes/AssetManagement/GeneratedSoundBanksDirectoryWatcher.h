@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #pragma once
@@ -33,7 +33,7 @@ public:
 	//Watch the SoundBankInfoCache.dat file. Changes to this file indicate that sound data generation is done
 	bool StartCacheWatcher(const FString& CachePath);
 
-	//Watch for changes to GeneratedSoundbanks folder, triggering a countdown timer to parse once no more changes are detected after a certain delay
+	//Watch for changes to GeneratedSoundBanks folder, triggering a countdown timer to parse once no more changes are detected after a certain delay
 	void StartSoundBanksWatcher(const FString& GeneratedSoundBanksFolder);
 
 	void StopWatchers();

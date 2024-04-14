@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 /*------------------------------------------------------------------------------------
@@ -256,7 +256,7 @@ void SWwiseBrowser::CreateWwiseBrowserCommands()
 
 	// Action find an item in the Wwise Project Explorer
 	ActionList.MapAction(
-		Commands.RequestFindInProjectExplorerWwisetem,
+		Commands.RequestFindInProjectExplorerWwiseItem,
 		FExecuteAction::CreateSP(this, &SWwiseBrowser::HandleFindInProjectExplorerWwiseItemCommandExecute),
 		FCanExecuteAction::CreateSP(this, &SWwiseBrowser::HandleFindInProjectExplorerWwiseItemCanExecute));
 
@@ -297,7 +297,7 @@ TSharedPtr<SWidget> SWwiseBrowser::MakeWwiseBrowserContextMenu()
 		MenuBuilder.EndSection();
 		MenuBuilder.BeginSection("WwiseBrowserFindOptions", LOCTEXT("ExploreMenuHeader", "Explore"));
 		{
-			MenuBuilder.AddMenuEntry(Commands.RequestFindInProjectExplorerWwisetem);
+			MenuBuilder.AddMenuEntry(Commands.RequestFindInProjectExplorerWwiseItem);
 			MenuBuilder.AddMenuEntry(Commands.RequestFindInContentBrowser);
 			MenuBuilder.AddMenuEntry(Commands.RequestExploreWwiseItem);
 		}
@@ -1595,7 +1595,7 @@ void SWwiseBrowser::CreateReconcileTab() const
 		SelectedItems = RootItems;
 	}
 	TArray<FWwiseReconcileItem> ReconcileItems;
-	if (auto WwiseReconcile = FWwiseReconcile::Get())
+	if (auto WwiseReconcile = IWwiseReconcile::Get())
 	{
 		WwiseReconcile->ConvertWwiseItemTypeToReconcileItem(SelectedItems, ReconcileItems);
 		if (ReconcileItems.Num() == 0)

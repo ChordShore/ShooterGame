@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 using UnrealBuildTool;
@@ -58,15 +58,6 @@ public struct WwiseSoundEngine_2022_1
 			return;
 		}
 
-		if (!Latest)
-		{
-#if UE_5_3_OR_LATER
-			Logger.LogInformation("Using Wwise SoundEngine {VersionNumber} interface", VersionNumber);
-#else
-			Log.TraceInformation("Using Wwise SoundEngine {0} interface", VersionNumber);
-#endif
-		}
-
 		SE.PublicDefinitions.AddRange(WwiseSoundEngineVersion.GetVersionDefinesFromClassName(ModuleName));
 
 		// If packaging as an Engine plugin, the UBT expects to already have a precompiled plugin available
@@ -79,6 +70,15 @@ public struct WwiseSoundEngine_2022_1
 		SE.PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		SE.bAllowConfidentialPlatformDefines = true;
 
+		if (!Latest)
+		{
+#if UE_5_3_OR_LATER
+			Logger.LogInformation("Using Wwise SoundEngine {VersionNumber} [{ConfigurationDir}]", VersionNumber, WwiseUEPlatformInstance.WwiseConfigurationDir);
+#else
+			Log.TraceInformation("Using Wwise SoundEngine {0} [{1}]", VersionNumber, WwiseUEPlatformInstance.WwiseConfigurationDir);
+#endif
+		}
+		
 		var IsWwiseTargetSupported = WwiseUEPlatformInstance.IsWwiseTargetSupported();
 		SE.AddSoundEngineDirectory("WwiseSoundEngine_" + VersionNumber, IsWwiseTargetSupported);
 		SE.AddVersionHeaders("WwiseSoundEngine_" + VersionNumber, IsWwiseTargetSupported);
@@ -150,6 +150,8 @@ public struct WwiseSoundEngine_2022_1
 
 		// Platform-specific dependencies
 		SE.PublicDefinitions.AddRange(WwiseUEPlatformInstance.GetPublicDefinitions());
+		SE.PublicDefinitions.Add(string.Format("WWISE_CONFIGURATION_DIR=\"{0}\"", WwiseUEPlatformInstance.WwiseConfigurationDir));
+		SE.PublicDefinitions.Add(string.Format("WWISE_DSP_DIR=\"{0}\"", WwiseUEPlatformInstance.WwiseDspDir));
 		SE.PublicDefinitions.Add(string.Format("AK_CONFIGURATION=\"{0}\"", WwiseUEPlatformInstance.AkConfigurationDir));
 
         if (IsWwiseTargetSupported)

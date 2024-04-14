@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/API_2022_1/WwiseCommAPI_2022_1.h"
@@ -34,12 +34,7 @@ AKRESULT FWwiseCommAPI_2022_1::Init(
 AkInt32 FWwiseCommAPI_2022_1::GetLastError()
 {
 	SCOPE_CYCLE_COUNTER(STAT_WwiseSoundEngineAPI_2022_1);
-#if AK_ENABLE_COMMUNICATION
 	return 0;
-	//return AK::Comm::GetLastError();
-#else
-	return 0;
-#endif
 }
 
 void FWwiseCommAPI_2022_1::GetDefaultInitSettings(
@@ -59,7 +54,7 @@ void FWwiseCommAPI_2022_1::Term()
 	SCOPED_WWISESOUNDENGINE_EVENT(TEXT("FWwiseCommAPI_2022_1::Term"));
 	SCOPE_CYCLE_COUNTER(STAT_WwiseSoundEngineAPI_2022_1);
 #if AK_ENABLE_COMMUNICATION
-		AK::Comm::Term();
+	AK::Comm::Term();
 #else
 	return;
 #endif

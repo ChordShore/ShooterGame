@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 using UnrealBuildTool;
@@ -78,11 +78,29 @@ public class WwiseUEPlatform_2022_1_XSX : WwiseUEPlatform
 	{
 		return new List<string>();
 	}
+	
+	private static void CheckCompilerVersion(ref string Version, WindowsCompiler Compiler, string LongVersionName, string ShortVersionName)
+	{
+		try
+		{
+			if (Compiler == (WindowsCompiler)Enum.Parse(typeof(WindowsCompiler), LongVersionName))
+				Version = ShortVersionName;
+		}
+		catch
+		{
+		}
+	}
 
 	private string GetVisualStudioVersion()
 	{
-		// TODO: MPXPlatform does not have a Compiler property
-		return "vc160";
+		string VSVersion = "vc160";
+		var Compiler = Target.WindowsPlatform.Compiler;
+		CheckCompilerVersion(ref VSVersion, Compiler, "VisualStudio2022", "vc170");
+		CheckCompilerVersion(ref VSVersion, Compiler, "VisualStudio2019", "vc160");
+		CheckCompilerVersion(ref VSVersion, Compiler, "VisualStudio2017", "vc150");
+		CheckCompilerVersion(ref VSVersion, Compiler, "VisualStudio2015", "vc140");
+		CheckCompilerVersion(ref VSVersion, Compiler, "VisualStudio2013", "vc120");
+		return VSVersion;
 	}
 }
 

@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 using UnrealBuildTool;
@@ -29,18 +29,9 @@ public class WwiseUEPlatform_2022_1_Linux : WwiseUEPlatform
 		return Path.Combine(LibPath, "lib" + LibName + ".a");
 	}
 
-	public override string AkConfigurationDir
-	{
-		get
-		{
-			// Linux cross-compile toolchain does not support communication, force release config.
-			return "Release";
-		}
-	}
-
 	public override bool SupportsAkAutobahn { get { return false; } }
 
-	public override bool SupportsCommunication { get { return false; } }
+	public override bool SupportsCommunication { get { return true; } }
 
 	public override bool SupportsDeviceMemory { get { return false; } }
 
@@ -67,7 +58,6 @@ public class WwiseUEPlatform_2022_1_Linux : WwiseUEPlatform
 	{
 		return new List<string>
 		{
-			"AK_OPTIMIZED" // Always using release, force Optimized.
 		};
 	}
 

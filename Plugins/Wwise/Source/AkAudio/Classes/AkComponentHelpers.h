@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 /*=============================================================================
@@ -85,7 +85,7 @@ namespace AkComponentHelpers
 		Blueprint classes. For Blueprint class components, during Super::PostEditChangeProperty(), the component is
 		replaced with a new instance.
 		The duplicated component instance initially has default values for all UPROPERTY members.
-		It is only later, after BeginPlay() has been called, that the values from the previous instance's UPROPERTYs are
+		It is only later, after BeginPlay() has been called, that the values from the previous instance's UPROPERTY are
 		copied to the new instance! So in that case, we need to defer the BeginPlay logic that depends on UPROPERTY values
 		that have been updated via user interaction, prior to the begin play call.
 		*/

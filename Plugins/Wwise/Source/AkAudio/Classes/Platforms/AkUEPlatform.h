@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #pragma once
@@ -25,6 +25,8 @@ Copyright (c) 2023 Audiokinetic Inc.
 #include "AkPlatform_tvOS/AkTVOSPlatform.h"
 #elif PLATFORM_IOS && !PLATFORM_TVOS
 #include "AkPlatform_iOS/AkIOSPlatform.h"
+#elif (defined(PLATFORM_LINUXARM64) && PLATFORM_LINUXARM64) || (defined(PLATFORM_LINUXAARCH64) && PLATFORM_LINUXAARCH64)
+#include "AkPlatform_LinuxArm64/AkLinuxArm64Platform.h"
 #elif PLATFORM_LINUX
 #include "AkPlatform_Linux/AkLinuxPlatform.h"
 #elif PLATFORM_MAC

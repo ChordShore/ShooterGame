@@ -12,15 +12,28 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/API_2022_1/WwiseSpatialAudioAPI_2022_1.h"
 #include "Wwise/Stats/SoundEngine_2022_1.h"
 
+#include "CoreTypes.h"
+
+#if defined(PLATFORM_MICROSOFT) && PLATFORM_MICROSOFT
+#pragma pack(push)
+#pragma warning(push)
+#pragma warning(disable: 4103)		// alignment changed after including header, may be due to missing #pragma pack(pop)
+#endif // PLATFORM_MICROSOFT
+
 #include "Wwise/PreSoundEngineInclude.h"
 #include <AK/SpatialAudio/Common/AkReverbEstimation.h>
 #include "Wwise/PostSoundEngineInclude.h"
+
+#if defined(PLATFORM_MICROSOFT) && PLATFORM_MICROSOFT
+#pragma warning(pop)
+#pragma pack(pop)
+#endif // PLATFORM_MICROSOFT
 
 FWwiseSpatialAudioAPI_2022_1::FWwiseSpatialAudioAPI_2022_1() :
 	IWwiseSpatialAudioAPI(new FReverbEstimation)

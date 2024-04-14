@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 /*------------------------------------------------------------------------------------
@@ -120,7 +120,7 @@ public:
 	* Call WAAPI to get information about an object form the path or the id of the object (inFrom).
 	*
 	* @param inFromField	 The path or the id from which the data will be get.
-	* @param outJsonResult   A JSON object that contains useful informations about the call process, gets the object infos or gets an error infos in case the call failed.
+	* @param outJsonResult   A JSON object that contains useful information about the call process, gets the object infos or gets an error infos in case the call failed.
 	* @return			     A boolean to ensure that the call was successfully done.
 	*/
 	static bool CallWaapiGetInfoFrom(const FString& inFromField, const FString& inFromString, TSharedPtr<FJsonObject>& outJsonResult, const TArray<TransformStringField>& TransformFields);
@@ -152,7 +152,7 @@ public:
 	/**
 	* Allows to get information from a FJsonValue object and use it to create an FWwiseTreeItem.
 	*
-	* @param inJsonItem		An FJsonValue from which we get utile data to construct the  FWwiseTreeItem object.
+	* @param inJsonItem		An FJsonValue from which we get useful data to construct the  FWwiseTreeItem object.
 	* @return				An FWwiseTreeItem that will be added to the root items.
 	*/
 	TSharedPtr<FWwiseTreeItem> ConstructWwiseTreeItem(const TSharedPtr<FJsonValue>& InJsonItem);

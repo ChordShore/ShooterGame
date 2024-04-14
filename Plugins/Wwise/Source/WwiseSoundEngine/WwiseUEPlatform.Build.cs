@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 using UnrealBuildTool;
@@ -121,21 +121,56 @@ public abstract class WwiseUEPlatform
 	{
 		get
 		{
+			return WwiseConfigurationDir;
+		}
+	}
+
+	/// <summary>
+	/// Wwise Target Configuration based on Unreal Target Configuration. 
+	/// </summary>
+	public string WwiseConfiguration
+	{
+		get
+		{
 			switch (Target.Configuration)
 			{
 				case UnrealTargetConfiguration.Debug:
-					var akConfiguration = Target.bDebugBuildsActuallyUseDebugCRT ? "Debug" : "Profile";
-					return akConfiguration;
+				case UnrealTargetConfiguration.DebugGame:
+					return "Debug";
 
 				case UnrealTargetConfiguration.Development:
-				case UnrealTargetConfiguration.Test:
-				case UnrealTargetConfiguration.DebugGame:
-					return "Profile";
 				default:
+					return "Profile";
+
+				case UnrealTargetConfiguration.Test:
+				case UnrealTargetConfiguration.Shipping:
 					return "Release";
 			}
 		}
 	}
+
+	/// <summary>
+	/// Wwise Library's Configuration folder (e.g.: ThirdParty/Platform/ConfigurationDir/lib).
+	/// </summary>
+	public virtual string WwiseConfigurationDir
+	{
+		get
+		{
+			return WwiseConfiguration;
+		}
+	}
+
+	/// <summary>
+	/// Wwise Library's DSP folder (e.g.: ThirdParty/Platform/DspDir/bin). 
+	/// </summary>
+	public virtual string WwiseDspDir
+	{
+		get
+		{
+			return WwiseConfiguration;
+		}
+	}
+	
 	
 	public abstract string GetLibraryFullPath(string LibName, string LibPath);
 	public abstract bool SupportsAkAutobahn { get; }
@@ -149,13 +184,15 @@ public abstract class WwiseUEPlatform
 	{
 		return new List<string>
 		{
-			Path.Combine(ThirdPartyFolder, AkPlatformLibDir, AkConfigurationDir, "lib")
+			Path.Combine(ThirdPartyFolder, AkPlatformLibDir, WwiseConfigurationDir, "lib")
 		};
 	}
 
 	public virtual List<string> GetRuntimeDependencies()
 	{
-		return GetAllLibrariesInFolder(Path.Combine(ThirdPartyFolder, AkPlatformLibDir, AkConfigurationDir, "bin"), DynamicLibExtension, false, true);
+		string PluginsDir = WwiseDspDir;
+		List<string> Result = GetAllLibrariesInFolder(Path.Combine(ThirdPartyFolder, AkPlatformLibDir, WwiseDspDir, "bin"), DynamicLibExtension, false, true);
+		return Result;
 	}
 
 	public abstract List<string> GetAdditionalWwiseLibs();

@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #pragma once
@@ -219,7 +219,7 @@ public:
 	/** Subscribed to child added and child removed for the event ID. When a child is added or removed, UpdateAudioSourceInfo() is called. */
 	void SubscribeToEventChildAddedRemoved();
 
-	/** Unsubscribes a specfic WAAPI subscription ID. */
+	/** Unsubscribes a specific WAAPI subscription ID. */
 	void UnsubscribeWAAPICallback(uint64& in_iSubID);
 
 	/** Unsubscribes from all existing WAAPI subscriptions for this section. */

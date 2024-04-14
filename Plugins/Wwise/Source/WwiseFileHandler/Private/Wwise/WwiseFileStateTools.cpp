@@ -12,10 +12,11 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/WwiseFileStateTools.h"
+#include "Wwise/WwiseFileCache.h"
 #include "Wwise/Stats/AsyncStats.h"
 #include "Wwise/Stats/FileHandler.h"
 
@@ -35,8 +36,8 @@ Copyright (c) 2023 Audiokinetic Inc.
 #include <inttypes.h>
 
 uint8* FWwiseFileStateTools::AllocateMemory(int64 InMemorySize, bool bInDeviceMemory, int32 InMemoryAlignment,
-	bool bInEnforceMemoryRequirements,
-	const FName& InStat, const FName& InStatDevice)
+                                            bool bInEnforceMemoryRequirements,
+                                            const FName& InStat, const FName& InStatDevice)
 {
 	uint8* Result = nullptr;
 
@@ -160,61 +161,103 @@ void FWwiseFileStateTools::UnmapHandle(IMappedFileHandle& InMappedHandle, const 
 	ASYNC_INC_MEMORY_STAT_BY_FName(InStat, Size);
 }
 
-bool FWwiseFileStateTools::GetFileToPtr(const uint8*& OutPtr, int64& OutSize, const FString& InFilePathname,
-	bool bInDeviceMemory, int32 InMemoryAlignment, bool bInEnforceMemoryRequirements,
+void FWwiseFileStateTools::GetFileToPtr(TUniqueFunction<void(bool bResult, const uint8* Ptr, int64 Size)>&& InCallback,
+	const FString& InFilePathname, bool bInDeviceMemory, int32 InMemoryAlignment, bool bInEnforceMemoryRequirements,
 	const FName& InStat, const FName& InStatDevice,
-	int64 ReadFirstBytes)
+	EAsyncIOPriorityAndFlags InPriority, int64 ReadFirstBytes)
 {
 	SCOPED_WWISEFILEHANDLER_EVENT_4(TEXT("FWwiseFileStateTools::GetFileToPtr"));
-	FScopedLoadingState ScopedLoadingState(*InFilePathname);
 
-	FArchive* Reader = IFileManager::Get().CreateFileReader(*InFilePathname, 0);
-	if (!Reader)
+	auto* FileCache = FWwiseFileCache::Get();
+	if (UNLIKELY(!FileCache))
 	{
-		UE_LOG(LogWwiseFileHandler, Verbose, TEXT("Could not get File Archive for %s"), *InFilePathname);
-		return false;
+		UE_LOG(LogWwiseFileHandler, Warning, TEXT("FWwiseFileStateTools::GetFileToPtr Failed to get FileCache instance while reading %s"), *InFilePathname);
+		return InCallback(false, nullptr, 0);
 	}
 
-	int64 Size = Reader->TotalSize();
-	if (UNLIKELY(!Size))
+	auto* HandlePtr = new FWwiseFileCacheHandle*;
+	if (UNLIKELY(!HandlePtr))
 	{
-		UE_LOG(LogWwiseFileHandler, Error, TEXT("Empty file %s"), *InFilePathname);
-		delete Reader;
-		return false;
-	}
-	if (ReadFirstBytes >= 0 && Size > ReadFirstBytes)
-	{
-		Size = ReadFirstBytes;
+		UE_LOG(LogWwiseFileHandler, Warning, TEXT("FWwiseFileStateTools::GetFileToPtr Failed to allocate FileCacheHandle pointer while reading %s"), *InFilePathname);
+		return InCallback(false, nullptr, 0);
 	}
 
-	if (UNLIKELY((InMemoryAlignment & (InMemoryAlignment - 1)) != 0))
+	FileCache->CreateFileCacheHandle(*HandlePtr, InFilePathname,
+	[HandlePtr, InCallback = MoveTemp(InCallback), InFilePathname, bInDeviceMemory, InMemoryAlignment, bInEnforceMemoryRequirements, InStat, InStatDevice, InPriority, ReadFirstBytes](bool bResult) mutable
 	{
-		UE_LOG(LogWwiseFileHandler, Warning, TEXT("Invalid non-2^n Memory Alignment (%" PRIi32 ") while getting file %s. Resetting to 0."), InMemoryAlignment, *InFilePathname);
-		InMemoryAlignment = 0;
-	}
+		SCOPED_WWISEFILEHANDLER_EVENT_4(TEXT("FWwiseFileStateTools::GetFileToPtr Opened"));
+		auto* Handle = *HandlePtr;
 
-	uint8* Ptr = AllocateMemory(Size, bInDeviceMemory, InMemoryAlignment, bInEnforceMemoryRequirements, InStat, InStatDevice);
-	if (UNLIKELY(!Ptr))
-	{
-		UE_LOG(LogWwiseFileHandler, Verbose, TEXT("Could not Allocate memory for %s"), *InFilePathname);
-		delete Reader;
-		return false;
-	}
+		if (UNLIKELY(!bResult) || UNLIKELY(!Handle))
+		{
+			UE_LOG(LogWwiseFileHandler, Warning, TEXT("FWwiseFileStateTools::GetFileToPtr Failed to get FileCache instance while reading %s"), *InFilePathname);
+			delete HandlePtr;
+			InCallback(false, nullptr, 0);
+			if (Handle) Handle->CloseAndDelete();
+			return;
+		}
+			
+		auto Size = Handle->GetFileSize();
+		
+		if (UNLIKELY(!Size))
+		{
+			UE_LOG(LogWwiseFileHandler, Error, TEXT("FWwiseFileStateTools::GetFileToPtr File not found %s"), *InFilePathname);
+			delete HandlePtr;
+			InCallback(false, nullptr, 0);
+			Handle->CloseAndDelete();
+			return;
+		}
 
-	UE_LOG(LogWwiseFileHandler, VeryVerbose, TEXT("Getting a copy of full file %s (%" PRIi64 " bytes)"), *InFilePathname, Size);
+		if (ReadFirstBytes >= 0 && Size > ReadFirstBytes)
+		{
+			Size = ReadFirstBytes;
+		}
 
-	Reader->Serialize(Ptr, Size);
-	const bool Result = Reader->Close();
+		auto MemoryAlignment = InMemoryAlignment;
+		if (UNLIKELY((MemoryAlignment & (MemoryAlignment - 1)) != 0))
+		{
+			UE_LOG(LogWwiseFileHandler, Warning, TEXT("FWwiseFileStateTools::GetFileToPtr Invalid non-2^n Memory Alignment (%" PRIi32 ") while getting file %s. Resetting to 0."), InMemoryAlignment, *InFilePathname);
+			MemoryAlignment = 0;
+		}
 
-	delete Reader;
-	if (!Result)
-	{
-		UE_LOG(LogWwiseFileHandler, Error, TEXT("Deserialization failed for file %s"), *InFilePathname);
-		DeallocateMemory(Ptr, Size, bInDeviceMemory, InMemoryAlignment, bInEnforceMemoryRequirements, InStat, InStatDevice);
-		return false;
-	}
+		uint8* Ptr = AllocateMemory(Size, bInDeviceMemory, MemoryAlignment, bInEnforceMemoryRequirements, InStat, InStatDevice);
+		if (UNLIKELY(!Ptr))
+		{
+			UE_LOG(LogWwiseFileHandler, Warning, TEXT("FWwiseFileStateTools::GetFileToPtr Could not Allocate %" PRIi64 " for %s"), Size, *InFilePathname);
+			delete HandlePtr;
+			InCallback(false, nullptr, 0);
+			Handle->CloseAndDelete();
+			return;
+		}
 
-	OutPtr = Ptr;
-	OutSize = Size;
-	return true;
+		UE_CLOG(ReadFirstBytes >= 0, LogWwiseFileHandler, VeryVerbose, TEXT("FWwiseFileStateTools::GetFileToPtr Getting the first bytes of file %s (%" PRIi64 " bytes)"), *InFilePathname, Size);
+		UE_CLOG(ReadFirstBytes == 0, LogWwiseFileHandler, VeryVerbose, TEXT("FWwiseFileStateTools::GetFileToPtr Getting the entire file %s (%" PRIi64 " bytes)"), *InFilePathname, Size);
+
+		Handle->ReadData(Ptr, 0, Size, InPriority,
+		[HandlePtr, InCallback = MoveTemp(InCallback), InFilePathname, Ptr, Size, bInDeviceMemory, InMemoryAlignment, bInEnforceMemoryRequirements, InStat, InStatDevice, ReadFirstBytes](bool bResult) mutable
+		{
+			SCOPED_WWISEFILEHANDLER_EVENT_4(TEXT("FWwiseFileStateTools::GetFileToPtr Done"));
+			auto* Handle = *HandlePtr;
+			delete HandlePtr;
+
+			if (LIKELY(bResult))
+			{
+				UE_CLOG(ReadFirstBytes >= 0, LogWwiseFileHandler, VeryVerbose, TEXT("FWwiseFileStateTools::GetFileToPtr Done getting the first bytes of file %s (%" PRIi64 " bytes)"), *InFilePathname, Size);
+				UE_CLOG(ReadFirstBytes == 0, LogWwiseFileHandler, VeryVerbose, TEXT("FWwiseFileStateTools::GetFileToPtr Done getting the entire file %s (%" PRIi64 " bytes)"), *InFilePathname, Size);
+			}
+			else
+			{
+				UE_CLOG(ReadFirstBytes >= 0, LogWwiseFileHandler, Error, TEXT("FWwiseFileStateTools::GetFileToPtr Failed getting the first bytes of file %s (%" PRIi64 " bytes)"), *InFilePathname, Size);
+				UE_CLOG(ReadFirstBytes == 0, LogWwiseFileHandler, Error, TEXT("FWwiseFileStateTools::GetFileToPtr Failed getting the entire file %s (%" PRIi64 " bytes)"), *InFilePathname, Size);
+				DeallocateMemory(Ptr, Size, bInDeviceMemory, InMemoryAlignment, bInEnforceMemoryRequirements, InStat, InStatDevice);
+			}
+
+			LaunchWwiseTask(WWISEFILEHANDLER_ASYNC_NAME("FWwiseFileStateTools::GetFileToPtr Callback"), [InCallback = MoveTemp(InCallback), bResult, Ptr, Size]
+			{
+				InCallback(bResult, Ptr, Size);
+			});
+			
+			Handle->CloseAndDelete();
+		});
+	});
 }

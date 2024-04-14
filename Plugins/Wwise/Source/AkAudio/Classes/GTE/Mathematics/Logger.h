@@ -172,22 +172,24 @@ namespace WwiseGTE
         }
     };
 
-}
-
-
-#define LogAssert(condition, message) \
+    #define GTE_LogAssert(condition, message) \
     if (!(condition)) \
     { \
-        WwiseGTE::Logger(__FILE__, __FUNCTION__, __LINE__, message).Assertion(); \
-        throw std::runtime_error(message); \
+    WwiseGTE::Logger(__FILE__, __FUNCTION__, __LINE__, message).Assertion(); \
+    throw std::runtime_error(message); \
     }
 
-#define LogError(message) \
+    #define GTE_LogError(message) \
     WwiseGTE::Logger(__FILE__, __FUNCTION__, __LINE__, message).Error(); \
     throw std::runtime_error(message)
 
-#define LogWarning(message) \
+    #define GTE_LogWarning(message) \
     WwiseGTE::Logger(__FILE__, __FUNCTION__, __LINE__, message).Warning()
 
-#define LogInformation(message) \
+    #define GTE_LogInformation(message) \
     WwiseGTE::Logger(__FILE__, __FUNCTION__, __LINE__, message).Information()
+
+}
+
+
+

@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "AkMigrationWidgets.h" 
@@ -257,7 +257,7 @@ FText SMigrationWidget::GetContinueToolTip() const
 		}
 		if (BankTransferWidget->BankTransferMethod == AkAssetMigration::EBankTransferMode::DefinitionFile && BankTransferWidget->SoundBankDefinitionFilePath.IsEmpty())
 		{
-			return FText::FromString("Please choose a SoundBank Defintion file path first");
+			return FText::FromString("Please choose a SoundBank Definition file path first");
 		}
 	}
 	return  FText::FromString("Continue");
@@ -899,7 +899,7 @@ void SDefinitionFilePicker::Construct( const FArguments& InArgs )
 			SAssignNew(EditableTextBox, SEditableTextBox)
 			.Text(this, &SDefinitionFilePicker::GetFilePathText)
 			.OnTextChanged(this, &SDefinitionFilePicker::OnFileTextChanged)
-			.OnTextCommitted(this, &SDefinitionFilePicker::OnFileTextCommited)
+			.OnTextCommitted(this, &SDefinitionFilePicker::OnFileTextCommitted)
 		]
 
 		+ SHorizontalBox::Slot()
@@ -924,7 +924,7 @@ void SDefinitionFilePicker::OnFileTextChanged(const FText& InFilePath)
 	FilePath = InFilePath.ToString();
 }
 
-void SDefinitionFilePicker::OnFileTextCommited(const FText& InText, ETextCommit::Type InCommitType)
+void SDefinitionFilePicker::OnFileTextCommitted(const FText& InText, ETextCommit::Type InCommitType)
 {
 	FilePath = InText.ToString();
 	OnFileChanged.ExecuteIfBound(FilePath);

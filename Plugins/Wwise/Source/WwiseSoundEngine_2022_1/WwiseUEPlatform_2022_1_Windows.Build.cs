@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 using UnrealBuildTool;
@@ -22,34 +22,33 @@ using System.Collections.Generic;
 
 public abstract class WwiseUEPlatform_2022_1_Windows : WwiseUEPlatform
 {
-	bool bIsDebugBuild = false;
-
 	public WwiseUEPlatform_2022_1_Windows(ReadOnlyTargetRules in_TargetRules, string in_ThirdPartyFolder) : base(in_TargetRules, in_ThirdPartyFolder) {}
 
 	public abstract string PlatformPrefix { get; }
 
 	public override string GetLibraryFullPath(string LibName, string LibPath)
 	{
+		// Fix: AkAutobahn Debug requires different RuntimeLibrary
+		if (LibName == "AkAutobahn")
+		{
+			LibPath = LibPath.Replace("Debug", "Profile");
+			LibPath = LibPath.Replace("(StaticCRT)", "");
+		}
+		
 		return Path.Combine(LibPath, LibName + ".lib");
 	}
 
-	public override bool SupportsAkAutobahn { get { return Target.Configuration != UnrealTargetConfiguration.Shipping && !bIsDebugBuild ; } }
+	public override bool SupportsAkAutobahn { get { return Target.Configuration != UnrealTargetConfiguration.Shipping; } }
 
 	public override bool SupportsCommunication { get { return true; } }
 
 	public override bool SupportsDeviceMemory { get { return false; } }
 
-	public override bool SupportsOpus { get { return !bIsDebugBuild; } }
+	public override bool SupportsOpus { get { return true; } }
 
 	public override string AkPlatformLibDir { get { return PlatformPrefix + "_" + GetVisualStudioVersion(); } }
 
 	public override string DynamicLibExtension { get { return "dll"; } }
-
-	public override List<string> GetPublicLibraryPaths()
-	{
-		var confDir = bIsDebugBuild && Target.Configuration == UnrealTargetConfiguration.Debug ? "Debug" : AkConfigurationDir;
-		return new List<string> { Path.Combine(ThirdPartyFolder, AkPlatformLibDir, confDir, "lib") };
-	}
 
 	public override List<string> GetAdditionalWwiseLibs()
 	{
@@ -113,6 +112,28 @@ public abstract class WwiseUEPlatform_2022_1_Windows : WwiseUEPlatform
 		CheckCompilerVersion(ref VSVersion, Compiler, "VisualStudio2015", "vc140");
 		CheckCompilerVersion(ref VSVersion, Compiler, "VisualStudio2013", "vc120");
 		return VSVersion;
+	}
+
+	public override string WwiseConfigurationDir
+	{
+		get
+		{
+			var Configuration = base.WwiseConfigurationDir;
+			var UpdatedConfiguration = Configuration + "(StaticCRT)";
+			var StaticFolder = Path.Combine(ThirdPartyFolder, AkPlatformLibDir, UpdatedConfiguration);
+			if (System.IO.Directory.Exists(StaticFolder))
+			{
+				return UpdatedConfiguration;
+			}
+			else if (Configuration == "Debug" && !Target.bDebugBuildsActuallyUseDebugCRT)
+			{
+				return "Profile";
+			}
+			else
+			{
+				return Configuration;
+			}
+		}
 	}
 }
 

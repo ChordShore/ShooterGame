@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 /*=============================================================================
@@ -145,7 +145,7 @@ public:
     * @param in_options		 Optional flag to get more information about the event happened.
     * @param in_callback		 A delegate to be executed during the subscription event.
     * @param out_subscriptionId Gets the id of this subscription.
-    * @param out_result		 A JSON object that contains useful informations about the subscription process to a specific event, gets an error infos in case the subscription failed.
+    * @param out_result		 A JSON object that contains useful information about the subscription process to a specific event, gets an error infos in case the subscription failed.
     * @return					 A boolean to ensure that the subscription was successfully done.
     */
     bool Subscribe(const char* in_uri, const FString& in_options, WampEventCallback in_callback,
@@ -157,7 +157,7 @@ public:
     * Unsubscribe to notifications
     *
     * @param in_subscriptionId	Gets the id of the current subscription to the event from which we want to be unsubscribed.
-    * @param out_result		A JSON object that contains useful informations about the unsubscription process from a specific event, gets an error infos in case the unsubscription failed.
+    * @param out_result		A JSON object that contains useful information about the unsubscription process from a specific event, gets an error infos in case the unsubscription failed.
     * @return					A boolean to ensure that the unsubscription was successfully done.
     */
     bool Unsubscribe(const uint64_t& in_subscriptionId, FString& out_result, int in_iTimeoutMs = 500, bool in_bSilenceLog = false);
@@ -176,7 +176,7 @@ public:
     * @param in_uri		The	Function that will be called when an event that we would be aware of happens.
     * @param in_args		The arguments referenced to the in_uri function.
     * @param in_options	Optional flag to get more information about the event happened.
-    * @param out_result	A JSON object that contains useful informations about the Call process to a specific event, gets an error infos in case the Call fails.
+    * @param out_result	A JSON object that contains useful information about the Call process to a specific event, gets an error infos in case the Call fails.
     * @return				A boolean to ensure that the call was successfully passed.
     */
     bool Call(const char* in_uri, const FString& in_args, const FString& in_options, FString& out_result, int in_iTimeoutMs = 500, bool silenceLog = false);
@@ -195,7 +195,7 @@ public:
     /** Sets in_outParentGUID to the object ID of a parent of object in_objectGUID of type in_strType. */
     static void GetParentOfType(FGuid in_objectGUID, FGuid& in_outParentGUID, FString in_strType);
     /** Gets the path of the currently loaded project in Wwise Authoring. */
-    static bool GetProjectPath(TSharedPtr<FJsonObject>& inOutJsonReslut, FString& ProjectPath);
+    static bool GetProjectPath(TSharedPtr<FJsonObject>& inOutJsonResult, FString& ProjectPath);
 
     WwiseProjectLoaded OnProjectLoaded;
     WAAPIConnectionLost OnConnectionLost;
@@ -322,7 +322,7 @@ public:
         static const FString CHILDREN_COUNT;
         static const FString ANCESTORS;
         static const FString DESCENDANTS;
-        static const FString WOKUNIT_TYPE;
+        static const FString WORKUNIT_TYPE;
         static const FString FOLDER;
         static const FString PHYSICAL_FOLDER;
         static const FString SEARCH;

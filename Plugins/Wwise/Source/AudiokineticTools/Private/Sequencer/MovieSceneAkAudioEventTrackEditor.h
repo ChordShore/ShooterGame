@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #pragma once
@@ -71,5 +71,5 @@ private:
 	void OnAudioAssetSelected(const FAssetData& AssetData, UMovieSceneTrack* Track);
 
     /** Creates a soundbank generation window. Iterates through all of the sections in the track and adds their required banks to the selected banks in the window.*/
-    static void CreateGenerateSoundbanksWindowForAllSections(UMovieSceneTrack* in_pTrack);
+    static void CreateGenerateSoundBanksWindowForAllSections(UMovieSceneTrack* in_pTrack);
 };

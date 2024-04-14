@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #pragma once
@@ -40,43 +40,60 @@ public:
 	 */
 	static bool IsAvailable()
 	{
-		return FModuleManager::Get().IsModuleLoaded(GetModuleName());
+#if UE_SERVER
+		return false;
+#else
+		static bool bModuleAvailable = false;
+		if (LIKELY(!IsEngineExitRequested()) && LIKELY(bModuleAvailable))
+		{
+			return true;
+		}
+		bModuleAvailable = FModuleManager::Get().IsModuleLoaded(GetModuleName());
+		return bModuleAvailable;
+#endif
 	}
 
 	static IWwiseResourceLoaderModule* GetModule()
 	{
+#if UE_SERVER
+		return nullptr;
+#else
+		static IWwiseResourceLoaderModule* Module = nullptr;
+		if (LIKELY(!IsEngineExitRequested()) && LIKELY(Module))
+		{
+			return Module;
+		}
+		
 		const auto ModuleName = GetModuleName();
 		if (ModuleName.IsNone())
 		{
 			return nullptr;
 		}
-#if UE_SERVER
-		return nullptr;
-#else
+
 		FModuleManager& ModuleManager = FModuleManager::Get();
-		IWwiseResourceLoaderModule* Result = ModuleManager.GetModulePtr<IWwiseResourceLoaderModule>(ModuleName);
-		if (UNLIKELY(!Result))
+		Module = ModuleManager.GetModulePtr<IWwiseResourceLoaderModule>(ModuleName);
+		if (UNLIKELY(!Module))
 		{
 			if (UNLIKELY(IsEngineExitRequested()))
 			{
-				UE_LOG(LogLoad, Verbose, TEXT("Skipping reloading missing WwiseResourceLoaderImpl module: Exiting."));
+				UE_LOG(LogLoad, Log, TEXT("Skipping reloading missing WwiseResourceLoader module: Exiting."));
 			}
 			else if (UNLIKELY(!IsInGameThread()))
 			{
-				UE_LOG(LogLoad, Warning, TEXT("Skipping loading missing WwiseResourceLoaderImpl module: Not in game thread"));
+				UE_LOG(LogLoad, Warning, TEXT("Skipping loading missing WwiseResourceLoader module: Not in game thread"));
 			}
 			else
 			{
-				UE_LOG(LogLoad, Log, TEXT("Loading WwiseResourceLoaderImpl module: %s"), *ModuleName.GetPlainNameString());
-				Result = ModuleManager.LoadModulePtr<IWwiseResourceLoaderModule>(ModuleName);
-				if (UNLIKELY(!Result))
+				UE_LOG(LogLoad, Log, TEXT("Loading WwiseResourceLoader module: %s"), *ModuleName.GetPlainNameString());
+				Module = ModuleManager.LoadModulePtr<IWwiseResourceLoaderModule>(ModuleName);
+				if (UNLIKELY(!Module))
 				{
-					UE_LOG(LogLoad, Fatal, TEXT("Could not load WwiseResourceLoaderImpl module: %s not found"), *ModuleName.GetPlainNameString());
+					UE_LOG(LogLoad, Fatal, TEXT("Could not load WwiseResourceLoader module: %s not found"), *ModuleName.GetPlainNameString());
 				}
 			}
 		}
 
-		return Result;
+		return Module;
 #endif
 	}
 

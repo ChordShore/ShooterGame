@@ -198,7 +198,7 @@ namespace WwiseGTE
         // positive integer with nonzero leading digit.
         BSNumber(std::string const& number)
         {
-            LogAssert(number.size() > 0, "A number must be specified.");
+            GTE_LogAssert(number.size() > 0, "A number must be specified.");
 
             // Get the leading '+' or '-' if it exists.
             std::string intNumber;
@@ -207,13 +207,13 @@ namespace WwiseGTE
             {
                 intNumber = number.substr(1);
                 sign = +1;
-                LogAssert(intNumber.size() > 1, "Invalid number format.");
+                GTE_LogAssert(intNumber.size() > 1, "Invalid number format.");
             }
             else if (number[0] == '-')
             {
                 intNumber = number.substr(1);
                 sign = -1;
-                LogAssert(intNumber.size() > 1, "Invalid number format.");
+                GTE_LogAssert(intNumber.size() > 1, "Invalid number format.");
             }
             else
             {
@@ -599,8 +599,8 @@ namespace WwiseGTE
             BSNumber x(digit);
             if (number.size() > 1)
             {
-                LogAssert(number.find_first_of("123456789") == 0, "Invalid number format.");
-                LogAssert(number.find_first_not_of("0123456789") == std::string::npos, "Invalid number format.");
+                GTE_LogAssert(number.find_first_of("123456789") == 0, "Invalid number format.");
+                GTE_LogAssert(number.find_first_not_of("0123456789") == std::string::npos, "Invalid number format.");
                 BSNumber ten(10), pow10(10);
                 for (size_t i = 1, j = number.size() - 2; i < number.size(); ++i, --j)
                 {
@@ -757,7 +757,7 @@ namespace WwiseGTE
                     // not have a representation for +infinity or -infinity.
                     // Consider doing so with mSign in {-2,2} and all other
                     // members zero-valued.
-                    LogWarning("Input is " + std::string(s > 0 ? "-" : "+") + "infinity.");
+                    GTE_LogWarning("Input is " + std::string(s > 0 ? "-" : "+") + "infinity.");
 #else
                     // Return (-1)^s * 2^{1+EXPONENT_BIAS} for a graceful
                     // exit.
@@ -772,7 +772,7 @@ namespace WwiseGTE
                     // TODO: BSNumber does not have a representation for
                     // NaNs. Consider doing so with mSign in {-3,3} and a
                     // payload stored in mBits.
-                    LogError("Input is a " +
+                    GTE_LogError("Input is a " +
                         std::string(t & IEEE::NAN_QUIET_MASK ?
                             "quiet" : "signaling") + " NaN with payload " +
                         std::to_string(t & IEEE::NAN_PAYLOAD_MASK) + ".");
@@ -952,14 +952,14 @@ namespace WwiseGTE
     {
         if (precision <= 0)
         {
-            LogError("Precision must be positive.");
+            GTE_LogError("Precision must be positive.");
         }
 
         int64_t const maxSize = static_cast<int64_t>(UInteger::GetMaxSize());
         int64_t const excess = 32LL * maxSize - static_cast<int64_t>(precision);
         if (excess <= 0)
         {
-            LogError("The maximum precision has been exceeded.");
+            GTE_LogError("The maximum precision has been exceeded.");
         }
 
         if (input.GetSign() == 0)
@@ -1072,7 +1072,7 @@ namespace WwiseGTE
         {
             // Currently, no additional implementation-dependent modes
             // are supported for rounding.
-            LogError("Implementation-dependent rounding mode not supported.");
+            GTE_LogError("Implementation-dependent rounding mode not supported.");
         }
         // else roundingMode == FE_TOWARDZERO. Truncate the r bits, which
         // requires no additional work.

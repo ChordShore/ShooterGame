@@ -12,12 +12,13 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #pragma once
 
 #include "AkInclude.h"
+#include "GenericPlatform/GenericPlatformFile.h"
 #include "UObject/NameTypes.h"
 
 class FString;
@@ -47,8 +48,8 @@ protected:
 	static void UnmapRegion(IMappedFileRegion& InMappedRegion);
 	static void UnmapHandle(IMappedFileHandle& InMappedHandle, const FName& InStat);
 
-	static bool GetFileToPtr(const uint8*& OutPtr, int64& OutSize,
+	static void GetFileToPtr(TUniqueFunction<void(bool bResult, const uint8* Ptr, int64 Size)>&& InCallback,
 		const FString& InFilePathname, bool bInDeviceMemory, int32 InMemoryAlignment, bool bInEnforceMemoryRequirements,
 		const FName& InStat, const FName& InStatDevice,
-		int64 ReadFirstBytes = -1);
+		EAsyncIOPriorityAndFlags InPriority = AIOP_Normal, int64 ReadFirstBytes = -1);
 };

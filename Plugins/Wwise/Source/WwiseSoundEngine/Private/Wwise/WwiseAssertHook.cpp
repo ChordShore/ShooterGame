@@ -12,13 +12,13 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/WwiseAssertHook.h"
 #include "Wwise/Stats/SoundEngine.h"
 
-void WWISESOUNDENGINE_API WwiseAssertHook(const char* ExpressionChar, const char* FilenameChar, int LineNumber)
+void WwiseAssertHook(const char* ExpressionChar, const char* FilenameChar, int LineNumber)
 {
 	const FString Expression(ExpressionChar ? ExpressionChar : "[null]");
 	const FString Filename(FilenameChar ? FilenameChar : "[null]");

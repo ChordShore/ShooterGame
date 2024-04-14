@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 /*=============================================================================
@@ -37,11 +37,8 @@ Copyright (c) 2023 Audiokinetic Inc.
 #include "Wwise/API/WAAPI.h"
 
 #if AK_SUPPORT_WAAPI
-
 #include "Misc/App.h"
 #include "Misc/Paths.h"
-#include "WwiseUnrealHelper.h"
-
 #if PLATFORM_WINDOWS
 // Problem with the Windows API as a whole: it uses noexcept straight up, whether exceptions are used or not, generating a warning that Unreal then converts to an error.
 #if _MSC_VER >= 1910
@@ -1175,7 +1172,7 @@ const FString FAkWaapiClient::WAAPIStrings::CHILDREN = TEXT("children");
 const FString FAkWaapiClient::WAAPIStrings::CHILDREN_COUNT = TEXT("childrenCount");
 const FString FAkWaapiClient::WAAPIStrings::ANCESTORS = TEXT("ancestors");
 const FString FAkWaapiClient::WAAPIStrings::DESCENDANTS = TEXT("descendants");
-const FString FAkWaapiClient::WAAPIStrings::WOKUNIT_TYPE = TEXT("workunit:type");
+const FString FAkWaapiClient::WAAPIStrings::WORKUNIT_TYPE = TEXT("workunit:type");
 const FString FAkWaapiClient::WAAPIStrings::FOLDER = TEXT("Folder");
 const FString FAkWaapiClient::WAAPIStrings::PHYSICAL_FOLDER = TEXT("PhysicalFolder");
 const FString FAkWaapiClient::WAAPIStrings::SEARCH = TEXT("search");

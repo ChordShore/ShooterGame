@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 /*=============================================================================
@@ -4296,11 +4296,12 @@ bool FAkAudioDevice::EnsureInitialized()
 	SCOPED_AKAUDIO_EVENT_2(TEXT("FAkAudioDevice::EnsureInitialized"));
 
 	UE_CLOG(bLogWwiseVersionOnce, LogAkAudio, Log,
-		TEXT("Wwise(R) SDK Version %d.%d.%d Build %d. Copyright (c) 2006-%d Audiokinetic Inc."),
+		TEXT("Wwise(R) SDK Version %d.%d.%d Build %d [%s]. Copyright (c) 2006-%d Audiokinetic Inc."),
 		AK_WWISESDK_VERSION_MAJOR,
 		AK_WWISESDK_VERSION_MINOR,
 		AK_WWISESDK_VERSION_SUBMINOR,
 		AK_WWISESDK_VERSION_BUILD,
+		TEXT(WWISE_CONFIGURATION_DIR),
 		AK_WWISESDK_VERSION_MAJOR);
 	bLogWwiseVersionOnce = false;
 

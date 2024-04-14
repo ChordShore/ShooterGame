@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 /*------------------------------------------------------------------------------------
@@ -662,7 +662,7 @@ void SWaapiPicker::ConstructTree()
 						TSharedPtr<FJsonObject> Result;
 						uint32_t ItemChildrenCount = 0;
 						FString Path = WwiseWaapiHelper::BACK_SLASH + EWwiseItemType::FolderNames[i];
-						// Request data from Wwise UI using WAAPI and use them to create a Wwise tree item, getting the informations from a specific "PATH".
+						// Request data from Wwise UI using WAAPI and use them to create a Wwise tree item, getting the information from a specific "PATH".
 						if (sharedThis->CallWaapiGetInfoFrom(WwiseWaapiHelper::PATH, Path, Result, {}))
 						{
 							// Recover the information from the Json object Result and use it to get the item id.
@@ -841,24 +841,24 @@ void SWaapiPicker::ApplyFilter()
 		RootItems[i]->EmptyChildren();
 	}
 
-	static TSet<FGuid> LastExpandedItemsBeforFilter;
+	static TSet<FGuid> LastExpandedItemsBeforeFilter;
 	AllowTreeViewDelegates = false;
 	FString CurrentFilterText = SearchBoxFilter->GetRawFilterText().ToString();
 	if (CurrentFilterText.IsEmpty())
 	{
 		// Recover the last expanded items before filtering.
 		LastExpandedItems.Empty();
-		LastExpandedItems = LastExpandedItemsBeforFilter;
-		LastExpandedItemsBeforFilter.Empty();
+		LastExpandedItems = LastExpandedItemsBeforeFilter;
+		LastExpandedItemsBeforeFilter.Empty();
 		AllowTreeViewDelegates = true;
 		ConstructTree();
 		return;
 	}
 
-	if (!LastExpandedItemsBeforFilter.Num())
+	if (!LastExpandedItemsBeforeFilter.Num())
 	{
 		// We preserve the last expanded items to re-expand the tree as it was in non filtering mode.
-		LastExpandedItemsBeforFilter = LastExpandedItems;
+		LastExpandedItemsBeforeFilter = LastExpandedItems;
 		LastExpandedItems.Empty();
 	}
 
@@ -961,7 +961,7 @@ void SWaapiPicker::TreeExpansionChanged(TSharedPtr< FWwiseTreeItem > TreeItem, b
 	FFunctionGraphTask::CreateAndDispatchWhenReady([sharedThis = SharedThis(this), TreeItem, itemIdStringField]
 	{
 		TSharedPtr<FJsonObject> Result;
-		// Request data from Wwise UI using WAAPI and use them to create a Wwise tree item, getting the informations from a specific "ID".
+		// Request data from Wwise UI using WAAPI and use them to create a Wwise tree item, getting the information from a specific "ID".
 		if (!sharedThis->CallWaapiGetInfoFrom(WwiseWaapiHelper::ID, itemIdStringField, Result, { { WwiseWaapiHelper::SELECT, { WwiseWaapiHelper::CHILDREN }, {} } }))
 		{
 			UE_LOG(LogAkAudio, Log, TEXT("Failed to get information from id : %s"), *itemIdStringField);
@@ -1026,7 +1026,7 @@ TSharedPtr<SWidget> SWaapiPicker::MakeWaapiPickerContextMenu()
 			MenuBuilder.BeginSection("WaapiPickerExplore", LOCTEXT("ExploreMenuHeader", "Explore"));
 			{
 				MenuBuilder.AddMenuEntry(Commands.RequestExploreWwiseItem);
-				MenuBuilder.AddMenuEntry(Commands.RequestFindInProjectExplorerWwisetem);
+				MenuBuilder.AddMenuEntry(Commands.RequestFindInProjectExplorerWwiseItem);
 			}
 			MenuBuilder.EndSection();
 		}
@@ -1076,7 +1076,7 @@ void SWaapiPicker::CreateWaapiPickerCommands()
 		FCanExecuteAction::CreateRaw(this, &SWaapiPicker::HandleWwiseCommandCanExecute));
 
 	// Explore an item in the containing folder.
-	ActionList.MapAction(Commands.RequestFindInProjectExplorerWwisetem,
+	ActionList.MapAction(Commands.RequestFindInProjectExplorerWwiseItem,
 		FExecuteAction::CreateRaw(this, &SWaapiPicker::HandleFindWwiseItemInProjectExplorerCommandExecute),
 		FCanExecuteAction::CreateRaw(this, &SWaapiPicker::HandleWwiseCommandCanExecute));
 

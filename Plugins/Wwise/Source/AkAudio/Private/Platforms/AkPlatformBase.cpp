@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Platforms/AkPlatformBase.h"
@@ -28,15 +28,15 @@ FString FAkPlatformBase::GetWwisePluginDirectory()
 
 FString FAkPlatformBase::GetDSPPluginsDirectory(const FString& PlatformArchitecture)
 {
-#ifdef AK_CONFIGURATION
-	auto* Configuration = AK_CONFIGURATION;
+#ifdef WWISE_DSP_DIR
+	static constexpr const auto* DspDir = TEXT(WWISE_DSP_DIR);
 #elif UE_BUILD_SHIPPING
-	auto* Configuration = "Release";
+	static constexpr const auto* DspDir = TEXT("Release");
 #elif UE_BUILD_DEBUG
-	auto* Configuration = "Debug";
+	static constexpr const auto* DspDir = TEXT("Debug");
 #else
-	auto* Configuration = "Profile";
+	static constexpr const auto* DspDir = TEXT("Profile");
 #endif
 
-	return WwiseUnrealHelper::GetThirdPartyDirectory() / PlatformArchitecture / Configuration / "bin" / "";
+	return WwiseUnrealHelper::GetThirdPartyDirectory() / PlatformArchitecture / DspDir / "bin" / "";
 }

@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/WwiseExternalSourceFileState.h"
@@ -95,22 +95,26 @@ void FWwiseInMemoryExternalSourceFileState::OpenFile(FOpenFileCallback&& InCallb
 	}
 
 	const auto FullPathName = RootPath.ToString() / MediaPathName.ToString();
-	int64 FileSize = 0;
-	if (LIKELY(GetFileToPtr(const_cast<const uint8*&>(reinterpret_cast<uint8*&>(pInMemory)), FileSize,
+	GetFileToPtr([this, FullPathName, InCallback = MoveTemp(InCallback)](bool bInResult, const uint8* InPtr, int64 InSize) mutable
+	{
+		SCOPED_WWISEFILEHANDLER_EVENT_3(TEXT("FWwiseInMemoryExternalSourceFileState::OpenFile Callback"));
+		if (LIKELY(bInResult))
+		{
+			UE_LOG(LogWwiseFileHandler, Verbose, TEXT("FWwiseInMemoryExternalSourceFileState::OpenFile %" PRIu32 " (%s)"), MediaId, *MediaPathName.ToString());
+			pInMemory = const_cast<uint8*>(InPtr);
+			uiMemorySize = InSize;
+			return OpenFileSucceeded(MoveTemp(InCallback));
+		}
+		else
+		{
+			UE_LOG(LogWwiseFileHandler, Error, TEXT("FWwiseInMemoryExternalSourceFileState::OpenFile %" PRIu32 ": Failed to open In-Memory External Source (%s)."), MediaId, *FullPathName);
+			pInMemory = nullptr;
+			uiMemorySize = 0;
+			return OpenFileFailed(MoveTemp(InCallback));
+		}
+	},
 		FullPathName, bDeviceMemory, MemoryAlignment, true,
-		STAT_WwiseMemoryExtSrc_FName, STAT_WwiseMemoryExtSrcDevice_FName)))
-	{
-		UE_LOG(LogWwiseFileHandler, Verbose, TEXT("FWwiseInMemoryExternalSourceFileState::OpenFile %" PRIu32 " (%s)"), MediaId, *MediaPathName.ToString());
-		uiMemorySize = FileSize;
-		return OpenFileSucceeded(MoveTemp(InCallback));
-	}
-	else
-	{
-		UE_LOG(LogWwiseFileHandler, Error, TEXT("FWwiseInMemoryExternalSourceFileState::OpenFile %" PRIu32 ": Failed to open In-Memory External Source (%s)."), MediaId, *FullPathName);
-		pInMemory = nullptr;
-		FileSize = 0;
-		return OpenFileFailed(MoveTemp(InCallback));
-	}
+		STAT_WwiseMemoryExtSrc_FName, STAT_WwiseMemoryExtSrcDevice_FName);
 }
 
 void FWwiseInMemoryExternalSourceFileState::LoadInSoundEngine(FLoadInSoundEngineCallback&& InCallback)
@@ -194,24 +198,26 @@ void FWwiseStreamedExternalSourceFileState::OpenFile(FOpenFileCallback&& InCallb
 		PrefetchWithGranularity = PrefetchChunks * StreamingGranularity;
 	}
 
-	int64 FileSize = 0;
-	if (UNLIKELY(!GetFileToPtr(const_cast<const uint8*&>(pMediaMemory), FileSize,
+	GetFileToPtr([this, FullPathName, PrefetchWithGranularity, InCallback = MoveTemp(InCallback)](bool bResult, const uint8* InPtr, int64 InSize) mutable
+	{
+		SCOPED_WWISEFILEHANDLER_EVENT_3(TEXT("FWwiseStreamedExternalSourceFileState::OpenFile Callback"));
+		if (UNLIKELY(!bResult))
+		{
+			UE_LOG(LogWwiseFileHandler, Error, TEXT("FWwiseStreamedExternalSourceFileState::OpenFile %" PRIu32 " (%s): Failed to Read prefetch ExternalSource (%s)."), MediaId, *MediaPathName.ToString(), *FullPathName);
+			pMediaMemory = nullptr;
+			return OpenFileFailed(MoveTemp(InCallback));
+		}
+		INC_DWORD_STAT(STAT_WwiseFileHandlerPrefetchedExternalSourceMedia);
+		uMediaSize = InSize;
+
+		UE_CLOG(InSize == PrefetchSize, LogWwiseFileHandler, Verbose, TEXT("FWwiseStreamedExternalSourceFileState::OpenFile %" PRIu32 " (%s): Prefetched %" PRIu32 " bytes."), MediaId, *MediaPathName.ToString(), uMediaSize);
+		UE_CLOG(PrefetchSize != PrefetchWithGranularity && PrefetchWithGranularity == InSize, LogWwiseFileHandler, Verbose, TEXT("FWwiseStreamedExternalSourceFileState::OpenFile %" PRIu32 " (%s): Prefetched (%" PRIu32 ") -> %" PRIu32 " bytes."), MediaId, *MediaPathName.ToString(), PrefetchSize, PrefetchWithGranularity);
+		UE_CLOG(PrefetchWithGranularity != InSize, LogWwiseFileHandler, Verbose, TEXT("FWwiseStreamedExternalSourceFileState::OpenFile %" PRIu32 " (%s): Prefetched (%" PRIu32 " -> %" PRIu32 ") -> %" PRIu32 " bytes."), MediaId, *MediaPathName.ToString(), PrefetchSize, PrefetchWithGranularity, uMediaSize);
+		return OpenFileSucceeded(MoveTemp(InCallback));
+	},
 		FullPathName, false, 0, false,
 		STAT_WwiseMemoryExtSrcPrefetch_FName, STAT_WwiseMemoryExtSrcPrefetchDevice_FName,
-		PrefetchWithGranularity
-		)))
-	{
-		UE_LOG(LogWwiseFileHandler, Error, TEXT("FWwiseStreamedExternalSourceFileState::OpenFile %" PRIu32 " (%s): Failed to Read prefetch ExternalSource (%s)."), MediaId, *MediaPathName.ToString(), *FullPathName);
-		pMediaMemory = nullptr;
-		return OpenFileFailed(MoveTemp(InCallback));
-	}
-	INC_DWORD_STAT(STAT_WwiseFileHandlerPrefetchedExternalSourceMedia);
-	uMediaSize = FileSize;
-
-	UE_CLOG(FileSize == PrefetchSize, LogWwiseFileHandler, Verbose, TEXT("FWwiseStreamedExternalSourceFileState::OpenFile %" PRIu32 " (%s): Prefetched %" PRIu32 " bytes."), MediaId, *MediaPathName.ToString(), uMediaSize);
-	UE_CLOG(PrefetchSize != PrefetchWithGranularity && PrefetchWithGranularity == FileSize, LogWwiseFileHandler, Verbose, TEXT("FWwiseStreamedExternalSourceFileState::OpenFile %" PRIu32 " (%s): Prefetched (%" PRIu32 ") -> %" PRIu32 " bytes."), MediaId, *MediaPathName.ToString(), PrefetchSize, PrefetchWithGranularity);
-	UE_CLOG(PrefetchWithGranularity != FileSize, LogWwiseFileHandler, Verbose, TEXT("FWwiseStreamedExternalSourceFileState::OpenFile %" PRIu32 " (%s): Prefetched (%" PRIu32 " -> %" PRIu32 ") -> %" PRIu32 " bytes."), MediaId, *MediaPathName.ToString(), PrefetchSize, PrefetchWithGranularity, uMediaSize);
-	return OpenFileSucceeded(MoveTemp(InCallback));
+		AIOP_Normal, PrefetchWithGranularity);
 }
 
 void FWwiseStreamedExternalSourceFileState::LoadInSoundEngine(FLoadInSoundEngineCallback&& InCallback)

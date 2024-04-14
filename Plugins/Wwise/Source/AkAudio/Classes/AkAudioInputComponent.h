@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 /*=============================================================================
@@ -50,7 +50,7 @@ protected:
 	virtual void PostUnregisterGameObject() override;
 	/** The audio callback. This will be called continuously by the Wwise sound engine,
 	  * and is used to provide the sound engine with audio samples. If this function returns false, the audio
-	  * input event will be stopped and the functino will stop being called.
+	  * input event will be stopped and the function will stop being called.
 	  */
 	virtual bool FillSamplesBuffer(uint32 NumChannels, uint32 NumSamples, float** BufferToFill) PURE_VIRTUAL(AkAudioInputComponent::FillSamplesBuffer, return false;);
 	/** This callback is used to provide the Wwise sound engine with the required audio format. */

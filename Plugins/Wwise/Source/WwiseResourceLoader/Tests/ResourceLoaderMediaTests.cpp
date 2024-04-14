@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/WwiseUnitTests.h"
@@ -95,7 +95,6 @@ WWISE_TEST_CASE(ResourceLoader_Media, "Wwise::ResourceLoader::ResourceLoader_Med
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Singular Event with required key")
@@ -163,7 +162,6 @@ WWISE_TEST_CASE(ResourceLoader_Media, "Wwise::ResourceLoader::ResourceLoader_Med
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Another Event Loads the required Key for an Event")
@@ -272,7 +270,6 @@ WWISE_TEST_CASE(ResourceLoader_Media, "Wwise::ResourceLoader::ResourceLoader_Med
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Required Switch Container Not Loaded")
@@ -346,7 +343,6 @@ WWISE_TEST_CASE(ResourceLoader_Media, "Wwise::ResourceLoader::ResourceLoader_Med
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Loading Event Before Switch Container")
@@ -456,7 +452,6 @@ WWISE_TEST_CASE(ResourceLoader_Media, "Wwise::ResourceLoader::ResourceLoader_Med
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Loading Event After Switch Container")
@@ -566,7 +561,6 @@ WWISE_TEST_CASE(ResourceLoader_Media, "Wwise::ResourceLoader::ResourceLoader_Med
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Sync 2 SwitchContainer with same ID")
@@ -719,7 +713,6 @@ WWISE_TEST_CASE(ResourceLoader_Media, "Wwise::ResourceLoader::ResourceLoader_Med
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("2 SwitchContainer with different ID (media requires first SwitchContainer)")
@@ -872,7 +865,6 @@ WWISE_TEST_CASE(ResourceLoader_Media, "Wwise::ResourceLoader::ResourceLoader_Med
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("2 SwitchContainer with different ID (media requires second SwitchContainer)")
@@ -1025,7 +1017,6 @@ WWISE_TEST_CASE(ResourceLoader_Media, "Wwise::ResourceLoader::ResourceLoader_Med
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("2 SwitchContainer with different ID (media requires both SwitchContainer)")
@@ -1184,7 +1175,6 @@ WWISE_TEST_CASE(ResourceLoader_Media, "Wwise::ResourceLoader::ResourceLoader_Med
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("2 SwitchContainer with different ID (media requires both SwitchContainer). Switch Container 1 is Required key")
@@ -1306,7 +1296,6 @@ WWISE_TEST_CASE(ResourceLoader_Media, "Wwise::ResourceLoader::ResourceLoader_Med
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("2 SwitchContainer with different ID (media requires both SwitchContainer). Switch Container 1 & 2 are Required key")
@@ -1390,7 +1379,6 @@ WWISE_TEST_CASE(ResourceLoader_Media, "Wwise::ResourceLoader::ResourceLoader_Med
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("2 SwitchContainer with different ID (media requires both SwitchContainer). Switch Container 1 Loaded Manually. Switch Container 2 is a Required Key on another Event.")
@@ -1555,7 +1543,6 @@ WWISE_TEST_CASE(ResourceLoader_Media, "Wwise::ResourceLoader::ResourceLoader_Med
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("2 SwitchContainer with different ID (media requires both SwitchContainer). Switch Container 1 is a Required key on Event with the Media. Switch Container 2 is a Required Key on another Event.")
@@ -1684,7 +1671,6 @@ WWISE_TEST_CASE(ResourceLoader_Media, "Wwise::ResourceLoader::ResourceLoader_Med
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("2 SwitchContainer with different ID (media requires both SwitchContainer). Switch Container 1 & 2 are a Required Key on another Event.")
@@ -1857,7 +1843,6 @@ WWISE_TEST_CASE(ResourceLoader_Media, "Wwise::ResourceLoader::ResourceLoader_Med
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("3 SwitchContainer with different ID (media requires all 3 SwitchContainer).")
@@ -2056,7 +2041,6 @@ WWISE_TEST_CASE(ResourceLoader_Media, "Wwise::ResourceLoader::ResourceLoader_Med
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 }
 

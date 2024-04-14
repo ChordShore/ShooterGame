@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #pragma once
@@ -26,7 +26,6 @@ class FWwiseAsyncCycleCounter;
 class FWwiseFileCacheHandle;
 
 class IAsyncReadRequest;
-class FQueuedThreadPool;
 
 using FWwiseFileOperationDone = TUniqueFunction<void(bool bResult)>;
 using FWwiseAkFileOperationDone = TUniqueFunction<void(AkAsyncIOTransferInfo* TransferInfo, AKRESULT AkResult)>;
@@ -60,10 +59,9 @@ class WWISEFILEHANDLER_API FWwiseFileCacheHandle
 public:
 	FWwiseFileCacheHandle(const FString& Pathname);
 	virtual ~FWwiseFileCacheHandle();
+	virtual void CloseAndDelete();
 
 	virtual void Open(FWwiseFileOperationDone&& OnDone);
-
-	void DeleteRequest(IAsyncReadRequest* Request);
 		
 	virtual void ReadData(uint8* OutBuffer, int64 Offset, int64 BytesToRead, EAsyncIOPriorityAndFlags Priority, FWwiseFileOperationDone&& OnDone);
 	void ReadAkData(uint8* OutBuffer, int64 Offset, int64 BytesToRead, int8 AkPriority, FWwiseFileOperationDone&& OnDone);
@@ -81,10 +79,12 @@ protected:
 	FWwiseFileOperationDone InitializationDone;
 	FWwiseAsyncCycleCounter* InitializationStat;
 
-	TAtomic< FEvent* > CanDestroy{ nullptr };
-	TAtomic<int32> RequestsInFlight { 0 };
+	std::atomic<int32> RequestsInFlight { 0 };
 
-	void RemoveRequestInFlight();
+	void DeleteRequest(IAsyncReadRequest* Request);
+	virtual void OnDeleteRequest(IAsyncReadRequest* Request);
+	virtual void RemoveRequestInFlight();
+	virtual void OnCloseAndDelete();
 	virtual void OnSizeRequestDone(bool bWasCancelled, IAsyncReadRequest* Request);
 	virtual void OnReadDataDone(bool bWasCancelled, IAsyncReadRequest* Request, FWwiseFileOperationDone&& OnDone);
 	virtual void OnReadDataDone(bool bResult, FWwiseFileOperationDone&& OnDone);

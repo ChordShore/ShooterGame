@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 /*=============================================================================
@@ -187,15 +187,24 @@ void UAkGameObject::SetRTPCValue(const UAkRtpc* RTPCValue, float Value, int32 In
 	if (FAkAudioDevice::Get())
 	{
 		auto* SoundEngine = IWwiseSoundEngineAPI::Get();
-		if (UNLIKELY(!SoundEngine)) return;
+		if (UNLIKELY(!SoundEngine))
+		{
+			return;
+		}
+
+		auto GameObjectID = GetAkGameObjectID();
+		if (UNLIKELY(GameObjectID == AK_INVALID_GAME_OBJECT || GameObjectID == 0))
+		{
+			return;
+		}
 
 		if (RTPCValue)
 		{
-			SoundEngine->SetRTPCValue(RTPCValue->GetShortID(), Value, GetAkGameObjectID(), InterpolationTimeMs);
+			SoundEngine->SetRTPCValue(RTPCValue->GetShortID(), Value, GameObjectID, InterpolationTimeMs);
 		}
 		else
 		{
-			SoundEngine->SetRTPCValue(TCHAR_TO_AK(*RTPC), Value, GetAkGameObjectID(), InterpolationTimeMs);
+			SoundEngine->SetRTPCValue(TCHAR_TO_AK(*RTPC), Value, GameObjectID, InterpolationTimeMs);
 		}
 	}
 }

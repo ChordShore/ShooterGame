@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/WwiseSoundBankFileState.h"
@@ -80,22 +80,28 @@ void FWwiseInMemorySoundBankFileState::OpenFile(FOpenFileCallback&& InCallback)
 		UE_LOG(LogWwiseFileHandler, VeryVerbose, TEXT("FWwiseInMemorySoundBankFileState::OpenFile %" PRIu32 " (%s): Loading Memory Mapped SoundBank as %s."), SoundBankId, *DebugName.ToString(), LoadAsMemoryView() ? TEXT("View") : TEXT("Copy"));
 		Ptr = MappedRegion->GetMappedPtr();
 		FileSize = MappedRegion->GetMappedSize();
-		OpenFileSucceeded(MoveTemp(InCallback));
+		return OpenFileSucceeded(MoveTemp(InCallback));
 	}
-	else if (LIKELY(GetFileToPtr(Ptr, FileSize,
+	GetFileToPtr([this, FullPathName, InCallback = MoveTemp(InCallback)](bool bInResult, const uint8* InPtr, int64 InSize) mutable
+	{
+		SCOPED_WWISEFILEHANDLER_EVENT_3(TEXT("FWwiseInMemorySoundBankFileState::OpenFile Callback"));
+		if (LIKELY(bInResult))
+		{
+			UE_LOG(LogWwiseFileHandler, VeryVerbose, TEXT("FWwiseInMemorySoundBankFileState::OpenFile %" PRIu32 " (%s): Loading SoundBank as %s."), SoundBankId, *DebugName.ToString(), LoadAsMemoryView() ? TEXT("View") : TEXT("Copy"));
+			Ptr = const_cast<uint8*>(InPtr);
+			FileSize = InSize;
+			OpenFileSucceeded(MoveTemp(InCallback));
+		}
+		else
+		{
+			UE_LOG(LogWwiseFileHandler, Error, TEXT("FWwiseInMemorySoundBankFileState::OpenFile %" PRIu32 " (%s): Failed to load SoundBank (%s)."), SoundBankId, *DebugName.ToString(), *FullPathName);
+			Ptr = nullptr;
+			FileSize = 0;
+			OpenFileFailed(MoveTemp(InCallback));
+		}
+	},
 		FullPathName, bDeviceMemory, MemoryAlignment, bContainsMedia,
-		STAT_WwiseMemorySoundBank_FName, STAT_WwiseMemorySoundBankDevice_FName)))
-	{
-		UE_LOG(LogWwiseFileHandler, VeryVerbose, TEXT("FWwiseInMemorySoundBankFileState::OpenFile %" PRIu32 " (%s): Loading SoundBank as %s."), SoundBankId, *DebugName.ToString(), LoadAsMemoryView() ? TEXT("View") : TEXT("Copy"));
-		OpenFileSucceeded(MoveTemp(InCallback));
-	}
-	else
-	{
-		UE_LOG(LogWwiseFileHandler, Error, TEXT("FWwiseInMemorySoundBankFileState::OpenFile %" PRIu32 " (%s): Failed to load SoundBank (%s)."), SoundBankId, *DebugName.ToString(), *FullPathName);
-		Ptr = nullptr;
-		FileSize = 0;
-		OpenFileFailed(MoveTemp(InCallback));
-	}
+		STAT_WwiseMemorySoundBank_FName, STAT_WwiseMemorySoundBankDevice_FName);
 }
 
 void FWwiseInMemorySoundBankFileState::LoadInSoundEngine(FLoadInSoundEngineCallback&& InCallback)

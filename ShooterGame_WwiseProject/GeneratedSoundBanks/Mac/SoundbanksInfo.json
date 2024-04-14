@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{3BEB8805-D5CD-C54A-C852-F5AC1EDC3156}",
+    "Hash": "{90A24E41-DC3B-6F32-298D-D11DEB9F8F29}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -184,23 +184,11 @@
       "CachePath": "SFX/AMB_BarrierFence_LP_3860FEB7.wem"
      }
     ],
-    "Plugins": {
-     "Custom": [
-      {
-       "Id": "1041093470",
-       "Name": "Tone Generator",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Event Probe\\Sine Pip\\Tone Generator",
-       "GUID": "{0AD6A0A9-22FC-4FE9-B47C-29C90175D05E}",
-       "LibName": "Wwise Tone Generator",
-       "LibId": "6684674"
-      }
-     ]
-    },
     "Events": [
      {
-      "Id": "511358421",
-      "Name": "AMB_BarrierFence_LP",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_BarrierFence_LP",
+      "Id": "2992962930",
+      "Name": "AMB_BarrierFence",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_BarrierFence",
       "GUID": "{427593F0-92C8-4CA8-8FCD-C163A0B02BEC}",
       "MaxAttenuation": "3500",
       "DurationType": "Infinite",
@@ -237,23 +225,6 @@
       ]
      },
      {
-      "Id": "2757392698",
-      "Name": "AMB_Highrise_Room_Drones_OS",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_Highrise_Room_Drones_OS",
-      "GUID": "{4E65C91A-3866-4E84-B034-94A7E371ECB7}",
-      "MaxAttenuation": "10500",
-      "DurationType": "OneShot",
-      "DurationMin": "1",
-      "DurationMax": "1",
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "1041093470"
-        }
-       ]
-      }
-     },
-     {
       "Id": "1040217121",
       "Name": "AMB_Highrise_Spawn",
       "ObjectPath": "\\Events\\Ambience\\Rooms\\Highrise\\Indoors\\AMB_Highrise_Spawn",
@@ -267,19 +238,9 @@
       ]
      },
      {
-      "Id": "1915357068",
-      "Name": "AMB_HoverCars_LP",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\HoverCars\\AMB_HoverCars_LP",
-      "GUID": "{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
-      "Id": "126199104",
-      "Name": "AMB_PhoneBox_LP",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_PhoneBox_LP",
+      "Id": "1196422761",
+      "Name": "AMB_PhoneBox",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_PhoneBox",
       "GUID": "{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}",
       "MaxAttenuation": "2500",
       "DurationType": "Infinite",
@@ -296,9 +257,9 @@
       ]
      },
      {
-      "Id": "3140124040",
-      "Name": "AMB_StreetLamp_LP",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_StreetLamp_LP",
+      "Id": "1699197345",
+      "Name": "AMB_StreetLamp",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_StreetLamp",
       "GUID": "{82B95D5C-4BE9-4DFC-9A31-59E8AEF7E2FC}",
       "MaxAttenuation": "1500",
       "DurationType": "Infinite",
@@ -330,9 +291,22 @@
       ]
      },
      {
-      "Id": "896607520",
-      "Name": "AMB_UnrealHolograph_FadeIn_OS",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph_FadeIn_OS",
+      "Id": "3641000233",
+      "Name": "AMB_UnrealHolograph",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph",
+      "GUID": "{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}",
+      "MaxAttenuation": "10500",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "456057735"
+       }
+      ]
+     },
+     {
+      "Id": "652591751",
+      "Name": "AMB_UnrealHolograph_FadeIn",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph_FadeIn",
       "GUID": "{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}",
       "MaxAttenuation": "10500",
       "DurationType": "OneShot",
@@ -345,9 +319,9 @@
       ]
      },
      {
-      "Id": "1695319799",
-      "Name": "AMB_UnrealHolograph_FadeOut_OS",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph_FadeOut_OS",
+      "Id": "3686232698",
+      "Name": "AMB_UnrealHolograph_FadeOut",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph_FadeOut",
       "GUID": "{E3EEEB5D-9B58-43DF-8E87-C18F76699081}",
       "MaxAttenuation": "10500",
       "DurationType": "OneShot",
@@ -360,22 +334,9 @@
       ]
      },
      {
-      "Id": "2762262784",
-      "Name": "AMB_UnrealHolograph_LP",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph_LP",
-      "GUID": "{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}",
-      "MaxAttenuation": "10500",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "456057735"
-       }
-      ]
-     },
-     {
-      "Id": "2794177527",
-      "Name": "AMB_UnrealSign_LP",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_UnrealSign_LP",
+      "Id": "2759038044",
+      "Name": "AMB_UnrealSign",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_UnrealSign",
       "GUID": "{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}",
       "MaxAttenuation": "1800",
       "DurationType": "Infinite",
@@ -386,9 +347,9 @@
       ]
      },
      {
-      "Id": "2090045424",
-      "Name": "AMB_WindGusts",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_WindGusts",
+      "Id": "1571611116",
+      "Name": "AMB_WindGusts_Spline",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\Wind\\AMB_WindGusts_Spline",
       "GUID": "{B1473C73-10B0-46BB-AA72-8ABA06D25E40}",
       "MaxAttenuation": "4500",
       "DurationType": "Infinite",
@@ -459,152 +420,6 @@
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0"
-     }
-    ]
-   },
-   {
-    "Id": "635463106",
-    "Type": "Event",
-    "GUID": "{838EFBCF-7300-40E4-B598-D1699C261CB8}",
-    "Language": "SFX",
-    "Hash": "{46FD022F-D60D-F85E-CED3-7608AC365A08}",
-    "ObjectPath": "AMB_BalconyGusts",
-    "ShortName": "AMB_BalconyGusts",
-    "Path": "Event/AMB_BalconyGusts.bnk",
-    "Media": [
-     {
-      "Id": "102297866",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_001.wav",
-      "Path": "Media/102297866.wem",
-      "CachePath": "SFX/AMB_WindGusts_001_10C4C929.wem"
-     },
-     {
-      "Id": "271371283",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_010.wav",
-      "Path": "Media/271371283.wem",
-      "CachePath": "SFX/AMB_WindGusts_010_10C4C929.wem"
-     },
-     {
-      "Id": "290019270",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_009.wav",
-      "Path": "Media/290019270.wem",
-      "CachePath": "SFX/AMB_WindGusts_009_10C4C929.wem"
-     },
-     {
-      "Id": "342227533",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_005.wav",
-      "Path": "Media/342227533.wem",
-      "CachePath": "SFX/AMB_WindGusts_005_10C4C929.wem"
-     },
-     {
-      "Id": "349220338",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_006.wav",
-      "Path": "Media/349220338.wem",
-      "CachePath": "SFX/AMB_WindGusts_006_10C4C929.wem"
-     },
-     {
-      "Id": "381713692",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_003.wav",
-      "Path": "Media/381713692.wem",
-      "CachePath": "SFX/AMB_WindGusts_003_10C4C929.wem"
-     },
-     {
-      "Id": "771245269",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_002.wav",
-      "Path": "Media/771245269.wem",
-      "CachePath": "SFX/AMB_WindGusts_002_10C4C929.wem"
-     },
-     {
-      "Id": "877029507",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_004.wav",
-      "Path": "Media/877029507.wem",
-      "CachePath": "SFX/AMB_WindGusts_004_10C4C929.wem"
-     },
-     {
-      "Id": "880697477",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_007.wav",
-      "Path": "Media/880697477.wem",
-      "CachePath": "SFX/AMB_WindGusts_007_10C4C929.wem"
-     },
-     {
-      "Id": "1039541146",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_008.wav",
-      "Path": "Media/1039541146.wem",
-      "CachePath": "SFX/AMB_WindGusts_008_10C4C929.wem"
-     }
-    ],
-    "Events": [
-     {
-      "Id": "635463106",
-      "Name": "AMB_BalconyGusts",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_BalconyGusts",
-      "GUID": "{838EFBCF-7300-40E4-B598-D1699C261CB8}",
-      "MaxAttenuation": "3000",
-      "DurationType": "OneShot",
-      "DurationMin": "5",
-      "DurationMax": "15.08031",
-      "MediaRefs": [
-       {
-        "Id": "102297866"
-       },
-       {
-        "Id": "271371283"
-       },
-       {
-        "Id": "290019270"
-       },
-       {
-        "Id": "342227533"
-       },
-       {
-        "Id": "349220338"
-       },
-       {
-        "Id": "381713692"
-       },
-       {
-        "Id": "771245269"
-       },
-       {
-        "Id": "877029507"
-       },
-       {
-        "Id": "880697477"
-       },
-       {
-        "Id": "1039541146"
-       }
-      ]
      }
     ]
    },
@@ -892,6 +707,152 @@
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0"
+     }
+    ]
+   },
+   {
+    "Id": "1102184785",
+    "Type": "Event",
+    "GUID": "{838EFBCF-7300-40E4-B598-D1699C261CB8}",
+    "Language": "SFX",
+    "Hash": "{3816E5AB-EDEE-93FC-8AE5-739B8504A92D}",
+    "ObjectPath": "AMB_WindGusts_Static",
+    "ShortName": "AMB_WindGusts_Static",
+    "Path": "Event/AMB_WindGusts_Static.bnk",
+    "Media": [
+     {
+      "Id": "102297866",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_001.wav",
+      "Path": "Media/102297866.wem",
+      "CachePath": "SFX/AMB_WindGusts_001_10C4C929.wem"
+     },
+     {
+      "Id": "271371283",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_010.wav",
+      "Path": "Media/271371283.wem",
+      "CachePath": "SFX/AMB_WindGusts_010_10C4C929.wem"
+     },
+     {
+      "Id": "290019270",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_009.wav",
+      "Path": "Media/290019270.wem",
+      "CachePath": "SFX/AMB_WindGusts_009_10C4C929.wem"
+     },
+     {
+      "Id": "342227533",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_005.wav",
+      "Path": "Media/342227533.wem",
+      "CachePath": "SFX/AMB_WindGusts_005_10C4C929.wem"
+     },
+     {
+      "Id": "349220338",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_006.wav",
+      "Path": "Media/349220338.wem",
+      "CachePath": "SFX/AMB_WindGusts_006_10C4C929.wem"
+     },
+     {
+      "Id": "381713692",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_003.wav",
+      "Path": "Media/381713692.wem",
+      "CachePath": "SFX/AMB_WindGusts_003_10C4C929.wem"
+     },
+     {
+      "Id": "771245269",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_002.wav",
+      "Path": "Media/771245269.wem",
+      "CachePath": "SFX/AMB_WindGusts_002_10C4C929.wem"
+     },
+     {
+      "Id": "877029507",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_004.wav",
+      "Path": "Media/877029507.wem",
+      "CachePath": "SFX/AMB_WindGusts_004_10C4C929.wem"
+     },
+     {
+      "Id": "880697477",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_007.wav",
+      "Path": "Media/880697477.wem",
+      "CachePath": "SFX/AMB_WindGusts_007_10C4C929.wem"
+     },
+     {
+      "Id": "1039541146",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_008.wav",
+      "Path": "Media/1039541146.wem",
+      "CachePath": "SFX/AMB_WindGusts_008_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1102184785",
+      "Name": "AMB_WindGusts_Static",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\Wind\\AMB_WindGusts_Static",
+      "GUID": "{838EFBCF-7300-40E4-B598-D1699C261CB8}",
+      "MaxAttenuation": "3000",
+      "DurationType": "OneShot",
+      "DurationMin": "5",
+      "DurationMax": "15.08031",
+      "MediaRefs": [
+       {
+        "Id": "102297866"
+       },
+       {
+        "Id": "271371283"
+       },
+       {
+        "Id": "290019270"
+       },
+       {
+        "Id": "342227533"
+       },
+       {
+        "Id": "349220338"
+       },
+       {
+        "Id": "381713692"
+       },
+       {
+        "Id": "771245269"
+       },
+       {
+        "Id": "877029507"
+       },
+       {
+        "Id": "880697477"
+       },
+       {
+        "Id": "1039541146"
+       }
+      ]
      }
     ]
    },
@@ -2280,7 +2241,7 @@
     "Type": "Event",
     "GUID": "{C5ED1BFB-22A9-41F4-A56D-7095120AA1D2}",
     "Language": "SFX",
-    "Hash": "{52967EDF-22E2-8062-F24B-62E0A81DB9F7}",
+    "Hash": "{D9EE3CE9-F5EC-63C2-A414-75393D14F13F}",
     "ObjectPath": "AMB_NearTraffic_BF",
     "ShortName": "AMB_NearTraffic_BF",
     "Path": "Event/AMB_NearTraffic_BF.bnk",
@@ -2438,6 +2399,6 @@
     "Path": "Dialogue.bnk"
    }
   ],
-  "FileHash": "{0E8426CC-88FB-80B5-250E-FF0B426683C9}"
+  "FileHash": "{8DF9A51B-1D4E-ADF0-A0BE-6699F35B36B0}"
  }
 }

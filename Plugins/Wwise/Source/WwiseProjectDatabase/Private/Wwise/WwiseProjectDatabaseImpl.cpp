@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/WwiseProjectDatabaseImpl.h"
@@ -127,20 +127,10 @@ void FWwiseProjectDatabaseImpl::UpdateDataStructure(const FDirectoryPath* InUpda
 	}
 	if (Get() == this && bShouldBroadcast)		// Only broadcast database updates on main project.
 	{
-	
 		//Stop multiple threads from Broadcasting this delegate at the same time.
 		bShouldBroadcast = false;
-		auto* ProjectDatabaseDelegates = FWwiseProjectDatabaseDelegates::Get();
-		if (UNLIKELY(!ProjectDatabaseDelegates))
-		{
-			UE_LOG(LogWwiseProjectDatabase, Warning, TEXT("FWwiseProjectDatabaseImpl::UpdateDataStructure: ProjectDatabase Delegates not initialized, cannot broadcast updates."))
-		}
-
-		else
-		{
-			ProjectDatabaseDelegates->GetOnDatabaseUpdateCompletedDelegate().Broadcast();
-			bShouldBroadcast = true;
-		}
+		FWwiseProjectDatabaseDelegates::Get()->GetOnDatabaseUpdateCompletedDelegate().Broadcast();
+		bShouldBroadcast = true;
 	}
 }
 

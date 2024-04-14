@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/WwiseDataStructure.h"
@@ -80,8 +80,18 @@ FWwiseDataStructure::FWwiseDataStructure(const FDirectoryPath& InDirectoryPath, 
         {
             if (Platform.Name == *InPlatform)
             {
-                RequestedPlatformPath = InDirectoryPath.Path / Platform.Path.ToString();
-                FPaths::CollapseRelativeDirectories(RequestedPlatformPath);
+                FString PlatformPath = Platform.Path.ToString();
+
+                //If the platfrom path contains a drive, it means that the directory path and platform path are on different drives
+                if (FPaths::IsRelative(PlatformPath))
+                {
+                    RequestedPlatformPath = InDirectoryPath.Path / PlatformPath;
+                    FPaths::CollapseRelativeDirectories(RequestedPlatformPath);
+                }
+                else
+                {
+                    RequestedPlatformPath = PlatformPath;
+                }
             }
         }
     }
@@ -800,7 +810,8 @@ bool FWwisePlatformDataStructure::GetFromId(FWwiseRefMedia& OutRef, uint32 InSho
     {
         for (const auto& MediaFile : MediaFiles)
         {
-            if (MediaFile.Key.MediaId == InShortId)
+            if (MediaFile.Key.MediaId == InShortId
+                && MediaFile.Value.GetMedia()->Location != EWwiseMetadataMediaLocation::OtherBank)
             {
                 Result = &MediaFile.Value;
                 break;

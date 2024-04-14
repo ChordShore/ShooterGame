@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/WwiseProjectDatabase.h"
@@ -448,7 +448,7 @@ const FWwisePlatformDataStructure* FWwiseDataStructureScopeLock::GetCurrentPlatf
 		}
 
 
-		if (!UE_LOG_ACTIVE(LogWwiseProjectDatabase, Verbose) || !UE_LOG_ACTIVE(LogWwiseProjectDatabase, VeryVerbose))
+		if (!UE_LOG_ACTIVE(LogWwiseProjectDatabase, Verbose) && !UE_LOG_ACTIVE(LogWwiseProjectDatabase, VeryVerbose))
 		{
 			UE_LOG(LogWwiseHints, Warning,
 			       TEXT("Enable Verbose or VeryVerbose logs for LogWwiseProjectDatabase for more details on why %s is missing from your current platforms."),

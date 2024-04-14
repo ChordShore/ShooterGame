@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "MovieSceneAkAudioEventTrackEditor.h"
@@ -169,7 +169,7 @@ private:
 	void GeneratePeakStrip(int32 X, int32 ChannelIndex, TArray<uint8>& OutData, float in_MinPeakValue, float in_MaxPeakValue);
 	/** Generates a white vertical strip in the texture according to the X position. Returns true if X is within the waveform, false otherwise. */
 	bool GenerateWaveformStrip(int32 X, int32 ChannelIndex, TArray<uint8>& OutData);
-	/** Generates indicators for silence or retriggering in the event sectinon. For silence, a horizontal line is generated. For retriggering, diagonal lines are generated. */
+	/** Generates indicators for silence or retriggering in the event section. For silence, a horizontal line is generated. For retriggering, diagonal lines are generated. */
 	void GenerateIndicatorLine(int32 X, int32 ChannelIndex, TArray<uint8>& OutData);
 
 	/** Fills a pixel with white (if in_bDirty is false) or red (if in_bDirty is true) color. */
@@ -295,7 +295,7 @@ FVector2D AkAudioWaveformViewport::GetInterpolatedMinMaxPeaks(int in_XPosition, 
 	return FVector2D(MinPeakValue, MaxPeakValue);
 }
 
-/** Generates indicators for silence or retriggering in the event sectinon. For silence, a horizontal line is generated. For retriggering, diagonal lines are generated. */
+/** Generates indicators for silence or retriggering in the event section. For silence, a horizontal line is generated. For retriggering, diagonal lines are generated. */
 void AkAudioWaveformViewport::GenerateIndicatorLine(int32 X, int32 ChannelIndex, TArray<uint8>& OutData)
 {
 	auto iSizeY = GetSize().Y;
@@ -332,7 +332,7 @@ bool AkAudioWaveformViewport::GenerateWaveformStrip(int32 X, int32 ChannelIndex,
 
 /** Generates the waveform texture data. The texture is generated as subsequent vertical pixel strips.
  *  Strips are first initialized (InitializeStrip()), then waveform peak data is used to generate waveform color
- *  (GenerateWaveformStrip()), then vertical delimitars are drawn at the beginnings and ends of event retriggers
+ *  (GenerateWaveformStrip()), then vertical delimiters are drawn at the beginnings and ends of event retriggers
  *  (CheckEventEndStart()).
  *
  *  @param OutData - the texture data buffer to fill.
@@ -419,24 +419,14 @@ public:
 		/* When SoundBanks are loaded, we need to update the section's source info, in case Event assets or metdata have changed */
 		if (FAkAudioDevice::Get())
 		{
-			auto* ProjectDatabaseDelegates = FWwiseProjectDatabaseDelegates::Get();
-
-			if (UNLIKELY(!ProjectDatabaseDelegates))
+			SoundbanksLoadedHandle = FWwiseProjectDatabaseDelegates::Get()->GetOnDatabaseUpdateCompletedDelegate().AddLambda([this]()
 			{
-				UE_LOG(LogAudiokineticTools, Warning, TEXT("FMovieSceneAkAudioEventSection::FMovieSceneAkAudioEventSection: ProjectDatabase Delegates not initialized, could not subscribe to OnDatabaseUpdated."))
-			}
-
-			else
-			{
-				SoundbanksLoadedHandle = ProjectDatabaseDelegates->GetOnDatabaseUpdateCompletedDelegate().AddLambda([this]()
+				if (Section != nullptr && Section->EventTracker.IsValid())
 				{
-					if (Section != nullptr && Section->EventTracker.IsValid())
-					{
-						Section->UpdateAudioSourceInfo();
-						StoredEventName = Section->GetEventName();
-					}
-				});
-			}
+					Section->UpdateAudioSourceInfo();
+					StoredEventName = Section->GetEventName();
+				}
+			});
 		}
 	}
 
@@ -458,17 +448,7 @@ public:
 		}
 		if (SoundbanksLoadedHandle.IsValid())
 		{
-			auto* ProjectDatabaseDelegates = FWwiseProjectDatabaseDelegates::Get();
-
-			if (UNLIKELY(!ProjectDatabaseDelegates))
-			{
-				UE_LOG(LogAudiokineticTools, Warning, TEXT("FMovieSceneAkAudioEventSection::~FMovieSceneAkAudioEventSection: ProjectDatabase Delegates not initialized, could not unsubscribe from OnDatabaseUpdated."))
-			}
-
-			else
-			{
-				ProjectDatabaseDelegates->GetOnDatabaseUpdateCompletedDelegate().Remove(SoundbanksLoadedHandle);
-			}
+			FWwiseProjectDatabaseDelegates::Get()->GetOnDatabaseUpdateCompletedDelegate().Remove(SoundbanksLoadedHandle);
 		}
 
 		// Wait for any get peak tasks to finish.
@@ -841,7 +821,7 @@ void FMovieSceneAkAudioEventTrackEditor::BuildTrackContextMenu(FMenuBuilder& Men
 		   LOCTEXT("RefreshAllWaveformsTooltip", "Saves the Wwise project, generates required soundbanks for all sections and refreshes all waveforms."),
 		   FSlateIcon(),
 		   FUIAction(
-			   FExecuteAction::CreateLambda([=] { CreateGenerateSoundbanksWindowForAllSections(Track); }),
+			   FExecuteAction::CreateLambda([=] { CreateGenerateSoundBanksWindowForAllSections(Track); }),
 			   FCanExecuteAction::CreateLambda([=] 
 			   { 
 				   auto aSections = Track->GetAllSections();
@@ -865,7 +845,7 @@ void FMovieSceneAkAudioEventTrackEditor::BuildTrackContextMenu(FMenuBuilder& Men
 
 /** Creates a soundbank generation window.
  */
-void FMovieSceneAkAudioEventTrackEditor::CreateGenerateSoundbanksWindowForAllSections(UMovieSceneTrack* in_pTrack)
+void FMovieSceneAkAudioEventTrackEditor::CreateGenerateSoundBanksWindowForAllSections(UMovieSceneTrack* in_pTrack)
 {
 	UMovieSceneAkAudioEventTrack* pAkEventTrack = dynamic_cast<UMovieSceneAkAudioEventTrack*>(in_pTrack);
 	if (pAkEventTrack != nullptr)

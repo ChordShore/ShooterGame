@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/WwiseResourceLoaderImpl.h"
@@ -88,7 +88,14 @@ FWwiseResourceLoaderImpl::FWwiseResourceLoaderImpl(
 FName FWwiseResourceLoaderImpl::GetUnrealExternalSourcePath() const
 {
 #if WITH_EDITORONLY_DATA
-	return FName(GeneratedSoundBanksPath.Path / CurrentPlatform.Platform->PathRelativeToGeneratedSoundBanks.ToString() / CurrentPlatform.Platform->ExternalSourceRootPath.ToString());
+	if(FPaths::IsRelative( CurrentPlatform.Platform->PathRelativeToGeneratedSoundBanks.ToString()))
+	{
+		return FName(GeneratedSoundBanksPath.Path / CurrentPlatform.Platform->PathRelativeToGeneratedSoundBanks.ToString() / CurrentPlatform.Platform->ExternalSourceRootPath.ToString());
+	}
+	else
+	{
+		return FName(CurrentPlatform.Platform->PathRelativeToGeneratedSoundBanks.ToString() / CurrentPlatform.Platform->ExternalSourceRootPath.ToString());
+	}
 #else
 	if (UNLIKELY(!ExternalSourceManager))
 	{
@@ -106,10 +113,24 @@ FName FWwiseResourceLoaderImpl::GetUnrealExternalSourcePath() const
 FString FWwiseResourceLoaderImpl::GetUnrealPath() const
 {
 #if WITH_EDITOR
-	return GeneratedSoundBanksPath.Path / CurrentPlatform.Platform->PathRelativeToGeneratedSoundBanks.ToString();
+	if(FPaths::IsRelative( CurrentPlatform.Platform->PathRelativeToGeneratedSoundBanks.ToString()))
+	{
+		return GeneratedSoundBanksPath.Path / CurrentPlatform.Platform->PathRelativeToGeneratedSoundBanks.ToString();
+	}
+	else
+	{
+		return CurrentPlatform.Platform->PathRelativeToGeneratedSoundBanks.ToString();
+	}
 #elif WITH_EDITORONLY_DATA
 	UE_LOG(LogWwiseResourceLoader, Error, TEXT("GetUnrealPath should not be used in WITH_EDITORONLY_DATA (Getting path for %s)"), *InPath);
-	return GeneratedSoundBanksPath.Path / CurrentPlatform.Platform->PathRelativeToGeneratedSoundBanks;
+	if(FPaths::IsRelative( CurrentPlatform.Platform->PathRelativeToGeneratedSoundBanks.ToString()))
+	{
+		return GeneratedSoundBanksPath.Path / CurrentPlatform.Platform->PathRelativeToGeneratedSoundBanks.ToString();
+	}
+	else
+	{
+		return CurrentPlatform.Platform->PathRelativeToGeneratedSoundBanks.ToString();
+	}
 #else
 	return StagePath;
 #endif
@@ -1107,21 +1128,6 @@ void FWwiseResourceLoaderImpl::UnloadSoundBankAsync(FWwiseResourceUnloadPromise&
 	});
 }
 
-bool FWwiseResourceLoaderImpl::TrimGroupValueInfo()
-{
-	TSet<FWwiseSwitchContainerLoadedGroupValueInfo> Result;
-	for (auto Info : LoadedGroupValueInfo)
-	{
-		if (Info.LoadCount >= 0 || Info.ShouldBeLoaded())
-		{
-			Result.Add(Info);
-		}
-	}
-	LoadedGroupValueInfo = MoveTemp(Result);
-	return Result.Num() == 0;
-}
-
-
 void FWwiseResourceLoaderImpl::LoadAuxBusResources(FWwiseResourceLoadPromise&& Promise, FWwiseLoadedAuxBusInfo::FLoadedData& LoadedData, const FWwiseAuxBusCookedData& InCookedData)
 {
 	SCOPED_WWISERESOURCELOADER_EVENT_2(TEXT("FWwiseResourceLoaderImpl::LoadAuxBusResources"));
@@ -1343,9 +1349,9 @@ void FWwiseResourceLoaderImpl::LoadEventSwitchContainerResources(FWwiseResourceL
 				}
 
 				bLoadedSwitchContainerLeaves = true;
-				UE_CLOG(!Info.ShouldBeLoaded(), LogWwiseResourceLoader, VeryVerbose, TEXT("Don't have referencing GroupValues yet: %d for key %s"), Info.LoadCount, *UsageCount->Key.GetDebugString());
-				UE_CLOG(Info.ShouldBeLoaded(), LogWwiseResourceLoader, VeryVerbose, TEXT("Have referencing GroupValues: %d for key %s"), Info.LoadCount, *UsageCount->Key.GetDebugString());
-				if (Info.ShouldBeLoaded())
+				UE_CLOG(!Info.ResourcesAreLoaded(), LogWwiseResourceLoader, VeryVerbose, TEXT("Don't have referencing GroupValues yet: %d for key %s"), Info.GroupValueCount, *UsageCount->Key.GetDebugString());
+				UE_CLOG(Info.ResourcesAreLoaded(), LogWwiseResourceLoader, VeryVerbose, TEXT("Have referencing GroupValues: %d for key %s"), Info.GroupValueCount, *UsageCount->Key.GetDebugString());
+				if (Info.ResourcesAreLoaded())
 				{
 					UE_LOG(LogWwiseResourceLoader, VeryVerbose, TEXT("Number of GroupValues required for this leaf: %d/%d @ %p for key %s (+1 in Event)"),
 						(int)UsageCount->LoadedGroupValues.Num() + 1, UsageCount->Key.GroupValueSet.Num(), &UsageCount->LoadedData, *UsageCount->Key.GetDebugString());
@@ -1434,12 +1440,12 @@ void FWwiseResourceLoaderImpl::LoadGroupValueResources(FWwiseResourceLoadPromise
 		auto FoundInfoId = LoadedGroupValueInfo.FindId(FWwiseSwitchContainerLoadedGroupValueInfo(InCookedData));
 		auto InfoId = FoundInfoId.IsValidId() ? FoundInfoId : LoadedGroupValueInfo.Add(FWwiseSwitchContainerLoadedGroupValueInfo(InCookedData), nullptr);
 		FWwiseSwitchContainerLoadedGroupValueInfo& Info = LoadedGroupValueInfo[InfoId];
-		const bool bWasLoaded = Info.ShouldBeLoaded();
-		++Info.LoadCount;
+		const bool bWasLoaded = Info.ResourcesAreLoaded();
+		++Info.GroupValueCount;
 
 		FCompletionFutureArray FutureArray;
 
-		if (!bWasLoaded && Info.ShouldBeLoaded())
+		if (!bWasLoaded)
 		{
 			UE_LOG(LogWwiseResourceLoader, VeryVerbose, TEXT("First GroupValue %s (%s %" PRIu32 ":%" PRIu32 ") load. Loading %d leaves."),
 				*InCookedData.DebugName.ToString(), *InCookedData.GetTypeName(), (uint32)InCookedData.GroupId, (uint32)InCookedData.Id, (int)Info.Leaves.Num());
@@ -1466,7 +1472,7 @@ void FWwiseResourceLoaderImpl::LoadGroupValueResources(FWwiseResourceLoadPromise
 		else
 		{
 			UE_LOG(LogWwiseResourceLoader, VeryVerbose, TEXT("GroupValue %s (%s %" PRIu32 ":%" PRIu32 ") already loaded (Count: %d times)."),
-				*InCookedData.DebugName.ToString(), *InCookedData.GetTypeName(), (uint32)InCookedData.GroupId, (uint32)InCookedData.Id, (int)Info.LoadCount);
+				*InCookedData.DebugName.ToString(), *InCookedData.GetTypeName(), (uint32)InCookedData.GroupId, (uint32)InCookedData.Id, (int)Info.GroupValueCount);
 		}
 		WaitForFutures(MoveTemp(FutureArray), [&LoadedData, Promise = MoveTemp(Promise)]() mutable
 		{
@@ -1494,6 +1500,9 @@ void FWwiseResourceLoaderImpl::LoadInitBankResources(FWwiseResourceLoadPromise&&
 	
 	LogLoadResources(InCookedData);
 
+	// Init Bank must be loaded before the SoundBanks (in case they contain something else than Media), but Media
+	// can be loaded at the same time than the Init Bank itself.
+
 	auto& LoadedMedia = LoadedData.LoadedMedia;
 
 	if (UNLIKELY(LoadedData.IsLoaded()))
@@ -1504,29 +1513,39 @@ void FWwiseResourceLoaderImpl::LoadInitBankResources(FWwiseResourceLoadPromise&&
 	}
 
 	++LoadedData.IsProcessing;
-	FCompletionFutureArray FutureArray;
-	
-	AddLoadMediaFutures(FutureArray, LoadedMedia, InCookedData.Media, TEXT("InitBank"), InCookedData.DebugName.ToString(), InCookedData.SoundBankId);
-	WaitForFutures(MoveTemp(FutureArray), [this, Promise = MoveTemp(Promise), &LoadedData, &InCookedData]() mutable
-	{
-		TPromise<bool> SoundBankPromise;
-		auto Future = SoundBankPromise.GetFuture();
-		LoadSoundBankFile(InCookedData, [SoundBankPromise = MoveTemp(SoundBankPromise)](bool bInResult) mutable
-		{
-			SoundBankPromise.EmplaceValue(bInResult);
-		});
-		Future.Next([this, Promise = MoveTemp(Promise), &LoadedData, &InCookedData](bool bLoaded) mutable
-		{
-			LoadedData.bLoaded = bLoaded;
-			--LoadedData.IsProcessing;
 
-			if (UNLIKELY(!bLoaded))
-			{
-				UE_LOG(LogWwiseResourceLoader, Error, TEXT("LoadInitBankResources: Could not load InitBank %s (%" PRIu32 ")"),
-					*InCookedData.DebugName.ToString(), (uint32)InCookedData.SoundBankId);
-			}
-			return Promise.EmplaceValue(bLoaded);
+	FCompletionPromise InitBankPromise;
+	auto InitBankFuture = InitBankPromise.GetFuture();
+	LoadSoundBankFile(InCookedData, [this, InitBankPromise = MoveTemp(InitBankPromise), &LoadedData, &InCookedData](bool bInResult) mutable
+	{
+		LoadedData.bLoaded = bInResult;
+		if (UNLIKELY(!LoadedData.bLoaded))
+		{
+			UE_LOG(LogWwiseResourceLoader, Error, TEXT("LoadInitBankResources: Could not load InitBank %s (%" PRIu32 ")"),
+				*InCookedData.DebugName.ToString(), (uint32)InCookedData.SoundBankId);
+		}
+
+		// Once the Init Bank is loaded, we can load the supplemental SoundBanks
+		auto& LoadedSoundBanks = LoadedData.LoadedSoundBanks;
+
+		FCompletionFutureArray SoundBanksFutureArray;
+		AddLoadSoundBankFutures(SoundBanksFutureArray, LoadedSoundBanks, InCookedData.SoundBanks, TEXT("InitBank"), InCookedData.DebugName.ToString(), InCookedData.SoundBankId);
+		WaitForFutures(MoveTemp(SoundBanksFutureArray), [InitBankPromise = MoveTemp(InitBankPromise), bInResult]() mutable
+		{
+			// Done loading both the Init Bank and the SoundBanks
+			InitBankPromise.EmplaceValue();
 		});
+	});
+	
+	FCompletionFutureArray MediaFutureArray;
+	MediaFutureArray.Add(MoveTemp(InitBankFuture));		// Include the Init Bank & SoundBanks to the MediaFutureArray
+	
+	AddLoadMediaFutures(MediaFutureArray, LoadedMedia, InCookedData.Media, TEXT("InitBank"), InCookedData.DebugName.ToString(), InCookedData.SoundBankId);
+	WaitForFutures(MoveTemp(MediaFutureArray), [this, Promise = MoveTemp(Promise), &LoadedData, &InCookedData]() mutable
+	{
+		--LoadedData.IsProcessing;
+
+		return Promise.EmplaceValue(LoadedData.bLoaded);
 	});
 }
 
@@ -1827,7 +1846,8 @@ void FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources(FWwiseResourc
 			TSharedPtr<FWwiseSwitchContainerLeafGroupValueUsageCount, ESPMode::ThreadSafe> UsageCountPtr;
 			for (const auto& GroupValue : SwitchContainerLeaf.GroupValueSet)
 			{
-				FWwiseSwitchContainerLoadedGroupValueInfo* Info = LoadedGroupValueInfo.Find(FWwiseSwitchContainerLoadedGroupValueInfo(GroupValue));
+				const auto InfoKey = FWwiseSwitchContainerLoadedGroupValueInfo(GroupValue);
+				FWwiseSwitchContainerLoadedGroupValueInfo* Info = LoadedGroupValueInfo.Find(InfoKey);
 				if (UNLIKELY(!Info))
 				{
 					UE_LOG(LogWwiseResourceLoader, Error, TEXT("FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Info[%p]: Could not find requested GroupValue %s for Leaf in Event %s (%" PRIu32 ")"),
@@ -1836,55 +1856,69 @@ void FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources(FWwiseResourc
 					continue;
 				}
 
-				if (!UsageCountPtr)
+				for (auto& Leaf : Info->Leaves)
 				{
-					for (auto& Leaf : Info->Leaves)
+					if (&Leaf->Key == &SwitchContainerLeaf)
 					{
-						if (Leaf->Key == SwitchContainerLeaf)
-						{
-							UsageCountPtr = Leaf;
-							break;
-						}
-					}
-
-					if (UNLIKELY(!UsageCountPtr))
-					{
-						UE_LOG(LogWwiseResourceLoader, Error, TEXT("FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Info[%p]: Could not find requested Leaf in GroupValue %s in Event %s (%" PRIu32 ")"),
-							Info,
+						UE_CLOG(UsageCountPtr.IsValid() && UsageCountPtr != Leaf, LogWwiseResourceLoader, Error, TEXT("FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Info[%p]: Have two different leaves (%p and %p) for the same GroupValue %s in Event %s (%" PRIu32 ")"),
+							Info, UsageCountPtr.Get(), &Leaf.Get(),
 							*GroupValue.DebugName.ToString(), *InCookedData.DebugName.ToString(), (uint32)InCookedData.EventId);
-						continue;
+						UsageCountPtr = Leaf;
+						Info->Leaves.Remove(Leaf);
+						break;
 					}
 				}
 
+				if (UNLIKELY(!UsageCountPtr))
+				{
+					UE_LOG(LogWwiseResourceLoader, Error, TEXT("FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Info[%p]: Could not find requested Leaf in GroupValue %s in Event %s (%" PRIu32 ")"),
+						Info,
+						*GroupValue.DebugName.ToString(), *InCookedData.DebugName.ToString(), (uint32)InCookedData.EventId);
+					continue;
+				}
+
+				const auto bResourcesAreLoaded = Info->ResourcesAreLoaded();
 				auto UsageCount = UsageCountPtr.ToSharedRef();
 				UE_LOG(LogWwiseResourceLoader, VeryVerbose, TEXT("FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Info[%p] UsageCount[%p]: Removing requested GroupValue %s for %s in Event %s (%" PRIu32 ")"),
 					Info, &UsageCount.Get(),
 					*GroupValue.DebugName.ToString(), *UsageCount->Key.GetDebugString(), *InCookedData.DebugName.ToString(), (uint32)InCookedData.EventId);
 
-				UE_CLOG(!Info->ShouldBeLoaded(), LogWwiseResourceLoader, VeryVerbose, TEXT("FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Info[%p] UsageCount[%p]: Don't have referencing GroupValues yet: %d for key %s"), Info, &UsageCount.Get(), Info->LoadCount, *UsageCount->Key.GetDebugString());
-				UE_CLOG(Info->ShouldBeLoaded(), LogWwiseResourceLoader, VeryVerbose, TEXT("FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Info[%p] UsageCount[%p]: Have referencing GroupValues: %d for key %s"), Info, &UsageCount.Get(), Info->LoadCount, *UsageCount->Key.GetDebugString());
-				if (Info->ShouldBeLoaded())
+				UE_CLOG(!bResourcesAreLoaded, LogWwiseResourceLoader, VeryVerbose, TEXT("FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Info[%p] UsageCount[%p]: Don't have referencing GroupValues: %d for key %s"), Info, &UsageCount.Get(), Info->GroupValueCount, *UsageCount->Key.GetDebugString());
+				UE_CLOG(bResourcesAreLoaded, LogWwiseResourceLoader, VeryVerbose, TEXT("FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Info[%p] UsageCount[%p]: Have referencing GroupValues: %d for key %s"), Info, &UsageCount.Get(), Info->GroupValueCount, *UsageCount->Key.GetDebugString());
+
+				const auto bUnloaded = UsageCount->LoadedGroupValues.Remove(GroupValue) == 1;
+				UE_CLOG(bUnloaded != bResourcesAreLoaded, LogWwiseResourceLoader, Error, TEXT("FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Info[%p] UsageCount[%p]: bUnloaded(%s) != bShouldUnload(%s) @ %p for key %s"),
+					Info, &UsageCount.Get(),
+					bUnloaded ? TEXT("true") : TEXT("false"), bResourcesAreLoaded ? TEXT("true") : TEXT("false"),
+					&UsageCount->LoadedData, *UsageCount->Key.GetDebugString());
+
+				if (!bResourcesAreLoaded && Info->Leaves.Num() == 0)
 				{
-					UE_LOG(LogWwiseResourceLoader, VeryVerbose, TEXT("FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Info[%p] UsageCount[%p]: Number of GroupValues required for this leaf: %d/%d @ %p for key %s (-1 in SwitchContainer)"),
-						Info, &UsageCount.Get(), (int)UsageCount->LoadedGroupValues.Num() - 1, UsageCount->Key.GroupValueSet.Num(), &UsageCount->LoadedData, *UsageCount->Key.GetDebugString());
-					UsageCount->LoadedGroupValues.Remove(GroupValue);
+					UE_LOG(LogWwiseResourceLoader, VeryVerbose, TEXT("FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Info[%p]: No more users. Removing GroupValueInfo for key %s"), Info, *Info->Key.GroupValueCookedData->GetDebugString());
+					LoadedGroupValueInfo.Remove(InfoKey);
 				}
 			}
 
 			if (LIKELY(UsageCountPtr))
 			{
 				auto UsageCount = UsageCountPtr.ToSharedRef();
-				if (UNLIKELY(UsageCount->LoadedGroupValues.Num() > 0))
+				UE_CLOG(UNLIKELY(UsageCount->LoadedGroupValues.Num() > 0), LogWwiseResourceLoader, Error, TEXT("FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources UsageCount[%p]: There are still %d loaded elements for %s in Event %s (%" PRIu32 ")"),
+					&UsageCount.Get(), *UsageCount->Key.GetDebugString(),
+					(int)UsageCount->LoadedGroupValues.Num(), *InCookedData.DebugName.ToString(), (uint32)InCookedData.EventId);
+
+				
+				FCompletionPromise UnloadLeafResourcesPromise;
+				auto UnloadLeafResourcesFuture = UnloadLeafResourcesPromise.GetFuture();
+				UnloadSwitchContainerLeafResources(MoveTemp(UnloadLeafResourcesPromise), UsageCount);
+
+				UnloadLeafResourcesFuture.Next([this, SwitchContainerLeavesPromise = MoveTemp(SwitchContainerLeavesPromise), UsageCount](int) mutable
 				{
-					UE_LOG(LogWwiseResourceLoader, Error, TEXT("FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources UsageCount[%p]: There are still %d loaded elements for %s in Event %s (%" PRIu32 ")"),
-						&UsageCount.Get(), *UsageCount->Key.GetDebugString(),
-						(int)UsageCount->LoadedGroupValues.Num(), *InCookedData.DebugName.ToString(), (uint32)InCookedData.EventId);
-				}
-				UnloadSwitchContainerLeafResources(MoveTemp(SwitchContainerLeavesPromise), UsageCount);
+					DeleteSwitchContainerLeafGroupValueUsageCount(MoveTemp(SwitchContainerLeavesPromise), UsageCount);
+				});
 			}
 			else
 			{
-				SCOPED_WWISERESOURCELOADER_EVENT_3(TEXT("FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Leaf.SwitchContainer !Unload.Done"));
+				SCOPED_WWISERESOURCELOADER_EVENT_3(TEXT("FWwiseResourceLoaderImpl::UnloadEventSwitchContainerResources Leaf.SwitchContainer !UsageCountPtr"));
 				SwitchContainerLeavesPromise.EmplaceValue();
 			}
 		});
@@ -1948,40 +1982,52 @@ void FWwiseResourceLoaderImpl::UnloadGroupValueResources(FWwiseResourceUnloadPro
 	
 	ExecutionQueue.Async(WWISERESOURCELOADER_ASYNC_NAME("FWwiseResourceLoaderImpl::UnloadGroupValueResources Async"), [this, &LoadedData, &InCookedData, Promise = MoveTemp(Promise)]() mutable
 	{
-		FWwiseSwitchContainerLoadedGroupValueInfo* Info = LoadedGroupValueInfo.Find(FWwiseSwitchContainerLoadedGroupValueInfo(InCookedData));
+		const auto InfoKey = FWwiseSwitchContainerLoadedGroupValueInfo(InCookedData);
+		FWwiseSwitchContainerLoadedGroupValueInfo* Info = LoadedGroupValueInfo.Find(InfoKey);
 		if (UNLIKELY(!Info))
 		{
 			UE_LOG(LogWwiseResourceLoader, Error, TEXT("FWwiseResourceLoaderImpl::UnloadGroupValueResources: Could not find requested GroupValue %s (%s %" PRIu32 ":%" PRIu32 ")"),
 				*InCookedData.DebugName.ToString(), *InCookedData.GetTypeName(), (uint32)InCookedData.GroupId, (uint32)InCookedData.Id);
 			return Promise.EmplaceValue();
 		}
-		check(Info->ShouldBeLoaded());
-		--Info->LoadCount;
+		check(Info->ResourcesAreLoaded());
+		--Info->GroupValueCount;
+		const bool bResourcesShouldBeUnloaded = !Info->ResourcesAreLoaded(); 
 
 		FCompletionFutureArray FutureArray;
 
-		if (!Info->ShouldBeLoaded())
+		if (bResourcesShouldBeUnloaded)
 		{
 			UE_LOG(LogWwiseResourceLoader, VeryVerbose, TEXT("FWwiseResourceLoaderImpl::UnloadGroupValueResources Info[%p]: Last GroupValue %s (%s %" PRIu32 ":%" PRIu32 ") unload. Unloading %d leaves."),
 				Info,
 				*InCookedData.DebugName.ToString(), *InCookedData.GetTypeName(), (uint32)InCookedData.GroupId, (uint32)InCookedData.Id, (int)Info->Leaves.Num());
 
-			for (auto UsageCount : Info->Leaves)
+			if (Info->Leaves.Num() == 0)
 			{
-				UE_LOG(LogWwiseResourceLoader, VeryVerbose, TEXT("FWwiseResourceLoaderImpl::UnloadGroupValueResources Info[%p] UsageCount[%p]: Number of GroupValues required for leaf: %d/%d @ %p for %s (-1 in GroupValue)"), Info, &UsageCount.Get(),
-					(int)UsageCount->LoadedGroupValues.Num() - 1, UsageCount->Key.GroupValueSet.Num(), &UsageCount->LoadedData, *UsageCount->Key.GetDebugString());
+				UE_LOG(LogWwiseResourceLoader, VeryVerbose, TEXT("FWwiseResourceLoaderImpl::UnloadGroupValueResources Info[%p]: No more users. Removing GroupValueInfo for key %s"), Info, *Info->Key.GroupValueCookedData->GetDebugString());
+				LoadedGroupValueInfo.Remove(InfoKey);
+			}
+			else
+			{
+				for (auto UsageCount : Info->Leaves)
+				{
+					UE_LOG(LogWwiseResourceLoader, VeryVerbose, TEXT("FWwiseResourceLoaderImpl::UnloadGroupValueResources Info[%p] UsageCount[%p]: Number of GroupValues required for leaf: %d/%d @ %p for %s (-1 in GroupValue)"), Info, &UsageCount.Get(),
+						(int)UsageCount->LoadedGroupValues.Num() - 1, UsageCount->Key.GroupValueSet.Num(), &UsageCount->LoadedData, *UsageCount->Key.GetDebugString());
 
-				UsageCount->LoadedGroupValues.Remove(InCookedData);
+					const auto Result = UsageCount->LoadedGroupValues.Remove(InCookedData);
+					UE_CLOG(Result == 0, LogWwiseResourceLoader, Error, TEXT("FWwiseResourceLoaderImpl::UnloadGroupValueResources Info[%p] UsageCount[%p]: Trying to remove a LoadedGroupValue that is not loaded @ %p for key %s"),
+						Info, &UsageCount.Get(), &UsageCount->LoadedData, *UsageCount->Key.GetDebugString());
 
-				FWwiseResourceUnloadPromise UnloadPromise;
-				FutureArray.Add(UnloadPromise.GetFuture());
-				UnloadSwitchContainerLeafResources(MoveTemp(UnloadPromise), UsageCount);
+					FWwiseResourceUnloadPromise UnloadPromise;
+					FutureArray.Add(UnloadPromise.GetFuture());
+					UnloadSwitchContainerLeafResources(MoveTemp(UnloadPromise), UsageCount);
+				}
 			}
 		}
 		else
 		{
 			UE_LOG(LogWwiseResourceLoader, VeryVerbose, TEXT("FWwiseResourceLoaderImpl::UnloadGroupValueResources Info[%p]: GroupValue %s (%s %" PRIu32 ":%" PRIu32 ") still loaded (Count: %d times)."),
-				Info, *InCookedData.DebugName.ToString(), *InCookedData.GetTypeName(), (uint32)InCookedData.GroupId, (uint32)InCookedData.Id, (int)Info->LoadCount);
+				Info, *InCookedData.DebugName.ToString(), *InCookedData.GetTypeName(), (uint32)InCookedData.GroupId, (uint32)InCookedData.Id, (int)Info->GroupValueCount);
 		}
 
 		WaitForFutures(MoveTemp(FutureArray), [&LoadedData, Promise = MoveTemp(Promise)]() mutable
@@ -2177,6 +2223,26 @@ void FWwiseResourceLoaderImpl::UnloadSwitchContainerLeafResources(FWwiseResource
 	});
 }
 
+void FWwiseResourceLoaderImpl::DeleteSwitchContainerLeafGroupValueUsageCount(FWwiseResourceUnloadPromise&& Promise,
+	TSharedRef<FWwiseSwitchContainerLeafGroupValueUsageCount, ESPMode::ThreadSafe>& UsageCount)
+{
+	if (LIKELY(UsageCount.IsUnique()))
+	{
+		UE_LOG(LogWwiseResourceLoader, VeryVerbose, TEXT("FWwiseResourceLoaderImpl::DeleteSwitchContainerLeafGroupValueUsageCount UsageCount[%p]: Destroyed %s"), 
+			&UsageCount.Get(), *UsageCount->Key.GetDebugString());
+		Promise.EmplaceValue();
+	}
+	else
+	{
+		// We need to wait for the user to stop using this. This can happen when a GroupValue is waiting to be unloaded while we want to destroy the SwitchContainerLeaf.
+		
+		// This makes an unique copy of UsageCount, that is passed as reference to the new instance
+		ExecutionQueue.Async(WWISERESOURCELOADER_ASYNC_NAME("FWwiseResourceLoaderImpl::DeleteSwitchContainerLeafGroupValueUsageCount !IsUnique"), [this, Promise = MoveTemp(Promise), UsageCount]() mutable
+		{
+			DeleteSwitchContainerLeafGroupValueUsageCount(MoveTemp(Promise), UsageCount);
+		});
+	}
+}
 
 void FWwiseResourceLoaderImpl::AttachAuxBusNode(FWwiseLoadedAuxBusPtr AuxBusListNode)
 {

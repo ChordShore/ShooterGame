@@ -12,10 +12,18 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #pragma once
+
+#include "CoreTypes.h"
+
+#if defined(PLATFORM_MICROSOFT) && PLATFORM_MICROSOFT
+#pragma pack(push)
+#pragma warning(push)
+#pragma warning(disable: 4103)		// alignment changed after including header, may be due to missing #pragma pack(pop)
+#endif // PLATFORM_MICROSOFT
 
 #include "Wwise/PreSoundEngineInclude.h"
 
@@ -62,3 +70,8 @@ class AkErrorMessageTranslator;
 #include "Wwise/Compat_2022_1/Compat.h"
 
 #include "Wwise/PostSoundEngineInclude.h"
+
+#if defined(PLATFORM_MICROSOFT) && PLATFORM_MICROSOFT
+#pragma warning(pop)
+#pragma pack(pop)
+#endif // PLATFORM_MICROSOFT

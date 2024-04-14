@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #pragma once
@@ -122,7 +122,7 @@ public:
 	 *  If this late reverb component has a sibling geometry component (or surface reflector set component), they will be associated automatically and there is no need to call this function.
 	 */
 	UFUNCTION(BlueprintCallable, Category = "Audiokinetic|LateReverb|Reverb Parameter Estimation")
-		void AssociateAkTextureSetComponent(UAkAcousticTextureSetComponent* textureSetComponent);
+	void AssociateAkTextureSetComponent(UAkAcousticTextureSetComponent* textureSetComponent);
 
 private:
 	friend class FAkAudioDevice;
@@ -136,7 +136,7 @@ private:
 	/** The component that will be used to estimate the HFDamping value. This will usually be an AkGeometryComponent.
 	 *  When the owning Actor is a Volume (as is the case for SpatialAudioVolume) this will be an AkSurfaceReflectorSetComponent.
 	 */
-	UAkAcousticTextureSetComponent* TextureSetComponent = nullptr;
+	TWeakObjectPtr<UAkAcousticTextureSetComponent> TextureSetComponent;
 
 	// Used to estimate the reverb parameters from the Primitive parent.
 	FAkReverbDescriptor ReverbDescriptor;

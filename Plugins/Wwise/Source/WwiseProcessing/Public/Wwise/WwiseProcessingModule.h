@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #pragma once
@@ -40,11 +40,23 @@ public:
 	 */
 	static bool IsAvailable()
 	{
-		return FModuleManager::Get().IsModuleLoaded(GetModuleName());
+		static bool bModuleAvailable = false;
+		if (LIKELY(!IsEngineExitRequested()) && LIKELY(bModuleAvailable))
+		{
+			return true;
+		}
+		bModuleAvailable = FModuleManager::Get().IsModuleLoaded(GetModuleName());
+		return bModuleAvailable;
 	}
 
 	static IWwiseProcessingModule* GetModule()
 	{
+		static IWwiseProcessingModule* Module = nullptr;
+		if (LIKELY(!IsEngineExitRequested()) && LIKELY(Module))
+		{
+			return Module;
+		}
+		
 		const auto ModuleName = GetModuleName();
 		if (ModuleName.IsNone())
 		{
@@ -52,12 +64,12 @@ public:
 		}
 
 		FModuleManager& ModuleManager = FModuleManager::Get();
-		IWwiseProcessingModule* Result = ModuleManager.GetModulePtr<IWwiseProcessingModule>(ModuleName);
-		if (UNLIKELY(!Result))
+		Module = ModuleManager.GetModulePtr<IWwiseProcessingModule>(ModuleName);
+		if (UNLIKELY(!Module))
 		{
 			if (UNLIKELY(IsEngineExitRequested()))
 			{
-				UE_LOG(LogLoad, Verbose, TEXT("Skipping reloading missing WwiseProcessing module: Exiting."));
+				UE_LOG(LogLoad, Log, TEXT("Skipping reloading missing WwiseProcessing module: Exiting."));
 			}
 			else if (UNLIKELY(!IsInGameThread()))
 			{
@@ -66,15 +78,15 @@ public:
 			else
 			{
 				UE_LOG(LogLoad, Log, TEXT("Loading WwiseProcessing module: %s"), *ModuleName.GetPlainNameString());
-				Result = ModuleManager.LoadModulePtr<IWwiseProcessingModule>(ModuleName);
-				if (UNLIKELY(!Result))
+				Module = ModuleManager.LoadModulePtr<IWwiseProcessingModule>(ModuleName);
+				if (UNLIKELY(!Module))
 				{
 					UE_LOG(LogLoad, Fatal, TEXT("Could not load WwiseProcessing module: %s not found"), *ModuleName.GetPlainNameString());
 				}
 			}
 		}
 
-		return Result;
+		return Module;
 	}
 	
 	virtual FWwiseGlobalCallbacks* GetGlobalCallbacks() = 0;

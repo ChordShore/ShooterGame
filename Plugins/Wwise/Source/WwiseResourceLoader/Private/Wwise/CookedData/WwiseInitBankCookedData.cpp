@@ -12,12 +12,10 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/CookedData/WwiseInitBankCookedData.h"
-
-#include "Wwise/Stats/ResourceLoader.h"
 
 #include <inttypes.h>
 
@@ -42,11 +40,11 @@ void FWwiseInitBankCookedData::Serialize(FArchive& Ar)
 
 FString FWwiseInitBankCookedData::GetDebugString() const
 {
-	if (Media.Num() > 0)
+	if (SoundBanks.Num() > 0 || Media.Num() > 0)
 	{
-		return FString::Printf(TEXT("InitBank %s (%" PRIu32 ") with %d Media @ %s (ma:%" PRIi32 " %sdm %smedia %suser)"),
+		return FString::Printf(TEXT("InitBank %s (%" PRIu32 ") with %d additional SoundBanks and %d Media @ %s (ma:%" PRIi32 " %sdm %smedia %suser)"),
 			*DebugName.ToString(), SoundBankId,
-			Media.Num(),
+			SoundBanks.Num(), Media.Num(),
 			*SoundBankPathName.ToString(), MemoryAlignment,
 			bDeviceMemory ? TEXT("") : TEXT("!"), bContainsMedia ? TEXT("") : TEXT("!"),
 			SoundBankType == EWwiseSoundBankType::User ? TEXT("") : TEXT("!"));

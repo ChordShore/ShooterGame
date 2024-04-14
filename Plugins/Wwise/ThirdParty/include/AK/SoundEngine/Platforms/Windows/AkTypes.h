@@ -21,7 +21,7 @@ under the Apache License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
 OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 
-  Copyright (c) 2023 Audiokinetic Inc.
+  Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 // AkTypes.h
@@ -39,7 +39,9 @@ the specific language governing permissions and limitations under the License.
 	#include <wchar.h> // wchar_t not a built-in type in C
 #endif
 
-#define AK_WIN										///< Compiling for Windows
+#if !defined(AK_WIN )
+	#define AK_WIN										///< Compiling for Windows
+#endif
 
 #if defined _M_IX86
 	#define AK_CPU_X86								///< Compiling for 32-bit x86 CPU
@@ -62,7 +64,9 @@ the specific language governing permissions and limitations under the License.
 			#define AK_UWP_CPP_CX // To test for UWP code which uses Microsoft's C++/CX extended language (not all projects do)
 		#endif
 		#if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_PC_APP)
-			#define AK_WIN_UNIVERSAL_APP
+			#if !defined(AK_WIN_UNIVERSAL_APP)
+				#define AK_WIN_UNIVERSAL_APP
+			#endif
 		#endif
 	#endif
 #endif

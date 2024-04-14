@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 /*=============================================================================
@@ -106,17 +106,19 @@ void AAkAmbientSound::StartPlaying()
 {
 	if( !IsCurrentlyPlaying() )
 	{
-		if (AkComponent->AkAudioEvent)
-		{
-			AkComponent->AkAudioEvent->PostOnActor(this, nullptr, nullptr, nullptr, (AkCallbackType)0, nullptr, StopWhenOwnerIsDestroyed);
-			return;
-		}
 		FAkAudioDevice* AkAudioDevice = FAkAudioDevice::Get();
 		if (AkAudioDevice)
 		{
 			AkAudioDevice->SetAttenuationScalingFactor(this, AkComponent->AttenuationScalingFactor);
-
-			AkPlayingID pID = AkAudioDevice->PostEventOnActor(AkAudioDevice->GetShortID(AkComponent->AkAudioEvent, AkComponent->EventName), this, 0, NULL, NULL, StopWhenOwnerIsDestroyed, {});
+		}
+		
+		if (AkComponent->AkAudioEvent)
+		{
+			AkComponent->AkAudioEvent->PostOnActor(this, nullptr, nullptr, nullptr, (AkCallbackType)0, nullptr, StopWhenOwnerIsDestroyed);
+		}
+		else
+		{
+			UE_LOG(LogAkAudio, Warning, TEXT("AAkAmbientSound::StartPlaying: Failed to post invalid AkAudioEvent on actor '%s'."), *this->GetName());
 		}
 	}
 }

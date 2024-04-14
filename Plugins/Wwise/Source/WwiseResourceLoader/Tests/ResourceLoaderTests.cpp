@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/WwiseUnitTests.h"
@@ -88,7 +88,6 @@ WWISE_TEST_CASE(ResourceLoader_Smoke, "Wwise::ResourceLoader::ResourceLoader_Smo
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Sync Event")
@@ -148,7 +147,6 @@ WWISE_TEST_CASE(ResourceLoader_Smoke, "Wwise::ResourceLoader::ResourceLoader_Smo
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Sync External Sources")
@@ -190,7 +188,6 @@ WWISE_TEST_CASE(ResourceLoader_Smoke, "Wwise::ResourceLoader::ResourceLoader_Smo
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Sync GroupValue Switch")
@@ -233,7 +230,6 @@ WWISE_TEST_CASE(ResourceLoader_Smoke, "Wwise::ResourceLoader::ResourceLoader_Smo
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Sync GroupValue State")
@@ -276,7 +272,6 @@ WWISE_TEST_CASE(ResourceLoader_Smoke, "Wwise::ResourceLoader::ResourceLoader_Smo
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Sync InitBank")
@@ -318,7 +313,6 @@ WWISE_TEST_CASE(ResourceLoader_Smoke, "Wwise::ResourceLoader::ResourceLoader_Smo
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 	
 	SECTION("Sync Media")
@@ -360,7 +354,6 @@ WWISE_TEST_CASE(ResourceLoader_Smoke, "Wwise::ResourceLoader::ResourceLoader_Smo
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 	
 	SECTION("Sync ShareSet")
@@ -408,7 +401,6 @@ WWISE_TEST_CASE(ResourceLoader_Smoke, "Wwise::ResourceLoader::ResourceLoader_Smo
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Sync SoundBank")
@@ -454,7 +446,6 @@ WWISE_TEST_CASE(ResourceLoader_Smoke, "Wwise::ResourceLoader::ResourceLoader_Smo
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Sync SwitchContainer (Event First)")
@@ -560,7 +551,6 @@ WWISE_TEST_CASE(ResourceLoader_Smoke, "Wwise::ResourceLoader::ResourceLoader_Smo
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Sync SwitchContainer (Switch First)")
@@ -666,7 +656,6 @@ WWISE_TEST_CASE(ResourceLoader_Smoke, "Wwise::ResourceLoader::ResourceLoader_Smo
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 }
 
@@ -739,7 +728,6 @@ WWISE_TEST_CASE(ResourceLoader_Async, "Wwise::ResourceLoader::ResourceLoader_Asy
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Async Event & GroupValue")
@@ -875,7 +863,6 @@ WWISE_TEST_CASE(ResourceLoader_Async, "Wwise::ResourceLoader::ResourceLoader_Asy
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Async External Source")
@@ -935,7 +922,6 @@ WWISE_TEST_CASE(ResourceLoader_Async, "Wwise::ResourceLoader::ResourceLoader_Asy
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 
@@ -997,7 +983,6 @@ WWISE_TEST_CASE(ResourceLoader_Async, "Wwise::ResourceLoader::ResourceLoader_Asy
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 	
 	SECTION("Async Media")
@@ -1057,7 +1042,6 @@ WWISE_TEST_CASE(ResourceLoader_Async, "Wwise::ResourceLoader::ResourceLoader_Asy
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 	
 	SECTION("Async ShareSet")
@@ -1121,7 +1105,6 @@ WWISE_TEST_CASE(ResourceLoader_Async, "Wwise::ResourceLoader::ResourceLoader_Asy
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Async SoundBank")
@@ -1182,7 +1165,6 @@ WWISE_TEST_CASE(ResourceLoader_Async, "Wwise::ResourceLoader::ResourceLoader_Asy
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 }
 
@@ -1348,7 +1330,6 @@ WWISE_TEST_CASE(ResourceLoader_EdgeCases, "Wwise::ResourceLoader::ResourceLoader
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Event PendingKill Reload")
@@ -1513,7 +1494,6 @@ WWISE_TEST_CASE(ResourceLoader_EdgeCases, "Wwise::ResourceLoader::ResourceLoader
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 }
 
@@ -2079,7 +2059,6 @@ WWISE_TEST_CASE(ResourceLoader_Stress, "Wwise::ResourceLoader::ResourceLoader_St
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 
 	SECTION("Sequential Leaf Load")
@@ -2292,7 +2271,6 @@ WWISE_TEST_CASE(ResourceLoader_Stress, "Wwise::ResourceLoader::ResourceLoader_St
 		CHECK(MediaManager.IsEmpty());
 		CHECK(SoundBankManager.IsEmpty());
 		CHECK(ResourceLoaderImpl.IsEmpty());
-		CHECK(ResourceLoaderImpl.TrimGroupValueInfo());
 	}
 }
 

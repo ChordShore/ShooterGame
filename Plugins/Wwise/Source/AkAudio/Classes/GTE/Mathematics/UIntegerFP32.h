@@ -138,7 +138,7 @@ namespace WwiseGTE
             }
             else
             {
-                LogError("The number of bits must be nonnegative.");
+                GTE_LogError("The number of bits must be nonnegative.");
             }
 
 #if defined(GTE_THROW_ON_UINTEGERFP32_OUT_OF_RANGE)

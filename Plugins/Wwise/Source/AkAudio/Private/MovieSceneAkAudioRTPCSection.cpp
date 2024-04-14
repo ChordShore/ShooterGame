@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "MovieSceneAkAudioRTPCSection.h"
@@ -119,6 +119,8 @@ void UMovieSceneAkAudioRTPCSection::Serialize(FArchive& Ar)
 void UMovieSceneAkAudioRTPCSection::PreEditChange(FProperty* PropertyAboutToChange)
 {
 	PreviousName = Name;
+
+	Super::PreEditChange(PropertyAboutToChange);
 }
 
 void UMovieSceneAkAudioRTPCSection::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent)

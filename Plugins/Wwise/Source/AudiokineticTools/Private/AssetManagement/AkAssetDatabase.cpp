@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "AssetManagement/AkAssetDatabase.h"
@@ -51,8 +51,6 @@ AkAssetDatabase::AkAssetDatabase()
 
 bool AkAssetDatabase::FindAllAssets(TArray<FAssetData>& OutData)
 {
-	checkf(IsInGameThread(), TEXT("AssetRegistry lookups must be done on the Game thread"));
-
 #if UE_5_1_OR_LATER
 	AssetRegistryModule->Get().GetAssetsByClass(UAkAudioType::StaticClass()->GetClassPathName(), OutData, true);
 #else
@@ -63,8 +61,6 @@ bool AkAssetDatabase::FindAllAssets(TArray<FAssetData>& OutData)
 
 bool AkAssetDatabase::FindAssets(const FGuid& AkGuid, TArray<FAssetData>& OutData)
 {
-	checkf(IsInGameThread(), TEXT("AssetRegistry lookups must be done on the Game thread"));
-
 	TMultiMap<FName, FString> Search;
 	Search.Add(GET_MEMBER_NAME_CHECKED(FWwiseObjectInfo, WwiseGuid), AkGuid.ToString(EGuidFormats::Digits));
 	AssetRegistryModule->Get().GetAssetsByTagValues(Search, OutData);
@@ -75,8 +71,6 @@ bool AkAssetDatabase::FindAssets(const FGuid& AkGuid, TArray<FAssetData>& OutDat
 
 bool AkAssetDatabase::FindAssets(const FString& AssetName, TArray<FAssetData>& OutData)
 {
-	checkf(IsInGameThread(), TEXT("AssetRegistry lookups must be done on the Game thread"));
-
 	TMultiMap<FName, FString> Search;
 	Search.Add(GET_MEMBER_NAME_CHECKED(FAssetData, AssetName), AssetName);
 	AssetRegistryModule->Get().GetAssetsByTagValues(Search, OutData);
@@ -86,8 +80,6 @@ bool AkAssetDatabase::FindAssets(const FString& AssetName, TArray<FAssetData>& O
 
 FAssetData AkAssetDatabase::FindAssetByObjectPath(const FSoftObjectPath& AssetPath)
 {
-	checkf(IsInGameThread(), TEXT("AssetRegistry lookups must be done on the Game thread"));
-
 #if UE_5_1_OR_LATER
 	return AssetRegistryModule->Get().GetAssetByObjectPath(AssetPath);
 #else
@@ -119,8 +111,6 @@ bool AkAssetDatabase::FindFirstAsset(const FString& AssetName, FAssetData& OutAs
 
 bool AkAssetDatabase::FindAssetsByGuidAndClass(const FGuid& AkGuid, const UClass* StaticClass, TArray<FAssetData>& OutWwiseAssets)
 {
-	checkf(IsInGameThread(), TEXT("AssetRegistry lookups must be done on the Game thread"));
-
 	TMultiMap<FName, FString> Search;
 	FARFilter Filter;
 #if UE_5_1_OR_LATER
@@ -138,7 +128,7 @@ bool AkAssetDatabase::FindAssetsByGuidAndClass(const FGuid& AkGuid, const UClass
 bool AkAssetDatabase::RenameAsset(const FGuid& Id, const FString& AssetName,
 	const FString& RelativePath)
 {
-	checkf(IsInGameThread(), TEXT("AssetToolsModule renames must be done on the Game thread"));
+	check(IsInGameThread());
 
 	auto parentPath = RelativePath;
 

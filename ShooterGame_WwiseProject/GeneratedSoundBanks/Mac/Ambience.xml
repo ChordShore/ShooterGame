@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{3BEB8805-D5CD-C54A-C852-F5AC1EDC3156}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{90A24E41-DC3B-6F32-298D-D11DEB9F8F29}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -87,13 +87,8 @@
 					<CachePath>SFX/AMB_BarrierFence_LP_3860FEB7.wem</CachePath>
 				</File>
 			</Media>
-			<Plugins>
-				<Custom>
-					<Plugin Id="1041093470" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Default Work Unit\Event Probe\Sine Pip\Tone Generator" GUID="{0AD6A0A9-22FC-4FE9-B47C-29C90175D05E}" LibName="Wwise Tone Generator" LibId="6684674"/>
-				</Custom>
-			</Plugins>
 			<Events>
-				<Event Id="511358421" Name="AMB_BarrierFence_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_BarrierFence_LP" GUID="{427593F0-92C8-4CA8-8FCD-C163A0B02BEC}" MaxAttenuation="3500" DurationType="Infinite">
+				<Event Id="2992962930" Name="AMB_BarrierFence" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_BarrierFence" GUID="{427593F0-92C8-4CA8-8FCD-C163A0B02BEC}" MaxAttenuation="3500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="1041432378"/>
 					</MediaRefs>
@@ -108,27 +103,19 @@
 						<MediaRef Id="288927093"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2757392698" Name="AMB_Highrise_Room_Drones_OS" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_Highrise_Room_Drones_OS" GUID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}" MaxAttenuation="10500" DurationType="OneShot" DurationMin="1" DurationMax="1">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="1041093470"/>
-						</Custom>
-					</PluginRefs>
-				</Event>
 				<Event Id="1040217121" Name="AMB_Highrise_Spawn" ObjectPath="\Events\Ambience\Rooms\Highrise\Indoors\AMB_Highrise_Spawn" GUID="{1C364EAC-CAE6-4664-ACA8-6E418F9C7859}" MaxAttenuation="2000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="229272092"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1915357068" Name="AMB_HoverCars_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\AMB_HoverCars_LP" GUID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="126199104" Name="AMB_PhoneBox_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_PhoneBox_LP" GUID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" MaxAttenuation="2500" DurationType="Infinite">
+				<Event Id="1196422761" Name="AMB_PhoneBox" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_PhoneBox" GUID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" MaxAttenuation="2500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="537312981"/>
 						<MediaRef Id="539953251"/>
 						<MediaRef Id="992552206"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3140124040" Name="AMB_StreetLamp_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_StreetLamp_LP" GUID="{82B95D5C-4BE9-4DFC-9A31-59E8AEF7E2FC}" MaxAttenuation="1500" DurationType="Infinite">
+				<Event Id="1699197345" Name="AMB_StreetLamp" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_StreetLamp" GUID="{82B95D5C-4BE9-4DFC-9A31-59E8AEF7E2FC}" MaxAttenuation="1500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="88913986"/>
 						<MediaRef Id="91730085"/>
@@ -140,27 +127,27 @@
 						<MediaRef Id="515725994"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="896607520" Name="AMB_UnrealHolograph_FadeIn_OS" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeIn_OS" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="10500" DurationType="OneShot" DurationMin="7.853374" DurationMax="7.853374">
-					<MediaRefs>
-						<MediaRef Id="619272686"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1695319799" Name="AMB_UnrealHolograph_FadeOut_OS" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut_OS" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="10500" DurationType="OneShot" DurationMin="6.614586" DurationMax="6.614586">
-					<MediaRefs>
-						<MediaRef Id="425050702"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2762262784" Name="AMB_UnrealHolograph_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_LP" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="10500" DurationType="Infinite">
+				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="10500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="456057735"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2794177527" Name="AMB_UnrealSign_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealSign_LP" GUID="{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}" MaxAttenuation="1800" DurationType="Infinite">
+				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeIn" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="10500" DurationType="OneShot" DurationMin="7.853374" DurationMax="7.853374">
+					<MediaRefs>
+						<MediaRef Id="619272686"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="10500" DurationType="OneShot" DurationMin="6.614586" DurationMax="6.614586">
+					<MediaRefs>
+						<MediaRef Id="425050702"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2759038044" Name="AMB_UnrealSign" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealSign" GUID="{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}" MaxAttenuation="1800" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="218188666"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2090045424" Name="AMB_WindGusts" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_WindGusts" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="4500" DurationType="Infinite">
+				<Event Id="1571611116" Name="AMB_WindGusts_Spline" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\Wind\AMB_WindGusts_Spline" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="4500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="928573754"/>
 					</MediaRefs>
@@ -168,5 +155,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B5176666-22F9-820C-2FCF-95686CD4CA55}</FileHash>
+	<FileHash>{68524329-990A-0773-B476-B356810A20C4}</FileHash>
 </SoundBanksInfo>

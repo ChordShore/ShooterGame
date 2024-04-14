@@ -170,14 +170,14 @@ namespace WwiseGTE
                 {
                     // This is the second time the edge is encountered.
                     edge = eiter->second;
-                    LogAssert(edge != nullptr, "Unexpected condition.");
+                    GTE_LogAssert(edge != nullptr, "Unexpected condition.");
 
                     // Update the edge.
                     if (edge->T[1].lock())
                     {
                         if (mThrowOnNonmanifoldInsertion)
                         {
-                            LogError("Attempt to create nonmanifold mesh.");
+                            GTE_LogError("Attempt to create nonmanifold mesh.");
                         }
                         else
                         {
@@ -188,7 +188,7 @@ namespace WwiseGTE
 
                     // Update the adjacent triangles.
                     auto adjacent = edge->T[0].lock();
-                    LogAssert(adjacent != nullptr, "Unexpected condition.");
+                    GTE_LogAssert(adjacent != nullptr, "Unexpected condition.");
                     for (int j = 0; j < 3; ++j)
                     {
                         if (adjacent->E[j].lock() == edge)
@@ -229,7 +229,7 @@ namespace WwiseGTE
             {
                 // Inform the edges the triangle is being deleted.
                 auto edge = tri->E[i].lock();
-                LogAssert(edge != nullptr, "Unexpected condition.");
+                GTE_LogAssert(edge != nullptr, "Unexpected condition.");
 
                 if (edge->T[0].lock() == tri)
                 {
@@ -243,7 +243,7 @@ namespace WwiseGTE
                 }
                 else
                 {
-                    LogError("Unexpected condition.");
+                    GTE_LogError("Unexpected condition.");
                 }
 
                 // Remove the edge if you have the last reference to it.

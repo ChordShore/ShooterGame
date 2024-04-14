@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 /*=============================================================================
@@ -171,7 +171,7 @@ void UAkLateReverbComponent::BeginPlay()
 void UAkLateReverbComponent::BeginDestroy()
 {
 	Super::BeginDestroy();
-	if (TextureSetComponent != nullptr)
+	if (TextureSetComponent.IsValid())
 	{
 		TextureSetComponent->SetReverbDescriptor(nullptr);
 	}
@@ -430,7 +430,7 @@ void UAkLateReverbComponent::HandleObjectsReplaced(const TMap<UObject*, UObject*
 		DecayEstimationNeedsUpdate = true;
 		PredelayEstimationNeedsUpdate = true;
 	}
-	if (ReplacementMap.Contains(TextureSetComponent))
+	if (ReplacementMap.Contains(TextureSetComponent.Get()))
 	{
 		if (Parent.IsValid())
 		{
@@ -505,7 +505,7 @@ FText UAkLateReverbComponent::GetValuesLabels() const
 		}
 
 		dampingString = "No associated geometry component.";
-		if (TextureSetComponent != nullptr)
+		if (TextureSetComponent.IsValid())
 		{
 			dampingString = ReverbDescriptor.ShouldEstimateDamping() ? FText::AsNumber(HFDamping, &NumberFormat).ToString() : FString("Invalid Late Reverb or Room Primitive Component");
 		}
@@ -659,7 +659,7 @@ void UAkLateReverbComponent::UpdateRTPCs(const UAkRoomComponent* room) const
 
 void UAkLateReverbComponent::AssociateAkTextureSetComponent(UAkAcousticTextureSetComponent* textureSetComponent)
 {
-	if (TextureSetComponent != nullptr)
+	if (TextureSetComponent.IsValid())
 		TextureSetComponent->SetReverbDescriptor(nullptr);
 	TextureSetComponent = textureSetComponent;
 	TextureSetComponent->SetReverbDescriptor(&ReverbDescriptor);
@@ -714,6 +714,8 @@ void UAkLateReverbComponent::PreEditChange(FProperty* PropertyAboutToChange)
 			AuxBus = AuxBusManual;
 		}
 	}
+
+	Super::PreEditChange(PropertyAboutToChange);
 }
 
 void UAkLateReverbComponent::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent)

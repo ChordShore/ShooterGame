@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 using UnrealBuildTool;
@@ -28,13 +28,13 @@ public class WwiseUEPlatform_2022_1_Android : WwiseUEPlatform
 		AndroidSDKFolders = new List<string>
 		{
 #if UE_5_0_OR_LATER
-			Path.Combine(ThirdPartyFolder, "Android", "arm64-v8a", AkConfigurationDir),
-			Path.Combine(ThirdPartyFolder, "Android", "x86_64", AkConfigurationDir),
+			Path.Combine(ThirdPartyFolder, "Android", "arm64-v8a", WwiseConfigurationDir),
+			Path.Combine(ThirdPartyFolder, "Android", "x86_64", WwiseConfigurationDir),
 #else
-			Path.Combine(ThirdPartyFolder, "Android", "armeabi-v7a", AkConfigurationDir),
-			Path.Combine(ThirdPartyFolder, "Android", "x86", AkConfigurationDir),
-			Path.Combine(ThirdPartyFolder, "Android", "arm64-v8a", AkConfigurationDir),
-			Path.Combine(ThirdPartyFolder, "Android", "x86_64", AkConfigurationDir),
+			Path.Combine(ThirdPartyFolder, "Android", "armeabi-v7a", WwiseConfigurationDir),
+			Path.Combine(ThirdPartyFolder, "Android", "x86", WwiseConfigurationDir),
+			Path.Combine(ThirdPartyFolder, "Android", "arm64-v8a", WwiseConfigurationDir),
+			Path.Combine(ThirdPartyFolder, "Android", "x86_64", WwiseConfigurationDir),
 #endif
 		};
 	}

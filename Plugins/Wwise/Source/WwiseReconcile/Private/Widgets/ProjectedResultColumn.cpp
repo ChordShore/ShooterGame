@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "ProjectedResultColumn.h"
@@ -87,7 +87,7 @@ const TSharedRef<SWidget> FProjectedResultColumn::ConstructRowWidget(FWwiseRecon
 
 	auto WwiseRef = TreeItem.WwiseAnyRef.WwiseAnyRef;
 	FName AssetName = AkUnrealAssetDataHelper::GetAssetDefaultName(WwiseRef);
-	FString AssetPackagePath = AkUnrealAssetDataHelper::GetAssetDefaultPackagePath(WwiseRef);
+	FString AssetPackagePath = IWwiseReconcile::Get()->GetAssetPackagePath(*WwiseRef);
 	int PackageLength = AssetViewUtils::GetPackageLengthForCooking(AssetPackagePath / AssetName.ToString(), FEngineBuildSettings::IsInternalBuild());
 	int MaxPath = AssetViewUtils::GetMaxCookPathLen();
 

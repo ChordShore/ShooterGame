@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #pragma once
@@ -51,26 +51,43 @@ public:
 	 */
 	static bool IsAvailable()
 	{
-		return FModuleManager::Get().IsModuleLoaded(GetModuleName());
+#if UE_SERVER
+		return false;
+#else
+		static bool bModuleAvailable = false;
+		if (LIKELY(!IsEngineExitRequested()) && LIKELY(bModuleAvailable))
+		{
+			return true;
+		}
+		bModuleAvailable = FModuleManager::Get().IsModuleLoaded(GetModuleName());
+		return bModuleAvailable;
+#endif
 	}
 
 	static IWwiseResourceCookerModule* GetModule()
 	{
+#if UE_SERVER
+		return nullptr;
+#else
+		static IWwiseResourceCookerModule* Module = nullptr;
+		if (LIKELY(!IsEngineExitRequested()) && LIKELY(Module))
+		{
+			return Module;
+		}
+		
 		const auto ModuleName = GetModuleName();
 		if (ModuleName.IsNone())
 		{
 			return nullptr;
 		}
-#if UE_SERVER
-		return nullptr;
-#else
+
 		FModuleManager& ModuleManager = FModuleManager::Get();
-		IWwiseResourceCookerModule* Result = ModuleManager.GetModulePtr<IWwiseResourceCookerModule>(ModuleName);
-		if (UNLIKELY(!Result))
+		Module = ModuleManager.GetModulePtr<IWwiseResourceCookerModule>(ModuleName);
+		if (UNLIKELY(!Module))
 		{
 			if (UNLIKELY(IsEngineExitRequested()))
 			{
-				UE_LOG(LogLoad, Verbose, TEXT("Skipping reloading missing WwiseResourceCooker module: Exiting."));
+				UE_LOG(LogLoad, Log, TEXT("Skipping reloading missing WwiseResourceCooker module: Exiting."));
 			}
 			else if (UNLIKELY(!IsInGameThread()))
 			{
@@ -79,15 +96,15 @@ public:
 			else
 			{
 				UE_LOG(LogLoad, Log, TEXT("Loading WwiseResourceCooker module: %s"), *ModuleName.GetPlainNameString());
-				Result = ModuleManager.LoadModulePtr<IWwiseResourceCookerModule>(ModuleName);
-				if (UNLIKELY(!Result))
+				Module = ModuleManager.LoadModulePtr<IWwiseResourceCookerModule>(ModuleName);
+				if (UNLIKELY(!Module))
 				{
 					UE_LOG(LogLoad, Fatal, TEXT("Could not load WwiseResourceCooker module: %s not found"), *ModuleName.GetPlainNameString());
 				}
 			}
 		}
 
-		return Result;
+		return Module;
 #endif
 	}
 

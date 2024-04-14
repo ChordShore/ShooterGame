@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 /*=============================================================================
@@ -37,6 +37,7 @@ Copyright (c) 2023 Audiokinetic Inc.
 
 #include "Wwise/Stats/AkAudio.h"
 #include "Wwise/WwiseSoundEngineUtils.h"
+#include "WwiseUnrealHelper.h"
 
 #if WITH_EDITORONLY_DATA
 #include "EditorViewportClient.h"
@@ -1887,14 +1888,14 @@ public:
 	FAkComponentCallbackManager* GetCallbackManager() { return CallbackManager; }
 	AKRESULT RegisterGameObject(AkGameObjectID GameObjectID, const FString& Name);
 
+	/** Determine whether the Wwise sound engine should be updated for the given world type */
+	static bool ShouldNotifySoundEngine(EWorldType::Type WorldType);
+
 	static void LoadAudioObjectsAfterInitialization(TWeakObjectPtr<UAkAudioType>&& InAudioType);
 	void LoadDelayedObjects();
 
 private:
 	bool EnsureInitialized();
-	
-	/** Determine whether the Wwise sound engine should be updated for the given world type */
-	static bool ShouldNotifySoundEngine(EWorldType::Type WorldType);
 
 	void* AllocatePermanentMemory( int32 Size, /*OUT*/ bool& AllocatedInPool );
 	

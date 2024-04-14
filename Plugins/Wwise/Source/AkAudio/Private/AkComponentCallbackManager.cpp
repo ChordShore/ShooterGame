@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "AkComponentCallbackManager.h"
@@ -24,6 +24,7 @@ Copyright (c) 2023 Audiokinetic Inc.
 #include "AkCallbackInfoPool.h"
 #include "AkComponent.h"
 #include "Wwise/WwiseExternalSourceManager.h"
+#include "Wwise/WwiseRetriggerableAsyncTask.h"
 #include "UObject/UObjectThreadContext.h"
 
 struct FAkComponentCallbackManager_Constants
@@ -79,11 +80,18 @@ void FAkBlueprintDelegateEventCallbackPackage::HandleAction(AkCallbackType in_eT
 		AkCallbackInfo* cbInfoCopy = AkCallbackTypeHelpers::CopyWwiseCallbackInfo(in_eType, in_pCallbackInfo);
 		EAkCallbackType BlueprintCallbackType = AkCallbackTypeHelpers::GetBlueprintCallbackTypeFromAkCallbackType(in_eType);
 		auto CachedBlueprintCallback = BlueprintCallback;
-		AsyncTask(ENamedThreads::GameThread, [cbInfoCopy, BlueprintCallbackType, CachedBlueprintCallback]
+		auto* Task = new FWwiseRetriggerableAsyncTask(ENamedThreads::GameThread, [cbInfoCopy, BlueprintCallbackType, CachedBlueprintCallback]
 		{
+			if (FUObjectThreadContext::Get().IsRoutingPostLoad)
+			{
+				UE_LOG(LogAkAudio, Verbose, TEXT("FAkBlueprintDelegateEventCallbackPackage::HandleAction: Delaying Blueprint execution because IsRoutingPostLoad."));
+				return EWwiseDeferredAsyncResult::KeepRunning;
+			}
+
 			if (!cbInfoCopy)
 			{
-				return;
+				UE_LOG(LogAkAudio, Log, TEXT("FAkBlueprintDelegateEventCallbackPackage::HandleAction: Could not get CallbackInfo structure, callback will be ignored."));
+				return EWwiseDeferredAsyncResult::Done;
 			}
 
 			ON_SCOPE_EXIT {
@@ -92,7 +100,8 @@ void FAkBlueprintDelegateEventCallbackPackage::HandleAction(AkCallbackType in_eT
 
 			if (!CachedBlueprintCallback.IsBound())
 			{
-				return;
+				UE_LOG(LogAkAudio, Log, TEXT("FAkBlueprintDelegateEventCallbackPackage::HandleAction: Blueprint delegate is not bound, it will be ignored."));
+				return EWwiseDeferredAsyncResult::Done;
 			}
 
 			UAkComponent* akComponent = (UAkComponent*)cbInfoCopy->gameObjID;
@@ -100,14 +109,10 @@ void FAkBlueprintDelegateEventCallbackPackage::HandleAction(AkCallbackType in_eT
 			if (cbInfoCopy->gameObjID != DUMMY_GAMEOBJ && !IsValid(akComponent))
 			{
 				UE_LOG(LogAkAudio, Log, TEXT("FAkBlueprintDelegateEventCallbackPackage::HandleAction: Could not get valid AkComponent, callback will be ignored."));
-				return;
+				return EWwiseDeferredAsyncResult::Done;
 			}
 
-			UAkCallbackInfo* BlueprintAkCallbackInfo = nullptr;
-			if (cbInfoCopy)
-			{
-				BlueprintAkCallbackInfo = AkCallbackTypeHelpers::GetBlueprintableCallbackInfo(BlueprintCallbackType, cbInfoCopy);
-			}
+			UAkCallbackInfo*  BlueprintAkCallbackInfo = AkCallbackTypeHelpers::GetBlueprintableCallbackInfo(BlueprintCallbackType, cbInfoCopy);
 			CachedBlueprintCallback.ExecuteIfBound(BlueprintCallbackType, BlueprintAkCallbackInfo);
 
 			if (auto AudioDevice = FAkAudioDevice::Get())
@@ -117,7 +122,10 @@ void FAkBlueprintDelegateEventCallbackPackage::HandleAction(AkCallbackType in_eT
 					CallbackInfoPool->Release(BlueprintAkCallbackInfo);
 				}
 			}
+
+			return EWwiseDeferredAsyncResult::Done;
 		});
+		Task->ScheduleTask();
 	}
 }
 

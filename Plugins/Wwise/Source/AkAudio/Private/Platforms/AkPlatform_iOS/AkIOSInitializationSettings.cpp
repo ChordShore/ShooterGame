@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Platforms/AkPlatform_iOS/AkIOSInitializationSettings.h"
@@ -32,8 +32,6 @@ UAkIOSInitializationSettings::UAkIOSInitializationSettings(const FObjectInitiali
 
 void UAkIOSInitializationSettings::FillInitializationStructure(FAkInitializationStructure& InitializationStructure) const
 {
-	InitializationStructure.SetupLLMAllocFunctions();
-
 	CommonSettings.FillInitializationStructure(InitializationStructure);
 	AudioSession.FillInitializationStructure(InitializationStructure);
 	CommunicationSettings.FillInitializationStructure(InitializationStructure);

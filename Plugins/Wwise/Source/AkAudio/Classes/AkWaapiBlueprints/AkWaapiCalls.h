@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 /*=============================================================================
@@ -35,7 +35,7 @@ struct AKAUDIO_API FAkWaapiSubscriptionId
 	GENERATED_BODY()
 	
 	FAkWaapiSubscriptionId() {}
-	FAkWaapiSubscriptionId(const uint64_t& SubscribId) : SubscriptionId(SubscribId){}
+	FAkWaapiSubscriptionId(const uint64_t& SubscribeId) : SubscriptionId(SubscribeId){}
 
 	mutable uint64 SubscriptionId = 0;
 };
@@ -79,7 +79,7 @@ public:
 	* @param WaapiUri		The	function that will be called when an event that we would be aware of happens.
 	* @param WaapiArgs		The arguments referenced to the in_uri function.
 	* @param WaapiOptions	Optional flag to get more information about the event happened.
-	* @return out_result	A JSON object that contains useful informations about the Call process to a specific event, gets an error infos in case the Call fails.
+	* @return out_result	A JSON object that contains useful information about the Call process to a specific event, gets an error infos in case the Call fails.
 	*/
 	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category = "Audiokinetic|WaapiCalls")
 	static FAKWaapiJsonObject CallWaapi(const FAkWaapiUri& WaapiUri, const FAKWaapiJsonObject& WaapiArgs, const FAKWaapiJsonObject& WaapiOptions);
@@ -92,7 +92,7 @@ public:
 	* @param in_callback		 A delegate to be executed during the subscription event.
 	* @param out_subscriptionId	 Gets the id of this subscription.
 	* @param out_result			 A boolean to ensure that the subscription was successfully done.
-	* @return					 A JSON object that contains useful informations about the subscription process to a specific event, gets an error infos in case the subscription failed. 
+	* @return					 A JSON object that contains useful information about the subscription process to a specific event, gets an error infos in case the subscription failed. 
 	*/
 	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category = "Audiokinetic|WaapiCalls")
 	static FAKWaapiJsonObject SubscribeToWaapi(const FAkWaapiUri& WaapiUri, const FAKWaapiJsonObject& WaapiOptions, const FOnEventCallback& CallBack, FAkWaapiSubscriptionId& SubscriptionId, bool& SubscriptionDone);
@@ -102,7 +102,7 @@ public:
 	*
 	* @param SubscriptionId	     Gets the id of the current subscription to the event from which we want to be unsubscribed.
 	* @param UnsubscriptionDone  A boolean to ensure that the unsubscription was successfully done.
-	* @return					 A JSON object that contains useful informations about the unsubscription process from a specific event, gets an error infos in case the unsubscription failed. 
+	* @return					 A JSON object that contains useful information about the unsubscription process from a specific event, gets an error infos in case the unsubscription failed. 
 	*/
 	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category = "Audiokinetic|WaapiCalls")
 	static FAKWaapiJsonObject Unsubscribe(const FAkWaapiSubscriptionId& SubscriptionId, bool& UnsubscriptionDone);

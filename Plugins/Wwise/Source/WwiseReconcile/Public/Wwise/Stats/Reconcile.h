@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #pragma once
@@ -20,3 +20,4 @@ Copyright (c) 2023 Audiokinetic Inc.
 #include "Logging/LogMacros.h"
 
 WWISERECONCILE_API DECLARE_LOG_CATEGORY_EXTERN(LogWwiseReconcile, Log, All);
+#define SCOPED_WWISERECONCILE_EVENT(Text) SCOPED_WWISE_NAMED_EVENT(TEXT("WwiseReconcile"), Text)

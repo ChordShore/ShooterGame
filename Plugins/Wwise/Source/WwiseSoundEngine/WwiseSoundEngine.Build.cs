@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 using System.IO;
@@ -25,11 +25,17 @@ public class WwiseSoundEngine : ModuleRules
 		WwiseSoundEngine_2022_1.Apply(this, Target, true);		// Latest version should be written with "latest" to true for logging purposes
 		WwiseSoundEngine_Null.Apply(this, Target);
 
+		PublicDependencyModuleNames.AddRange(
+			new string[]
+			{
+				"WwiseUtils"
+			}
+		);
+
 		PrivateDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"Core",
-				"WwiseUtils"
+				"Core"
 			}
 		);
 

@@ -209,7 +209,7 @@ namespace WwiseGTE
             mNumerator(numerator),
             mDenominator(denominator)
         {
-            LogAssert(mDenominator.mSign != 0, "Division by zero.");
+            GTE_LogAssert(mDenominator.mSign != 0, "Division by zero.");
             if (mDenominator.mSign < 0)
             {
                 mNumerator.mSign = -mNumerator.mSign;
@@ -230,7 +230,7 @@ namespace WwiseGTE
 
         BSRational(std::string const& number)
         {
-            LogAssert(number.size() > 0, "A number must be specified.");
+            GTE_LogAssert(number.size() > 0, "A number must be specified.");
 
             // Get the leading '+' or '-' if it exists.
             std::string fpNumber;
@@ -239,13 +239,13 @@ namespace WwiseGTE
             {
                 fpNumber = number.substr(1);
                 sign = +1;
-                LogAssert(fpNumber.size() > 1, "Invalid number format.");
+                GTE_LogAssert(fpNumber.size() > 1, "Invalid number format.");
             }
             else if (number[0] == '-')
             {
                 fpNumber = number.substr(1);
                 sign = -1;
-                LogAssert(fpNumber.size() > 1, "Invalid number format.");
+                GTE_LogAssert(fpNumber.size() > 1, "Invalid number format.");
             }
             else
             {
@@ -499,7 +499,7 @@ namespace WwiseGTE
 
         BSRational operator/(BSRational const& r) const
         {
-            LogAssert(r.mNumerator.mSign != 0, "Division by zero in BSRational::operator/.");
+            GTE_LogAssert(r.mNumerator.mSign != 0, "Division by zero in BSRational::operator/.");
 
             BSNumber<UInteger> numerator = mNumerator * r.mDenominator;
 
@@ -562,7 +562,7 @@ namespace WwiseGTE
         // is the fractional part "y" of the string "x.y".
         static BSRational ConvertToFraction(std::string const& number)
         {
-            LogAssert(number.find_first_not_of("0123456789") == std::string::npos, "Invalid number format.");
+            GTE_LogAssert(number.find_first_not_of("0123456789") == std::string::npos, "Invalid number format.");
             BSRational y(0), ten(10), pow10(10);
             for (size_t i = 0; i < number.size(); ++i)
             {
@@ -600,14 +600,14 @@ namespace WwiseGTE
     {
         if (precision <= 0)
         {
-            LogError("Precision must be positive.");
+            GTE_LogError("Precision must be positive.");
         }
 
         int64_t const maxSize = static_cast<int64_t>(UInteger::GetMaxSize());
         int64_t const excess = 32LL * maxSize - static_cast<int64_t>(precision);
         if (excess <= 0)
         {
-            LogError("The maximum precision has been exceeded.");
+            GTE_LogError("The maximum precision has been exceeded.");
         }
 
         if (input.GetSign() == 0)
@@ -714,7 +714,7 @@ namespace WwiseGTE
         {
             // Currently, no additional implementation-dependent modes
             // are supported for rounding.
-            LogError("Implementation-dependent rounding mode not supported.");
+            GTE_LogError("Implementation-dependent rounding mode not supported.");
         }
         // else roundingMode == FE_TOWARDZERO. Truncate the r bits, which
         // requires no additional work.

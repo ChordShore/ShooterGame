@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/WwiseFileState.h"
@@ -446,9 +446,6 @@ void FWwiseFileState::DecrementCountUnloadCallback(EWwiseFileStateOperationOrigi
 		return;
 	}
 
-	UE_LOG(LogWwiseFileHandler, Verbose, TEXT("FWwiseFileState::DecrementCountUnloadCallback %s %" PRIu32 ": Processing deferred Unload."),
-		GetManagingTypeName(), GetShortId());
-	
 	if (UNLIKELY(State == EState::WillReload))
 	{
 		UE_LOG(LogWwiseFileHandler, VeryVerbose, TEXT("FWwiseFileState::DecrementCountUnloadCallback %s %" PRIu32 ": Another user needs this to be kept loaded."),
@@ -465,7 +462,12 @@ void FWwiseFileState::DecrementCountUnloadCallback(EWwiseFileStateOperationOrigi
 	else
 	{
 		SetState(TEXT("FWwiseFileState::DecrementCountUnloadCallback"), EState::Loaded);
-		DecrementCountUnload(InOperationOrigin, InCurrentOpOrder, MoveTemp(InDeleteState), MoveTemp(InCallback));		// Call ourselves back
+		AsyncOpLater(WWISEFILEHANDLER_ASYNC_NAME("FWwiseFileState::DecrementCountUnloadCallback Deferred"), [this, InOperationOrigin, InCurrentOpOrder, InDeleteState = MoveTemp(InDeleteState), InCallback = MoveTemp(InCallback)]() mutable
+		{
+			UE_LOG(LogWwiseFileHandler, VeryVerbose, TEXT("FWwiseFileState::DecrementCountUnloadCallback %s %" PRIu32 ": Retrying deferred unload"),
+							GetManagingTypeName(), GetShortId());
+			DecrementCountUnload(InOperationOrigin, InCurrentOpOrder, MoveTemp(InDeleteState), MoveTemp(InCallback));		// Call ourselves back
+		});
 	}
 }
 
@@ -534,7 +536,12 @@ void FWwiseFileState::DecrementCountCloseCallback(EWwiseFileStateOperationOrigin
 	else
 	{
 		SetState(TEXT("FWwiseFileState::DecrementCountCloseCallback"), EState::Opened);
-		DecrementCountClose(InOperationOrigin, InCurrentOpOrder, MoveTemp(InDeleteState), MoveTemp(InCallback));		// Call ourselves back
+		AsyncOpLater(WWISEFILEHANDLER_ASYNC_NAME("FWwiseFileState::DecrementCountUnloadCallback Deferred"), [this, InOperationOrigin, InCurrentOpOrder, InDeleteState = MoveTemp(InDeleteState), InCallback = MoveTemp(InCallback)]() mutable
+		{
+			UE_LOG(LogWwiseFileHandler, VeryVerbose, TEXT("FWwiseFileState::DecrementCountCloseCallback %s %" PRIu32 ": Retrying deferred close"),
+							GetManagingTypeName(), GetShortId());
+			DecrementCountClose(InOperationOrigin, InCurrentOpOrder, MoveTemp(InDeleteState), MoveTemp(InCallback));		// Call ourselves back
+		});
 	}
 }
 

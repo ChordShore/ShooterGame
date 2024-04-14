@@ -141,7 +141,7 @@ namespace WwiseGTE
             }
             else
             {
-                LogError("The number of bits must be nonnegative.");
+                GTE_LogError("The number of bits must be nonnegative.");
             }
 
 #if defined(GTE_COLLECT_UINTEGERAP32_STATISTICS)

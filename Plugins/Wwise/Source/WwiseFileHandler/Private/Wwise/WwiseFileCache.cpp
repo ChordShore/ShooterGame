@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/WwiseFileCache.h"
@@ -84,25 +84,34 @@ FWwiseFileCacheHandle::~FWwiseFileCacheHandle()
 
 	const auto* FileHandleToDestroy = FileHandle; FileHandle = nullptr;
 
-	if (UNLIKELY(RequestsInFlight.Load() > 0))
+	const auto NumRequests = RequestsInFlight.load(std::memory_order_seq_cst);
+	if (LIKELY(NumRequests == 0))
 	{
-		UE_LOG(LogWwiseFileHandler, Verbose, TEXT("FWwiseFileCacheHandle::~FWwiseFileCacheHandle (%p): Closing %s with %" PRIi32 " operations left to process."), this, *Pathname, RequestsInFlight.Load());
-		auto* CanDestroyEvent = FPlatformProcess::GetSynchEventFromPool(false);
-		CanDestroy.Store(CanDestroyEvent, EMemoryOrder::SequentiallyConsistent);
-		while (RequestsInFlight.Load(EMemoryOrder::SequentiallyConsistent) > 0)
+		UE_LOG(LogWwiseFileHandler, VeryVerbose, TEXT("FWwiseFileCacheHandle::~FWwiseFileCacheHandle (%p): Closing %s."), this, *Pathname);
+		delete FileHandleToDestroy;
+		DEC_DWORD_STAT(STAT_WwiseFileHandlerOpenedStreams);
+	}
+	else
+	{
+		UE_CLOG(NumRequests > 0, LogWwiseFileHandler, Log, TEXT("FWwiseFileCacheHandle::~FWwiseFileCacheHandle (%p): Closing %s with %" PRIi32 " operation(s) left to process! Use CloseAndDelete!"), this, *Pathname, NumRequests);
+		UE_CLOG(NumRequests < 0, LogWwiseFileHandler, Log, TEXT("FWwiseFileCacheHandle::~FWwiseFileCacheHandle (%p): Closing %s and leaking."), this, *Pathname);
+	}
+}
+
+void FWwiseFileCacheHandle::CloseAndDelete()
+{
+	const auto FileCache = FWwiseFileCache::Get();
+	if (LIKELY(FileCache))
+	{
+		FileCache->DeleteRequestQueue.AsyncAlways(WWISEFILEHANDLER_ASYNC_NAME("FWwiseFileCacheHandle::DeleteRequest"), [this]() mutable
 		{
-			CanDestroyEvent->Wait(FTimespan::FromMilliseconds(1));
-		}
-		CanDestroy.Store(nullptr);
-		LaunchWwiseTask(WWISEFILEHANDLER_ASYNC_NAME("FWwiseFileCacheHandle::~FWwiseFileCacheHandle returnEventToPool"), [CanDestroyEvent]
-		{
-			FPlatformProcess::ReturnSynchEventToPool(CanDestroyEvent);
+			OnCloseAndDelete();
 		});
 	}
-
-	UE_LOG(LogWwiseFileHandler, Verbose, TEXT("FWwiseFileCacheHandle::~FWwiseFileCacheHandle (%p): Closing %s."), this, *Pathname);
-	delete FileHandleToDestroy;
-	DEC_DWORD_STAT(STAT_WwiseFileHandlerOpenedStreams);
+	else
+	{
+		UE_LOG(LogWwiseFileHandler, Log, TEXT("FWwiseFileCacheHandle::CloseAndDelete (%p): Closing Request for %s after FileCache module is destroyed. Will leak."), this, *Pathname);
+	}
 }
 
 void FWwiseFileCacheHandle::Open(FWwiseFileOperationDone&& OnDone)
@@ -130,7 +139,7 @@ void FWwiseFileCacheHandle::Open(FWwiseFileOperationDone&& OnDone)
 	{
 		check(!FileHandle);
 
-		UE_LOG(LogWwiseFileHandler, Verbose, TEXT("FWwiseFileCacheHandle::Open (%p): Opening %s."), this, *Pathname);
+		UE_LOG(LogWwiseFileHandler, VeryVerbose, TEXT("FWwiseFileCacheHandle::Open (%p): Opening %s."), this, *Pathname);
 		IAsyncReadFileHandle* CurrentFileHandle;
 		ASYNC_INC_DWORD_STAT(STAT_WwiseFileHandlerOpenedStreams);
 		{
@@ -186,43 +195,66 @@ void FWwiseFileCacheHandle::CallDone(bool bResult, FWwiseFileOperationDone&& OnD
 	OnDone(bResult);
 }
 
-void FWwiseFileCacheHandle::RemoveRequestInFlight()
-{
-	auto* CanDestroyEvent = CanDestroy.Load(EMemoryOrder::SequentiallyConsistent);
-	if (CanDestroyEvent)
-	{
-		CanDestroyEvent->Trigger();
-	}
-	--RequestsInFlight;
-}
-
 void FWwiseFileCacheHandle::DeleteRequest(IAsyncReadRequest* Request)
 {
-	if (!Request || Request->PollCompletion())
+	const auto FileCache = FWwiseFileCache::Get();
+	if (LIKELY(FileCache))
 	{
-		UE_LOG(LogWwiseFileHandler, VeryVerbose, TEXT("FWwiseFileCacheHandle::DeleteRequest (%p req:%p) [%" PRIi32 "]: Deleting request."), this, Request, FPlatformTLS::GetCurrentThreadId());
-		delete Request;
-		RemoveRequestInFlight();
+		FileCache->DeleteRequestQueue.AsyncAlways(WWISEFILEHANDLER_ASYNC_NAME("FWwiseFileCacheHandle::DeleteRequest"), [this, Request]() mutable
+		{
+			OnDeleteRequest(Request);
+		});
 	}
 	else
 	{
-		const auto FileCache = FWwiseFileCache::Get();
-		if (LIKELY(FileCache))
+		UE_LOG(LogWwiseFileHandler, Log, TEXT("FWwiseFileCacheHandle::DeleteRequest (%p): Deleting Request for %s after FileCache module is destroyed. Will leak."), this, *Pathname);
+		if (--RequestsInFlight == 0)
 		{
-			FileCache->DeleteRequestQueue.AsyncAlways(WWISEFILEHANDLER_ASYNC_NAME("FWwiseFileCacheHandle::DeleteRequest"), [this, Request]() mutable
-			{
-				DeleteRequest(Request);
-			});
-		}
-		else
-		{
-			LaunchWwiseTask(WWISEFILEHANDLER_ASYNC_NAME("FWwiseFileCacheHandle::DeleteRequest PostClose"), [this, Request]() mutable
-			{
-				DeleteRequest(Request);
-			});
+			RequestsInFlight = -1;
 		}
 	}
-};
+}
+
+void FWwiseFileCacheHandle::OnDeleteRequest(IAsyncReadRequest* Request)
+{
+	if (Request && !Request->WaitCompletion(1))
+	{
+		return DeleteRequest(Request);
+	}
+
+	UE_LOG(LogWwiseFileHandler, VeryVerbose, TEXT("FWwiseFileCacheHandle::DeleteRequest (%p req:%p) [%" PRIi32 "]: Deleting request."), this, Request, FPlatformTLS::GetCurrentThreadId());
+	delete Request;
+	RemoveRequestInFlight();
+}
+
+void FWwiseFileCacheHandle::RemoveRequestInFlight()
+{
+	const auto FileCache = FWwiseFileCache::Get();
+	if (LIKELY(FileCache))
+	{
+		FileCache->DeleteRequestQueue.AsyncAlways(WWISEFILEHANDLER_ASYNC_NAME("FWwiseFileCacheHandle::RemoveRequestInFlight"), [this]() mutable
+		{
+			--RequestsInFlight;
+		});
+	}
+	else
+	{
+		UE_LOG(LogWwiseFileHandler, Log, TEXT("FWwiseFileCacheHandle::RemoveRequestInFlight (%p): Removing Request for %s after FileCache module is destroyed. Will leak."), this, *Pathname);
+		if (--RequestsInFlight == 0)
+		{
+			RequestsInFlight = -1;
+		}
+	}
+}
+
+void FWwiseFileCacheHandle::OnCloseAndDelete()
+{
+	if (RequestsInFlight > 0)
+	{
+		return CloseAndDelete();
+	}
+	delete this;
+}
 
 void FWwiseFileCacheHandle::ReadData(uint8* OutBuffer, int64 Offset, int64 BytesToRead,
 	EAsyncIOPriorityAndFlags Priority, FWwiseFileOperationDone&& OnDone)

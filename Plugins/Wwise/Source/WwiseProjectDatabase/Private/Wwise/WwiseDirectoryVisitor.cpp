@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "Wwise/WwiseDirectoryVisitor.h"
@@ -151,7 +151,18 @@ bool FWwiseDirectoryVisitor::Visit(const TCHAR* FilenameOrDirectory, bool bIsDir
 		{
 			for (auto& Platform : Platforms)
 			{
-				const auto PlatformPath = Path / Platform.Path.ToString();
+				const FString PlatformPath = Platform.Path.ToString();
+
+				FString RequestedPlatformPath = ""; 
+
+				if (FPaths::IsRelative(PlatformPath))
+				{
+					RequestedPlatformPath = Path / Platform.Path.ToString();
+				}
+				else
+				{
+					RequestedPlatformPath = PlatformPath;
+				}
 
 				if (!PlatformName->ToString().Equals(Platform.Name.ToString(), ESearchCase::IgnoreCase))
 				{
@@ -169,15 +180,15 @@ bool FWwiseDirectoryVisitor::Visit(const TCHAR* FilenameOrDirectory, bool bIsDir
 				FWwisePlatformId CurrentPlatform;
 				CurrentPlatform.PlatformGuid = Platform.GUID;
 				CurrentPlatform.PlatformName = Platform.Name;
-				FString RelativePlatformPath(PlatformPath);
+				FString RelativePlatformPath(RequestedPlatformPath);
 				FPaths::MakePathRelativeTo(RelativePlatformPath, *WwiseUnrealHelper::GetSoundBankDirectory());
 				CurrentPlatform.PathRelativeToGeneratedSoundBanks = FName(RelativePlatformPath);
 				FWwiseSharedPlatformId PlatformRef;
 				PlatformRef.Platform = MakeShared<FWwisePlatformId, ESPMode::ThreadSafe>(CurrentPlatform);
 
-				Futures.Add(Async(EAsyncExecution::TaskGraph, [this, PlatformRef, PlatformPath] {
+				Futures.Add(Async(EAsyncExecution::TaskGraph, [this, PlatformRef, RequestedPlatformPath] {
 					auto* RootVisitor = new FPlatformRootDirectoryVisitor(PlatformRef, FileInterface);
-					if (!FileInterface.IterateDirectory(*PlatformPath, *RootVisitor) ||
+					if (!FileInterface.IterateDirectory(*RequestedPlatformPath, *RootVisitor) ||
 						!RootVisitor->StartJobIfValid())
 					{
 						UE_LOG(LogWwiseProjectDatabase, Warning, TEXT("Could not find generated platform %s at: %s"), *PlatformRef.GetPlatformName().ToString(), *PlatformRef.Platform->PathRelativeToGeneratedSoundBanks.ToString());

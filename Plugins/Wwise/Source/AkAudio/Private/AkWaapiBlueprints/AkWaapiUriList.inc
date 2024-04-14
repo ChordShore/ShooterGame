@@ -1,23 +1,8 @@
-/*******************************************************************************
-The content of this file includes portions of the proprietary AUDIOKINETIC Wwise
-Technology released in source code form as part of the game integration package.
-The content of this file may not be used without valid licenses to the
-AUDIOKINETIC Wwise Technology.
-Note that the use of the game engine is subject to the Unreal(R) Engine End User
-License Agreement at https://www.unrealengine.com/en-US/eula/unreal
- 
-License Usage
- 
-Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
-this file in accordance with the end user license agreement provided with the
-software or, alternatively, in accordance with the terms contained
-in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
-*******************************************************************************/
-
 static const FString FullUriList[] = {
     // Retrieve global Wwise information.
     TEXT("ak.wwise.core.getInfo"),
+    // Retrieve information about the current project opened, including platforms, languages and project directories.
+    TEXT("ak.wwise.core.getProjectInfo"),
     // Bring Wwise main window to foreground. Refer to SetForegroundWindow and AllowSetForegroundWindow on MSDN for more information on the restrictions. Refer to ak.wwise.core.getInfo to obtain the Wwise process ID for AllowSetForegroundWindow.
     TEXT("ak.wwise.ui.bringToForeground"),
     // Asynchronously post an Event to the sound engine (by event ID). See <tt>AK::SoundEngine::PostEvent</tt>.
@@ -42,8 +27,12 @@ static const FString FullUriList[] = {
     TEXT("ak.soundengine.postTrigger"),
     // Sets the State of a Switch Group. See <tt>AK::SoundEngine::SetSwitch</tt>.
     TEXT("ak.soundengine.setSwitch"),
+    // Gets the current state of a Switch Group for a given Game Object.
+    TEXT("ak.soundengine.getSwitch"),
     // Sets the State of a State Group. See <tt>AK::SoundEngine::SetState</tt>.
     TEXT("ak.soundengine.setState"),
+    // Gets the current state of a State Group. When using setState just prior to getState, allow a brief delay (no more than 10ms) for the information to update in the sound engine.
+    TEXT("ak.soundengine.getState"),
     // Resets the value of a real-time parameter control to its default value, as specified in the Wwise project. See <tt>AK::SoundEngine::ResetRTPCValue</tt>.
     TEXT("ak.soundengine.resetRTPCValue"),
     // Sets the value of a real-time parameter control. See <tt>AK::SoundEngine::SetRTPCValue</tt>.
@@ -80,7 +69,7 @@ static const FString FullUriList[] = {
     TEXT("ak.wwise.core.object.setName"),
     // Sets an object's reference value. Refer to \ref wobjects_index for more information on the references available on each object type.
     TEXT("ak.wwise.core.object.setReference"),
-    // Sets a property value of an object for a specific platform. Refer to \ref wobjects_index for more information on the properties available on each object type. Refer to \ref ak_wwise_core_object_setreference to set a reference to an object.
+    // Sets a property value of an object for a specific platform. Refer to \ref wobjects_index for more information on the properties available on each object type. Refer to \ref ak_wwise_core_object_setreference to set a reference to an object. Refer to \ref ak_wwise_core_object_get to obtain the value of a property for an object.
     TEXT("ak.wwise.core.object.setProperty"),
     // Sets the randomizer values of a property of an object for a specific platform. Refer to \ref wobjects_index for more information on the properties available on each object type.
     TEXT("ak.wwise.core.object.setRandomizer"),
@@ -104,14 +93,20 @@ static const FString FullUriList[] = {
     TEXT("ak.wwise.core.switchContainer.getAssignments"),
     // Creates an object of type 'type', as a child of 'parent'. Refer to \ref waapi_import for more information about creating objects. Also refer to \ref ak_wwise_core_audio_import to import audio files to Wwise.
     TEXT("ak.wwise.core.object.create"),
+    // Allows for batch processing of the following operations: Object creation in a child hierarchy, Object creation in a list, Setting name, notes, properties and references. Refer to \ref waapi_import for more information about creating objects. Also refer to \ref ak_wwise_core_audio_import to import audio files to Wwise.
+    TEXT("ak.wwise.core.object.set"),
     // Moves an object to the given parent. Returns the moved object.
     TEXT("ak.wwise.core.object.move"),
     // Copies an object to the given parent.
     TEXT("ak.wwise.core.object.copy"),
     // Deletes the specified object.
     TEXT("ak.wwise.core.object.delete"),
-    // Performs a query and returns specified data for each object in query result. Refer to \ref waapi_query for more information.
+    // Performs a query and returns the data, as specified in the options, for each object in the query result. The query can specify either a 'waql' argument or a 'from' argument with an optional 'transform' argument. Refer to \ref waql_introduction or \ref waapi_query for more information. Refer to \ref waapi_query_return to learn about options.
     TEXT("ak.wwise.core.object.get"),
+    // Compares properties and lists of the source object with those in the target object.
+    TEXT("ak.wwise.core.object.diff"),
+    // Pastes properties, references and lists from one object to any number of target objects. Only those properties, references and lists which differ between source and target are pasted. Refer to \ref wobjects_index for more information on the properties, references and lists available on each object type.
+    TEXT("ak.wwise.core.object.pasteProperties"),
     // Creates Wwise objects and imports audio files. This function uses the same importation processor available through the Tab Delimited import in the Audio File Importer. The function returns an array of all objects created, replaced or re-used. Use the options to specify how the objects are returned. For more information, refer to \ref waapi_import.
     TEXT("ak.wwise.core.audio.import"),
     // Scripted object creation and audio file import from a tab-delimited file.
@@ -124,21 +119,23 @@ static const FString FullUriList[] = {
     TEXT("ak.wwise.core.remote.getAvailableConsoles"),
     // Retrieves the connection status.
     TEXT("ak.wwise.core.remote.getConnectionStatus"),
-    // Begins an undo group. Make sure to call \ref ak_wwise_core_undo_endgroup exactly once for every ak.wwise.core.beginUndoGroup call you make. Calls to ak.wwise.core.undo.beginGroup can be nested.
+    // Begins an undo group. Make sure to call \ref ak_wwise_core_undo_endgroup exactly once for every ak.wwise.core.beginUndoGroup call you make. Calls to ak.wwise.core.undo.beginGroup can be nested. When closing a WAMP session, a check is made to ensure that all undo groups are closed. If not, a cancelGroup is called for each of the groups still open.
     TEXT("ak.wwise.core.undo.beginGroup"),
     // Cancels the last undo group. Please note that this does not revert the operations made since the last \ref ak_wwise_core_undo_begingroup call.
     TEXT("ak.wwise.core.undo.cancelGroup"),
     // Ends the last undo group.
     TEXT("ak.wwise.core.undo.endGroup"),
+    // Undoes the last operation in the Undo stack.
+    TEXT("ak.wwise.core.undo.undo"),
     // Retrieves the list of all object types registered in Wwise's object model. This function returns the equivalent of \ref wobjects_index .
     // \deprecated in favor of ak.wwise.core.object.getTypes
     TEXT("ak.wwise.core.plugin.getList"),
     // Retrieves the list of all object types registered in Wwise's object model. This function returns the equivalent of \ref wobjects_index .
     TEXT("ak.wwise.core.object.getTypes"),
-    // Retrieves information about an object property.
+    // Retrieves information about an object property. Note that this function does not return the value of a property. To retrieve the value of a property, refer to \ref ak_wwise_core_object_get and \ref waapi_query_return.
     // \deprecated in favor of ak.wwise.core.object.getPropertyInfo
     TEXT("ak.wwise.core.plugin.getProperty"),
-    // Retrieves information about an object property.
+    // Retrieves information about an object property. Note that this function does not return the value of a property. To retrieve the value of a property, refer to \ref ak_wwise_core_object_get and \ref waapi_query_return.
     TEXT("ak.wwise.core.object.getPropertyInfo"),
     // Retrieves the list of property and reference names for an object.
     // \deprecated in favor of ak.wwise.core.object.getPropertyAndReferenceNames
@@ -164,10 +161,18 @@ static const FString FullUriList[] = {
     TEXT("ak.wwise.core.soundbank.getInclusions"),
     // Modifies a SoundBank's inclusion list. The 'operation' argument determines how the 'inclusions' argument modifies the SoundBank's inclusion list; 'inclusions' may be added to / removed from / replace the SoundBank's inclusion list.
     TEXT("ak.wwise.core.soundbank.setInclusions"),
-    // Generate a list of SoundBank in memory without writing them to disk, subscribe to ak.wwise.core.soundbank.generated to get SoundBank structure info and the bank data as base64.
+    // Generate a list of SoundBanks with the import definition specified in the WAAPI request. If you do not write the SoundBanks to disk, subscribe to \ref ak_wwise_core_soundbank_generated to receive SoundBank structure info and the bank data as base64. Note: This is a synchronous operation.
     TEXT("ak.wwise.core.soundbank.generate"),
+    // Imports SoundBank definitions from the specified file. Multiple files can be specified. See the WAAPI log for status messages.
+    TEXT("ak.wwise.core.soundbank.processDefinitionFiles"),
+    // Converts the external sources files for the project as detailed in the wsources file, and places them into either the default folder, or the folder specified by the output argument. External Sources are a special type of source that you can put in a Sound object in Wwise. It indicates that the real sound data will be provided at run time. While External Source conversion is also triggered by SoundBank generation, this operation can be used to process sources not contained in the Wwise Project. Please refer to Wwise SDK help page "Integrating External Sources".
+    TEXT("ak.wwise.core.soundbank.convertExternalSources"),
+    // Sets which version of the source is being used for the specified sound. Use \ref ak_wwise_core_object_get with the 'activeSource' return option to get the active source of a sound.
+    TEXT("ak.wwise.core.sound.setActiveSource"),
     // Migrate and save the project.
     TEXT("ak.wwise.cli.migrate"),
+    // Load the project and do nothing else. This is useful to see the log for verification purposes without actually migrating and saving.
+    TEXT("ak.wwise.cli.verify"),
     // Imports a tab-delimited file to create and modify different object hierarchies. The project is automatically migrated (if required). It is also automatically saved following the import.
     TEXT("ak.wwise.cli.tabDelimitedImport"),
     // Starts a command-line Wwise Authoring API server, to which client applications, using the Wwise Authoring API, can connect.
@@ -178,9 +183,9 @@ static const FString FullUriList[] = {
     TEXT("ak.wwise.cli.dumpObjects"),
     // Adds a new platform to a project. The platform must not already exist.
     TEXT("ak.wwise.cli.addNewPlatform"),
-    // External Source conversion. While External Source conversion is also triggered by SoundBank generation, this operation can be used to process sources not contained in the Wwise Project.
+    // External Sources conversion. Converts the external sources files for the specified project. Optionally, additional WSOURCES can be specified. External Sources are a special type of source that you can put in a Sound object in Wwise. It indicates that the real sound data will be provided at run time. While External Source conversion is also triggered by SoundBank generation, this operation can be used to process sources not contained in the Wwise Project. Please refer to \ref integrating_external_sources.
     TEXT("ak.wwise.cli.convertExternalSource"),
-    // SoundBank generation. SoundBank generation is performed according to the settings stored in the project. Custom user settings are ignored when SoundBank generation is launched from the command line. However, some of these settings can be overridden from the command line.
+    // SoundBank generation. SoundBank generation is performed according to the settings stored in the project. User SoundBanks Settings are normally ignored when SoundBank generation is launched from the command line. However, when using the Source Control for generated SoundBanks, the User Project Settings will be loaded for the Source Control settings. Also, some of these settings can be overridden from the command line.
     TEXT("ak.wwise.cli.generateSoundbank"),
     // Moves the project's media IDs from its work units (.wwu) to a single file, <project-name>.mediaid.  This command will force a save of all the project's work units.
     TEXT("ak.wwise.cli.moveMediaIdsToSingleFile"),
@@ -188,10 +193,12 @@ static const FString FullUriList[] = {
     TEXT("ak.wwise.cli.moveMediaIdsToWorkUnits"),
     // Loads the project and updates the contents of <project-name>.mediaid, if it exists.
     TEXT("ak.wwise.cli.updateMediaIdsInSingleFile"),
-    // Retrieves the latest log for a specific channel. Refer to \ref ak_wwise_core_log_itemadded to be notified when a item is added to the log.
+    // Retrieves the latest log for a specific channel. Refer to \ref ak_wwise_core_log_itemadded to be notified when an item is added to the log. The log is empty when used in WwiseConsole.
     TEXT("ak.wwise.core.log.get"),
     // Creates a transport object for the given Wwise object. The return transport object can be used to play, stop, pause and resume the Wwise object via the other transport functions.
     TEXT("ak.wwise.core.transport.create"),
+    // Prepare the object and its dependencies for playback. Use this function before calling PostEventSync or PostMIDIOnEventSync from IAkGlobalPluginContext.
+    TEXT("ak.wwise.core.transport.prepare"),
     // Destroys the given transport object.
     TEXT("ak.wwise.core.transport.destroy"),
     // Gets the state of the given transport object.
@@ -208,6 +215,10 @@ static const FString FullUriList[] = {
     TEXT("ak.wwise.ui.commands.register"),
     // Unregisters an array of add-on UI commands.
     TEXT("ak.wwise.ui.commands.unregister"),
+    // Retrieves the Audio Objects at a specific profiler capture time.
+    TEXT("ak.wwise.core.profiler.getAudioObjects"),
+    // Retrieves the game objects at a specific profiler capture time.
+    TEXT("ak.wwise.core.profiler.getGameObjects"),
     // Retrieves the voices at a specific profiler capture time.
     TEXT("ak.wwise.core.profiler.getVoices"),
     // Retrieves active RTPCs at a specific profiler capture time.
@@ -216,6 +227,8 @@ static const FString FullUriList[] = {
     TEXT("ak.wwise.core.profiler.getBusses"),
     // Retrieves all parameters affecting voice volume, highpass and lowpass for a voice path, resolved from pipeline IDs.
     TEXT("ak.wwise.core.profiler.getVoiceContributions"),
+    // Specifies the type of data you want to capture. Overrides the user's profiler settings.
+    TEXT("ak.wwise.core.profiler.enableProfilerData"),
     // Returns the current time of the specified profiler cursor, in milliseconds.
     TEXT("ak.wwise.core.profiler.getCursorTime"),
     // Starts the profiler capture and returns the time at the beginning of the capture, in milliseconds.
@@ -252,9 +265,9 @@ static const FString FullUriList[] = {
     TEXT("ak.wwise.core.object.attenuationCurveLinkChanged"),
     // Sent when the watched property of an object changes.
     TEXT("ak.wwise.core.object.propertyChanged"),
-    // Sent when a single SoundBank is generated. This could be sent multiple times during SoundBank generation, for every SoundBank generated and for every platform. To generate SoundBanks, refer to \ref ak_wwise_ui_commands_execute with one of the SoundBank generation commands. Refer to \ref globalcommandsids for the list of commands.
+    // Sent when a single SoundBank is generated. This could be sent multiple times during SoundBank generation, for every SoundBank generated and for every platform. To generate SoundBanks, refer to \ref ak_wwise_core_soundbank_generate or \ref ak_wwise_ui_commands_execute with one of the SoundBank generation commands. Refer to \ref globalcommandsids for the list of commands.
     TEXT("ak.wwise.core.soundbank.generated"),
-    // Sent when all soundbanks are generated.
+    // Sent when all SoundBanks are generated. Note: This notification is only sent when SoundBanks have been generated, it is not a reliable way to determine when \ref ak_wwise_core_soundbank_generate has completed.
     TEXT("ak.wwise.core.soundbank.generationDone"),
     // Sent when an item is added to the log. This could be used to retrieve items added to the SoundBank generation log. To retrieve the complete log, refer to \ref ak_wwise_core_log_get.
     TEXT("ak.wwise.core.log.itemAdded"),
@@ -274,5 +287,17 @@ static const FString FullUriList[] = {
     TEXT("ak.wwise.debug.assertFailed"),
     // Sent when a command is executed. The objects for which the command is executed are sent in the publication.
     TEXT("ak.wwise.ui.commands.executed"),
+    // Sent when a new entry is added to the capture log. Note that all entries are being sent. No filtering is applied as opposed to the Capture Log view.
+    TEXT("ak.wwise.core.profiler.captureLog.itemAdded"),
+    // Sent when a game object has been registered.
+    TEXT("ak.wwise.core.profiler.gameObjectRegistered"),
+    // Sent when a game object has been unregistered.
+    TEXT("ak.wwise.core.profiler.gameObjectUnregistered"),
+    // Sent when the game objects have been reset, such as closing a connection to a game while profiling.
+    TEXT("ak.wwise.core.profiler.gameObjectReset"),
+    // Sent when a state group state has been changed. This subscription does not require the profiler capture log to be started.
+    TEXT("ak.wwise.core.profiler.stateChanged"),
+    // Sent when a switch group state has been changed. This function does not require the profiler capture log to be started.
+    TEXT("ak.wwise.core.profiler.switchChanged"),
 };
 enum { FullUriListSize = sizeof(FullUriList) / sizeof(*FullUriList) };

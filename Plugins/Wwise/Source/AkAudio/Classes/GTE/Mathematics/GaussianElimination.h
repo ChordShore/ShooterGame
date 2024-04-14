@@ -38,7 +38,7 @@ namespace WwiseGTE
                 || ((C != nullptr) != (Y != nullptr))
                 || (C != nullptr && numCols < 1))
             {
-                LogError("Invalid input.");
+                GTE_LogError("Invalid input.");
             }
 
             int numElements = numRows * numRows;

@@ -21,7 +21,7 @@ under the Apache License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
 OR CONDITIONS OF ANY KIND, either express or implied. See the Apache License for
 the specific language governing permissions and limitations under the License.
 
-  Copyright (c) 2023 Audiokinetic Inc.
+  Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 /// \file
@@ -135,6 +135,20 @@ typedef void ( *AkMemFreeVM ) (
 	size_t release
 	);
 
+enum AkSpanCount
+{
+	// Span count attempts to be as low as possible. Offers lowest memory usage, but reduces CPU performance due to increased calls to pfAllocVM and other memory allocation hooks.
+	AkSpanCount_Small = 0,
+
+	// Span count attempts to match 512KiB mappings. Offers moderate balance between memory and CPU usage.
+	AkSpanCount_Medium,
+
+	// Span count attempts to match 2MiB, or AK_VM_HUGE_PAGE_SIZE, mappings. Offers best overall CPU performance due to use of 2MiB page mappings, but increased memory usage.
+	AkSpanCount_Huge,
+
+	AkSpanCount_END,
+};
+
 /// Initialization settings for the default implementation of the Memory Manager. For more details, see \ref memorymanager_init.
 /// \sa AK::MemoryMgr
 struct AkMemSettings
@@ -182,6 +196,8 @@ struct AkMemSettings
 
 	// Moved to end-of-struct to maintain stability across 2022.1 modules.
 	AkMemTrimForThread				pfTrimForThread;				///< (Optional) Thread-specific allocator "trimming" hook.
+	AkSpanCount						uVMSpanCount;					///< Virtual memory span count for each map operation in rpmalloc. Defaults to AkSpanCount_Huge. For more information, refer to \ref goingfurther_optimizingmempools_spancount.
+	AkSpanCount						uDeviceSpanCount;				///< Device memory span count for each map operation in rpmalloc. Defaults to AkSpanCount_Huge. For more information, refer to \ref goingfurther_optimizingmempools_spancount.
 };
 //@}
 

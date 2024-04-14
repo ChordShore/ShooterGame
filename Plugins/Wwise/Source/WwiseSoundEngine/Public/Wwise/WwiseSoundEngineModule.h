@@ -12,12 +12,15 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #pragma once
 
 #include "Wwise/WwiseSoundEngineVersionModule.h"
+
+#include "Misc/CommandLine.h"
+#include "Misc/ConfigCacheIni.h"
 #include "Modules/ModuleManager.h"
 
 class FWwiseGlobalCallbacks;
@@ -38,39 +41,76 @@ public:
 
 	static WWISESOUNDENGINE_API IWwiseSoundEngineVersionModule* VersionInterface;
 
+	static FName GetModuleName()
+	{
+		static const FName ModuleName = GetModuleNameFromConfig();
+		return ModuleName;
+	}
+
 	/**
-	 * Checks to see if this module and the appropriate Sound Engine API are loaded and ready.
+	 * Checks to see if this module is loaded and ready.
 	 *
 	 * @return True if the module is loaded and ready to use
 	 */
 	static bool IsAvailable()
 	{
-		return FModuleManager::Get().IsModuleLoaded(TEXT("WwiseSoundEngine"));
+		static bool bModuleAvailable = false;
+		if (LIKELY(!IsEngineExitRequested()) && LIKELY(bModuleAvailable))
+		{
+			return true;
+		}
+		bModuleAvailable = FModuleManager::Get().IsModuleLoaded(GetModuleName());
+		return bModuleAvailable;
 	}
 
 	static void ForceLoadModule()
 	{
-		FModuleManager& ModuleManager = FModuleManager::Get();
-		if (!IsAvailable())
+		static bool bModuleLoadProcessed = false;
+		if (LIKELY(bModuleLoadProcessed))
 		{
-			if (IsEngineExitRequested())
+			return;
+		}
+
+		const auto ModuleName = GetModuleName();
+		if (ModuleName.IsNone())
+		{
+			bModuleLoadProcessed = true;
+			return;
+		}
+
+		if (UNLIKELY(IsEngineExitRequested()))
+		{
+			UE_LOG(LogLoad, Log, TEXT("Skipping reloading missing WwiseSoundEngine module: Exiting."));
+		}
+		else if (UNLIKELY(!IsInGameThread()))
+		{
+			UE_LOG(LogLoad, Warning, TEXT("Skipping loading missing WwiseSoundEngine module: Not in game thread"));
+		}
+		else
+		{
+			FModuleManager& ModuleManager = FModuleManager::Get();
+			UE_LOG(LogLoad, Log, TEXT("Loading WwiseSoundEngine module: %s"), *ModuleName.GetPlainNameString());
+			const auto* Module = ModuleManager.LoadModulePtr<IWwiseSoundEngineModule>(ModuleName);
+			bModuleLoadProcessed = true;
+			if (UNLIKELY(!Module))
 			{
-				UE_LOG(LogLoad, Verbose, TEXT("Skipping reloading missing WwiseSoundEngine: Exiting."));
-			}
-			else if (!IsInGameThread())
-			{
-				UE_LOG(LogLoad, Warning, TEXT("Skipping loading missing WwiseSoundEngine: Not in game thread"));
-			}
-			else
-			{
-				ModuleManager.LoadModule("WwiseSoundEngine");
+				UE_LOG(LogLoad, Fatal, TEXT("Could not load WwiseSoundEngine module: %s not found"), *ModuleName.GetPlainNameString());
 			}
 		}
+	}
+
+private:
+	static inline FName GetModuleNameFromConfig()
+	{
+		FString ModuleName = TEXT("WwiseSoundEngine");
+		GConfig->GetString(TEXT("Audio"), TEXT("WwiseSoundEngineModuleName"), ModuleName, GEngineIni);
+		return FName(ModuleName);
 	}
 };
 
 class WWISESOUNDENGINE_API FWwiseSoundEngineModule : public IWwiseSoundEngineModule
 {
+public:
 	void StartupModule() override;
 	void ShutdownModule() override;
 	static void DeleteInterface();

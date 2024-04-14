@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #pragma once
@@ -93,7 +93,7 @@ struct WWISERESOURCELOADER_API FWwiseSwitchContainerLeafGroupValueUsageCount
 	/**
 	 * @brief SwitchContainer Leaf this structure represents.
 	*/
-	const FWwiseSwitchContainerLeafCookedData Key;
+	const FWwiseSwitchContainerLeafCookedData& Key;
 
 	/**
 	 * @brief Number of GroupValues present in this key that are already loaded.
@@ -128,9 +128,9 @@ struct WWISERESOURCELOADER_API FWwiseSwitchContainerLoadedGroupValueInfo
 	/**
 	 * @brief Number of times this particular GroupValue got loaded in the currently loaded maps.
 	 * 
-	 * Any value higher than 0 means there's a chance the Leaves might be required.
+	 * Any value higher than 0 means the Leaves might be required.
 	*/
-	int LoadCount;
+	int GroupValueCount;
 
 	/**
 	 * @brief Leaves that uses this particular GroupValue.
@@ -141,15 +141,15 @@ struct WWISERESOURCELOADER_API FWwiseSwitchContainerLoadedGroupValueInfo
 
 	FWwiseSwitchContainerLoadedGroupValueInfo(const FWwiseSharedGroupValueKey& InKey) :
 		Key(InKey),
-		LoadCount(0),
+		GroupValueCount(0),
 		Leaves()
 	{}
 
-	bool ShouldBeLoaded() const
+	bool ResourcesAreLoaded() const
 	{
-		check(LoadCount >= 0);
+		check(GroupValueCount >= 0);
 
-		return LoadCount > 0;
+		return GroupValueCount > 0;
 	}
 
 	bool operator ==(const FWwiseSwitchContainerLoadedGroupValueInfo& InRhs) const
@@ -320,14 +320,9 @@ public:
 			&& LoadedInitBankList.Num() == 0
 			&& LoadedMediaList.Num() == 0
 			&& LoadedShareSetList.Num() == 0
-			&& LoadedSoundBankList.Num() == 0;
+			&& LoadedSoundBankList.Num() == 0
+			&& LoadedGroupValueInfo.Num() == 0;
 	}
-
-	/**
-	 * Synchronously cleans up the Group Value info set. This is used for unit testing, and shouldn't be used by a final product.
-	 * @return true if the final set is empty 
-	 */
-	bool TrimGroupValueInfo();
 
 protected:
 	using FLoadFileCallback = TUniqueFunction<void(bool bInResult)>;
@@ -435,9 +430,6 @@ protected:
 	/**
 	 * @brief Set of all known GroupValues, each of which contains the list of the Switch Containers that require them.
 	 *
-	 * This set uses a leaking pattern: every known GroupValue appears but is never deleted. Realistically, games have
-	 * fewer than ten thousand different Switches and States, so the effect on memory and performance is minimal.
-	 *
 	 * @note To modify this list, you must call the operation asynchronously through FileExecutionQueue.
 	*/
 	TSet<FWwiseSwitchContainerLoadedGroupValueInfo> LoadedGroupValueInfo;
@@ -469,6 +461,7 @@ protected:
 	virtual void UnloadShareSetResources(FWwiseResourceUnloadPromise&& Promise, FWwiseLoadedShareSetInfo::FLoadedData& LoadedData, const FWwiseShareSetCookedData& InCookedData);
 	virtual void UnloadSoundBankResources(FWwiseResourceUnloadPromise&& Promise, FWwiseLoadedSoundBankInfo::FLoadedData& LoadedData, const FWwiseSoundBankCookedData& InCookedData);
 	virtual void UnloadSwitchContainerLeafResources(FWwiseResourceUnloadPromise&& Promise, TSharedRef<FWwiseSwitchContainerLeafGroupValueUsageCount, ESPMode::ThreadSafe> UsageCount);
+	virtual void DeleteSwitchContainerLeafGroupValueUsageCount(FWwiseResourceUnloadPromise&& Promise, TSharedRef<FWwiseSwitchContainerLeafGroupValueUsageCount, ESPMode::ThreadSafe>& UsageCount);
 
 	virtual void AttachAuxBusNode(FWwiseLoadedAuxBusListNode* AuxBusListNode);
 	virtual void AttachEventNode(FWwiseLoadedEventListNode* EventListNode);

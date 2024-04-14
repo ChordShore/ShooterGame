@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #pragma once
@@ -41,7 +41,7 @@ public:
 	// Loads children for the item
 	virtual int32 LoadChildren(FWwiseTreeItemPtr ParentTreeItem) = 0;
 
-	virtual int32 GetChildItemCount(const FWwiseTreeItemPtr& InParentIrem) = 0;
+	virtual int32 GetChildItemCount(const FWwiseTreeItemPtr& InParentItem) = 0;
 
 	virtual FWwiseTreeItemPtr GetRootItem(EWwiseItemType::Type RootType) = 0;
 

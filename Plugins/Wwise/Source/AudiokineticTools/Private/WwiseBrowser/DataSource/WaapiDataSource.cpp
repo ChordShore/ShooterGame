@@ -12,10 +12,12 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "WaapiDataSource.h"
+
+#include <Wwise/Stats/AudiokineticTools.h>
 
 #include "AkSettings.h"
 #include "AkSettingsPerUser.h"
@@ -88,6 +90,8 @@ bool FWaapiDataSource::TearDown()
 
 void FWaapiDataSource::ConstructTree(bool bShouldRefresh)
 {
+	SCOPED_AUDIOKINETICTOOLS_EVENT_2(TEXT("FWaapiDataSource::ConstructTree"))
+
 	if (IsProjectLoaded() != EWwiseConnectionStatus::Connected)
 	{
 		UE_LOG(LogAudiokineticTools, Log, TEXT("Failed to construct Waapi Tree. The Wwise project is not connected."));
@@ -584,6 +588,7 @@ void FWaapiDataSource::Tick(const double InCurrentTime, const float InDeltaTime)
 
 int32 FWaapiDataSource::LoadChildren(const FGuid& InParentId, const FString& InParentPath, TArray<FWwiseTreeItemPtr>& OutChildren)
 {
+
 	UE_LOG(LogAudiokineticTools, VeryVerbose, TEXT("Loading Children for Waapi item %s, id: %s"), *InParentPath, *InParentId.ToString())
 
 	FString InFromField;
@@ -605,7 +610,7 @@ int32 FWaapiDataSource::LoadChildren(const FGuid& InParentId, const FString& InP
 
 	TSharedPtr<FJsonObject> Result;
 
-	// Request data from Wwise UI using WAAPI and use them to create a Wwise tree item, getting the informations from a specific "ID".
+	// Request data from Wwise UI using WAAPI and use them to create a Wwise tree item, getting the information from a specific "ID".
 	if (!LoadWaapiInfo(WwiseWaapiHelper::PATH, InParentPath, Result,
 		{
 			{ WwiseWaapiHelper::SELECT , { WwiseWaapiHelper::DESCENDANTS }, {} },
@@ -651,6 +656,8 @@ int32 FWaapiDataSource::LoadChildren(const FGuid& InParentId, const FString& InP
 
 int32 FWaapiDataSource::LoadChildren(FWwiseTreeItemPtr ParentTreeItem)
 {
+	SCOPED_AUDIOKINETICTOOLS_EVENT_2(TEXT("FWaapiDataSource::LoadChildren"))
+
 	if (!ParentTreeItem)
 	{
 		return 0;
@@ -1117,6 +1124,8 @@ void FWaapiDataSource::SelectInProjectExplorer(TArray<FWwiseTreeItemPtr>& InTree
 
 bool FWaapiDataSource::CallWaapiGetInfoFrom(const FString& inFromField, const FString& inFromString, TSharedPtr<FJsonObject>& outJsonResult, const TArray<TransformStringField>& TransformFields)
 {
+	SCOPED_AUDIOKINETICTOOLS_EVENT_3(TEXT("FWaapiDataSource::CallWaapiGetInfoFrom"))
+	
 	auto waapiClient = FAkWaapiClient::Get();
 	if (!waapiClient)
 	{

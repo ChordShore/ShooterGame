@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "AssetManagement/GeneratedSoundBanksDirectoryWatcher.h"
@@ -65,23 +65,10 @@ void GeneratedSoundBanksDirectoryWatcher::CheckIfCachePathChanged()
 
 void GeneratedSoundBanksDirectoryWatcher::Initialize()
 {
-	auto* ProjectDatabaseDelegates = FWwiseProjectDatabaseDelegates::Get();
-
-	if (UNLIKELY(!ProjectDatabaseDelegates))
-	{
-		UE_LOG(LogAudiokineticTools, Warning,
-		       TEXT("GeneratedSoundBanksDirectoryWatcher::Initialize: ProjectDatabase Delegates not initialized, could not subscribe to OnDatabaseUpdateCompleted"))
-	}
-
-	else
-	{
-		ProjectParsedHandle = ProjectDatabaseDelegates->GetOnDatabaseUpdateCompletedDelegate().AddRaw(
-			this, &GeneratedSoundBanksDirectoryWatcher::CheckIfCachePathChanged);
-	}
-
+	ProjectParsedHandle = FWwiseProjectDatabaseDelegates::Get()->GetOnDatabaseUpdateCompletedDelegate().AddRaw(this, &GeneratedSoundBanksDirectoryWatcher::CheckIfCachePathChanged);
 	if (UAkSettings* AkSettings = GetMutableDefault<UAkSettings>())
 	{
-		// When GeneratedSoundbanks folder changes we need to reset the watcher
+		// When GeneratedSoundBanks folder changes we need to reset the watcher
 		if (SettingsChangedHandle.IsValid())
 		{
 			AkSettings->OnGeneratedSoundBanksPathChanged.Remove(SettingsChangedHandle);
@@ -93,7 +80,7 @@ void GeneratedSoundBanksDirectoryWatcher::Initialize()
 
 	if (UAkSettingsPerUser* UserSettings = GetMutableDefault<UAkSettingsPerUser>())
 	{
-		// When GeneratedSoundbanks Override folder changes we need to reset the watcher
+		// When GeneratedSoundBanks Override folder changes we need to reset the watcher
 		if (UserSettingsChangedHandle.IsValid())
 		{
 			UserSettings->OnGeneratedSoundBanksPathChanged.Remove(UserSettingsChangedHandle);
@@ -396,17 +383,11 @@ void GeneratedSoundBanksDirectoryWatcher::Uninitialize(const bool bIsModuleShutd
 {
 	StopWatchers();
 
-		auto* ProjectDatabaseDelegates = FWwiseProjectDatabaseDelegates::Get();
-
-		if (UNLIKELY(!ProjectDatabaseDelegates))
-		{
-			UE_LOG(LogAudiokineticTools, Warning, TEXT("GeneratedSoundBanksDirectoryWatcher::Uninitialize: ProjectDatabase Delegates not initialized, could not unsubscribe to OnDatabaseUpdateCompleted"))
-		}
-
-		else
-		{
-			ProjectDatabaseDelegates->GetOnDatabaseUpdateCompletedDelegate().Remove(ProjectParsedHandle);
-		}
+	if (ProjectParsedHandle.IsValid())
+	{
+		FWwiseProjectDatabaseDelegates::Get()->GetOnDatabaseUpdateCompletedDelegate().Remove(ProjectParsedHandle);
+		ProjectParsedHandle.Reset();
+	}
 
 	//Can't access settings while module is being shutdown
 	if (!bIsModuleShutdown)

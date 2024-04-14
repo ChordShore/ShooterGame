@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #include "AkGeometryComponent.h"
@@ -759,13 +759,14 @@ void UAkGeometryComponent::ConvertCollisionMesh(UPrimitiveComponent* PrimitiveCo
 		GeometryData.AddBox(surfIdx, box.Center, extent, box.Rotation);
 	}
 
-	const int sides = 16;
+	const int kNumSides = 6;
+	const int kNumRings = 4;
 
 	int32 numSpheres = bodySetup->AggGeom.SphereElems.Num();
 	for (int32 i = 0; i < numSpheres; i++)
 	{
 		FKSphereElem sphere = bodySetup->AggGeom.SphereElems[i];
-		GeometryData.AddSphere(surfIdx, sphere.Center, sphere.Radius, sides, sides / 2);
+		GeometryData.AddSphere(surfIdx, sphere.Center, sphere.Radius, kNumSides, kNumRings);
 	}
 
 	int32 numCapsules = bodySetup->AggGeom.SphylElems.Num();
@@ -777,7 +778,7 @@ void UAkGeometryComponent::ConvertCollisionMesh(UPrimitiveComponent* PrimitiveCo
 		FVector Y = capsule.GetTransform().GetUnitAxis(EAxis::Y);
 		FVector Z = capsule.GetTransform().GetUnitAxis(EAxis::Z);
 
-		GeometryData.AddCapsule(surfIdx, capsule.Center, X, Y, Z, capsule.Radius, capsule.Length / 2, sides / 2);
+		GeometryData.AddCapsule(surfIdx, capsule.Center, X, Y, Z, capsule.Radius, capsule.Length / 2, kNumSides);
 	}
 
 	int32 numConvexElems = bodySetup->AggGeom.ConvexElems.Num();
