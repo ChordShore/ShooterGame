@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="635463106" Type="Event" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" Language="SFX" Hash="{46FD022F-D60D-F85E-CED3-7608AC365A08}">
+			<ObjectPath>AMB_BalconyGusts</ObjectPath>
+			<ShortName>AMB_BalconyGusts</ShortName>
+			<Path>Event/AMB_BalconyGusts.bnk</Path>
+			<Media>
+				<File Id="102297866" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_001.wav</ShortName>
+					<Path>Media/102297866.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_001_10C4C929.wem</CachePath>
+				</File>
+				<File Id="271371283" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_010.wav</ShortName>
+					<Path>Media/271371283.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_010_10C4C929.wem</CachePath>
+				</File>
+				<File Id="290019270" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_009.wav</ShortName>
+					<Path>Media/290019270.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_009_10C4C929.wem</CachePath>
+				</File>
+				<File Id="342227533" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_005.wav</ShortName>
+					<Path>Media/342227533.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_005_10C4C929.wem</CachePath>
+				</File>
+				<File Id="349220338" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_006.wav</ShortName>
+					<Path>Media/349220338.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_006_10C4C929.wem</CachePath>
+				</File>
+				<File Id="381713692" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_003.wav</ShortName>
+					<Path>Media/381713692.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_003_10C4C929.wem</CachePath>
+				</File>
+				<File Id="771245269" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_002.wav</ShortName>
+					<Path>Media/771245269.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_002_10C4C929.wem</CachePath>
+				</File>
+				<File Id="877029507" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_004.wav</ShortName>
+					<Path>Media/877029507.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_004_10C4C929.wem</CachePath>
+				</File>
+				<File Id="880697477" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_007.wav</ShortName>
+					<Path>Media/880697477.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_007_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1039541146" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_008.wav</ShortName>
+					<Path>Media/1039541146.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_008_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="635463106" Name="AMB_BalconyGusts" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_BalconyGusts" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" MaxAttenuation="3000" DurationType="OneShot" DurationMin="5" DurationMax="15.08031">
+					<MediaRefs>
+						<MediaRef Id="102297866"/>
+						<MediaRef Id="271371283"/>
+						<MediaRef Id="290019270"/>
+						<MediaRef Id="342227533"/>
+						<MediaRef Id="349220338"/>
+						<MediaRef Id="381713692"/>
+						<MediaRef Id="771245269"/>
+						<MediaRef Id="877029507"/>
+						<MediaRef Id="880697477"/>
+						<MediaRef Id="1039541146"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{DC510297-D01F-BE20-6854-5FA93C6EC846}</FileHash>
+</SoundBanksInfo>

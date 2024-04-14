@@ -26,9 +26,15 @@
 									<ChildrenList>
 										<ActorMixer Name="AMB_BalconyGusts" ID="{F7BB34AC-E66F-4B60-8E5A-3A60DA06AF9D}" ShortID="564955212">
 											<PropertyList>
-												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATN_BalconyGusts" ID="{C40D1AB1-7466-46D1-B210-13D3589C5309}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 												</Reference>
@@ -38,6 +44,45 @@
 											</ReferenceList>
 											<ChildrenList>
 												<RandomSequenceContainer Name="AMB_BalconyGusts_OS" ID="{2AB2126E-C5F5-4842-A8CD-1BA94AB56C09}" ShortID="555498908">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>30</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>30</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>800</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{075988B3-6907-4DDE-8E5A-1101E1CD1C58}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="400"/>
+																			<Property Name="Min" Type="Real64" Value="-400"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -330,12 +375,72 @@
 													</ChildrenList>
 												</RandomSequenceContainer>
 											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{B8573602-E060-4C2F-92A8-383CFC41F89B}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="AMB_BalconyGusts_Path_C" ID="{C8479F25-8B00-4DF6-A9FB-621CD15BBCD3}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="25"/>
+																<Property Name="RandomY" Type="Real64" Value="25"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>-100</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="AMB_BalconyGusts_Path_L" ID="{05986859-FF3C-4E9A-9012-E5D0EFF2F916}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="25"/>
+																<Property Name="RandomY" Type="Real64" Value="25"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-50</XPos>
+																	<YPos>-100</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="AMB_BalconyGusts_Path_R" ID="{695A65B1-B942-40CA-A09A-64828E243110}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="25"/>
+																<Property Name="RandomY" Type="Real64" Value="25"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>50</XPos>
+																	<YPos>-100</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
 										</ActorMixer>
 										<ActorMixer Name="AMB_DistantTraffic" ID="{06C1185A-08EB-4C70-A5C0-6E9BE234D91B}" ShortID="483660498">
 											<PropertyList>
-												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATN_DistantTraffic" ID="{E1896A5A-126D-4850-A0B6-D88BDE998585}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 												</Reference>
@@ -344,15 +449,640 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="AMB_DistantTraffic" ID="{A67469C4-6BF8-4972-98BF-5BBFBF38E3A7}" ShortID="388197752">
+												<RandomSequenceContainer Name="AMB_DistantTraffic" ID="{CDEF387F-0830-4759-BEA4-AA7FF26D0C66}" ShortID="239120269">
+													<PropertyList>
+														<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+														<Property Name="InitialDelay" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{F5203377-857F-4760-ADFC-B58D42546CC2}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{97385295-621F-416D-8022-9DA8AB9559D4}">
+																		<PropertyList>
+																			<Property Name="Max" Type="Real64" Value="150"/>
+																			<Property Name="Min" Type="Real64" Value="-150"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.05">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{F2C6AB42-45B9-4BBA-9453-67964A93320B}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="0.5"/>
+																			<Property Name="Min" Type="Real64" Value="-0.5"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+															<ObjectRef Name="Tremolo_HoverCars" ID="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}" WorkUnitID="{2B949421-4224-488B-A3C2-FF31E814EF2E}"/>
+														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+															<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 														</Reference>
 													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="HoverCar_Lows_OS" ID="{977CF7A2-FC1C-4810-9FF2-705E05F17892}" ShortID="300525652">
+															<PropertyList>
+																<Property Name="3DPosition" Type="int16" Value="1"/>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																<Property Name="InitialDelay" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{E1523DA2-CB4D-474C-BBEC-648345FF187E}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{DCB0DEBF-D3AA-4239-B288-B86F8109AC3A}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="2"/>
+																					<Property Name="Min" Type="Real64" Value="-2"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-4</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="ATN_DistantTraffic" ID="{E1896A5A-126D-4850-A0B6-D88BDE998585}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="AMB_Emitters_HovercarPassbys_Low_1" ID="{A3EAB91D-02F7-4729-A090-26BD9654FD19}" ShortID="936468340">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AMB_Emitters_HovercarPassbys_Low_1" ID="{403F7690-00FA-4A75-A4DD-0FAC31CE8E64}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AMB_Emitters_HovercarPassbys_Low_1.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="407858808"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AMB_Emitters_HovercarPassbys_Low_1" ID="{403F7690-00FA-4A75-A4DD-0FAC31CE8E64}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="AMB_Emitters_HovercarPassbys_Low_2" ID="{CFE8338F-7DAF-45E9-B7BD-DD67C6940F8A}" ShortID="280906257">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AMB_Emitters_HovercarPassbys_Low_2" ID="{673D714B-49AC-4937-A5EF-AFD01E1CDC83}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1"/>
+																				<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AMB_Emitters_HovercarPassbys_Low_2.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="666585169"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AMB_Emitters_HovercarPassbys_Low_2" ID="{673D714B-49AC-4937-A5EF-AFD01E1CDC83}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="AMB_Emitters_HovercarPassbys_Low_4" ID="{6543AA21-0E7F-4D83-BB1E-6D163583F6D6}" ShortID="142025956">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AMB_Emitters_HovercarPassbys_Low_4" ID="{78AF6567-BA97-4495-A67A-AA728AB4DF0F}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AMB_Emitters_HovercarPassbys_Low_4.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="121824528"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AMB_Emitters_HovercarPassbys_Low_4" ID="{78AF6567-BA97-4495-A67A-AA728AB4DF0F}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{236090FC-669D-4A3A-B8FA-200DC44B9C38}">
+																	<PropertyList>
+																		<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																		<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="0"/>
+																	</PropertyList>
+																	<ChildrenList>
+																		<Path2D Name="HoverCar_Lows_Path_LR1" ID="{1D9232C1-2EE3-4957-BA6C-6F958F8EE967}">
+																			<PropertyList>
+																				<Property Name="AppendOffset" Type="Uint32" Value="200"/>
+																				<Property Name="Duration" Type="Uint32" Value="1500"/>
+																				<Property Name="RandomX" Type="Real64" Value="50"/>
+																				<Property Name="RandomY" Type="Real64" Value="50"/>
+																				<Property Name="RandomZ" Type="Real64" Value="50"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>-50</XPos>
+																					<YPos>20</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>50</XPos>
+																					<YPos>20</YPos>
+																					<Flags>0</Flags>
+																					<Time>1500</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																		<Path2D Name="HoverCar_Lows_Path_RL1" ID="{E190577F-8E2A-42B4-9AD7-B2F77F161DC8}">
+																			<PropertyList>
+																				<Property Name="AppendOffset" Type="Uint32" Value="200"/>
+																				<Property Name="Duration" Type="Uint32" Value="1500"/>
+																				<Property Name="RandomX" Type="Real64" Value="50"/>
+																				<Property Name="RandomY" Type="Real64" Value="50"/>
+																				<Property Name="RandomZ" Type="Real64" Value="50"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>50</XPos>
+																					<YPos>20</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>-50</XPos>
+																					<YPos>20</YPos>
+																					<Flags>0</Flags>
+																					<Time>1500</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																		<Path2D Name="HoverCar_Lows_Path_LR2" ID="{18D75683-3098-43F4-B478-A0DC3E9F7E4C}">
+																			<PropertyList>
+																				<Property Name="AppendOffset" Type="Uint32" Value="200"/>
+																				<Property Name="Duration" Type="Uint32" Value="1500"/>
+																				<Property Name="RandomX" Type="Real64" Value="50"/>
+																				<Property Name="RandomY" Type="Real64" Value="50"/>
+																				<Property Name="RandomZ" Type="Real64" Value="50"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>-50</XPos>
+																					<YPos>50</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>50</XPos>
+																					<YPos>50</YPos>
+																					<Flags>0</Flags>
+																					<Time>1500</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																		<Path2D Name="HoverCar_Lows_Path_RL2" ID="{565740F7-4778-4FE1-84EA-A48241B7804D}">
+																			<PropertyList>
+																				<Property Name="AppendOffset" Type="Uint32" Value="200"/>
+																				<Property Name="Duration" Type="Uint32" Value="1500"/>
+																				<Property Name="RandomX" Type="Real64" Value="50"/>
+																				<Property Name="RandomY" Type="Real64" Value="50"/>
+																				<Property Name="RandomZ" Type="Real64" Value="50"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>50</XPos>
+																					<YPos>50</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>-50</XPos>
+																					<YPos>50</YPos>
+																					<Flags>0</Flags>
+																					<Time>1500</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																	</ChildrenList>
+																</Position>
+															</PositioningInfo>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="HoverCar_Highs_OS" ID="{0BB26529-6322-4F57-8BBF-EA72F08C57CC}" ShortID="728602809">
+															<PropertyList>
+																<Property Name="3DPosition" Type="int16" Value="1"/>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																<Property Name="InitialDelay" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{858240AD-9C94-42D3-A7AA-E3288CE9258C}">
+																				<PropertyList>
+																					<Property Name="Max" Type="Real64" Value="1"/>
+																					<Property Name="Min" Type="Real64" Value="-1"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{9951FB15-9D61-472F-9303-AD1FFF7587FD}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="2"/>
+																					<Property Name="Min" Type="Real64" Value="-2"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-4</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="ATN_DistantTraffic" ID="{E1896A5A-126D-4850-A0B6-D88BDE998585}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="AMB_Emitters_HovercarPassbys_High_2" ID="{A7FF9690-DED7-414C-A7F1-CA5721572C84}" ShortID="997382741">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AMB_Emitters_HovercarPassbys_High_2" ID="{91A1B2D4-615D-4EC0-8FC5-10C4278AC29A}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.4"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.8"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AMB_Emitters_HovercarPassbys_High_2.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="296674999"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AMB_Emitters_HovercarPassbys_High_2" ID="{91A1B2D4-615D-4EC0-8FC5-10C4278AC29A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="AMB_Emitters_HovercarPassbys_High_3" ID="{8AECCBFA-2AEF-4346-8505-A7F30EB75194}" ShortID="818342146">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AMB_Emitters_HovercarPassbys_High_3" ID="{EAAC0C9F-8FF2-447C-B910-DCA70D0F1F84}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.4"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.8"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AMB_Emitters_HovercarPassbys_High_3.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="435493927"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AMB_Emitters_HovercarPassbys_High_3" ID="{EAAC0C9F-8FF2-447C-B910-DCA70D0F1F84}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="AMB_Emitters_HovercarPassbys_High_4" ID="{6305015E-5426-47D9-A692-D42A9F796792}" ShortID="646168487">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AMB_Emitters_HovercarPassbys_High_4" ID="{0EBEA3B2-A7A6-42BA-B3B6-C8C749D79390}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.4"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.8"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AMB_Emitters_HovercarPassbys_High_4.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="345896536"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AMB_Emitters_HovercarPassbys_High_4" ID="{0EBEA3B2-A7A6-42BA-B3B6-C8C749D79390}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{0963C695-ED1E-4AF1-ACDA-3EA26DF8D53D}">
+																	<PropertyList>
+																		<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<ChildrenList>
+																		<Path2D Name="HoverCar_Highs_Path_LR1" ID="{06862582-19A2-4612-8453-F631BF9641CC}">
+																			<PropertyList>
+																				<Property Name="AppendOffset" Type="Uint32" Value="200"/>
+																				<Property Name="Duration" Type="Uint32" Value="1500"/>
+																				<Property Name="RandomX" Type="Real64" Value="10"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>-50</XPos>
+																					<YPos>20</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>50</XPos>
+																					<YPos>20</YPos>
+																					<Flags>0</Flags>
+																					<Time>1500</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																		<Path2D Name="HoverCar_Highs_Path_RL1" ID="{5FFD87E8-2754-4E47-A593-4E1525625C5C}">
+																			<PropertyList>
+																				<Property Name="AppendOffset" Type="Uint32" Value="200"/>
+																				<Property Name="Duration" Type="Uint32" Value="1500"/>
+																				<Property Name="RandomX" Type="Real64" Value="50"/>
+																				<Property Name="RandomY" Type="Real64" Value="50"/>
+																				<Property Name="RandomZ" Type="Real64" Value="50"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>50</XPos>
+																					<YPos>20</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>-50</XPos>
+																					<YPos>20</YPos>
+																					<Flags>0</Flags>
+																					<Time>1500</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																	</ChildrenList>
+																</Position>
+															</PositioningInfo>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="HoverCar_Mids_OS" ID="{466BD759-B6A4-447A-A923-6A536C844A84}" ShortID="7049702">
+															<PropertyList>
+																<Property Name="3DPosition" Type="int16" Value="1"/>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{129BEFDB-93F4-498E-AF8D-6FA085D06079}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="2"/>
+																					<Property Name="Min" Type="Real64" Value="-2"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-5</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="ATN_DistantTraffic" ID="{E1896A5A-126D-4850-A0B6-D88BDE998585}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="AMB_Emitters_HovercarPassbys_Mid_1" ID="{97ED55C5-D4CB-4480-A098-2FB954FD7E3A}" ShortID="739838337">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AMB_Emitters_HovercarPassbys_Mid_1" ID="{1CE518DA-A33D-4773-A715-C2C6EFEB0A37}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AMB_Emitters_HovercarPassbys_Mid_1.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="924565868"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AMB_Emitters_HovercarPassbys_Mid_1" ID="{1CE518DA-A33D-4773-A715-C2C6EFEB0A37}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="AMB_Emitters_HovercarPassbys_Mid_2" ID="{4BB92563-D33D-4669-8ABD-92B9D9FD6392}" ShortID="7372428">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AMB_Emitters_HovercarPassbys_Mid_2" ID="{9E090525-EEA2-4166-B8AD-61D68FD3AD42}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AMB_Emitters_HovercarPassbys_Mid_2.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="419807917"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AMB_Emitters_HovercarPassbys_Mid_2" ID="{9E090525-EEA2-4166-B8AD-61D68FD3AD42}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="AMB_Emitters_HovercarPassbys_Mid_4" ID="{64E13DF5-9429-4D96-89D7-CBE604ADE558}" ShortID="802606032">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AMB_Emitters_HovercarPassbys_Mid_4" ID="{123D50F7-9049-4B11-9B7A-95BA325C6A50}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AMB_Emitters_HovercarPassbys_Mid_4.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="123575965"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AMB_Emitters_HovercarPassbys_Mid_4" ID="{123D50F7-9049-4B11-9B7A-95BA325C6A50}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{D42D6CA2-F35F-45A7-A930-577480BB55B6}">
+																	<PropertyList>
+																		<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<ChildrenList>
+																		<Path2D Name="HoverCar_Mids_Path_LR" ID="{9F623045-C64A-4DC5-AF4C-B4F6499C2946}">
+																			<PropertyList>
+																				<Property Name="AppendOffset" Type="Uint32" Value="200"/>
+																				<Property Name="Duration" Type="Uint32" Value="1500"/>
+																				<Property Name="RandomX" Type="Real64" Value="50"/>
+																				<Property Name="RandomY" Type="Real64" Value="50"/>
+																				<Property Name="RandomZ" Type="Real64" Value="50"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>50</XPos>
+																					<YPos>20</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>-50</XPos>
+																					<YPos>20</YPos>
+																					<Flags>0</Flags>
+																					<Time>1500</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																		<Path2D Name="HoverCar_Mids_Path_RL" ID="{A64541A6-3E36-40DF-A4FA-7699C7C735F4}">
+																			<PropertyList>
+																				<Property Name="AppendOffset" Type="Uint32" Value="200"/>
+																				<Property Name="Duration" Type="Uint32" Value="1500"/>
+																				<Property Name="RandomX" Type="Real64" Value="50"/>
+																				<Property Name="RandomY" Type="Real64" Value="50"/>
+																				<Property Name="RandomZ" Type="Real64" Value="50"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>-50</XPos>
+																					<YPos>20</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>50</XPos>
+																					<YPos>20</YPos>
+																					<Flags>0</Flags>
+																					<Time>1500</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																	</ChildrenList>
+																</Position>
+															</PositioningInfo>
+														</RandomSequenceContainer>
+													</ChildrenList>
 												</RandomSequenceContainer>
 											</ChildrenList>
 										</ActorMixer>
@@ -953,7 +1683,7 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-8</Value>
+																<Value>-11</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1006,15 +1736,10 @@
 																<Value>-400</Value>
 															</ValueList>
 														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-12</Value>
-															</ValueList>
-														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
-															<ObjectRef Name="ATN_UnrealHolograph_FadeAnimations" ID="{776E286C-F38E-48E6-A44D-7F7263CA2C3E}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+															<ObjectRef Name="ATN_UnrealHolograph" ID="{044D3425-A485-4809-96BA-ED930F9C1310}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
 														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -1027,6 +1752,11 @@
 														<Sound Name="AMB_UnrealHolograph_FadeOut_OS" ID="{B29F0006-9607-4E80-BD8C-9D735304C22D}" ShortID="167317559">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-15</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Attenuation">
@@ -1060,6 +1790,11 @@
 														<Sound Name="AMB_UnrealHolograph_FadeIn_OS" ID="{3859B0B2-BF31-46F7-8318-8E5DA5DFA478}" ShortID="809285624">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-15</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Attenuation">
@@ -1195,11 +1930,6 @@
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1224,6 +1954,7 @@
 															</ModifierList>
 														</Property>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="Pitch" Type="int32">
 															<ModifierList>
 																<ModifierInfo>
@@ -1239,7 +1970,7 @@
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5">
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{F555415A-C79C-4649-807B-455FEDA1CFAA}">
@@ -1254,6 +1985,11 @@
 														</Property>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
@@ -1281,7 +2017,6 @@
 																		</ModifierInfo>
 																	</ModifierList>
 																</Property>
-																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Pitch" Type="int32">
 																	<ModifierList>
 																		<ModifierInfo>
@@ -1512,7 +2247,6 @@
 																		</ModifierInfo>
 																	</ModifierList>
 																</Property>
-																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Pitch" Type="int32">
 																	<ModifierList>
 																		<ModifierInfo>
@@ -1545,33 +2279,6 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="AMB_Emitters_HovercarPassbys_High_1" ID="{D6868644-FD8C-4E8A-A59E-544627A1AEBC}" ShortID="769204022">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="AMB_Emitters_HovercarPassbys_High_1" ID="{26086D8F-F687-459B-B3AA-2560E46C8C52}">
-																			<PropertyList>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="0.4"/>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="0.8"/>
-																			</PropertyList>
-																			<Language>SFX</Language>
-																			<AudioFile>AMB_Emitters_HovercarPassbys_High_1.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="208379746"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="AMB_Emitters_HovercarPassbys_High_1" ID="{26086D8F-F687-459B-B3AA-2560E46C8C52}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
 																<Sound Name="AMB_Emitters_HovercarPassbys_High_2" ID="{9F4F3A17-5C26-40DA-A1E4-5698B8B110D0}" ShortID="455746374">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
@@ -1710,7 +2417,6 @@
 															<PropertyList>
 																<Property Name="3DPosition" Type="int16" Value="1"/>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
-																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Pitch" Type="int32">
 																	<ModifierList>
 																		<ModifierInfo>
@@ -1791,31 +2497,6 @@
 																	</ChildrenList>
 																	<ActiveSourceList>
 																		<ActiveSource Name="AMB_Emitters_HovercarPassbys_Mid_2" ID="{B7527E2C-AF6A-4C73-AC62-87030372B0B9}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="AMB_Emitters_HovercarPassbys_Mid_3" ID="{D0ECFD17-032D-4565-800A-A75CA635DBDC}" ShortID="296272194">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="AMB_Emitters_HovercarPassbys_Mid_3" ID="{F91F3491-4F9B-4423-8E69-8A963A6D9E98}">
-																			<PropertyList>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="1"/>
-																			</PropertyList>
-																			<Language>SFX</Language>
-																			<AudioFile>AMB_Emitters_HovercarPassbys_Mid_3.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="51555955"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="AMB_Emitters_HovercarPassbys_Mid_3" ID="{F91F3491-4F9B-4423-8E69-8A963A6D9E98}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 																<Sound Name="AMB_Emitters_HovercarPassbys_Mid_4" ID="{AA96D454-D075-4161-B8FE-77DD67CAFF03}" ShortID="373831579">
@@ -1946,11 +2627,6 @@
 										<ActorMixer Name="AMB_ScifiDrones" ID="{F8CA7FF3-FE47-4BB4-980E-7E9296E98800}" ShortID="1041390785">
 											<PropertyList>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1962,6 +2638,26 @@
 											</ReferenceList>
 											<ChildrenList>
 												<SwitchContainer Name="AMB_ScifiDrones_OS" ID="{30DA05DC-6E2C-4C1A-96BA-5072975B553A}" ShortID="499469093">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{398DC714-7A6A-4872-86F3-0D416F7AD257}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="200"/>
+																			<Property Name="Min" Type="Real64" Value="-200"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -1980,16 +2676,6 @@
 														<RandomSequenceContainer Name="AMB_Highrise_Room_OS" ID="{53FAFEC3-E750-4552-8A08-2A993F768ECF}" ShortID="173561476">
 															<PropertyList>
 																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-																<Property Name="InitialDelay" Type="Real64">
-																	<ValueList>
-																		<Value>2</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="Lowpass" Type="int16">
-																	<ValueList>
-																		<Value>100</Value>
-																	</ValueList>
-																</Property>
 																<Property Name="Pitch" Type="int32">
 																	<ValueList>
 																		<Value>-1200</Value>
@@ -2011,11 +2697,6 @@
 																	</ModifierList>
 																</Property>
 																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>-5</Value>
-																	</ValueList>
-																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">

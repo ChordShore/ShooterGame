@@ -1,0 +1,174 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "977986739",
+    "Type": "Event",
+    "GUID": "{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}",
+    "Language": "SFX",
+    "Hash": "{A6FCF021-F38F-F0C2-73C6-838A1B16CB39}",
+    "ObjectPath": "AMB_ScifiDrones",
+    "ShortName": "AMB_ScifiDrones",
+    "Path": "Event/AMB_ScifiDrones.bnk",
+    "Media": [
+     {
+      "Id": "181815167",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_Highrise_ScifiDrone_06.wav",
+      "Path": "Media/181815167.wem",
+      "CachePath": "SFX/AMB_Highrise_ScifiDrone_06_10C4C929.wem"
+     },
+     {
+      "Id": "316038893",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_Highrise_ScifiDrone_05.wav",
+      "Path": "Media/316038893.wem",
+      "CachePath": "SFX/AMB_Highrise_ScifiDrone_05_10C4C929.wem"
+     },
+     {
+      "Id": "394870420",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_Highrise_ScifiDrone_01.wav",
+      "Path": "Media/394870420.wem",
+      "CachePath": "SFX/AMB_Highrise_ScifiDrone_01_10C4C929.wem"
+     },
+     {
+      "Id": "536326611",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_Highrise_ScifiDrone_03.wav",
+      "Path": "Media/536326611.wem",
+      "CachePath": "SFX/AMB_Highrise_ScifiDrone_03_10C4C929.wem"
+     },
+     {
+      "Id": "568814768",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_Highrise_ScifiDrone_02.wav",
+      "Path": "Media/568814768.wem",
+      "CachePath": "SFX/AMB_Highrise_ScifiDrone_02_10C4C929.wem"
+     },
+     {
+      "Id": "731320792",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_Highrise_ScifiDrone_04.wav",
+      "Path": "Media/731320792.wem",
+      "CachePath": "SFX/AMB_Highrise_ScifiDrone_04_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "977986739",
+      "Name": "AMB_ScifiDrones",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_ScifiDrones",
+      "GUID": "{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}",
+      "DurationType": "OneShot",
+      "DurationMin": "6.2692914",
+      "DurationMax": "22.026306",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "1777405841",
+         "Id": "4157082203",
+         "GUID": "{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "181815167"
+         },
+         {
+          "Id": "316038893"
+         },
+         {
+          "Id": "394870420"
+         },
+         {
+          "Id": "536326611"
+         },
+         {
+          "Id": "568814768"
+         },
+         {
+          "Id": "731320792"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "1777405841",
+         "Id": "3768889528",
+         "GUID": "{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "181815167"
+         },
+         {
+          "Id": "316038893"
+         },
+         {
+          "Id": "394870420"
+         },
+         {
+          "Id": "536326611"
+         },
+         {
+          "Id": "568814768"
+         },
+         {
+          "Id": "731320792"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1777405841",
+      "Name": "STA_Location",
+      "ObjectPath": "\\States\\Default Work Unit\\STA_Location",
+      "GUID": "{686E9A02-FA99-467B-99D7-939C1DC93153}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\None",
+        "GUID": "{05BC4704-4528-42BF-8FF0-1F5E28FBD976}"
+       },
+       {
+        "Id": "3768889528",
+        "Name": "STA_Indoors",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors",
+        "GUID": "{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"
+       },
+       {
+        "Id": "4157082203",
+        "Name": "STA_Outdoors",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors",
+        "GUID": "{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{7ADF2B91-9A7B-4461-0D7F-359A7AD4AB27}"
+ }
+}

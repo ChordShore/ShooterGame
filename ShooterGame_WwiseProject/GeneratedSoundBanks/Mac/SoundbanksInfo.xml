@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{753FB99D-553D-5C73-C276-3774CDF57D3C}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{3BEB8805-D5CD-C54A-C852-F5AC1EDC3156}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -17,10 +17,6 @@
 				<File Id="16287048" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_Rooms_Atrium.wav</ShortName>
 					<CachePath>SFX/AMB_Rooms_Atrium_25FFC62C.wem</CachePath>
-				</File>
-				<File Id="51555955" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_Emitters_HovercarPassbys_Mid_3.wav</ShortName>
-					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Mid_3_7550AD36.wem</CachePath>
 				</File>
 				<File Id="88913986" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_StreetLamp_Buzz_OS_2.wav</ShortName>
@@ -30,14 +26,6 @@
 					<ShortName>AMB_StreetLamp_Buzz_OS_4.wav</ShortName>
 					<CachePath>SFX/AMB_StreetLamp_Buzz_OS_4_10C4C929.wem</CachePath>
 				</File>
-				<File Id="121824528" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_Emitters_HovercarPassbys_Low_4.wav</ShortName>
-					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Low_4_7550AD36.wem</CachePath>
-				</File>
-				<File Id="123575965" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_Emitters_HovercarPassbys_Mid_4.wav</ShortName>
-					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Mid_4_7550AD36.wem</CachePath>
-				</File>
 				<File Id="175461088" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_StreetLamp_Hum_LP.wav</ShortName>
 					<CachePath>SFX/AMB_StreetLamp_Hum_LP_F2673BE7.wem</CachePath>
@@ -45,10 +33,6 @@
 				<File Id="202292048" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_StreetLamp_Buzz_OS_5.wav</ShortName>
 					<CachePath>SFX/AMB_StreetLamp_Buzz_OS_5_10C4C929.wem</CachePath>
-				</File>
-				<File Id="208379746" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_Emitters_HovercarPassbys_High_1.wav</ShortName>
-					<CachePath>SFX/AMB_Emitters_HovercarPassbys_High_1_171778DF.wem</CachePath>
 				</File>
 				<File Id="218188666" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Emitters_UnrealSign.wav</ShortName>
@@ -66,25 +50,9 @@
 					<ShortName>AMB_Rooms_Room.wav</ShortName>
 					<CachePath>SFX/AMB_Rooms_Room_25FFC62C.wem</CachePath>
 				</File>
-				<File Id="296674999" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_Emitters_HovercarPassbys_High_2.wav</ShortName>
-					<CachePath>SFX/AMB_Emitters_HovercarPassbys_High_2_171778DF.wem</CachePath>
-				</File>
 				<File Id="321294528" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_StreetLamp_Buzz_OS_3.wav</ShortName>
 					<CachePath>SFX/AMB_StreetLamp_Buzz_OS_3_10C4C929.wem</CachePath>
-				</File>
-				<File Id="345896536" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_Emitters_HovercarPassbys_High_4.wav</ShortName>
-					<CachePath>SFX/AMB_Emitters_HovercarPassbys_High_4_171778DF.wem</CachePath>
-				</File>
-				<File Id="407858808" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_Emitters_HovercarPassbys_Low_1.wav</ShortName>
-					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Low_1_7550AD36.wem</CachePath>
-				</File>
-				<File Id="419807917" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_Emitters_HovercarPassbys_Mid_2.wav</ShortName>
-					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Mid_2_7550AD36.wem</CachePath>
 				</File>
 				<File Id="425050702" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Emitters_UnrealHolograph_FadeOut_OS.wav</ShortName>
@@ -93,10 +61,6 @@
 				<File Id="429780900" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_StreetLamp_Buzz_OS_6.wav</ShortName>
 					<CachePath>SFX/AMB_StreetLamp_Buzz_OS_6_10C4C929.wem</CachePath>
-				</File>
-				<File Id="435493927" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_Emitters_HovercarPassbys_High_3.wav</ShortName>
-					<CachePath>SFX/AMB_Emitters_HovercarPassbys_High_3_171778DF.wem</CachePath>
 				</File>
 				<File Id="456057735" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Emitters_UnrealHolograph_Main_LP.wav</ShortName>
@@ -118,14 +82,6 @@
 					<ShortName>Emitters_UnrealHolograph_FadeIn_OS.wav</ShortName>
 					<CachePath>SFX/Emitters_UnrealHolograph_FadeIn_OS_5920140F.wem</CachePath>
 				</File>
-				<File Id="666585169" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_Emitters_HovercarPassbys_Low_2.wav</ShortName>
-					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Low_2_7550AD36.wem</CachePath>
-				</File>
-				<File Id="924565868" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_Emitters_HovercarPassbys_Mid_1.wav</ShortName>
-					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Mid_1_7550AD36.wem</CachePath>
-				</File>
 				<File Id="928573754" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_Emitter_WindGusts.wav</ShortName>
 					<CachePath>SFX/AMB_Emitter_WindGusts_DEC75B5C.wem</CachePath>
@@ -140,10 +96,9 @@
 				</File>
 			</Media>
 			<Plugins>
-				<ShareSets>
-					<Plugin Id="1845424741" Name="Tremolo_HoverCars" ObjectPath="\Effects\Default Work Unit\Tremolo_HoverCars" GUID="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}" LibName="Wwise Tremolo" LibId="8585219"/>
-					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
-				</ShareSets>
+				<Custom>
+					<Plugin Id="1041093470" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Default Work Unit\Event Probe\Sine Pip\Tone Generator" GUID="{0AD6A0A9-22FC-4FE9-B47C-29C90175D05E}" LibName="Wwise Tone Generator" LibId="6684674"/>
+				</Custom>
 			</Plugins>
 			<Events>
 				<Event Id="511358421" Name="AMB_BarrierFence_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_BarrierFence_LP" GUID="{427593F0-92C8-4CA8-8FCD-C163A0B02BEC}" MaxAttenuation="3500" DurationType="Infinite">
@@ -161,32 +116,19 @@
 						<MediaRef Id="288927093"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2757392698" Name="AMB_Highrise_Room_Drones_OS" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_Highrise_Room_Drones_OS" GUID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2757392698" Name="AMB_Highrise_Room_Drones_OS" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_Highrise_Room_Drones_OS" GUID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}" MaxAttenuation="10500" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="1041093470"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
 				<Event Id="1040217121" Name="AMB_Highrise_Spawn" ObjectPath="\Events\Ambience\Rooms\Highrise\Indoors\AMB_Highrise_Spawn" GUID="{1C364EAC-CAE6-4664-ACA8-6E418F9C7859}" MaxAttenuation="2000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="229272092"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1915357068" Name="AMB_HoverCars_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_HoverCars_LP" GUID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}" MaxAttenuation="2000" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="51555955"/>
-						<MediaRef Id="121824528"/>
-						<MediaRef Id="123575965"/>
-						<MediaRef Id="208379746"/>
-						<MediaRef Id="296674999"/>
-						<MediaRef Id="345896536"/>
-						<MediaRef Id="407858808"/>
-						<MediaRef Id="419807917"/>
-						<MediaRef Id="435493927"/>
-						<MediaRef Id="666585169"/>
-						<MediaRef Id="924565868"/>
-					</MediaRefs>
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="1845424741"/>
-						</ShareSets>
-					</PluginRefs>
-				</Event>
+				<Event Id="1915357068" Name="AMB_HoverCars_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_HoverCars_LP" GUID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="126199104" Name="AMB_PhoneBox_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_PhoneBox_LP" GUID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" MaxAttenuation="2500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="537312981"/>
@@ -216,7 +158,7 @@
 						<MediaRef Id="425050702"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2762262784" Name="AMB_UnrealHolograph_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealHolograph_LP" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="11000" DurationType="Infinite">
+				<Event Id="2762262784" Name="AMB_UnrealHolograph_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealHolograph_LP" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="10500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="456057735"/>
 					</MediaRefs>
@@ -243,6 +185,161 @@
 				<Event Id="3639315175" Name="FOL_Jump" ObjectPath="\Events\Foley\Players\FOL_Jump" GUID="{54BD1D82-A9B7-48F0-B383-0DB48BD03160}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1318050460" Name="FOL_Land" ObjectPath="\Events\Foley\Players\FOL_Land" GUID="{9C0F3AE6-505C-4DC2-80DF-1A0F23DFE402}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="378132258" Name="FOL_Trashcan_Collision" ObjectPath="\Events\Foley\Props\FOL_Trashcan_Collision" GUID="{83AF3510-8046-4206-B4B6-E1A12D72AC55}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="635463106" Type="Event" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" Language="SFX" Hash="{46FD022F-D60D-F85E-CED3-7608AC365A08}">
+			<ObjectPath>AMB_BalconyGusts</ObjectPath>
+			<ShortName>AMB_BalconyGusts</ShortName>
+			<Path>Event/AMB_BalconyGusts.bnk</Path>
+			<Media>
+				<File Id="102297866" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_001.wav</ShortName>
+					<Path>Media/102297866.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_001_10C4C929.wem</CachePath>
+				</File>
+				<File Id="271371283" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_010.wav</ShortName>
+					<Path>Media/271371283.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_010_10C4C929.wem</CachePath>
+				</File>
+				<File Id="290019270" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_009.wav</ShortName>
+					<Path>Media/290019270.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_009_10C4C929.wem</CachePath>
+				</File>
+				<File Id="342227533" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_005.wav</ShortName>
+					<Path>Media/342227533.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_005_10C4C929.wem</CachePath>
+				</File>
+				<File Id="349220338" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_006.wav</ShortName>
+					<Path>Media/349220338.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_006_10C4C929.wem</CachePath>
+				</File>
+				<File Id="381713692" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_003.wav</ShortName>
+					<Path>Media/381713692.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_003_10C4C929.wem</CachePath>
+				</File>
+				<File Id="771245269" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_002.wav</ShortName>
+					<Path>Media/771245269.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_002_10C4C929.wem</CachePath>
+				</File>
+				<File Id="877029507" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_004.wav</ShortName>
+					<Path>Media/877029507.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_004_10C4C929.wem</CachePath>
+				</File>
+				<File Id="880697477" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_007.wav</ShortName>
+					<Path>Media/880697477.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_007_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1039541146" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_WindGusts_008.wav</ShortName>
+					<Path>Media/1039541146.wem</Path>
+					<CachePath>SFX/AMB_WindGusts_008_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="635463106" Name="AMB_BalconyGusts" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_BalconyGusts" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" MaxAttenuation="3000" DurationType="OneShot" DurationMin="5" DurationMax="15.08031">
+					<MediaRefs>
+						<MediaRef Id="102297866"/>
+						<MediaRef Id="271371283"/>
+						<MediaRef Id="290019270"/>
+						<MediaRef Id="342227533"/>
+						<MediaRef Id="349220338"/>
+						<MediaRef Id="381713692"/>
+						<MediaRef Id="771245269"/>
+						<MediaRef Id="877029507"/>
+						<MediaRef Id="880697477"/>
+						<MediaRef Id="1039541146"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{A6FCF021-F38F-F0C2-73C6-838A1B16CB39}">
+			<ObjectPath>AMB_ScifiDrones</ObjectPath>
+			<ShortName>AMB_ScifiDrones</ShortName>
+			<Path>Event/AMB_ScifiDrones.bnk</Path>
+			<Media>
+				<File Id="181815167" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Highrise_ScifiDrone_06.wav</ShortName>
+					<Path>Media/181815167.wem</Path>
+					<CachePath>SFX/AMB_Highrise_ScifiDrone_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="316038893" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Highrise_ScifiDrone_05.wav</ShortName>
+					<Path>Media/316038893.wem</Path>
+					<CachePath>SFX/AMB_Highrise_ScifiDrone_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="394870420" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Highrise_ScifiDrone_01.wav</ShortName>
+					<Path>Media/394870420.wem</Path>
+					<CachePath>SFX/AMB_Highrise_ScifiDrone_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="536326611" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Highrise_ScifiDrone_03.wav</ShortName>
+					<Path>Media/536326611.wem</Path>
+					<CachePath>SFX/AMB_Highrise_ScifiDrone_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="568814768" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Highrise_ScifiDrone_02.wav</ShortName>
+					<Path>Media/568814768.wem</Path>
+					<CachePath>SFX/AMB_Highrise_ScifiDrone_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="731320792" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Highrise_ScifiDrone_04.wav</ShortName>
+					<Path>Media/731320792.wem</Path>
+					<CachePath>SFX/AMB_Highrise_ScifiDrone_04_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="977986739" Name="AMB_ScifiDrones" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_ScifiDrones" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" DurationType="OneShot" DurationMin="6.2692914" DurationMax="22.026306">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1777405841" Id="4157082203" GUID="{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"/>
+							<MediaRefs>
+								<MediaRef Id="181815167"/>
+								<MediaRef Id="316038893"/>
+								<MediaRef Id="394870420"/>
+								<MediaRef Id="536326611"/>
+								<MediaRef Id="568814768"/>
+								<MediaRef Id="731320792"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1777405841" Id="3768889528" GUID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
+							<MediaRefs>
+								<MediaRef Id="181815167"/>
+								<MediaRef Id="316038893"/>
+								<MediaRef Id="394870420"/>
+								<MediaRef Id="536326611"/>
+								<MediaRef Id="568814768"/>
+								<MediaRef Id="731320792"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<StateGroups>
+				<StateGroup Id="1777405841" Name="STA_Location" ObjectPath="\States\Default Work Unit\STA_Location" GUID="{686E9A02-FA99-467B-99D7-939C1DC93153}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\STA_Location\None" GUID="{05BC4704-4528-42BF-8FF0-1F5E28FBD976}"/>
+						<State Id="3768889528" Name="STA_Indoors" ObjectPath="\States\Default Work Unit\STA_Location\STA_Indoors" GUID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
+						<State Id="4157082203" Name="STA_Outdoors" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors" GUID="{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="1062810784" Type="Event" GUID="{402C2E63-6805-48DE-988D-743A09FCE1F4}" Language="SFX" Hash="{D1B96B70-59B3-E3E6-4F0D-519D73B5350C}">
+			<ObjectPath>AMB_DistantTraffic</ObjectPath>
+			<ShortName>AMB_DistantTraffic</ShortName>
+			<Path>Event/AMB_DistantTraffic.bnk</Path>
+			<Events>
+				<Event Id="1062810784" Name="AMB_DistantTraffic" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_DistantTraffic" GUID="{402C2E63-6805-48DE-988D-743A09FCE1F4}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 		<SoundBank Id="1088520938" Type="User" GUID="{573044D3-F4B2-4E02-98DE-DB94AFF2E612}" Language="SFX" Hash="{4D496E02-C01C-9987-99AE-7E4E264C8659}">
@@ -280,7 +377,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{EB764F11-8F1A-8C76-BBA6-63B39F585CBD}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{4D2D1F3A-B56E-614E-C293-89C912E00F2A}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -526,7 +623,7 @@
 				<Event Id="3787053379" Name="ITM_Health_Pickup" ObjectPath="\Events\Items\ITM_Health_Pickup" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{896A0D25-0D12-AC0B-1EE8-08B24AA92295}">
+		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{C6D5DB35-DABE-17EA-CE2A-043F398573E0}">
 			<ObjectPath>\SoundBanks\Default Work Unit\EventProbe</ObjectPath>
 			<ShortName>EventProbe</ShortName>
 			<Path>EventProbe.bnk</Path>
@@ -537,7 +634,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="11000" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="10500" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1041093470"/>
@@ -625,5 +722,5 @@
 			<Path>Dialogue.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B5856647-9BFF-30B8-B341-86F8487FCFCE}</FileHash>
+	<FileHash>{86A8648C-3E4F-9301-B7F9-C43B71F1A8FC}</FileHash>
 </SoundBanksInfo>

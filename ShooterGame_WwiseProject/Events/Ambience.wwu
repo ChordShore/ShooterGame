@@ -258,17 +258,6 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="AMB_HoverCars_LP" ID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}">
-											<ChildrenList>
-												<Action Name="" ID="{A0D1E0F1-8686-4E38-A372-E6C0C30054AC}" ShortID="671832817">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_HoverCars_LP" ID="{BFCE0EAF-6B92-4BA0-89DA-51A53F8178C6}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
 										<Event Name="AMB_WindGusts" ID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}">
 											<ChildrenList>
 												<Action Name="" ID="{1710766F-F2A4-45E0-B2BA-61DA4E454B78}" ShortID="810291939">
@@ -284,7 +273,28 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="AMB_Highrise_Room_Drones_OS" ID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}"/>
+										<Event Name="AMB_Highrise_Room_Drones_OS" ID="{4E65C91A-3866-4E84-B034-94A7E371ECB7}">
+											<ChildrenList>
+												<Action Name="" ID="{9AF53F33-E71C-4C62-BFC5-7C39013CA2CB}" ShortID="1016981986">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Sine Pip" ID="{AF6D3756-12D4-4384-8D92-157758C323FB}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="AMB_ScifiDrones" ID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}">
+											<ChildrenList>
+												<Action Name="" ID="{B2A58ED0-3D2C-4CE9-A4E3-08D7A698C1D4}" ShortID="456576216">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_ScifiDrones_OS" ID="{30DA05DC-6E2C-4C1A-96BA-5072975B553A}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
 									</ChildrenList>
 								</Folder>
 								<Folder Name="Static" ID="{4C479134-8E12-4BAB-A017-FC5CA692CB18}" ShortID="203033786">
@@ -394,6 +404,19 @@
 												</Action>
 											</ChildrenList>
 										</Event>
+										<Event Name="AMB_BalconyGusts" ID="{838EFBCF-7300-40E4-B598-D1699C261CB8}">
+											<ChildrenList>
+												<Action Name="" ID="{F80CABD6-8791-4663-841D-5EF3EF362A40}" ShortID="673931917">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_BalconyGusts_OS" ID="{2AB2126E-C5F5-4842-A8CD-1BA94AB56C09}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="AMB_DistantTraffic" ID="{402C2E63-6805-48DE-988D-743A09FCE1F4}"/>
+										<Event Name="AMB_HoverCars_LP" ID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}"/>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>

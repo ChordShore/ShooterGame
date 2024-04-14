@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{A6FCF021-F38F-F0C2-73C6-838A1B16CB39}">
+			<ObjectPath>AMB_ScifiDrones</ObjectPath>
+			<ShortName>AMB_ScifiDrones</ShortName>
+			<Path>Event/AMB_ScifiDrones.bnk</Path>
+			<Media>
+				<File Id="181815167" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Highrise_ScifiDrone_06.wav</ShortName>
+					<Path>Media/181815167.wem</Path>
+					<CachePath>SFX/AMB_Highrise_ScifiDrone_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="316038893" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Highrise_ScifiDrone_05.wav</ShortName>
+					<Path>Media/316038893.wem</Path>
+					<CachePath>SFX/AMB_Highrise_ScifiDrone_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="394870420" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Highrise_ScifiDrone_01.wav</ShortName>
+					<Path>Media/394870420.wem</Path>
+					<CachePath>SFX/AMB_Highrise_ScifiDrone_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="536326611" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Highrise_ScifiDrone_03.wav</ShortName>
+					<Path>Media/536326611.wem</Path>
+					<CachePath>SFX/AMB_Highrise_ScifiDrone_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="568814768" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Highrise_ScifiDrone_02.wav</ShortName>
+					<Path>Media/568814768.wem</Path>
+					<CachePath>SFX/AMB_Highrise_ScifiDrone_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="731320792" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Highrise_ScifiDrone_04.wav</ShortName>
+					<Path>Media/731320792.wem</Path>
+					<CachePath>SFX/AMB_Highrise_ScifiDrone_04_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="977986739" Name="AMB_ScifiDrones" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_ScifiDrones" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" DurationType="OneShot" DurationMin="6.2692914" DurationMax="22.026306">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1777405841" Id="4157082203" GUID="{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"/>
+							<MediaRefs>
+								<MediaRef Id="181815167"/>
+								<MediaRef Id="316038893"/>
+								<MediaRef Id="394870420"/>
+								<MediaRef Id="536326611"/>
+								<MediaRef Id="568814768"/>
+								<MediaRef Id="731320792"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1777405841" Id="3768889528" GUID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
+							<MediaRefs>
+								<MediaRef Id="181815167"/>
+								<MediaRef Id="316038893"/>
+								<MediaRef Id="394870420"/>
+								<MediaRef Id="536326611"/>
+								<MediaRef Id="568814768"/>
+								<MediaRef Id="731320792"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<StateGroups>
+				<StateGroup Id="1777405841" Name="STA_Location" ObjectPath="\States\Default Work Unit\STA_Location" GUID="{686E9A02-FA99-467B-99D7-939C1DC93153}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\STA_Location\None" GUID="{05BC4704-4528-42BF-8FF0-1F5E28FBD976}"/>
+						<State Id="3768889528" Name="STA_Indoors" ObjectPath="\States\Default Work Unit\STA_Location\STA_Indoors" GUID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
+						<State Id="4157082203" Name="STA_Outdoors" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors" GUID="{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{9A1C3B2F-10CD-B78E-32C2-D2F37064BDC6}</FileHash>
+</SoundBanksInfo>
