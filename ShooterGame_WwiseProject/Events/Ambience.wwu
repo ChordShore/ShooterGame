@@ -346,64 +346,6 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="AMB_UnrealHolograph_LP" ID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}">
-											<ChildrenList>
-												<Action Name="" ID="{BD8DFDA4-7D52-441E-AAD5-2EB8FF9B0921}" ShortID="2501739">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_UnrealHolograph_Main_LP" ID="{B4D1D511-83CE-42EA-B8FF-0B22ED42B990}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="AMB_UnrealHolograph_FadeIn_OS" ID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}">
-											<ChildrenList>
-												<Action Name="" ID="{0AB234EB-19D8-41DC-BC51-853675710AD3}" ShortID="381251411">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_UnrealHolograph_FadeIn_OS" ID="{3859B0B2-BF31-46F7-8318-8E5DA5DFA478}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-												<Action Name="" ID="{6CF90DFD-9930-4565-A0F7-256AD833E3FB}" ShortID="501089948">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="2"/>
-														<Property Name="FadeTime" Type="Real64" Value="5"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_UnrealHolograph_FadeOut_OS" ID="{B29F0006-9607-4E80-BD8C-9D735304C22D}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="AMB_UnrealHolograph_FadeOut_OS" ID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}">
-											<ChildrenList>
-												<Action Name="" ID="{786C4880-6E5E-4015-9B78-ADBA76F2AED8}" ShortID="120890481">
-													<PropertyList>
-														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_UnrealHolograph_FadeOut_OS" ID="{B29F0006-9607-4E80-BD8C-9D735304C22D}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-												<Action Name="" ID="{8E442CB0-9419-4A4F-91AF-AA6CAFEBF6B3}" ShortID="572470072">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="2"/>
-														<Property Name="FadeTime" Type="Real64" Value="7"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_UnrealHolograph_FadeIn_OS" ID="{3859B0B2-BF31-46F7-8318-8E5DA5DFA478}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
 										<Event Name="AMB_BalconyGusts" ID="{838EFBCF-7300-40E4-B598-D1699C261CB8}">
 											<ChildrenList>
 												<Action Name="" ID="{F80CABD6-8791-4663-841D-5EF3EF362A40}" ShortID="673931917">
@@ -415,8 +357,112 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="AMB_DistantTraffic" ID="{402C2E63-6805-48DE-988D-743A09FCE1F4}"/>
-										<Event Name="AMB_HoverCars_LP" ID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}"/>
+										<Folder Name="HoverCars" ID="{E60B9BE2-648B-4B98-9CA0-BE8F7C3B8A73}" ShortID="828572442">
+											<ChildrenList>
+												<Event Name="AMB_DistantTraffic" ID="{402C2E63-6805-48DE-988D-743A09FCE1F4}"/>
+												<Event Name="AMB_HoverCars_LP" ID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}"/>
+												<Folder Name="NearTraffic" ID="{B1347CAF-11E7-4FC6-8B34-DBC1EF449B81}" ShortID="284556994">
+													<ChildrenList>
+														<Event Name="AMB_NearTraffic_BF" ID="{C5ED1BFB-22A9-41F4-A56D-7095120AA1D2}">
+															<ChildrenList>
+																<Action Name="" ID="{41D4026C-A480-410F-9BF9-8ED6DBCA3888}" ShortID="93368156">
+																	<ReferenceList>
+																		<Reference Name="Target">
+																			<ObjectRef Name="AMB_HoverCars_LP" ID="{BFCE0EAF-6B92-4BA0-89DA-51A53F8178C6}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																		</Reference>
+																	</ReferenceList>
+																</Action>
+															</ChildrenList>
+														</Event>
+														<Event Name="AMB_NearTraffic_RL" ID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}">
+															<ChildrenList>
+																<Action Name="" ID="{F8EB8AF0-3439-4BAF-888A-4F02724F861D}" ShortID="308643307">
+																	<ReferenceList>
+																		<Reference Name="Target">
+																			<ObjectRef Name="AMB_HoverCars_LP" ID="{CB4F15D3-C9E8-4FFD-900D-E17BC7E57100}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																		</Reference>
+																	</ReferenceList>
+																</Action>
+															</ChildrenList>
+														</Event>
+														<Event Name="AMB_NearTraffic_LR" ID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}">
+															<ChildrenList>
+																<Action Name="" ID="{96F2E233-C5FE-4907-AD96-BEC4EE68393A}" ShortID="276986791">
+																	<ReferenceList>
+																		<Reference Name="Target">
+																			<ObjectRef Name="AMB_HoverCars_LP" ID="{E1CEB305-BC47-4431-B317-71EE7529CAA7}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																		</Reference>
+																	</ReferenceList>
+																</Action>
+															</ChildrenList>
+														</Event>
+													</ChildrenList>
+												</Folder>
+												<Folder Name="DistantTraffic" ID="{2181E809-1D01-4D6D-BFD9-5DC4E75D26ED}" ShortID="855891662"/>
+											</ChildrenList>
+										</Folder>
+										<Folder Name="UnrealHolograph" ID="{21B29F72-3A40-4B43-AA3C-6F6355C68ED3}" ShortID="867970519">
+											<ChildrenList>
+												<Event Name="AMB_UnrealHolograph_FadeIn_OS" ID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}">
+													<ChildrenList>
+														<Action Name="" ID="{0AB234EB-19D8-41DC-BC51-853675710AD3}" ShortID="381251411">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_UnrealHolograph_FadeIn_OS" ID="{3859B0B2-BF31-46F7-8318-8E5DA5DFA478}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+														<Action Name="" ID="{6CF90DFD-9930-4565-A0F7-256AD833E3FB}" ShortID="501089948">
+															<PropertyList>
+																<Property Name="ActionType" Type="int16" Value="2"/>
+																<Property Name="FadeTime" Type="Real64" Value="5"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_UnrealHolograph_FadeOut_OS" ID="{B29F0006-9607-4E80-BD8C-9D735304C22D}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="AMB_UnrealHolograph_LP" ID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}">
+													<ChildrenList>
+														<Action Name="" ID="{BD8DFDA4-7D52-441E-AAD5-2EB8FF9B0921}" ShortID="2501739">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_UnrealHolograph_Main_LP" ID="{B4D1D511-83CE-42EA-B8FF-0B22ED42B990}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="AMB_UnrealHolograph_FadeOut_OS" ID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}">
+													<ChildrenList>
+														<Action Name="" ID="{786C4880-6E5E-4015-9B78-ADBA76F2AED8}" ShortID="120890481">
+															<PropertyList>
+																<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_UnrealHolograph_FadeOut_OS" ID="{B29F0006-9607-4E80-BD8C-9D735304C22D}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+														<Action Name="" ID="{8E442CB0-9419-4A4F-91AF-AA6CAFEBF6B3}" ShortID="572470072">
+															<PropertyList>
+																<Property Name="ActionType" Type="int16" Value="2"/>
+																<Property Name="FadeTime" Type="Real64" Value="7"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_UnrealHolograph_FadeIn_OS" ID="{3859B0B2-BF31-46F7-8318-8E5DA5DFA478}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+											</ChildrenList>
+										</Folder>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>

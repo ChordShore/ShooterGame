@@ -19,4 +19,5 @@ Copyright (c) 2023 Audiokinetic Inc.
 #include <AK/Plugin/AkToneSourceFactory.h>
 #include <AK/Plugin/AkDelayFXFactory.h>
 #include <AK/Plugin/AkRoomVerbFXFactory.h>
+#include <AK/Plugin/AkTremoloFXFactory.h>
 #endif

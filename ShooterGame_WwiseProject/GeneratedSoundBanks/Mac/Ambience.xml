@@ -120,7 +120,7 @@
 						<MediaRef Id="229272092"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1915357068" Name="AMB_HoverCars_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_HoverCars_LP" GUID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1915357068" Name="AMB_HoverCars_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\AMB_HoverCars_LP" GUID="{2C8BAC8C-0ED3-4D9A-B0BE-93A994F3DDB8}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="126199104" Name="AMB_PhoneBox_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_PhoneBox_LP" GUID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" MaxAttenuation="2500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="537312981"/>
@@ -140,17 +140,17 @@
 						<MediaRef Id="515725994"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="896607520" Name="AMB_UnrealHolograph_FadeIn_OS" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealHolograph_FadeIn_OS" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="10500" DurationType="OneShot" DurationMin="7.853374" DurationMax="7.853374">
+				<Event Id="896607520" Name="AMB_UnrealHolograph_FadeIn_OS" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeIn_OS" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="10500" DurationType="OneShot" DurationMin="7.853374" DurationMax="7.853374">
 					<MediaRefs>
 						<MediaRef Id="619272686"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1695319799" Name="AMB_UnrealHolograph_FadeOut_OS" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealHolograph_FadeOut_OS" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="10500" DurationType="OneShot" DurationMin="6.614586" DurationMax="6.614586">
+				<Event Id="1695319799" Name="AMB_UnrealHolograph_FadeOut_OS" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut_OS" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="10500" DurationType="OneShot" DurationMin="6.614586" DurationMax="6.614586">
 					<MediaRefs>
 						<MediaRef Id="425050702"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2762262784" Name="AMB_UnrealHolograph_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealHolograph_LP" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="10500" DurationType="Infinite">
+				<Event Id="2762262784" Name="AMB_UnrealHolograph_LP" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_LP" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="10500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="456057735"/>
 					</MediaRefs>
@@ -168,5 +168,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A302828E-DD73-5724-95A9-CD5630F6CEEB}</FileHash>
+	<FileHash>{B5176666-22F9-820C-2FCF-95686CD4CA55}</FileHash>
 </SoundBanksInfo>

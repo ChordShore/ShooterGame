@@ -1,0 +1,126 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3603742064",
+    "Type": "Event",
+    "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
+    "Language": "SFX",
+    "Hash": "{9030924D-EEAD-411B-E439-9A8AAA934CCC}",
+    "ObjectPath": "AMB_NearTraffic_LR",
+    "ShortName": "AMB_NearTraffic_LR",
+    "Path": "Event/AMB_NearTraffic_LR.bnk",
+    "Media": [
+     {
+      "Id": "121824528",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_Emitters_HovercarPassbys_Low_4.wav",
+      "Path": "Media/121824528.wem",
+      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Low_4_7550AD36.wem"
+     },
+     {
+      "Id": "123575965",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_Emitters_HovercarPassbys_Mid_4.wav",
+      "Path": "Media/123575965.wem",
+      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Mid_4_7550AD36.wem"
+     },
+     {
+      "Id": "407858808",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_Emitters_HovercarPassbys_Low_1.wav",
+      "Path": "Media/407858808.wem",
+      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Low_1_7550AD36.wem"
+     },
+     {
+      "Id": "419807917",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_Emitters_HovercarPassbys_Mid_2.wav",
+      "Path": "Media/419807917.wem",
+      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Mid_2_7550AD36.wem"
+     },
+     {
+      "Id": "666585169",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_Emitters_HovercarPassbys_Low_2.wav",
+      "Path": "Media/666585169.wem",
+      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Low_2_7550AD36.wem"
+     },
+     {
+      "Id": "924565868",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_Emitters_HovercarPassbys_Mid_1.wav",
+      "Path": "Media/924565868.wem",
+      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Mid_1_7550AD36.wem"
+     }
+    ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "546212805",
+       "Name": "Tremolo_HoverCars (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Emitters\\Highrise\\Static\\AMB_HoverCars\\NearTraffic\\AMB_NearTraffic_LR\\AMB_HoverCars_LP\\Tremolo_HoverCars (Custom)",
+       "GUID": "{9101AB43-FCDC-4503-A168-C5C550587164}",
+       "LibName": "Wwise Tremolo",
+       "LibId": "8585219"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "3603742064",
+      "Name": "AMB_NearTraffic_LR",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\HoverCars\\NearTraffic\\AMB_NearTraffic_LR",
+      "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
+      "MaxAttenuation": "4500",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "121824528"
+       },
+       {
+        "Id": "123575965"
+       },
+       {
+        "Id": "407858808"
+       },
+       {
+        "Id": "419807917"
+       },
+       {
+        "Id": "666585169"
+       },
+       {
+        "Id": "924565868"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "546212805"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{484EEFAE-B489-85BB-01E4-C9F093A52E12}"
+ }
+}
