@@ -280,7 +280,7 @@
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Target">
-																	<ObjectRef Name="AMB_WindGust_LP" ID="{C95996A4-33BF-4957-A310-E96D0EC57040}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																	<ObjectRef Name="AMB_WindGusts_LP" ID="{C95996A4-33BF-4957-A310-E96D0EC57040}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 																</Reference>
 															</ReferenceList>
 														</Action>
@@ -291,7 +291,33 @@
 														<Action Name="" ID="{F80CABD6-8791-4663-841D-5EF3EF362A40}" ShortID="673931917">
 															<ReferenceList>
 																<Reference Name="Target">
-																	<ObjectRef Name="AMB_BalconyGusts_OS" ID="{2AB2126E-C5F5-4842-A8CD-1BA94AB56C09}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																	<ObjectRef Name="AMB_WindGusts_OS" ID="{2AB2126E-C5F5-4842-A8CD-1BA94AB56C09}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="AMB_RoomGusts_Interior" ID="{24CD36E0-49F3-4EC4-B5D6-65913D32EC35}">
+													<ChildrenList>
+														<Action Name="" ID="{D6F2780D-DF94-4782-ABE6-D0888BEE116F}" ShortID="939404297">
+															<PropertyList>
+																<Property Name="Delay" Type="Real64" Value="1.5"/>
+																<Property Name="FadeTime" Type="Real64" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_Emitter_RoomGusts_LP" ID="{E1F9EAEB-812F-4CFD-B6A6-FE3C505A753E}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="AMB_RoomGusts_Exterior" ID="{4E360744-3F77-422A-A2B5-787222393838}">
+													<ChildrenList>
+														<Action Name="" ID="{F42F0D31-30A1-4A47-A3F8-938A6209F862}" ShortID="711019759">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_WindGusts_LP" ID="{F0F8BEDB-0414-4E88-BF02-5E4AC4D87F98}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 																</Reference>
 															</ReferenceList>
 														</Action>
@@ -352,37 +378,36 @@
 										</Event>
 										<Folder Name="HoverCars" ID="{E60B9BE2-648B-4B98-9CA0-BE8F7C3B8A73}" ShortID="828572442">
 											<ChildrenList>
-												<Event Name="AMB_DistantTraffic" ID="{402C2E63-6805-48DE-988D-743A09FCE1F4}"/>
 												<Folder Name="NearTraffic" ID="{B1347CAF-11E7-4FC6-8B34-DBC1EF449B81}" ShortID="284556994">
 													<ChildrenList>
-														<Event Name="AMB_NearTraffic_BF" ID="{C5ED1BFB-22A9-41F4-A56D-7095120AA1D2}">
+														<Event Name="AMB_NearTraffic_C" ID="{C5ED1BFB-22A9-41F4-A56D-7095120AA1D2}">
 															<ChildrenList>
 																<Action Name="" ID="{41D4026C-A480-410F-9BF9-8ED6DBCA3888}" ShortID="93368156">
 																	<ReferenceList>
 																		<Reference Name="Target">
-																			<ObjectRef Name="AMB_HoverCars_LP" ID="{BFCE0EAF-6B92-4BA0-89DA-51A53F8178C6}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																			<ObjectRef Name="AMB_NearTraffic_BF_LP_C" ID="{BFCE0EAF-6B92-4BA0-89DA-51A53F8178C6}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 																		</Reference>
 																	</ReferenceList>
 																</Action>
 															</ChildrenList>
 														</Event>
-														<Event Name="AMB_NearTraffic_RL" ID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}">
+														<Event Name="AMB_NearTraffic_R" ID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}">
 															<ChildrenList>
 																<Action Name="" ID="{F8EB8AF0-3439-4BAF-888A-4F02724F861D}" ShortID="308643307">
 																	<ReferenceList>
 																		<Reference Name="Target">
-																			<ObjectRef Name="AMB_HoverCars_LP" ID="{CB4F15D3-C9E8-4FFD-900D-E17BC7E57100}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																			<ObjectRef Name="AMB_HoverCars_RL_LP_R" ID="{CB4F15D3-C9E8-4FFD-900D-E17BC7E57100}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 																		</Reference>
 																	</ReferenceList>
 																</Action>
 															</ChildrenList>
 														</Event>
-														<Event Name="AMB_NearTraffic_LR" ID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}">
+														<Event Name="AMB_NearTraffic_L" ID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}">
 															<ChildrenList>
 																<Action Name="" ID="{96F2E233-C5FE-4907-AD96-BEC4EE68393A}" ShortID="276986791">
 																	<ReferenceList>
 																		<Reference Name="Target">
-																			<ObjectRef Name="AMB_HoverCars_LP" ID="{E1CEB305-BC47-4431-B317-71EE7529CAA7}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																			<ObjectRef Name="AMB_HoverCars_LR_LP_L" ID="{E1CEB305-BC47-4431-B317-71EE7529CAA7}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 																		</Reference>
 																	</ReferenceList>
 																</Action>
@@ -390,7 +415,54 @@
 														</Event>
 													</ChildrenList>
 												</Folder>
-												<Folder Name="DistantTraffic" ID="{2181E809-1D01-4D6D-BFD9-5DC4E75D26ED}" ShortID="855891662"/>
+												<Folder Name="DistantTraffic" ID="{2181E809-1D01-4D6D-BFD9-5DC4E75D26ED}" ShortID="855891662">
+													<ChildrenList>
+														<Event Name="AMB_DistantTraffic_C" ID="{931959EE-DA2F-45C8-B892-E89DFE3871CC}">
+															<ChildrenList>
+																<Action Name="" ID="{CCC7D955-6EF2-42EF-B38B-02F3B8D73B30}" ShortID="225053423">
+																	<ReferenceList>
+																		<Reference Name="Target">
+																			<ObjectRef Name="AMB_DistantTraffic_LR_LP_C" ID="{B42A9A51-29C0-475C-BCDE-3B8DEE910BAB}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																		</Reference>
+																	</ReferenceList>
+																</Action>
+															</ChildrenList>
+														</Event>
+														<Event Name="AMB_DistantTraffic_R" ID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}">
+															<ChildrenList>
+																<Action Name="" ID="{3F6FAE9F-9387-455E-9F6A-84A0D2B49E11}" ShortID="386980522">
+																	<ReferenceList>
+																		<Reference Name="Target">
+																			<ObjectRef Name="AMB_DistantTraffic_RL_LP_R" ID="{CDEF387F-0830-4759-BEA4-AA7FF26D0C66}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																		</Reference>
+																	</ReferenceList>
+																</Action>
+															</ChildrenList>
+														</Event>
+														<Event Name="AMB_DistantTraffic_L" ID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}">
+															<ChildrenList>
+																<Action Name="" ID="{F00BECB9-8ECF-40E3-8B79-F9464119E128}" ShortID="598574139">
+																	<ReferenceList>
+																		<Reference Name="Target">
+																			<ObjectRef Name="AMB_DistantTraffic_LR_LP_L" ID="{B8CBE911-1EF9-48E6-ADEC-73F09732DBF3}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																		</Reference>
+																	</ReferenceList>
+																</Action>
+															</ChildrenList>
+														</Event>
+													</ChildrenList>
+												</Folder>
+												<Event Name="AMB_NearTraffic_Spline" ID="{B79F71C1-F2C8-4A0A-88DC-B7648445D29B}">
+													<ChildrenList>
+														<Action Name="" ID="{C9029C52-BED1-4BAE-BA35-9C22B422109F}" ShortID="625442309">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_NearTraffic_Spline" ID="{2983D3DB-10CD-43AA-BD62-FDD223E657E2}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
 											</ChildrenList>
 										</Folder>
 										<Folder Name="UnrealHolograph" ID="{21B29F72-3A40-4B43-AA3C-6F6355C68ED3}" ShortID="867970519">

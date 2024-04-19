@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{90A24E41-DC3B-6F32-298D-D11DEB9F8F29}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{51A60032-C465-BDC7-FCD0-5CA223F863BC}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -17,6 +17,14 @@
 				<File Id="91730085" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_StreetLamp_Buzz_OS_4.wav</ShortName>
 					<CachePath>SFX/AMB_StreetLamp_Buzz_OS_4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="121824528" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_Emitters_HovercarPassbys_Low_4.wav</ShortName>
+					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Low_4_7550AD36.wem</CachePath>
+				</File>
+				<File Id="123575965" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_Emitters_HovercarPassbys_Mid_4.wav</ShortName>
+					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Mid_4_7550AD36.wem</CachePath>
 				</File>
 				<File Id="175461088" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_StreetLamp_Hum_LP.wav</ShortName>
@@ -46,6 +54,18 @@
 					<ShortName>AMB_StreetLamp_Buzz_OS_3.wav</ShortName>
 					<CachePath>SFX/AMB_StreetLamp_Buzz_OS_3_10C4C929.wem</CachePath>
 				</File>
+				<File Id="364330538" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_Emitter_RoomGusts.wav</ShortName>
+					<CachePath>SFX/AMB_Emitter_RoomGusts_577AE79D.wem</CachePath>
+				</File>
+				<File Id="407858808" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_Emitters_HovercarPassbys_Low_1.wav</ShortName>
+					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Low_1_7550AD36.wem</CachePath>
+				</File>
+				<File Id="419807917" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_Emitters_HovercarPassbys_Mid_2.wav</ShortName>
+					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Mid_2_7550AD36.wem</CachePath>
+				</File>
 				<File Id="425050702" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Emitters_UnrealHolograph_FadeOut_OS.wav</ShortName>
 					<CachePath>SFX/Emitters_UnrealHolograph_FadeOut_OS_C706C5CF.wem</CachePath>
@@ -74,6 +94,14 @@
 					<ShortName>Emitters_UnrealHolograph_FadeIn_OS.wav</ShortName>
 					<CachePath>SFX/Emitters_UnrealHolograph_FadeIn_OS_5920140F.wem</CachePath>
 				</File>
+				<File Id="666585169" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_Emitters_HovercarPassbys_Low_2.wav</ShortName>
+					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Low_2_7550AD36.wem</CachePath>
+				</File>
+				<File Id="924565868" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_Emitters_HovercarPassbys_Mid_1.wav</ShortName>
+					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Mid_1_7550AD36.wem</CachePath>
+				</File>
 				<File Id="928573754" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_Emitter_WindGusts.wav</ShortName>
 					<CachePath>SFX/AMB_Emitter_WindGusts_DEC75B5C.wem</CachePath>
@@ -87,6 +115,11 @@
 					<CachePath>SFX/AMB_BarrierFence_LP_3860FEB7.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="266812614" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\NearTraffic\AMB_NearTraffic_Spline\AMB_NearTraffic_Spline\Tremolo_HoverCars (Custom)" GUID="{69D47864-C047-462B-A2D3-34F74ED6CF2F}" LibName="Wwise Tremolo" LibId="8585219"/>
+				</Custom>
+			</Plugins>
 			<Events>
 				<Event Id="2992962930" Name="AMB_BarrierFence" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_BarrierFence" GUID="{427593F0-92C8-4CA8-8FCD-C163A0B02BEC}" MaxAttenuation="3500" DurationType="Infinite">
 					<MediaRefs>
@@ -108,11 +141,36 @@
 						<MediaRef Id="229272092"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1935135641" Name="AMB_NearTraffic_Spline" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\AMB_NearTraffic_Spline" GUID="{B79F71C1-F2C8-4A0A-88DC-B7648445D29B}" MaxAttenuation="1500" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="121824528"/>
+						<MediaRef Id="123575965"/>
+						<MediaRef Id="407858808"/>
+						<MediaRef Id="419807917"/>
+						<MediaRef Id="666585169"/>
+						<MediaRef Id="924565868"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="266812614"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
 				<Event Id="1196422761" Name="AMB_PhoneBox" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_PhoneBox" GUID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" MaxAttenuation="2500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="537312981"/>
 						<MediaRef Id="539953251"/>
 						<MediaRef Id="992552206"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3740310" Name="AMB_RoomGusts_Exterior" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\Wind\AMB_RoomGusts_Exterior" GUID="{4E360744-3F77-422A-A2B5-787222393838}" MaxAttenuation="3000" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="928573754"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="294789336" Name="AMB_RoomGusts_Interior" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\Wind\AMB_RoomGusts_Interior" GUID="{24CD36E0-49F3-4EC4-B5D6-65913D32EC35}" MaxAttenuation="3000" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="364330538"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1699197345" Name="AMB_StreetLamp" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_StreetLamp" GUID="{82B95D5C-4BE9-4DFC-9A31-59E8AEF7E2FC}" MaxAttenuation="1500" DurationType="Infinite">
@@ -147,7 +205,7 @@
 						<MediaRef Id="218188666"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1571611116" Name="AMB_WindGusts_Spline" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\Wind\AMB_WindGusts_Spline" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="4500" DurationType="Infinite">
+				<Event Id="1571611116" Name="AMB_WindGusts_Spline" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\Wind\AMB_WindGusts_Spline" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="4000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="928573754"/>
 					</MediaRefs>
@@ -155,5 +213,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3BECB4F2-0D31-F53C-86A2-BAD2C6F8D90E}</FileHash>
+	<FileHash>{9C3DCEFA-2E4E-98F6-ED13-245255A69639}</FileHash>
 </SoundBanksInfo>

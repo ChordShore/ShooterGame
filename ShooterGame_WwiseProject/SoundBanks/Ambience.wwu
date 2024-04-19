@@ -13,16 +13,19 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ObjectInclusionList>
+						<ObjectRef Name="AMB_RoomGusts_Exterior" ID="{4E360744-3F77-422A-A2B5-787222393838}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_UnrealHolograph_FadeOut" ID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_UnrealHolograph" ID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_Highrise_Spawn" ID="{1C364EAC-CAE6-4664-ACA8-6E418F9C7859}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_WindGusts_Spline" ID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AMB_NearTraffic_Spline" ID="{B79F71C1-F2C8-4A0A-88DC-B7648445D29B}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_Highrise_Atrium" ID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_UnrealHolograph_FadeIn" ID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_UnrealSign" ID="{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_Highrise_Room" ID="{3F5A1E50-6729-4C3C-9937-D8C443065D63}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_BarrierFence" ID="{427593F0-92C8-4CA8-8FCD-C163A0B02BEC}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_StreetLamp" ID="{82B95D5C-4BE9-4DFC-9A31-59E8AEF7E2FC}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AMB_RoomGusts_Interior" ID="{24CD36E0-49F3-4EC4-B5D6-65913D32EC35}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AMB_PhoneBox" ID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

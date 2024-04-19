@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="123926568" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{B6AE9EA1-7231-DA79-D266-1B897EE0776F}">
+			<ObjectPath>AMB_NearTraffic_R</ObjectPath>
+			<ShortName>AMB_NearTraffic_R</ShortName>
+			<Path>Event/AMB_NearTraffic_R.bnk</Path>
+			<Media>
+				<File Id="121824528" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Emitters_HovercarPassbys_Low_4.wav</ShortName>
+					<Path>Media/121824528.wem</Path>
+					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Low_4_7550AD36.wem</CachePath>
+				</File>
+				<File Id="123575965" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Emitters_HovercarPassbys_Mid_4.wav</ShortName>
+					<Path>Media/123575965.wem</Path>
+					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Mid_4_7550AD36.wem</CachePath>
+				</File>
+				<File Id="407858808" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Emitters_HovercarPassbys_Low_1.wav</ShortName>
+					<Path>Media/407858808.wem</Path>
+					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Low_1_7550AD36.wem</CachePath>
+				</File>
+				<File Id="419807917" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Emitters_HovercarPassbys_Mid_2.wav</ShortName>
+					<Path>Media/419807917.wem</Path>
+					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Mid_2_7550AD36.wem</CachePath>
+				</File>
+				<File Id="666585169" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Emitters_HovercarPassbys_Low_2.wav</ShortName>
+					<Path>Media/666585169.wem</Path>
+					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Low_2_7550AD36.wem</CachePath>
+				</File>
+				<File Id="924565868" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Emitters_HovercarPassbys_Mid_1.wav</ShortName>
+					<Path>Media/924565868.wem</Path>
+					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Mid_1_7550AD36.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="863038577" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\NearTraffic\AMB_NearTraffic_R\AMB_HoverCars_RL_LP_R\Tremolo_HoverCars (Custom)" GUID="{DDA4D46D-ECE2-4DF9-9B72-98B398437CAE}" LibName="Wwise Tremolo" LibId="8585219"/>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="123926568" Name="AMB_NearTraffic_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\NearTraffic\AMB_NearTraffic_R" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" MaxAttenuation="8000" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="121824528"/>
+						<MediaRef Id="123575965"/>
+						<MediaRef Id="407858808"/>
+						<MediaRef Id="419807917"/>
+						<MediaRef Id="666585169"/>
+						<MediaRef Id="924565868"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="863038577"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{E27D44C2-0DD7-817C-A0FA-0CA680A9387B}</FileHash>
+</SoundBanksInfo>
