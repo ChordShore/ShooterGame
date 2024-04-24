@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{51A60032-C465-BDC7-FCD0-5CA223F863BC}",
+    "Hash": "{3FCBDBC4-D03B-7705-2445-63502DDBD508}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -237,7 +237,7 @@
       {
        "Id": "266812614",
        "Name": "Tremolo_HoverCars (Custom)",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Emitters\\Highrise\\Dynamic\\AMB_HoverCars\\NearTraffic\\AMB_NearTraffic_Spline\\AMB_NearTraffic_Spline\\Tremolo_HoverCars (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Emitters\\Highrise\\AMB_Dynamic\\AMB_HoverCars\\NearTraffic\\AMB_NearTraffic_Spline\\AMB_NearTraffic_Spline\\Tremolo_HoverCars (Custom)",
        "GUID": "{69D47864-C047-462B-A2D3-34F74ED6CF2F}",
        "LibName": "Wwise Tremolo",
        "LibId": "8585219"
@@ -352,11 +352,11 @@
       ]
      },
      {
-      "Id": "3740310",
-      "Name": "AMB_RoomGusts_Exterior",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\Wind\\AMB_RoomGusts_Exterior",
+      "Id": "1724531578",
+      "Name": "AMB_RoomGusts_MainEntrance_Exterior",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\RoomGusts\\AMB_RoomGusts_MainEntrance_Exterior",
       "GUID": "{4E360744-3F77-422A-A2B5-787222393838}",
-      "MaxAttenuation": "3000",
+      "MaxAttenuation": "2000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -365,9 +365,9 @@
       ]
      },
      {
-      "Id": "294789336",
-      "Name": "AMB_RoomGusts_Interior",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\Wind\\AMB_RoomGusts_Interior",
+      "Id": "2104059324",
+      "Name": "AMB_RoomGusts_MainEntrance_Interior",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\RoomGusts\\AMB_RoomGusts_MainEntrance_Interior",
       "GUID": "{24CD36E0-49F3-4EC4-B5D6-65913D32EC35}",
       "MaxAttenuation": "3000",
       "DurationType": "Infinite",
@@ -470,7 +470,7 @@
      {
       "Id": "1571611116",
       "Name": "AMB_WindGusts_Spline",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\Wind\\AMB_WindGusts_Spline",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\WindGusts\\AMB_WindGusts_Spline",
       "GUID": "{B1473C73-10B0-46BB-AA72-8ABA06D25E40}",
       "MaxAttenuation": "4000",
       "DurationType": "Infinite",
@@ -483,6 +483,6 @@
     ]
    }
   ],
-  "FileHash": "{C54286A7-ACA5-1C83-A07B-7506AC7976A3}"
+  "FileHash": "{4E714C36-587C-2842-1698-B4428EA28ED5}"
  }
 }

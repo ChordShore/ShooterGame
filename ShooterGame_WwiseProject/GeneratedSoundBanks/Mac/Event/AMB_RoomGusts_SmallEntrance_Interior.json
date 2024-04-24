@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "636673922",
+    "Type": "Event",
+    "GUID": "{7228D143-91CD-48AB-B419-E16DEE2BF95F}",
+    "Language": "SFX",
+    "Hash": "{BC756A1B-0C5E-D748-1B89-A3346C7F076D}",
+    "ObjectPath": "AMB_RoomGusts_SmallEntrance_Interior",
+    "ShortName": "AMB_RoomGusts_SmallEntrance_Interior",
+    "Path": "Event/AMB_RoomGusts_SmallEntrance_Interior.bnk",
+    "Media": [
+     {
+      "Id": "364330538",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_Emitter_RoomGusts.wav",
+      "Path": "Media/364330538.wem",
+      "CachePath": "SFX/AMB_Emitter_RoomGusts_577AE79D.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "636673922",
+      "Name": "AMB_RoomGusts_SmallEntrance_Interior",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\RoomGusts\\AMB_RoomGusts_SmallEntrance_Interior",
+      "GUID": "{7228D143-91CD-48AB-B419-E16DEE2BF95F}",
+      "MaxAttenuation": "1700",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "364330538"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{4C39B5D3-4796-4D73-C13C-1E264652D4BB}"
+ }
+}

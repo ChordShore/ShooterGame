@@ -269,35 +269,9 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Folder Name="Wind" ID="{197AB3FA-E979-4674-B1B1-180389371AC2}" ShortID="534869423">
+										<Folder Name="RoomGusts" ID="{197AB3FA-E979-4674-B1B1-180389371AC2}" ShortID="534869423">
 											<ChildrenList>
-												<Event Name="AMB_WindGusts_Spline" ID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}">
-													<ChildrenList>
-														<Action Name="" ID="{1710766F-F2A4-45E0-B2BA-61DA4E454B78}" ShortID="810291939">
-															<PropertyList>
-																<Property Name="Delay" Type="Real64" Value="1.5"/>
-																<Property Name="FadeTime" Type="Real64" Value="1"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_WindGusts_LP" ID="{C95996A4-33BF-4957-A310-E96D0EC57040}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-												<Event Name="AMB_WindGusts_Static" ID="{838EFBCF-7300-40E4-B598-D1699C261CB8}">
-													<ChildrenList>
-														<Action Name="" ID="{F80CABD6-8791-4663-841D-5EF3EF362A40}" ShortID="673931917">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_WindGusts_OS" ID="{2AB2126E-C5F5-4842-A8CD-1BA94AB56C09}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-												<Event Name="AMB_RoomGusts_Interior" ID="{24CD36E0-49F3-4EC4-B5D6-65913D32EC35}">
+												<Event Name="AMB_RoomGusts_MainEntrance_Interior" ID="{24CD36E0-49F3-4EC4-B5D6-65913D32EC35}">
 													<ChildrenList>
 														<Action Name="" ID="{D6F2780D-DF94-4782-ABE6-D0888BEE116F}" ShortID="939404297">
 															<PropertyList>
@@ -312,12 +286,68 @@
 														</Action>
 													</ChildrenList>
 												</Event>
-												<Event Name="AMB_RoomGusts_Exterior" ID="{4E360744-3F77-422A-A2B5-787222393838}">
+												<Event Name="AMB_RoomGusts_MainEntrance_Exterior" ID="{4E360744-3F77-422A-A2B5-787222393838}">
 													<ChildrenList>
 														<Action Name="" ID="{F42F0D31-30A1-4A47-A3F8-938A6209F862}" ShortID="711019759">
 															<ReferenceList>
 																<Reference Name="Target">
 																	<ObjectRef Name="AMB_WindGusts_LP" ID="{F0F8BEDB-0414-4E88-BF02-5E4AC4D87F98}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="AMB_RoomGusts_SmallEntrance_Exterior" ID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}">
+													<ChildrenList>
+														<Action Name="" ID="{F266F6D2-2433-4515-9C93-A6E71525A942}" ShortID="409985400">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_WindGusts_LP" ID="{17C43801-8EC6-4057-BC4E-0539978E180B}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="AMB_RoomGusts_SmallEntrance_Interior" ID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}">
+													<ChildrenList>
+														<Action Name="" ID="{DD0DD029-EEC4-49C1-A7E0-BF3EEC0BCC7A}" ShortID="543937671">
+															<PropertyList>
+																<Property Name="Delay" Type="Real64" Value="1.5"/>
+																<Property Name="FadeTime" Type="Real64" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_Emitter_RoomGusts_LP" ID="{67350D9C-CA38-40F3-9276-3F8A75B14E60}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+											</ChildrenList>
+										</Folder>
+										<Folder Name="WindGusts" ID="{953AE9D4-5D23-4FD4-B673-B266A7C9F0A3}" ShortID="292112688">
+											<ChildrenList>
+												<Event Name="AMB_WindGusts_Static" ID="{838EFBCF-7300-40E4-B598-D1699C261CB8}">
+													<ChildrenList>
+														<Action Name="" ID="{F80CABD6-8791-4663-841D-5EF3EF362A40}" ShortID="673931917">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_WindGusts_OS" ID="{2AB2126E-C5F5-4842-A8CD-1BA94AB56C09}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="AMB_WindGusts_Spline" ID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}">
+													<ChildrenList>
+														<Action Name="" ID="{1710766F-F2A4-45E0-B2BA-61DA4E454B78}" ShortID="810291939">
+															<PropertyList>
+																<Property Name="Delay" Type="Real64" Value="1.5"/>
+																<Property Name="FadeTime" Type="Real64" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_WindGusts_LP" ID="{C95996A4-33BF-4957-A310-E96D0EC57040}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 																</Reference>
 															</ReferenceList>
 														</Action>

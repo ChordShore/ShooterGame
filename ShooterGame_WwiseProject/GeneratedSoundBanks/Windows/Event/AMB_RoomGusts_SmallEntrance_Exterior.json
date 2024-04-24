@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "4134637028",
+    "Type": "Event",
+    "GUID": "{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}",
+    "Language": "SFX",
+    "Hash": "{59083392-F4EB-3693-4DDA-CE2741794302}",
+    "ObjectPath": "AMB_RoomGusts_SmallEntrance_Exterior",
+    "ShortName": "AMB_RoomGusts_SmallEntrance_Exterior",
+    "Path": "Event/AMB_RoomGusts_SmallEntrance_Exterior.bnk",
+    "Media": [
+     {
+      "Id": "928573754",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_Emitter_WindGusts.wav",
+      "Path": "Media/928573754.wem",
+      "CachePath": "SFX/AMB_Emitter_WindGusts_DEC75B5C.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4134637028",
+      "Name": "AMB_RoomGusts_SmallEntrance_Exterior",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\RoomGusts\\AMB_RoomGusts_SmallEntrance_Exterior",
+      "GUID": "{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}",
+      "MaxAttenuation": "1500",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "928573754"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{BAA2A47D-1A95-51DC-53A5-2763C8333693}"
+ }
+}

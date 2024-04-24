@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{51A60032-C465-BDC7-FCD0-5CA223F863BC}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{3FCBDBC4-D03B-7705-2445-63502DDBD508}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -125,7 +125,7 @@
 			</Media>
 			<Plugins>
 				<Custom>
-					<Plugin Id="266812614" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\NearTraffic\AMB_NearTraffic_Spline\AMB_NearTraffic_Spline\Tremolo_HoverCars (Custom)" GUID="{69D47864-C047-462B-A2D3-34F74ED6CF2F}" LibName="Wwise Tremolo" LibId="8585219"/>
+					<Plugin Id="266812614" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_Dynamic\AMB_HoverCars\NearTraffic\AMB_NearTraffic_Spline\AMB_NearTraffic_Spline\Tremolo_HoverCars (Custom)" GUID="{69D47864-C047-462B-A2D3-34F74ED6CF2F}" LibName="Wwise Tremolo" LibId="8585219"/>
 				</Custom>
 			</Plugins>
 			<Events>
@@ -171,12 +171,12 @@
 						<MediaRef Id="992552206"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3740310" Name="AMB_RoomGusts_Exterior" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\Wind\AMB_RoomGusts_Exterior" GUID="{4E360744-3F77-422A-A2B5-787222393838}" MaxAttenuation="3000" DurationType="Infinite">
+				<Event Id="1724531578" Name="AMB_RoomGusts_MainEntrance_Exterior" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\RoomGusts\AMB_RoomGusts_MainEntrance_Exterior" GUID="{4E360744-3F77-422A-A2B5-787222393838}" MaxAttenuation="2000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="928573754"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="294789336" Name="AMB_RoomGusts_Interior" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\Wind\AMB_RoomGusts_Interior" GUID="{24CD36E0-49F3-4EC4-B5D6-65913D32EC35}" MaxAttenuation="3000" DurationType="Infinite">
+				<Event Id="2104059324" Name="AMB_RoomGusts_MainEntrance_Interior" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\RoomGusts\AMB_RoomGusts_MainEntrance_Interior" GUID="{24CD36E0-49F3-4EC4-B5D6-65913D32EC35}" MaxAttenuation="3000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="364330538"/>
 					</MediaRefs>
@@ -213,14 +213,14 @@
 						<MediaRef Id="218188666"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1571611116" Name="AMB_WindGusts_Spline" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\Wind\AMB_WindGusts_Spline" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="4000" DurationType="Infinite">
+				<Event Id="1571611116" Name="AMB_WindGusts_Spline" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\WindGusts\AMB_WindGusts_Spline" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="4000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="928573754"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="123926568" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{B6AE9EA1-7231-DA79-D266-1B897EE0776F}">
+		<SoundBank Id="123926568" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{E709EA5C-98C9-BFED-AD58-F846E53CEA01}">
 			<ObjectPath>AMB_NearTraffic_R</ObjectPath>
 			<ShortName>AMB_NearTraffic_R</ShortName>
 			<Path>Event/AMB_NearTraffic_R.bnk</Path>
@@ -258,7 +258,7 @@
 			</Media>
 			<Plugins>
 				<Custom>
-					<Plugin Id="863038577" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\NearTraffic\AMB_NearTraffic_R\AMB_HoverCars_RL_LP_R\Tremolo_HoverCars (Custom)" GUID="{DDA4D46D-ECE2-4DF9-9B72-98B398437CAE}" LibName="Wwise Tremolo" LibId="8585219"/>
+					<Plugin Id="863038577" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_Dynamic\AMB_HoverCars\NearTraffic\AMB_NearTraffic_R\AMB_HoverCars_RL_LP_R\Tremolo_HoverCars (Custom)" GUID="{DDA4D46D-ECE2-4DF9-9B72-98B398437CAE}" LibName="Wwise Tremolo" LibId="8585219"/>
 				</Custom>
 			</Plugins>
 			<Events>
@@ -279,7 +279,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="123926582" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{BD834517-82C2-AEF2-5FFB-7ED1EA197DB7}">
+		<SoundBank Id="123926582" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{05EDF7D8-B55C-2AA6-0C69-559BF1E5D58E}">
 			<ObjectPath>AMB_NearTraffic_L</ObjectPath>
 			<ShortName>AMB_NearTraffic_L</ShortName>
 			<Path>Event/AMB_NearTraffic_L.bnk</Path>
@@ -317,7 +317,7 @@
 			</Media>
 			<Plugins>
 				<Custom>
-					<Plugin Id="546212805" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\NearTraffic\AMB_NearTraffic_L\AMB_HoverCars_LR_LP_L\Tremolo_HoverCars (Custom)" GUID="{9101AB43-FCDC-4503-A168-C5C550587164}" LibName="Wwise Tremolo" LibId="8585219"/>
+					<Plugin Id="546212805" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_Dynamic\AMB_HoverCars\NearTraffic\AMB_NearTraffic_L\AMB_HoverCars_LR_LP_L\Tremolo_HoverCars (Custom)" GUID="{9101AB43-FCDC-4503-A168-C5C550587164}" LibName="Wwise Tremolo" LibId="8585219"/>
 				</Custom>
 			</Plugins>
 			<Events>
@@ -338,7 +338,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="123926585" Type="Event" GUID="{C5ED1BFB-22A9-41F4-A56D-7095120AA1D2}" Language="SFX" Hash="{32D507E6-FEFC-C433-7BF0-92C2865DD4C9}">
+		<SoundBank Id="123926585" Type="Event" GUID="{C5ED1BFB-22A9-41F4-A56D-7095120AA1D2}" Language="SFX" Hash="{BC850F2F-7307-C174-B46B-A0B82B047C0B}">
 			<ObjectPath>AMB_NearTraffic_C</ObjectPath>
 			<ShortName>AMB_NearTraffic_C</ShortName>
 			<Path>Event/AMB_NearTraffic_C.bnk</Path>
@@ -376,7 +376,7 @@
 			</Media>
 			<Plugins>
 				<Custom>
-					<Plugin Id="447121479" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\Dynamic\AMB_HoverCars\NearTraffic\AMB_NearTraffic_C\AMB_NearTraffic_BF_LP_C\Tremolo_HoverCars (Custom)" GUID="{45EE3E7C-D12E-4AB8-B27F-D02FCC0D3683}" LibName="Wwise Tremolo" LibId="8585219"/>
+					<Plugin Id="447121479" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_Dynamic\AMB_HoverCars\NearTraffic\AMB_NearTraffic_C\AMB_NearTraffic_BF_LP_C\Tremolo_HoverCars (Custom)" GUID="{45EE3E7C-D12E-4AB8-B27F-D02FCC0D3683}" LibName="Wwise Tremolo" LibId="8585219"/>
 				</Custom>
 			</Plugins>
 			<Events>
@@ -409,7 +409,26 @@
 				<Event Id="378132258" Name="FOL_Trashcan_Collision" ObjectPath="\Events\Foley\Props\FOL_Trashcan_Collision" GUID="{83AF3510-8046-4206-B4B6-E1A12D72AC55}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{82C52923-79F9-7A00-CE8E-991B0A276078}">
+		<SoundBank Id="636673922" Type="Event" GUID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}" Language="SFX" Hash="{BC756A1B-0C5E-D748-1B89-A3346C7F076D}">
+			<ObjectPath>AMB_RoomGusts_SmallEntrance_Interior</ObjectPath>
+			<ShortName>AMB_RoomGusts_SmallEntrance_Interior</ShortName>
+			<Path>Event/AMB_RoomGusts_SmallEntrance_Interior.bnk</Path>
+			<Media>
+				<File Id="364330538" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Emitter_RoomGusts.wav</ShortName>
+					<Path>Media/364330538.wem</Path>
+					<CachePath>SFX/AMB_Emitter_RoomGusts_577AE79D.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="636673922" Name="AMB_RoomGusts_SmallEntrance_Interior" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\RoomGusts\AMB_RoomGusts_SmallEntrance_Interior" GUID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}" MaxAttenuation="1700" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="364330538"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{C76E04AA-8F4A-E621-21E9-DCC4D6E67D93}">
 			<ObjectPath>AMB_ScifiDrones</ObjectPath>
 			<ShortName>AMB_ScifiDrones</ShortName>
 			<Path>Event/AMB_ScifiDrones.bnk</Path>
@@ -499,7 +518,7 @@
 				<Event Id="3006080354" Name="UI_Toggle" ObjectPath="\Events\Interface\UI_Toggle" GUID="{797C0C31-AE30-4A12-9686-6408980D163E}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1102184785" Type="Event" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" Language="SFX" Hash="{A974A755-1559-3D51-A2A7-EE752A3AAC53}">
+		<SoundBank Id="1102184785" Type="Event" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" Language="SFX" Hash="{49BC0E5C-795B-A411-6FED-F8A8F60D093B}">
 			<ObjectPath>AMB_WindGusts_Static</ObjectPath>
 			<ShortName>AMB_WindGusts_Static</ShortName>
 			<Path>Event/AMB_WindGusts_Static.bnk</Path>
@@ -571,7 +590,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1102184785" Name="AMB_WindGusts_Static" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\Wind\AMB_WindGusts_Static" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" MaxAttenuation="3000" DurationType="OneShot" DurationMin="11.010875" DurationMax="38.453106">
+				<Event Id="1102184785" Name="AMB_WindGusts_Static" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\WindGusts\AMB_WindGusts_Static" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" MaxAttenuation="3000" DurationType="OneShot" DurationMin="11.010875" DurationMax="38.453106">
 					<MediaRefs>
 						<MediaRef Id="10487233"/>
 						<MediaRef Id="126209229"/>
@@ -855,7 +874,7 @@
 				<Event Id="3787053379" Name="ITM_Health_Pickup" ObjectPath="\Events\Items\ITM_Health_Pickup" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2263523777" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{7E645EE6-5AFB-1A77-0498-39C5DC46F981}">
+		<SoundBank Id="2263523777" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{1A33D45B-7AF4-2182-974B-547E77B674FC}">
 			<ObjectPath>AMB_DistantTraffic_L</ObjectPath>
 			<ShortName>AMB_DistantTraffic_L</ShortName>
 			<Path>Event/AMB_DistantTraffic_L.bnk</Path>
@@ -932,7 +951,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2263523790" Type="Event" GUID="{931959EE-DA2F-45C8-B892-E89DFE3871CC}" Language="SFX" Hash="{58BB43CE-9769-E8A9-69A7-89BEB57B3841}">
+		<SoundBank Id="2263523790" Type="Event" GUID="{931959EE-DA2F-45C8-B892-E89DFE3871CC}" Language="SFX" Hash="{51872234-0430-D067-51C1-595F2347111C}">
 			<ObjectPath>AMB_DistantTraffic_C</ObjectPath>
 			<ShortName>AMB_DistantTraffic_C</ShortName>
 			<Path>Event/AMB_DistantTraffic_C.bnk</Path>
@@ -1009,7 +1028,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2263523807" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{C6166BCC-850C-47E4-DA08-001A7677A0F3}">
+		<SoundBank Id="2263523807" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{62A7FBD2-9130-1E38-356A-CB147E5A3A5B}">
 			<ObjectPath>AMB_DistantTraffic_R</ObjectPath>
 			<ShortName>AMB_DistantTraffic_R</ShortName>
 			<Path>Event/AMB_DistantTraffic_R.bnk</Path>
@@ -1086,7 +1105,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{C6D5DB35-DABE-17EA-CE2A-043F398573E0}">
+		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{41E30108-E11B-0197-1633-1B5A24DA4001}">
 			<ObjectPath>\SoundBanks\Default Work Unit\EventProbe</ObjectPath>
 			<ShortName>EventProbe</ShortName>
 			<Path>EventProbe.bnk</Path>
@@ -1184,6 +1203,25 @@
 			<ShortName>Dialogue</ShortName>
 			<Path>Dialogue.bnk</Path>
 		</SoundBank>
+		<SoundBank Id="4134637028" Type="Event" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" Language="SFX" Hash="{59083392-F4EB-3693-4DDA-CE2741794302}">
+			<ObjectPath>AMB_RoomGusts_SmallEntrance_Exterior</ObjectPath>
+			<ShortName>AMB_RoomGusts_SmallEntrance_Exterior</ShortName>
+			<Path>Event/AMB_RoomGusts_SmallEntrance_Exterior.bnk</Path>
+			<Media>
+				<File Id="928573754" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Emitter_WindGusts.wav</ShortName>
+					<Path>Media/928573754.wem</Path>
+					<CachePath>SFX/AMB_Emitter_WindGusts_DEC75B5C.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4134637028" Name="AMB_RoomGusts_SmallEntrance_Exterior" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\RoomGusts\AMB_RoomGusts_SmallEntrance_Exterior" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" MaxAttenuation="1500" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="928573754"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6E4F0B02-C269-3020-ED03-F3D72BEEDFCE}</FileHash>
+	<FileHash>{0ABDE4D0-9183-3B34-3BC5-9CEFA31B66C6}</FileHash>
 </SoundBanksInfo>
