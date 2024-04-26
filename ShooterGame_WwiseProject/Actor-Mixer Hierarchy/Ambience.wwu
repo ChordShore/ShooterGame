@@ -815,6 +815,11 @@
 													</ValueList>
 												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3045,13 +3050,8 @@
 														<ActorMixer Name="AMB_NearTraffic_Spline" ID="{10423399-4DC3-45C1-A5B6-499F35B79710}" ShortID="983807577">
 															<PropertyList>
 																<Property Name="3DPosition" Type="int16" Value="1"/>
-																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>-96</Value>
-																	</ValueList>
-																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Attenuation">
@@ -3537,13 +3537,13 @@
 																			<PointList>
 																				<Point>
 																					<XPos>23.87719</XPos>
-																					<YPos>59.36953</YPos>
+																					<YPos>48.36953</YPos>
 																					<Flags>12</Flags>
 																					<Time>0</Time>
 																				</Point>
 																				<Point>
-																					<XPos>-100</XPos>
-																					<YPos>58.31873</YPos>
+																					<XPos>-21</XPos>
+																					<YPos>47.31873</YPos>
 																					<Flags>0</Flags>
 																					<Time>5000</Time>
 																				</Point>
@@ -5594,6 +5594,11 @@
 										<ActorMixer Name="AMB_RoomGusts" ID="{602CB67F-576B-45B4-9ED9-2A9BC62A1481}" ShortID="601023192">
 											<PropertyList>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -5866,6 +5871,11 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-96</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">

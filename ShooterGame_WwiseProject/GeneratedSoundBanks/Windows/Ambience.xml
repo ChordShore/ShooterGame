@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{3FCBDBC4-D03B-7705-2445-63502DDBD508}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{CB29AFEA-1784-143C-B44D-5E85E48CEBCA}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -141,7 +141,7 @@
 						<MediaRef Id="229272092"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1935135641" Name="AMB_NearTraffic_Spline" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\AMB_NearTraffic_Spline" GUID="{B79F71C1-F2C8-4A0A-88DC-B7648445D29B}" MaxAttenuation="1500" DurationType="Infinite">
+				<Event Id="1935135641" Name="AMB_NearTraffic_Spline" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\AMB_NearTraffic_Spline" GUID="{B79F71C1-F2C8-4A0A-88DC-B7648445D29B}" MaxAttenuation="3500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="121824528"/>
 						<MediaRef Id="123575965"/>
@@ -185,17 +185,17 @@
 						<MediaRef Id="515725994"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="10500" DurationType="Infinite">
+				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="11000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="456057735"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeIn" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="10500" DurationType="OneShot" DurationMin="7.853374" DurationMax="7.853374">
+				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeIn" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="11000" DurationType="OneShot" DurationMin="7.853374" DurationMax="7.853374">
 					<MediaRefs>
 						<MediaRef Id="619272686"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="10500" DurationType="OneShot" DurationMin="6.614586" DurationMax="6.614586">
+				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="11000" DurationType="OneShot" DurationMin="6.614586" DurationMax="6.614586">
 					<MediaRefs>
 						<MediaRef Id="425050702"/>
 					</MediaRefs>
@@ -205,13 +205,24 @@
 						<MediaRef Id="218188666"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1571611116" Name="AMB_WindGusts_Spline" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\WindGusts\AMB_WindGusts_Spline" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="4000" DurationType="Infinite">
+				<Event Id="1571611116" Name="AMB_WindGusts_Spline" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\WindGusts\AMB_WindGusts_Spline" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="3500" DurationType="Infinite">
 					<MediaRefs>
+						<MediaRef Id="121824528"/>
+						<MediaRef Id="123575965"/>
+						<MediaRef Id="407858808"/>
+						<MediaRef Id="419807917"/>
+						<MediaRef Id="666585169"/>
+						<MediaRef Id="924565868"/>
 						<MediaRef Id="928573754"/>
 					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="266812614"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3BE184E2-7249-F8A8-D187-7D2CEDCE83FE}</FileHash>
+	<FileHash>{34E4754A-D92D-080C-1DD6-66B80A273454}</FileHash>
 </SoundBanksInfo>

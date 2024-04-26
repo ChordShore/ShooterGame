@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{3FCBDBC4-D03B-7705-2445-63502DDBD508}",
+    "Hash": "{CB29AFEA-1784-143C-B44D-5E85E48CEBCA}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -302,7 +302,7 @@
       "Name": "AMB_NearTraffic_Spline",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\HoverCars\\AMB_NearTraffic_Spline",
       "GUID": "{B79F71C1-F2C8-4A0A-88DC-B7648445D29B}",
-      "MaxAttenuation": "1500",
+      "MaxAttenuation": "3500",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -416,7 +416,7 @@
       "Name": "AMB_UnrealHolograph",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph",
       "GUID": "{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}",
-      "MaxAttenuation": "10500",
+      "MaxAttenuation": "11000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -429,7 +429,7 @@
       "Name": "AMB_UnrealHolograph_FadeIn",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph_FadeIn",
       "GUID": "{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}",
-      "MaxAttenuation": "10500",
+      "MaxAttenuation": "11000",
       "DurationType": "OneShot",
       "DurationMin": "7.853374",
       "DurationMax": "7.853374",
@@ -444,7 +444,7 @@
       "Name": "AMB_UnrealHolograph_FadeOut",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph_FadeOut",
       "GUID": "{E3EEEB5D-9B58-43DF-8E87-C18F76699081}",
-      "MaxAttenuation": "10500",
+      "MaxAttenuation": "11000",
       "DurationType": "OneShot",
       "DurationMin": "6.614586",
       "DurationMax": "6.614586",
@@ -472,17 +472,42 @@
       "Name": "AMB_WindGusts_Spline",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\WindGusts\\AMB_WindGusts_Spline",
       "GUID": "{B1473C73-10B0-46BB-AA72-8ABA06D25E40}",
-      "MaxAttenuation": "4000",
+      "MaxAttenuation": "3500",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
+        "Id": "121824528"
+       },
+       {
+        "Id": "123575965"
+       },
+       {
+        "Id": "407858808"
+       },
+       {
+        "Id": "419807917"
+       },
+       {
+        "Id": "666585169"
+       },
+       {
+        "Id": "924565868"
+       },
+       {
         "Id": "928573754"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "266812614"
+        }
+       ]
+      }
      }
     ]
    }
   ],
-  "FileHash": "{4E714C36-587C-2842-1698-B4428EA28ED5}"
+  "FileHash": "{47B1F9B4-F3C8-60ED-8DDD-3A2AADBD7EB1}"
  }
 }

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{3FCBDBC4-D03B-7705-2445-63502DDBD508}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{CB29AFEA-1784-143C-B44D-5E85E48CEBCA}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -149,7 +149,7 @@
 						<MediaRef Id="229272092"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1935135641" Name="AMB_NearTraffic_Spline" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\AMB_NearTraffic_Spline" GUID="{B79F71C1-F2C8-4A0A-88DC-B7648445D29B}" MaxAttenuation="1500" DurationType="Infinite">
+				<Event Id="1935135641" Name="AMB_NearTraffic_Spline" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\AMB_NearTraffic_Spline" GUID="{B79F71C1-F2C8-4A0A-88DC-B7648445D29B}" MaxAttenuation="3500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="121824528"/>
 						<MediaRef Id="123575965"/>
@@ -193,17 +193,17 @@
 						<MediaRef Id="515725994"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="10500" DurationType="Infinite">
+				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="11000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="456057735"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeIn" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="10500" DurationType="OneShot" DurationMin="7.853374" DurationMax="7.853374">
+				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeIn" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="11000" DurationType="OneShot" DurationMin="7.853374" DurationMax="7.853374">
 					<MediaRefs>
 						<MediaRef Id="619272686"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="10500" DurationType="OneShot" DurationMin="6.614586" DurationMax="6.614586">
+				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="11000" DurationType="OneShot" DurationMin="6.614586" DurationMax="6.614586">
 					<MediaRefs>
 						<MediaRef Id="425050702"/>
 					</MediaRefs>
@@ -213,14 +213,25 @@
 						<MediaRef Id="218188666"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1571611116" Name="AMB_WindGusts_Spline" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\WindGusts\AMB_WindGusts_Spline" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="4000" DurationType="Infinite">
+				<Event Id="1571611116" Name="AMB_WindGusts_Spline" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\WindGusts\AMB_WindGusts_Spline" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="3500" DurationType="Infinite">
 					<MediaRefs>
+						<MediaRef Id="121824528"/>
+						<MediaRef Id="123575965"/>
+						<MediaRef Id="407858808"/>
+						<MediaRef Id="419807917"/>
+						<MediaRef Id="666585169"/>
+						<MediaRef Id="924565868"/>
 						<MediaRef Id="928573754"/>
 					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="266812614"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="123926568" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{E709EA5C-98C9-BFED-AD58-F846E53CEA01}">
+		<SoundBank Id="123926568" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{455E2D16-08B2-484C-FB04-81A9411BDF2E}">
 			<ObjectPath>AMB_NearTraffic_R</ObjectPath>
 			<ShortName>AMB_NearTraffic_R</ShortName>
 			<Path>Event/AMB_NearTraffic_R.bnk</Path>
@@ -279,7 +290,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="123926582" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{05EDF7D8-B55C-2AA6-0C69-559BF1E5D58E}">
+		<SoundBank Id="123926582" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{6C5033A6-88AC-2097-0578-5719D433AC96}">
 			<ObjectPath>AMB_NearTraffic_L</ObjectPath>
 			<ShortName>AMB_NearTraffic_L</ShortName>
 			<Path>Event/AMB_NearTraffic_L.bnk</Path>
@@ -338,7 +349,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="123926585" Type="Event" GUID="{C5ED1BFB-22A9-41F4-A56D-7095120AA1D2}" Language="SFX" Hash="{BC850F2F-7307-C174-B46B-A0B82B047C0B}">
+		<SoundBank Id="123926585" Type="Event" GUID="{C5ED1BFB-22A9-41F4-A56D-7095120AA1D2}" Language="SFX" Hash="{742A63FD-C024-6AD7-D723-A6176F780E62}">
 			<ObjectPath>AMB_NearTraffic_C</ObjectPath>
 			<ShortName>AMB_NearTraffic_C</ShortName>
 			<Path>Event/AMB_NearTraffic_C.bnk</Path>
@@ -409,7 +420,7 @@
 				<Event Id="378132258" Name="FOL_Trashcan_Collision" ObjectPath="\Events\Foley\Props\FOL_Trashcan_Collision" GUID="{83AF3510-8046-4206-B4B6-E1A12D72AC55}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="636673922" Type="Event" GUID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}" Language="SFX" Hash="{BC756A1B-0C5E-D748-1B89-A3346C7F076D}">
+		<SoundBank Id="636673922" Type="Event" GUID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}" Language="SFX" Hash="{E9BF952E-2C28-AC7C-062A-DDF2FCA51BB6}">
 			<ObjectPath>AMB_RoomGusts_SmallEntrance_Interior</ObjectPath>
 			<ShortName>AMB_RoomGusts_SmallEntrance_Interior</ShortName>
 			<Path>Event/AMB_RoomGusts_SmallEntrance_Interior.bnk</Path>
@@ -874,7 +885,7 @@
 				<Event Id="3787053379" Name="ITM_Health_Pickup" ObjectPath="\Events\Items\ITM_Health_Pickup" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2263523777" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{1A33D45B-7AF4-2182-974B-547E77B674FC}">
+		<SoundBank Id="2263523777" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{E2F90DEB-AE20-7732-D382-DA39B935BE20}">
 			<ObjectPath>AMB_DistantTraffic_L</ObjectPath>
 			<ShortName>AMB_DistantTraffic_L</ShortName>
 			<Path>Event/AMB_DistantTraffic_L.bnk</Path>
@@ -951,7 +962,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2263523790" Type="Event" GUID="{931959EE-DA2F-45C8-B892-E89DFE3871CC}" Language="SFX" Hash="{51872234-0430-D067-51C1-595F2347111C}">
+		<SoundBank Id="2263523790" Type="Event" GUID="{931959EE-DA2F-45C8-B892-E89DFE3871CC}" Language="SFX" Hash="{3420C41E-8CDB-FA75-C08F-1383EF0B4D79}">
 			<ObjectPath>AMB_DistantTraffic_C</ObjectPath>
 			<ShortName>AMB_DistantTraffic_C</ShortName>
 			<Path>Event/AMB_DistantTraffic_C.bnk</Path>
@@ -1028,7 +1039,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2263523807" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{62A7FBD2-9130-1E38-356A-CB147E5A3A5B}">
+		<SoundBank Id="2263523807" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{F6CF3172-04E7-9BD8-5B0F-CC3B978A9DC4}">
 			<ObjectPath>AMB_DistantTraffic_R</ObjectPath>
 			<ShortName>AMB_DistantTraffic_R</ShortName>
 			<Path>Event/AMB_DistantTraffic_R.bnk</Path>
@@ -1105,7 +1116,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{41E30108-E11B-0197-1633-1B5A24DA4001}">
+		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{028AB54A-13A5-9031-551D-39DF6D96A813}">
 			<ObjectPath>\SoundBanks\Default Work Unit\EventProbe</ObjectPath>
 			<ShortName>EventProbe</ShortName>
 			<Path>EventProbe.bnk</Path>
@@ -1116,7 +1127,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="10500" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="11000" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1041093470"/>
@@ -1203,7 +1214,7 @@
 			<ShortName>Dialogue</ShortName>
 			<Path>Dialogue.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4134637028" Type="Event" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" Language="SFX" Hash="{59083392-F4EB-3693-4DDA-CE2741794302}">
+		<SoundBank Id="4134637028" Type="Event" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" Language="SFX" Hash="{0A7ED10B-C2EE-5BD9-967F-85BD39106FDB}">
 			<ObjectPath>AMB_RoomGusts_SmallEntrance_Exterior</ObjectPath>
 			<ShortName>AMB_RoomGusts_SmallEntrance_Exterior</ShortName>
 			<Path>Event/AMB_RoomGusts_SmallEntrance_Exterior.bnk</Path>
@@ -1223,5 +1234,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3B28E165-208A-0D58-E937-09B0C0B98C32}</FileHash>
+	<FileHash>{4EE18278-EBE8-0411-6FF4-D17B231F18F2}</FileHash>
 </SoundBanksInfo>
