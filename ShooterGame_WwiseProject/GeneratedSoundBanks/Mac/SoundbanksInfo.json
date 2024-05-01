@@ -1224,188 +1224,6 @@
     ]
    },
    {
-    "Id": "1102184785",
-    "Type": "Event",
-    "GUID": "{838EFBCF-7300-40E4-B598-D1699C261CB8}",
-    "Language": "SFX",
-    "Hash": "{5AF161B7-569F-287B-D3F8-545374B46FDA}",
-    "ObjectPath": "AMB_WindGusts_Static",
-    "ShortName": "AMB_WindGusts_Static",
-    "Path": "Event/AMB_WindGusts_Static.bnk",
-    "Media": [
-     {
-      "Id": "10487233",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_Static_Strong_05.wav",
-      "Path": "Media/10487233.wem",
-      "CachePath": "SFX/AMB_WindGusts_Static_Strong_05_10C4C929.wem"
-     },
-     {
-      "Id": "126209229",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_Static_Strong_06.wav",
-      "Path": "Media/126209229.wem",
-      "CachePath": "SFX/AMB_WindGusts_Static_Strong_06_10C4C929.wem"
-     },
-     {
-      "Id": "132531388",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_Static_Gentle_03.wav",
-      "Path": "Media/132531388.wem",
-      "CachePath": "SFX/AMB_WindGusts_Static_Gentle_03_10C4C929.wem"
-     },
-     {
-      "Id": "277956054",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_Static_Gentle_04.wav",
-      "Path": "Media/277956054.wem",
-      "CachePath": "SFX/AMB_WindGusts_Static_Gentle_04_10C4C929.wem"
-     },
-     {
-      "Id": "350800724",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_Static_Gentle_06.wav",
-      "Path": "Media/350800724.wem",
-      "CachePath": "SFX/AMB_WindGusts_Static_Gentle_06_10C4C929.wem"
-     },
-     {
-      "Id": "384598031",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_Static_Gentle_02.wav",
-      "Path": "Media/384598031.wem",
-      "CachePath": "SFX/AMB_WindGusts_Static_Gentle_02_10C4C929.wem"
-     },
-     {
-      "Id": "452990868",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_Static_Gentle_01.wav",
-      "Path": "Media/452990868.wem",
-      "CachePath": "SFX/AMB_WindGusts_Static_Gentle_01_10C4C929.wem"
-     },
-     {
-      "Id": "483299353",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_Static_Gentle_05.wav",
-      "Path": "Media/483299353.wem",
-      "CachePath": "SFX/AMB_WindGusts_Static_Gentle_05_10C4C929.wem"
-     },
-     {
-      "Id": "595736396",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_Static_Strong_03.wav",
-      "Path": "Media/595736396.wem",
-      "CachePath": "SFX/AMB_WindGusts_Static_Strong_03_10C4C929.wem"
-     },
-     {
-      "Id": "787630258",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_Static_Strong_02.wav",
-      "Path": "Media/787630258.wem",
-      "CachePath": "SFX/AMB_WindGusts_Static_Strong_02_10C4C929.wem"
-     },
-     {
-      "Id": "793632791",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_Static_Strong_07.wav",
-      "Path": "Media/793632791.wem",
-      "CachePath": "SFX/AMB_WindGusts_Static_Strong_07_10C4C929.wem"
-     },
-     {
-      "Id": "819851560",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_Static_Strong_04.wav",
-      "Path": "Media/819851560.wem",
-      "CachePath": "SFX/AMB_WindGusts_Static_Strong_04_10C4C929.wem"
-     },
-     {
-      "Id": "845898520",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_WindGusts_Static_Strong_01.wav",
-      "Path": "Media/845898520.wem",
-      "CachePath": "SFX/AMB_WindGusts_Static_Strong_01_10C4C929.wem"
-     }
-    ],
-    "Events": [
-     {
-      "Id": "1102184785",
-      "Name": "AMB_WindGusts_Static",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\WindGusts\\AMB_WindGusts_Static",
-      "GUID": "{838EFBCF-7300-40E4-B598-D1699C261CB8}",
-      "MaxAttenuation": "3000",
-      "DurationType": "OneShot",
-      "DurationMin": "11.010875",
-      "DurationMax": "38.453106",
-      "MediaRefs": [
-       {
-        "Id": "10487233"
-       },
-       {
-        "Id": "126209229"
-       },
-       {
-        "Id": "132531388"
-       },
-       {
-        "Id": "277956054"
-       },
-       {
-        "Id": "350800724"
-       },
-       {
-        "Id": "384598031"
-       },
-       {
-        "Id": "452990868"
-       },
-       {
-        "Id": "483299353"
-       },
-       {
-        "Id": "595736396"
-       },
-       {
-        "Id": "787630258"
-       },
-       {
-        "Id": "793632791"
-       },
-       {
-        "Id": "819851560"
-       },
-       {
-        "Id": "845898520"
-       }
-      ]
-     }
-    ]
-   },
-   {
     "Id": "1257150314",
     "Type": "Bus",
     "GUID": "{55F14D17-2EFA-4F39-8772-765885B7CB75}",
@@ -2353,6 +2171,188 @@
     ]
    },
    {
+    "Id": "1478305162",
+    "Type": "Event",
+    "GUID": "{838EFBCF-7300-40E4-B598-D1699C261CB8}",
+    "Language": "SFX",
+    "Hash": "{341CC778-B886-39C5-6AEB-FDD2FBC7BB0C}",
+    "ObjectPath": "AMB_WindGusts_Static_Play",
+    "ShortName": "AMB_WindGusts_Static_Play",
+    "Path": "Event/AMB_WindGusts_Static_Play.bnk",
+    "Media": [
+     {
+      "Id": "10487233",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_Static_Strong_05.wav",
+      "Path": "Media/10487233.wem",
+      "CachePath": "SFX/AMB_WindGusts_Static_Strong_05_10C4C929.wem"
+     },
+     {
+      "Id": "126209229",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_Static_Strong_06.wav",
+      "Path": "Media/126209229.wem",
+      "CachePath": "SFX/AMB_WindGusts_Static_Strong_06_10C4C929.wem"
+     },
+     {
+      "Id": "132531388",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_Static_Gentle_03.wav",
+      "Path": "Media/132531388.wem",
+      "CachePath": "SFX/AMB_WindGusts_Static_Gentle_03_10C4C929.wem"
+     },
+     {
+      "Id": "277956054",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_Static_Gentle_04.wav",
+      "Path": "Media/277956054.wem",
+      "CachePath": "SFX/AMB_WindGusts_Static_Gentle_04_10C4C929.wem"
+     },
+     {
+      "Id": "350800724",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_Static_Gentle_06.wav",
+      "Path": "Media/350800724.wem",
+      "CachePath": "SFX/AMB_WindGusts_Static_Gentle_06_10C4C929.wem"
+     },
+     {
+      "Id": "384598031",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_Static_Gentle_02.wav",
+      "Path": "Media/384598031.wem",
+      "CachePath": "SFX/AMB_WindGusts_Static_Gentle_02_10C4C929.wem"
+     },
+     {
+      "Id": "452990868",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_Static_Gentle_01.wav",
+      "Path": "Media/452990868.wem",
+      "CachePath": "SFX/AMB_WindGusts_Static_Gentle_01_10C4C929.wem"
+     },
+     {
+      "Id": "483299353",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_Static_Gentle_05.wav",
+      "Path": "Media/483299353.wem",
+      "CachePath": "SFX/AMB_WindGusts_Static_Gentle_05_10C4C929.wem"
+     },
+     {
+      "Id": "595736396",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_Static_Strong_03.wav",
+      "Path": "Media/595736396.wem",
+      "CachePath": "SFX/AMB_WindGusts_Static_Strong_03_10C4C929.wem"
+     },
+     {
+      "Id": "787630258",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_Static_Strong_02.wav",
+      "Path": "Media/787630258.wem",
+      "CachePath": "SFX/AMB_WindGusts_Static_Strong_02_10C4C929.wem"
+     },
+     {
+      "Id": "793632791",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_Static_Strong_07.wav",
+      "Path": "Media/793632791.wem",
+      "CachePath": "SFX/AMB_WindGusts_Static_Strong_07_10C4C929.wem"
+     },
+     {
+      "Id": "819851560",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_Static_Strong_04.wav",
+      "Path": "Media/819851560.wem",
+      "CachePath": "SFX/AMB_WindGusts_Static_Strong_04_10C4C929.wem"
+     },
+     {
+      "Id": "845898520",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_WindGusts_Static_Strong_01.wav",
+      "Path": "Media/845898520.wem",
+      "CachePath": "SFX/AMB_WindGusts_Static_Strong_01_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1478305162",
+      "Name": "AMB_WindGusts_Static_Play",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\WindGusts\\AMB_WindGusts_Static_Play",
+      "GUID": "{838EFBCF-7300-40E4-B598-D1699C261CB8}",
+      "MaxAttenuation": "3000",
+      "DurationType": "OneShot",
+      "DurationMin": "11.010875",
+      "DurationMax": "38.453106",
+      "MediaRefs": [
+       {
+        "Id": "10487233"
+       },
+       {
+        "Id": "126209229"
+       },
+       {
+        "Id": "132531388"
+       },
+       {
+        "Id": "277956054"
+       },
+       {
+        "Id": "350800724"
+       },
+       {
+        "Id": "384598031"
+       },
+       {
+        "Id": "452990868"
+       },
+       {
+        "Id": "483299353"
+       },
+       {
+        "Id": "595736396"
+       },
+       {
+        "Id": "787630258"
+       },
+       {
+        "Id": "793632791"
+       },
+       {
+        "Id": "819851560"
+       },
+       {
+        "Id": "845898520"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "2151963051",
     "Type": "User",
     "GUID": "{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}",
@@ -2903,6 +2903,28 @@
     ]
    },
    {
+    "Id": "2882507188",
+    "Type": "Event",
+    "GUID": "{672C5AA3-D760-4145-8932-779B95AF8317}",
+    "Language": "SFX",
+    "Hash": "{9DBC8A3E-FFBD-37D2-ECE2-97E1DC2C85B8}",
+    "ObjectPath": "AMB_WindGusts_Static_Stop",
+    "ShortName": "AMB_WindGusts_Static_Stop",
+    "Path": "Event/AMB_WindGusts_Static_Stop.bnk",
+    "Events": [
+     {
+      "Id": "2882507188",
+      "Name": "AMB_WindGusts_Static_Stop",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\WindGusts\\AMB_WindGusts_Static_Stop",
+      "GUID": "{672C5AA3-D760-4145-8932-779B95AF8317}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   },
+   {
     "Id": "2940432316",
     "Type": "User",
     "GUID": "{48619421-745A-41D0-B25B-8A5D77FC95C8}",
@@ -3092,6 +3114,6 @@
     ]
    }
   ],
-  "FileHash": "{016E46A4-7199-2A13-EC8B-254CD8D86593}"
+  "FileHash": "{A6337E8F-BAB9-40B1-CA07-4A722BBC3AC0}"
  }
 }

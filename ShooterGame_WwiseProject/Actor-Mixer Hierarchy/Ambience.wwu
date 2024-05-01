@@ -25,11 +25,6 @@
 								<ActorMixer Name="AMB_Static" ID="{422C0378-9F19-4AB2-88BC-811B07D32FA5}" ShortID="487287838">
 									<PropertyList>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-96</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -345,6 +340,11 @@
 														<Property Name="Pitch" Type="int32">
 															<ValueList>
 																<Value>-400</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-96</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -787,6 +787,11 @@
 								<ActorMixer Name="AMB_Dynamic" ID="{AB361D4B-A5B1-47FA-8B42-AC6713A1FBFD}" ShortID="114278345">
 									<PropertyList>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -971,7 +976,7 @@
 												</ActorMixer>
 												<ActorMixer Name="AMB_WindGust_Static" ID="{F7BB34AC-E66F-4B60-8E5A-3A60DA06AF9D}" ShortID="564955212">
 													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
 														<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 													</PropertyList>
@@ -5840,11 +5845,6 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-96</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">

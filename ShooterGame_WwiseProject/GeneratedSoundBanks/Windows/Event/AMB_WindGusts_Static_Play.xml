@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1102184785" Type="Event" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" Language="SFX" Hash="{5AF161B7-569F-287B-D3F8-545374B46FDA}">
-			<ObjectPath>AMB_WindGusts_Static</ObjectPath>
-			<ShortName>AMB_WindGusts_Static</ShortName>
-			<Path>Event/AMB_WindGusts_Static.bnk</Path>
+		<SoundBank Id="1478305162" Type="Event" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" Language="SFX" Hash="{341CC778-B886-39C5-6AEB-FDD2FBC7BB0C}">
+			<ObjectPath>AMB_WindGusts_Static_Play</ObjectPath>
+			<ShortName>AMB_WindGusts_Static_Play</ShortName>
+			<Path>Event/AMB_WindGusts_Static_Play.bnk</Path>
 			<Media>
 				<File Id="10487233" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>AMB_WindGusts_Static_Strong_05.wav</ShortName>
@@ -73,7 +73,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1102184785" Name="AMB_WindGusts_Static" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\WindGusts\AMB_WindGusts_Static" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" MaxAttenuation="3000" DurationType="OneShot" DurationMin="11.010875" DurationMax="38.453106">
+				<Event Id="1478305162" Name="AMB_WindGusts_Static_Play" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\WindGusts\AMB_WindGusts_Static_Play" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" MaxAttenuation="3000" DurationType="OneShot" DurationMin="11.010875" DurationMax="38.453106">
 					<MediaRefs>
 						<MediaRef Id="10487233"/>
 						<MediaRef Id="126209229"/>
@@ -93,5 +93,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B7250883-BB78-2200-74E7-BB23BC7761E9}</FileHash>
+	<FileHash>{F97EA220-2111-3E53-C0DB-A15D66D0EB0C}</FileHash>
 </SoundBanksInfo>

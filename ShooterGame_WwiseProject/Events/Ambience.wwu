@@ -327,9 +327,12 @@
 										</Folder>
 										<Folder Name="WindGusts" ID="{953AE9D4-5D23-4FD4-B673-B266A7C9F0A3}" ShortID="292112688">
 											<ChildrenList>
-												<Event Name="AMB_WindGusts_Static" ID="{838EFBCF-7300-40E4-B598-D1699C261CB8}">
+												<Event Name="AMB_WindGusts_Static_Play" ID="{838EFBCF-7300-40E4-B598-D1699C261CB8}">
 													<ChildrenList>
 														<Action Name="" ID="{F80CABD6-8791-4663-841D-5EF3EF362A40}" ShortID="673931917">
+															<PropertyList>
+																<Property Name="FadeTime" Type="Real64" Value="2"/>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Target">
 																	<ObjectRef Name="AMB_WindGusts_OS" ID="{2AB2126E-C5F5-4842-A8CD-1BA94AB56C09}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
@@ -355,6 +358,21 @@
 															<ReferenceList>
 																<Reference Name="Target">
 																	<ObjectRef Name="AMB_NearTraffic_Spline" ID="{2983D3DB-10CD-43AA-BD62-FDD223E657E2}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="AMB_WindGusts_Static_Stop" ID="{672C5AA3-D760-4145-8932-779B95AF8317}">
+													<ChildrenList>
+														<Action Name="" ID="{A4F6BE5F-C83C-4B6A-9708-A9585DC2DF7D}" ShortID="338577374">
+															<PropertyList>
+																<Property Name="ActionType" Type="int16" Value="2"/>
+																<Property Name="FadeTime" Type="Real64" Value="3"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_WindGusts_OS" ID="{2AB2126E-C5F5-4842-A8CD-1BA94AB56C09}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 																</Reference>
 															</ReferenceList>
 														</Action>

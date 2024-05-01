@@ -6,14 +6,14 @@
   "SoundBankVersion": "145",
   "SoundBanks": [
    {
-    "Id": "1102184785",
+    "Id": "1478305162",
     "Type": "Event",
     "GUID": "{838EFBCF-7300-40E4-B598-D1699C261CB8}",
     "Language": "SFX",
-    "Hash": "{5AF161B7-569F-287B-D3F8-545374B46FDA}",
-    "ObjectPath": "AMB_WindGusts_Static",
-    "ShortName": "AMB_WindGusts_Static",
-    "Path": "Event/AMB_WindGusts_Static.bnk",
+    "Hash": "{341CC778-B886-39C5-6AEB-FDD2FBC7BB0C}",
+    "ObjectPath": "AMB_WindGusts_Static_Play",
+    "ShortName": "AMB_WindGusts_Static_Play",
+    "Path": "Event/AMB_WindGusts_Static_Play.bnk",
     "Media": [
      {
       "Id": "10487233",
@@ -135,9 +135,9 @@
     ],
     "Events": [
      {
-      "Id": "1102184785",
-      "Name": "AMB_WindGusts_Static",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\WindGusts\\AMB_WindGusts_Static",
+      "Id": "1478305162",
+      "Name": "AMB_WindGusts_Static_Play",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\WindGusts\\AMB_WindGusts_Static_Play",
       "GUID": "{838EFBCF-7300-40E4-B598-D1699C261CB8}",
       "MaxAttenuation": "3000",
       "DurationType": "OneShot",
@@ -188,6 +188,6 @@
     ]
    }
   ],
-  "FileHash": "{2243DA87-B1E1-321B-7395-3747CCA007E3}"
+  "FileHash": "{8F63359F-3E47-57A5-DF7F-9A8AF87698E9}"
  }
 }
