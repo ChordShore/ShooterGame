@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{5DC4C1D8-813D-CD32-2A6E-A3DF8BF83760}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{1A14AA29-DA86-33A9-5E58-E4FCC4CDF9E8}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -164,7 +164,7 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="1196422761" Name="AMB_PhoneBox" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_PhoneBox" GUID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" MaxAttenuation="2500" DurationType="Infinite">
+				<Event Id="1196422761" Name="AMB_PhoneBox" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_PhoneBox" GUID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" MaxAttenuation="2200" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="537312981"/>
 						<MediaRef Id="539953251"/>
@@ -193,17 +193,17 @@
 						<MediaRef Id="515725994"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="11000" DurationType="Infinite">
+				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="9500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="456057735"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeIn" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="11000" DurationType="OneShot" DurationMin="7.853374" DurationMax="7.853374">
+				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeIn" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="9500" DurationType="OneShot" DurationMin="4.947315" DurationMax="4.947315">
 					<MediaRefs>
 						<MediaRef Id="619272686"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="11000" DurationType="OneShot" DurationMin="6.614586" DurationMax="6.614586">
+				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="9500" DurationType="OneShot" DurationMin="4.166928" DurationMax="4.166928">
 					<MediaRefs>
 						<MediaRef Id="425050702"/>
 					</MediaRefs>
@@ -785,7 +785,7 @@
 				<Event Id="4165048480" Name="GL_Shoot_Fire_OS" ObjectPath="\Events\Weapons\Shoot\GL_Shoot_Fire_OS" GUID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1478305162" Type="Event" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" Language="SFX" Hash="{341CC778-B886-39C5-6AEB-FDD2FBC7BB0C}">
+		<SoundBank Id="1478305162" Type="Event" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" Language="SFX" Hash="{FADF15E6-D0C4-18DE-6355-F563FCA1460B}">
 			<ObjectPath>AMB_WindGusts_Static_Play</ObjectPath>
 			<ShortName>AMB_WindGusts_Static_Play</ShortName>
 			<Path>Event/AMB_WindGusts_Static_Play.bnk</Path>
@@ -1116,7 +1116,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{F3625455-407F-2E4D-1A54-213115566BFB}">
+		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{5F4FDFB1-7219-F7CE-46B0-32C8A0B81127}">
 			<ObjectPath>\SoundBanks\Default Work Unit\EventProbe</ObjectPath>
 			<ShortName>EventProbe</ShortName>
 			<Path>EventProbe.bnk</Path>
@@ -1127,7 +1127,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="11000" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="9500" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1041093470"/>
@@ -1143,7 +1143,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2882507188" Type="Event" GUID="{672C5AA3-D760-4145-8932-779B95AF8317}" Language="SFX" Hash="{9DBC8A3E-FFBD-37D2-ECE2-97E1DC2C85B8}">
+		<SoundBank Id="2882507188" Type="Event" GUID="{672C5AA3-D760-4145-8932-779B95AF8317}" Language="SFX" Hash="{08812B45-544D-AEE0-DC94-212A54B21EAB}">
 			<ObjectPath>AMB_WindGusts_Static_Stop</ObjectPath>
 			<ShortName>AMB_WindGusts_Static_Stop</ShortName>
 			<Path>Event/AMB_WindGusts_Static_Stop.bnk</Path>
@@ -1242,5 +1242,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4F6F131A-8A17-0CD8-80FC-4FC25960AAEF}</FileHash>
+	<FileHash>{4E37083C-62CA-2A39-F7E3-0A1610884061}</FileHash>
 </SoundBanksInfo>

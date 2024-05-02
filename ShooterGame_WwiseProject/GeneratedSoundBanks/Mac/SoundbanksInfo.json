@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{5DC4C1D8-813D-CD32-2A6E-A3DF8BF83760}",
+    "Hash": "{1A14AA29-DA86-33A9-5E58-E4FCC4CDF9E8}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -345,7 +345,7 @@
       "Name": "AMB_PhoneBox",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_PhoneBox",
       "GUID": "{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}",
-      "MaxAttenuation": "2500",
+      "MaxAttenuation": "2200",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -424,7 +424,7 @@
       "Name": "AMB_UnrealHolograph",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph",
       "GUID": "{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}",
-      "MaxAttenuation": "11000",
+      "MaxAttenuation": "9500",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -437,10 +437,10 @@
       "Name": "AMB_UnrealHolograph_FadeIn",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph_FadeIn",
       "GUID": "{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}",
-      "MaxAttenuation": "11000",
+      "MaxAttenuation": "9500",
       "DurationType": "OneShot",
-      "DurationMin": "7.853374",
-      "DurationMax": "7.853374",
+      "DurationMin": "4.947315",
+      "DurationMax": "4.947315",
       "MediaRefs": [
        {
         "Id": "619272686"
@@ -452,10 +452,10 @@
       "Name": "AMB_UnrealHolograph_FadeOut",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph_FadeOut",
       "GUID": "{E3EEEB5D-9B58-43DF-8E87-C18F76699081}",
-      "MaxAttenuation": "11000",
+      "MaxAttenuation": "9500",
       "DurationType": "OneShot",
-      "DurationMin": "6.614586",
-      "DurationMax": "6.614586",
+      "DurationMin": "4.166928",
+      "DurationMax": "4.166928",
       "MediaRefs": [
        {
         "Id": "425050702"
@@ -2175,7 +2175,7 @@
     "Type": "Event",
     "GUID": "{838EFBCF-7300-40E4-B598-D1699C261CB8}",
     "Language": "SFX",
-    "Hash": "{341CC778-B886-39C5-6AEB-FDD2FBC7BB0C}",
+    "Hash": "{FADF15E6-D0C4-18DE-6355-F563FCA1460B}",
     "ObjectPath": "AMB_WindGusts_Static_Play",
     "ShortName": "AMB_WindGusts_Static_Play",
     "Path": "Event/AMB_WindGusts_Static_Play.bnk",
@@ -2842,7 +2842,7 @@
     "Type": "User",
     "GUID": "{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}",
     "Language": "SFX",
-    "Hash": "{F3625455-407F-2E4D-1A54-213115566BFB}",
+    "Hash": "{5F4FDFB1-7219-F7CE-46B0-32C8A0B81127}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\EventProbe",
     "ShortName": "EventProbe",
     "Path": "EventProbe.bnk",
@@ -2872,7 +2872,7 @@
       "Name": "Play_Sine_Pip",
       "ObjectPath": "\\Events\\Default Work Unit\\Event Probe\\Play_Sine_Pip",
       "GUID": "{79D376DC-67FF-49D5-8EFA-4F594DD02674}",
-      "MaxAttenuation": "11000",
+      "MaxAttenuation": "9500",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "1",
@@ -2907,7 +2907,7 @@
     "Type": "Event",
     "GUID": "{672C5AA3-D760-4145-8932-779B95AF8317}",
     "Language": "SFX",
-    "Hash": "{9DBC8A3E-FFBD-37D2-ECE2-97E1DC2C85B8}",
+    "Hash": "{08812B45-544D-AEE0-DC94-212A54B21EAB}",
     "ObjectPath": "AMB_WindGusts_Static_Stop",
     "ShortName": "AMB_WindGusts_Static_Stop",
     "Path": "Event/AMB_WindGusts_Static_Stop.bnk",
@@ -3114,6 +3114,6 @@
     ]
    }
   ],
-  "FileHash": "{A6337E8F-BAB9-40B1-CA07-4A722BBC3AC0}"
+  "FileHash": "{782DAF62-B1E3-60B9-280B-D58360921FDE}"
  }
 }

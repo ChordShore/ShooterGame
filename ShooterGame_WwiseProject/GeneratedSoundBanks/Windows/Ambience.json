@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{5DC4C1D8-813D-CD32-2A6E-A3DF8BF83760}",
+    "Hash": "{1A14AA29-DA86-33A9-5E58-E4FCC4CDF9E8}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -337,7 +337,7 @@
       "Name": "AMB_PhoneBox",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_PhoneBox",
       "GUID": "{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}",
-      "MaxAttenuation": "2500",
+      "MaxAttenuation": "2200",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -416,7 +416,7 @@
       "Name": "AMB_UnrealHolograph",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph",
       "GUID": "{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}",
-      "MaxAttenuation": "11000",
+      "MaxAttenuation": "9500",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -429,10 +429,10 @@
       "Name": "AMB_UnrealHolograph_FadeIn",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph_FadeIn",
       "GUID": "{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}",
-      "MaxAttenuation": "11000",
+      "MaxAttenuation": "9500",
       "DurationType": "OneShot",
-      "DurationMin": "7.853374",
-      "DurationMax": "7.853374",
+      "DurationMin": "4.947315",
+      "DurationMax": "4.947315",
       "MediaRefs": [
        {
         "Id": "619272686"
@@ -444,10 +444,10 @@
       "Name": "AMB_UnrealHolograph_FadeOut",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph_FadeOut",
       "GUID": "{E3EEEB5D-9B58-43DF-8E87-C18F76699081}",
-      "MaxAttenuation": "11000",
+      "MaxAttenuation": "9500",
       "DurationType": "OneShot",
-      "DurationMin": "6.614586",
-      "DurationMax": "6.614586",
+      "DurationMin": "4.166928",
+      "DurationMax": "4.166928",
       "MediaRefs": [
        {
         "Id": "425050702"
@@ -508,6 +508,6 @@
     ]
    }
   ],
-  "FileHash": "{9C50BBA8-EA6D-2B78-8DEF-669939584B01}"
+  "FileHash": "{85E41CDC-4E8D-7715-F676-8FB209831DA2}"
  }
 }
