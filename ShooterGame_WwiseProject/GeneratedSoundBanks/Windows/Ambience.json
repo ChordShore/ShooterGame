@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{1A14AA29-DA86-33A9-5E58-E4FCC4CDF9E8}",
+    "Hash": "{A192F7B7-2B83-2E9D-EBB3-F8F093432739}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -416,7 +416,7 @@
       "Name": "AMB_UnrealHolograph",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph",
       "GUID": "{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}",
-      "MaxAttenuation": "9500",
+      "MaxAttenuation": "10000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -429,7 +429,7 @@
       "Name": "AMB_UnrealHolograph_FadeIn",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph_FadeIn",
       "GUID": "{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}",
-      "MaxAttenuation": "9500",
+      "MaxAttenuation": "2200",
       "DurationType": "OneShot",
       "DurationMin": "4.947315",
       "DurationMax": "4.947315",
@@ -444,7 +444,7 @@
       "Name": "AMB_UnrealHolograph_FadeOut",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph_FadeOut",
       "GUID": "{E3EEEB5D-9B58-43DF-8E87-C18F76699081}",
-      "MaxAttenuation": "9500",
+      "MaxAttenuation": "2200",
       "DurationType": "OneShot",
       "DurationMin": "4.166928",
       "DurationMax": "4.166928",
@@ -508,6 +508,6 @@
     ]
    }
   ],
-  "FileHash": "{85E41CDC-4E8D-7715-F676-8FB209831DA2}"
+  "FileHash": "{9FB5DB19-E355-B778-23CB-0C6EB3755405}"
  }
 }

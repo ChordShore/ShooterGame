@@ -259,6 +259,113 @@
 														</RandomSequenceContainer>
 													</ChildrenList>
 												</RandomSequenceContainer>
+												<Sound Name="AMB_UnrealHolograph_FadeIn_OS" ID="{3859B0B2-BF31-46F7-8318-8E5DA5DFA478}" ShortID="809285624">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>-96</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>400</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATN_UnrealHolograph" ID="{044D3425-A485-4809-96BA-ED930F9C1310}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Emitters_UnrealHolograph_FadeIn_OS" ID="{B107042B-643D-40A1-BC7C-8C5E8E60812B}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.454163310081008"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="4.60087179342934"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.07946062106211"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Emitters_UnrealHolograph_FadeIn_OS.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="619272686"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Emitters_UnrealHolograph_FadeIn_OS" ID="{B107042B-643D-40A1-BC7C-8C5E8E60812B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_UnrealHolograph_FadeOut_OS" ID="{B29F0006-9607-4E80-BD8C-9D735304C22D}" ShortID="167317559">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>-96</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>400</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATN_UnrealHolograph" ID="{044D3425-A485-4809-96BA-ED930F9C1310}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Emitters_UnrealHolograph_FadeOut_OS" ID="{D891E198-779C-4D9C-9379-96F6B34F12DF}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0921467146714672"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="4.21039603960397"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Emitters_UnrealHolograph_FadeOut_OS.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="425050702"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Emitters_UnrealHolograph_FadeOut_OS" ID="{D891E198-779C-4D9C-9379-96F6B34F12DF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
 										</ActorMixer>
 										<ActorMixer Name="AMB_UnrealHolograph" ID="{59EABB7B-B549-47D9-83A3-01449C01EF5F}" ShortID="10162776">
@@ -326,103 +433,6 @@
 													</ChildrenList>
 													<ActiveSourceList>
 														<ActiveSource Name="Emitters_UnrealHolograph_Main_LP" ID="{CCA64B08-6FE6-4CDB-8978-6DE323BACCC1}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_UnrealHolograph_FadeOut_OS" ID="{B29F0006-9607-4E80-BD8C-9D735304C22D}" ShortID="167317559">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="1"/>
-														<Property Name="Lowpass" Type="int16">
-															<ValueList>
-																<Value>15</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Pitch" Type="int32">
-															<ValueList>
-																<Value>400</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-15</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="ATN_UnrealHolograph" ID="{044D3425-A485-4809-96BA-ED930F9C1310}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-														</Reference>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Emitters_UnrealHolograph_FadeOut_OS" ID="{D891E198-779C-4D9C-9379-96F6B34F12DF}">
-															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.0921467146714672"/>
-																<Property Name="FadeOutDuration" Type="Real64" Value="4.21039603960397"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Emitters_UnrealHolograph_FadeOut_OS.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="425050702"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Emitters_UnrealHolograph_FadeOut_OS" ID="{D891E198-779C-4D9C-9379-96F6B34F12DF}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_UnrealHolograph_FadeIn_OS" ID="{3859B0B2-BF31-46F7-8318-8E5DA5DFA478}" ShortID="809285624">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="1"/>
-														<Property Name="Lowpass" Type="int16">
-															<ValueList>
-																<Value>15</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Pitch" Type="int32">
-															<ValueList>
-																<Value>400</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-15</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="ATN_UnrealHolograph" ID="{044D3425-A485-4809-96BA-ED930F9C1310}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-														</Reference>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Emitters_UnrealHolograph_FadeIn_OS" ID="{B107042B-643D-40A1-BC7C-8C5E8E60812B}">
-															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.454163310081008"/>
-																<Property Name="FadeOutDuration" Type="Real64" Value="4.60087179342934"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="1.07946062106211"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Emitters_UnrealHolograph_FadeIn_OS.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="619272686"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Emitters_UnrealHolograph_FadeIn_OS" ID="{B107042B-643D-40A1-BC7C-8C5E8E60812B}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>

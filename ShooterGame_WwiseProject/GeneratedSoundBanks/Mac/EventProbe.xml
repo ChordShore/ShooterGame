@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{5F4FDFB1-7219-F7CE-46B0-32C8A0B81127}">
+		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{ABA1C377-C1BE-F5CB-4420-23CD7CEFDFA3}">
 			<ObjectPath>\SoundBanks\Default Work Unit\EventProbe</ObjectPath>
 			<ShortName>EventProbe</ShortName>
 			<Path>EventProbe.bnk</Path>
@@ -12,7 +12,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="9500" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="10000" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1041093470"/>
@@ -29,5 +29,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{64B4C1C4-A59A-65D7-5FC1-62B6B502C462}</FileHash>
+	<FileHash>{B89289C9-BBCC-9376-FB20-1EF99873FEFD}</FileHash>
 </SoundBanksInfo>
