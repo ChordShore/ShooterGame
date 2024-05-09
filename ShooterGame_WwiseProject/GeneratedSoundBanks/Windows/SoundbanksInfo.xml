@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{A192F7B7-2B83-2E9D-EBB3-F8F093432739}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{2DB408FE-9742-CB44-6B27-25B634D05184}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -193,7 +193,7 @@
 						<MediaRef Id="515725994"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="10000" DurationType="Infinite">
+				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="11000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="456057735"/>
 					</MediaRefs>
@@ -1116,7 +1116,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{ABA1C377-C1BE-F5CB-4420-23CD7CEFDFA3}">
+		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{04032EDC-D5AB-8CCC-C51A-61A64537BC98}">
 			<ObjectPath>\SoundBanks\Default Work Unit\EventProbe</ObjectPath>
 			<ShortName>EventProbe</ShortName>
 			<Path>EventProbe.bnk</Path>
@@ -1127,7 +1127,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="10000" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="11000" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1041093470"/>
@@ -1242,5 +1242,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2A77A8EA-C5B8-A890-7A41-8C252B7DC386}</FileHash>
+	<FileHash>{3A246F14-A94B-5604-2CAC-120B193ACA07}</FileHash>
 </SoundBanksInfo>
