@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{1A14AA29-DA86-33A9-5E58-E4FCC4CDF9E8}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{6D1EE81C-7064-2908-F29E-DA49B243893F}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -193,17 +193,17 @@
 						<MediaRef Id="515725994"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="9500" DurationType="Infinite">
+				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="10000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="456057735"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeIn" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="9500" DurationType="OneShot" DurationMin="4.947315" DurationMax="4.947315">
+				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeIn" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="10000" DurationType="OneShot" DurationMin="4.947315" DurationMax="4.947315">
 					<MediaRefs>
 						<MediaRef Id="619272686"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="9500" DurationType="OneShot" DurationMin="4.166928" DurationMax="4.166928">
+				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="10000" DurationType="OneShot" DurationMin="4.166928" DurationMax="4.166928">
 					<MediaRefs>
 						<MediaRef Id="425050702"/>
 					</MediaRefs>
@@ -1116,7 +1116,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{5F4FDFB1-7219-F7CE-46B0-32C8A0B81127}">
+		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{E2749347-378A-00FD-2B5A-766F65F87239}">
 			<ObjectPath>\SoundBanks\Default Work Unit\EventProbe</ObjectPath>
 			<ShortName>EventProbe</ShortName>
 			<Path>EventProbe.bnk</Path>
@@ -1127,7 +1127,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="9500" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="10000" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1041093470"/>
@@ -1242,5 +1242,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4E37083C-62CA-2A39-F7E3-0A1610884061}</FileHash>
+	<FileHash>{65024791-1246-AAC1-77E1-EF4655911AB5}</FileHash>
 </SoundBanksInfo>
