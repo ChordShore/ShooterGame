@@ -100,7 +100,7 @@
 						</Attenuation>
 						<Attenuation Name="ATN_BarrierFence" ID="{7E23D20A-2350-48DF-AC62-C1B2A99A6FC0}" ShortID="1000471798">
 							<PropertyList>
-								<Property Name="RadiusMax" Type="Real64" Value="3500"/>
+								<Property Name="RadiusMax" Type="Real64" Value="2000"/>
 							</PropertyList>
 							<CurveUsageInfoList>
 								<VolumeDryUsage>
@@ -117,13 +117,13 @@
 													<SegmentShape>Log1</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>175</XPos>
+													<XPos>100</XPos>
 													<YPos>0</YPos>
 													<Flags>0</Flags>
 													<SegmentShape>Log2</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>3500</XPos>
+													<XPos>2000</XPos>
 													<YPos>-200</YPos>
 													<Flags>37</Flags>
 												</Point>
@@ -150,7 +150,7 @@
 													<Flags>5</Flags>
 												</Point>
 												<Point>
-													<XPos>3500</XPos>
+													<XPos>2000</XPos>
 													<YPos>10</YPos>
 													<Flags>37</Flags>
 												</Point>
@@ -172,13 +172,13 @@
 													<SegmentShape>Exp2</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>3383.33333333333</XPos>
+													<XPos>1933.33333333333</XPos>
 													<YPos>100</YPos>
 													<Flags>0</Flags>
 													<SegmentShape>Exp3</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>3500</XPos>
+													<XPos>2000</XPos>
 													<YPos>100</YPos>
 													<Flags>37</Flags>
 												</Point>
@@ -199,13 +199,13 @@
 													<Flags>5</Flags>
 												</Point>
 												<Point>
-													<XPos>175</XPos>
+													<XPos>100</XPos>
 													<YPos>20</YPos>
 													<Flags>0</Flags>
 													<SegmentShape>Log3</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>3500</XPos>
+													<XPos>2000</XPos>
 													<YPos>0</YPos>
 													<Flags>37</Flags>
 												</Point>
@@ -590,7 +590,7 @@
 						</Attenuation>
 						<Attenuation Name="ATN_UnrealHolograph" ID="{044D3425-A485-4809-96BA-ED930F9C1310}" ShortID="918608744">
 							<PropertyList>
-								<Property Name="RadiusMax" Type="Real64" Value="11000"/>
+								<Property Name="RadiusMax" Type="Real64" Value="10000"/>
 							</PropertyList>
 							<CurveUsageInfoList>
 								<VolumeDryUsage>
@@ -607,19 +607,19 @@
 													<SegmentShape>Log1</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>1100</XPos>
+													<XPos>1000</XPos>
 													<YPos>0</YPos>
 													<Flags>0</Flags>
 													<SegmentShape>Exp1</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>7480</XPos>
+													<XPos>6800</XPos>
 													<YPos>-12</YPos>
 													<Flags>0</Flags>
 													<SegmentShape>Log3</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>11000</XPos>
+													<XPos>10000</XPos>
 													<YPos>-200</YPos>
 													<Flags>37</Flags>
 												</Point>
@@ -647,7 +647,7 @@
 													<SegmentShape>Exp3</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>11000</XPos>
+													<XPos>10000</XPos>
 													<YPos>15</YPos>
 													<Flags>37</Flags>
 												</Point>
@@ -669,7 +669,7 @@
 													<SegmentShape>Exp3</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>11000</XPos>
+													<XPos>10000</XPos>
 													<YPos>15</YPos>
 													<Flags>37</Flags>
 												</Point>
@@ -690,13 +690,13 @@
 													<Flags>5</Flags>
 												</Point>
 												<Point>
-													<XPos>2572.26325529411</XPos>
+													<XPos>2338.42114117646</XPos>
 													<YPos>100</YPos>
 													<Flags>0</Flags>
 													<SegmentShape>Log2</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>11000</XPos>
+													<XPos>10000</XPos>
 													<YPos>0</YPos>
 													<Flags>37</Flags>
 												</Point>
@@ -718,7 +718,7 @@
 													<SegmentShape>Log1</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>11000</XPos>
+													<XPos>10000</XPos>
 													<YPos>24.03983</YPos>
 													<Flags>37</Flags>
 												</Point>

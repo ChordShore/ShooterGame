@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{2DB408FE-9742-CB44-6B27-25B634D05184}",
+    "Hash": "{4AD92E5C-95B2-20C8-BBD2-4466D1256523}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -258,7 +258,7 @@
       "Name": "AMB_BarrierFence",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_BarrierFence",
       "GUID": "{427593F0-92C8-4CA8-8FCD-C163A0B02BEC}",
-      "MaxAttenuation": "3500",
+      "MaxAttenuation": "2000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -424,7 +424,7 @@
       "Name": "AMB_UnrealHolograph",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph",
       "GUID": "{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}",
-      "MaxAttenuation": "11000",
+      "MaxAttenuation": "10000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -437,7 +437,7 @@
       "Name": "AMB_UnrealHolograph_FadeIn",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph_FadeIn",
       "GUID": "{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}",
-      "MaxAttenuation": "2200",
+      "MaxAttenuation": "10000",
       "DurationType": "OneShot",
       "DurationMin": "4.947315",
       "DurationMax": "4.947315",
@@ -452,7 +452,7 @@
       "Name": "AMB_UnrealHolograph_FadeOut",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph_FadeOut",
       "GUID": "{E3EEEB5D-9B58-43DF-8E87-C18F76699081}",
-      "MaxAttenuation": "2200",
+      "MaxAttenuation": "10000",
       "DurationType": "OneShot",
       "DurationMin": "4.166928",
       "DurationMax": "4.166928",
@@ -927,7 +927,7 @@
     "Type": "Event",
     "GUID": "{7228D143-91CD-48AB-B419-E16DEE2BF95F}",
     "Language": "SFX",
-    "Hash": "{BC756A1B-0C5E-D748-1B89-A3346C7F076D}",
+    "Hash": "{D8721240-862F-A12C-7590-BFB2659B7298}",
     "ObjectPath": "AMB_RoomGusts_SmallEntrance_Interior",
     "ShortName": "AMB_RoomGusts_SmallEntrance_Interior",
     "Path": "Event/AMB_RoomGusts_SmallEntrance_Interior.bnk",
@@ -2842,7 +2842,7 @@
     "Type": "User",
     "GUID": "{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}",
     "Language": "SFX",
-    "Hash": "{04032EDC-D5AB-8CCC-C51A-61A64537BC98}",
+    "Hash": "{A2337AF7-4133-19E2-4F3B-DB20601E96A1}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\EventProbe",
     "ShortName": "EventProbe",
     "Path": "EventProbe.bnk",
@@ -2872,7 +2872,7 @@
       "Name": "Play_Sine_Pip",
       "ObjectPath": "\\Events\\Default Work Unit\\Event Probe\\Play_Sine_Pip",
       "GUID": "{79D376DC-67FF-49D5-8EFA-4F594DD02674}",
-      "MaxAttenuation": "11000",
+      "MaxAttenuation": "10000",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "1",
@@ -3082,7 +3082,7 @@
     "Type": "Event",
     "GUID": "{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}",
     "Language": "SFX",
-    "Hash": "{59083392-F4EB-3693-4DDA-CE2741794302}",
+    "Hash": "{C7EDA644-01C7-58AD-FE6B-32FB0A35FF0E}",
     "ObjectPath": "AMB_RoomGusts_SmallEntrance_Exterior",
     "ShortName": "AMB_RoomGusts_SmallEntrance_Exterior",
     "Path": "Event/AMB_RoomGusts_SmallEntrance_Exterior.bnk",
@@ -3114,6 +3114,6 @@
     ]
    }
   ],
-  "FileHash": "{539643AF-6137-37F8-C8E9-1902964C5D83}"
+  "FileHash": "{6A4DE868-3576-94C1-8457-D201C62A226F}"
  }
 }
