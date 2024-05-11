@@ -59,6 +59,11 @@
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -1011,7 +1016,7 @@
 																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-11</Value>
+																		<Value>-14</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
