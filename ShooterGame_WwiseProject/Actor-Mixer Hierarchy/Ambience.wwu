@@ -115,7 +115,7 @@
 														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 														<Property Name="InitialDelay" Type="Real64">
 															<ValueList>
-																<Value>10</Value>
+																<Value>30</Value>
 															</ValueList>
 															<ModifierList>
 																<ModifierInfo>
@@ -141,7 +141,7 @@
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="30">
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="60">
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{4C2249A9-1490-4E86-B618-D531D8871055}">
@@ -305,7 +305,7 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-8</Value>
+																<Value>-7</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -360,7 +360,7 @@
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-15</Value>
+																<Value>-17</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -452,6 +452,7 @@
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -857,7 +858,7 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-14</Value>
+																<Value>-10</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -945,7 +946,7 @@
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-13</Value>
+																		<Value>-12</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -5185,11 +5186,6 @@
 										<ActorMixer Name="AMB_ScifiDrones" ID="{F8CA7FF3-FE47-4BB4-980E-7E9296E98800}" ShortID="1041390785">
 											<PropertyList>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -5217,7 +5213,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-12</Value>
+																<Value>-7</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -5240,9 +5236,11 @@
 															<PropertyList>
 																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 																<Property Name="Pitch" Type="int32">
-																	<ValueList>
-																		<Value>-1200</Value>
-																	</ValueList>
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{F34BAF99-B0F3-4DA9-BA2B-2E9289232671}"/>
+																		</ModifierInfo>
+																	</ModifierList>
 																</Property>
 																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -5270,7 +5268,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="AMB_Highrise_ScifiDrone_01" ID="{9614513F-1DEC-40CC-BA74-38E609A2CA8B}" ShortID="141149623">
+																<Sound Name="AMB_Highrise_ScifiDrone_Room_01" ID="{5AA8E8A5-CB22-41E6-8608-93458DB621C0}" ShortID="532974038">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5280,19 +5278,19 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_01" ID="{8A9B5BE2-32F9-49DB-8B29-E386C25E9897}">
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Room_01" ID="{3056DF6D-F22E-4832-87F0-B142DBEB93E0}">
 																			<Language>SFX</Language>
-																			<AudioFile>AMB_Highrise_ScifiDrone_01.wav</AudioFile>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Room_01.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="394870420"/>
+																				<MediaID ID="548291984"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="AMB_Highrise_ScifiDrone_01" ID="{8A9B5BE2-32F9-49DB-8B29-E386C25E9897}" Platform="Linked"/>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Room_01" ID="{3056DF6D-F22E-4832-87F0-B142DBEB93E0}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="AMB_Highrise_ScifiDrone_02" ID="{9E3ABD40-FB86-4824-AA51-10276E525921}" ShortID="98322856">
+																<Sound Name="AMB_Highrise_ScifiDrone_Room_03" ID="{7F31A229-6CEE-4753-8A60-420F7B931E75}" ShortID="490205984">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5302,19 +5300,19 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_02" ID="{4E988D90-5836-47D9-B708-D21A5DB673F2}">
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Room_03" ID="{895F9BE8-F2B9-4E79-8632-E544D0497104}">
 																			<Language>SFX</Language>
-																			<AudioFile>AMB_Highrise_ScifiDrone_02.wav</AudioFile>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Room_03.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="568814768"/>
+																				<MediaID ID="508650582"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="AMB_Highrise_ScifiDrone_02" ID="{4E988D90-5836-47D9-B708-D21A5DB673F2}" Platform="Linked"/>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Room_03" ID="{895F9BE8-F2B9-4E79-8632-E544D0497104}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="AMB_Highrise_ScifiDrone_03" ID="{C76DE785-4FA2-47B4-BC24-4AD9777AF7D0}" ShortID="655970582">
+																<Sound Name="AMB_Highrise_ScifiDrone_Room_05" ID="{38AA9FEC-A7AC-4BA2-A2AF-3FF8B340F40F}" ShortID="369136327">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5324,19 +5322,19 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_03" ID="{95FEC8EE-41DF-4897-85E4-76B1D48E6EC8}">
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Room_05" ID="{83D98065-DF95-48EF-9782-C34FB235D981}">
 																			<Language>SFX</Language>
-																			<AudioFile>AMB_Highrise_ScifiDrone_03.wav</AudioFile>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Room_05.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="536326611"/>
+																				<MediaID ID="876622919"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="AMB_Highrise_ScifiDrone_03" ID="{95FEC8EE-41DF-4897-85E4-76B1D48E6EC8}" Platform="Linked"/>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Room_05" ID="{83D98065-DF95-48EF-9782-C34FB235D981}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="AMB_Highrise_ScifiDrone_04" ID="{C99808F4-79B1-401A-A6EF-0C3A50FE913D}" ShortID="255843331">
+																<Sound Name="AMB_Highrise_ScifiDrone_Room_07" ID="{CA7A73A8-EC0A-4EF2-9DBB-D1B899BFDA47}" ShortID="379089236">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5346,19 +5344,19 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_04" ID="{40EE491C-8CEE-4860-A5A4-DC354DC61D1C}">
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Room_07" ID="{660D3680-DF55-4350-B81D-E80B9E5D212E}">
 																			<Language>SFX</Language>
-																			<AudioFile>AMB_Highrise_ScifiDrone_04.wav</AudioFile>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Room_07.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="731320792"/>
+																				<MediaID ID="795597231"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="AMB_Highrise_ScifiDrone_04" ID="{40EE491C-8CEE-4860-A5A4-DC354DC61D1C}" Platform="Linked"/>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Room_07" ID="{660D3680-DF55-4350-B81D-E80B9E5D212E}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="AMB_Highrise_ScifiDrone_05" ID="{4072AF3A-8845-499B-BBF0-47D612D95820}" ShortID="691054935">
+																<Sound Name="AMB_Highrise_ScifiDrone_Room_09" ID="{9413F928-5873-47F5-B0D6-4394B6DD0589}" ShortID="886552802">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5368,19 +5366,19 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_05" ID="{8C19F464-4FAB-46F9-A84C-2D0A9C6AC645}">
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Room_09" ID="{386D50AE-BC36-4050-AADC-D0D52D3376C8}">
 																			<Language>SFX</Language>
-																			<AudioFile>AMB_Highrise_ScifiDrone_05.wav</AudioFile>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Room_09.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="316038893"/>
+																				<MediaID ID="756873659"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="AMB_Highrise_ScifiDrone_05" ID="{8C19F464-4FAB-46F9-A84C-2D0A9C6AC645}" Platform="Linked"/>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Room_09" ID="{386D50AE-BC36-4050-AADC-D0D52D3376C8}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="AMB_Highrise_ScifiDrone_06" ID="{C2F56FC8-E36A-4753-AAD1-DF8E7DF98ED5}" ShortID="116262066">
+																<Sound Name="AMB_Highrise_ScifiDrone_Room_11" ID="{61B479AE-098F-4D7A-94BB-FE2B14DF4254}" ShortID="566599406">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5390,21 +5388,94 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_06" ID="{7693A6DB-59F3-43FA-818C-BEFB3C7536AA}">
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Room_11" ID="{BB5046D6-7433-40CE-AD23-37C5C53A495C}">
 																			<Language>SFX</Language>
-																			<AudioFile>AMB_Highrise_ScifiDrone_06.wav</AudioFile>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Room_11.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="181815167"/>
+																				<MediaID ID="795419111"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="AMB_Highrise_ScifiDrone_06" ID="{7693A6DB-59F3-43FA-818C-BEFB3C7536AA}" Platform="Linked"/>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Room_11" ID="{BB5046D6-7433-40CE-AD23-37C5C53A495C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="AMB_Highrise_ScifiDrone_Room_13" ID="{AAE0193A-1B12-4CE9-AE69-8B1F719C8F07}" ShortID="636777826">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Room_13" ID="{EFCBF0CD-BE0B-47C5-9AA0-9DA7377D37D4}">
+																			<Language>SFX</Language>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Room_13.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="453557799"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Room_13" ID="{EFCBF0CD-BE0B-47C5-9AA0-9DA7377D37D4}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="AMB_Highrise_ScifiDrone_Room_15" ID="{E95822E2-FF9B-478E-A536-C50BC9C5FB52}" ShortID="461408389">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Room_15" ID="{50633955-976C-49E2-87AD-CFEEE6F94989}">
+																			<Language>SFX</Language>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Room_15.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="725138936"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Room_15" ID="{50633955-976C-49E2-87AD-CFEEE6F94989}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="AMB_Highrise_ScifiDrone_Room_17" ID="{5089BA52-C229-4419-8C16-DF4110C5A5FF}" ShortID="997253653">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Room_17" ID="{B6766A7D-2482-47EB-8AF2-43C385883C24}">
+																			<Language>SFX</Language>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Room_17.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="97223412"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Room_17" ID="{B6766A7D-2482-47EB-8AF2-43C385883C24}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="AMB_Highrise_Atrium_OS" ID="{A27AAC41-368C-47B8-9852-654CFB647800}" ShortID="1044563176">
+															<PropertyList>
+																<Property Name="MakeUpGain" Type="Real64">
+																	<ValueList>
+																		<Value>2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5414,7 +5485,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="AMB_Highrise_ScifiDrone_01" ID="{9ED97CBE-CFDF-463B-AC46-7C87193E8FD5}" ShortID="1024265348">
+																<Sound Name="AMB_Highrise_ScifiDrone_Atrium_01" ID="{9D9A3D65-3719-4FDF-97BB-8E50FB68BC94}" ShortID="593208477">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5424,19 +5495,19 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_01" ID="{569E0DF2-D606-4699-9CF9-DBD33E64F36B}">
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Atrium_01" ID="{EA0D1A32-AA1C-41F1-A72F-A155FD30E2C1}">
 																			<Language>SFX</Language>
-																			<AudioFile>AMB_Highrise_ScifiDrone_01.wav</AudioFile>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Atrium_01.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="394870420"/>
+																				<MediaID ID="264558184"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="AMB_Highrise_ScifiDrone_01" ID="{569E0DF2-D606-4699-9CF9-DBD33E64F36B}" Platform="Linked"/>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Atrium_01" ID="{EA0D1A32-AA1C-41F1-A72F-A155FD30E2C1}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="AMB_Highrise_ScifiDrone_02" ID="{BCC2FA02-CCFF-4C6C-B9CE-92F433001B3B}" ShortID="552105306">
+																<Sound Name="AMB_Highrise_ScifiDrone_Atrium_03" ID="{054A2867-7140-42F8-9013-B17F57E75147}" ShortID="446780537">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5446,19 +5517,19 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_02" ID="{969AE4AD-DF86-45AD-8C4F-0E3137D54D9D}">
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Atrium_03" ID="{5B281A88-0D39-4F57-9B19-642CF0C950E1}">
 																			<Language>SFX</Language>
-																			<AudioFile>AMB_Highrise_ScifiDrone_02.wav</AudioFile>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Atrium_03.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="568814768"/>
+																				<MediaID ID="740070884"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="AMB_Highrise_ScifiDrone_02" ID="{969AE4AD-DF86-45AD-8C4F-0E3137D54D9D}" Platform="Linked"/>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Atrium_03" ID="{5B281A88-0D39-4F57-9B19-642CF0C950E1}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="AMB_Highrise_ScifiDrone_03" ID="{7CAB0BB4-4000-4474-835B-0008D0F772B5}" ShortID="666732075">
+																<Sound Name="AMB_Highrise_ScifiDrone_Atrium_05" ID="{4FE0025B-031A-4BE8-8967-1D2BD0FEA8E2}" ShortID="627176815">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5468,19 +5539,19 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_03" ID="{65EF0CAC-76D1-4980-8C33-6D79EC0B89FC}">
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Atrium_05" ID="{4447C0DD-8A51-4052-800F-FB6D4BB3D18A}">
 																			<Language>SFX</Language>
-																			<AudioFile>AMB_Highrise_ScifiDrone_03.wav</AudioFile>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Atrium_05.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="536326611"/>
+																				<MediaID ID="629379600"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="AMB_Highrise_ScifiDrone_03" ID="{65EF0CAC-76D1-4980-8C33-6D79EC0B89FC}" Platform="Linked"/>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Atrium_05" ID="{4447C0DD-8A51-4052-800F-FB6D4BB3D18A}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="AMB_Highrise_ScifiDrone_04" ID="{623127E1-80A9-4A89-9F59-97F1A129C84F}" ShortID="79754170">
+																<Sound Name="AMB_Highrise_ScifiDrone_Atrium_07" ID="{66BC42B2-E924-4F9C-A6F4-241EB967E360}" ShortID="155891002">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5490,19 +5561,19 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_04" ID="{5607C2C2-7BF5-41E1-AC0F-EB4802C91E0F}">
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Atrium_07" ID="{BA3A6168-6299-4785-82B4-3070ECCC6A87}">
 																			<Language>SFX</Language>
-																			<AudioFile>AMB_Highrise_ScifiDrone_04.wav</AudioFile>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Atrium_07.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="731320792"/>
+																				<MediaID ID="7436949"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="AMB_Highrise_ScifiDrone_04" ID="{5607C2C2-7BF5-41E1-AC0F-EB4802C91E0F}" Platform="Linked"/>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Atrium_07" ID="{BA3A6168-6299-4785-82B4-3070ECCC6A87}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="AMB_Highrise_ScifiDrone_05" ID="{9FCB5103-4505-4CFB-B8F2-8AC2D0EF1363}" ShortID="887596716">
+																<Sound Name="AMB_Highrise_ScifiDrone_Atrium_09" ID="{7E60885B-C038-4D9F-90DD-D71E6294055D}" ShortID="978751818">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5512,19 +5583,19 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_05" ID="{875FAEAD-0213-4F10-ABD5-E9FFCCB6F984}">
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Atrium_09" ID="{598C8B1D-39D9-4CB0-A622-5D58556AF60C}">
 																			<Language>SFX</Language>
-																			<AudioFile>AMB_Highrise_ScifiDrone_05.wav</AudioFile>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Atrium_09.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="316038893"/>
+																				<MediaID ID="989802043"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="AMB_Highrise_ScifiDrone_05" ID="{875FAEAD-0213-4F10-ABD5-E9FFCCB6F984}" Platform="Linked"/>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Atrium_09" ID="{598C8B1D-39D9-4CB0-A622-5D58556AF60C}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="AMB_Highrise_ScifiDrone_06" ID="{05D98C68-A8C8-4B99-97EC-1BEC7B440027}" ShortID="28052763">
+																<Sound Name="AMB_Highrise_ScifiDrone_Atrium_11" ID="{D7829D77-4B78-4BCC-A94F-B1628E9FF6B7}" ShortID="325811820">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5534,16 +5605,82 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_06" ID="{CAF76706-A172-4346-BECD-D5572E35D449}">
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Atrium_11" ID="{6948BF5B-1959-4166-8522-66A172268315}">
 																			<Language>SFX</Language>
-																			<AudioFile>AMB_Highrise_ScifiDrone_06.wav</AudioFile>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Atrium_11.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="181815167"/>
+																				<MediaID ID="1005364083"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="AMB_Highrise_ScifiDrone_06" ID="{CAF76706-A172-4346-BECD-D5572E35D449}" Platform="Linked"/>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Atrium_11" ID="{6948BF5B-1959-4166-8522-66A172268315}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="AMB_Highrise_ScifiDrone_Atrium_12" ID="{1BA4BA39-28B3-4F6F-A901-14749F67288E}" ShortID="32221805">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Atrium_12" ID="{C3B3ADF9-FD52-4735-B515-756047DAD8CE}">
+																			<Language>SFX</Language>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Atrium_12.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="585626277"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Atrium_12" ID="{C3B3ADF9-FD52-4735-B515-756047DAD8CE}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="AMB_Highrise_ScifiDrone_Atrium_13" ID="{581F8A70-BB4B-48BF-AA3F-42D8D84C87D3}" ShortID="434852537">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Atrium_13" ID="{3BC263EB-1E93-46E7-989F-F73234C942C6}">
+																			<Language>SFX</Language>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Atrium_13.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="222297366"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Atrium_13" ID="{3BC263EB-1E93-46E7-989F-F73234C942C6}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="AMB_Highrise_ScifiDrone_Atrium_14" ID="{19C02EC9-66DA-4CAF-8EF7-2718D62972C1}" ShortID="946172579">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AMB_Highrise_ScifiDrone_Atrium_14" ID="{0358F5CC-09FF-4CAA-AF53-05DD96A2FA4D}">
+																			<Language>SFX</Language>
+																			<AudioFile>AMB_Highrise_ScifiDrone_Atrium_14.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="883322231"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AMB_Highrise_ScifiDrone_Atrium_14" ID="{0358F5CC-09FF-4CAA-AF53-05DD96A2FA4D}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -5893,7 +6030,7 @@
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-22</Value>
+																<Value>-18</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -5969,7 +6106,7 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-22</Value>
+																<Value>-18</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -6034,7 +6171,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-22</Value>
+																<Value>-18</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
