@@ -380,6 +380,31 @@
 												</Event>
 											</ChildrenList>
 										</Folder>
+										<Event Name="AMB_EnergyPillar" ID="{59B52E0A-A590-4C41-B895-B6222DEA8792}">
+											<ChildrenList>
+												<Action Name="" ID="{2D046843-4D86-4314-AED1-48C8D4A91CDD}" ShortID="40391474">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_EnergyPillar_Arcs" ID="{3A3D8AE7-7A42-4352-AB02-DA0B25E7B37C}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{2D7749D7-C4CB-43B0-8AFA-3138B65A24D6}" ShortID="967837799">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_EnergyPillar_Beam" ID="{7AE711D9-3F11-415B-8F72-C0D2D8D4CD86}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{22136468-79CF-4D04-B0AA-50BD8FB9B86E}" ShortID="527548332">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_EnergyPillar_Waterfall" ID="{6D9BCEF2-9A35-421E-9AAB-DD0D45BD145E}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
 									</ChildrenList>
 								</Folder>
 								<Folder Name="Static" ID="{4C479134-8E12-4BAB-A017-FC5CA692CB18}" ShortID="203033786">

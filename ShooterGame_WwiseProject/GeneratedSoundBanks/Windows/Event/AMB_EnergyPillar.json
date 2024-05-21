@@ -1,0 +1,71 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "2357047986",
+    "Type": "Event",
+    "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
+    "Language": "SFX",
+    "Hash": "{5716E2F8-8A35-91D4-A7DC-A6EF38ABEB93}",
+    "ObjectPath": "AMB_EnergyPillar",
+    "ShortName": "AMB_EnergyPillar",
+    "Path": "Event/AMB_EnergyPillar.bnk",
+    "Media": [
+     {
+      "Id": "446621592",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Emitters_EnergyPillar_Waterfall.wav",
+      "Path": "Media/446621592.wem",
+      "CachePath": "SFX/Emitters_EnergyPillar_Waterfall_DA432494.wem"
+     },
+     {
+      "Id": "551839656",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Emitters_EnergyPillar_Arcs.wav",
+      "Path": "Media/551839656.wem",
+      "CachePath": "SFX/Emitters_EnergyPillar_Arcs_93D67EE5.wem"
+     },
+     {
+      "Id": "638307787",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Emitters_EnergyPillar_Beam.wav",
+      "Path": "Media/638307787.wem",
+      "CachePath": "SFX/Emitters_EnergyPillar_Beam_161DAC12.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2357047986",
+      "Name": "AMB_EnergyPillar",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_EnergyPillar",
+      "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
+      "MaxAttenuation": "3500",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "446621592"
+       },
+       {
+        "Id": "551839656"
+       },
+       {
+        "Id": "638307787"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6781875C-ADAD-EF82-22FD-191183DBBA58}"
+ }
+}

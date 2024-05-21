@@ -798,6 +798,179 @@
 												</RandomSequenceContainer>
 											</ChildrenList>
 										</ActorMixer>
+										<ActorMixer Name="AMB_EnergyPillar" ID="{ECE1C515-9156-4FA4-804F-98AFF465A250}" ShortID="802942855">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATN_EnergyPillar" ID="{70294525-B1A0-4D7F-AA6C-CA49A6BA33CA}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AMB_EnergyPillar_Beam" ID="{7AE711D9-3F11-415B-8F72-C0D2D8D4CD86}" ShortID="588867978">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>1.5</Value>
+															</ValueList>
+														</Property>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>25</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Emitters_EnergyPillar_Beam" ID="{B7D4755B-1D72-44BF-B1AE-CBDAC3FE006F}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="2315.789"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.655058823529412"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.790588235294118"/>
+																<Property Name="LoopBegin" Type="Real64" Value="3.16988235294118"/>
+																<Property Name="LoopEnd" Type="Real64" Value="12.8602352941176"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Emitters_EnergyPillar_Beam.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="638307787"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Emitters_EnergyPillar_Beam" ID="{B7D4755B-1D72-44BF-B1AE-CBDAC3FE006F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_EnergyPillar_Arcs" ID="{3A3D8AE7-7A42-4352-AB02-DA0B25E7B37C}" ShortID="766157913">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>1.5</Value>
+															</ValueList>
+														</Property>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-11</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Emitters_EnergyPillar_Arcs" ID="{48947EC2-08F3-4875-9C7D-8E85BEE17820}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="463.158"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.316235294117647"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.496941176470587"/>
+																<Property Name="LoopBegin" Type="Real64" Value="4.02070588235294"/>
+																<Property Name="LoopEnd" Type="Real64" Value="13.2969411764706"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.414117647058824"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Emitters_EnergyPillar_Arcs.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="551839656"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Emitters_EnergyPillar_Arcs" ID="{48947EC2-08F3-4875-9C7D-8E85BEE17820}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_EnergyPillar_Waterfall" ID="{6D9BCEF2-9A35-421E-9AAB-DD0D45BD145E}" ShortID="91198710">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>1.5</Value>
+															</ValueList>
+														</Property>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-23</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Emitters_EnergyPillar_Waterfall" ID="{E0601DCA-5731-4E30-B93A-B040C546DED8}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="1431.579"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.54964705882353"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.722823529411764"/>
+																<Property Name="LoopBegin" Type="Real64" Value="3.36564705882353"/>
+																<Property Name="LoopEnd" Type="Real64" Value="11.4522352941176"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Emitters_EnergyPillar_Waterfall.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="446621592"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Emitters_EnergyPillar_Waterfall" ID="{E0601DCA-5731-4E30-B93A-B040C546DED8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</ActorMixer>
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="AMB_Dynamic" ID="{AB361D4B-A5B1-47FA-8B42-AC6713A1FBFD}" ShortID="114278345">

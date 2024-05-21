@@ -1182,6 +1182,37 @@
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="2357047986" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{5716E2F8-8A35-91D4-A7DC-A6EF38ABEB93}">
+			<ObjectPath>AMB_EnergyPillar</ObjectPath>
+			<ShortName>AMB_EnergyPillar</ShortName>
+			<Path>Event/AMB_EnergyPillar.bnk</Path>
+			<Media>
+				<File Id="446621592" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Emitters_EnergyPillar_Waterfall.wav</ShortName>
+					<Path>Media/446621592.wem</Path>
+					<CachePath>SFX/Emitters_EnergyPillar_Waterfall_DA432494.wem</CachePath>
+				</File>
+				<File Id="551839656" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Emitters_EnergyPillar_Arcs.wav</ShortName>
+					<Path>Media/551839656.wem</Path>
+					<CachePath>SFX/Emitters_EnergyPillar_Arcs_93D67EE5.wem</CachePath>
+				</File>
+				<File Id="638307787" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Emitters_EnergyPillar_Beam.wav</ShortName>
+					<Path>Media/638307787.wem</Path>
+					<CachePath>SFX/Emitters_EnergyPillar_Beam_161DAC12.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2357047986" Name="AMB_EnergyPillar" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_EnergyPillar" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" MaxAttenuation="3500" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="446621592"/>
+						<MediaRef Id="551839656"/>
+						<MediaRef Id="638307787"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{7B6165C6-9398-377C-D97B-8CDD19DFE22D}">
 			<ObjectPath>\SoundBanks\Default Work Unit\EventProbe</ObjectPath>
 			<ShortName>EventProbe</ShortName>
@@ -1308,5 +1339,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5CB2A17F-252C-5FFD-78C7-120ECA1B50A8}</FileHash>
+	<FileHash>{6DB0FE50-6AE4-A572-D435-6F6B8900FBEA}</FileHash>
 </SoundBanksInfo>
