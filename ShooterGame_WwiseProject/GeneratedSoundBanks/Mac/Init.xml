@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{9D409722-5C05-23D0-EE73-9ADCFCFDC443}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{ADF4444D-13CF-42A1-E2FE-A532E4703CAD}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -69,6 +69,7 @@
 			<GameParameters>
 				<GameParameter Id="1228207839" Name="PAR_Heartbeat" ObjectPath="\Game Parameters\Default Work Unit\PAR_Heartbeat" GUID="{1A7627A7-5A7D-470D-B1E0-2B091B679836}"/>
 				<GameParameter Id="1714946050" Name="PAR_Breaths" ObjectPath="\Game Parameters\Default Work Unit\PAR_Breaths" GUID="{AD59135C-7832-4545-A14C-AA5DD622DAAC}"/>
+				<GameParameter Id="4014555216" Name="PAR_Distance" ObjectPath="\Game Parameters\Default Work Unit\PAR_Distance" GUID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="1777405841" Name="STA_Location" ObjectPath="\States\Default Work Unit\STA_Location" GUID="{686E9A02-FA99-467B-99D7-939C1DC93153}">
@@ -217,5 +218,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1106316F-AA7D-0467-A8B6-65E41F134615}</FileHash>
+	<FileHash>{C09B20D6-420E-1273-2C8E-6F4681B563A9}</FileHash>
 </SoundBanksInfo>

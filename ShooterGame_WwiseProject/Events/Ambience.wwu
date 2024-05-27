@@ -354,13 +354,6 @@
 																</Reference>
 															</ReferenceList>
 														</Action>
-														<Action Name="" ID="{42D0132D-50AC-4654-B8D1-D554B223CCA6}" ShortID="793598593">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_NearTraffic_Spline" ID="{2983D3DB-10CD-43AA-BD62-FDD223E657E2}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
 													</ChildrenList>
 												</Event>
 												<Event Name="AMB_WindGusts_Static_Stop" ID="{672C5AA3-D760-4145-8932-779B95AF8317}">
@@ -400,6 +393,13 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="AMB_EnergyPillar_Waterfall" ID="{6D9BCEF2-9A35-421E-9AAB-DD0D45BD145E}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{4C846E62-5ACD-4E6E-B697-D40D7108405E}" ShortID="704664669">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_NearTraffic_Spline_C" ID="{2983D3DB-10CD-43AA-BD62-FDD223E657E2}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -458,7 +458,7 @@
 										</Event>
 										<Folder Name="HoverCars" ID="{E60B9BE2-648B-4B98-9CA0-BE8F7C3B8A73}" ShortID="828572442">
 											<ChildrenList>
-												<Folder Name="NearTraffic" ID="{B1347CAF-11E7-4FC6-8B34-DBC1EF449B81}" ShortID="284556994">
+												<Folder Name="TrafficStatic" ID="{B1347CAF-11E7-4FC6-8B34-DBC1EF449B81}" ShortID="284556994">
 													<ChildrenList>
 														<Event Name="AMB_NearTraffic_C" ID="{C5ED1BFB-22A9-41F4-A56D-7095120AA1D2}">
 															<ChildrenList>
@@ -495,25 +495,14 @@
 														</Event>
 													</ChildrenList>
 												</Folder>
-												<Folder Name="DistantTraffic" ID="{2181E809-1D01-4D6D-BFD9-5DC4E75D26ED}" ShortID="855891662">
+												<Folder Name="TrafficDynamic" ID="{2181E809-1D01-4D6D-BFD9-5DC4E75D26ED}" ShortID="855891662">
 													<ChildrenList>
-														<Event Name="AMB_DistantTraffic_C" ID="{931959EE-DA2F-45C8-B892-E89DFE3871CC}">
-															<ChildrenList>
-																<Action Name="" ID="{CCC7D955-6EF2-42EF-B38B-02F3B8D73B30}" ShortID="225053423">
-																	<ReferenceList>
-																		<Reference Name="Target">
-																			<ObjectRef Name="AMB_DistantTraffic_LR_LP_C" ID="{B42A9A51-29C0-475C-BCDE-3B8DEE910BAB}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																		</Reference>
-																	</ReferenceList>
-																</Action>
-															</ChildrenList>
-														</Event>
 														<Event Name="AMB_DistantTraffic_R" ID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}">
 															<ChildrenList>
 																<Action Name="" ID="{3F6FAE9F-9387-455E-9F6A-84A0D2B49E11}" ShortID="386980522">
 																	<ReferenceList>
 																		<Reference Name="Target">
-																			<ObjectRef Name="AMB_DistantTraffic_RL_LP_R" ID="{CDEF387F-0830-4759-BEA4-AA7FF26D0C66}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																			<ObjectRef Name="AMB_NearTraffic_Spline_R" ID="{43F1B6BD-6FF2-4228-917E-652630FD134E}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 																		</Reference>
 																	</ReferenceList>
 																</Action>
@@ -524,7 +513,18 @@
 																<Action Name="" ID="{F00BECB9-8ECF-40E3-8B79-F9464119E128}" ShortID="598574139">
 																	<ReferenceList>
 																		<Reference Name="Target">
-																			<ObjectRef Name="AMB_DistantTraffic_LR_LP_L" ID="{B8CBE911-1EF9-48E6-ADEC-73F09732DBF3}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																			<ObjectRef Name="AMB_NearTraffic_Spline_L" ID="{4D5596AA-BB15-4B42-8BC9-1C433C235A53}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																		</Reference>
+																	</ReferenceList>
+																</Action>
+															</ChildrenList>
+														</Event>
+														<Event Name="AMB_DistantTraffic_C" ID="{B79F71C1-F2C8-4A0A-88DC-B7648445D29B}">
+															<ChildrenList>
+																<Action Name="" ID="{C9029C52-BED1-4BAE-BA35-9C22B422109F}" ShortID="625442309">
+																	<ReferenceList>
+																		<Reference Name="Target">
+																			<ObjectRef Name="AMB_NearTraffic_Spline_C" ID="{2983D3DB-10CD-43AA-BD62-FDD223E657E2}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 																		</Reference>
 																	</ReferenceList>
 																</Action>
@@ -532,17 +532,6 @@
 														</Event>
 													</ChildrenList>
 												</Folder>
-												<Event Name="AMB_NearTraffic_Spline" ID="{B79F71C1-F2C8-4A0A-88DC-B7648445D29B}">
-													<ChildrenList>
-														<Action Name="" ID="{C9029C52-BED1-4BAE-BA35-9C22B422109F}" ShortID="625442309">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_NearTraffic_Spline" ID="{2983D3DB-10CD-43AA-BD62-FDD223E657E2}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
 											</ChildrenList>
 										</Folder>
 										<Folder Name="UnrealHolograph" ID="{21B29F72-3A40-4B43-AA3C-6F6355C68ED3}" ShortID="867970519">

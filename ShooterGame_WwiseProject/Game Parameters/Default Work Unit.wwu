@@ -5,6 +5,12 @@
 			<ChildrenList>
 				<GameParameter Name="PAR_Heartbeat" ID="{1A7627A7-5A7D-470D-B1E0-2B091B679836}"/>
 				<GameParameter Name="PAR_Breaths" ID="{AD59135C-7832-4545-A14C-AA5DD622DAAC}"/>
+				<GameParameter Name="PAR_Distance" ID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

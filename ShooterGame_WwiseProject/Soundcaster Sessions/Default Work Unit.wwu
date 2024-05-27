@@ -14,9 +14,14 @@
 							<Position X="1" Y="0"/>
 						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="PAR_Distance" ID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="STA_Indoors" ID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
+						<CurrentStateRef Name="STA_Outdoors" ID="{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

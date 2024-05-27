@@ -10,11 +10,20 @@
     "Type": "Event",
     "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
     "Language": "SFX",
-    "Hash": "{5716E2F8-8A35-91D4-A7DC-A6EF38ABEB93}",
+    "Hash": "{9EADBB40-4311-2C06-6E2E-4B63982D1101}",
     "ObjectPath": "AMB_EnergyPillar",
     "ShortName": "AMB_EnergyPillar",
     "Path": "Event/AMB_EnergyPillar.bnk",
     "Media": [
+     {
+      "Id": "52137956",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "[BiP] Main RL Close 0001 [2024-05-24 224954].wav",
+      "Path": "Media/52137956.wem",
+      "CachePath": "SFX/[BiP] Main RL Close 0001 [2024-05-24 224954]_10C4C929.wem"
+     },
      {
       "Id": "446621592",
       "Language": "SFX",
@@ -22,7 +31,7 @@
       "Location": "Loose",
       "ShortName": "Emitters_EnergyPillar_Waterfall.wav",
       "Path": "Media/446621592.wem",
-      "CachePath": "SFX/Emitters_EnergyPillar_Waterfall_DA432494.wem"
+      "CachePath": "SFX/Emitters_EnergyPillar_Waterfall_94990CF8.wem"
      },
      {
       "Id": "551839656",
@@ -31,7 +40,7 @@
       "Location": "Loose",
       "ShortName": "Emitters_EnergyPillar_Arcs.wav",
       "Path": "Media/551839656.wem",
-      "CachePath": "SFX/Emitters_EnergyPillar_Arcs_93D67EE5.wem"
+      "CachePath": "SFX/Emitters_EnergyPillar_Arcs_B261B7F4.wem"
      },
      {
       "Id": "638307787",
@@ -40,18 +49,60 @@
       "Location": "Loose",
       "ShortName": "Emitters_EnergyPillar_Beam.wav",
       "Path": "Media/638307787.wem",
-      "CachePath": "SFX/Emitters_EnergyPillar_Beam_161DAC12.wem"
+      "CachePath": "SFX/Emitters_EnergyPillar_Beam_74E134E9.wem"
+     },
+     {
+      "Id": "847732927",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "[BiP] Main RL Close 0001 [2024-05-24 225148].wav",
+      "Path": "Media/847732927.wem",
+      "CachePath": "SFX/[BiP] Main RL Close 0001 [2024-05-24 225148]_10C4C929.wem"
+     },
+     {
+      "Id": "897418732",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "[BiP] Main RL Close 0001 [2024-05-24 225232].wav",
+      "Path": "Media/897418732.wem",
+      "CachePath": "SFX/[BiP] Main RL Close 0001 [2024-05-24 225232]_10C4C929.wem"
+     },
+     {
+      "Id": "993778280",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "[BiP] Main RL Close 0001 [2024-05-24 225042].wav",
+      "Path": "Media/993778280.wem",
+      "CachePath": "SFX/[BiP] Main RL Close 0001 [2024-05-24 225042]_10C4C929.wem"
      }
     ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "266812614",
+       "Name": "Tremolo_HoverCars (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Emitters\\Highrise\\AMB_Dynamic\\AMB_HoverCars\\TrafficDynamic\\AMB_DistantTraffic_C\\AMB_NearTraffic_Spline_C\\Tremolo_HoverCars (Custom)",
+       "GUID": "{69D47864-C047-462B-A2D3-34F74ED6CF2F}",
+       "LibName": "Wwise Tremolo",
+       "LibId": "8585219"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "2357047986",
       "Name": "AMB_EnergyPillar",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_EnergyPillar",
       "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
-      "MaxAttenuation": "3500",
+      "MaxAttenuation": "4300",
       "DurationType": "Infinite",
       "MediaRefs": [
+       {
+        "Id": "52137956"
+       },
        {
         "Id": "446621592"
        },
@@ -60,12 +111,28 @@
        },
        {
         "Id": "638307787"
+       },
+       {
+        "Id": "847732927"
+       },
+       {
+        "Id": "897418732"
+       },
+       {
+        "Id": "993778280"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "266812614"
+        }
+       ]
+      }
      }
     ]
    }
   ],
-  "FileHash": "{7BDBF8BF-B931-E8DC-503E-64F03AF33AD6}"
+  "FileHash": "{4F8C8228-6357-7A95-58C3-B144F0176F76}"
  }
 }

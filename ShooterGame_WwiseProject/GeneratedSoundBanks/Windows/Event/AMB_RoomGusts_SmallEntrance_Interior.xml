@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="636673922" Type="Event" GUID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}" Language="SFX" Hash="{D8721240-862F-A12C-7590-BFB2659B7298}">
+		<SoundBank Id="636673922" Type="Event" GUID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}" Language="SFX" Hash="{94220CBD-133D-A4BB-008F-B8A2251F1115}">
 			<ObjectPath>AMB_RoomGusts_SmallEntrance_Interior</ObjectPath>
 			<ShortName>AMB_RoomGusts_SmallEntrance_Interior</ShortName>
 			<Path>Event/AMB_RoomGusts_SmallEntrance_Interior.bnk</Path>
@@ -12,14 +12,24 @@
 					<CachePath>SFX/AMB_Emitter_RoomGusts_577AE79D.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2781261543" Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Slow_Release" GUID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="636673922" Name="AMB_RoomGusts_SmallEntrance_Interior" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\RoomGusts\AMB_RoomGusts_SmallEntrance_Interior" GUID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}" MaxAttenuation="1700" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="364330538"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2781261543"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{ED3AC5AA-C06F-FACB-80F5-650AE285FE91}</FileHash>
+	<FileHash>{FD317D56-667E-0C45-C279-A2B0296DEF7A}</FileHash>
 </SoundBanksInfo>

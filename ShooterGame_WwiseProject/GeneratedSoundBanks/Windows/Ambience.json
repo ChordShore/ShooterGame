@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{8368F762-2D1E-D4CD-CA40-4B7C4CCDAB4A}",
+    "Hash": "{0AB05126-9137-7E6D-B43E-3C1290225B20}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "AMB_Rooms_Atrium.wav",
       "CachePath": "SFX/AMB_Rooms_Atrium_25FFC62C.wem"
+     },
+     {
+      "Id": "52137956",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "[BiP] Main RL Close 0001 [2024-05-24 224954].wav",
+      "CachePath": "SFX/[BiP] Main RL Close 0001 [2024-05-24 224954]_10C4C929.wem"
      },
      {
       "Id": "88913986",
@@ -38,22 +46,6 @@
       "Location": "Memory",
       "ShortName": "AMB_StreetLamp_Buzz_OS_4.wav",
       "CachePath": "SFX/AMB_StreetLamp_Buzz_OS_4_10C4C929.wem"
-     },
-     {
-      "Id": "121824528",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_Emitters_HovercarPassbys_Low_4.wav",
-      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Low_4_7550AD36.wem"
-     },
-     {
-      "Id": "123575965",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_Emitters_HovercarPassbys_Mid_4.wav",
-      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Mid_4_7550AD36.wem"
      },
      {
       "Id": "175461088",
@@ -120,22 +112,6 @@
       "CachePath": "SFX/AMB_Emitter_RoomGusts_577AE79D.wem"
      },
      {
-      "Id": "407858808",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_Emitters_HovercarPassbys_Low_1.wav",
-      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Low_1_7550AD36.wem"
-     },
-     {
-      "Id": "419807917",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_Emitters_HovercarPassbys_Mid_2.wav",
-      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Mid_2_7550AD36.wem"
-     },
-     {
       "Id": "425050702",
       "Language": "SFX",
       "Streaming": "false",
@@ -192,20 +168,20 @@
       "CachePath": "SFX/Emitters_UnrealHolograph_FadeIn_OS_5920140F.wem"
      },
      {
-      "Id": "666585169",
+      "Id": "847732927",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "AMB_Emitters_HovercarPassbys_Low_2.wav",
-      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Low_2_7550AD36.wem"
+      "ShortName": "[BiP] Main RL Close 0001 [2024-05-24 225148].wav",
+      "CachePath": "SFX/[BiP] Main RL Close 0001 [2024-05-24 225148]_10C4C929.wem"
      },
      {
-      "Id": "924565868",
+      "Id": "897418732",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "AMB_Emitters_HovercarPassbys_Mid_1.wav",
-      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Mid_1_7550AD36.wem"
+      "ShortName": "[BiP] Main RL Close 0001 [2024-05-24 225232].wav",
+      "CachePath": "SFX/[BiP] Main RL Close 0001 [2024-05-24 225232]_10C4C929.wem"
      },
      {
       "Id": "928573754",
@@ -224,6 +200,14 @@
       "CachePath": "SFX/AMB_PhoneBox_ErrorRecording_OS_4F030B8A.wem"
      },
      {
+      "Id": "993778280",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "[BiP] Main RL Close 0001 [2024-05-24 225042].wav",
+      "CachePath": "SFX/[BiP] Main RL Close 0001 [2024-05-24 225042]_10C4C929.wem"
+     },
+     {
       "Id": "1041432378",
       "Language": "SFX",
       "Streaming": "false",
@@ -237,10 +221,20 @@
       {
        "Id": "266812614",
        "Name": "Tremolo_HoverCars (Custom)",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Emitters\\Highrise\\AMB_Dynamic\\AMB_HoverCars\\NearTraffic\\AMB_NearTraffic_Spline\\AMB_NearTraffic_Spline\\Tremolo_HoverCars (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Emitters\\Highrise\\AMB_Dynamic\\AMB_HoverCars\\TrafficDynamic\\AMB_DistantTraffic_C\\AMB_NearTraffic_Spline_C\\Tremolo_HoverCars (Custom)",
        "GUID": "{69D47864-C047-462B-A2D3-34F74ED6CF2F}",
        "LibName": "Wwise Tremolo",
        "LibId": "8585219"
+      }
+     ],
+     "ShareSets": [
+      {
+       "Id": "2781261543",
+       "Name": "Brick_Wall_Minus_6dB_Peak_Slow_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Slow_Release",
+       "GUID": "{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
       }
      ]
     },
@@ -257,6 +251,35 @@
         "Id": "1041432378"
        }
       ]
+     },
+     {
+      "Id": "2263523790",
+      "Name": "AMB_DistantTraffic_C",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\HoverCars\\TrafficDynamic\\AMB_DistantTraffic_C",
+      "GUID": "{B79F71C1-F2C8-4A0A-88DC-B7648445D29B}",
+      "MaxAttenuation": "4300",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "52137956"
+       },
+       {
+        "Id": "847732927"
+       },
+       {
+        "Id": "897418732"
+       },
+       {
+        "Id": "993778280"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "266812614"
+        }
+       ]
+      }
      },
      {
       "Id": "2448096698",
@@ -298,41 +321,6 @@
       ]
      },
      {
-      "Id": "1935135641",
-      "Name": "AMB_NearTraffic_Spline",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\HoverCars\\AMB_NearTraffic_Spline",
-      "GUID": "{B79F71C1-F2C8-4A0A-88DC-B7648445D29B}",
-      "MaxAttenuation": "3500",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "121824528"
-       },
-       {
-        "Id": "123575965"
-       },
-       {
-        "Id": "407858808"
-       },
-       {
-        "Id": "419807917"
-       },
-       {
-        "Id": "666585169"
-       },
-       {
-        "Id": "924565868"
-       }
-      ],
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "266812614"
-        }
-       ]
-      }
-     },
-     {
       "Id": "1196422761",
       "Name": "AMB_PhoneBox",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_PhoneBox",
@@ -362,7 +350,14 @@
        {
         "Id": "928573754"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2781261543"
+        }
+       ]
+      }
      },
      {
       "Id": "2104059324",
@@ -375,7 +370,14 @@
        {
         "Id": "364330538"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2781261543"
+        }
+       ]
+      }
      },
      {
       "Id": "1699197345",
@@ -476,38 +478,13 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "121824528"
-       },
-       {
-        "Id": "123575965"
-       },
-       {
-        "Id": "407858808"
-       },
-       {
-        "Id": "419807917"
-       },
-       {
-        "Id": "666585169"
-       },
-       {
-        "Id": "924565868"
-       },
-       {
         "Id": "928573754"
        }
-      ],
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "266812614"
-        }
-       ]
-      }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{AAC2F727-1F8C-57F2-8B84-36C04D58D506}"
+  "FileHash": "{3B12D2BB-AD70-C7C2-973A-7F1E58AB81CD}"
  }
 }

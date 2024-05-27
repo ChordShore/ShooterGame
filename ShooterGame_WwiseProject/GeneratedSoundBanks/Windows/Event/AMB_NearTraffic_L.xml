@@ -1,65 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="123926582" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{08074218-64C8-47E7-2BB1-8500104D283A}">
+		<SoundBank Id="123926582" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{3A86A0F0-32C9-9B1A-8D62-A3740B1C65B6}">
 			<ObjectPath>AMB_NearTraffic_L</ObjectPath>
 			<ShortName>AMB_NearTraffic_L</ShortName>
 			<Path>Event/AMB_NearTraffic_L.bnk</Path>
 			<Media>
-				<File Id="121824528" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_Emitters_HovercarPassbys_Low_4.wav</ShortName>
-					<Path>Media/121824528.wem</Path>
-					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Low_4_7550AD36.wem</CachePath>
+				<File Id="277708494" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>[BiP] Top Center FB [2024-05-24 161656].wav</ShortName>
+					<Path>Media/277708494.wem</Path>
+					<CachePath>SFX/[BiP] Top Center FB [2024-05-24 161656]_10C4C929.wem</CachePath>
 				</File>
-				<File Id="123575965" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_Emitters_HovercarPassbys_Mid_4.wav</ShortName>
-					<Path>Media/123575965.wem</Path>
-					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Mid_4_7550AD36.wem</CachePath>
+				<File Id="413101053" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>[BiP] Top Center FB [2024-05-24 161700].wav</ShortName>
+					<Path>Media/413101053.wem</Path>
+					<CachePath>SFX/[BiP] Top Center FB [2024-05-24 161700]_10C4C929.wem</CachePath>
 				</File>
-				<File Id="407858808" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_Emitters_HovercarPassbys_Low_1.wav</ShortName>
-					<Path>Media/407858808.wem</Path>
-					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Low_1_7550AD36.wem</CachePath>
+				<File Id="725554182" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>[BiP] Top Center FB [2024-05-24 161709].wav</ShortName>
+					<Path>Media/725554182.wem</Path>
+					<CachePath>SFX/[BiP] Top Center FB [2024-05-24 161709]_10C4C929.wem</CachePath>
 				</File>
-				<File Id="419807917" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_Emitters_HovercarPassbys_Mid_2.wav</ShortName>
-					<Path>Media/419807917.wem</Path>
-					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Mid_2_7550AD36.wem</CachePath>
-				</File>
-				<File Id="666585169" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_Emitters_HovercarPassbys_Low_2.wav</ShortName>
-					<Path>Media/666585169.wem</Path>
-					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Low_2_7550AD36.wem</CachePath>
-				</File>
-				<File Id="924565868" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_Emitters_HovercarPassbys_Mid_1.wav</ShortName>
-					<Path>Media/924565868.wem</Path>
-					<CachePath>SFX/AMB_Emitters_HovercarPassbys_Mid_1_7550AD36.wem</CachePath>
+				<File Id="1071781516" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>[BiP] Top Center FB [2024-05-24 161705].wav</ShortName>
+					<Path>Media/1071781516.wem</Path>
+					<CachePath>SFX/[BiP] Top Center FB [2024-05-24 161705]_10C4C929.wem</CachePath>
 				</File>
 			</Media>
-			<Plugins>
-				<Custom>
-					<Plugin Id="546212805" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_Dynamic\AMB_HoverCars\NearTraffic\AMB_NearTraffic_L\AMB_HoverCars_LR_LP_L\Tremolo_HoverCars (Custom)" GUID="{9101AB43-FCDC-4503-A168-C5C550587164}" LibName="Wwise Tremolo" LibId="8585219"/>
-				</Custom>
-			</Plugins>
 			<Events>
-				<Event Id="123926582" Name="AMB_NearTraffic_L" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\NearTraffic\AMB_NearTraffic_L" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" MaxAttenuation="3500" DurationType="Infinite">
+				<Event Id="123926582" Name="AMB_NearTraffic_L" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficStatic\AMB_NearTraffic_L" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" MaxAttenuation="8000" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="121824528"/>
-						<MediaRef Id="123575965"/>
-						<MediaRef Id="407858808"/>
-						<MediaRef Id="419807917"/>
-						<MediaRef Id="666585169"/>
-						<MediaRef Id="924565868"/>
+						<MediaRef Id="277708494"/>
+						<MediaRef Id="413101053"/>
+						<MediaRef Id="725554182"/>
+						<MediaRef Id="1071781516"/>
 					</MediaRefs>
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="546212805"/>
-						</Custom>
-					</PluginRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FBFDC553-954D-727B-2F55-E6503396A2CB}</FileHash>
+	<FileHash>{3B00C037-EF36-F158-18D9-075DA5515EBE}</FileHash>
 </SoundBanksInfo>

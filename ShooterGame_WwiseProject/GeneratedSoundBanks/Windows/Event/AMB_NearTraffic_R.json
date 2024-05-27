@@ -10,117 +10,74 @@
     "Type": "Event",
     "GUID": "{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}",
     "Language": "SFX",
-    "Hash": "{4C790BE0-8603-47B4-AE8D-0E00F9601252}",
+    "Hash": "{51422283-5C14-11B3-B315-A19673B54AF4}",
     "ObjectPath": "AMB_NearTraffic_R",
     "ShortName": "AMB_NearTraffic_R",
     "Path": "Event/AMB_NearTraffic_R.bnk",
     "Media": [
      {
-      "Id": "121824528",
+      "Id": "277708494",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "AMB_Emitters_HovercarPassbys_Low_4.wav",
-      "Path": "Media/121824528.wem",
-      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Low_4_7550AD36.wem"
+      "ShortName": "[BiP] Top Center FB [2024-05-24 161656].wav",
+      "Path": "Media/277708494.wem",
+      "CachePath": "SFX/[BiP] Top Center FB [2024-05-24 161656]_10C4C929.wem"
      },
      {
-      "Id": "123575965",
+      "Id": "413101053",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "AMB_Emitters_HovercarPassbys_Mid_4.wav",
-      "Path": "Media/123575965.wem",
-      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Mid_4_7550AD36.wem"
+      "ShortName": "[BiP] Top Center FB [2024-05-24 161700].wav",
+      "Path": "Media/413101053.wem",
+      "CachePath": "SFX/[BiP] Top Center FB [2024-05-24 161700]_10C4C929.wem"
      },
      {
-      "Id": "407858808",
+      "Id": "725554182",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "AMB_Emitters_HovercarPassbys_Low_1.wav",
-      "Path": "Media/407858808.wem",
-      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Low_1_7550AD36.wem"
+      "ShortName": "[BiP] Top Center FB [2024-05-24 161709].wav",
+      "Path": "Media/725554182.wem",
+      "CachePath": "SFX/[BiP] Top Center FB [2024-05-24 161709]_10C4C929.wem"
      },
      {
-      "Id": "419807917",
+      "Id": "1071781516",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "AMB_Emitters_HovercarPassbys_Mid_2.wav",
-      "Path": "Media/419807917.wem",
-      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Mid_2_7550AD36.wem"
-     },
-     {
-      "Id": "666585169",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_Emitters_HovercarPassbys_Low_2.wav",
-      "Path": "Media/666585169.wem",
-      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Low_2_7550AD36.wem"
-     },
-     {
-      "Id": "924565868",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_Emitters_HovercarPassbys_Mid_1.wav",
-      "Path": "Media/924565868.wem",
-      "CachePath": "SFX/AMB_Emitters_HovercarPassbys_Mid_1_7550AD36.wem"
+      "ShortName": "[BiP] Top Center FB [2024-05-24 161705].wav",
+      "Path": "Media/1071781516.wem",
+      "CachePath": "SFX/[BiP] Top Center FB [2024-05-24 161705]_10C4C929.wem"
      }
     ],
-    "Plugins": {
-     "Custom": [
-      {
-       "Id": "863038577",
-       "Name": "Tremolo_HoverCars (Custom)",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Emitters\\Highrise\\AMB_Dynamic\\AMB_HoverCars\\NearTraffic\\AMB_NearTraffic_R\\AMB_HoverCars_RL_LP_R\\Tremolo_HoverCars (Custom)",
-       "GUID": "{DDA4D46D-ECE2-4DF9-9B72-98B398437CAE}",
-       "LibName": "Wwise Tremolo",
-       "LibId": "8585219"
-      }
-     ]
-    },
     "Events": [
      {
       "Id": "123926568",
       "Name": "AMB_NearTraffic_R",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\HoverCars\\NearTraffic\\AMB_NearTraffic_R",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\HoverCars\\TrafficStatic\\AMB_NearTraffic_R",
       "GUID": "{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}",
-      "MaxAttenuation": "8000",
+      "MaxAttenuation": "8500",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "121824528"
+        "Id": "277708494"
        },
        {
-        "Id": "123575965"
+        "Id": "413101053"
        },
        {
-        "Id": "407858808"
+        "Id": "725554182"
        },
        {
-        "Id": "419807917"
-       },
-       {
-        "Id": "666585169"
-       },
-       {
-        "Id": "924565868"
+        "Id": "1071781516"
        }
-      ],
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "863038577"
-        }
-       ]
-      }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{8C20204C-6BC5-8E3B-C9AD-9AC6CD664B6C}"
+  "FileHash": "{94F8CC42-225E-E810-AA9F-446990896768}"
  }
 }
