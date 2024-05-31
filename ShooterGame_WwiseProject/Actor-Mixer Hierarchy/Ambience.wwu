@@ -305,7 +305,7 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-7</Value>
+																<Value>-5</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -326,11 +326,10 @@
 																<Property Name="CrossfadeDuration" Type="Real64" Value="2868.421"/>
 																<Property Name="FadeInDuration" Type="Real64" Value="1.32552010541868"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.239602169981916"/>
-																<Property Name="LoopBegin" Type="Real64" Value="2.00271247739602"/>
-																<Property Name="LoopEnd" Type="Real64" Value="7.26039783001808"/>
+																<Property Name="LoopBegin" Type="Real64" Value="5.35983012445484"/>
+																<Property Name="LoopEnd" Type="Real64" Value="28.2694566535475"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="0.0678119349005425"/>
-																<Property Name="TrimEnd" Type="Real64" Value="9.9502712477396"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Emitters_UnrealHolograph_Main_LP.wav</AudioFile>
@@ -347,22 +346,7 @@
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-														<Property Name="Lowpass" Type="int16">
-															<ValueList>
-																<Value>15</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Pitch" Type="int32">
-															<ValueList>
-																<Value>400</Value>
-															</ValueList>
-														</Property>
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-17</Value>
-															</ValueList>
-														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
@@ -378,10 +362,10 @@
 													<ChildrenList>
 														<AudioFileSource Name="Emitters_UnrealHolograph_FadeIn_OS" ID="{B107042B-643D-40A1-BC7C-8C5E8E60812B}">
 															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.454163310081008"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0638103689045377"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="4.60087179342934"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="1.07946062106211"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.158117647058824"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Emitters_UnrealHolograph_FadeIn_OS.wav</AudioFile>
@@ -398,22 +382,7 @@
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-														<Property Name="Lowpass" Type="int16">
-															<ValueList>
-																<Value>15</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Pitch" Type="int32">
-															<ValueList>
-																<Value>400</Value>
-															</ValueList>
-														</Property>
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-15</Value>
-															</ValueList>
-														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
@@ -429,8 +398,8 @@
 													<ChildrenList>
 														<AudioFileSource Name="Emitters_UnrealHolograph_FadeOut_OS" ID="{D891E198-779C-4D9C-9379-96F6B34F12DF}">
 															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.0921467146714672"/>
-																<Property Name="FadeOutDuration" Type="Real64" Value="4.21039603960397"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0614114205538202"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.42466074548632"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 															</PropertyList>
 															<Language>SFX</Language>
@@ -1552,6 +1521,11 @@
 											<PropertyList>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
