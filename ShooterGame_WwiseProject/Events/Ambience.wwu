@@ -545,6 +545,16 @@
 																</Reference>
 															</ReferenceList>
 														</Action>
+														<Action Name="" ID="{B0D1B1AC-17FD-4990-B1E5-1C1FE43771C0}" ShortID="525092379">
+															<PropertyList>
+																<Property Name="Delay" Type="Real64" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_UnrealHolograph_Swirl_OS" ID="{C97D2120-C45C-41F7-BCE2-F68F151F3194}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
 														<Action Name="" ID="{6CF90DFD-9930-4565-A0F7-256AD833E3FB}" ShortID="501089948">
 															<PropertyList>
 																<Property Name="ActionType" Type="int16" Value="2"/>
@@ -573,11 +583,21 @@
 													<ChildrenList>
 														<Action Name="" ID="{786C4880-6E5E-4015-9B78-ADBA76F2AED8}" ShortID="120890481">
 															<PropertyList>
-																<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+																<Property Name="FadeTime" Type="Real64" Value="1"/>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Target">
 																	<ObjectRef Name="AMB_UnrealHolograph_FadeOut_OS" ID="{B29F0006-9607-4E80-BD8C-9D735304C22D}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+														<Action Name="" ID="{B6EAB722-14A8-439D-85E3-8289390A315E}" ShortID="800074601">
+															<PropertyList>
+																<Property Name="Delay" Type="Real64" Value="0.5"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_UnrealHolograph_Swirl_OS" ID="{C97D2120-C45C-41F7-BCE2-F68F151F3194}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 																</Reference>
 															</ReferenceList>
 														</Action>

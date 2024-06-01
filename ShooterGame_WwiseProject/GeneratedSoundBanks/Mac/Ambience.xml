@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{00EA8A1A-3821-05E9-9E28-809FBC2DB783}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{783564E6-1A5E-F78B-FBDE-EECB5BBB62DC}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -56,7 +56,7 @@
 				</File>
 				<File Id="425050702" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Emitters_UnrealHolograph_FadeOut_OS.wav</ShortName>
-					<CachePath>SFX/Emitters_UnrealHolograph_FadeOut_OS_3EF221A5.wem</CachePath>
+					<CachePath>SFX/Emitters_UnrealHolograph_FadeOut_OS_667C34B8.wem</CachePath>
 				</File>
 				<File Id="429780900" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_StreetLamp_Buzz_OS_6.wav</ShortName>
@@ -64,7 +64,7 @@
 				</File>
 				<File Id="456057735" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Emitters_UnrealHolograph_Main_LP.wav</ShortName>
-					<CachePath>SFX/Emitters_UnrealHolograph_Main_LP_3FB23CF3.wem</CachePath>
+					<CachePath>SFX/Emitters_UnrealHolograph_Main_LP_1EF12818.wem</CachePath>
 				</File>
 				<File Id="515725994" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_StreetLamp_Buzz_OS_7.wav</ShortName>
@@ -80,11 +80,15 @@
 				</File>
 				<File Id="619272686" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Emitters_UnrealHolograph_FadeIn_OS.wav</ShortName>
-					<CachePath>SFX/Emitters_UnrealHolograph_FadeIn_OS_5BE612B5.wem</CachePath>
+					<CachePath>SFX/Emitters_UnrealHolograph_FadeIn_OS_FFF56A27.wem</CachePath>
 				</File>
 				<File Id="847732927" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>[BiP] Main RL Close 0001 [2024-05-24 225148].wav</ShortName>
 					<CachePath>SFX/[BiP] Main RL Close 0001 [2024-05-24 225148]_10C4C929.wem</CachePath>
+				</File>
+				<File Id="864735500" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Emitters_UnrealHolograph_Swirl_OS.wav</ShortName>
+					<CachePath>SFX/Emitters_UnrealHolograph_Swirl_OS_10C4C929.wem</CachePath>
 				</File>
 				<File Id="897418732" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>[BiP] Main RL Close 0001 [2024-05-24 225232].wav</ShortName>
@@ -188,19 +192,21 @@
 						<MediaRef Id="515725994"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="9000" DurationType="Infinite">
+				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="10000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="456057735"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeIn" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="9000" DurationType="OneShot" DurationMin="10.341883" DurationMax="10.341883">
+				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeIn" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="10000" DurationType="OneShot" DurationMin="11.875" DurationMax="11.875">
 					<MediaRefs>
 						<MediaRef Id="619272686"/>
+						<MediaRef Id="864735500"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="9000" DurationType="OneShot" DurationMin="5.9375" DurationMax="5.9375">
+				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="10000" DurationType="OneShot" DurationMin="11.375" DurationMax="11.375">
 					<MediaRefs>
 						<MediaRef Id="425050702"/>
+						<MediaRef Id="864735500"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2759038044" Name="AMB_UnrealSign" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealSign" GUID="{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}" MaxAttenuation="1800" DurationType="Infinite">
@@ -216,5 +222,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2F4A8D61-1208-0674-5083-8A0CCAC3F388}</FileHash>
+	<FileHash>{CA2D5C6A-E508-068D-3AF0-2C2E619DCABE}</FileHash>
 </SoundBanksInfo>
