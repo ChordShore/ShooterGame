@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{2D770792-C854-2020-D9F5-43AF5AB01A28}">
+			<ObjectPath>AMB_EnergyPillar_C</ObjectPath>
+			<ShortName>AMB_EnergyPillar_C</ShortName>
+			<Path>Event/AMB_EnergyPillar_C.bnk</Path>
+			<Media>
+				<File Id="52137956" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>[BiP] Main RL Close 0001 [2024-05-24 224954].wav</ShortName>
+					<Path>Media/52137956.wem</Path>
+					<CachePath>SFX/[BiP] Main RL Close 0001 [2024-05-24 224954]_10C4C929.wem</CachePath>
+				</File>
+				<File Id="446621592" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Emitters_EnergyPillar_Waterfall.wav</ShortName>
+					<Path>Media/446621592.wem</Path>
+					<CachePath>SFX/Emitters_EnergyPillar_Waterfall_94990CF8.wem</CachePath>
+				</File>
+				<File Id="551839656" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Emitters_EnergyPillar_Arcs.wav</ShortName>
+					<Path>Media/551839656.wem</Path>
+					<CachePath>SFX/Emitters_EnergyPillar_Arcs_B261B7F4.wem</CachePath>
+				</File>
+				<File Id="638307787" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Emitters_EnergyPillar_Beam.wav</ShortName>
+					<Path>Media/638307787.wem</Path>
+					<CachePath>SFX/Emitters_EnergyPillar_Beam_74E134E9.wem</CachePath>
+				</File>
+				<File Id="847732927" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>[BiP] Main RL Close 0001 [2024-05-24 225148].wav</ShortName>
+					<Path>Media/847732927.wem</Path>
+					<CachePath>SFX/[BiP] Main RL Close 0001 [2024-05-24 225148]_10C4C929.wem</CachePath>
+				</File>
+				<File Id="897418732" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>[BiP] Main RL Close 0001 [2024-05-24 225232].wav</ShortName>
+					<Path>Media/897418732.wem</Path>
+					<CachePath>SFX/[BiP] Main RL Close 0001 [2024-05-24 225232]_10C4C929.wem</CachePath>
+				</File>
+				<File Id="993778280" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>[BiP] Main RL Close 0001 [2024-05-24 225042].wav</ShortName>
+					<Path>Media/993778280.wem</Path>
+					<CachePath>SFX/[BiP] Main RL Close 0001 [2024-05-24 225042]_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="266812614" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_Dynamic\AMB_HoverCars\TrafficDynamic\AMB_DistantTraffic_C\AMB_NearTraffic_Spline_C\Tremolo_HoverCars (Custom)" GUID="{69D47864-C047-462B-A2D3-34F74ED6CF2F}" LibName="Wwise Tremolo" LibId="8585219"/>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="2333830952" Name="AMB_EnergyPillar_C" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_EnergyPillar_C" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" MaxAttenuation="4300" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="52137956"/>
+						<MediaRef Id="446621592"/>
+						<MediaRef Id="551839656"/>
+						<MediaRef Id="638307787"/>
+						<MediaRef Id="847732927"/>
+						<MediaRef Id="897418732"/>
+						<MediaRef Id="993778280"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="266812614"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{473FF34C-C7B1-A2E4-086E-581708E49AA5}</FileHash>
+</SoundBanksInfo>

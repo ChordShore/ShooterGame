@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="2333830969" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{5694C80E-6135-7499-2786-594338E4ABBB}">
+			<ObjectPath>AMB_EnergyPillar_R</ObjectPath>
+			<ShortName>AMB_EnergyPillar_R</ShortName>
+			<Path>Event/AMB_EnergyPillar_R.bnk</Path>
+			<Media>
+				<File Id="551839656" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Emitters_EnergyPillar_Arcs.wav</ShortName>
+					<Path>Media/551839656.wem</Path>
+					<CachePath>SFX/Emitters_EnergyPillar_Arcs_B261B7F4.wem</CachePath>
+				</File>
+				<File Id="638307787" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Emitters_EnergyPillar_Beam.wav</ShortName>
+					<Path>Media/638307787.wem</Path>
+					<CachePath>SFX/Emitters_EnergyPillar_Beam_74E134E9.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2333830969" Name="AMB_EnergyPillar_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_EnergyPillar_R" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" MaxAttenuation="1500" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="551839656"/>
+						<MediaRef Id="638307787"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{68BE4656-8C0F-2856-A76F-0967690AF8AB}</FileHash>
+</SoundBanksInfo>

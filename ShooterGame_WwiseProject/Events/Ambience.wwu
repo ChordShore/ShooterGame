@@ -373,7 +373,7 @@
 												</Event>
 											</ChildrenList>
 										</Folder>
-										<Event Name="AMB_EnergyPillar" ID="{59B52E0A-A590-4C41-B895-B6222DEA8792}">
+										<Event Name="AMB_EnergyPillar_C" ID="{59B52E0A-A590-4C41-B895-B6222DEA8792}">
 											<ChildrenList>
 												<Action Name="" ID="{2D046843-4D86-4314-AED1-48C8D4A91CDD}" ShortID="40391474">
 													<ReferenceList>
@@ -400,6 +400,24 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="AMB_NearTraffic_Spline_C" ID="{2983D3DB-10CD-43AA-BD62-FDD223E657E2}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="AMB_EnergyPillar_R" ID="{1139BF59-E796-44F8-A41A-58F596E277FE}">
+											<ChildrenList>
+												<Action Name="" ID="{57A6CF41-1D01-49AF-A203-83F165A075EA}" ShortID="334125578">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_EnergyPillar_Arcs" ID="{8089DD7F-9C5D-414C-805A-F2F6A2B7A695}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{4D90E2FC-9596-4DF4-A595-05D050D65471}" ShortID="354341073">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_EnergyPillar_Beam" ID="{FFA7883A-B02C-4512-8DF6-E767D31E2EEB}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>

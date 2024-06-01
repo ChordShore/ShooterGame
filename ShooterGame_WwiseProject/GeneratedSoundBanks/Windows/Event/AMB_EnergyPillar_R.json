@@ -1,0 +1,59 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "2333830969",
+    "Type": "Event",
+    "GUID": "{1139BF59-E796-44F8-A41A-58F596E277FE}",
+    "Language": "SFX",
+    "Hash": "{5694C80E-6135-7499-2786-594338E4ABBB}",
+    "ObjectPath": "AMB_EnergyPillar_R",
+    "ShortName": "AMB_EnergyPillar_R",
+    "Path": "Event/AMB_EnergyPillar_R.bnk",
+    "Media": [
+     {
+      "Id": "551839656",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Emitters_EnergyPillar_Arcs.wav",
+      "Path": "Media/551839656.wem",
+      "CachePath": "SFX/Emitters_EnergyPillar_Arcs_B261B7F4.wem"
+     },
+     {
+      "Id": "638307787",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Emitters_EnergyPillar_Beam.wav",
+      "Path": "Media/638307787.wem",
+      "CachePath": "SFX/Emitters_EnergyPillar_Beam_74E134E9.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2333830969",
+      "Name": "AMB_EnergyPillar_R",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_EnergyPillar_R",
+      "GUID": "{1139BF59-E796-44F8-A41A-58F596E277FE}",
+      "MaxAttenuation": "1500",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "551839656"
+       },
+       {
+        "Id": "638307787"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E41531F7-404F-C832-E8E9-425AD6623AAC}"
+ }
+}

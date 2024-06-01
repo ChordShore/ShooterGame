@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{783564E6-1A5E-F78B-FBDE-EECB5BBB62DC}",
+    "Hash": "{142A6202-817E-9154-8805-73863819C323}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -173,7 +173,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Emitters_UnrealHolograph_FadeIn_OS.wav",
-      "CachePath": "SFX/Emitters_UnrealHolograph_FadeIn_OS_FFF56A27.wem"
+      "CachePath": "SFX/Emitters_UnrealHolograph_FadeIn_OS_CD200B86.wem"
      },
      {
       "Id": "847732927",
@@ -2580,14 +2580,14 @@
     ]
    },
    {
-    "Id": "2357047986",
+    "Id": "2333830952",
     "Type": "Event",
     "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
     "Language": "SFX",
-    "Hash": "{93AAC122-6D7E-F4A9-C846-BDC81FA1600D}",
-    "ObjectPath": "AMB_EnergyPillar",
-    "ShortName": "AMB_EnergyPillar",
-    "Path": "Event/AMB_EnergyPillar.bnk",
+    "Hash": "{2D770792-C854-2020-D9F5-43AF5AB01A28}",
+    "ObjectPath": "AMB_EnergyPillar_C",
+    "ShortName": "AMB_EnergyPillar_C",
+    "Path": "Event/AMB_EnergyPillar_C.bnk",
     "Media": [
      {
       "Id": "52137956",
@@ -2667,9 +2667,9 @@
     },
     "Events": [
      {
-      "Id": "2357047986",
-      "Name": "AMB_EnergyPillar",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_EnergyPillar",
+      "Id": "2333830952",
+      "Name": "AMB_EnergyPillar_C",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_EnergyPillar_C",
       "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
       "MaxAttenuation": "4300",
       "DurationType": "Infinite",
@@ -2703,6 +2703,54 @@
         }
        ]
       }
+     }
+    ]
+   },
+   {
+    "Id": "2333830969",
+    "Type": "Event",
+    "GUID": "{1139BF59-E796-44F8-A41A-58F596E277FE}",
+    "Language": "SFX",
+    "Hash": "{5694C80E-6135-7499-2786-594338E4ABBB}",
+    "ObjectPath": "AMB_EnergyPillar_R",
+    "ShortName": "AMB_EnergyPillar_R",
+    "Path": "Event/AMB_EnergyPillar_R.bnk",
+    "Media": [
+     {
+      "Id": "551839656",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Emitters_EnergyPillar_Arcs.wav",
+      "Path": "Media/551839656.wem",
+      "CachePath": "SFX/Emitters_EnergyPillar_Arcs_B261B7F4.wem"
+     },
+     {
+      "Id": "638307787",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Emitters_EnergyPillar_Beam.wav",
+      "Path": "Media/638307787.wem",
+      "CachePath": "SFX/Emitters_EnergyPillar_Beam_74E134E9.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2333830969",
+      "Name": "AMB_EnergyPillar_R",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_EnergyPillar_R",
+      "GUID": "{1139BF59-E796-44F8-A41A-58F596E277FE}",
+      "MaxAttenuation": "1500",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "551839656"
+       },
+       {
+        "Id": "638307787"
+       }
+      ]
      }
     ]
    },
@@ -3002,6 +3050,6 @@
     ]
    }
   ],
-  "FileHash": "{C5D0CAE4-F537-5E8A-B306-EB4FB53C0682}"
+  "FileHash": "{DAB86F05-01A9-8FBB-2472-F8DA36D0B496}"
  }
 }
