@@ -280,6 +280,11 @@
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -305,7 +310,7 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-6</Value>
+																<Value>-5</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -432,7 +437,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-15</Value>
+																<Value>-19</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -824,10 +829,15 @@
 												<ActorMixer Name="AMB_EnergyPillar_R" ID="{95F8297B-9089-4EF2-B457-08196102E7F5}" ShortID="758592762">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-5</Value>
+																<Value>-3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -966,11 +976,6 @@
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-														<Property Name="MakeUpGain" Type="Real64">
-															<ValueList>
-																<Value>-3</Value>
-															</ValueList>
-														</Property>
 														<Property Name="MaxSoundPerInstance" Type="int16">
 															<ValueList>
 																<Value>1</Value>
@@ -979,6 +984,11 @@
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
@@ -1007,7 +1017,7 @@
 																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-7</Value>
+																		<Value>-5</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -1050,12 +1060,12 @@
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																<Property Name="Lowpass" Type="int16">
 																	<ValueList>
-																		<Value>24</Value>
+																		<Value>13</Value>
 																	</ValueList>
 																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-8</Value>
+																		<Value>-9</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -1717,11 +1727,6 @@
 											<PropertyList>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1746,12 +1751,17 @@
 															<PropertyList>
 																<Property Name="3DPosition" Type="int16" Value="1"/>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
-																<Property Name="MakeUpGain" Type="Real64">
+																<Property Name="Highpass" Type="int16">
 																	<ValueList>
-																		<Value>-5</Value>
+																		<Value>13</Value>
 																	</ValueList>
 																</Property>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-1</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Attenuation">
@@ -2472,7 +2482,6 @@
 														</ActorMixer>
 														<ActorMixer Name="AMB_NearTraffic_R" ID="{40EC6069-75E9-45C6-B4FF-8467526B64FC}" ShortID="676216962">
 															<PropertyList>
-																<Property Name="3DPosition" Type="int16" Value="1"/>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 																<Property Name="MakeUpGain" Type="Real64">
@@ -2524,7 +2533,7 @@
 																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 																		<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="6">
 																			<ModifierList>
 																				<ModifierInfo>
 																					<Modifier Name="" ID="{696EBCA5-07E7-407D-A420-7F6B3421DB4A}">
@@ -3206,11 +3215,6 @@
 																<Property Name="3DPosition" Type="int16" Value="1"/>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>-4</Value>
-																	</ValueList>
-																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Attenuation">
@@ -3904,14 +3908,14 @@
 																		<Path2D Name="AMB_NearTraffic_LR_Path" ID="{DACDF871-637B-4F2D-A47A-BFA8F8D2006F}">
 																			<PointList>
 																				<Point>
-																					<XPos>-50</XPos>
-																					<YPos>10</YPos>
+																					<XPos>14.91228</XPos>
+																					<YPos>4.04553</YPos>
 																					<Flags>12</Flags>
 																					<Time>0</Time>
 																				</Point>
 																				<Point>
-																					<XPos>42.80702</XPos>
-																					<YPos>0.25919</YPos>
+																					<XPos>-69.82455</XPos>
+																					<YPos>3.76182</YPos>
 																					<Flags>0</Flags>
 																					<Time>5000</Time>
 																				</Point>
@@ -3936,9 +3940,19 @@
 														<ActorMixer Name="AMB_DistantTraffic_R" ID="{06C1185A-08EB-4C70-A5C0-6E9BE234D91B}" ShortID="483660498">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>27</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="30"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-1</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Attenuation">
@@ -3986,7 +4000,7 @@
 																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 																		<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5">
 																			<ModifierList>
 																				<ModifierInfo>
 																					<Modifier Name="" ID="{C122A3C0-7911-4003-B3FD-8481AF010B84}">
@@ -4003,7 +4017,7 @@
 																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>-3</Value>
+																				<Value>-9</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -4172,7 +4186,11 @@
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
-																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="30"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-1</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Attenuation">
@@ -4196,7 +4214,7 @@
 																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 																		<Property Name="Highpass" Type="int16">
 																			<ValueList>
-																				<Value>15</Value>
+																				<Value>25</Value>
 																			</ValueList>
 																		</Property>
 																		<Property Name="InitialDelay" Type="Real64">
@@ -4209,9 +4227,14 @@
 																				</ModifierInfo>
 																			</ModifierList>
 																		</Property>
+																		<Property Name="Lowpass" Type="int16">
+																			<ValueList>
+																				<Value>31</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="MakeUpGain" Type="Real64">
 																			<ValueList>
-																				<Value>-7</Value>
+																				<Value>-2</Value>
 																			</ValueList>
 																		</Property>
 																		<Property Name="OverrideEffect" Type="bool" Value="True"/>
@@ -4230,7 +4253,7 @@
 																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 																		<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.5">
 																			<ModifierList>
 																				<ModifierInfo>
 																					<Modifier Name="" ID="{A6C6FFE4-CD91-463F-9FC2-B14F852C526C}">
@@ -4435,10 +4458,20 @@
 														</ActorMixer>
 														<ActorMixer Name="AMB_DistantTraffic_L" ID="{37458915-0974-4529-AB64-4C2346C91133}" ShortID="713891286">
 															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+																<Property Name="Lowpass" Type="int16">
+																	<ValueList>
+																		<Value>30</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
-																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="30"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-4</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Attenuation">
@@ -4470,11 +4503,6 @@
 																				</ModifierInfo>
 																			</ModifierList>
 																		</Property>
-																		<Property Name="MakeUpGain" Type="Real64">
-																			<ValueList>
-																				<Value>-4</Value>
-																			</ValueList>
-																		</Property>
 																		<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																		<Property Name="Pitch" Type="int32">
 																			<ModifierList>
@@ -4491,7 +4519,7 @@
 																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 																		<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
 																			<ModifierList>
 																				<ModifierInfo>
 																					<Modifier Name="" ID="{1A04F591-6073-465D-8D2A-8C720A85FCA9}">
@@ -4667,6 +4695,28 @@
 																	</ChildrenList>
 																</RandomSequenceContainer>
 															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{97AB126D-5B64-4E98-AB2E-BB9716F869AD}">
+																	<ChildrenList>
+																		<Path2D Name="AMB_DistantTraffic_L_Path" ID="{CB9F599E-01EA-46D8-BF76-2D93F3207B6F}">
+																			<PointList>
+																				<Point>
+																					<XPos>10.87719</XPos>
+																					<YPos>3.41506</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>-5.96491</XPos>
+																					<YPos>3.32749</YPos>
+																					<Flags>0</Flags>
+																					<Time>5000</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																	</ChildrenList>
+																</Position>
+															</PositioningInfo>
 														</ActorMixer>
 													</ChildrenList>
 												</ActorMixer>
@@ -5528,7 +5578,7 @@
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-18</Value>
+																<Value>-14</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
