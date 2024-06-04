@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{142A6202-817E-9154-8805-73863819C323}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{4893B8B4-B74C-58D0-9BE1-9DD4D4E02CFE}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -9,10 +9,6 @@
 				<File Id="16287048" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_Rooms_Atrium.wav</ShortName>
 					<CachePath>SFX/AMB_Rooms_Atrium_25FFC62C.wem</CachePath>
-				</File>
-				<File Id="52137956" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>[BiP] Main RL Close 0001 [2024-05-24 224954].wav</ShortName>
-					<CachePath>SFX/[BiP] Main RL Close 0001 [2024-05-24 224954]_10C4C929.wem</CachePath>
 				</File>
 				<File Id="88913986" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_StreetLamp_Buzz_OS_2.wav</ShortName>
@@ -34,6 +30,10 @@
 					<ShortName>Emitters_UnrealSign.wav</ShortName>
 					<CachePath>SFX/Emitters_UnrealSign_1B9F70D9.wem</CachePath>
 				</File>
+				<File Id="225437181" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_HoverCars_DistantTraffic_B2_04.wav</ShortName>
+					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_04_10C4C929.wem</CachePath>
+				</File>
 				<File Id="229272092" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_Rooms_Spawn.wav</ShortName>
 					<CachePath>SFX/AMB_Rooms_Spawn_25FFC62C.wem</CachePath>
@@ -41,6 +41,10 @@
 				<File Id="247336745" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_StreetLamp_Buzz_OS_1.wav</ShortName>
 					<CachePath>SFX/AMB_StreetLamp_Buzz_OS_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="268123456" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_HoverCars_DistantTraffic_B1_01.wav</ShortName>
+					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B1_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="288927093" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_Rooms_Room.wav</ShortName>
@@ -53,6 +57,10 @@
 				<File Id="364330538" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_Emitter_RoomGusts.wav</ShortName>
 					<CachePath>SFX/AMB_Emitter_RoomGusts_577AE79D.wem</CachePath>
+				</File>
+				<File Id="417150525" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_HoverCars_DistantTraffic_B2_02.wav</ShortName>
+					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="425050702" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Emitters_UnrealHolograph_FadeOut_OS.wav</ShortName>
@@ -78,21 +86,25 @@
 					<ShortName>AMB_PhoneBox_ErrorRecording_OS.wav</ShortName>
 					<CachePath>SFX/AMB_PhoneBox_ErrorRecording_OS_C35F038A.wem</CachePath>
 				</File>
+				<File Id="559398965" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_HoverCars_DistantTraffic_B2_03.wav</ShortName>
+					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_03_10C4C929.wem</CachePath>
+				</File>
 				<File Id="619272686" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Emitters_UnrealHolograph_FadeIn_OS.wav</ShortName>
 					<CachePath>SFX/Emitters_UnrealHolograph_FadeIn_OS_CD200B86.wem</CachePath>
 				</File>
-				<File Id="847732927" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>[BiP] Main RL Close 0001 [2024-05-24 225148].wav</ShortName>
-					<CachePath>SFX/[BiP] Main RL Close 0001 [2024-05-24 225148]_10C4C929.wem</CachePath>
+				<File Id="642141231" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_HoverCars_DistantTraffic_B1_04.wav</ShortName>
+					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B1_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="802290447" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_HoverCars_DistantTraffic_B1_02.wav</ShortName>
+					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B1_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="864735500" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Emitters_UnrealHolograph_Swirl_OS.wav</ShortName>
 					<CachePath>SFX/Emitters_UnrealHolograph_Swirl_OS_10C4C929.wem</CachePath>
-				</File>
-				<File Id="897418732" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>[BiP] Main RL Close 0001 [2024-05-24 225232].wav</ShortName>
-					<CachePath>SFX/[BiP] Main RL Close 0001 [2024-05-24 225232]_10C4C929.wem</CachePath>
 				</File>
 				<File Id="928573754" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_Emitter_WindGusts.wav</ShortName>
@@ -102,9 +114,13 @@
 					<ShortName>AMB_PhoneBox_ErrorRecording_OS.wav</ShortName>
 					<CachePath>SFX/AMB_PhoneBox_ErrorRecording_OS_4F030B8A.wem</CachePath>
 				</File>
-				<File Id="993778280" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>[BiP] Main RL Close 0001 [2024-05-24 225042].wav</ShortName>
-					<CachePath>SFX/[BiP] Main RL Close 0001 [2024-05-24 225042]_10C4C929.wem</CachePath>
+				<File Id="1013661680" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_HoverCars_DistantTraffic_B1_03.wav</ShortName>
+					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B1_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1035687485" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_HoverCars_DistantTraffic_B2_01.wav</ShortName>
+					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1041432378" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_BarrierFence_LP.wav</ShortName>
@@ -125,12 +141,16 @@
 						<MediaRef Id="1041432378"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2263523790" Name="AMB_DistantTraffic_C" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficDynamic\AMB_DistantTraffic_C" GUID="{B79F71C1-F2C8-4A0A-88DC-B7648445D29B}" MaxAttenuation="4300" DurationType="Infinite">
+				<Event Id="2263523790" Name="AMB_DistantTraffic_C" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficDynamic\AMB_DistantTraffic_C" GUID="{B79F71C1-F2C8-4A0A-88DC-B7648445D29B}" MaxAttenuation="4500" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="52137956"/>
-						<MediaRef Id="847732927"/>
-						<MediaRef Id="897418732"/>
-						<MediaRef Id="993778280"/>
+						<MediaRef Id="225437181"/>
+						<MediaRef Id="268123456"/>
+						<MediaRef Id="417150525"/>
+						<MediaRef Id="559398965"/>
+						<MediaRef Id="642141231"/>
+						<MediaRef Id="802290447"/>
+						<MediaRef Id="1013661680"/>
+						<MediaRef Id="1035687485"/>
 					</MediaRefs>
 					<PluginRefs>
 						<Custom>
@@ -192,18 +212,18 @@
 						<MediaRef Id="515725994"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="10000" DurationType="Infinite">
+				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="9500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="456057735"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeIn" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="10000" DurationType="OneShot" DurationMin="11.875" DurationMax="11.875">
+				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeIn" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="9500" DurationType="OneShot" DurationMin="11.875" DurationMax="11.875">
 					<MediaRefs>
 						<MediaRef Id="619272686"/>
 						<MediaRef Id="864735500"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="10000" DurationType="OneShot" DurationMin="11.375" DurationMax="11.375">
+				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="9500" DurationType="OneShot" DurationMin="11.375" DurationMax="11.375">
 					<MediaRefs>
 						<MediaRef Id="425050702"/>
 						<MediaRef Id="864735500"/>
@@ -222,5 +242,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3DE72FE5-ACEB-4A34-7729-FA740BB885BD}</FileHash>
+	<FileHash>{290F8B98-30CE-E150-773E-282519830238}</FileHash>
 </SoundBanksInfo>

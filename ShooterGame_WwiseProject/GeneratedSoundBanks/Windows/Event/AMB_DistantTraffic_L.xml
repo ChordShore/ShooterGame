@@ -1,53 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2263523777" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{B2FEDAE3-305F-F7E2-AD63-4405E625EDCF}">
+		<SoundBank Id="2263523777" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{AB900349-FB26-F4F6-0521-69FE7483A4B2}">
 			<ObjectPath>AMB_DistantTraffic_L</ObjectPath>
 			<ShortName>AMB_DistantTraffic_L</ShortName>
 			<Path>Event/AMB_DistantTraffic_L.bnk</Path>
 			<Media>
-				<File Id="52137956" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>[BiP] Main RL Close 0001 [2024-05-24 224954].wav</ShortName>
-					<Path>Media/52137956.wem</Path>
-					<CachePath>SFX/[BiP] Main RL Close 0001 [2024-05-24 224954]_10C4C929.wem</CachePath>
+				<File Id="225437181" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_DistantTraffic_B2_04.wav</ShortName>
+					<Path>Media/225437181.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_04_10C4C929.wem</CachePath>
 				</File>
-				<File Id="847732927" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>[BiP] Main RL Close 0001 [2024-05-24 225148].wav</ShortName>
-					<Path>Media/847732927.wem</Path>
-					<CachePath>SFX/[BiP] Main RL Close 0001 [2024-05-24 225148]_10C4C929.wem</CachePath>
+				<File Id="268123456" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_DistantTraffic_B1_01.wav</ShortName>
+					<Path>Media/268123456.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B1_01_10C4C929.wem</CachePath>
 				</File>
-				<File Id="897418732" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>[BiP] Main RL Close 0001 [2024-05-24 225232].wav</ShortName>
-					<Path>Media/897418732.wem</Path>
-					<CachePath>SFX/[BiP] Main RL Close 0001 [2024-05-24 225232]_10C4C929.wem</CachePath>
+				<File Id="417150525" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_DistantTraffic_B2_02.wav</ShortName>
+					<Path>Media/417150525.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_02_10C4C929.wem</CachePath>
 				</File>
-				<File Id="993778280" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>[BiP] Main RL Close 0001 [2024-05-24 225042].wav</ShortName>
-					<Path>Media/993778280.wem</Path>
-					<CachePath>SFX/[BiP] Main RL Close 0001 [2024-05-24 225042]_10C4C929.wem</CachePath>
+				<File Id="559398965" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_DistantTraffic_B2_03.wav</ShortName>
+					<Path>Media/559398965.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="642141231" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_DistantTraffic_B1_04.wav</ShortName>
+					<Path>Media/642141231.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B1_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="802290447" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_DistantTraffic_B1_02.wav</ShortName>
+					<Path>Media/802290447.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B1_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1013661680" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_DistantTraffic_B1_03.wav</ShortName>
+					<Path>Media/1013661680.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B1_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1035687485" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_DistantTraffic_B2_01.wav</ShortName>
+					<Path>Media/1035687485.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
 				<Custom>
-					<Plugin Id="187275075" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_Dynamic\AMB_HoverCars\TrafficDynamic\AMB_DistantTraffic_L\AMB_NearTraffic_Spline_L\Tremolo_HoverCars (Custom)" GUID="{BF641B39-06FB-4F7D-BDC4-9DC66EB75DFE}" LibName="Wwise Tremolo" LibId="8585219"/>
+					<Plugin Id="503513707" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_Dynamic\AMB_HoverCars\TrafficDynamic\AMB_DistantTraffic_L\AMB_NearTraffic_Spline_L\Tremolo_HoverCars (Custom)" GUID="{4D62765A-4E6C-47D3-A59C-E09F3D85DE54}" LibName="Wwise Tremolo" LibId="8585219"/>
 				</Custom>
 			</Plugins>
 			<Events>
 				<Event Id="2263523777" Name="AMB_DistantTraffic_L" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficDynamic\AMB_DistantTraffic_L" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" MaxAttenuation="5000" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="52137956"/>
-						<MediaRef Id="847732927"/>
-						<MediaRef Id="897418732"/>
-						<MediaRef Id="993778280"/>
+						<MediaRef Id="225437181"/>
+						<MediaRef Id="268123456"/>
+						<MediaRef Id="417150525"/>
+						<MediaRef Id="559398965"/>
+						<MediaRef Id="642141231"/>
+						<MediaRef Id="802290447"/>
+						<MediaRef Id="1013661680"/>
+						<MediaRef Id="1035687485"/>
 					</MediaRefs>
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="187275075"/>
+							<PluginRef Id="503513707"/>
 						</Custom>
 					</PluginRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{15F67794-6563-62C7-90BF-7372E25FA9B2}</FileHash>
+	<FileHash>{FBA8533A-89EB-D838-7801-5851754BEFD3}</FileHash>
 </SoundBanksInfo>

@@ -10,55 +10,91 @@
     "Type": "Event",
     "GUID": "{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}",
     "Language": "SFX",
-    "Hash": "{B2FEDAE3-305F-F7E2-AD63-4405E625EDCF}",
+    "Hash": "{AB900349-FB26-F4F6-0521-69FE7483A4B2}",
     "ObjectPath": "AMB_DistantTraffic_L",
     "ShortName": "AMB_DistantTraffic_L",
     "Path": "Event/AMB_DistantTraffic_L.bnk",
     "Media": [
      {
-      "Id": "52137956",
+      "Id": "225437181",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "[BiP] Main RL Close 0001 [2024-05-24 224954].wav",
-      "Path": "Media/52137956.wem",
-      "CachePath": "SFX/[BiP] Main RL Close 0001 [2024-05-24 224954]_10C4C929.wem"
+      "ShortName": "AMB_HoverCars_DistantTraffic_B2_04.wav",
+      "Path": "Media/225437181.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_04_10C4C929.wem"
      },
      {
-      "Id": "847732927",
+      "Id": "268123456",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "[BiP] Main RL Close 0001 [2024-05-24 225148].wav",
-      "Path": "Media/847732927.wem",
-      "CachePath": "SFX/[BiP] Main RL Close 0001 [2024-05-24 225148]_10C4C929.wem"
+      "ShortName": "AMB_HoverCars_DistantTraffic_B1_01.wav",
+      "Path": "Media/268123456.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_01_10C4C929.wem"
      },
      {
-      "Id": "897418732",
+      "Id": "417150525",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "[BiP] Main RL Close 0001 [2024-05-24 225232].wav",
-      "Path": "Media/897418732.wem",
-      "CachePath": "SFX/[BiP] Main RL Close 0001 [2024-05-24 225232]_10C4C929.wem"
+      "ShortName": "AMB_HoverCars_DistantTraffic_B2_02.wav",
+      "Path": "Media/417150525.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_02_10C4C929.wem"
      },
      {
-      "Id": "993778280",
+      "Id": "559398965",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "[BiP] Main RL Close 0001 [2024-05-24 225042].wav",
-      "Path": "Media/993778280.wem",
-      "CachePath": "SFX/[BiP] Main RL Close 0001 [2024-05-24 225042]_10C4C929.wem"
+      "ShortName": "AMB_HoverCars_DistantTraffic_B2_03.wav",
+      "Path": "Media/559398965.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_03_10C4C929.wem"
+     },
+     {
+      "Id": "642141231",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B1_04.wav",
+      "Path": "Media/642141231.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_04_10C4C929.wem"
+     },
+     {
+      "Id": "802290447",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B1_02.wav",
+      "Path": "Media/802290447.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_02_10C4C929.wem"
+     },
+     {
+      "Id": "1013661680",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B1_03.wav",
+      "Path": "Media/1013661680.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_03_10C4C929.wem"
+     },
+     {
+      "Id": "1035687485",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B2_01.wav",
+      "Path": "Media/1035687485.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem"
      }
     ],
     "Plugins": {
      "Custom": [
       {
-       "Id": "187275075",
+       "Id": "503513707",
        "Name": "Tremolo_HoverCars (Custom)",
        "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Emitters\\Highrise\\AMB_Dynamic\\AMB_HoverCars\\TrafficDynamic\\AMB_DistantTraffic_L\\AMB_NearTraffic_Spline_L\\Tremolo_HoverCars (Custom)",
-       "GUID": "{BF641B39-06FB-4F7D-BDC4-9DC66EB75DFE}",
+       "GUID": "{4D62765A-4E6C-47D3-A59C-E09F3D85DE54}",
        "LibName": "Wwise Tremolo",
        "LibId": "8585219"
       }
@@ -74,22 +110,34 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "52137956"
+        "Id": "225437181"
        },
        {
-        "Id": "847732927"
+        "Id": "268123456"
        },
        {
-        "Id": "897418732"
+        "Id": "417150525"
        },
        {
-        "Id": "993778280"
+        "Id": "559398965"
+       },
+       {
+        "Id": "642141231"
+       },
+       {
+        "Id": "802290447"
+       },
+       {
+        "Id": "1013661680"
+       },
+       {
+        "Id": "1035687485"
        }
       ],
       "PluginRefs": {
        "Custom": [
         {
-         "Id": "187275075"
+         "Id": "503513707"
         }
        ]
       }
@@ -97,6 +145,6 @@
     ]
    }
   ],
-  "FileHash": "{A542929A-1F93-242C-7A21-778D974D2312}"
+  "FileHash": "{A9B4237D-D9B3-5ACB-61EB-6172CCCBFAC9}"
  }
 }

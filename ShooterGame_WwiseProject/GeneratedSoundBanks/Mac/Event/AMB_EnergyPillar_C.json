@@ -10,19 +10,37 @@
     "Type": "Event",
     "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
     "Language": "SFX",
-    "Hash": "{2D770792-C854-2020-D9F5-43AF5AB01A28}",
+    "Hash": "{E17C5586-F9D2-1ABE-9E56-753D2B601E5D}",
     "ObjectPath": "AMB_EnergyPillar_C",
     "ShortName": "AMB_EnergyPillar_C",
     "Path": "Event/AMB_EnergyPillar_C.bnk",
     "Media": [
      {
-      "Id": "52137956",
+      "Id": "225437181",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "[BiP] Main RL Close 0001 [2024-05-24 224954].wav",
-      "Path": "Media/52137956.wem",
-      "CachePath": "SFX/[BiP] Main RL Close 0001 [2024-05-24 224954]_10C4C929.wem"
+      "ShortName": "AMB_HoverCars_DistantTraffic_B2_04.wav",
+      "Path": "Media/225437181.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_04_10C4C929.wem"
+     },
+     {
+      "Id": "268123456",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B1_01.wav",
+      "Path": "Media/268123456.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_01_10C4C929.wem"
+     },
+     {
+      "Id": "417150525",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B2_02.wav",
+      "Path": "Media/417150525.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_02_10C4C929.wem"
      },
      {
       "Id": "446621592",
@@ -43,6 +61,15 @@
       "CachePath": "SFX/Emitters_EnergyPillar_Arcs_B261B7F4.wem"
      },
      {
+      "Id": "559398965",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B2_03.wav",
+      "Path": "Media/559398965.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_03_10C4C929.wem"
+     },
+     {
       "Id": "638307787",
       "Language": "SFX",
       "Streaming": "false",
@@ -52,31 +79,40 @@
       "CachePath": "SFX/Emitters_EnergyPillar_Beam_74E134E9.wem"
      },
      {
-      "Id": "847732927",
+      "Id": "642141231",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "[BiP] Main RL Close 0001 [2024-05-24 225148].wav",
-      "Path": "Media/847732927.wem",
-      "CachePath": "SFX/[BiP] Main RL Close 0001 [2024-05-24 225148]_10C4C929.wem"
+      "ShortName": "AMB_HoverCars_DistantTraffic_B1_04.wav",
+      "Path": "Media/642141231.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_04_10C4C929.wem"
      },
      {
-      "Id": "897418732",
+      "Id": "802290447",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "[BiP] Main RL Close 0001 [2024-05-24 225232].wav",
-      "Path": "Media/897418732.wem",
-      "CachePath": "SFX/[BiP] Main RL Close 0001 [2024-05-24 225232]_10C4C929.wem"
+      "ShortName": "AMB_HoverCars_DistantTraffic_B1_02.wav",
+      "Path": "Media/802290447.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_02_10C4C929.wem"
      },
      {
-      "Id": "993778280",
+      "Id": "1013661680",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "[BiP] Main RL Close 0001 [2024-05-24 225042].wav",
-      "Path": "Media/993778280.wem",
-      "CachePath": "SFX/[BiP] Main RL Close 0001 [2024-05-24 225042]_10C4C929.wem"
+      "ShortName": "AMB_HoverCars_DistantTraffic_B1_03.wav",
+      "Path": "Media/1013661680.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_03_10C4C929.wem"
+     },
+     {
+      "Id": "1035687485",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B2_01.wav",
+      "Path": "Media/1035687485.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem"
      }
     ],
     "Plugins": {
@@ -97,11 +133,17 @@
       "Name": "AMB_EnergyPillar_C",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_EnergyPillar_C",
       "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
-      "MaxAttenuation": "4300",
+      "MaxAttenuation": "4500",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "52137956"
+        "Id": "225437181"
+       },
+       {
+        "Id": "268123456"
+       },
+       {
+        "Id": "417150525"
        },
        {
         "Id": "446621592"
@@ -110,16 +152,22 @@
         "Id": "551839656"
        },
        {
+        "Id": "559398965"
+       },
+       {
         "Id": "638307787"
        },
        {
-        "Id": "847732927"
+        "Id": "642141231"
        },
        {
-        "Id": "897418732"
+        "Id": "802290447"
        },
        {
-        "Id": "993778280"
+        "Id": "1013661680"
+       },
+       {
+        "Id": "1035687485"
        }
       ],
       "PluginRefs": {
@@ -133,6 +181,6 @@
     ]
    }
   ],
-  "FileHash": "{808E3CD2-A63B-E0BB-54A8-D2993DB0752E}"
+  "FileHash": "{E010B09E-6198-9826-0E2A-8EF9178D0195}"
  }
 }

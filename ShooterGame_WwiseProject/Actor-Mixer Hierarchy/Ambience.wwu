@@ -66,7 +66,6 @@
 														</Property>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-25</Value>
@@ -470,7 +469,6 @@
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -534,7 +532,6 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 											</PropertyList>
@@ -556,7 +553,6 @@
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-27</Value>
@@ -829,12 +825,14 @@
 												<ActorMixer Name="AMB_EnergyPillar_R" ID="{95F8297B-9089-4EF2-B457-08196102E7F5}" ShortID="758592762">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
 																<Value>2</Value>
 															</ValueList>
 														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-3</Value>
@@ -983,7 +981,6 @@
 														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-2</Value>
@@ -1181,7 +1178,6 @@
 													</ValueList>
 												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -1275,7 +1271,6 @@
 														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
@@ -1738,6 +1733,15 @@
 											</ReferenceList>
 											<ChildrenList>
 												<ActorMixer Name="TrafficStatic" ID="{63363BAE-5037-4EFA-8A40-EDD31C01933F}" ShortID="950961820">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -1759,7 +1763,7 @@
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-1</Value>
+																		<Value>-4</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -1786,7 +1790,6 @@
 																				</ModifierInfo>
 																			</ModifierList>
 																		</Property>
-																		<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																		<Property Name="Pitch" Type="int32">
 																			<ModifierList>
 																				<ModifierInfo>
@@ -1840,7 +1843,7 @@
 																				<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>13</Value>
+																						<Value>15</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
@@ -1923,7 +1926,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<Sound Name="[BiP] Top Center FB [2024-05-24 161656]" ID="{0E39377F-0898-4857-9E7E-4100A87703A5}" ShortID="444672143">
+																						<Sound Name="AMB_HoverCars_NearTraffic_B1_01" ID="{1599214B-6314-4BC9-B8A2-E33F6A337E40}" ShortID="629044136">
 																							<ReferenceList>
 																								<Reference Name="Conversion">
 																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -1933,16 +1936,82 @@
 																								</Reference>
 																							</ReferenceList>
 																							<ChildrenList>
-																								<AudioFileSource Name="[BiP] Top Center FB [2024-05-24 161656]" ID="{3EF20337-580B-4DA5-BE7F-EE2A10C08434}">
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_01" ID="{D62033F2-69E7-46D2-907F-321624E2A448}">
 																									<Language>SFX</Language>
-																									<AudioFile>[BiP] Top Center FB [2024-05-24 161656].wav</AudioFile>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B1_01.wav</AudioFile>
 																									<MediaIDList>
-																										<MediaID ID="277708494"/>
+																										<MediaID ID="1016809254"/>
 																									</MediaIDList>
 																								</AudioFileSource>
 																							</ChildrenList>
 																							<ActiveSourceList>
-																								<ActiveSource Name="[BiP] Top Center FB [2024-05-24 161656]" ID="{3EF20337-580B-4DA5-BE7F-EE2A10C08434}" Platform="Linked"/>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_01" ID="{D62033F2-69E7-46D2-907F-321624E2A448}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_01" ID="{D4F5ADDC-A009-45C5-BB61-A7E1F08F76E0}" ShortID="922238827">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_01" ID="{B9999B04-E716-4FA8-B814-3ADBF02D2B7B}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_01.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="525122848"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_01" ID="{B9999B04-E716-4FA8-B814-3ADBF02D2B7B}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_02" ID="{C30B38DB-9DE7-49E9-A250-B3961F9AC5CC}" ShortID="751519715">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_02" ID="{43E3F825-E0FB-457D-A4B6-D4E521839FD2}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_02.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="603729134"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_02" ID="{43E3F825-E0FB-457D-A4B6-D4E521839FD2}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B3_01" ID="{24C72BF9-834D-45B6-8456-0D01E8A3B7FD}" ShortID="741321706">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_01" ID="{1567F441-BACA-45C9-AE80-48D4C8C13A19}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B3_01.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="338971624"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_01" ID="{1567F441-BACA-45C9-AE80-48D4C8C13A19}" Platform="Linked"/>
 																							</ActiveSourceList>
 																						</Sound>
 																					</ChildrenList>
@@ -2032,7 +2101,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<Sound Name="[BiP] Top Center FB [2024-05-24 161700]" ID="{955B60EB-B5E9-426A-A6A5-45B6990615D1}" ShortID="126190069">
+																						<Sound Name="AMB_HoverCars_NearTraffic_B1_02" ID="{ED9B4CE1-4517-48AF-85BB-F5CD0687D5E3}" ShortID="799209067">
 																							<ReferenceList>
 																								<Reference Name="Conversion">
 																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -2042,16 +2111,60 @@
 																								</Reference>
 																							</ReferenceList>
 																							<ChildrenList>
-																								<AudioFileSource Name="[BiP] Top Center FB [2024-05-24 161700]" ID="{9C69F505-87D4-42C8-8A4E-2D3041EB2EF3}">
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_02" ID="{53A0F64E-E02D-4EB7-98DB-2D82DF0E8079}">
 																									<Language>SFX</Language>
-																									<AudioFile>[BiP] Top Center FB [2024-05-24 161700].wav</AudioFile>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B1_02.wav</AudioFile>
 																									<MediaIDList>
-																										<MediaID ID="413101053"/>
+																										<MediaID ID="250285595"/>
 																									</MediaIDList>
 																								</AudioFileSource>
 																							</ChildrenList>
 																							<ActiveSourceList>
-																								<ActiveSource Name="[BiP] Top Center FB [2024-05-24 161700]" ID="{9C69F505-87D4-42C8-8A4E-2D3041EB2EF3}" Platform="Linked"/>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_02" ID="{53A0F64E-E02D-4EB7-98DB-2D82DF0E8079}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_03" ID="{C7D9E381-F954-4FD7-A92E-06CE3F3004AB}" ShortID="819242603">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_03" ID="{99B3EEBC-E602-4007-961E-37FA44C120F8}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_03.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="1060677517"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_03" ID="{99B3EEBC-E602-4007-961E-37FA44C120F8}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B3_02" ID="{65E5D374-3653-4946-BC53-A31EC7FF7BDC}" ShortID="424306034">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_02" ID="{9C3BC2EA-9E54-400B-A89A-BB5FB731C080}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B3_02.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="521011312"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_02" ID="{9C3BC2EA-9E54-400B-A89A-BB5FB731C080}" Platform="Linked"/>
 																							</ActiveSourceList>
 																						</Sound>
 																					</ChildrenList>
@@ -2141,7 +2254,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<Sound Name="[BiP] Top Center FB [2024-05-24 161709]" ID="{C3106DCF-9EE1-43F9-AD23-10E6FA06554F}" ShortID="907241527">
+																						<Sound Name="AMB_HoverCars_NearTraffic_B1_04" ID="{D5F103EC-02EB-4FA5-AD93-2EBD3F3967DD}" ShortID="377714153">
 																							<ReferenceList>
 																								<Reference Name="Conversion">
 																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -2151,16 +2264,60 @@
 																								</Reference>
 																							</ReferenceList>
 																							<ChildrenList>
-																								<AudioFileSource Name="[BiP] Top Center FB [2024-05-24 161709]" ID="{EF5290E5-E140-47BC-8446-EE152C811121}">
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_04" ID="{32031355-9F3D-4D2F-B296-84A0721067D0}">
 																									<Language>SFX</Language>
-																									<AudioFile>[BiP] Top Center FB [2024-05-24 161709].wav</AudioFile>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B1_04.wav</AudioFile>
 																									<MediaIDList>
-																										<MediaID ID="725554182"/>
+																										<MediaID ID="508714875"/>
 																									</MediaIDList>
 																								</AudioFileSource>
 																							</ChildrenList>
 																							<ActiveSourceList>
-																								<ActiveSource Name="[BiP] Top Center FB [2024-05-24 161709]" ID="{EF5290E5-E140-47BC-8446-EE152C811121}" Platform="Linked"/>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_04" ID="{32031355-9F3D-4D2F-B296-84A0721067D0}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_05" ID="{8FBD5502-54CA-4439-83AC-D8B155A42A1F}" ShortID="1036856081">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_05" ID="{1F6159F1-CE0E-4BE9-939F-DD9843DD4B16}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_05.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="643032324"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_05" ID="{1F6159F1-CE0E-4BE9-939F-DD9843DD4B16}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B3_04" ID="{64C4B931-467B-4C0A-ABBB-147F6B67C146}" ShortID="737834462">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_04" ID="{65EBB8DF-80B5-40B3-835C-3CA64FC891C8}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B3_04.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="17785737"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_04" ID="{65EBB8DF-80B5-40B3-835C-3CA64FC891C8}" Platform="Linked"/>
 																							</ActiveSourceList>
 																						</Sound>
 																					</ChildrenList>
@@ -2250,7 +2407,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<Sound Name="[BiP] Top Center FB [2024-05-24 161705]" ID="{03AA969C-E898-4BC8-B350-CABD2B46797C}" ShortID="602751297">
+																						<Sound Name="AMB_HoverCars_NearTraffic_B1_03" ID="{0A424107-9F17-40C4-8E10-B1F816C86956}" ShortID="707261554">
 																							<ReferenceList>
 																								<Reference Name="Conversion">
 																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -2260,16 +2417,60 @@
 																								</Reference>
 																							</ReferenceList>
 																							<ChildrenList>
-																								<AudioFileSource Name="[BiP] Top Center FB [2024-05-24 161705]" ID="{9F99E7C7-D66B-4D76-BAD4-17ADD3DEB66B}">
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_03" ID="{18FF8D95-97B5-4CC0-A8F2-763953E40252}">
 																									<Language>SFX</Language>
-																									<AudioFile>[BiP] Top Center FB [2024-05-24 161705].wav</AudioFile>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B1_03.wav</AudioFile>
 																									<MediaIDList>
-																										<MediaID ID="1071781516"/>
+																										<MediaID ID="701489611"/>
 																									</MediaIDList>
 																								</AudioFileSource>
 																							</ChildrenList>
 																							<ActiveSourceList>
-																								<ActiveSource Name="[BiP] Top Center FB [2024-05-24 161705]" ID="{9F99E7C7-D66B-4D76-BAD4-17ADD3DEB66B}" Platform="Linked"/>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_03" ID="{18FF8D95-97B5-4CC0-A8F2-763953E40252}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_04" ID="{BD2DDC62-ED24-4095-B43A-668D52F9BC63}" ShortID="435673833">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_04" ID="{1596C9EA-E47F-400C-8CB9-0F73192712D5}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_04.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="318391763"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_04" ID="{1596C9EA-E47F-400C-8CB9-0F73192712D5}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B3_03" ID="{82D0B426-EA29-407B-8AC7-3444F8962FE8}" ShortID="917394929">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_03" ID="{868C0248-5A91-4C28-985D-1B28EF18D897}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B3_03.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="771626168"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_03" ID="{868C0248-5A91-4C28-985D-1B28EF18D897}" Platform="Linked"/>
 																							</ActiveSourceList>
 																						</Sound>
 																					</ChildrenList>
@@ -2517,7 +2718,6 @@
 																				</ModifierInfo>
 																			</ModifierList>
 																		</Property>
-																		<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																		<Property Name="Pitch" Type="int32">
 																			<ModifierList>
 																				<ModifierInfo>
@@ -2615,14 +2815,14 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<RandomSequenceContainer Name="Var1" ID="{4C37C27A-0B70-46E0-83FE-A79B9644FBEF}" ShortID="622188592">
+																				<RandomSequenceContainer Name="Var1" ID="{C036A127-78A0-4EC4-8EBA-D02E82F187A7}" ShortID="114541284">
 																					<PropertyList>
 																						<Property Name="3DPosition" Type="int16" Value="1"/>
 																						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																						<Property Name="Pitch" Type="int32">
 																							<ModifierList>
 																								<ModifierInfo>
-																									<Modifier Name="" ID="{B6CC828D-555B-434E-8658-44667BD4A17A}">
+																									<Modifier Name="" ID="{71C50D49-9568-4382-8064-AD60C1FA82C4}">
 																										<PropertyList>
 																											<Property Name="Enabled" Type="bool" Value="True"/>
 																											<Property Name="Max" Type="Real64" Value="2"/>
@@ -2647,7 +2847,7 @@
 																						</Reference>
 																						<Reference Name="Effect0">
 																							<Custom CreatedFrom="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}">
-																								<Effect Name="Tremolo_HoverCars (Custom)" ID="{AF1A1931-BF74-414D-8A7C-8DEDE4AC4446}" ShortID="943154453" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+																								<Effect Name="Tremolo_HoverCars (Custom)" ID="{C12B8B52-4EFB-46C6-8E0F-A0C0EDC7F0E2}" ShortID="181432101" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 																									<PropertyList>
 																										<Property Name="ModDepth" Type="Real32" Value="60"/>
 																										<Property Name="ModFrequency" Type="Real32" Value="14"/>
@@ -2662,7 +2862,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<Sound Name="[BiP] Top Center FB [2024-05-24 161656]" ID="{78BBF196-DB9B-4DB6-A335-3487056D42F5}" ShortID="523884419">
+																						<Sound Name="AMB_HoverCars_NearTraffic_B1_01" ID="{9681D8E1-0B4D-4E5C-9E4E-EB7981D14DBB}" ShortID="440235765">
 																							<ReferenceList>
 																								<Reference Name="Conversion">
 																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -2672,27 +2872,93 @@
 																								</Reference>
 																							</ReferenceList>
 																							<ChildrenList>
-																								<AudioFileSource Name="[BiP] Top Center FB [2024-05-24 161656]" ID="{6B390569-AD48-4F47-9364-F2F5B3EFCFEE}">
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_01" ID="{069031DD-AB8D-4A16-9DBF-A62BE7A3F668}">
 																									<Language>SFX</Language>
-																									<AudioFile>[BiP] Top Center FB [2024-05-24 161656].wav</AudioFile>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B1_01.wav</AudioFile>
 																									<MediaIDList>
-																										<MediaID ID="277708494"/>
+																										<MediaID ID="1016809254"/>
 																									</MediaIDList>
 																								</AudioFileSource>
 																							</ChildrenList>
 																							<ActiveSourceList>
-																								<ActiveSource Name="[BiP] Top Center FB [2024-05-24 161656]" ID="{6B390569-AD48-4F47-9364-F2F5B3EFCFEE}" Platform="Linked"/>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_01" ID="{069031DD-AB8D-4A16-9DBF-A62BE7A3F668}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_01" ID="{53BA0E28-7764-4521-AEF4-4F277E0E2963}" ShortID="167557931">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_01" ID="{E742F15B-0BFA-4F8E-9F2B-40264157DDC8}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_01.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="525122848"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_01" ID="{E742F15B-0BFA-4F8E-9F2B-40264157DDC8}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_02" ID="{7F5CB9EB-DE6B-421A-903F-028D9F321617}" ShortID="139481873">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_02" ID="{01F4749D-F4E0-4C35-9E95-E2AD9EA1ACF6}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_02.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="603729134"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_02" ID="{01F4749D-F4E0-4C35-9E95-E2AD9EA1ACF6}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B3_01" ID="{A56F1CCF-699A-44D5-B4F3-AAAD04B58F99}" ShortID="689907350">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_01" ID="{3CC9B9C4-CD76-4BF0-8F99-4BFC2015E397}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B3_01.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="338971624"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_01" ID="{3CC9B9C4-CD76-4BF0-8F99-4BFC2015E397}" Platform="Linked"/>
 																							</ActiveSourceList>
 																						</Sound>
 																					</ChildrenList>
 																					<PositioningInfo>
-																						<Position Name="" ID="{B9E47B72-D2C8-467B-B402-D8672AE93010}">
+																						<Position Name="" ID="{E102CA3E-C0B1-4D1C-9A39-E425AAD49E46}">
 																							<PropertyList>
 																								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
 																								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
 																							</PropertyList>
 																							<ChildrenList>
-																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{63B02793-6F76-47D4-819C-F89D454B991E}">
+																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{F9A5F51D-D604-4ACD-AE4C-7C6C4A260199}">
 																									<PropertyList>
 																										<Property Name="RandomX" Type="Real64" Value="15"/>
 																										<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -2712,7 +2978,7 @@
 																										</Point>
 																									</PointList>
 																								</Path2D>
-																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{F19F18DF-B0BD-4B2A-A280-51D6C7306E17}">
+																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{3BF4C4B4-DDB5-420E-8866-8B96F00D22FE}">
 																									<PropertyList>
 																										<Property Name="RandomX" Type="Real64" Value="15"/>
 																										<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -2736,14 +3002,14 @@
 																						</Position>
 																					</PositioningInfo>
 																				</RandomSequenceContainer>
-																				<RandomSequenceContainer Name="Var2" ID="{73BFD56B-7A1C-49FE-88D0-91B068775E92}" ShortID="281155911">
+																				<RandomSequenceContainer Name="Var2" ID="{6AA72473-0AED-47B5-B454-E53CFBF08A18}" ShortID="704981159">
 																					<PropertyList>
 																						<Property Name="3DPosition" Type="int16" Value="1"/>
 																						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																						<Property Name="Pitch" Type="int32">
 																							<ModifierList>
 																								<ModifierInfo>
-																									<Modifier Name="" ID="{7DF5FEC6-BA01-496D-B5CB-E74084579C7F}">
+																									<Modifier Name="" ID="{FA64B56B-9A16-478C-896A-B874596AFBB5}">
 																										<PropertyList>
 																											<Property Name="Enabled" Type="bool" Value="True"/>
 																											<Property Name="Max" Type="Real64" Value="2"/>
@@ -2771,7 +3037,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<Sound Name="[BiP] Top Center FB [2024-05-24 161700]" ID="{17CD1AB0-684B-4BDE-9715-22B921F2E82A}" ShortID="889498519">
+																						<Sound Name="AMB_HoverCars_NearTraffic_B1_02" ID="{17BE6512-EE10-4457-91F3-3EA173987B87}" ShortID="894814741">
 																							<ReferenceList>
 																								<Reference Name="Conversion">
 																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -2781,27 +3047,71 @@
 																								</Reference>
 																							</ReferenceList>
 																							<ChildrenList>
-																								<AudioFileSource Name="[BiP] Top Center FB [2024-05-24 161700]" ID="{8C88FD9A-42D5-47B8-B911-EEB33E00A70F}">
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_02" ID="{DA1A24EC-26FA-44FC-9CCA-96D5BE88DD2F}">
 																									<Language>SFX</Language>
-																									<AudioFile>[BiP] Top Center FB [2024-05-24 161700].wav</AudioFile>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B1_02.wav</AudioFile>
 																									<MediaIDList>
-																										<MediaID ID="413101053"/>
+																										<MediaID ID="250285595"/>
 																									</MediaIDList>
 																								</AudioFileSource>
 																							</ChildrenList>
 																							<ActiveSourceList>
-																								<ActiveSource Name="[BiP] Top Center FB [2024-05-24 161700]" ID="{8C88FD9A-42D5-47B8-B911-EEB33E00A70F}" Platform="Linked"/>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_02" ID="{DA1A24EC-26FA-44FC-9CCA-96D5BE88DD2F}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_03" ID="{D06AF560-2A00-4B9C-952B-124A0B62C915}" ShortID="780851525">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_03" ID="{63968DD7-0567-41DC-B4A1-14D6F4205B07}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_03.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="1060677517"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_03" ID="{63968DD7-0567-41DC-B4A1-14D6F4205B07}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B3_02" ID="{DE6CCC5B-5E78-4C31-B33D-8004F90F71E1}" ShortID="540549595">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_02" ID="{329530AC-EC3D-4BE6-BE30-82DC3439A316}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B3_02.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="521011312"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_02" ID="{329530AC-EC3D-4BE6-BE30-82DC3439A316}" Platform="Linked"/>
 																							</ActiveSourceList>
 																						</Sound>
 																					</ChildrenList>
 																					<PositioningInfo>
-																						<Position Name="" ID="{CFFB8F9C-09FF-4CFE-BFFC-1B2158E9E385}">
+																						<Position Name="" ID="{2317C812-DF9C-4119-8C7C-930F10F45C41}">
 																							<PropertyList>
 																								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
 																								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
 																							</PropertyList>
 																							<ChildrenList>
-																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{D8E1D3D7-A06E-4D6B-BD22-8728125E68C1}">
+																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{3A45152C-DAE6-4093-B095-A3038B3C703D}">
 																									<PropertyList>
 																										<Property Name="RandomX" Type="Real64" Value="15"/>
 																										<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -2821,7 +3131,7 @@
 																										</Point>
 																									</PointList>
 																								</Path2D>
-																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{9C92F3FC-B3D0-4510-A413-7F1F20E53613}">
+																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{FA28B78F-C197-4010-85A3-765A42D83BFE}">
 																									<PropertyList>
 																										<Property Name="RandomX" Type="Real64" Value="15"/>
 																										<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -2845,14 +3155,14 @@
 																						</Position>
 																					</PositioningInfo>
 																				</RandomSequenceContainer>
-																				<RandomSequenceContainer Name="Var4" ID="{9F9BE11D-0E5D-42C8-A650-D71FEFC01F0B}" ShortID="932675161">
+																				<RandomSequenceContainer Name="Var3" ID="{2DDEE16C-5B1D-4FB6-AC2F-CBF60AB2171C}" ShortID="442738278">
 																					<PropertyList>
 																						<Property Name="3DPosition" Type="int16" Value="1"/>
 																						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																						<Property Name="Pitch" Type="int32">
 																							<ModifierList>
 																								<ModifierInfo>
-																									<Modifier Name="" ID="{0EE14372-B345-434D-8DD6-36C4D7B0FC58}">
+																									<Modifier Name="" ID="{C1E16909-1354-4522-A742-3CB8CD0CCA68}">
 																										<PropertyList>
 																											<Property Name="Enabled" Type="bool" Value="True"/>
 																											<Property Name="Max" Type="Real64" Value="2"/>
@@ -2880,7 +3190,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<Sound Name="[BiP] Top Center FB [2024-05-24 161709]" ID="{53F257E4-7D0C-4116-8A67-749082D60FDC}" ShortID="158920673">
+																						<Sound Name="AMB_HoverCars_NearTraffic_B1_03" ID="{17E26DD0-BF70-4EC7-BC53-DDA08E3957A8}" ShortID="197865795">
 																							<ReferenceList>
 																								<Reference Name="Conversion">
 																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -2890,27 +3200,71 @@
 																								</Reference>
 																							</ReferenceList>
 																							<ChildrenList>
-																								<AudioFileSource Name="[BiP] Top Center FB [2024-05-24 161709]" ID="{AE7F3305-D5DC-4B05-ACBE-73505E4CE10E}">
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_03" ID="{A744EEF6-D3FE-4DEE-8050-9BC2B65B0194}">
 																									<Language>SFX</Language>
-																									<AudioFile>[BiP] Top Center FB [2024-05-24 161709].wav</AudioFile>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B1_03.wav</AudioFile>
 																									<MediaIDList>
-																										<MediaID ID="725554182"/>
+																										<MediaID ID="701489611"/>
 																									</MediaIDList>
 																								</AudioFileSource>
 																							</ChildrenList>
 																							<ActiveSourceList>
-																								<ActiveSource Name="[BiP] Top Center FB [2024-05-24 161709]" ID="{AE7F3305-D5DC-4B05-ACBE-73505E4CE10E}" Platform="Linked"/>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_03" ID="{A744EEF6-D3FE-4DEE-8050-9BC2B65B0194}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_04" ID="{819B1C4E-D2EB-4F8E-92A7-1DD9A570B476}" ShortID="803181449">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_04" ID="{9273C233-5EAB-4B24-9357-75F493763A10}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_04.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="318391763"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_04" ID="{9273C233-5EAB-4B24-9357-75F493763A10}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B3_03" ID="{DF8C982E-C741-4025-8FFF-E91C229CF530}" ShortID="97480643">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_03" ID="{BB42444B-ACF2-4875-A732-6DD8E033455C}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B3_03.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="771626168"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_03" ID="{BB42444B-ACF2-4875-A732-6DD8E033455C}" Platform="Linked"/>
 																							</ActiveSourceList>
 																						</Sound>
 																					</ChildrenList>
 																					<PositioningInfo>
-																						<Position Name="" ID="{4CEF7337-C451-4C96-A22F-40787459A907}">
+																						<Position Name="" ID="{46722114-5A37-4989-9254-F8B8C5B69F04}">
 																							<PropertyList>
 																								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
 																								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
 																							</PropertyList>
 																							<ChildrenList>
-																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{06ED6A0C-FCC3-4649-B5E5-58AD11813B87}">
+																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{B9C698FD-B6FE-41D2-A558-DF331FF943FB}">
 																									<PropertyList>
 																										<Property Name="RandomX" Type="Real64" Value="15"/>
 																										<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -2930,7 +3284,7 @@
 																										</Point>
 																									</PointList>
 																								</Path2D>
-																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{44B5722C-CB7D-41C7-95E2-9D80F7BF5C1E}">
+																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{A9F89D3F-6F51-4DAF-8428-6165A565ED35}">
 																									<PropertyList>
 																										<Property Name="RandomX" Type="Real64" Value="15"/>
 																										<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -2954,14 +3308,14 @@
 																						</Position>
 																					</PositioningInfo>
 																				</RandomSequenceContainer>
-																				<RandomSequenceContainer Name="Var3" ID="{8D477DC8-BD8E-46A6-B38B-CD8C47727E0E}" ShortID="69100900">
+																				<RandomSequenceContainer Name="Var4" ID="{F4A82FAB-5F1D-4E34-9B88-E62507F4F0EB}" ShortID="287739893">
 																					<PropertyList>
 																						<Property Name="3DPosition" Type="int16" Value="1"/>
 																						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																						<Property Name="Pitch" Type="int32">
 																							<ModifierList>
 																								<ModifierInfo>
-																									<Modifier Name="" ID="{C5EAFA2F-0EF6-4D50-94A7-1A663B08536B}">
+																									<Modifier Name="" ID="{12DCD800-E95F-4194-A235-C3E6307583D1}">
 																										<PropertyList>
 																											<Property Name="Enabled" Type="bool" Value="True"/>
 																											<Property Name="Max" Type="Real64" Value="2"/>
@@ -2989,7 +3343,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<Sound Name="[BiP] Top Center FB [2024-05-24 161705]" ID="{7262C2CA-74EC-4F93-BBF9-745C161F9A1A}" ShortID="87082778">
+																						<Sound Name="AMB_HoverCars_NearTraffic_B1_04" ID="{2DA6BA10-FE47-4133-8BB9-F6A66F51ADC4}" ShortID="254764029">
 																							<ReferenceList>
 																								<Reference Name="Conversion">
 																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -2999,27 +3353,71 @@
 																								</Reference>
 																							</ReferenceList>
 																							<ChildrenList>
-																								<AudioFileSource Name="[BiP] Top Center FB [2024-05-24 161705]" ID="{E1E7D814-098C-4C3B-84D7-46601CAEFCC4}">
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_04" ID="{A6642269-740A-47C5-B8B7-73BF63318687}">
 																									<Language>SFX</Language>
-																									<AudioFile>[BiP] Top Center FB [2024-05-24 161705].wav</AudioFile>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B1_04.wav</AudioFile>
 																									<MediaIDList>
-																										<MediaID ID="1071781516"/>
+																										<MediaID ID="508714875"/>
 																									</MediaIDList>
 																								</AudioFileSource>
 																							</ChildrenList>
 																							<ActiveSourceList>
-																								<ActiveSource Name="[BiP] Top Center FB [2024-05-24 161705]" ID="{E1E7D814-098C-4C3B-84D7-46601CAEFCC4}" Platform="Linked"/>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_04" ID="{A6642269-740A-47C5-B8B7-73BF63318687}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_05" ID="{0C4C0425-0D47-48AD-B39B-332A8D08BD68}" ShortID="58783434">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_05" ID="{9177E883-5B91-4070-B84F-88E98ABB8956}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_05.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="643032324"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_05" ID="{9177E883-5B91-4070-B84F-88E98ABB8956}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B3_04" ID="{A9C7555F-A416-4473-ADF8-95E2DD8A7D07}" ShortID="429312128">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_04" ID="{39E47B3E-D9CB-4602-A111-58732F7D084A}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B3_04.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="17785737"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_04" ID="{39E47B3E-D9CB-4602-A111-58732F7D084A}" Platform="Linked"/>
 																							</ActiveSourceList>
 																						</Sound>
 																					</ChildrenList>
 																					<PositioningInfo>
-																						<Position Name="" ID="{56BD4B6B-822E-4015-BB11-C90CAF2D2940}">
+																						<Position Name="" ID="{50B88248-B8F0-4142-AC38-81AB725C26A7}">
 																							<PropertyList>
 																								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
 																								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
 																							</PropertyList>
 																							<ChildrenList>
-																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{079B4CDA-541E-4F98-8176-C9CDDF879910}">
+																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{4280471E-FEAA-4509-A5B3-0B6C5FE208A5}">
 																									<PropertyList>
 																										<Property Name="RandomX" Type="Real64" Value="15"/>
 																										<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -3039,7 +3437,7 @@
 																										</Point>
 																									</PointList>
 																								</Path2D>
-																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{1AA1E465-8C19-4BE7-B4EA-5A626F8A5745}">
+																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{415B2D2E-8585-43BD-A251-ED5FE1A686B0}">
 																									<PropertyList>
 																										<Property Name="RandomX" Type="Real64" Value="15"/>
 																										<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -3242,7 +3640,6 @@
 																				</ModifierInfo>
 																			</ModifierList>
 																		</Property>
-																		<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																		<Property Name="Pitch" Type="int32">
 																			<ModifierList>
 																				<ModifierInfo>
@@ -3275,7 +3672,7 @@
 																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>-9</Value>
+																				<Value>-4</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -3291,13 +3688,13 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<RandomSequenceContainer Name="AMB_NearTraffic_Burst" ID="{713D8233-E585-493C-AFC4-268E9E08EBB2}" ShortID="808305600">
+																		<RandomSequenceContainer Name="AMB_NearTraffic_Burst" ID="{ADAED2CA-A86D-4DFD-B9BB-FFA61BCFD174}" ShortID="343725321">
 																			<PropertyList>
 																				<Property Name="3DPosition" Type="int16" Value="1"/>
 																				<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>13</Value>
+																						<Value>15</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
@@ -3308,7 +3705,7 @@
 																				<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
 																					<ModifierList>
 																						<ModifierInfo>
-																							<Modifier Name="" ID="{92AF398B-E84D-4CCC-9B97-5047C239EE6C}">
+																							<Modifier Name="" ID="{B71B5D19-00B4-4BAB-8811-55D890D9F2FF}">
 																								<PropertyList>
 																									<Property Name="Enabled" Type="bool" Value="True"/>
 																									<Property Name="Max" Type="Real64" Value="0.2"/>
@@ -3328,31 +3725,19 @@
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 																				</Reference>
-																				<Reference Name="Effect0">
-																					<Custom CreatedFrom="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}">
-																						<Effect Name="Tremolo_HoverCars (Custom)" ID="{18BF2B3D-E8A9-4C34-B2CC-C9310611E557}" ShortID="897488135" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
-																							<PropertyList>
-																								<Property Name="ModDepth" Type="Real32" Value="60"/>
-																								<Property Name="ModFrequency" Type="Real32" Value="14"/>
-																								<Property Name="ModPWM" Type="Real32" Value="0"/>
-																								<Property Name="ModSmoothing" Type="Real32" Value="38"/>
-																							</PropertyList>
-																						</Effect>
-																					</Custom>
-																				</Reference>
 																				<Reference Name="OutputBus">
 																					<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<RandomSequenceContainer Name="Var1" ID="{CB6CFA01-76AD-4FE9-9FFE-402A5EDD0957}" ShortID="585310420">
+																				<RandomSequenceContainer Name="Var1" ID="{076D3028-7762-474F-BF5E-680F5F72DADE}" ShortID="238558650">
 																					<PropertyList>
 																						<Property Name="3DPosition" Type="int16" Value="1"/>
 																						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																						<Property Name="Pitch" Type="int32">
 																							<ModifierList>
 																								<ModifierInfo>
-																									<Modifier Name="" ID="{6D924A95-2AC1-452E-BA22-6BB62C06DC6A}">
+																									<Modifier Name="" ID="{D261E876-00F2-4DAD-85CA-74D1A6A689E4}">
 																										<PropertyList>
 																											<Property Name="Enabled" Type="bool" Value="True"/>
 																											<Property Name="Max" Type="Real64" Value="2"/>
@@ -3377,7 +3762,7 @@
 																						</Reference>
 																						<Reference Name="Effect0">
 																							<Custom CreatedFrom="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}">
-																								<Effect Name="Tremolo_HoverCars (Custom)" ID="{CE96D4CB-6F9F-4C97-A660-3CBAD87F11C7}" ShortID="821003777" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+																								<Effect Name="Tremolo_HoverCars (Custom)" ID="{DB701915-C50F-4478-B7CE-640EA5F1DC11}" ShortID="943419967" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 																									<PropertyList>
 																										<Property Name="ModDepth" Type="Real32" Value="60"/>
 																										<Property Name="ModFrequency" Type="Real32" Value="14"/>
@@ -3392,7 +3777,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<Sound Name="[BiP] Top Center FB [2024-05-24 161656]" ID="{DD8EDC2C-8183-4BAF-9A88-98399C2936A0}" ShortID="147574313">
+																						<Sound Name="AMB_HoverCars_NearTraffic_B1_01" ID="{13799B1C-FA5A-4D85-935B-C70B3C5B08A4}" ShortID="151043668">
 																							<ReferenceList>
 																								<Reference Name="Conversion">
 																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -3402,27 +3787,93 @@
 																								</Reference>
 																							</ReferenceList>
 																							<ChildrenList>
-																								<AudioFileSource Name="[BiP] Top Center FB [2024-05-24 161656]" ID="{100B3DEB-B8D7-4D06-85D0-8DC28E3654CE}">
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_01" ID="{BBCD8B13-03E2-4DA2-A12D-27843E834193}">
 																									<Language>SFX</Language>
-																									<AudioFile>[BiP] Top Center FB [2024-05-24 161656].wav</AudioFile>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B1_01.wav</AudioFile>
 																									<MediaIDList>
-																										<MediaID ID="277708494"/>
+																										<MediaID ID="1016809254"/>
 																									</MediaIDList>
 																								</AudioFileSource>
 																							</ChildrenList>
 																							<ActiveSourceList>
-																								<ActiveSource Name="[BiP] Top Center FB [2024-05-24 161656]" ID="{100B3DEB-B8D7-4D06-85D0-8DC28E3654CE}" Platform="Linked"/>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_01" ID="{BBCD8B13-03E2-4DA2-A12D-27843E834193}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_01" ID="{0AFF7B34-D0BE-431E-8131-66CB9585162B}" ShortID="309865655">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_01" ID="{E02A1F8F-B504-4A72-ACE3-581418C5C3E3}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_01.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="525122848"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_01" ID="{E02A1F8F-B504-4A72-ACE3-581418C5C3E3}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_02" ID="{73BF4DBD-9C21-42B2-BB3D-610274A74BA3}" ShortID="1044780002">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_02" ID="{AE20B2FF-90A2-4EE1-A505-DA6D768A547A}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_02.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="603729134"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_02" ID="{AE20B2FF-90A2-4EE1-A505-DA6D768A547A}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B3_01" ID="{AC8F1009-E689-4ABC-954E-AD8728163F24}" ShortID="525731434">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_01" ID="{B1273E9B-7017-4D95-A453-51E805F3FA65}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B3_01.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="338971624"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_01" ID="{B1273E9B-7017-4D95-A453-51E805F3FA65}" Platform="Linked"/>
 																							</ActiveSourceList>
 																						</Sound>
 																					</ChildrenList>
 																					<PositioningInfo>
-																						<Position Name="" ID="{DDA170A3-46D1-44AD-998E-293404A6FDBA}">
+																						<Position Name="" ID="{5F3343C7-9614-4D39-8F34-FCDFA3CDCD30}">
 																							<PropertyList>
 																								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
 																								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
 																							</PropertyList>
 																							<ChildrenList>
-																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{65B71849-2A88-4F06-86C2-D8CEE2414117}">
+																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{AB0040D4-55E3-4E26-ACF7-F1744E428FB2}">
 																									<PropertyList>
 																										<Property Name="RandomX" Type="Real64" Value="15"/>
 																										<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -3442,7 +3893,7 @@
 																										</Point>
 																									</PointList>
 																								</Path2D>
-																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{3C1F91F4-C980-46D7-B890-062A8289B705}">
+																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{231C6892-5C26-477A-9C7C-CFAE778F66D8}">
 																									<PropertyList>
 																										<Property Name="RandomX" Type="Real64" Value="15"/>
 																										<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -3466,14 +3917,14 @@
 																						</Position>
 																					</PositioningInfo>
 																				</RandomSequenceContainer>
-																				<RandomSequenceContainer Name="Var2" ID="{FA0E6000-8FA2-462C-B701-80CA1C90C073}" ShortID="392564907">
+																				<RandomSequenceContainer Name="Var2" ID="{A192CE3E-1251-4CAA-85BA-6143FBD98718}" ShortID="418082544">
 																					<PropertyList>
 																						<Property Name="3DPosition" Type="int16" Value="1"/>
 																						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																						<Property Name="Pitch" Type="int32">
 																							<ModifierList>
 																								<ModifierInfo>
-																									<Modifier Name="" ID="{610D74B1-2CF0-44D7-82E7-4AC137B4E360}">
+																									<Modifier Name="" ID="{DCAA2FDF-3FE5-4FF4-94F4-C5A9689BBA3F}">
 																										<PropertyList>
 																											<Property Name="Enabled" Type="bool" Value="True"/>
 																											<Property Name="Max" Type="Real64" Value="2"/>
@@ -3501,7 +3952,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<Sound Name="[BiP] Top Center FB [2024-05-24 161700]" ID="{B9099A41-1663-4CDC-96F9-43EBD689ADB3}" ShortID="656077334">
+																						<Sound Name="AMB_HoverCars_NearTraffic_B1_02" ID="{D6F560E4-0A4D-4AB6-B70F-653AAA9A08B8}" ShortID="261781967">
 																							<ReferenceList>
 																								<Reference Name="Conversion">
 																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -3511,27 +3962,71 @@
 																								</Reference>
 																							</ReferenceList>
 																							<ChildrenList>
-																								<AudioFileSource Name="[BiP] Top Center FB [2024-05-24 161700]" ID="{CC08CEA4-3485-4B8F-AE3C-AB6BE0309AC0}">
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_02" ID="{C8BFCA94-A6A3-4E9D-A249-3E12EEC4B0F8}">
 																									<Language>SFX</Language>
-																									<AudioFile>[BiP] Top Center FB [2024-05-24 161700].wav</AudioFile>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B1_02.wav</AudioFile>
 																									<MediaIDList>
-																										<MediaID ID="413101053"/>
+																										<MediaID ID="250285595"/>
 																									</MediaIDList>
 																								</AudioFileSource>
 																							</ChildrenList>
 																							<ActiveSourceList>
-																								<ActiveSource Name="[BiP] Top Center FB [2024-05-24 161700]" ID="{CC08CEA4-3485-4B8F-AE3C-AB6BE0309AC0}" Platform="Linked"/>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_02" ID="{C8BFCA94-A6A3-4E9D-A249-3E12EEC4B0F8}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_03" ID="{36AECC79-7C29-4BDB-9EEC-DF14085CEC51}" ShortID="827665537">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_03" ID="{21D79862-0119-499E-9C72-72C3A2311A9E}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_03.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="1060677517"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_03" ID="{21D79862-0119-499E-9C72-72C3A2311A9E}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B3_02" ID="{3FFC6D26-A5F8-4E0D-9DF8-A2003B6A5562}" ShortID="1028907003">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_02" ID="{C2894C7A-28C7-44D4-85CE-09CCD9A76038}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B3_02.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="521011312"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_02" ID="{C2894C7A-28C7-44D4-85CE-09CCD9A76038}" Platform="Linked"/>
 																							</ActiveSourceList>
 																						</Sound>
 																					</ChildrenList>
 																					<PositioningInfo>
-																						<Position Name="" ID="{35F2EE54-D658-4F36-A7D8-B2A9977163D3}">
+																						<Position Name="" ID="{CAA068C9-5E8D-40AC-9A36-513B3FC48E10}">
 																							<PropertyList>
 																								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
 																								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
 																							</PropertyList>
 																							<ChildrenList>
-																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{612B6E18-4C1F-4B61-BE96-392C6B87F7F3}">
+																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{5BD188A6-2C91-49DF-BD4B-1E296C41CA4B}">
 																									<PropertyList>
 																										<Property Name="RandomX" Type="Real64" Value="15"/>
 																										<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -3551,7 +4046,7 @@
 																										</Point>
 																									</PointList>
 																								</Path2D>
-																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{70C6F59A-26EF-4904-9CAA-29A74225686D}">
+																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{82F01354-CF05-4201-9097-3B19AFA41EDA}">
 																									<PropertyList>
 																										<Property Name="RandomX" Type="Real64" Value="15"/>
 																										<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -3575,14 +4070,14 @@
 																						</Position>
 																					</PositioningInfo>
 																				</RandomSequenceContainer>
-																				<RandomSequenceContainer Name="Var4" ID="{D5E7DD95-3B9B-4BF7-8A8C-8C0CCA2D41D5}" ShortID="62862422">
+																				<RandomSequenceContainer Name="Var4" ID="{DA21C544-ED4A-48B9-BAD9-C36D8D4730B0}" ShortID="453652120">
 																					<PropertyList>
 																						<Property Name="3DPosition" Type="int16" Value="1"/>
 																						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																						<Property Name="Pitch" Type="int32">
 																							<ModifierList>
 																								<ModifierInfo>
-																									<Modifier Name="" ID="{A91FF084-AD78-4867-B351-F2B437D9B28D}">
+																									<Modifier Name="" ID="{FC9DFFF9-08AE-4ED0-B014-7C28BA7B673C}">
 																										<PropertyList>
 																											<Property Name="Enabled" Type="bool" Value="True"/>
 																											<Property Name="Max" Type="Real64" Value="2"/>
@@ -3610,7 +4105,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<Sound Name="[BiP] Top Center FB [2024-05-24 161709]" ID="{52AB98E2-9713-446F-90BA-3AF8C99FB8B4}" ShortID="145913555">
+																						<Sound Name="AMB_HoverCars_NearTraffic_B1_04" ID="{6CDB7D01-2038-41EA-B621-7A968DA3DEC4}" ShortID="384973193">
 																							<ReferenceList>
 																								<Reference Name="Conversion">
 																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -3620,27 +4115,71 @@
 																								</Reference>
 																							</ReferenceList>
 																							<ChildrenList>
-																								<AudioFileSource Name="[BiP] Top Center FB [2024-05-24 161709]" ID="{3D392B86-60C6-4003-BFB2-FB39347C7811}">
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_04" ID="{7E8F0CF7-26D5-4159-A1D9-7C21227B4FB5}">
 																									<Language>SFX</Language>
-																									<AudioFile>[BiP] Top Center FB [2024-05-24 161709].wav</AudioFile>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B1_04.wav</AudioFile>
 																									<MediaIDList>
-																										<MediaID ID="725554182"/>
+																										<MediaID ID="508714875"/>
 																									</MediaIDList>
 																								</AudioFileSource>
 																							</ChildrenList>
 																							<ActiveSourceList>
-																								<ActiveSource Name="[BiP] Top Center FB [2024-05-24 161709]" ID="{3D392B86-60C6-4003-BFB2-FB39347C7811}" Platform="Linked"/>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_04" ID="{7E8F0CF7-26D5-4159-A1D9-7C21227B4FB5}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_05" ID="{77627EE7-001C-4B69-9BA4-861C675E4D2D}" ShortID="896773829">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_05" ID="{811AC150-C29D-41D9-B5DD-0F9A472CF084}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_05.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="643032324"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_05" ID="{811AC150-C29D-41D9-B5DD-0F9A472CF084}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B3_04" ID="{97D08AB8-A94A-4B03-A777-DC33434F40A3}" ShortID="641395051">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_04" ID="{83020FD4-23FB-412F-80E0-78A9A6B70459}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B3_04.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="17785737"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_04" ID="{83020FD4-23FB-412F-80E0-78A9A6B70459}" Platform="Linked"/>
 																							</ActiveSourceList>
 																						</Sound>
 																					</ChildrenList>
 																					<PositioningInfo>
-																						<Position Name="" ID="{94F28432-BD09-47AF-B7E1-1387309DC06E}">
+																						<Position Name="" ID="{CB8679DE-0CEC-4FBD-9968-8A7B50A02E3A}">
 																							<PropertyList>
 																								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
 																								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
 																							</PropertyList>
 																							<ChildrenList>
-																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{661FD932-F0E0-4BA0-B054-9F6552C3D414}">
+																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{549AB30D-A3D3-451C-92B4-B6AC3F59B3F8}">
 																									<PropertyList>
 																										<Property Name="RandomX" Type="Real64" Value="15"/>
 																										<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -3660,7 +4199,7 @@
 																										</Point>
 																									</PointList>
 																								</Path2D>
-																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{3897F7B5-3868-4E61-9F27-BBB925B75F02}">
+																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{65B40537-C9F3-4270-A7C3-C030F09EF258}">
 																									<PropertyList>
 																										<Property Name="RandomX" Type="Real64" Value="15"/>
 																										<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -3684,14 +4223,14 @@
 																						</Position>
 																					</PositioningInfo>
 																				</RandomSequenceContainer>
-																				<RandomSequenceContainer Name="Var3" ID="{F875CE2A-E752-4800-AC90-D7DCA2802D84}" ShortID="617541004">
+																				<RandomSequenceContainer Name="Var3" ID="{9571B40C-4E4B-4A8D-B932-3615A07BCBE3}" ShortID="286202858">
 																					<PropertyList>
 																						<Property Name="3DPosition" Type="int16" Value="1"/>
 																						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																						<Property Name="Pitch" Type="int32">
 																							<ModifierList>
 																								<ModifierInfo>
-																									<Modifier Name="" ID="{F57B0450-217F-416D-87AD-45C42549693C}">
+																									<Modifier Name="" ID="{822AA2E4-AF84-46D0-8E8E-4FC4284F386D}">
 																										<PropertyList>
 																											<Property Name="Enabled" Type="bool" Value="True"/>
 																											<Property Name="Max" Type="Real64" Value="2"/>
@@ -3719,7 +4258,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<Sound Name="[BiP] Top Center FB [2024-05-24 161705]" ID="{F405071B-3566-401F-AB72-A0BA63FABCA7}" ShortID="984769773">
+																						<Sound Name="AMB_HoverCars_NearTraffic_B1_03" ID="{314BBD3C-157D-490A-9691-109C8BD5730E}" ShortID="1046742225">
 																							<ReferenceList>
 																								<Reference Name="Conversion">
 																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -3729,27 +4268,71 @@
 																								</Reference>
 																							</ReferenceList>
 																							<ChildrenList>
-																								<AudioFileSource Name="[BiP] Top Center FB [2024-05-24 161705]" ID="{CD0D6ADA-04BC-4F05-A0D0-5845A156C8B4}">
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_03" ID="{DACFF27D-5AD9-4EED-AE8B-8BB4218A12BD}">
 																									<Language>SFX</Language>
-																									<AudioFile>[BiP] Top Center FB [2024-05-24 161705].wav</AudioFile>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B1_03.wav</AudioFile>
 																									<MediaIDList>
-																										<MediaID ID="1071781516"/>
+																										<MediaID ID="701489611"/>
 																									</MediaIDList>
 																								</AudioFileSource>
 																							</ChildrenList>
 																							<ActiveSourceList>
-																								<ActiveSource Name="[BiP] Top Center FB [2024-05-24 161705]" ID="{CD0D6ADA-04BC-4F05-A0D0-5845A156C8B4}" Platform="Linked"/>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_03" ID="{DACFF27D-5AD9-4EED-AE8B-8BB4218A12BD}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_04" ID="{F1509FC1-B441-4B01-8ECC-BA093802AC0F}" ShortID="280815794">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_04" ID="{A3B31CB3-26A9-4EF2-A886-FA293CEB7AC6}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_04.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="318391763"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_04" ID="{A3B31CB3-26A9-4EF2-A886-FA293CEB7AC6}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B3_03" ID="{B91F121C-730E-4849-A347-D92F0952D264}" ShortID="646143640">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_03" ID="{6DF73803-C8B5-4A05-ADD9-CD3F33FE098A}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B3_03.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="771626168"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_03" ID="{6DF73803-C8B5-4A05-ADD9-CD3F33FE098A}" Platform="Linked"/>
 																							</ActiveSourceList>
 																						</Sound>
 																					</ChildrenList>
 																					<PositioningInfo>
-																						<Position Name="" ID="{BAAA7EEF-F73E-4460-BD11-2F5FBAE557B8}">
+																						<Position Name="" ID="{3F6F596D-3EC8-457C-9F68-F22625A71C31}">
 																							<PropertyList>
 																								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
 																								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
 																							</PropertyList>
 																							<ChildrenList>
-																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{A03BDBE7-4BE0-42EE-9442-EF398CEA177E}">
+																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{E0902060-7315-418D-9913-6CD82B151EA4}">
 																									<PropertyList>
 																										<Property Name="RandomX" Type="Real64" Value="15"/>
 																										<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -3769,7 +4352,7 @@
 																										</Point>
 																									</PointList>
 																								</Path2D>
-																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{1F658D73-36D8-43DD-98CB-4943EA2C9567}">
+																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{8F98AB99-7195-4BAB-A549-D319A808D24D}">
 																									<PropertyList>
 																										<Property Name="RandomX" Type="Real64" Value="15"/>
 																										<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -3795,13 +4378,13 @@
 																				</RandomSequenceContainer>
 																			</ChildrenList>
 																			<PositioningInfo>
-																				<Position Name="" ID="{8A203FEF-BDBC-4A3D-8DDD-3D8F635ED784}">
+																				<Position Name="" ID="{3094FE2E-03BC-46E3-BBB9-29AE1A5A7FFF}">
 																					<PropertyList>
 																						<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
 																						<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
 																					</PropertyList>
 																					<ChildrenList>
-																						<Path2D Name="AMB_NearTraffic_BF_Path" ID="{18735B3A-6DFF-41A7-8AFE-332C879EF307}">
+																						<Path2D Name="AMB_NearTraffic_BF_Path" ID="{A970F47E-DAE0-4C10-9D0B-D4A8DC7BEB5C}">
 																							<PropertyList>
 																								<Property Name="RandomX" Type="Real64" Value="15"/>
 																								<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -3814,14 +4397,14 @@
 																									<Time>0</Time>
 																								</Point>
 																								<Point>
-																									<XPos>-1E-05</XPos>
-																									<YPos>53.41506</YPos>
+																									<XPos>0</XPos>
+																									<YPos>100</YPos>
 																									<Flags>0</Flags>
 																									<Time>5000</Time>
 																								</Point>
 																							</PointList>
 																						</Path2D>
-																						<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{3A3A120F-E30E-4830-8356-794377B3B890}">
+																						<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{1212E076-81F7-4649-9C8F-82784C41D594}">
 																							<PropertyList>
 																								<Property Name="RandomX" Type="Real64" Value="15"/>
 																								<Property Name="RandomY" Type="Real64" Value="15"/>
@@ -3834,8 +4417,8 @@
 																									<Time>0</Time>
 																								</Point>
 																								<Point>
-																									<XPos>-0.26316</XPos>
-																									<YPos>70.22767</YPos>
+																									<XPos>-15</XPos>
+																									<YPos>100</YPos>
 																									<Flags>0</Flags>
 																									<Time>5000</Time>
 																								</Point>
@@ -3928,6 +4511,14 @@
 													</ChildrenList>
 												</ActorMixer>
 												<ActorMixer Name="TrafficDynamic" ID="{A13FB308-D138-4092-974C-9AB32496AE64}" ShortID="615673065">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -3940,6 +4531,7 @@
 														<ActorMixer Name="AMB_DistantTraffic_R" ID="{06C1185A-08EB-4C70-A5C0-6E9BE234D91B}" ShortID="483660498">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 																<Property Name="Highpass" Type="int16">
 																	<ValueList>
 																		<Value>27</Value>
@@ -3947,7 +4539,6 @@
 																</Property>
 																<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
-																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="30"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
 																		<Value>-1</Value>
@@ -3968,11 +4559,6 @@
 															<ChildrenList>
 																<RandomSequenceContainer Name="AMB_NearTraffic_Spline_R" ID="{43F1B6BD-6FF2-4228-917E-652630FD134E}" ShortID="741513285">
 																	<PropertyList>
-																		<Property Name="BypassEffect0" Type="bool">
-																			<ValueList>
-																				<Value>True</Value>
-																			</ValueList>
-																		</Property>
 																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 																		<Property Name="InitialDelay" Type="Real64">
 																			<ValueList>
@@ -3984,7 +4570,11 @@
 																				</ModifierInfo>
 																			</ModifierList>
 																		</Property>
-																		<Property Name="OverrideEffect" Type="bool" Value="True"/>
+																		<Property Name="MaxSoundPerInstance" Type="int16">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="Pitch" Type="int32">
 																			<ModifierList>
 																				<ModifierInfo>
@@ -4000,7 +4590,7 @@
 																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 																		<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5">
+																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2">
 																			<ModifierList>
 																				<ModifierInfo>
 																					<Modifier Name="" ID="{C122A3C0-7911-4003-B3FD-8481AF010B84}">
@@ -4025,24 +4615,12 @@
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 																		</Reference>
-																		<Reference Name="Effect0">
-																			<Custom CreatedFrom="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}">
-																				<Effect Name="Tremolo_HoverCars (Custom)" ID="{BEBE6193-9F16-4CF5-A797-5C28C30211F1}" ShortID="699226050" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
-																					<PropertyList>
-																						<Property Name="ModDepth" Type="Real32" Value="60"/>
-																						<Property Name="ModFrequency" Type="Real32" Value="14"/>
-																						<Property Name="ModPWM" Type="Real32" Value="0"/>
-																						<Property Name="ModSmoothing" Type="Real32" Value="38"/>
-																					</PropertyList>
-																				</Effect>
-																			</Custom>
-																		</Reference>
 																		<Reference Name="OutputBus">
 																			<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<RandomSequenceContainer Name="Var1" ID="{77095E4C-CC0D-4DE0-8A5F-4CA82CA9DB6A}" ShortID="432065833">
+																		<RandomSequenceContainer Name="Var1" ID="{02A853C6-9340-4CED-8B3A-D2F07ED923B5}" ShortID="1031930368">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4052,7 +4630,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="[BiP] Main RL Close 0001 [2024-05-24 224954]" ID="{260BBFBF-275F-495A-861C-81EADC9A8E86}" ShortID="807311226">
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B1_01" ID="{C8745F5C-0BA1-455E-BAB8-8C0E5CAF725A}" ShortID="839769814">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4062,21 +4640,43 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="[BiP] Main RL Close 0001 [2024-05-24 224954]" ID="{809282C6-70B0-4FB1-B1DC-79A9CE04E03D}">
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B1_01" ID="{EB38D3E1-3AC7-4D29-997E-DFBDE78B02C6}">
 																							<Language>SFX</Language>
-																							<AudioFile>[BiP] Main RL Close 0001 [2024-05-24 224954].wav</AudioFile>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B1_01.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="52137956"/>
+																								<MediaID ID="268123456"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="[BiP] Main RL Close 0001 [2024-05-24 224954]" ID="{809282C6-70B0-4FB1-B1DC-79A9CE04E03D}" Platform="Linked"/>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B1_01" ID="{EB38D3E1-3AC7-4D29-997E-DFBDE78B02C6}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B2_01" ID="{6D360F7E-AE49-4CCF-9B29-B78DB5339617}" ShortID="605795093">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B2_01" ID="{EEE021F8-A201-47A6-947F-A6ED15BC8046}">
+																							<Language>SFX</Language>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B2_01.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="1035687485"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B2_01" ID="{EEE021F8-A201-47A6-947F-A6ED15BC8046}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
 																		</RandomSequenceContainer>
-																		<RandomSequenceContainer Name="Var2" ID="{151D1A76-2697-4ADB-B3B0-56C6B0635467}" ShortID="319073395">
+																		<RandomSequenceContainer Name="Var2" ID="{C759D790-CD7A-4306-996A-B9F189ECF350}" ShortID="491353238">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4086,7 +4686,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="[BiP] Main RL Close 0001 [2024-05-24 225042]" ID="{971E9B98-6EC8-4125-8F47-91F733607BA5}" ShortID="494859013">
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B1_02" ID="{863E8612-375E-4CF8-A8DD-09B1DC98BEC7}" ShortID="474019608">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4096,21 +4696,43 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="[BiP] Main RL Close 0001 [2024-05-24 225042]" ID="{57E0F59F-A3EE-4433-9267-BB904BD04451}">
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B1_02" ID="{3A7E5D18-CBBC-4828-9BD6-C739AA1FB018}">
 																							<Language>SFX</Language>
-																							<AudioFile>[BiP] Main RL Close 0001 [2024-05-24 225042].wav</AudioFile>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B1_02.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="993778280"/>
+																								<MediaID ID="802290447"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="[BiP] Main RL Close 0001 [2024-05-24 225042]" ID="{57E0F59F-A3EE-4433-9267-BB904BD04451}" Platform="Linked"/>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B1_02" ID="{3A7E5D18-CBBC-4828-9BD6-C739AA1FB018}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B2_02" ID="{BDFF5F6D-6907-436F-9712-4E9748A9CE49}" ShortID="461742885">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B2_02" ID="{9F6E4B85-014C-409A-8366-19BED55F38E9}">
+																							<Language>SFX</Language>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B2_02.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="417150525"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B2_02" ID="{9F6E4B85-014C-409A-8366-19BED55F38E9}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
 																		</RandomSequenceContainer>
-																		<RandomSequenceContainer Name="Var3" ID="{6C9EC650-A5B9-45F9-9323-FA16AFF0ACF1}" ShortID="247449292">
+																		<RandomSequenceContainer Name="Var3" ID="{B170D1F4-0355-4222-99CF-C0EDCA7AEBFE}" ShortID="228239061">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4120,7 +4742,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="[BiP] Main RL Close 0001 [2024-05-24 225148]" ID="{E034EA68-4405-4608-85B6-A711AF791FC7}" ShortID="644466948">
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B1_03" ID="{D8C7C4EB-1463-4212-940A-BE66F8C316F0}" ShortID="456423226">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4130,21 +4752,43 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="[BiP] Main RL Close 0001 [2024-05-24 225148]" ID="{8C2243B8-6467-4CFD-981A-E20248440DEA}">
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B1_03" ID="{B0B9C91E-A2E0-4F3E-BAEE-AD9F2F41B68D}">
 																							<Language>SFX</Language>
-																							<AudioFile>[BiP] Main RL Close 0001 [2024-05-24 225148].wav</AudioFile>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B1_03.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="847732927"/>
+																								<MediaID ID="1013661680"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="[BiP] Main RL Close 0001 [2024-05-24 225148]" ID="{8C2243B8-6467-4CFD-981A-E20248440DEA}" Platform="Linked"/>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B1_03" ID="{B0B9C91E-A2E0-4F3E-BAEE-AD9F2F41B68D}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B2_03" ID="{351134C3-52FE-4633-BA20-A48BA5CDAD6C}" ShortID="921391773">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B2_03" ID="{0ACF4AAF-1EC1-4E19-9644-3303A20A03AB}">
+																							<Language>SFX</Language>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B2_03.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="559398965"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B2_03" ID="{0ACF4AAF-1EC1-4E19-9644-3303A20A03AB}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
 																		</RandomSequenceContainer>
-																		<RandomSequenceContainer Name="Var4" ID="{1AA829ED-31AD-4C81-B19B-CE5013B8084B}" ShortID="572965806">
+																		<RandomSequenceContainer Name="Var4" ID="{1C3468C1-CD00-4023-9DB8-24D91D1ECDC6}" ShortID="325567128">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4154,7 +4798,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="[BiP] Main RL Close 0001 [2024-05-24 225232]" ID="{2745FBAC-7BAC-48C1-93AC-75F90C2635B6}" ShortID="514756666">
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B1_04" ID="{523A45DF-11EF-4596-BC22-93265A6B909E}" ShortID="840038541">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4164,16 +4808,38 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="[BiP] Main RL Close 0001 [2024-05-24 225232]" ID="{9167F30F-2893-41B8-8025-D8EAF75B61A1}">
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B1_04" ID="{2A2207EC-EA01-41DF-A51D-CB42EE879F45}">
 																							<Language>SFX</Language>
-																							<AudioFile>[BiP] Main RL Close 0001 [2024-05-24 225232].wav</AudioFile>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B1_04.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="897418732"/>
+																								<MediaID ID="642141231"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="[BiP] Main RL Close 0001 [2024-05-24 225232]" ID="{9167F30F-2893-41B8-8025-D8EAF75B61A1}" Platform="Linked"/>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B1_04" ID="{2A2207EC-EA01-41DF-A51D-CB42EE879F45}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B2_04" ID="{61564EC4-31AA-4240-862C-130900FFD2B4}" ShortID="5288198">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B2_04" ID="{20C6D2FC-87DA-4826-973F-9E89A66A18D9}">
+																							<Language>SFX</Language>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B2_04.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="225437181"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B2_04" ID="{20C6D2FC-87DA-4826-973F-9E89A66A18D9}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
@@ -4188,7 +4854,7 @@
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-1</Value>
+																		<Value>-6</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -4206,11 +4872,6 @@
 															<ChildrenList>
 																<RandomSequenceContainer Name="AMB_NearTraffic_Spline_C" ID="{2983D3DB-10CD-43AA-BD62-FDD223E657E2}" ShortID="1040225923">
 																	<PropertyList>
-																		<Property Name="BypassEffect0" Type="bool">
-																			<ValueList>
-																				<Value>True</Value>
-																			</ValueList>
-																		</Property>
 																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 																		<Property Name="Highpass" Type="int16">
 																			<ValueList>
@@ -4232,12 +4893,11 @@
 																				<Value>31</Value>
 																			</ValueList>
 																		</Property>
-																		<Property Name="MakeUpGain" Type="Real64">
+																		<Property Name="MaxSoundPerInstance" Type="int16">
 																			<ValueList>
-																				<Value>-2</Value>
+																				<Value>10</Value>
 																			</ValueList>
 																		</Property>
-																		<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																		<Property Name="Pitch" Type="int32">
 																			<ModifierList>
 																				<ModifierInfo>
@@ -4253,7 +4913,7 @@
 																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 																		<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.5">
+																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
 																			<ModifierList>
 																				<ModifierInfo>
 																					<Modifier Name="" ID="{A6C6FFE4-CD91-463F-9FC2-B14F852C526C}">
@@ -4268,22 +4928,15 @@
 																		</Property>
 																		<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-2</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																		</Reference>
-																		<Reference Name="Effect0">
-																			<Custom CreatedFrom="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}">
-																				<Effect Name="Tremolo_HoverCars (Custom)" ID="{69D47864-C047-462B-A2D3-34F74ED6CF2F}" ShortID="266812614" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
-																					<PropertyList>
-																						<Property Name="ModDepth" Type="Real32" Value="60"/>
-																						<Property Name="ModFrequency" Type="Real32" Value="14"/>
-																						<Property Name="ModPWM" Type="Real32" Value="0"/>
-																						<Property Name="ModSmoothing" Type="Real32" Value="38"/>
-																					</PropertyList>
-																				</Effect>
-																			</Custom>
 																		</Reference>
 																		<Reference Name="OutputBus">
 																			<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
@@ -4300,7 +4953,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="[BiP] Main RL Close 0001 [2024-05-24 224954]" ID="{46734EA2-DBF3-491B-AE41-810D63AF8A53}" ShortID="242218690">
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B1_01" ID="{D2EC681C-B064-4190-9D73-610087EA693E}" ShortID="868450243">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4310,16 +4963,38 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="[BiP] Main RL Close 0001 [2024-05-24 224954]" ID="{1ED0D2C9-B09F-40A9-8CE3-45DE7BCCAFDC}">
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B1_01" ID="{A25489B7-D013-4ACE-9AB4-CC69DA5335E8}">
 																							<Language>SFX</Language>
-																							<AudioFile>[BiP] Main RL Close 0001 [2024-05-24 224954].wav</AudioFile>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B1_01.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="52137956"/>
+																								<MediaID ID="268123456"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="[BiP] Main RL Close 0001 [2024-05-24 224954]" ID="{1ED0D2C9-B09F-40A9-8CE3-45DE7BCCAFDC}" Platform="Linked"/>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B1_01" ID="{A25489B7-D013-4ACE-9AB4-CC69DA5335E8}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B2_01" ID="{0C33C6FF-0C13-42A3-914F-0C4E9AF46BD6}" ShortID="1001725113">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B2_01" ID="{EF187276-AB70-42FF-BE4E-D8D9546E9583}">
+																							<Language>SFX</Language>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B2_01.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="1035687485"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B2_01" ID="{EF187276-AB70-42FF-BE4E-D8D9546E9583}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
@@ -4334,7 +5009,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="[BiP] Main RL Close 0001 [2024-05-24 225042]" ID="{B981E017-4C8D-480C-A8C8-518347B0CF7C}" ShortID="150392329">
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B1_02" ID="{7E9F3963-93AE-45B1-AD0C-5A544874790D}" ShortID="650853231">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4344,16 +5019,38 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="[BiP] Main RL Close 0001 [2024-05-24 225042]" ID="{24D75E4F-E5F4-44D1-9147-DAB1E2C5FA81}">
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B1_02" ID="{31863782-86F0-43B5-9444-6FC385E56E88}">
 																							<Language>SFX</Language>
-																							<AudioFile>[BiP] Main RL Close 0001 [2024-05-24 225042].wav</AudioFile>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B1_02.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="993778280"/>
+																								<MediaID ID="802290447"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="[BiP] Main RL Close 0001 [2024-05-24 225042]" ID="{24D75E4F-E5F4-44D1-9147-DAB1E2C5FA81}" Platform="Linked"/>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B1_02" ID="{31863782-86F0-43B5-9444-6FC385E56E88}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B2_02" ID="{CFA7EED2-4308-4316-9241-D269CB09E7DA}" ShortID="905791371">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B2_02" ID="{CF4D1FCA-DB27-4AC2-B0BF-93B8AE0E8EC5}">
+																							<Language>SFX</Language>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B2_02.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="417150525"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B2_02" ID="{CF4D1FCA-DB27-4AC2-B0BF-93B8AE0E8EC5}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
@@ -4368,7 +5065,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="[BiP] Main RL Close 0001 [2024-05-24 225148]" ID="{9A7814D0-71FC-4F0B-8AFF-B1A91CB217EB}" ShortID="546596923">
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B1_03" ID="{8A958D3A-7285-4A78-BAC6-9623D45AED52}" ShortID="175671599">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4378,16 +5075,38 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="[BiP] Main RL Close 0001 [2024-05-24 225148]" ID="{D2EC3A6A-C616-47BD-B8D3-1C390D3C7DE4}">
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B1_03" ID="{A224C9E4-6726-4917-A6DC-7B10A2994C92}">
 																							<Language>SFX</Language>
-																							<AudioFile>[BiP] Main RL Close 0001 [2024-05-24 225148].wav</AudioFile>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B1_03.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="847732927"/>
+																								<MediaID ID="1013661680"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="[BiP] Main RL Close 0001 [2024-05-24 225148]" ID="{D2EC3A6A-C616-47BD-B8D3-1C390D3C7DE4}" Platform="Linked"/>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B1_03" ID="{A224C9E4-6726-4917-A6DC-7B10A2994C92}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B2_03" ID="{2A525831-9A4A-4831-8D01-34752E7C144C}" ShortID="234271376">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B2_03" ID="{E284B16F-7E58-4E8E-A4AD-B1FD6191F452}">
+																							<Language>SFX</Language>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B2_03.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="559398965"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B2_03" ID="{E284B16F-7E58-4E8E-A4AD-B1FD6191F452}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
@@ -4402,7 +5121,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="[BiP] Main RL Close 0001 [2024-05-24 225232]" ID="{B8827F2E-B381-4D88-A46A-AA18A8EA3398}" ShortID="174094742">
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B1_04" ID="{A0D5FB92-28D3-4323-A0C7-D931F840CD5A}" ShortID="731443612">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4412,16 +5131,38 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="[BiP] Main RL Close 0001 [2024-05-24 225232]" ID="{3EB1102E-DDCE-4387-AF2C-2B71DE45EAD7}">
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B1_04" ID="{4909AC03-C1C2-4F2C-854B-61B6B87DE054}">
 																							<Language>SFX</Language>
-																							<AudioFile>[BiP] Main RL Close 0001 [2024-05-24 225232].wav</AudioFile>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B1_04.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="897418732"/>
+																								<MediaID ID="642141231"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="[BiP] Main RL Close 0001 [2024-05-24 225232]" ID="{3EB1102E-DDCE-4387-AF2C-2B71DE45EAD7}" Platform="Linked"/>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B1_04" ID="{4909AC03-C1C2-4F2C-854B-61B6B87DE054}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B2_04" ID="{460079F6-F0A6-4955-9210-0ACE4228872F}" ShortID="767125453">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B2_04" ID="{362FA930-EF2C-4C16-9431-BB9A48B47A3C}">
+																							<Language>SFX</Language>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B2_04.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="225437181"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B2_04" ID="{362FA930-EF2C-4C16-9431-BB9A48B47A3C}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
@@ -4462,14 +5203,14 @@
 																<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 																<Property Name="Lowpass" Type="int16">
 																	<ValueList>
-																		<Value>30</Value>
+																		<Value>20</Value>
 																	</ValueList>
 																</Property>
 																<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-4</Value>
+																		<Value>-3</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -4485,13 +5226,8 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<RandomSequenceContainer Name="AMB_NearTraffic_Spline_L" ID="{4D5596AA-BB15-4B42-8BC9-1C433C235A53}" ShortID="914446944">
+																<RandomSequenceContainer Name="AMB_NearTraffic_Spline_L" ID="{F01864D4-1862-4F24-A9B7-81F5F7741843}" ShortID="821707840">
 																	<PropertyList>
-																		<Property Name="BypassEffect0" Type="bool">
-																			<ValueList>
-																				<Value>True</Value>
-																			</ValueList>
-																		</Property>
 																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 																		<Property Name="InitialDelay" Type="Real64">
 																			<ValueList>
@@ -4499,15 +5235,19 @@
 																			</ValueList>
 																			<ModifierList>
 																				<ModifierInfo>
-																					<Modifier Name="" ID="{D0D4C8DC-D335-45B3-B67E-0B44A2EFF8FB}"/>
+																					<Modifier Name="" ID="{A733C355-8013-4FFC-BA64-10DA661B33E0}"/>
 																				</ModifierInfo>
 																			</ModifierList>
 																		</Property>
-																		<Property Name="OverrideEffect" Type="bool" Value="True"/>
+																		<Property Name="MaxSoundPerInstance" Type="int16">
+																			<ValueList>
+																				<Value>10</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="Pitch" Type="int32">
 																			<ModifierList>
 																				<ModifierInfo>
-																					<Modifier Name="" ID="{60DF3BD8-B6E4-44B3-A037-93C17688707F}">
+																					<Modifier Name="" ID="{8525E568-F26B-4CA1-BC07-3B9099A882BE}">
 																						<PropertyList>
 																							<Property Name="Max" Type="Real64" Value="150"/>
 																							<Property Name="Min" Type="Real64" Value="-150"/>
@@ -4519,10 +5259,10 @@
 																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 																		<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
+																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.5">
 																			<ModifierList>
 																				<ModifierInfo>
-																					<Modifier Name="" ID="{1A04F591-6073-465D-8D2A-8C720A85FCA9}">
+																					<Modifier Name="" ID="{6CE5B058-7F71-4CFE-B02E-D7EBE21BB829}">
 																						<PropertyList>
 																							<Property Name="Enabled" Type="bool" Value="True"/>
 																							<Property Name="Max" Type="Real64" Value="0.5"/>
@@ -4534,29 +5274,22 @@
 																		</Property>
 																		<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-2</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																		</Reference>
-																		<Reference Name="Effect0">
-																			<Custom CreatedFrom="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}">
-																				<Effect Name="Tremolo_HoverCars (Custom)" ID="{BF641B39-06FB-4F7D-BDC4-9DC66EB75DFE}" ShortID="187275075" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
-																					<PropertyList>
-																						<Property Name="ModDepth" Type="Real32" Value="60"/>
-																						<Property Name="ModFrequency" Type="Real32" Value="14"/>
-																						<Property Name="ModPWM" Type="Real32" Value="0"/>
-																						<Property Name="ModSmoothing" Type="Real32" Value="38"/>
-																					</PropertyList>
-																				</Effect>
-																			</Custom>
 																		</Reference>
 																		<Reference Name="OutputBus">
 																			<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<RandomSequenceContainer Name="Var1" ID="{3D0EC8AF-922B-4835-B99A-1F1A04DF5404}" ShortID="718079342">
+																		<RandomSequenceContainer Name="Var1" ID="{8F182A01-E89A-445D-81AA-552EC447C64C}" ShortID="1062840023">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4566,7 +5299,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="[BiP] Main RL Close 0001 [2024-05-24 224954]" ID="{CAB29DA1-575F-4661-A5A4-EF5FEB7F1EDE}" ShortID="686758168">
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B1_01" ID="{8111C74C-4916-4AB3-9009-A1E50178C40D}" ShortID="88352268">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4576,21 +5309,43 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="[BiP] Main RL Close 0001 [2024-05-24 224954]" ID="{A11D4180-63EF-492F-BB5E-8B29A9CC6E89}">
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B1_01" ID="{F3106703-D3E0-4449-9463-D730DCCAA33E}">
 																							<Language>SFX</Language>
-																							<AudioFile>[BiP] Main RL Close 0001 [2024-05-24 224954].wav</AudioFile>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B1_01.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="52137956"/>
+																								<MediaID ID="268123456"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="[BiP] Main RL Close 0001 [2024-05-24 224954]" ID="{A11D4180-63EF-492F-BB5E-8B29A9CC6E89}" Platform="Linked"/>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B1_01" ID="{F3106703-D3E0-4449-9463-D730DCCAA33E}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B2_01" ID="{E27F0C61-5DCB-4501-805C-C26749CBFF3F}" ShortID="628521355">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B2_01" ID="{C2255B78-FAAA-44CD-B553-889E3D59C746}">
+																							<Language>SFX</Language>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B2_01.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="1035687485"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B2_01" ID="{C2255B78-FAAA-44CD-B553-889E3D59C746}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
 																		</RandomSequenceContainer>
-																		<RandomSequenceContainer Name="Var2" ID="{DFCD5462-1EB3-4394-8D8D-D50B7283ABA4}" ShortID="338833561">
+																		<RandomSequenceContainer Name="Var2" ID="{E46677DC-A30D-4064-83ED-8357C0703755}" ShortID="1052542404">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4600,7 +5355,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="[BiP] Main RL Close 0001 [2024-05-24 225042]" ID="{75270917-7B17-45CB-A2CC-B4E3CE088F46}" ShortID="905769485">
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B1_02" ID="{B03B93B9-BADF-44A9-96DE-C05F0AB503A6}" ShortID="62396043">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4610,21 +5365,43 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="[BiP] Main RL Close 0001 [2024-05-24 225042]" ID="{A205195F-EA45-4AEB-BCD8-4C44F3A58E28}">
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B1_02" ID="{ECDAB445-33A7-4CF4-B7E3-D1DF44669D91}">
 																							<Language>SFX</Language>
-																							<AudioFile>[BiP] Main RL Close 0001 [2024-05-24 225042].wav</AudioFile>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B1_02.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="993778280"/>
+																								<MediaID ID="802290447"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="[BiP] Main RL Close 0001 [2024-05-24 225042]" ID="{A205195F-EA45-4AEB-BCD8-4C44F3A58E28}" Platform="Linked"/>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B1_02" ID="{ECDAB445-33A7-4CF4-B7E3-D1DF44669D91}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B2_02" ID="{D46E33B2-32E3-4072-A729-725D738F4B67}" ShortID="877667557">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B2_02" ID="{1564E177-3865-4EEE-9166-2E054D438531}">
+																							<Language>SFX</Language>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B2_02.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="417150525"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B2_02" ID="{1564E177-3865-4EEE-9166-2E054D438531}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
 																		</RandomSequenceContainer>
-																		<RandomSequenceContainer Name="Var3" ID="{498EDAF5-C520-41F7-A1E3-EFF328737303}" ShortID="534449067">
+																		<RandomSequenceContainer Name="Var3" ID="{BA7FDE4F-A8FD-4370-AD97-06F6E3D43D2B}" ShortID="972681098">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4634,7 +5411,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="[BiP] Main RL Close 0001 [2024-05-24 225148]" ID="{3F6E0477-487F-4138-A382-F0F8EFA751A0}" ShortID="35023067">
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B1_03" ID="{A49E1473-1560-4D0D-AA3F-C470673D4B02}" ShortID="634904185">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4644,21 +5421,43 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="[BiP] Main RL Close 0001 [2024-05-24 225148]" ID="{F34D2E37-2B47-4951-B844-4B7E235D07AC}">
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B1_03" ID="{D1E7D697-ECEA-4B20-B4B3-0FF4919E26A6}">
 																							<Language>SFX</Language>
-																							<AudioFile>[BiP] Main RL Close 0001 [2024-05-24 225148].wav</AudioFile>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B1_03.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="847732927"/>
+																								<MediaID ID="1013661680"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="[BiP] Main RL Close 0001 [2024-05-24 225148]" ID="{F34D2E37-2B47-4951-B844-4B7E235D07AC}" Platform="Linked"/>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B1_03" ID="{D1E7D697-ECEA-4B20-B4B3-0FF4919E26A6}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B2_03" ID="{0B4831C0-4A20-4DDC-9825-9F205AFACE3B}" ShortID="23312219">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B2_03" ID="{4E188EFF-E165-4205-B0A8-8FF419E18142}">
+																							<Language>SFX</Language>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B2_03.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="559398965"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B2_03" ID="{4E188EFF-E165-4205-B0A8-8FF419E18142}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
 																		</RandomSequenceContainer>
-																		<RandomSequenceContainer Name="Var4" ID="{CE748A12-1740-49C6-A2F9-1DBEE5A08FD4}" ShortID="1057190430">
+																		<RandomSequenceContainer Name="Var4" ID="{F950BBCA-7DB8-4E2B-9CB9-A44B0C433B41}" ShortID="896510430">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4668,7 +5467,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="[BiP] Main RL Close 0001 [2024-05-24 225232]" ID="{E14866B2-D998-4CFF-BC4D-D591A7BCB7EC}" ShortID="386815955">
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B1_04" ID="{D17DDBAD-C7DF-4090-8085-AEACD8E9385F}" ShortID="860836901">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4678,16 +5477,38 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="[BiP] Main RL Close 0001 [2024-05-24 225232]" ID="{72DC9E6E-0DF5-4854-9151-B063EBB05417}">
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B1_04" ID="{2D07E404-F053-456D-A867-DF072439C631}">
 																							<Language>SFX</Language>
-																							<AudioFile>[BiP] Main RL Close 0001 [2024-05-24 225232].wav</AudioFile>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B1_04.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="897418732"/>
+																								<MediaID ID="642141231"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="[BiP] Main RL Close 0001 [2024-05-24 225232]" ID="{72DC9E6E-0DF5-4854-9151-B063EBB05417}" Platform="Linked"/>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B1_04" ID="{2D07E404-F053-456D-A867-DF072439C631}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="AMB_HoverCars_DistantTraffic_B2_04" ID="{FE340A35-7E52-4BFC-B310-C0CC84F4FC12}" ShortID="603733403">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AMB_HoverCars_DistantTraffic_B2_04" ID="{A2BAD899-E14F-460E-94C0-AFF876536BC0}">
+																							<Language>SFX</Language>
+																							<AudioFile>AMB_HoverCars_DistantTraffic_B2_04.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="225437181"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AMB_HoverCars_DistantTraffic_B2_04" ID="{A2BAD899-E14F-460E-94C0-AFF876536BC0}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
