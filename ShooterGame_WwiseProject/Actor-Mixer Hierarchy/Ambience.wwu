@@ -135,6 +135,7 @@
 																<Value>1</Value>
 															</ValueList>
 														</Property>
+														<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
@@ -835,7 +836,7 @@
 														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-3</Value>
+																<Value>-5</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1178,6 +1179,7 @@
 													</ValueList>
 												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -1284,9 +1286,11 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="AMB_WindGusts_LP" ID="{C95996A4-33BF-4957-A310-E96D0EC57040}" ShortID="1018156113">
+														<Sound Name="AMB_WindGusts_Spline_LP" ID="{C95996A4-33BF-4957-A310-E96D0EC57040}" ShortID="1018156113">
 															<PropertyList>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
 																		<Value>-15</Value>
@@ -1327,8 +1331,22 @@
 												<ActorMixer Name="AMB_WindGust_Static" ID="{F7BB34AC-E66F-4B60-8E5A-3A60DA06AF9D}" ShortID="564955212">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
 														<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
@@ -1734,10 +1752,17 @@
 											<ChildrenList>
 												<ActorMixer Name="TrafficStatic" ID="{63363BAE-5037-4EFA-8A40-EDD31C01933F}" ShortID="950961820">
 													<PropertyList>
-														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 														<Property Name="MaxSoundPerInstance" Type="int16">
 															<ValueList>
-																<Value>6</Value>
+																<Value>4</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
 															</ValueList>
 														</Property>
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -1755,15 +1780,21 @@
 															<PropertyList>
 																<Property Name="3DPosition" Type="int16" Value="1"/>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
 																<Property Name="Highpass" Type="int16">
 																	<ValueList>
 																		<Value>13</Value>
 																	</ValueList>
 																</Property>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>4</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-4</Value>
+																		<Value>-6</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -2685,11 +2716,6 @@
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-																<Property Name="MakeUpGain" Type="Real64">
-																	<ValueList>
-																		<Value>3</Value>
-																	</ValueList>
-																</Property>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 															</PropertyList>
 															<ReferenceList>
@@ -2748,6 +2774,11 @@
 																		<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 																		<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-2</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Attenuation">
@@ -2765,11 +2796,6 @@
 																			<PropertyList>
 																				<Property Name="3DPosition" Type="int16" Value="1"/>
 																				<Property Name="3DSpatialization" Type="int16" Value="1"/>
-																				<Property Name="MakeUpGain" Type="Real64">
-																					<ValueList>
-																						<Value>4</Value>
-																					</ValueList>
-																				</Property>
 																				<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 																				<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																				<Property Name="PlayMechanismLoopCount" Type="int32" Value="1"/>
@@ -2831,11 +2857,6 @@
 																									</Modifier>
 																								</ModifierInfo>
 																							</ModifierList>
-																						</Property>
-																						<Property Name="Volume" Type="Real64">
-																							<ValueList>
-																								<Value>-12</Value>
-																							</ValueList>
 																						</Property>
 																					</PropertyList>
 																					<ReferenceList>
@@ -3019,11 +3040,6 @@
 																								</ModifierInfo>
 																							</ModifierList>
 																						</Property>
-																						<Property Name="Volume" Type="Real64">
-																							<ValueList>
-																								<Value>-12</Value>
-																							</ValueList>
-																						</Property>
 																					</PropertyList>
 																					<ReferenceList>
 																						<Reference Name="Attenuation">
@@ -3172,11 +3188,6 @@
 																								</ModifierInfo>
 																							</ModifierList>
 																						</Property>
-																						<Property Name="Volume" Type="Real64">
-																							<ValueList>
-																								<Value>-12</Value>
-																							</ValueList>
-																						</Property>
 																					</PropertyList>
 																					<ReferenceList>
 																						<Reference Name="Attenuation">
@@ -3324,11 +3335,6 @@
 																									</Modifier>
 																								</ModifierInfo>
 																							</ModifierList>
-																						</Property>
-																						<Property Name="Volume" Type="Real64">
-																							<ValueList>
-																								<Value>-12</Value>
-																							</ValueList>
 																						</Property>
 																					</PropertyList>
 																					<ReferenceList>
@@ -4512,7 +4518,12 @@
 												</ActorMixer>
 												<ActorMixer Name="TrafficDynamic" ID="{A13FB308-D138-4092-974C-9AB32496AE64}" ShortID="615673065">
 													<PropertyList>
-														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
 														<Property Name="MaxSoundPerInstance" Type="int16">
 															<ValueList>
 																<Value>6</Value>
@@ -4531,14 +4542,32 @@
 														<ActorMixer Name="AMB_DistantTraffic_R" ID="{06C1185A-08EB-4C70-A5C0-6E9BE234D91B}" ShortID="483660498">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
 																<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 																<Property Name="Highpass" Type="int16">
 																	<ValueList>
 																		<Value>27</Value>
 																	</ValueList>
 																</Property>
+																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>10</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+																<Property Name="Pitch" Type="int32">
+																	<ValueList>
+																		<Value>200</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
 																		<Value>-1</Value>
@@ -4607,7 +4636,7 @@
 																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>-9</Value>
+																				<Value>-6</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -4621,6 +4650,21 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<RandomSequenceContainer Name="Var1" ID="{02A853C6-9340-4CED-8B3A-D2F07ED923B5}" ShortID="1031930368">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{E358527C-B9BA-4073-8D10-7ED58B7AF9C6}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="2"/>
+																									<Property Name="Min" Type="Real64" Value="-2"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4677,6 +4721,21 @@
 																			</ChildrenList>
 																		</RandomSequenceContainer>
 																		<RandomSequenceContainer Name="Var2" ID="{C759D790-CD7A-4306-996A-B9F189ECF350}" ShortID="491353238">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{F8B80BB0-A693-428D-8628-BAB1FD87C98A}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="2"/>
+																									<Property Name="Min" Type="Real64" Value="-2"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4733,6 +4792,21 @@
 																			</ChildrenList>
 																		</RandomSequenceContainer>
 																		<RandomSequenceContainer Name="Var3" ID="{B170D1F4-0355-4222-99CF-C0EDCA7AEBFE}" ShortID="228239061">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{BF798620-3BDC-4E18-90BE-4CEB2AF1F0FB}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="2"/>
+																									<Property Name="Min" Type="Real64" Value="-2"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4789,6 +4863,21 @@
 																			</ChildrenList>
 																		</RandomSequenceContainer>
 																		<RandomSequenceContainer Name="Var4" ID="{1C3468C1-CD00-4023-9DB8-24D91D1ECDC6}" ShortID="325567128">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{3DF2A6AF-D86F-42A5-B99B-D532725B92A1}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="2"/>
+																									<Property Name="Min" Type="Real64" Value="-2"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -4851,10 +4940,23 @@
 														<ActorMixer Name="AMB_DistantTraffic_C" ID="{10423399-4DC3-45C1-A5B6-499F35B79710}" ShortID="983807577">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>6</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-6</Value>
+																		<Value>-4</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -4944,6 +5046,21 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<RandomSequenceContainer Name="Var1" ID="{CE53613C-7FE9-4D6A-B6C4-443F74ED927B}" ShortID="796343735">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{DC204148-E3C1-436F-BB83-CC754F6D7A5A}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="2"/>
+																									<Property Name="Min" Type="Real64" Value="-2"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5000,6 +5117,21 @@
 																			</ChildrenList>
 																		</RandomSequenceContainer>
 																		<RandomSequenceContainer Name="Var2" ID="{29DC573B-0FFD-4403-886F-DE1425D38066}" ShortID="781603525">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{A16C845D-4849-4645-8A9E-0B42EAAD3595}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="2"/>
+																									<Property Name="Min" Type="Real64" Value="-2"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5056,6 +5188,21 @@
 																			</ChildrenList>
 																		</RandomSequenceContainer>
 																		<RandomSequenceContainer Name="Var3" ID="{494CF0A5-3369-4150-86F8-7D84CED71EAB}" ShortID="887450299">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{2850B164-6DCE-4369-9648-8CEFC7BB5C2B}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="2"/>
+																									<Property Name="Min" Type="Real64" Value="-2"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5112,6 +5259,21 @@
 																			</ChildrenList>
 																		</RandomSequenceContainer>
 																		<RandomSequenceContainer Name="Var4" ID="{070DECEE-98B9-4DAF-8C91-1C661A95D007}" ShortID="1056135913">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{D7FFE4F0-4FD6-4586-BE15-352A84FEC864}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="2"/>
+																									<Property Name="Min" Type="Real64" Value="-2"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5200,14 +5362,32 @@
 														<ActorMixer Name="AMB_DistantTraffic_L" ID="{37458915-0974-4529-AB64-4C2346C91133}" ShortID="713891286">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
 																<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 																<Property Name="Lowpass" Type="int16">
 																	<ValueList>
 																		<Value>20</Value>
 																	</ValueList>
 																</Property>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>6</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="OverrideEffect" Type="bool" Value="True"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+																<Property Name="Pitch" Type="int32">
+																	<ValueList>
+																		<Value>-100</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
 																		<Value>-3</Value>
@@ -5290,6 +5470,21 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<RandomSequenceContainer Name="Var1" ID="{8F182A01-E89A-445D-81AA-552EC447C64C}" ShortID="1062840023">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{1D34E965-5A23-4D8E-82DE-1E2DFDA1F944}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="2"/>
+																									<Property Name="Min" Type="Real64" Value="-2"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5346,6 +5541,21 @@
 																			</ChildrenList>
 																		</RandomSequenceContainer>
 																		<RandomSequenceContainer Name="Var2" ID="{E46677DC-A30D-4064-83ED-8357C0703755}" ShortID="1052542404">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{73D8EAAC-D892-4E38-BB02-2FB3485707A3}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="2"/>
+																									<Property Name="Min" Type="Real64" Value="-2"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5402,6 +5612,21 @@
 																			</ChildrenList>
 																		</RandomSequenceContainer>
 																		<RandomSequenceContainer Name="Var3" ID="{BA7FDE4F-A8FD-4370-AD97-06F6E3D43D2B}" ShortID="972681098">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{A143429D-228D-4F57-AC56-CE5D37C6A861}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="2"/>
+																									<Property Name="Min" Type="Real64" Value="-2"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5458,6 +5683,21 @@
 																			</ChildrenList>
 																		</RandomSequenceContainer>
 																		<RandomSequenceContainer Name="Var4" ID="{F950BBCA-7DB8-4E2B-9CB9-A44B0C433B41}" ShortID="896510430">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{D66AC3E1-8585-4239-A451-B8755F2148F5}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="2"/>
+																									<Property Name="Min" Type="Real64" Value="-2"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5545,7 +5785,21 @@
 										</ActorMixer>
 										<ActorMixer Name="AMB_ScifiDrones" ID="{F8CA7FF3-FE47-4BB4-980E-7E9296E98800}" ShortID="1041390785">
 											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -5573,7 +5827,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-7</Value>
+																<Value>-10</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -6099,7 +6353,7 @@
 											<ChildrenList>
 												<Folder Name="MainEntrance" ID="{2BAB8F20-EBCF-493D-88C2-BA1D2813F1EA}" ShortID="757893950">
 													<ChildrenList>
-														<ActorMixer Name="AMB_RoomGusts_Interior" ID="{8375AB3E-FC4A-4EBB-AB7A-46DEC47375DA}" ShortID="806700607">
+														<ActorMixer Name="AMB_RoomGusts_MainEntrance_Int" ID="{8375AB3E-FC4A-4EBB-AB7A-46DEC47375DA}" ShortID="806700607">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -6163,7 +6417,7 @@
 																</Sound>
 															</ChildrenList>
 														</ActorMixer>
-														<ActorMixer Name="AMB_RoomGusts_Exterior" ID="{36DC1473-9A2A-4E8C-B365-2B8F6181591F}" ShortID="578954436">
+														<ActorMixer Name="AMB_RoomGusts_MainEntrance_Ext" ID="{36DC1473-9A2A-4E8C-B365-2B8F6181591F}" ShortID="578954436">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>

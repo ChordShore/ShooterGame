@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2263523777" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{AB900349-FB26-F4F6-0521-69FE7483A4B2}">
+		<SoundBank Id="2263523777" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{88E9097D-A46C-F362-C966-51F0A12A75AA}">
 			<ObjectPath>AMB_DistantTraffic_L</ObjectPath>
 			<ShortName>AMB_DistantTraffic_L</ShortName>
 			<Path>Event/AMB_DistantTraffic_L.bnk</Path>
@@ -47,11 +47,6 @@
 					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem</CachePath>
 				</File>
 			</Media>
-			<Plugins>
-				<Custom>
-					<Plugin Id="503513707" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_Dynamic\AMB_HoverCars\TrafficDynamic\AMB_DistantTraffic_L\AMB_NearTraffic_Spline_L\Tremolo_HoverCars (Custom)" GUID="{4D62765A-4E6C-47D3-A59C-E09F3D85DE54}" LibName="Wwise Tremolo" LibId="8585219"/>
-				</Custom>
-			</Plugins>
 			<Events>
 				<Event Id="2263523777" Name="AMB_DistantTraffic_L" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficDynamic\AMB_DistantTraffic_L" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" MaxAttenuation="5000" DurationType="Infinite">
 					<MediaRefs>
@@ -64,14 +59,9 @@
 						<MediaRef Id="1013661680"/>
 						<MediaRef Id="1035687485"/>
 					</MediaRefs>
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="503513707"/>
-						</Custom>
-					</PluginRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{255EE0E8-B83C-3C4D-AD3E-A2FD485DDA0A}</FileHash>
+	<FileHash>{B0E1BE48-BB8E-AE71-6D92-8AFC1933FA04}</FileHash>
 </SoundBanksInfo>

@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}",
     "Language": "SFX",
-    "Hash": "{108B12F4-FC24-2350-0ECC-7A146EF47EDB}",
+    "Hash": "{AC46E624-9B35-4B29-744F-81F983273712}",
     "ObjectPath": "AMB_DistantTraffic_R",
     "ShortName": "AMB_DistantTraffic_R",
     "Path": "Event/AMB_DistantTraffic_R.bnk",
@@ -88,25 +88,13 @@
       "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem"
      }
     ],
-    "Plugins": {
-     "Custom": [
-      {
-       "Id": "699226050",
-       "Name": "Tremolo_HoverCars (Custom)",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Emitters\\Highrise\\AMB_Dynamic\\AMB_HoverCars\\TrafficDynamic\\AMB_DistantTraffic_R\\AMB_NearTraffic_Spline_R\\Tremolo_HoverCars (Custom)",
-       "GUID": "{BEBE6193-9F16-4CF5-A797-5C28C30211F1}",
-       "LibName": "Wwise Tremolo",
-       "LibId": "8585219"
-      }
-     ]
-    },
     "Events": [
      {
       "Id": "2263523807",
       "Name": "AMB_DistantTraffic_R",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\HoverCars\\TrafficDynamic\\AMB_DistantTraffic_R",
       "GUID": "{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}",
-      "MaxAttenuation": "5000",
+      "MaxAttenuation": "4500",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -133,18 +121,11 @@
        {
         "Id": "1035687485"
        }
-      ],
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "699226050"
-        }
-       ]
-      }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{1903225E-B3FC-482A-9E06-440B780FF32D}"
+  "FileHash": "{1F3D49D1-63DB-E189-7C05-6E9A34F0712F}"
  }
 }

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{4893B8B4-B74C-58D0-9BE1-9DD4D4E02CFE}",
+    "Hash": "{1B00A8ED-C175-2212-51D5-0B99F564A2B1}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -257,16 +257,6 @@
      }
     ],
     "Plugins": {
-     "Custom": [
-      {
-       "Id": "266812614",
-       "Name": "Tremolo_HoverCars (Custom)",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Emitters\\Highrise\\AMB_Dynamic\\AMB_HoverCars\\TrafficDynamic\\AMB_DistantTraffic_C\\AMB_NearTraffic_Spline_C\\Tremolo_HoverCars (Custom)",
-       "GUID": "{69D47864-C047-462B-A2D3-34F74ED6CF2F}",
-       "LibName": "Wwise Tremolo",
-       "LibId": "8585219"
-      }
-     ],
      "ShareSets": [
       {
        "Id": "2781261543",
@@ -324,14 +314,7 @@
        {
         "Id": "1035687485"
        }
-      ],
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "266812614"
-        }
-       ]
-      }
+      ]
      },
      {
       "Id": "2448096698",
@@ -470,7 +453,7 @@
       "Name": "AMB_UnrealHolograph",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph",
       "GUID": "{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}",
-      "MaxAttenuation": "9500",
+      "MaxAttenuation": "9000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -483,7 +466,7 @@
       "Name": "AMB_UnrealHolograph_FadeIn",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph_FadeIn",
       "GUID": "{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}",
-      "MaxAttenuation": "9500",
+      "MaxAttenuation": "9000",
       "DurationType": "OneShot",
       "DurationMin": "11.875",
       "DurationMax": "11.875",
@@ -501,7 +484,7 @@
       "Name": "AMB_UnrealHolograph_FadeOut",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\UnrealHolograph\\AMB_UnrealHolograph_FadeOut",
       "GUID": "{E3EEEB5D-9B58-43DF-8E87-C18F76699081}",
-      "MaxAttenuation": "9500",
+      "MaxAttenuation": "9000",
       "DurationType": "OneShot",
       "DurationMin": "11.375",
       "DurationMax": "11.375",
@@ -532,7 +515,7 @@
       "Name": "AMB_WindGusts_Spline",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\WindGusts\\AMB_WindGusts_Spline",
       "GUID": "{B1473C73-10B0-46BB-AA72-8ABA06D25E40}",
-      "MaxAttenuation": "3500",
+      "MaxAttenuation": "3000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -543,6 +526,6 @@
     ]
    }
   ],
-  "FileHash": "{15B37E83-DE0F-5D91-3009-60D08316B74A}"
+  "FileHash": "{CC9A029C-6F59-B984-69E6-7036E21C622C}"
  }
 }

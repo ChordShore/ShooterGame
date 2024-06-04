@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{4893B8B4-B74C-58D0-9BE1-9DD4D4E02CFE}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{1B00A8ED-C175-2212-51D5-0B99F564A2B1}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -136,9 +136,6 @@
 				</File>
 			</Media>
 			<Plugins>
-				<Custom>
-					<Plugin Id="266812614" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_Dynamic\AMB_HoverCars\TrafficDynamic\AMB_DistantTraffic_C\AMB_NearTraffic_Spline_C\Tremolo_HoverCars (Custom)" GUID="{69D47864-C047-462B-A2D3-34F74ED6CF2F}" LibName="Wwise Tremolo" LibId="8585219"/>
-				</Custom>
 				<ShareSets>
 					<Plugin Id="2781261543" Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Slow_Release" GUID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" LibName="Wwise Peak Limiter" LibId="7208963"/>
 				</ShareSets>
@@ -160,11 +157,6 @@
 						<MediaRef Id="1013661680"/>
 						<MediaRef Id="1035687485"/>
 					</MediaRefs>
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="266812614"/>
-						</Custom>
-					</PluginRefs>
 				</Event>
 				<Event Id="2448096698" Name="AMB_Highrise_Atrium" ObjectPath="\Events\Ambience\Rooms\Highrise\Outdoors\AMB_Highrise_Atrium" GUID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}" MaxAttenuation="2000" DurationType="Infinite">
 					<MediaRefs>
@@ -220,18 +212,18 @@
 						<MediaRef Id="515725994"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="9500" DurationType="Infinite">
+				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="9000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="456057735"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeIn" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="9500" DurationType="OneShot" DurationMin="11.875" DurationMax="11.875">
+				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeIn" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="9000" DurationType="OneShot" DurationMin="11.875" DurationMax="11.875">
 					<MediaRefs>
 						<MediaRef Id="619272686"/>
 						<MediaRef Id="864735500"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="9500" DurationType="OneShot" DurationMin="11.375" DurationMax="11.375">
+				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="9000" DurationType="OneShot" DurationMin="11.375" DurationMax="11.375">
 					<MediaRefs>
 						<MediaRef Id="425050702"/>
 						<MediaRef Id="864735500"/>
@@ -242,14 +234,14 @@
 						<MediaRef Id="218188666"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1571611116" Name="AMB_WindGusts_Spline" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\WindGusts\AMB_WindGusts_Spline" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="3500" DurationType="Infinite">
+				<Event Id="1571611116" Name="AMB_WindGusts_Spline" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\WindGusts\AMB_WindGusts_Spline" GUID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}" MaxAttenuation="3000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="928573754"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="123926568" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{3E05AFF3-F5BA-6B4C-AE15-0A3F7022E954}">
+		<SoundBank Id="123926568" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{05BCE8D5-FA06-D4DD-C446-15CCB3139F02}">
 			<ObjectPath>AMB_NearTraffic_R</ObjectPath>
 			<ShortName>AMB_NearTraffic_R</ShortName>
 			<Path>Event/AMB_NearTraffic_R.bnk</Path>
@@ -321,7 +313,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="123926568" Name="AMB_NearTraffic_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficStatic\AMB_NearTraffic_R" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" MaxAttenuation="4000" DurationType="Infinite">
+				<Event Id="123926568" Name="AMB_NearTraffic_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficStatic\AMB_NearTraffic_R" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" MaxAttenuation="3500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="17785737"/>
 						<MediaRef Id="250285595"/>
@@ -340,7 +332,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="123926582" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{F418A5FD-E783-5BA3-8E97-8DA8FD1EB2DD}">
+		<SoundBank Id="123926582" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{94778C6C-237C-6C6F-9950-1CD5D2888E20}">
 			<ObjectPath>AMB_NearTraffic_L</ObjectPath>
 			<ShortName>AMB_NearTraffic_L</ShortName>
 			<Path>Event/AMB_NearTraffic_L.bnk</Path>
@@ -431,7 +423,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="123926585" Type="Event" GUID="{C5ED1BFB-22A9-41F4-A56D-7095120AA1D2}" Language="SFX" Hash="{667F9036-BF07-BBA7-12E1-94914FC9D713}">
+		<SoundBank Id="123926585" Type="Event" GUID="{C5ED1BFB-22A9-41F4-A56D-7095120AA1D2}" Language="SFX" Hash="{9D22070A-E4ED-75C6-50C2-F59771B701BC}">
 			<ObjectPath>AMB_NearTraffic_C</ObjectPath>
 			<ShortName>AMB_NearTraffic_C</ShortName>
 			<Path>Event/AMB_NearTraffic_C.bnk</Path>
@@ -563,7 +555,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{B8047FA4-DDDE-61FE-B271-E36ED1FF3EB1}">
+		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{9CF1E721-A6BC-0C18-2D0C-D5CFE1DEB26F}">
 			<ObjectPath>AMB_ScifiDrones</ObjectPath>
 			<ShortName>AMB_ScifiDrones</ShortName>
 			<Path>Event/AMB_ScifiDrones.bnk</Path>
@@ -738,7 +730,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{2D969205-F825-B556-D02A-0D2EE87BC95A}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{25D3F0A9-4D69-CC4B-4DEB-CC9C4590EE6D}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -976,7 +968,7 @@
 				<Event Id="4165048480" Name="GL_Shoot_Fire_OS" ObjectPath="\Events\Weapons\Shoot\GL_Shoot_Fire_OS" GUID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1478305162" Type="Event" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" Language="SFX" Hash="{42883BD9-CE42-CEDA-3DC2-A74DC513B103}">
+		<SoundBank Id="1478305162" Type="Event" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" Language="SFX" Hash="{F9653DFA-91F1-AC66-4D56-251DD23B3E6B}">
 			<ObjectPath>AMB_WindGusts_Static_Play</ObjectPath>
 			<ShortName>AMB_WindGusts_Static_Play</ShortName>
 			<Path>Event/AMB_WindGusts_Static_Play.bnk</Path>
@@ -1076,7 +1068,7 @@
 				<Event Id="3787053379" Name="ITM_Health_Pickup" ObjectPath="\Events\Items\ITM_Health_Pickup" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2263523777" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{AB900349-FB26-F4F6-0521-69FE7483A4B2}">
+		<SoundBank Id="2263523777" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{88E9097D-A46C-F362-C966-51F0A12A75AA}">
 			<ObjectPath>AMB_DistantTraffic_L</ObjectPath>
 			<ShortName>AMB_DistantTraffic_L</ShortName>
 			<Path>Event/AMB_DistantTraffic_L.bnk</Path>
@@ -1122,11 +1114,6 @@
 					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem</CachePath>
 				</File>
 			</Media>
-			<Plugins>
-				<Custom>
-					<Plugin Id="503513707" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_Dynamic\AMB_HoverCars\TrafficDynamic\AMB_DistantTraffic_L\AMB_NearTraffic_Spline_L\Tremolo_HoverCars (Custom)" GUID="{4D62765A-4E6C-47D3-A59C-E09F3D85DE54}" LibName="Wwise Tremolo" LibId="8585219"/>
-				</Custom>
-			</Plugins>
 			<Events>
 				<Event Id="2263523777" Name="AMB_DistantTraffic_L" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficDynamic\AMB_DistantTraffic_L" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" MaxAttenuation="5000" DurationType="Infinite">
 					<MediaRefs>
@@ -1139,15 +1126,10 @@
 						<MediaRef Id="1013661680"/>
 						<MediaRef Id="1035687485"/>
 					</MediaRefs>
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="503513707"/>
-						</Custom>
-					</PluginRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2263523807" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{108B12F4-FC24-2350-0ECC-7A146EF47EDB}">
+		<SoundBank Id="2263523807" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{AC46E624-9B35-4B29-744F-81F983273712}">
 			<ObjectPath>AMB_DistantTraffic_R</ObjectPath>
 			<ShortName>AMB_DistantTraffic_R</ShortName>
 			<Path>Event/AMB_DistantTraffic_R.bnk</Path>
@@ -1193,13 +1175,8 @@
 					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem</CachePath>
 				</File>
 			</Media>
-			<Plugins>
-				<Custom>
-					<Plugin Id="699226050" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_Dynamic\AMB_HoverCars\TrafficDynamic\AMB_DistantTraffic_R\AMB_NearTraffic_Spline_R\Tremolo_HoverCars (Custom)" GUID="{BEBE6193-9F16-4CF5-A797-5C28C30211F1}" LibName="Wwise Tremolo" LibId="8585219"/>
-				</Custom>
-			</Plugins>
 			<Events>
-				<Event Id="2263523807" Name="AMB_DistantTraffic_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficDynamic\AMB_DistantTraffic_R" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" MaxAttenuation="5000" DurationType="Infinite">
+				<Event Id="2263523807" Name="AMB_DistantTraffic_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficDynamic\AMB_DistantTraffic_R" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" MaxAttenuation="4500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="225437181"/>
 						<MediaRef Id="268123456"/>
@@ -1210,15 +1187,10 @@
 						<MediaRef Id="1013661680"/>
 						<MediaRef Id="1035687485"/>
 					</MediaRefs>
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="699226050"/>
-						</Custom>
-					</PluginRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{E17C5586-F9D2-1ABE-9E56-753D2B601E5D}">
+		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{D7C2A8F9-8CEC-5AFC-7A3D-820CC2E6A425}">
 			<ObjectPath>AMB_EnergyPillar_C</ObjectPath>
 			<ShortName>AMB_EnergyPillar_C</ShortName>
 			<Path>Event/AMB_EnergyPillar_C.bnk</Path>
@@ -1279,11 +1251,6 @@
 					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem</CachePath>
 				</File>
 			</Media>
-			<Plugins>
-				<Custom>
-					<Plugin Id="266812614" Name="Tremolo_HoverCars (Custom)" ObjectPath="\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_Dynamic\AMB_HoverCars\TrafficDynamic\AMB_DistantTraffic_C\AMB_NearTraffic_Spline_C\Tremolo_HoverCars (Custom)" GUID="{69D47864-C047-462B-A2D3-34F74ED6CF2F}" LibName="Wwise Tremolo" LibId="8585219"/>
-				</Custom>
-			</Plugins>
 			<Events>
 				<Event Id="2333830952" Name="AMB_EnergyPillar_C" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_EnergyPillar_C" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" MaxAttenuation="4500" DurationType="Infinite">
 					<MediaRefs>
@@ -1299,15 +1266,10 @@
 						<MediaRef Id="1013661680"/>
 						<MediaRef Id="1035687485"/>
 					</MediaRefs>
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="266812614"/>
-						</Custom>
-					</PluginRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2333830969" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{BE96E5FF-AB3A-C7F9-6988-A5A140C75B0B}">
+		<SoundBank Id="2333830969" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{DBEA2374-7A32-6908-2CC0-120E3735BD2A}">
 			<ObjectPath>AMB_EnergyPillar_R</ObjectPath>
 			<ShortName>AMB_EnergyPillar_R</ShortName>
 			<Path>Event/AMB_EnergyPillar_R.bnk</Path>
@@ -1324,7 +1286,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2333830969" Name="AMB_EnergyPillar_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_EnergyPillar_R" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" MaxAttenuation="1500" DurationType="Infinite">
+				<Event Id="2333830969" Name="AMB_EnergyPillar_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\AMB_EnergyPillar_R" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" MaxAttenuation="2200" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="551839656"/>
 						<MediaRef Id="638307787"/>
@@ -1332,7 +1294,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{33547EFD-1CDE-ADEF-7E2F-ABF6FB5AE8B8}">
+		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{8B386489-0AC9-B9D6-76E2-EFEE5BF2E723}">
 			<ObjectPath>\SoundBanks\Default Work Unit\EventProbe</ObjectPath>
 			<ShortName>EventProbe</ShortName>
 			<Path>EventProbe.bnk</Path>
@@ -1343,7 +1305,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="9500" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="9000" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1041093470"/>
@@ -1468,5 +1430,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D66599BC-A252-7181-DDA0-55D0268BDBE1}</FileHash>
+	<FileHash>{903C594C-A9B4-3354-A0B1-4D9F65EC4098}</FileHash>
 </SoundBanksInfo>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="123926568" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{3E05AFF3-F5BA-6B4C-AE15-0A3F7022E954}">
+		<SoundBank Id="123926568" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{05BCE8D5-FA06-D4DD-C446-15CCB3139F02}">
 			<ObjectPath>AMB_NearTraffic_R</ObjectPath>
 			<ShortName>AMB_NearTraffic_R</ShortName>
 			<Path>Event/AMB_NearTraffic_R.bnk</Path>
@@ -73,7 +73,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="123926568" Name="AMB_NearTraffic_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficStatic\AMB_NearTraffic_R" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" MaxAttenuation="4000" DurationType="Infinite">
+				<Event Id="123926568" Name="AMB_NearTraffic_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficStatic\AMB_NearTraffic_R" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" MaxAttenuation="3500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="17785737"/>
 						<MediaRef Id="250285595"/>
@@ -93,5 +93,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5CB5D08B-F932-CA20-4DD1-5BC7039C4C06}</FileHash>
+	<FileHash>{79D41973-A0EB-8509-9C64-C090E39C84FE}</FileHash>
 </SoundBanksInfo>

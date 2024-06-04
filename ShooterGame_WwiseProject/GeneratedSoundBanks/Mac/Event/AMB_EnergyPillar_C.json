@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
     "Language": "SFX",
-    "Hash": "{E17C5586-F9D2-1ABE-9E56-753D2B601E5D}",
+    "Hash": "{D7C2A8F9-8CEC-5AFC-7A3D-820CC2E6A425}",
     "ObjectPath": "AMB_EnergyPillar_C",
     "ShortName": "AMB_EnergyPillar_C",
     "Path": "Event/AMB_EnergyPillar_C.bnk",
@@ -115,18 +115,6 @@
       "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem"
      }
     ],
-    "Plugins": {
-     "Custom": [
-      {
-       "Id": "266812614",
-       "Name": "Tremolo_HoverCars (Custom)",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Ambience\\AMB_Emitters\\Highrise\\AMB_Dynamic\\AMB_HoverCars\\TrafficDynamic\\AMB_DistantTraffic_C\\AMB_NearTraffic_Spline_C\\Tremolo_HoverCars (Custom)",
-       "GUID": "{69D47864-C047-462B-A2D3-34F74ED6CF2F}",
-       "LibName": "Wwise Tremolo",
-       "LibId": "8585219"
-      }
-     ]
-    },
     "Events": [
      {
       "Id": "2333830952",
@@ -169,18 +157,11 @@
        {
         "Id": "1035687485"
        }
-      ],
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "266812614"
-        }
-       ]
-      }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{E010B09E-6198-9826-0E2A-8EF9178D0195}"
+  "FileHash": "{8F1798A0-9DC1-2670-2931-1C98DA64B02F}"
  }
 }
