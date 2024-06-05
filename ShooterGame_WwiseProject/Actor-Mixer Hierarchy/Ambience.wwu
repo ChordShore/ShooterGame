@@ -2712,908 +2712,6 @@
 																</Position>
 															</PositioningInfo>
 														</ActorMixer>
-														<ActorMixer Name="AMB_NearTraffic_R" ID="{40EC6069-75E9-45C6-B4FF-8467526B64FC}" ShortID="676216962">
-															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="1"/>
-																<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-																<Property Name="OverridePositioning" Type="bool" Value="True"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="ATN_HoverCar_NearTraffic_R" ID="{0ED93735-9E3B-4A5E-887C-7AC5FC18556B}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-																</Reference>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<RandomSequenceContainer Name="AMB_HoverCars_RL_LP_R" ID="{CB4F15D3-C9E8-4FFD-900D-E17BC7E57100}" ShortID="748298866">
-																	<PropertyList>
-																		<Property Name="3DPosition" Type="int16" Value="1"/>
-																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
-																		<Property Name="InitialDelay" Type="Real64">
-																			<ValueList>
-																				<Value>1.5</Value>
-																			</ValueList>
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{22BB087E-B161-46DB-A918-4F80815815B6}"/>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																		<Property Name="Pitch" Type="int32">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{7D1911EA-3509-49C0-9194-56A1C48DCFA3}">
-																						<PropertyList>
-																							<Property Name="Max" Type="Real64" Value="150"/>
-																							<Property Name="Min" Type="Real64" Value="-150"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-																		<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="6">
-																			<ModifierList>
-																				<ModifierInfo>
-																					<Modifier Name="" ID="{696EBCA5-07E7-407D-A420-7F6B3421DB4A}">
-																						<PropertyList>
-																							<Property Name="Max" Type="Real64" Value="0.5"/>
-																							<Property Name="Min" Type="Real64" Value="-0.5"/>
-																						</PropertyList>
-																					</Modifier>
-																				</ModifierInfo>
-																			</ModifierList>
-																		</Property>
-																		<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-																		<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
-																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-																		<Property Name="Volume" Type="Real64">
-																			<ValueList>
-																				<Value>-2</Value>
-																			</ValueList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Attenuation">
-																			<ObjectRef Name="ATN_HoverCar_NearTraffic_C" ID="{3C63DC8E-EFE4-4A9C-BE7D-2D1F586A51FE}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-																		</Reference>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<RandomSequenceContainer Name="AMB_NearTraffic_Burst" ID="{E8E01F3D-37BA-4837-808F-033DD38ED728}" ShortID="199726344">
-																			<PropertyList>
-																				<Property Name="3DPosition" Type="int16" Value="1"/>
-																				<Property Name="3DSpatialization" Type="int16" Value="1"/>
-																				<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
-																				<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-																				<Property Name="PlayMechanismLoopCount" Type="int32" Value="1"/>
-																				<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-																				<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-																				<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
-																					<ModifierList>
-																						<ModifierInfo>
-																							<Modifier Name="" ID="{CC8E1441-0143-401F-9861-221E493BBE6A}">
-																								<PropertyList>
-																									<Property Name="Enabled" Type="bool" Value="True"/>
-																									<Property Name="Max" Type="Real64" Value="0.2"/>
-																									<Property Name="Min" Type="Real64" Value="-0.2"/>
-																								</PropertyList>
-																							</Modifier>
-																						</ModifierInfo>
-																					</ModifierList>
-																				</Property>
-																				<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="Attenuation">
-																					<ObjectRef Name="ATN_HoverCar_NearTraffic_C" ID="{3C63DC8E-EFE4-4A9C-BE7D-2D1F586A51FE}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-																				</Reference>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																				</Reference>
-																				<Reference Name="Effect0">
-																					<Custom CreatedFrom="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}">
-																						<Effect Name="Tremolo_HoverCars (Custom)" ID="{35966F33-5DD1-44B4-AB79-C4FBE98C6F8F}" ShortID="803470995" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
-																							<PropertyList>
-																								<Property Name="ModDepth" Type="Real32" Value="60"/>
-																								<Property Name="ModFrequency" Type="Real32" Value="14"/>
-																								<Property Name="ModPWM" Type="Real32" Value="0"/>
-																								<Property Name="ModSmoothing" Type="Real32" Value="38"/>
-																							</PropertyList>
-																						</Effect>
-																					</Custom>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<RandomSequenceContainer Name="Var1" ID="{C036A127-78A0-4EC4-8EBA-D02E82F187A7}" ShortID="114541284">
-																					<PropertyList>
-																						<Property Name="3DPosition" Type="int16" Value="1"/>
-																						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-																						<Property Name="Pitch" Type="int32">
-																							<ModifierList>
-																								<ModifierInfo>
-																									<Modifier Name="" ID="{71C50D49-9568-4382-8064-AD60C1FA82C4}">
-																										<PropertyList>
-																											<Property Name="Enabled" Type="bool" Value="True"/>
-																											<Property Name="Max" Type="Real64" Value="2"/>
-																											<Property Name="Min" Type="Real64" Value="-2"/>
-																										</PropertyList>
-																									</Modifier>
-																								</ModifierInfo>
-																							</ModifierList>
-																						</Property>
-																					</PropertyList>
-																					<ReferenceList>
-																						<Reference Name="Attenuation">
-																							<ObjectRef Name="ATN_HoverCar_NearTraffic_C" ID="{3C63DC8E-EFE4-4A9C-BE7D-2D1F586A51FE}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-																						</Reference>
-																						<Reference Name="Conversion">
-																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																						</Reference>
-																						<Reference Name="Effect0">
-																							<Custom CreatedFrom="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}">
-																								<Effect Name="Tremolo_HoverCars (Custom)" ID="{C12B8B52-4EFB-46C6-8E0F-A0C0EDC7F0E2}" ShortID="181432101" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
-																									<PropertyList>
-																										<Property Name="ModDepth" Type="Real32" Value="60"/>
-																										<Property Name="ModFrequency" Type="Real32" Value="14"/>
-																										<Property Name="ModPWM" Type="Real32" Value="0"/>
-																										<Property Name="ModSmoothing" Type="Real32" Value="38"/>
-																									</PropertyList>
-																								</Effect>
-																							</Custom>
-																						</Reference>
-																						<Reference Name="OutputBus">
-																							<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<ChildrenList>
-																						<Sound Name="AMB_HoverCars_NearTraffic_B1_01" ID="{9681D8E1-0B4D-4E5C-9E4E-EB7981D14DBB}" ShortID="440235765">
-																							<ReferenceList>
-																								<Reference Name="Conversion">
-																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																								</Reference>
-																								<Reference Name="OutputBus">
-																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																								</Reference>
-																							</ReferenceList>
-																							<ChildrenList>
-																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_01" ID="{069031DD-AB8D-4A16-9DBF-A62BE7A3F668}">
-																									<Language>SFX</Language>
-																									<AudioFile>AMB_HoverCars_NearTraffic_B1_01.wav</AudioFile>
-																									<MediaIDList>
-																										<MediaID ID="1016809254"/>
-																									</MediaIDList>
-																								</AudioFileSource>
-																							</ChildrenList>
-																							<ActiveSourceList>
-																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_01" ID="{069031DD-AB8D-4A16-9DBF-A62BE7A3F668}" Platform="Linked"/>
-																							</ActiveSourceList>
-																						</Sound>
-																						<Sound Name="AMB_HoverCars_NearTraffic_B2_01" ID="{53BA0E28-7764-4521-AEF4-4F277E0E2963}" ShortID="167557931">
-																							<ReferenceList>
-																								<Reference Name="Conversion">
-																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																								</Reference>
-																								<Reference Name="OutputBus">
-																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																								</Reference>
-																							</ReferenceList>
-																							<ChildrenList>
-																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_01" ID="{E742F15B-0BFA-4F8E-9F2B-40264157DDC8}">
-																									<Language>SFX</Language>
-																									<AudioFile>AMB_HoverCars_NearTraffic_B2_01.wav</AudioFile>
-																									<MediaIDList>
-																										<MediaID ID="525122848"/>
-																									</MediaIDList>
-																								</AudioFileSource>
-																							</ChildrenList>
-																							<ActiveSourceList>
-																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_01" ID="{E742F15B-0BFA-4F8E-9F2B-40264157DDC8}" Platform="Linked"/>
-																							</ActiveSourceList>
-																						</Sound>
-																						<Sound Name="AMB_HoverCars_NearTraffic_B2_02" ID="{7F5CB9EB-DE6B-421A-903F-028D9F321617}" ShortID="139481873">
-																							<ReferenceList>
-																								<Reference Name="Conversion">
-																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																								</Reference>
-																								<Reference Name="OutputBus">
-																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																								</Reference>
-																							</ReferenceList>
-																							<ChildrenList>
-																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_02" ID="{01F4749D-F4E0-4C35-9E95-E2AD9EA1ACF6}">
-																									<Language>SFX</Language>
-																									<AudioFile>AMB_HoverCars_NearTraffic_B2_02.wav</AudioFile>
-																									<MediaIDList>
-																										<MediaID ID="603729134"/>
-																									</MediaIDList>
-																								</AudioFileSource>
-																							</ChildrenList>
-																							<ActiveSourceList>
-																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_02" ID="{01F4749D-F4E0-4C35-9E95-E2AD9EA1ACF6}" Platform="Linked"/>
-																							</ActiveSourceList>
-																						</Sound>
-																						<Sound Name="AMB_HoverCars_NearTraffic_B3_01" ID="{A56F1CCF-699A-44D5-B4F3-AAAD04B58F99}" ShortID="689907350">
-																							<ReferenceList>
-																								<Reference Name="Conversion">
-																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																								</Reference>
-																								<Reference Name="OutputBus">
-																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																								</Reference>
-																							</ReferenceList>
-																							<ChildrenList>
-																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_01" ID="{3CC9B9C4-CD76-4BF0-8F99-4BFC2015E397}">
-																									<Language>SFX</Language>
-																									<AudioFile>AMB_HoverCars_NearTraffic_B3_01.wav</AudioFile>
-																									<MediaIDList>
-																										<MediaID ID="338971624"/>
-																									</MediaIDList>
-																								</AudioFileSource>
-																							</ChildrenList>
-																							<ActiveSourceList>
-																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_01" ID="{3CC9B9C4-CD76-4BF0-8F99-4BFC2015E397}" Platform="Linked"/>
-																							</ActiveSourceList>
-																						</Sound>
-																					</ChildrenList>
-																					<PositioningInfo>
-																						<Position Name="" ID="{E102CA3E-C0B1-4D1C-9A39-E425AAD49E46}">
-																							<PropertyList>
-																								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-																								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-																							</PropertyList>
-																							<ChildrenList>
-																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{F9A5F51D-D604-4ACD-AE4C-7C6C4A260199}">
-																									<PropertyList>
-																										<Property Name="RandomX" Type="Real64" Value="15"/>
-																										<Property Name="RandomY" Type="Real64" Value="15"/>
-																									</PropertyList>
-																									<PointList>
-																										<Point>
-																											<XPos>13</XPos>
-																											<YPos>-15</YPos>
-																											<Flags>12</Flags>
-																											<Time>0</Time>
-																										</Point>
-																										<Point>
-																											<XPos>0</XPos>
-																											<YPos>100</YPos>
-																											<Flags>0</Flags>
-																											<Time>5000</Time>
-																										</Point>
-																									</PointList>
-																								</Path2D>
-																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{3BF4C4B4-DDB5-420E-8866-8B96F00D22FE}">
-																									<PropertyList>
-																										<Property Name="RandomX" Type="Real64" Value="15"/>
-																										<Property Name="RandomY" Type="Real64" Value="15"/>
-																									</PropertyList>
-																									<PointList>
-																										<Point>
-																											<XPos>15</XPos>
-																											<YPos>-15</YPos>
-																											<Flags>12</Flags>
-																											<Time>0</Time>
-																										</Point>
-																										<Point>
-																											<XPos>-15</XPos>
-																											<YPos>100</YPos>
-																											<Flags>0</Flags>
-																											<Time>5000</Time>
-																										</Point>
-																									</PointList>
-																								</Path2D>
-																							</ChildrenList>
-																						</Position>
-																					</PositioningInfo>
-																				</RandomSequenceContainer>
-																				<RandomSequenceContainer Name="Var2" ID="{6AA72473-0AED-47B5-B454-E53CFBF08A18}" ShortID="704981159">
-																					<PropertyList>
-																						<Property Name="3DPosition" Type="int16" Value="1"/>
-																						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-																						<Property Name="Pitch" Type="int32">
-																							<ModifierList>
-																								<ModifierInfo>
-																									<Modifier Name="" ID="{FA64B56B-9A16-478C-896A-B874596AFBB5}">
-																										<PropertyList>
-																											<Property Name="Enabled" Type="bool" Value="True"/>
-																											<Property Name="Max" Type="Real64" Value="2"/>
-																											<Property Name="Min" Type="Real64" Value="-2"/>
-																										</PropertyList>
-																									</Modifier>
-																								</ModifierInfo>
-																							</ModifierList>
-																						</Property>
-																					</PropertyList>
-																					<ReferenceList>
-																						<Reference Name="Attenuation">
-																							<ObjectRef Name="ATN_HoverCar_NearTraffic_C" ID="{3C63DC8E-EFE4-4A9C-BE7D-2D1F586A51FE}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-																						</Reference>
-																						<Reference Name="Conversion">
-																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																						</Reference>
-																						<Reference Name="OutputBus">
-																							<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<ChildrenList>
-																						<Sound Name="AMB_HoverCars_NearTraffic_B1_02" ID="{17BE6512-EE10-4457-91F3-3EA173987B87}" ShortID="894814741">
-																							<ReferenceList>
-																								<Reference Name="Conversion">
-																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																								</Reference>
-																								<Reference Name="OutputBus">
-																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																								</Reference>
-																							</ReferenceList>
-																							<ChildrenList>
-																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_02" ID="{DA1A24EC-26FA-44FC-9CCA-96D5BE88DD2F}">
-																									<Language>SFX</Language>
-																									<AudioFile>AMB_HoverCars_NearTraffic_B1_02.wav</AudioFile>
-																									<MediaIDList>
-																										<MediaID ID="250285595"/>
-																									</MediaIDList>
-																								</AudioFileSource>
-																							</ChildrenList>
-																							<ActiveSourceList>
-																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_02" ID="{DA1A24EC-26FA-44FC-9CCA-96D5BE88DD2F}" Platform="Linked"/>
-																							</ActiveSourceList>
-																						</Sound>
-																						<Sound Name="AMB_HoverCars_NearTraffic_B2_03" ID="{D06AF560-2A00-4B9C-952B-124A0B62C915}" ShortID="780851525">
-																							<ReferenceList>
-																								<Reference Name="Conversion">
-																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																								</Reference>
-																								<Reference Name="OutputBus">
-																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																								</Reference>
-																							</ReferenceList>
-																							<ChildrenList>
-																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_03" ID="{63968DD7-0567-41DC-B4A1-14D6F4205B07}">
-																									<Language>SFX</Language>
-																									<AudioFile>AMB_HoverCars_NearTraffic_B2_03.wav</AudioFile>
-																									<MediaIDList>
-																										<MediaID ID="1060677517"/>
-																									</MediaIDList>
-																								</AudioFileSource>
-																							</ChildrenList>
-																							<ActiveSourceList>
-																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_03" ID="{63968DD7-0567-41DC-B4A1-14D6F4205B07}" Platform="Linked"/>
-																							</ActiveSourceList>
-																						</Sound>
-																						<Sound Name="AMB_HoverCars_NearTraffic_B3_02" ID="{DE6CCC5B-5E78-4C31-B33D-8004F90F71E1}" ShortID="540549595">
-																							<ReferenceList>
-																								<Reference Name="Conversion">
-																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																								</Reference>
-																								<Reference Name="OutputBus">
-																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																								</Reference>
-																							</ReferenceList>
-																							<ChildrenList>
-																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_02" ID="{329530AC-EC3D-4BE6-BE30-82DC3439A316}">
-																									<Language>SFX</Language>
-																									<AudioFile>AMB_HoverCars_NearTraffic_B3_02.wav</AudioFile>
-																									<MediaIDList>
-																										<MediaID ID="521011312"/>
-																									</MediaIDList>
-																								</AudioFileSource>
-																							</ChildrenList>
-																							<ActiveSourceList>
-																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_02" ID="{329530AC-EC3D-4BE6-BE30-82DC3439A316}" Platform="Linked"/>
-																							</ActiveSourceList>
-																						</Sound>
-																					</ChildrenList>
-																					<PositioningInfo>
-																						<Position Name="" ID="{2317C812-DF9C-4119-8C7C-930F10F45C41}">
-																							<PropertyList>
-																								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-																								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-																							</PropertyList>
-																							<ChildrenList>
-																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{3A45152C-DAE6-4093-B095-A3038B3C703D}">
-																									<PropertyList>
-																										<Property Name="RandomX" Type="Real64" Value="15"/>
-																										<Property Name="RandomY" Type="Real64" Value="15"/>
-																									</PropertyList>
-																									<PointList>
-																										<Point>
-																											<XPos>13</XPos>
-																											<YPos>-15</YPos>
-																											<Flags>12</Flags>
-																											<Time>0</Time>
-																										</Point>
-																										<Point>
-																											<XPos>0</XPos>
-																											<YPos>100</YPos>
-																											<Flags>0</Flags>
-																											<Time>5000</Time>
-																										</Point>
-																									</PointList>
-																								</Path2D>
-																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{FA28B78F-C197-4010-85A3-765A42D83BFE}">
-																									<PropertyList>
-																										<Property Name="RandomX" Type="Real64" Value="15"/>
-																										<Property Name="RandomY" Type="Real64" Value="15"/>
-																									</PropertyList>
-																									<PointList>
-																										<Point>
-																											<XPos>15</XPos>
-																											<YPos>-15</YPos>
-																											<Flags>12</Flags>
-																											<Time>0</Time>
-																										</Point>
-																										<Point>
-																											<XPos>-15</XPos>
-																											<YPos>100</YPos>
-																											<Flags>0</Flags>
-																											<Time>5000</Time>
-																										</Point>
-																									</PointList>
-																								</Path2D>
-																							</ChildrenList>
-																						</Position>
-																					</PositioningInfo>
-																				</RandomSequenceContainer>
-																				<RandomSequenceContainer Name="Var3" ID="{2DDEE16C-5B1D-4FB6-AC2F-CBF60AB2171C}" ShortID="442738278">
-																					<PropertyList>
-																						<Property Name="3DPosition" Type="int16" Value="1"/>
-																						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-																						<Property Name="Pitch" Type="int32">
-																							<ModifierList>
-																								<ModifierInfo>
-																									<Modifier Name="" ID="{C1E16909-1354-4522-A742-3CB8CD0CCA68}">
-																										<PropertyList>
-																											<Property Name="Enabled" Type="bool" Value="True"/>
-																											<Property Name="Max" Type="Real64" Value="2"/>
-																											<Property Name="Min" Type="Real64" Value="-2"/>
-																										</PropertyList>
-																									</Modifier>
-																								</ModifierInfo>
-																							</ModifierList>
-																						</Property>
-																					</PropertyList>
-																					<ReferenceList>
-																						<Reference Name="Attenuation">
-																							<ObjectRef Name="ATN_HoverCar_NearTraffic_C" ID="{3C63DC8E-EFE4-4A9C-BE7D-2D1F586A51FE}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-																						</Reference>
-																						<Reference Name="Conversion">
-																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																						</Reference>
-																						<Reference Name="OutputBus">
-																							<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<ChildrenList>
-																						<Sound Name="AMB_HoverCars_NearTraffic_B1_03" ID="{17E26DD0-BF70-4EC7-BC53-DDA08E3957A8}" ShortID="197865795">
-																							<ReferenceList>
-																								<Reference Name="Conversion">
-																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																								</Reference>
-																								<Reference Name="OutputBus">
-																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																								</Reference>
-																							</ReferenceList>
-																							<ChildrenList>
-																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_03" ID="{A744EEF6-D3FE-4DEE-8050-9BC2B65B0194}">
-																									<Language>SFX</Language>
-																									<AudioFile>AMB_HoverCars_NearTraffic_B1_03.wav</AudioFile>
-																									<MediaIDList>
-																										<MediaID ID="701489611"/>
-																									</MediaIDList>
-																								</AudioFileSource>
-																							</ChildrenList>
-																							<ActiveSourceList>
-																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_03" ID="{A744EEF6-D3FE-4DEE-8050-9BC2B65B0194}" Platform="Linked"/>
-																							</ActiveSourceList>
-																						</Sound>
-																						<Sound Name="AMB_HoverCars_NearTraffic_B2_04" ID="{819B1C4E-D2EB-4F8E-92A7-1DD9A570B476}" ShortID="803181449">
-																							<ReferenceList>
-																								<Reference Name="Conversion">
-																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																								</Reference>
-																								<Reference Name="OutputBus">
-																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																								</Reference>
-																							</ReferenceList>
-																							<ChildrenList>
-																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_04" ID="{9273C233-5EAB-4B24-9357-75F493763A10}">
-																									<Language>SFX</Language>
-																									<AudioFile>AMB_HoverCars_NearTraffic_B2_04.wav</AudioFile>
-																									<MediaIDList>
-																										<MediaID ID="318391763"/>
-																									</MediaIDList>
-																								</AudioFileSource>
-																							</ChildrenList>
-																							<ActiveSourceList>
-																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_04" ID="{9273C233-5EAB-4B24-9357-75F493763A10}" Platform="Linked"/>
-																							</ActiveSourceList>
-																						</Sound>
-																						<Sound Name="AMB_HoverCars_NearTraffic_B3_03" ID="{DF8C982E-C741-4025-8FFF-E91C229CF530}" ShortID="97480643">
-																							<ReferenceList>
-																								<Reference Name="Conversion">
-																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																								</Reference>
-																								<Reference Name="OutputBus">
-																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																								</Reference>
-																							</ReferenceList>
-																							<ChildrenList>
-																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_03" ID="{BB42444B-ACF2-4875-A732-6DD8E033455C}">
-																									<Language>SFX</Language>
-																									<AudioFile>AMB_HoverCars_NearTraffic_B3_03.wav</AudioFile>
-																									<MediaIDList>
-																										<MediaID ID="771626168"/>
-																									</MediaIDList>
-																								</AudioFileSource>
-																							</ChildrenList>
-																							<ActiveSourceList>
-																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_03" ID="{BB42444B-ACF2-4875-A732-6DD8E033455C}" Platform="Linked"/>
-																							</ActiveSourceList>
-																						</Sound>
-																					</ChildrenList>
-																					<PositioningInfo>
-																						<Position Name="" ID="{46722114-5A37-4989-9254-F8B8C5B69F04}">
-																							<PropertyList>
-																								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-																								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-																							</PropertyList>
-																							<ChildrenList>
-																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{B9C698FD-B6FE-41D2-A558-DF331FF943FB}">
-																									<PropertyList>
-																										<Property Name="RandomX" Type="Real64" Value="15"/>
-																										<Property Name="RandomY" Type="Real64" Value="15"/>
-																									</PropertyList>
-																									<PointList>
-																										<Point>
-																											<XPos>13</XPos>
-																											<YPos>-15</YPos>
-																											<Flags>12</Flags>
-																											<Time>0</Time>
-																										</Point>
-																										<Point>
-																											<XPos>0</XPos>
-																											<YPos>100</YPos>
-																											<Flags>0</Flags>
-																											<Time>5000</Time>
-																										</Point>
-																									</PointList>
-																								</Path2D>
-																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{A9F89D3F-6F51-4DAF-8428-6165A565ED35}">
-																									<PropertyList>
-																										<Property Name="RandomX" Type="Real64" Value="15"/>
-																										<Property Name="RandomY" Type="Real64" Value="15"/>
-																									</PropertyList>
-																									<PointList>
-																										<Point>
-																											<XPos>15</XPos>
-																											<YPos>-15</YPos>
-																											<Flags>12</Flags>
-																											<Time>0</Time>
-																										</Point>
-																										<Point>
-																											<XPos>-15</XPos>
-																											<YPos>100</YPos>
-																											<Flags>0</Flags>
-																											<Time>5000</Time>
-																										</Point>
-																									</PointList>
-																								</Path2D>
-																							</ChildrenList>
-																						</Position>
-																					</PositioningInfo>
-																				</RandomSequenceContainer>
-																				<RandomSequenceContainer Name="Var4" ID="{F4A82FAB-5F1D-4E34-9B88-E62507F4F0EB}" ShortID="287739893">
-																					<PropertyList>
-																						<Property Name="3DPosition" Type="int16" Value="1"/>
-																						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-																						<Property Name="Pitch" Type="int32">
-																							<ModifierList>
-																								<ModifierInfo>
-																									<Modifier Name="" ID="{12DCD800-E95F-4194-A235-C3E6307583D1}">
-																										<PropertyList>
-																											<Property Name="Enabled" Type="bool" Value="True"/>
-																											<Property Name="Max" Type="Real64" Value="2"/>
-																											<Property Name="Min" Type="Real64" Value="-2"/>
-																										</PropertyList>
-																									</Modifier>
-																								</ModifierInfo>
-																							</ModifierList>
-																						</Property>
-																					</PropertyList>
-																					<ReferenceList>
-																						<Reference Name="Attenuation">
-																							<ObjectRef Name="ATN_HoverCar_NearTraffic_C" ID="{3C63DC8E-EFE4-4A9C-BE7D-2D1F586A51FE}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-																						</Reference>
-																						<Reference Name="Conversion">
-																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																						</Reference>
-																						<Reference Name="OutputBus">
-																							<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<ChildrenList>
-																						<Sound Name="AMB_HoverCars_NearTraffic_B1_04" ID="{2DA6BA10-FE47-4133-8BB9-F6A66F51ADC4}" ShortID="254764029">
-																							<ReferenceList>
-																								<Reference Name="Conversion">
-																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																								</Reference>
-																								<Reference Name="OutputBus">
-																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																								</Reference>
-																							</ReferenceList>
-																							<ChildrenList>
-																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_04" ID="{A6642269-740A-47C5-B8B7-73BF63318687}">
-																									<Language>SFX</Language>
-																									<AudioFile>AMB_HoverCars_NearTraffic_B1_04.wav</AudioFile>
-																									<MediaIDList>
-																										<MediaID ID="508714875"/>
-																									</MediaIDList>
-																								</AudioFileSource>
-																							</ChildrenList>
-																							<ActiveSourceList>
-																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_04" ID="{A6642269-740A-47C5-B8B7-73BF63318687}" Platform="Linked"/>
-																							</ActiveSourceList>
-																						</Sound>
-																						<Sound Name="AMB_HoverCars_NearTraffic_B2_05" ID="{0C4C0425-0D47-48AD-B39B-332A8D08BD68}" ShortID="58783434">
-																							<ReferenceList>
-																								<Reference Name="Conversion">
-																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																								</Reference>
-																								<Reference Name="OutputBus">
-																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																								</Reference>
-																							</ReferenceList>
-																							<ChildrenList>
-																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_05" ID="{9177E883-5B91-4070-B84F-88E98ABB8956}">
-																									<Language>SFX</Language>
-																									<AudioFile>AMB_HoverCars_NearTraffic_B2_05.wav</AudioFile>
-																									<MediaIDList>
-																										<MediaID ID="643032324"/>
-																									</MediaIDList>
-																								</AudioFileSource>
-																							</ChildrenList>
-																							<ActiveSourceList>
-																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_05" ID="{9177E883-5B91-4070-B84F-88E98ABB8956}" Platform="Linked"/>
-																							</ActiveSourceList>
-																						</Sound>
-																						<Sound Name="AMB_HoverCars_NearTraffic_B3_04" ID="{A9C7555F-A416-4473-ADF8-95E2DD8A7D07}" ShortID="429312128">
-																							<ReferenceList>
-																								<Reference Name="Conversion">
-																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																								</Reference>
-																								<Reference Name="OutputBus">
-																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																								</Reference>
-																							</ReferenceList>
-																							<ChildrenList>
-																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_04" ID="{39E47B3E-D9CB-4602-A111-58732F7D084A}">
-																									<Language>SFX</Language>
-																									<AudioFile>AMB_HoverCars_NearTraffic_B3_04.wav</AudioFile>
-																									<MediaIDList>
-																										<MediaID ID="17785737"/>
-																									</MediaIDList>
-																								</AudioFileSource>
-																							</ChildrenList>
-																							<ActiveSourceList>
-																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_04" ID="{39E47B3E-D9CB-4602-A111-58732F7D084A}" Platform="Linked"/>
-																							</ActiveSourceList>
-																						</Sound>
-																					</ChildrenList>
-																					<PositioningInfo>
-																						<Position Name="" ID="{50B88248-B8F0-4142-AC38-81AB725C26A7}">
-																							<PropertyList>
-																								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-																								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-																							</PropertyList>
-																							<ChildrenList>
-																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{4280471E-FEAA-4509-A5B3-0B6C5FE208A5}">
-																									<PropertyList>
-																										<Property Name="RandomX" Type="Real64" Value="15"/>
-																										<Property Name="RandomY" Type="Real64" Value="15"/>
-																									</PropertyList>
-																									<PointList>
-																										<Point>
-																											<XPos>13</XPos>
-																											<YPos>-15</YPos>
-																											<Flags>12</Flags>
-																											<Time>0</Time>
-																										</Point>
-																										<Point>
-																											<XPos>0</XPos>
-																											<YPos>100</YPos>
-																											<Flags>0</Flags>
-																											<Time>5000</Time>
-																										</Point>
-																									</PointList>
-																								</Path2D>
-																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{415B2D2E-8585-43BD-A251-ED5FE1A686B0}">
-																									<PropertyList>
-																										<Property Name="RandomX" Type="Real64" Value="15"/>
-																										<Property Name="RandomY" Type="Real64" Value="15"/>
-																									</PropertyList>
-																									<PointList>
-																										<Point>
-																											<XPos>15</XPos>
-																											<YPos>-15</YPos>
-																											<Flags>12</Flags>
-																											<Time>0</Time>
-																										</Point>
-																										<Point>
-																											<XPos>-15</XPos>
-																											<YPos>100</YPos>
-																											<Flags>0</Flags>
-																											<Time>5000</Time>
-																										</Point>
-																									</PointList>
-																								</Path2D>
-																							</ChildrenList>
-																						</Position>
-																					</PositioningInfo>
-																				</RandomSequenceContainer>
-																			</ChildrenList>
-																			<PositioningInfo>
-																				<Position Name="" ID="{D72E1337-8CF4-46BB-AE63-D70101CFD88C}">
-																					<PropertyList>
-																						<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-																						<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-																					</PropertyList>
-																					<ChildrenList>
-																						<Path2D Name="AMB_NearTraffic_BF_Path" ID="{C91FCD52-44A8-4011-B4F2-C8353E91D15D}">
-																							<PropertyList>
-																								<Property Name="RandomX" Type="Real64" Value="15"/>
-																								<Property Name="RandomY" Type="Real64" Value="15"/>
-																							</PropertyList>
-																							<PointList>
-																								<Point>
-																									<XPos>13</XPos>
-																									<YPos>-15</YPos>
-																									<Flags>12</Flags>
-																									<Time>0</Time>
-																								</Point>
-																								<Point>
-																									<XPos>-1E-05</XPos>
-																									<YPos>53.41506</YPos>
-																									<Flags>0</Flags>
-																									<Time>5000</Time>
-																								</Point>
-																							</PointList>
-																						</Path2D>
-																						<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{3074F71C-7521-4672-9323-BCDDA77A1D81}">
-																							<PropertyList>
-																								<Property Name="RandomX" Type="Real64" Value="15"/>
-																								<Property Name="RandomY" Type="Real64" Value="15"/>
-																							</PropertyList>
-																							<PointList>
-																								<Point>
-																									<XPos>15</XPos>
-																									<YPos>-15</YPos>
-																									<Flags>12</Flags>
-																									<Time>0</Time>
-																								</Point>
-																								<Point>
-																									<XPos>-0.26316</XPos>
-																									<YPos>70.22767</YPos>
-																									<Flags>0</Flags>
-																									<Time>5000</Time>
-																								</Point>
-																							</PointList>
-																						</Path2D>
-																					</ChildrenList>
-																				</Position>
-																			</PositioningInfo>
-																		</RandomSequenceContainer>
-																	</ChildrenList>
-																	<PositioningInfo>
-																		<Position Name="" ID="{13769717-AC7C-4552-B529-42F139950ECD}">
-																			<PropertyList>
-																				<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-																				<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-																			</PropertyList>
-																			<ChildrenList>
-																				<Path2D Name="AMB_NearTraffic_BF_Path" ID="{4860B242-B0C2-4E95-AC35-483E811306D4}">
-																					<PropertyList>
-																						<Property Name="RandomX" Type="Real64" Value="15"/>
-																						<Property Name="RandomY" Type="Real64" Value="15"/>
-																					</PropertyList>
-																					<PointList>
-																						<Point>
-																							<XPos>13</XPos>
-																							<YPos>-15</YPos>
-																							<Flags>12</Flags>
-																							<Time>0</Time>
-																						</Point>
-																						<Point>
-																							<XPos>0</XPos>
-																							<YPos>100</YPos>
-																							<Flags>0</Flags>
-																							<Time>5000</Time>
-																						</Point>
-																					</PointList>
-																				</Path2D>
-																				<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{83438F09-7C39-446C-92C1-74EC094AB799}">
-																					<PropertyList>
-																						<Property Name="RandomX" Type="Real64" Value="15"/>
-																						<Property Name="RandomY" Type="Real64" Value="15"/>
-																					</PropertyList>
-																					<PointList>
-																						<Point>
-																							<XPos>15</XPos>
-																							<YPos>-15</YPos>
-																							<Flags>12</Flags>
-																							<Time>0</Time>
-																						</Point>
-																						<Point>
-																							<XPos>-15</XPos>
-																							<YPos>100</YPos>
-																							<Flags>0</Flags>
-																							<Time>5000</Time>
-																						</Point>
-																					</PointList>
-																				</Path2D>
-																			</ChildrenList>
-																		</Position>
-																	</PositioningInfo>
-																</RandomSequenceContainer>
-															</ChildrenList>
-															<PositioningInfo>
-																<Position Name="" ID="{83679F8E-4BE6-4ADA-BF86-F87EEE9C3332}">
-																	<PropertyList>
-																		<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-																		<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-																	</PropertyList>
-																	<ChildrenList>
-																		<Path2D Name="AMB_NearTraffic_RL_Path" ID="{865ED883-3C5C-40A8-8350-647FAE8AE95B}">
-																			<PropertyList>
-																				<Property Name="RandomX" Type="Real64" Value="10"/>
-																			</PropertyList>
-																			<PointList>
-																				<Point>
-																					<XPos>-5.61403</XPos>
-																					<YPos>5.42907</YPos>
-																					<Flags>12</Flags>
-																					<Time>0</Time>
-																				</Point>
-																				<Point>
-																					<XPos>-52.63158</XPos>
-																					<YPos>22.59193</YPos>
-																					<Flags>0</Flags>
-																					<Time>1666</Time>
-																				</Point>
-																				<Point>
-																					<XPos>-83.85964</XPos>
-																					<YPos>25.7443</YPos>
-																					<Flags>0</Flags>
-																					<Time>3333</Time>
-																				</Point>
-																				<Point>
-																					<XPos>-96.84211</XPos>
-																					<YPos>2.97723</YPos>
-																					<Flags>0</Flags>
-																					<Time>5000</Time>
-																				</Point>
-																			</PointList>
-																		</Path2D>
-																	</ChildrenList>
-																</Position>
-															</PositioningInfo>
-														</ActorMixer>
 														<ActorMixer Name="AMB_NearTraffic_L" ID="{21C30DBE-9949-4474-B4D4-F46D62F10CA5}" ShortID="1043268359">
 															<PropertyList>
 																<Property Name="3DPosition" Type="int16" Value="1"/>
@@ -5770,6 +4868,910 @@
 																				<Point>
 																					<XPos>-5.96491</XPos>
 																					<YPos>3.32749</YPos>
+																					<Flags>0</Flags>
+																					<Time>5000</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																	</ChildrenList>
+																</Position>
+															</PositioningInfo>
+														</ActorMixer>
+														<ActorMixer Name="AMB_NearTraffic_R" ID="{40EC6069-75E9-45C6-B4FF-8467526B64FC}" ShortID="676216962">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+																<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="ATN_HoverCar_NearTraffic_R" ID="{0ED93735-9E3B-4A5E-887C-7AC5FC18556B}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="AMB_HoverCars_RL_LP_R" ID="{CB4F15D3-C9E8-4FFD-900D-E17BC7E57100}" ShortID="748298866">
+																	<PropertyList>
+																		<Property Name="3DPosition" Type="int16" Value="1"/>
+																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																		<Property Name="InitialDelay" Type="Real64">
+																			<ValueList>
+																				<Value>1.5</Value>
+																			</ValueList>
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{22BB087E-B161-46DB-A918-4F80815815B6}"/>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="Pitch" Type="int32">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{7D1911EA-3509-49C0-9194-56A1C48DCFA3}">
+																						<PropertyList>
+																							<Property Name="Max" Type="Real64" Value="150"/>
+																							<Property Name="Min" Type="Real64" Value="-150"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="6">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{696EBCA5-07E7-407D-A420-7F6B3421DB4A}">
+																						<PropertyList>
+																							<Property Name="Max" Type="Real64" Value="0.5"/>
+																							<Property Name="Min" Type="Real64" Value="-0.5"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																		<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-2</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Attenuation">
+																			<ObjectRef Name="ATN_HoverCar_NearTraffic_C" ID="{3C63DC8E-EFE4-4A9C-BE7D-2D1F586A51FE}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																		</Reference>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<RandomSequenceContainer Name="AMB_NearTraffic_Burst" ID="{E8E01F3D-37BA-4837-808F-033DD38ED728}" ShortID="199726344">
+																			<PropertyList>
+																				<Property Name="3DPosition" Type="int16" Value="1"/>
+																				<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																				<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
+																				<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismLoopCount" Type="int32" Value="1"/>
+																				<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+																				<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{CC8E1441-0143-401F-9861-221E493BBE6A}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="0.2"/>
+																									<Property Name="Min" Type="Real64" Value="-0.2"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Attenuation">
+																					<ObjectRef Name="ATN_HoverCar_NearTraffic_C" ID="{3C63DC8E-EFE4-4A9C-BE7D-2D1F586A51FE}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																				</Reference>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="Effect0">
+																					<Custom CreatedFrom="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}">
+																						<Effect Name="Tremolo_HoverCars (Custom)" ID="{35966F33-5DD1-44B4-AB79-C4FBE98C6F8F}" ShortID="803470995" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+																							<PropertyList>
+																								<Property Name="ModDepth" Type="Real32" Value="60"/>
+																								<Property Name="ModFrequency" Type="Real32" Value="14"/>
+																								<Property Name="ModPWM" Type="Real32" Value="0"/>
+																								<Property Name="ModSmoothing" Type="Real32" Value="38"/>
+																							</PropertyList>
+																						</Effect>
+																					</Custom>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<RandomSequenceContainer Name="Var1" ID="{C036A127-78A0-4EC4-8EBA-D02E82F187A7}" ShortID="114541284">
+																					<PropertyList>
+																						<Property Name="3DPosition" Type="int16" Value="1"/>
+																						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																						<Property Name="Pitch" Type="int32">
+																							<ModifierList>
+																								<ModifierInfo>
+																									<Modifier Name="" ID="{71C50D49-9568-4382-8064-AD60C1FA82C4}">
+																										<PropertyList>
+																											<Property Name="Enabled" Type="bool" Value="True"/>
+																											<Property Name="Max" Type="Real64" Value="2"/>
+																											<Property Name="Min" Type="Real64" Value="-2"/>
+																										</PropertyList>
+																									</Modifier>
+																								</ModifierInfo>
+																							</ModifierList>
+																						</Property>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="ATN_HoverCar_NearTraffic_C" ID="{3C63DC8E-EFE4-4A9C-BE7D-2D1F586A51FE}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="Effect0">
+																							<Custom CreatedFrom="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}">
+																								<Effect Name="Tremolo_HoverCars (Custom)" ID="{C12B8B52-4EFB-46C6-8E0F-A0C0EDC7F0E2}" ShortID="181432101" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+																									<PropertyList>
+																										<Property Name="ModDepth" Type="Real32" Value="60"/>
+																										<Property Name="ModFrequency" Type="Real32" Value="14"/>
+																										<Property Name="ModPWM" Type="Real32" Value="0"/>
+																										<Property Name="ModSmoothing" Type="Real32" Value="38"/>
+																									</PropertyList>
+																								</Effect>
+																							</Custom>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B1_01" ID="{9681D8E1-0B4D-4E5C-9E4E-EB7981D14DBB}" ShortID="440235765">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_01" ID="{069031DD-AB8D-4A16-9DBF-A62BE7A3F668}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B1_01.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="1016809254"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_01" ID="{069031DD-AB8D-4A16-9DBF-A62BE7A3F668}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_01" ID="{53BA0E28-7764-4521-AEF4-4F277E0E2963}" ShortID="167557931">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_01" ID="{E742F15B-0BFA-4F8E-9F2B-40264157DDC8}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_01.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="525122848"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_01" ID="{E742F15B-0BFA-4F8E-9F2B-40264157DDC8}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_02" ID="{7F5CB9EB-DE6B-421A-903F-028D9F321617}" ShortID="139481873">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_02" ID="{01F4749D-F4E0-4C35-9E95-E2AD9EA1ACF6}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_02.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="603729134"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_02" ID="{01F4749D-F4E0-4C35-9E95-E2AD9EA1ACF6}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B3_01" ID="{A56F1CCF-699A-44D5-B4F3-AAAD04B58F99}" ShortID="689907350">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_01" ID="{3CC9B9C4-CD76-4BF0-8F99-4BFC2015E397}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B3_01.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="338971624"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_01" ID="{3CC9B9C4-CD76-4BF0-8F99-4BFC2015E397}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																					</ChildrenList>
+																					<PositioningInfo>
+																						<Position Name="" ID="{E102CA3E-C0B1-4D1C-9A39-E425AAD49E46}">
+																							<PropertyList>
+																								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																							</PropertyList>
+																							<ChildrenList>
+																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{F9A5F51D-D604-4ACD-AE4C-7C6C4A260199}">
+																									<PropertyList>
+																										<Property Name="RandomX" Type="Real64" Value="15"/>
+																										<Property Name="RandomY" Type="Real64" Value="15"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>13</XPos>
+																											<YPos>-15</YPos>
+																											<Flags>12</Flags>
+																											<Time>0</Time>
+																										</Point>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>100</YPos>
+																											<Flags>0</Flags>
+																											<Time>5000</Time>
+																										</Point>
+																									</PointList>
+																								</Path2D>
+																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{3BF4C4B4-DDB5-420E-8866-8B96F00D22FE}">
+																									<PropertyList>
+																										<Property Name="RandomX" Type="Real64" Value="15"/>
+																										<Property Name="RandomY" Type="Real64" Value="15"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>15</XPos>
+																											<YPos>-15</YPos>
+																											<Flags>12</Flags>
+																											<Time>0</Time>
+																										</Point>
+																										<Point>
+																											<XPos>-15</XPos>
+																											<YPos>100</YPos>
+																											<Flags>0</Flags>
+																											<Time>5000</Time>
+																										</Point>
+																									</PointList>
+																								</Path2D>
+																							</ChildrenList>
+																						</Position>
+																					</PositioningInfo>
+																				</RandomSequenceContainer>
+																				<RandomSequenceContainer Name="Var2" ID="{6AA72473-0AED-47B5-B454-E53CFBF08A18}" ShortID="704981159">
+																					<PropertyList>
+																						<Property Name="3DPosition" Type="int16" Value="1"/>
+																						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																						<Property Name="Pitch" Type="int32">
+																							<ModifierList>
+																								<ModifierInfo>
+																									<Modifier Name="" ID="{FA64B56B-9A16-478C-896A-B874596AFBB5}">
+																										<PropertyList>
+																											<Property Name="Enabled" Type="bool" Value="True"/>
+																											<Property Name="Max" Type="Real64" Value="2"/>
+																											<Property Name="Min" Type="Real64" Value="-2"/>
+																										</PropertyList>
+																									</Modifier>
+																								</ModifierInfo>
+																							</ModifierList>
+																						</Property>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="ATN_HoverCar_NearTraffic_C" ID="{3C63DC8E-EFE4-4A9C-BE7D-2D1F586A51FE}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B1_02" ID="{17BE6512-EE10-4457-91F3-3EA173987B87}" ShortID="894814741">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_02" ID="{DA1A24EC-26FA-44FC-9CCA-96D5BE88DD2F}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B1_02.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="250285595"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_02" ID="{DA1A24EC-26FA-44FC-9CCA-96D5BE88DD2F}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_03" ID="{D06AF560-2A00-4B9C-952B-124A0B62C915}" ShortID="780851525">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_03" ID="{63968DD7-0567-41DC-B4A1-14D6F4205B07}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_03.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="1060677517"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_03" ID="{63968DD7-0567-41DC-B4A1-14D6F4205B07}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B3_02" ID="{DE6CCC5B-5E78-4C31-B33D-8004F90F71E1}" ShortID="540549595">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_02" ID="{329530AC-EC3D-4BE6-BE30-82DC3439A316}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B3_02.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="521011312"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_02" ID="{329530AC-EC3D-4BE6-BE30-82DC3439A316}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																					</ChildrenList>
+																					<PositioningInfo>
+																						<Position Name="" ID="{2317C812-DF9C-4119-8C7C-930F10F45C41}">
+																							<PropertyList>
+																								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																							</PropertyList>
+																							<ChildrenList>
+																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{3A45152C-DAE6-4093-B095-A3038B3C703D}">
+																									<PropertyList>
+																										<Property Name="RandomX" Type="Real64" Value="15"/>
+																										<Property Name="RandomY" Type="Real64" Value="15"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>13</XPos>
+																											<YPos>-15</YPos>
+																											<Flags>12</Flags>
+																											<Time>0</Time>
+																										</Point>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>100</YPos>
+																											<Flags>0</Flags>
+																											<Time>5000</Time>
+																										</Point>
+																									</PointList>
+																								</Path2D>
+																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{FA28B78F-C197-4010-85A3-765A42D83BFE}">
+																									<PropertyList>
+																										<Property Name="RandomX" Type="Real64" Value="15"/>
+																										<Property Name="RandomY" Type="Real64" Value="15"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>15</XPos>
+																											<YPos>-15</YPos>
+																											<Flags>12</Flags>
+																											<Time>0</Time>
+																										</Point>
+																										<Point>
+																											<XPos>-15</XPos>
+																											<YPos>100</YPos>
+																											<Flags>0</Flags>
+																											<Time>5000</Time>
+																										</Point>
+																									</PointList>
+																								</Path2D>
+																							</ChildrenList>
+																						</Position>
+																					</PositioningInfo>
+																				</RandomSequenceContainer>
+																				<RandomSequenceContainer Name="Var3" ID="{2DDEE16C-5B1D-4FB6-AC2F-CBF60AB2171C}" ShortID="442738278">
+																					<PropertyList>
+																						<Property Name="3DPosition" Type="int16" Value="1"/>
+																						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																						<Property Name="Pitch" Type="int32">
+																							<ModifierList>
+																								<ModifierInfo>
+																									<Modifier Name="" ID="{C1E16909-1354-4522-A742-3CB8CD0CCA68}">
+																										<PropertyList>
+																											<Property Name="Enabled" Type="bool" Value="True"/>
+																											<Property Name="Max" Type="Real64" Value="2"/>
+																											<Property Name="Min" Type="Real64" Value="-2"/>
+																										</PropertyList>
+																									</Modifier>
+																								</ModifierInfo>
+																							</ModifierList>
+																						</Property>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="ATN_HoverCar_NearTraffic_C" ID="{3C63DC8E-EFE4-4A9C-BE7D-2D1F586A51FE}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B1_03" ID="{17E26DD0-BF70-4EC7-BC53-DDA08E3957A8}" ShortID="197865795">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_03" ID="{A744EEF6-D3FE-4DEE-8050-9BC2B65B0194}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B1_03.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="701489611"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_03" ID="{A744EEF6-D3FE-4DEE-8050-9BC2B65B0194}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_04" ID="{819B1C4E-D2EB-4F8E-92A7-1DD9A570B476}" ShortID="803181449">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_04" ID="{9273C233-5EAB-4B24-9357-75F493763A10}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_04.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="318391763"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_04" ID="{9273C233-5EAB-4B24-9357-75F493763A10}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B3_03" ID="{DF8C982E-C741-4025-8FFF-E91C229CF530}" ShortID="97480643">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_03" ID="{BB42444B-ACF2-4875-A732-6DD8E033455C}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B3_03.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="771626168"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_03" ID="{BB42444B-ACF2-4875-A732-6DD8E033455C}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																					</ChildrenList>
+																					<PositioningInfo>
+																						<Position Name="" ID="{46722114-5A37-4989-9254-F8B8C5B69F04}">
+																							<PropertyList>
+																								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																							</PropertyList>
+																							<ChildrenList>
+																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{B9C698FD-B6FE-41D2-A558-DF331FF943FB}">
+																									<PropertyList>
+																										<Property Name="RandomX" Type="Real64" Value="15"/>
+																										<Property Name="RandomY" Type="Real64" Value="15"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>13</XPos>
+																											<YPos>-15</YPos>
+																											<Flags>12</Flags>
+																											<Time>0</Time>
+																										</Point>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>100</YPos>
+																											<Flags>0</Flags>
+																											<Time>5000</Time>
+																										</Point>
+																									</PointList>
+																								</Path2D>
+																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{A9F89D3F-6F51-4DAF-8428-6165A565ED35}">
+																									<PropertyList>
+																										<Property Name="RandomX" Type="Real64" Value="15"/>
+																										<Property Name="RandomY" Type="Real64" Value="15"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>15</XPos>
+																											<YPos>-15</YPos>
+																											<Flags>12</Flags>
+																											<Time>0</Time>
+																										</Point>
+																										<Point>
+																											<XPos>-15</XPos>
+																											<YPos>100</YPos>
+																											<Flags>0</Flags>
+																											<Time>5000</Time>
+																										</Point>
+																									</PointList>
+																								</Path2D>
+																							</ChildrenList>
+																						</Position>
+																					</PositioningInfo>
+																				</RandomSequenceContainer>
+																				<RandomSequenceContainer Name="Var4" ID="{F4A82FAB-5F1D-4E34-9B88-E62507F4F0EB}" ShortID="287739893">
+																					<PropertyList>
+																						<Property Name="3DPosition" Type="int16" Value="1"/>
+																						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																						<Property Name="Pitch" Type="int32">
+																							<ModifierList>
+																								<ModifierInfo>
+																									<Modifier Name="" ID="{12DCD800-E95F-4194-A235-C3E6307583D1}">
+																										<PropertyList>
+																											<Property Name="Enabled" Type="bool" Value="True"/>
+																											<Property Name="Max" Type="Real64" Value="2"/>
+																											<Property Name="Min" Type="Real64" Value="-2"/>
+																										</PropertyList>
+																									</Modifier>
+																								</ModifierInfo>
+																							</ModifierList>
+																						</Property>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Attenuation">
+																							<ObjectRef Name="ATN_HoverCar_NearTraffic_C" ID="{3C63DC8E-EFE4-4A9C-BE7D-2D1F586A51FE}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																						</Reference>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B1_04" ID="{2DA6BA10-FE47-4133-8BB9-F6A66F51ADC4}" ShortID="254764029">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B1_04" ID="{A6642269-740A-47C5-B8B7-73BF63318687}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B1_04.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="508714875"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B1_04" ID="{A6642269-740A-47C5-B8B7-73BF63318687}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B2_05" ID="{0C4C0425-0D47-48AD-B39B-332A8D08BD68}" ShortID="58783434">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B2_05" ID="{9177E883-5B91-4070-B84F-88E98ABB8956}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B2_05.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="643032324"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B2_05" ID="{9177E883-5B91-4070-B84F-88E98ABB8956}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																						<Sound Name="AMB_HoverCars_NearTraffic_B3_04" ID="{A9C7555F-A416-4473-ADF8-95E2DD8A7D07}" ShortID="429312128">
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AMB_HoverCars_NearTraffic_B3_04" ID="{39E47B3E-D9CB-4602-A111-58732F7D084A}">
+																									<Language>SFX</Language>
+																									<AudioFile>AMB_HoverCars_NearTraffic_B3_04.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="17785737"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AMB_HoverCars_NearTraffic_B3_04" ID="{39E47B3E-D9CB-4602-A111-58732F7D084A}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
+																					</ChildrenList>
+																					<PositioningInfo>
+																						<Position Name="" ID="{50B88248-B8F0-4142-AC38-81AB725C26A7}">
+																							<PropertyList>
+																								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																							</PropertyList>
+																							<ChildrenList>
+																								<Path2D Name="AMB_NearTraffic_BF_Path" ID="{4280471E-FEAA-4509-A5B3-0B6C5FE208A5}">
+																									<PropertyList>
+																										<Property Name="RandomX" Type="Real64" Value="15"/>
+																										<Property Name="RandomY" Type="Real64" Value="15"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>13</XPos>
+																											<YPos>-15</YPos>
+																											<Flags>12</Flags>
+																											<Time>0</Time>
+																										</Point>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>100</YPos>
+																											<Flags>0</Flags>
+																											<Time>5000</Time>
+																										</Point>
+																									</PointList>
+																								</Path2D>
+																								<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{415B2D2E-8585-43BD-A251-ED5FE1A686B0}">
+																									<PropertyList>
+																										<Property Name="RandomX" Type="Real64" Value="15"/>
+																										<Property Name="RandomY" Type="Real64" Value="15"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>15</XPos>
+																											<YPos>-15</YPos>
+																											<Flags>12</Flags>
+																											<Time>0</Time>
+																										</Point>
+																										<Point>
+																											<XPos>-15</XPos>
+																											<YPos>100</YPos>
+																											<Flags>0</Flags>
+																											<Time>5000</Time>
+																										</Point>
+																									</PointList>
+																								</Path2D>
+																							</ChildrenList>
+																						</Position>
+																					</PositioningInfo>
+																				</RandomSequenceContainer>
+																			</ChildrenList>
+																			<PositioningInfo>
+																				<Position Name="" ID="{D72E1337-8CF4-46BB-AE63-D70101CFD88C}">
+																					<PropertyList>
+																						<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																						<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																					</PropertyList>
+																					<ChildrenList>
+																						<Path2D Name="AMB_NearTraffic_BF_Path" ID="{C91FCD52-44A8-4011-B4F2-C8353E91D15D}">
+																							<PropertyList>
+																								<Property Name="RandomX" Type="Real64" Value="15"/>
+																								<Property Name="RandomY" Type="Real64" Value="15"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>13</XPos>
+																									<YPos>-15</YPos>
+																									<Flags>12</Flags>
+																									<Time>0</Time>
+																								</Point>
+																								<Point>
+																									<XPos>-1E-05</XPos>
+																									<YPos>53.41506</YPos>
+																									<Flags>0</Flags>
+																									<Time>5000</Time>
+																								</Point>
+																							</PointList>
+																						</Path2D>
+																						<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{3074F71C-7521-4672-9323-BCDDA77A1D81}">
+																							<PropertyList>
+																								<Property Name="RandomX" Type="Real64" Value="15"/>
+																								<Property Name="RandomY" Type="Real64" Value="15"/>
+																							</PropertyList>
+																							<PointList>
+																								<Point>
+																									<XPos>15</XPos>
+																									<YPos>-15</YPos>
+																									<Flags>12</Flags>
+																									<Time>0</Time>
+																								</Point>
+																								<Point>
+																									<XPos>-0.26316</XPos>
+																									<YPos>70.22767</YPos>
+																									<Flags>0</Flags>
+																									<Time>5000</Time>
+																								</Point>
+																							</PointList>
+																						</Path2D>
+																					</ChildrenList>
+																				</Position>
+																			</PositioningInfo>
+																		</RandomSequenceContainer>
+																	</ChildrenList>
+																	<PositioningInfo>
+																		<Position Name="" ID="{13769717-AC7C-4552-B529-42F139950ECD}">
+																			<PropertyList>
+																				<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																				<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																			</PropertyList>
+																			<ChildrenList>
+																				<Path2D Name="AMB_NearTraffic_BF_Path" ID="{4860B242-B0C2-4E95-AC35-483E811306D4}">
+																					<PropertyList>
+																						<Property Name="RandomX" Type="Real64" Value="15"/>
+																						<Property Name="RandomY" Type="Real64" Value="15"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>13</XPos>
+																							<YPos>-15</YPos>
+																							<Flags>12</Flags>
+																							<Time>0</Time>
+																						</Point>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>100</YPos>
+																							<Flags>0</Flags>
+																							<Time>5000</Time>
+																						</Point>
+																					</PointList>
+																				</Path2D>
+																				<Path2D Name="AMB_NearTraffic_BF_Path_01" ID="{83438F09-7C39-446C-92C1-74EC094AB799}">
+																					<PropertyList>
+																						<Property Name="RandomX" Type="Real64" Value="15"/>
+																						<Property Name="RandomY" Type="Real64" Value="15"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>15</XPos>
+																							<YPos>-15</YPos>
+																							<Flags>12</Flags>
+																							<Time>0</Time>
+																						</Point>
+																						<Point>
+																							<XPos>-15</XPos>
+																							<YPos>100</YPos>
+																							<Flags>0</Flags>
+																							<Time>5000</Time>
+																						</Point>
+																					</PointList>
+																				</Path2D>
+																			</ChildrenList>
+																		</Position>
+																	</PositioningInfo>
+																</RandomSequenceContainer>
+															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{83679F8E-4BE6-4ADA-BF86-F87EEE9C3332}">
+																	<PropertyList>
+																		<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<ChildrenList>
+																		<Path2D Name="AMB_NearTraffic_RL_Path" ID="{865ED883-3C5C-40A8-8350-647FAE8AE95B}">
+																			<PropertyList>
+																				<Property Name="RandomX" Type="Real64" Value="10"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>-5.61403</XPos>
+																					<YPos>5.42907</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>-52.63158</XPos>
+																					<YPos>22.59193</YPos>
+																					<Flags>0</Flags>
+																					<Time>1666</Time>
+																				</Point>
+																				<Point>
+																					<XPos>-83.85964</XPos>
+																					<YPos>25.7443</YPos>
+																					<Flags>0</Flags>
+																					<Time>3333</Time>
+																				</Point>
+																				<Point>
+																					<XPos>-96.84211</XPos>
+																					<YPos>2.97723</YPos>
 																					<Flags>0</Flags>
 																					<Time>5000</Time>
 																				</Point>

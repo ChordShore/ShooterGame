@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{1B00A8ED-C175-2212-51D5-0B99F564A2B1}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{39BB96D3-C3CA-82E0-E5F2-7366E623C61F}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -241,7 +241,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="123926568" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{05BCE8D5-FA06-D4DD-C446-15CCB3139F02}">
+		<SoundBank Id="123926568" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{C2D30931-B2EA-0778-5D60-AA627634E52F}">
 			<ObjectPath>AMB_NearTraffic_R</ObjectPath>
 			<ShortName>AMB_NearTraffic_R</ShortName>
 			<Path>Event/AMB_NearTraffic_R.bnk</Path>
@@ -313,7 +313,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="123926568" Name="AMB_NearTraffic_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficStatic\AMB_NearTraffic_R" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" MaxAttenuation="3500" DurationType="Infinite">
+				<Event Id="123926568" Name="AMB_NearTraffic_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficDynamic\AMB_NearTraffic_R" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" MaxAttenuation="3500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="17785737"/>
 						<MediaRef Id="250285595"/>
@@ -1068,7 +1068,7 @@
 				<Event Id="3787053379" Name="ITM_Health_Pickup" ObjectPath="\Events\Items\ITM_Health_Pickup" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2263523777" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{88E9097D-A46C-F362-C966-51F0A12A75AA}">
+		<SoundBank Id="2263523777" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{10C02592-E7E1-3981-2770-464D29218912}">
 			<ObjectPath>AMB_DistantTraffic_L</ObjectPath>
 			<ShortName>AMB_DistantTraffic_L</ShortName>
 			<Path>Event/AMB_DistantTraffic_L.bnk</Path>
@@ -1115,7 +1115,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2263523777" Name="AMB_DistantTraffic_L" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficDynamic\AMB_DistantTraffic_L" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" MaxAttenuation="5000" DurationType="Infinite">
+				<Event Id="2263523777" Name="AMB_DistantTraffic_L" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficDynamic\AMB_DistantTraffic_L" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" MaxAttenuation="4500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="225437181"/>
 						<MediaRef Id="268123456"/>
@@ -1129,7 +1129,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2263523807" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{AC46E624-9B35-4B29-744F-81F983273712}">
+		<SoundBank Id="2263523807" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{0CFFDBB8-EB53-CCB0-C941-804577C15281}">
 			<ObjectPath>AMB_DistantTraffic_R</ObjectPath>
 			<ShortName>AMB_DistantTraffic_R</ShortName>
 			<Path>Event/AMB_DistantTraffic_R.bnk</Path>
@@ -1190,7 +1190,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{D7C2A8F9-8CEC-5AFC-7A3D-820CC2E6A425}">
+		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{CF682C8C-08D6-204D-9F7F-94AE6C7DEF1C}">
 			<ObjectPath>AMB_EnergyPillar_C</ObjectPath>
 			<ShortName>AMB_EnergyPillar_C</ShortName>
 			<Path>Event/AMB_EnergyPillar_C.bnk</Path>
@@ -1430,5 +1430,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DEDEB786-2C81-F3DC-87E6-5383E21E0D45}</FileHash>
+	<FileHash>{427DB000-C06A-1FB7-6994-023D5F0C6EE0}</FileHash>
 </SoundBanksInfo>

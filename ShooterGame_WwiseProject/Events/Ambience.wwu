@@ -489,17 +489,6 @@
 																</Action>
 															</ChildrenList>
 														</Event>
-														<Event Name="AMB_NearTraffic_R" ID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}">
-															<ChildrenList>
-																<Action Name="" ID="{F8EB8AF0-3439-4BAF-888A-4F02724F861D}" ShortID="308643307">
-																	<ReferenceList>
-																		<Reference Name="Target">
-																			<ObjectRef Name="AMB_HoverCars_RL_LP_R" ID="{CB4F15D3-C9E8-4FFD-900D-E17BC7E57100}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																		</Reference>
-																	</ReferenceList>
-																</Action>
-															</ChildrenList>
-														</Event>
 														<Event Name="AMB_NearTraffic_L" ID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}">
 															<ChildrenList>
 																<Action Name="" ID="{96F2E233-C5FE-4907-AD96-BEC4EE68393A}" ShortID="276986791">
@@ -543,6 +532,17 @@
 																	<ReferenceList>
 																		<Reference Name="Target">
 																			<ObjectRef Name="AMB_NearTraffic_Spline_C" ID="{2983D3DB-10CD-43AA-BD62-FDD223E657E2}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																		</Reference>
+																	</ReferenceList>
+																</Action>
+															</ChildrenList>
+														</Event>
+														<Event Name="AMB_NearTraffic_R" ID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}">
+															<ChildrenList>
+																<Action Name="" ID="{F8EB8AF0-3439-4BAF-888A-4F02724F861D}" ShortID="308643307">
+																	<ReferenceList>
+																		<Reference Name="Target">
+																			<ObjectRef Name="AMB_HoverCars_RL_LP_R" ID="{CB4F15D3-C9E8-4FFD-900D-E17BC7E57100}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 																		</Reference>
 																	</ReferenceList>
 																</Action>
