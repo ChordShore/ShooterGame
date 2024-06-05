@@ -1964,7 +1964,7 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="RadiusMax" Type="Real64" Value="3500"/>
+										<Property Name="RadiusMax" Type="Real64" Value="4000"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
@@ -1981,25 +1981,31 @@
 															<SegmentShape>Log3</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>516.017355</XPos>
+															<XPos>589.73412</XPos>
 															<YPos>0</YPos>
 															<Flags>0</Flags>
 															<SegmentShape>SCurve</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>1081.30254647059</XPos>
-															<YPos>-6.96058</YPos>
+															<XPos>1235.77434</XPos>
+															<YPos>-6</YPos>
 															<Flags>0</Flags>
 															<SegmentShape>SCurve</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>2659.89159882353</XPos>
-															<YPos>-7.58483</YPos>
+															<XPos>2287.262</XPos>
+															<YPos>-6</YPos>
 															<Flags>0</Flags>
 															<SegmentShape>SCurve</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>3500</XPos>
+															<XPos>2562.91546</XPos>
+															<YPos>-9.71236</YPos>
+															<Flags>0</Flags>
+															<SegmentShape>Exp1</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>4000</XPos>
 															<YPos>-200</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -2027,19 +2033,19 @@
 															<SegmentShape>Exp1</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>525.839377</XPos>
+															<XPos>600.959288</XPos>
 															<YPos>0</YPos>
 															<Flags>0</Flags>
 															<SegmentShape>Exp3</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>2970.51924647059</XPos>
+															<XPos>3394.87913882353</XPos>
 															<YPos>20</YPos>
 															<Flags>0</Flags>
 															<SegmentShape>Log3</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>3500</XPos>
+															<XPos>4000</XPos>
 															<YPos>100</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -2061,19 +2067,19 @@
 															<SegmentShape>Exp2</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>585.365853333335</XPos>
+															<XPos>668.989546666669</XPos>
 															<YPos>0</YPos>
 															<Flags>0</Flags>
 															<SegmentShape>Exp2</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>3067.75067529412</XPos>
+															<XPos>3506.00077176471</XPos>
 															<YPos>24</YPos>
 															<Flags>0</Flags>
 															<SegmentShape>Log2</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>3500</XPos>
+															<XPos>4000</XPos>
 															<YPos>25</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -2094,19 +2100,13 @@
 															<Flags>5</Flags>
 														</Point>
 														<Point>
-															<XPos>1224.477107</XPos>
+															<XPos>1143.88556571429</XPos>
 															<YPos>100</YPos>
 															<Flags>0</Flags>
-															<SegmentShape>Log3</SegmentShape>
+															<SegmentShape>Log1</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>2985.094854</XPos>
-															<YPos>0</YPos>
-															<Flags>0</Flags>
-															<SegmentShape>Exp3</SegmentShape>
-														</Point>
-														<Point>
-															<XPos>3500</XPos>
+															<XPos>4000</XPos>
 															<YPos>0</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -2128,7 +2128,7 @@
 															<SegmentShape>Log3</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>3500</XPos>
+															<XPos>4000</XPos>
 															<YPos>0</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -2415,7 +2415,7 @@
 															<XPos>564.461055</XPos>
 															<YPos>0</YPos>
 															<Flags>0</Flags>
-															<SegmentShape>Log2</SegmentShape>
+															<SegmentShape>SCurve</SegmentShape>
 														</Point>
 														<Point>
 															<XPos>4500</XPos>
@@ -2495,7 +2495,7 @@
 															<Flags>5</Flags>
 														</Point>
 														<Point>
-															<XPos>140.625</XPos>
+															<XPos>379.30096</XPos>
 															<YPos>100</YPos>
 															<Flags>0</Flags>
 															<SegmentShape>Log3</SegmentShape>

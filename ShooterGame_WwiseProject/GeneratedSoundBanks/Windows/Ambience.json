@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{39BB96D3-C3CA-82E0-E5F2-7366E623C61F}",
+    "Hash": "{CF72614D-BDFE-002D-D786-C6D3ADD5C607}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -168,14 +168,6 @@
       "CachePath": "SFX/AMB_PhoneBox_DialTone_LP_730BDA3F.wem"
      },
      {
-      "Id": "539953251",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_PhoneBox_ErrorRecording_OS.wav",
-      "CachePath": "SFX/AMB_PhoneBox_ErrorRecording_OS_C35F038A.wem"
-     },
-     {
       "Id": "559398965",
       "Language": "SFX",
       "Streaming": "false",
@@ -222,14 +214,6 @@
       "Location": "Memory",
       "ShortName": "AMB_Emitter_WindGusts.wav",
       "CachePath": "SFX/AMB_Emitter_WindGusts_DEC75B5C.wem"
-     },
-     {
-      "Id": "992552206",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_PhoneBox_ErrorRecording_OS.wav",
-      "CachePath": "SFX/AMB_PhoneBox_ErrorRecording_OS_4F030B8A.wem"
      },
      {
       "Id": "1013661680",
@@ -358,19 +342,13 @@
      {
       "Id": "1196422761",
       "Name": "AMB_PhoneBox",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_PhoneBox",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\PhoneBox\\AMB_PhoneBox",
       "GUID": "{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}",
       "MaxAttenuation": "2200",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "537312981"
-       },
-       {
-        "Id": "539953251"
-       },
-       {
-        "Id": "992552206"
        }
       ]
      },
@@ -526,6 +504,6 @@
     ]
    }
   ],
-  "FileHash": "{A7933FFF-828B-1DBB-82B1-0CB3756F090E}"
+  "FileHash": "{D40D7E17-74AE-3DD4-B51C-9BC8C0811740}"
  }
 }

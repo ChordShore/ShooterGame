@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{39BB96D3-C3CA-82E0-E5F2-7366E623C61F}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{CF72614D-BDFE-002D-D786-C6D3ADD5C607}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -82,10 +82,6 @@
 					<ShortName>AMB_PhoneBox_DialTone_LP.wav</ShortName>
 					<CachePath>SFX/AMB_PhoneBox_DialTone_LP_730BDA3F.wem</CachePath>
 				</File>
-				<File Id="539953251" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_PhoneBox_ErrorRecording_OS.wav</ShortName>
-					<CachePath>SFX/AMB_PhoneBox_ErrorRecording_OS_C35F038A.wem</CachePath>
-				</File>
 				<File Id="559398965" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_HoverCars_DistantTraffic_B2_03.wav</ShortName>
 					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_03_10C4C929.wem</CachePath>
@@ -109,10 +105,6 @@
 				<File Id="928573754" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_Emitter_WindGusts.wav</ShortName>
 					<CachePath>SFX/AMB_Emitter_WindGusts_DEC75B5C.wem</CachePath>
-				</File>
-				<File Id="992552206" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_PhoneBox_ErrorRecording_OS.wav</ShortName>
-					<CachePath>SFX/AMB_PhoneBox_ErrorRecording_OS_4F030B8A.wem</CachePath>
 				</File>
 				<File Id="1013661680" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_HoverCars_DistantTraffic_B1_03.wav</ShortName>
@@ -165,11 +157,9 @@
 						<MediaRef Id="229272092"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1196422761" Name="AMB_PhoneBox" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_PhoneBox" GUID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" MaxAttenuation="2200" DurationType="Infinite">
+				<Event Id="1196422761" Name="AMB_PhoneBox" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\PhoneBox\AMB_PhoneBox" GUID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" MaxAttenuation="2200" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="537312981"/>
-						<MediaRef Id="539953251"/>
-						<MediaRef Id="992552206"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1724531578" Name="AMB_RoomGusts_MainEntrance_Exterior" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\RoomGusts\AMB_RoomGusts_MainEntrance_Exterior" GUID="{4E360744-3F77-422A-A2B5-787222393838}" MaxAttenuation="2000" DurationType="Infinite">
@@ -234,5 +224,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{CAA4EB1C-91EE-DF64-3F34-4EC0F1F2D7A0}</FileHash>
+	<FileHash>{E6A0E304-5E3A-8070-7441-8449957DB72D}</FileHash>
 </SoundBanksInfo>

@@ -427,24 +427,6 @@
 								</Folder>
 								<Folder Name="Static" ID="{4C479134-8E12-4BAB-A017-FC5CA692CB18}" ShortID="203033786">
 									<ChildrenList>
-										<Event Name="AMB_PhoneBox" ID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}">
-											<ChildrenList>
-												<Action Name="" ID="{5AC65C0A-0689-43FA-B1F8-63C17C80462C}" ShortID="659594679">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_PhoneBox_DialTone_LP" ID="{547F9306-FBCE-4EE7-88C6-557493CA9F98}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-												<Action Name="" ID="{E7C1ECC1-75EC-4777-8002-D5058D0CA482}" ShortID="8419930">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_PhoneBox_ErrorRecording_LP" ID="{BAEC17F1-F034-45DE-A719-EEE57352398B}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
 										<Event Name="AMB_StreetLamp" ID="{82B95D5C-4BE9-4DFC-9A31-59E8AEF7E2FC}">
 											<ChildrenList>
 												<Action Name="" ID="{9688B892-FEDC-4F58-95F4-0D7D8E864CE4}" ShortID="611311653">
@@ -627,6 +609,32 @@
 															<ReferenceList>
 																<Reference Name="Target">
 																	<ObjectRef Name="AMB_UnrealHolograph_FadeIn_OS" ID="{3859B0B2-BF31-46F7-8318-8E5DA5DFA478}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+											</ChildrenList>
+										</Folder>
+										<Folder Name="PhoneBox" ID="{9E4DD807-50CB-482D-9C20-BADF00DC3793}" ShortID="473441785">
+											<ChildrenList>
+												<Event Name="AMB_PhoneBox" ID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}">
+													<ChildrenList>
+														<Action Name="" ID="{5AC65C0A-0689-43FA-B1F8-63C17C80462C}" ShortID="659594679">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_PhoneBox_DialTone_LP" ID="{547F9306-FBCE-4EE7-88C6-557493CA9F98}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="AMB_PhoneBox_ErrorRecording" ID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}">
+													<ChildrenList>
+														<Action Name="" ID="{F22D20FC-F31E-4DA8-97DB-8CD8F8BEE5F6}" ShortID="927230627">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_ErrorRecording_Seq" ID="{95AC5E42-6E73-4571-AA1C-00D6CF2FDF73}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 																</Reference>
 															</ReferenceList>
 														</Action>

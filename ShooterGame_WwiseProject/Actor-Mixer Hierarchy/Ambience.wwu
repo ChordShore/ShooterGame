@@ -111,16 +111,11 @@
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 														<Property Name="InitialDelay" Type="Real64">
-															<ValueList>
-																<Value>30</Value>
-															</ValueList>
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{D202A837-3323-4530-855C-38A23CE43BD7}">
 																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
 																			<Property Name="Max" Type="Real64" Value="5"/>
 																			<Property Name="Min" Type="Real64" Value="-5"/>
 																		</PropertyList>
@@ -138,8 +133,6 @@
 														<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="60">
 															<ModifierList>
@@ -155,6 +148,41 @@
 															</ModifierList>
 														</Property>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-7</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATN_PhoneBox_ErrorRecording" ID="{A91A5A46-3961-4C61-AAB5-E6E0924581A1}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="AMB_ErrorRecording_Seq" ID="{95AC5E42-6E73-4571-AA1C-00D6CF2FDF73}" ShortID="363697577">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 														<Property Name="UseMaxSoundPerInstance" Type="bool">
 															<ValueList>
 																<Value>True</Value>
@@ -174,18 +202,18 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+															<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<RandomSequenceContainer Name="AMB_ErrorRecording_Sequencer" ID="{95AC5E42-6E73-4571-AA1C-00D6CF2FDF73}" ShortID="363697577">
+														<Sound Name="AMB_PhoneBox_ErrorRecording_OS" ID="{7A2E2F83-FFE3-48D7-9946-E0F67A9B1AE9}" ShortID="242507972">
 															<PropertyList>
 																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
-																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-8</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -196,80 +224,60 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="AMB_PhoneBox_ErrorRecording_OS" ID="{7A2E2F83-FFE3-48D7-9946-E0F67A9B1AE9}" ShortID="242507972">
+																<AudioFileSource Name="AMB_PhoneBox_ErrorRecording_OS" ID="{2738DEF8-5865-4B3B-81F8-9EB45BE236CC}">
 																	<PropertyList>
-																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-																		<Property Name="Volume" Type="Real64">
-																			<ValueList>
-																				<Value>-8</Value>
-																			</ValueList>
-																		</Property>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0509554140127388"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="1.09129511677282"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.24340949033392"/>
 																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="AMB_PhoneBox_ErrorRecording_OS" ID="{2738DEF8-5865-4B3B-81F8-9EB45BE236CC}">
-																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="0.0509554140127388"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="1.09129511677282"/>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="1.24340949033392"/>
-																			</PropertyList>
-																			<Language>SFX</Language>
-																			<AudioFile>AMB_PhoneBox_ErrorRecording_OS.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="992552206"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="AMB_PhoneBox_ErrorRecording_OS" ID="{2738DEF8-5865-4B3B-81F8-9EB45BE236CC}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
-																<Sound Name="AMB_PhoneBox_ErrorTone_OS" ID="{51299DB9-2A18-4CB4-8BE7-F1EA6E061CD5}" ShortID="6455245">
-																	<PropertyList>
-																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<AudioFileSource Name="AMB_PhoneBox_ErrorRecording_OS" ID="{72742728-44C3-4E5D-B0CB-0BC0A8F2035A}">
-																			<PropertyList>
-																				<Property Name="FadeInDuration" Type="Real64" Value="0.0509554140127388"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="0.162565905096661"/>
-																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="1.2609841827768"/>
-																			</PropertyList>
-																			<Language>SFX</Language>
-																			<AudioFile>AMB_PhoneBox_ErrorRecording_OS.wav</AudioFile>
-																			<MediaIDList>
-																				<MediaID ID="539953251"/>
-																			</MediaIDList>
-																		</AudioFileSource>
-																	</ChildrenList>
-																	<ActiveSourceList>
-																		<ActiveSource Name="AMB_PhoneBox_ErrorRecording_OS" ID="{72742728-44C3-4E5D-B0CB-0BC0A8F2035A}" Platform="Linked"/>
-																	</ActiveSourceList>
-																</Sound>
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_PhoneBox_ErrorRecording_OS.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="992552206"/>
+																	</MediaIDList>
+																</AudioFileSource>
 															</ChildrenList>
-															<Playlist>
-																<ItemRef Name="AMB_PhoneBox_ErrorTone_OS" ID="{51299DB9-2A18-4CB4-8BE7-F1EA6E061CD5}"/>
-																<ItemRef Name="AMB_PhoneBox_ErrorRecording_OS" ID="{7A2E2F83-FFE3-48D7-9946-E0F67A9B1AE9}"/>
-															</Playlist>
-														</RandomSequenceContainer>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_PhoneBox_ErrorRecording_OS" ID="{2738DEF8-5865-4B3B-81F8-9EB45BE236CC}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_PhoneBox_ErrorTone_OS" ID="{51299DB9-2A18-4CB4-8BE7-F1EA6E061CD5}" ShortID="6455245">
+															<PropertyList>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_PhoneBox_ErrorRecording_OS" ID="{72742728-44C3-4E5D-B0CB-0BC0A8F2035A}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0509554140127388"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.162565905096661"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.2609841827768"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_PhoneBox_ErrorRecording_OS.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="539953251"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_PhoneBox_ErrorRecording_OS" ID="{72742728-44C3-4E5D-B0CB-0BC0A8F2035A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
 													</ChildrenList>
+													<Playlist>
+														<ItemRef Name="AMB_PhoneBox_ErrorTone_OS" ID="{51299DB9-2A18-4CB4-8BE7-F1EA6E061CD5}"/>
+														<ItemRef Name="AMB_PhoneBox_ErrorRecording_OS" ID="{7A2E2F83-FFE3-48D7-9946-E0F67A9B1AE9}"/>
+													</Playlist>
 												</RandomSequenceContainer>
 											</ChildrenList>
 										</ActorMixer>
@@ -2717,6 +2725,11 @@
 																<Property Name="3DPosition" Type="int16" Value="1"/>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-96</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Attenuation">
@@ -3668,7 +3681,7 @@
 																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-1</Value>
+																		<Value>-4</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -4882,8 +4895,25 @@
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
 																<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+																<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+																<Property Name="MaxSoundPerInstance" Type="int16">
+																	<ValueList>
+																		<Value>4</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+																<Property Name="UseMaxSoundPerInstance" Type="bool">
+																	<ValueList>
+																		<Value>True</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-4</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Attenuation">

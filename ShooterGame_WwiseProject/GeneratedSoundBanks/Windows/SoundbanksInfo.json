@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{39BB96D3-C3CA-82E0-E5F2-7366E623C61F}",
+    "Hash": "{CF72614D-BDFE-002D-D786-C6D3ADD5C607}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -176,14 +176,6 @@
       "CachePath": "SFX/AMB_PhoneBox_DialTone_LP_730BDA3F.wem"
      },
      {
-      "Id": "539953251",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_PhoneBox_ErrorRecording_OS.wav",
-      "CachePath": "SFX/AMB_PhoneBox_ErrorRecording_OS_C35F038A.wem"
-     },
-     {
       "Id": "559398965",
       "Language": "SFX",
       "Streaming": "false",
@@ -230,14 +222,6 @@
       "Location": "Memory",
       "ShortName": "AMB_Emitter_WindGusts.wav",
       "CachePath": "SFX/AMB_Emitter_WindGusts_DEC75B5C.wem"
-     },
-     {
-      "Id": "992552206",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_PhoneBox_ErrorRecording_OS.wav",
-      "CachePath": "SFX/AMB_PhoneBox_ErrorRecording_OS_4F030B8A.wem"
      },
      {
       "Id": "1013661680",
@@ -366,19 +350,13 @@
      {
       "Id": "1196422761",
       "Name": "AMB_PhoneBox",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_PhoneBox",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\PhoneBox\\AMB_PhoneBox",
       "GUID": "{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}",
       "MaxAttenuation": "2200",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "537312981"
-       },
-       {
-        "Id": "539953251"
-       },
-       {
-        "Id": "992552206"
        }
       ]
      },
@@ -538,7 +516,7 @@
     "Type": "Event",
     "GUID": "{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}",
     "Language": "SFX",
-    "Hash": "{C2D30931-B2EA-0778-5D60-AA627634E52F}",
+    "Hash": "{1D6210BA-C693-B6C9-AA55-077174C5F4EA}",
     "ObjectPath": "AMB_NearTraffic_R",
     "ShortName": "AMB_NearTraffic_R",
     "Path": "Event/AMB_NearTraffic_R.bnk",
@@ -667,7 +645,7 @@
       "Name": "AMB_NearTraffic_R",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\HoverCars\\TrafficDynamic\\AMB_NearTraffic_R",
       "GUID": "{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}",
-      "MaxAttenuation": "3500",
+      "MaxAttenuation": "4000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -718,7 +696,7 @@
     "Type": "Event",
     "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
     "Language": "SFX",
-    "Hash": "{94778C6C-237C-6C6F-9950-1CD5D2888E20}",
+    "Hash": "{76D8A0F8-644B-0ECD-D1B7-918A0534A55F}",
     "ObjectPath": "AMB_NearTraffic_L",
     "ShortName": "AMB_NearTraffic_L",
     "Path": "Event/AMB_NearTraffic_L.bnk",
@@ -1615,6 +1593,56 @@
         }
        ]
       }
+     }
+    ]
+   },
+   {
+    "Id": "1322180291",
+    "Type": "Event",
+    "GUID": "{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}",
+    "Language": "SFX",
+    "Hash": "{57CB7977-57B8-AA64-4127-56F96403563A}",
+    "ObjectPath": "AMB_PhoneBox_ErrorRecording",
+    "ShortName": "AMB_PhoneBox_ErrorRecording",
+    "Path": "Event/AMB_PhoneBox_ErrorRecording.bnk",
+    "Media": [
+     {
+      "Id": "539953251",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_PhoneBox_ErrorRecording_OS.wav",
+      "Path": "Media/539953251.wem",
+      "CachePath": "SFX/AMB_PhoneBox_ErrorRecording_OS_C35F038A.wem"
+     },
+     {
+      "Id": "992552206",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_PhoneBox_ErrorRecording_OS.wav",
+      "Path": "Media/992552206.wem",
+      "CachePath": "SFX/AMB_PhoneBox_ErrorRecording_OS_4F030B8A.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1322180291",
+      "Name": "AMB_PhoneBox_ErrorRecording",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\PhoneBox\\AMB_PhoneBox_ErrorRecording",
+      "GUID": "{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}",
+      "MaxAttenuation": "2200",
+      "DurationType": "OneShot",
+      "DurationMin": "10.017575",
+      "DurationMax": "10.017575",
+      "MediaRefs": [
+       {
+        "Id": "539953251"
+       },
+       {
+        "Id": "992552206"
+       }
+      ]
      }
     ]
    },
@@ -2873,7 +2901,7 @@
     "Type": "Event",
     "GUID": "{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}",
     "Language": "SFX",
-    "Hash": "{0CFFDBB8-EB53-CCB0-C941-804577C15281}",
+    "Hash": "{8F77F27B-9F5B-433A-7A2B-19E6D40B62E7}",
     "ObjectPath": "AMB_DistantTraffic_R",
     "ShortName": "AMB_DistantTraffic_R",
     "Path": "Event/AMB_DistantTraffic_R.bnk",
@@ -3488,6 +3516,6 @@
     ]
    }
   ],
-  "FileHash": "{4907CB7C-92F7-05CF-1A4F-AA68A13A0D08}"
+  "FileHash": "{EBC9695F-00AB-F375-C18E-0847F644AC75}"
  }
 }

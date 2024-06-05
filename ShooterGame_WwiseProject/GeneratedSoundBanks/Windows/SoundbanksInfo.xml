@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{39BB96D3-C3CA-82E0-E5F2-7366E623C61F}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{CF72614D-BDFE-002D-D786-C6D3ADD5C607}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -90,10 +90,6 @@
 					<ShortName>AMB_PhoneBox_DialTone_LP.wav</ShortName>
 					<CachePath>SFX/AMB_PhoneBox_DialTone_LP_730BDA3F.wem</CachePath>
 				</File>
-				<File Id="539953251" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_PhoneBox_ErrorRecording_OS.wav</ShortName>
-					<CachePath>SFX/AMB_PhoneBox_ErrorRecording_OS_C35F038A.wem</CachePath>
-				</File>
 				<File Id="559398965" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_HoverCars_DistantTraffic_B2_03.wav</ShortName>
 					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_03_10C4C929.wem</CachePath>
@@ -117,10 +113,6 @@
 				<File Id="928573754" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_Emitter_WindGusts.wav</ShortName>
 					<CachePath>SFX/AMB_Emitter_WindGusts_DEC75B5C.wem</CachePath>
-				</File>
-				<File Id="992552206" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_PhoneBox_ErrorRecording_OS.wav</ShortName>
-					<CachePath>SFX/AMB_PhoneBox_ErrorRecording_OS_4F030B8A.wem</CachePath>
 				</File>
 				<File Id="1013661680" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_HoverCars_DistantTraffic_B1_03.wav</ShortName>
@@ -173,11 +165,9 @@
 						<MediaRef Id="229272092"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1196422761" Name="AMB_PhoneBox" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_PhoneBox" GUID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" MaxAttenuation="2200" DurationType="Infinite">
+				<Event Id="1196422761" Name="AMB_PhoneBox" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\PhoneBox\AMB_PhoneBox" GUID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" MaxAttenuation="2200" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="537312981"/>
-						<MediaRef Id="539953251"/>
-						<MediaRef Id="992552206"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1724531578" Name="AMB_RoomGusts_MainEntrance_Exterior" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\RoomGusts\AMB_RoomGusts_MainEntrance_Exterior" GUID="{4E360744-3F77-422A-A2B5-787222393838}" MaxAttenuation="2000" DurationType="Infinite">
@@ -241,7 +231,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="123926568" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{C2D30931-B2EA-0778-5D60-AA627634E52F}">
+		<SoundBank Id="123926568" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{1D6210BA-C693-B6C9-AA55-077174C5F4EA}">
 			<ObjectPath>AMB_NearTraffic_R</ObjectPath>
 			<ShortName>AMB_NearTraffic_R</ShortName>
 			<Path>Event/AMB_NearTraffic_R.bnk</Path>
@@ -313,7 +303,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="123926568" Name="AMB_NearTraffic_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficDynamic\AMB_NearTraffic_R" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" MaxAttenuation="3500" DurationType="Infinite">
+				<Event Id="123926568" Name="AMB_NearTraffic_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\HoverCars\TrafficDynamic\AMB_NearTraffic_R" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" MaxAttenuation="4000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="17785737"/>
 						<MediaRef Id="250285595"/>
@@ -332,7 +322,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="123926582" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{94778C6C-237C-6C6F-9950-1CD5D2888E20}">
+		<SoundBank Id="123926582" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{76D8A0F8-644B-0ECD-D1B7-918A0534A55F}">
 			<ObjectPath>AMB_NearTraffic_L</ObjectPath>
 			<ShortName>AMB_NearTraffic_L</ShortName>
 			<Path>Event/AMB_NearTraffic_L.bnk</Path>
@@ -729,6 +719,31 @@
 					</PluginRefs>
 				</AuxBus>
 			</AuxBusses>
+		</SoundBank>
+		<SoundBank Id="1322180291" Type="Event" GUID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}" Language="SFX" Hash="{57CB7977-57B8-AA64-4127-56F96403563A}">
+			<ObjectPath>AMB_PhoneBox_ErrorRecording</ObjectPath>
+			<ShortName>AMB_PhoneBox_ErrorRecording</ShortName>
+			<Path>Event/AMB_PhoneBox_ErrorRecording.bnk</Path>
+			<Media>
+				<File Id="539953251" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_PhoneBox_ErrorRecording_OS.wav</ShortName>
+					<Path>Media/539953251.wem</Path>
+					<CachePath>SFX/AMB_PhoneBox_ErrorRecording_OS_C35F038A.wem</CachePath>
+				</File>
+				<File Id="992552206" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_PhoneBox_ErrorRecording_OS.wav</ShortName>
+					<Path>Media/992552206.wem</Path>
+					<CachePath>SFX/AMB_PhoneBox_ErrorRecording_OS_4F030B8A.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1322180291" Name="AMB_PhoneBox_ErrorRecording" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\PhoneBox\AMB_PhoneBox_ErrorRecording" GUID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}" MaxAttenuation="2200" DurationType="OneShot" DurationMin="10.017575" DurationMax="10.017575">
+					<MediaRefs>
+						<MediaRef Id="539953251"/>
+						<MediaRef Id="992552206"/>
+					</MediaRefs>
+				</Event>
+			</Events>
 		</SoundBank>
 		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{25D3F0A9-4D69-CC4B-4DEB-CC9C4590EE6D}">
 			<ObjectPath>Init</ObjectPath>
@@ -1129,7 +1144,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2263523807" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{0CFFDBB8-EB53-CCB0-C941-804577C15281}">
+		<SoundBank Id="2263523807" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{8F77F27B-9F5B-433A-7A2B-19E6D40B62E7}">
 			<ObjectPath>AMB_DistantTraffic_R</ObjectPath>
 			<ShortName>AMB_DistantTraffic_R</ShortName>
 			<Path>Event/AMB_DistantTraffic_R.bnk</Path>
@@ -1430,5 +1445,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2DC2635F-DBEA-035C-5463-A4B476E37E2E}</FileHash>
+	<FileHash>{7E39E8B3-12AB-07AE-291F-D1A42DA1C57B}</FileHash>
 </SoundBanksInfo>
