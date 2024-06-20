@@ -33,9 +33,6 @@
 						<Event Name="Play_Sine_Pip" ID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}">
 							<ChildrenList>
 								<Action Name="" ID="{06D4DCBD-417D-49D6-A173-63C3737310A5}" ShortID="610868800">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="5"/>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Sine Pip" ID="{AF6D3756-12D4-4384-8D92-157758C323FB}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
@@ -50,6 +47,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Noise Pip" ID="{A876FB26-65FA-4102-807C-4C838D794AA4}" WorkUnitID="{E6A2868A-9249-4AA8-9FA2-1D6653B4B8BD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TestPersistent" ID="{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}">
+							<ChildrenList>
+								<Action Name="" ID="{8BC47129-9E14-4B73-B2E2-69FE49341F63}" ShortID="543985072">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB_UnrealHolograph_Main_LP_Test" ID="{430636F4-9357-4A2E-BE46-637148D8B7B4}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

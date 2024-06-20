@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3472690962",
+    "Type": "Event",
+    "GUID": "{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}",
+    "Language": "SFX",
+    "Hash": "{91522F0B-A292-8686-F596-877AF3CD558A}",
+    "ObjectPath": "TestPersistent",
+    "ShortName": "TestPersistent",
+    "Path": "Event/TestPersistent.bnk",
+    "Media": [
+     {
+      "Id": "456057735",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Emitters_UnrealHolograph_Main_LP.wav",
+      "Path": "Media/456057735.wem",
+      "CachePath": "SFX/Emitters_UnrealHolograph_Main_LP_1EF12818.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3472690962",
+      "Name": "TestPersistent",
+      "ObjectPath": "\\Events\\Default Work Unit\\Event Probe\\TestPersistent",
+      "GUID": "{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}",
+      "MaxAttenuation": "25000",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "456057735"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6CCA86F6-187E-54DF-3BEE-52D762291337}"
+ }
+}

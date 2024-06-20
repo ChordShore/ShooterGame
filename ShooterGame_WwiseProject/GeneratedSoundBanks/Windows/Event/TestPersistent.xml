@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3472690962" Type="Event" GUID="{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}" Language="SFX" Hash="{91522F0B-A292-8686-F596-877AF3CD558A}">
+			<ObjectPath>TestPersistent</ObjectPath>
+			<ShortName>TestPersistent</ShortName>
+			<Path>Event/TestPersistent.bnk</Path>
+			<Media>
+				<File Id="456057735" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Emitters_UnrealHolograph_Main_LP.wav</ShortName>
+					<Path>Media/456057735.wem</Path>
+					<CachePath>SFX/Emitters_UnrealHolograph_Main_LP_1EF12818.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3472690962" Name="TestPersistent" ObjectPath="\Events\Default Work Unit\Event Probe\TestPersistent" GUID="{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}" MaxAttenuation="25000" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="456057735"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{8BFFC990-0193-3D52-2503-3FD3260CD941}</FileHash>
+</SoundBanksInfo>
