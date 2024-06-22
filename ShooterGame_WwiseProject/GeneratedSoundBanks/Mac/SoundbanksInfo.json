@@ -1651,7 +1651,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{14C1630A-64EB-1EAD-AE33-A01D34F840AD}",
+    "Hash": "{A49F93A4-A6F9-BB90-FFFF-98E68D1A9AE2}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -1868,6 +1868,12 @@
      }
     ],
     "GameParameters": [
+     {
+      "Id": "866022863",
+      "Name": "PAR_Doppler",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Doppler",
+      "GUID": "{C2AABFFD-349C-4FED-831A-565CCB211565}"
+     },
      {
       "Id": "1228207839",
       "Name": "PAR_Heartbeat",
@@ -3418,7 +3424,7 @@
     "Type": "Event",
     "GUID": "{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}",
     "Language": "SFX",
-    "Hash": "{91522F0B-A292-8686-F596-877AF3CD558A}",
+    "Hash": "{55ADF6EB-9A47-64AB-D2D6-516BA3484D20}",
     "ObjectPath": "TestPersistent",
     "ShortName": "TestPersistent",
     "Path": "Event/TestPersistent.bnk",
@@ -3446,6 +3452,14 @@
         "Id": "456057735"
        }
       ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "866022863",
+      "Name": "PAR_Doppler",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Doppler",
+      "GUID": "{C2AABFFD-349C-4FED-831A-565CCB211565}"
      }
     ]
    },
@@ -3552,6 +3566,6 @@
     ]
    }
   ],
-  "FileHash": "{61E61352-2D9B-089D-BF36-B056012213EC}"
+  "FileHash": "{CA178A1D-5C3A-5532-78F8-032D1173F0CD}"
  }
 }

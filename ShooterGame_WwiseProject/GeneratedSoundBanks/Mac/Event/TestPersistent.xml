@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="3472690962" Type="Event" GUID="{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}" Language="SFX" Hash="{91522F0B-A292-8686-F596-877AF3CD558A}">
+		<SoundBank Id="3472690962" Type="Event" GUID="{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}" Language="SFX" Hash="{55ADF6EB-9A47-64AB-D2D6-516BA3484D20}">
 			<ObjectPath>TestPersistent</ObjectPath>
 			<ShortName>TestPersistent</ShortName>
 			<Path>Event/TestPersistent.bnk</Path>
@@ -19,7 +19,10 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="866022863" Name="PAR_Doppler" ObjectPath="\Game Parameters\Default Work Unit\PAR_Doppler" GUID="{C2AABFFD-349C-4FED-831A-565CCB211565}"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2797D1C1-1713-228A-8777-ADBFF3E1DCA3}</FileHash>
+	<FileHash>{89DE8760-2477-5017-FC1A-38D4328DF462}</FileHash>
 </SoundBanksInfo>

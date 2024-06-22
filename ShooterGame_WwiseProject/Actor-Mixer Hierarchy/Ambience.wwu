@@ -1193,6 +1193,13 @@
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{147D1BED-92F5-49C0-846A-C34D9D2FE977}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
@@ -1223,6 +1230,55 @@
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{9B2F22A5-9955-420E-B6A0-21E2F5ECCD4D}" ShortID="1052412500">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Pitch"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="PAR_Doppler" ID="{C2AABFFD-349C-4FED-831A-565CCB211565}" WorkUnitID="{45A6305D-DE92-45B5-93D4-976360EB2166}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{0B58B7A1-2DA6-458B-930C-4F6378AFCAA1}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="65537"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-420</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>7044.44444</XPos>
+																								<YPos>-4800</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>12455.55656</XPos>
+																								<YPos>-2228</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>25000</XPos>
+																								<YPos>726</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
 													<ActiveSourceList>
 														<ActiveSource Name="Emitters_UnrealHolograph_Main_LP" ID="{854C3CCA-CD17-409A-A77B-E8CA261F2B77}" Platform="Linked"/>
 													</ActiveSourceList>
