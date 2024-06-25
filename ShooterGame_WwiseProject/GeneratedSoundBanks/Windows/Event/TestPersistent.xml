@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="3472690962" Type="Event" GUID="{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}" Language="SFX" Hash="{548FBA73-D169-AF21-1105-3A992E96C412}">
+		<SoundBank Id="3472690962" Type="Event" GUID="{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}" Language="SFX" Hash="{B2C0F1CB-C953-DE7A-87AD-FC3B39904ED8}">
 			<ObjectPath>TestPersistent</ObjectPath>
 			<ShortName>TestPersistent</ShortName>
 			<Path>Event/TestPersistent.bnk</Path>
@@ -13,7 +13,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3472690962" Name="TestPersistent" ObjectPath="\Events\Default Work Unit\Event Probe\TestPersistent" GUID="{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}" MaxAttenuation="45000" DurationType="Infinite">
+				<Event Id="3472690962" Name="TestPersistent" ObjectPath="\Events\Default Work Unit\Event Probe\TestPersistent" GUID="{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}" MaxAttenuation="25000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="456057735"/>
 					</MediaRefs>
@@ -24,5 +24,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{03E15452-82F8-EA87-52AC-CBA14F191A05}</FileHash>
+	<FileHash>{737DE25F-5B11-D3AD-A42C-E22610B88789}</FileHash>
 </SoundBanksInfo>
