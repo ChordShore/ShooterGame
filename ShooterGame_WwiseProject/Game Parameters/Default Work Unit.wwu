@@ -13,8 +13,9 @@
 				</GameParameter>
 				<GameParameter Name="PAR_Doppler" ID="{C2AABFFD-349C-4FED-831A-565CCB211565}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="1"/>
-						<Property Name="Max" Type="Real64" Value="16"/>
+						<Property Name="InitialValue" Type="Real64" Value="-1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

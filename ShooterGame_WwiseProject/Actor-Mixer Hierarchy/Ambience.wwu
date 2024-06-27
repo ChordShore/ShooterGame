@@ -1200,6 +1200,11 @@
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
@@ -1250,26 +1255,13 @@
 																						</PropertyList>
 																						<PointList>
 																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>-4800</YPos>
+																								<XPos>-1</XPos>
+																								<YPos>-2500</YPos>
 																								<Flags>5</Flags>
-																								<SegmentShape>Log2</SegmentShape>
-																							</Point>
-																							<Point>
-																								<XPos>0.001</XPos>
-																								<YPos>-200</YPos>
-																								<Flags>0</Flags>
-																								<SegmentShape>Log2</SegmentShape>
 																							</Point>
 																							<Point>
 																								<XPos>1</XPos>
-																								<YPos>200</YPos>
-																								<Flags>0</Flags>
-																								<SegmentShape>Log3</SegmentShape>
-																							</Point>
-																							<Point>
-																								<XPos>16</XPos>
-																								<YPos>1901</YPos>
+																								<YPos>500</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>

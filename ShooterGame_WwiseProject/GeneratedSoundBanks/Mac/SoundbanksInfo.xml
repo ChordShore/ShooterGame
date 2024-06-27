@@ -1392,7 +1392,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3472690962" Type="Event" GUID="{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}" Language="SFX" Hash="{B2C0F1CB-C953-DE7A-87AD-FC3B39904ED8}">
+		<SoundBank Id="3472690962" Type="Event" GUID="{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}" Language="SFX" Hash="{D62597C9-F61C-D674-A72B-AD8C8D8D42A1}">
 			<ObjectPath>TestPersistent</ObjectPath>
 			<ShortName>TestPersistent</ShortName>
 			<Path>Event/TestPersistent.bnk</Path>
@@ -1404,7 +1404,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3472690962" Name="TestPersistent" ObjectPath="\Events\Default Work Unit\Event Probe\TestPersistent" GUID="{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}" MaxAttenuation="25000" DurationType="Infinite">
+				<Event Id="3472690962" Name="TestPersistent" ObjectPath="\Events\Default Work Unit\Event Probe\TestPersistent" GUID="{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}" MaxAttenuation="24000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="456057735"/>
 					</MediaRefs>
@@ -1468,5 +1468,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BFEC2D25-B754-DB9A-A7CC-2879B97A7E8D}</FileHash>
+	<FileHash>{685E35FE-9A94-3D32-C7A5-3574827B9D6E}</FileHash>
 </SoundBanksInfo>
