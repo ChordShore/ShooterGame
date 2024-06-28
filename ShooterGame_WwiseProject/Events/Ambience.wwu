@@ -258,17 +258,6 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Event Name="AMB_ScifiDrones" ID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}">
-											<ChildrenList>
-												<Action Name="" ID="{B2A58ED0-3D2C-4CE9-A4E3-08D7A698C1D4}" ShortID="456576216">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_ScifiDrones_OS" ID="{30DA05DC-6E2C-4C1A-96BA-5072975B553A}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
 										<Folder Name="RoomGusts" ID="{197AB3FA-E979-4674-B1B1-180389371AC2}" ShortID="534869423">
 											<ChildrenList>
 												<Event Name="AMB_RoomGusts_MainEntrance_Interior" ID="{24CD36E0-49F3-4EC4-B5D6-65913D32EC35}">
@@ -373,56 +362,150 @@
 												</Event>
 											</ChildrenList>
 										</Folder>
-										<Event Name="AMB_EnergyPillar_C" ID="{59B52E0A-A590-4C41-B895-B6222DEA8792}">
+										<Folder Name="EnergyPillar" ID="{8CE60758-ECF2-4E6F-B064-3F865D80ADA2}" ShortID="974259189">
 											<ChildrenList>
-												<Action Name="" ID="{2D046843-4D86-4314-AED1-48C8D4A91CDD}" ShortID="40391474">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_EnergyPillar_Arcs" ID="{3A3D8AE7-7A42-4352-AB02-DA0B25E7B37C}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-												<Action Name="" ID="{2D7749D7-C4CB-43B0-8AFA-3138B65A24D6}" ShortID="967837799">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_EnergyPillar_Beam" ID="{7AE711D9-3F11-415B-8F72-C0D2D8D4CD86}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-												<Action Name="" ID="{22136468-79CF-4D04-B0AA-50BD8FB9B86E}" ShortID="527548332">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_EnergyPillar_Waterfall" ID="{6D9BCEF2-9A35-421E-9AAB-DD0D45BD145E}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-												<Action Name="" ID="{DD947746-039E-41A9-BAC9-2E5487108CF4}" ShortID="308115780">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_NearTraffic_Spline_C" ID="{2983D3DB-10CD-43AA-BD62-FDD223E657E2}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
+												<Event Name="AMB_EnergyPillar_C" ID="{59B52E0A-A590-4C41-B895-B6222DEA8792}">
+													<ChildrenList>
+														<Action Name="" ID="{2D046843-4D86-4314-AED1-48C8D4A91CDD}" ShortID="40391474">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_EnergyPillar_Arcs" ID="{3A3D8AE7-7A42-4352-AB02-DA0B25E7B37C}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+														<Action Name="" ID="{2D7749D7-C4CB-43B0-8AFA-3138B65A24D6}" ShortID="967837799">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_EnergyPillar_Beam" ID="{7AE711D9-3F11-415B-8F72-C0D2D8D4CD86}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+														<Action Name="" ID="{22136468-79CF-4D04-B0AA-50BD8FB9B86E}" ShortID="527548332">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_EnergyPillar_Waterfall" ID="{6D9BCEF2-9A35-421E-9AAB-DD0D45BD145E}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+														<Action Name="" ID="{DD947746-039E-41A9-BAC9-2E5487108CF4}" ShortID="308115780">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_HoverCars_Spline_C_Burst" ID="{2983D3DB-10CD-43AA-BD62-FDD223E657E2}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="AMB_EnergyPillar_R" ID="{1139BF59-E796-44F8-A41A-58F596E277FE}">
+													<ChildrenList>
+														<Action Name="" ID="{57A6CF41-1D01-49AF-A203-83F165A075EA}" ShortID="334125578">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_EnergyPillar_Arcs" ID="{8089DD7F-9C5D-414C-805A-F2F6A2B7A695}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+														<Action Name="" ID="{4D90E2FC-9596-4DF4-A595-05D050D65471}" ShortID="354341073">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_EnergyPillar_Beam" ID="{FFA7883A-B02C-4512-8DF6-E767D31E2EEB}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
 											</ChildrenList>
-										</Event>
-										<Event Name="AMB_EnergyPillar_R" ID="{1139BF59-E796-44F8-A41A-58F596E277FE}">
+										</Folder>
+										<Folder Name="HoverCars" ID="{E60B9BE2-648B-4B98-9CA0-BE8F7C3B8A73}" ShortID="828572442">
 											<ChildrenList>
-												<Action Name="" ID="{57A6CF41-1D01-49AF-A203-83F165A075EA}" ShortID="334125578">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_EnergyPillar_Arcs" ID="{8089DD7F-9C5D-414C-805A-F2F6A2B7A695}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-												<Action Name="" ID="{4D90E2FC-9596-4DF4-A595-05D050D65471}" ShortID="354341073">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_EnergyPillar_Beam" ID="{FFA7883A-B02C-4512-8DF6-E767D31E2EEB}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
+												<Event Name="AMB_HoverCars_Spline_L" ID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}">
+													<ChildrenList>
+														<Action Name="" ID="{F00BECB9-8ECF-40E3-8B79-F9464119E128}" ShortID="598574139">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_HoverCars_Spline_L_Burst" ID="{F01864D4-1862-4F24-A9B7-81F5F7741843}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="AMB_HoverCars_Spline_R" ID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}">
+													<ChildrenList>
+														<Action Name="" ID="{3F6FAE9F-9387-455E-9F6A-84A0D2B49E11}" ShortID="386980522">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_HoverCars_Spline_R_Burst" ID="{43F1B6BD-6FF2-4228-917E-652630FD134E}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="AMB_HoverCars_ParticleStream_7" ID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}">
+													<ChildrenList>
+														<Action Name="" ID="{F8EB8AF0-3439-4BAF-888A-4F02724F861D}" ShortID="308643307">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_HoverCars_Engine_Highs_LP_PS7" ID="{F8E65DE5-8D96-4BE6-BEC8-853C2BFA6CAF}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+														<Action Name="" ID="{0312D5A4-69E2-42E1-87F5-3914D60C3B72}" ShortID="355028375">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_HoverCars_Engine_Lows_LP_PS7" ID="{2E3097D3-AE4E-4C63-A1F9-EF9D4463313B}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+														<Action Name="" ID="{CE7DDC78-5316-43E4-942F-4243E993D427}" ShortID="996982408">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_HoverCars_Engine_Mids_LP_PS7" ID="{45106B71-DBAF-45BD-A8B9-F4AA708A1911}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+														<Action Name="" ID="{E2311798-B506-489C-87F8-AD46C8D3BE36}" ShortID="528126946">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_HoverCars_Engine_Rumble_LP_PS7" ID="{636A9D61-7FDD-495E-9596-506057B00AD8}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="AMB_HoverCars_ParticleStream_5" ID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}">
+													<ChildrenList>
+														<Action Name="" ID="{96F2E233-C5FE-4907-AD96-BEC4EE68393A}" ShortID="276986791">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_HoverCars_Engine_Highs_LP_PS5" ID="{272BB6BB-881C-4DA1-AA17-6B5181E6613B}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+														<Action Name="" ID="{139F4095-2F8D-4A18-BE79-AFE11B64B703}" ShortID="508259762">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_HoverCars_Engine_Lows_LP_PS5" ID="{2063E01B-D617-4307-A562-11F679426420}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+														<Action Name="" ID="{D0D0D4BD-F918-4EBF-847F-E3F89F18B3B0}" ShortID="662697196">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_HoverCars_Engine_Mids_LP_PS5" ID="{17B2A36A-6D7B-4FED-B62A-C38524197F33}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+														<Action Name="" ID="{08B25347-EFFF-4AEC-8098-3B653AF0AF0F}" ShortID="917685541">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="AMB_HoverCars_Engine_Rumble_LP_PS5" ID="{44F00013-20CE-4D2A-B90E-EA80679C8569}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
 											</ChildrenList>
-										</Event>
+										</Folder>
 									</ChildrenList>
 								</Folder>
 								<Folder Name="Static" ID="{4C479134-8E12-4BAB-A017-FC5CA692CB18}" ShortID="203033786">
@@ -456,84 +539,6 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Folder Name="HoverCars" ID="{E60B9BE2-648B-4B98-9CA0-BE8F7C3B8A73}" ShortID="828572442">
-											<ChildrenList>
-												<Folder Name="TrafficStatic" ID="{B1347CAF-11E7-4FC6-8B34-DBC1EF449B81}" ShortID="284556994">
-													<ChildrenList>
-														<Event Name="AMB_NearTraffic_C" ID="{C5ED1BFB-22A9-41F4-A56D-7095120AA1D2}">
-															<ChildrenList>
-																<Action Name="" ID="{41D4026C-A480-410F-9BF9-8ED6DBCA3888}" ShortID="93368156">
-																	<ReferenceList>
-																		<Reference Name="Target">
-																			<ObjectRef Name="AMB_NearTraffic_BF_LP_C" ID="{BFCE0EAF-6B92-4BA0-89DA-51A53F8178C6}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																		</Reference>
-																	</ReferenceList>
-																</Action>
-															</ChildrenList>
-														</Event>
-														<Event Name="AMB_NearTraffic_L" ID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}">
-															<ChildrenList>
-																<Action Name="" ID="{96F2E233-C5FE-4907-AD96-BEC4EE68393A}" ShortID="276986791">
-																	<ReferenceList>
-																		<Reference Name="Target">
-																			<ObjectRef Name="AMB_HoverCars_LR_LP_L" ID="{E1CEB305-BC47-4431-B317-71EE7529CAA7}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																		</Reference>
-																	</ReferenceList>
-																</Action>
-															</ChildrenList>
-														</Event>
-													</ChildrenList>
-												</Folder>
-												<Folder Name="TrafficDynamic" ID="{2181E809-1D01-4D6D-BFD9-5DC4E75D26ED}" ShortID="855891662">
-													<ChildrenList>
-														<Event Name="AMB_DistantTraffic_R" ID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}">
-															<ChildrenList>
-																<Action Name="" ID="{3F6FAE9F-9387-455E-9F6A-84A0D2B49E11}" ShortID="386980522">
-																	<ReferenceList>
-																		<Reference Name="Target">
-																			<ObjectRef Name="AMB_NearTraffic_Spline_R" ID="{43F1B6BD-6FF2-4228-917E-652630FD134E}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																		</Reference>
-																	</ReferenceList>
-																</Action>
-															</ChildrenList>
-														</Event>
-														<Event Name="AMB_DistantTraffic_L" ID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}">
-															<ChildrenList>
-																<Action Name="" ID="{F00BECB9-8ECF-40E3-8B79-F9464119E128}" ShortID="598574139">
-																	<ReferenceList>
-																		<Reference Name="Target">
-																			<ObjectRef Name="AMB_NearTraffic_Spline_L" ID="{F01864D4-1862-4F24-A9B7-81F5F7741843}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																		</Reference>
-																	</ReferenceList>
-																</Action>
-															</ChildrenList>
-														</Event>
-														<Event Name="AMB_DistantTraffic_C" ID="{B79F71C1-F2C8-4A0A-88DC-B7648445D29B}">
-															<ChildrenList>
-																<Action Name="" ID="{C9029C52-BED1-4BAE-BA35-9C22B422109F}" ShortID="625442309">
-																	<ReferenceList>
-																		<Reference Name="Target">
-																			<ObjectRef Name="AMB_NearTraffic_Spline_C" ID="{2983D3DB-10CD-43AA-BD62-FDD223E657E2}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																		</Reference>
-																	</ReferenceList>
-																</Action>
-															</ChildrenList>
-														</Event>
-														<Event Name="AMB_NearTraffic_R" ID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}">
-															<ChildrenList>
-																<Action Name="" ID="{F8EB8AF0-3439-4BAF-888A-4F02724F861D}" ShortID="308643307">
-																	<ReferenceList>
-																		<Reference Name="Target">
-																			<ObjectRef Name="AMB_HoverCars_RL_LP_R" ID="{CB4F15D3-C9E8-4FFD-900D-E17BC7E57100}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																		</Reference>
-																	</ReferenceList>
-																</Action>
-															</ChildrenList>
-														</Event>
-													</ChildrenList>
-												</Folder>
-											</ChildrenList>
-										</Folder>
 										<Folder Name="UnrealHolograph" ID="{21B29F72-3A40-4B43-AA3C-6F6355C68ED3}" ShortID="867970519">
 											<ChildrenList>
 												<Event Name="AMB_UnrealHolograph_FadeIn" ID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}">
@@ -642,6 +647,17 @@
 												</Event>
 											</ChildrenList>
 										</Folder>
+										<Event Name="AMB_ScifiDrones" ID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}">
+											<ChildrenList>
+												<Action Name="" ID="{B2A58ED0-3D2C-4CE9-A4E3-08D7A698C1D4}" ShortID="456576216">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_ScifiDrones_OS" ID="{30DA05DC-6E2C-4C1A-96BA-5072975B553A}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>

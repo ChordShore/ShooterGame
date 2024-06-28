@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{BCFAA382-25E1-40F2-0AAA-EE64645D4F86}">
+			<ObjectPath>AMB_HoverCars_ParticleStream_5</ObjectPath>
+			<ShortName>AMB_HoverCars_ParticleStream_5</ShortName>
+			<Path>Event/AMB_HoverCars_ParticleStream_5.bnk</Path>
+			<Media>
+				<File Id="11200066" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Mids_1.wav</ShortName>
+					<Path>Media/11200066.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Mids_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="147460230" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Lows_2.wav</ShortName>
+					<Path>Media/147460230.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Lows_2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="549764293" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Rumble.wav</ShortName>
+					<Path>Media/549764293.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Rumble_10C4C929.wem</CachePath>
+				</File>
+				<File Id="578245340" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Highs_3.wav</ShortName>
+					<Path>Media/578245340.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Highs_3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="585816022" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Highs_1.wav</ShortName>
+					<Path>Media/585816022.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Highs_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="606304149" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Highs_2.wav</ShortName>
+					<Path>Media/606304149.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Highs_2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="684584483" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Highs_4.wav</ShortName>
+					<Path>Media/684584483.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Highs_4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="797408764" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Mids_2.wav</ShortName>
+					<Path>Media/797408764.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Mids_2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="861122326" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Mids_3.wav</ShortName>
+					<Path>Media/861122326.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Mids_3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="967271830" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Lows_1.wav</ShortName>
+					<Path>Media/967271830.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Lows_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1028623358" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Mids_4.wav</ShortName>
+					<Path>Media/1028623358.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Mids_4_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2496008986" Name="AMB_HoverCars_ParticleStream_5" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_ParticleStream_5" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" MaxAttenuation="45000" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="11200066"/>
+						<MediaRef Id="147460230"/>
+						<MediaRef Id="549764293"/>
+						<MediaRef Id="578245340"/>
+						<MediaRef Id="585816022"/>
+						<MediaRef Id="606304149"/>
+						<MediaRef Id="684584483"/>
+						<MediaRef Id="797408764"/>
+						<MediaRef Id="861122326"/>
+						<MediaRef Id="967271830"/>
+						<MediaRef Id="1028623358"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="866022863" Name="PAR_Doppler" ObjectPath="\Game Parameters\Default Work Unit\PAR_Doppler" GUID="{D40C9741-1633-4046-A65F-904ED87051FE}"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{7103B359-C06D-5736-139B-D277B8D74CB9}</FileHash>
+</SoundBanksInfo>

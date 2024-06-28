@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{14C1630A-64EB-1EAD-AE33-A01D34F840AD}",
+    "Hash": "{64BF9DD7-F141-59EE-6BCE-8F86CC1E8F20}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -227,6 +227,12 @@
      }
     ],
     "GameParameters": [
+     {
+      "Id": "866022863",
+      "Name": "PAR_Doppler",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Doppler",
+      "GUID": "{D40C9741-1633-4046-A65F-904ED87051FE}"
+     },
      {
       "Id": "1228207839",
       "Name": "PAR_Heartbeat",
@@ -760,6 +766,6 @@
     ]
    }
   ],
-  "FileHash": "{1D4FF275-53F3-644D-A907-958466C83944}"
+  "FileHash": "{76874F68-CA5D-41BF-1EA5-B1DFD0B78BAC}"
  }
 }

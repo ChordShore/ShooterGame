@@ -14,11 +14,251 @@
   "DialogueEvents": [],
   "SoundBanks": [
    {
+    "Id": "67622880",
+    "Type": "Event",
+    "GUID": "{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}",
+    "Language": "SFX",
+    "Hash": "{35E8F412-7AE1-17CD-6AEB-A2C7470A7379}",
+    "ObjectPath": "AMB_HoverCars_Spline_R",
+    "ShortName": "AMB_HoverCars_Spline_R",
+    "Path": "Event/AMB_HoverCars_Spline_R.bnk",
+    "Media": [
+     {
+      "Id": "225437181",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B2_04.wav",
+      "Path": "Media/225437181.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_04_10C4C929.wem"
+     },
+     {
+      "Id": "268123456",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B1_01.wav",
+      "Path": "Media/268123456.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_01_10C4C929.wem"
+     },
+     {
+      "Id": "417150525",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B2_02.wav",
+      "Path": "Media/417150525.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_02_10C4C929.wem"
+     },
+     {
+      "Id": "559398965",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B2_03.wav",
+      "Path": "Media/559398965.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_03_10C4C929.wem"
+     },
+     {
+      "Id": "642141231",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B1_04.wav",
+      "Path": "Media/642141231.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_04_10C4C929.wem"
+     },
+     {
+      "Id": "802290447",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B1_02.wav",
+      "Path": "Media/802290447.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_02_10C4C929.wem"
+     },
+     {
+      "Id": "1013661680",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B1_03.wav",
+      "Path": "Media/1013661680.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_03_10C4C929.wem"
+     },
+     {
+      "Id": "1035687485",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B2_01.wav",
+      "Path": "Media/1035687485.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "67622880",
+      "Name": "AMB_HoverCars_Spline_R",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\HoverCars\\AMB_HoverCars_Spline_R",
+      "GUID": "{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}",
+      "MaxAttenuation": "4500",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "225437181"
+       },
+       {
+        "Id": "268123456"
+       },
+       {
+        "Id": "417150525"
+       },
+       {
+        "Id": "559398965"
+       },
+       {
+        "Id": "642141231"
+       },
+       {
+        "Id": "802290447"
+       },
+       {
+        "Id": "1013661680"
+       },
+       {
+        "Id": "1035687485"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "Id": "67622910",
+    "Type": "Event",
+    "GUID": "{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}",
+    "Language": "SFX",
+    "Hash": "{E2752461-95AA-F56E-5D85-4A4BC58AC38F}",
+    "ObjectPath": "AMB_HoverCars_Spline_L",
+    "ShortName": "AMB_HoverCars_Spline_L",
+    "Path": "Event/AMB_HoverCars_Spline_L.bnk",
+    "Media": [
+     {
+      "Id": "225437181",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B2_04.wav",
+      "Path": "Media/225437181.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_04_10C4C929.wem"
+     },
+     {
+      "Id": "268123456",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B1_01.wav",
+      "Path": "Media/268123456.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_01_10C4C929.wem"
+     },
+     {
+      "Id": "417150525",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B2_02.wav",
+      "Path": "Media/417150525.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_02_10C4C929.wem"
+     },
+     {
+      "Id": "559398965",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B2_03.wav",
+      "Path": "Media/559398965.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_03_10C4C929.wem"
+     },
+     {
+      "Id": "642141231",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B1_04.wav",
+      "Path": "Media/642141231.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_04_10C4C929.wem"
+     },
+     {
+      "Id": "802290447",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B1_02.wav",
+      "Path": "Media/802290447.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_02_10C4C929.wem"
+     },
+     {
+      "Id": "1013661680",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B1_03.wav",
+      "Path": "Media/1013661680.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_03_10C4C929.wem"
+     },
+     {
+      "Id": "1035687485",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_DistantTraffic_B2_01.wav",
+      "Path": "Media/1035687485.wem",
+      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "67622910",
+      "Name": "AMB_HoverCars_Spline_L",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\HoverCars\\AMB_HoverCars_Spline_L",
+      "GUID": "{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}",
+      "MaxAttenuation": "4500",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "225437181"
+       },
+       {
+        "Id": "268123456"
+       },
+       {
+        "Id": "417150525"
+       },
+       {
+        "Id": "559398965"
+       },
+       {
+        "Id": "642141231"
+       },
+       {
+        "Id": "802290447"
+       },
+       {
+        "Id": "1013661680"
+       },
+       {
+        "Id": "1035687485"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "85412153",
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{CF72614D-BDFE-002D-D786-C6D3ADD5C607}",
+    "Hash": "{BFB95806-6C80-CE93-F4D5-75E1BCB5A011}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -72,14 +312,6 @@
       "CachePath": "SFX/Emitters_UnrealSign_1B9F70D9.wem"
      },
      {
-      "Id": "225437181",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B2_04.wav",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_04_10C4C929.wem"
-     },
-     {
       "Id": "229272092",
       "Language": "SFX",
       "Streaming": "false",
@@ -94,14 +326,6 @@
       "Location": "Memory",
       "ShortName": "AMB_StreetLamp_Buzz_OS_1.wav",
       "CachePath": "SFX/AMB_StreetLamp_Buzz_OS_1_10C4C929.wem"
-     },
-     {
-      "Id": "268123456",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B1_01.wav",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_01_10C4C929.wem"
      },
      {
       "Id": "288927093",
@@ -126,14 +350,6 @@
       "Location": "Memory",
       "ShortName": "AMB_Emitter_RoomGusts.wav",
       "CachePath": "SFX/AMB_Emitter_RoomGusts_577AE79D.wem"
-     },
-     {
-      "Id": "417150525",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B2_02.wav",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_02_10C4C929.wem"
      },
      {
       "Id": "425050702",
@@ -176,36 +392,12 @@
       "CachePath": "SFX/AMB_PhoneBox_DialTone_LP_730BDA3F.wem"
      },
      {
-      "Id": "559398965",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B2_03.wav",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_03_10C4C929.wem"
-     },
-     {
       "Id": "619272686",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Emitters_UnrealHolograph_FadeIn_OS.wav",
       "CachePath": "SFX/Emitters_UnrealHolograph_FadeIn_OS_CD200B86.wem"
-     },
-     {
-      "Id": "642141231",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B1_04.wav",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_04_10C4C929.wem"
-     },
-     {
-      "Id": "802290447",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B1_02.wav",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_02_10C4C929.wem"
      },
      {
       "Id": "864735500",
@@ -222,22 +414,6 @@
       "Location": "Memory",
       "ShortName": "AMB_Emitter_WindGusts.wav",
       "CachePath": "SFX/AMB_Emitter_WindGusts_DEC75B5C.wem"
-     },
-     {
-      "Id": "1013661680",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B1_03.wav",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_03_10C4C929.wem"
-     },
-     {
-      "Id": "1035687485",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B2_01.wav",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem"
      },
      {
       "Id": "1041432378",
@@ -271,40 +447,6 @@
       "MediaRefs": [
        {
         "Id": "1041432378"
-       }
-      ]
-     },
-     {
-      "Id": "2263523790",
-      "Name": "AMB_DistantTraffic_C",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\HoverCars\\TrafficDynamic\\AMB_DistantTraffic_C",
-      "GUID": "{B79F71C1-F2C8-4A0A-88DC-B7648445D29B}",
-      "MaxAttenuation": "4500",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "225437181"
-       },
-       {
-        "Id": "268123456"
-       },
-       {
-        "Id": "417150525"
-       },
-       {
-        "Id": "559398965"
-       },
-       {
-        "Id": "642141231"
-       },
-       {
-        "Id": "802290447"
-       },
-       {
-        "Id": "1013661680"
-       },
-       {
-        "Id": "1035687485"
        }
       ]
      },
@@ -506,546 +648,6 @@
       "MediaRefs": [
        {
         "Id": "928573754"
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "Id": "123926568",
-    "Type": "Event",
-    "GUID": "{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}",
-    "Language": "SFX",
-    "Hash": "{1D6210BA-C693-B6C9-AA55-077174C5F4EA}",
-    "ObjectPath": "AMB_NearTraffic_R",
-    "ShortName": "AMB_NearTraffic_R",
-    "Path": "Event/AMB_NearTraffic_R.bnk",
-    "Media": [
-     {
-      "Id": "17785737",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B3_04.wav",
-      "Path": "Media/17785737.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B3_04_10C4C929.wem"
-     },
-     {
-      "Id": "250285595",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B1_02.wav",
-      "Path": "Media/250285595.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B1_02_10C4C929.wem"
-     },
-     {
-      "Id": "318391763",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B2_04.wav",
-      "Path": "Media/318391763.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B2_04_10C4C929.wem"
-     },
-     {
-      "Id": "338971624",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B3_01.wav",
-      "Path": "Media/338971624.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B3_01_10C4C929.wem"
-     },
-     {
-      "Id": "508714875",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B1_04.wav",
-      "Path": "Media/508714875.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B1_04_10C4C929.wem"
-     },
-     {
-      "Id": "521011312",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B3_02.wav",
-      "Path": "Media/521011312.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B3_02_10C4C929.wem"
-     },
-     {
-      "Id": "525122848",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B2_01.wav",
-      "Path": "Media/525122848.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B2_01_10C4C929.wem"
-     },
-     {
-      "Id": "603729134",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B2_02.wav",
-      "Path": "Media/603729134.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B2_02_10C4C929.wem"
-     },
-     {
-      "Id": "643032324",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B2_05.wav",
-      "Path": "Media/643032324.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B2_05_10C4C929.wem"
-     },
-     {
-      "Id": "701489611",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B1_03.wav",
-      "Path": "Media/701489611.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B1_03_10C4C929.wem"
-     },
-     {
-      "Id": "771626168",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B3_03.wav",
-      "Path": "Media/771626168.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B3_03_10C4C929.wem"
-     },
-     {
-      "Id": "1016809254",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B1_01.wav",
-      "Path": "Media/1016809254.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B1_01_10C4C929.wem"
-     },
-     {
-      "Id": "1060677517",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B2_03.wav",
-      "Path": "Media/1060677517.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B2_03_10C4C929.wem"
-     }
-    ],
-    "Events": [
-     {
-      "Id": "123926568",
-      "Name": "AMB_NearTraffic_R",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\HoverCars\\TrafficDynamic\\AMB_NearTraffic_R",
-      "GUID": "{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}",
-      "MaxAttenuation": "4000",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "17785737"
-       },
-       {
-        "Id": "250285595"
-       },
-       {
-        "Id": "318391763"
-       },
-       {
-        "Id": "338971624"
-       },
-       {
-        "Id": "508714875"
-       },
-       {
-        "Id": "521011312"
-       },
-       {
-        "Id": "525122848"
-       },
-       {
-        "Id": "603729134"
-       },
-       {
-        "Id": "643032324"
-       },
-       {
-        "Id": "701489611"
-       },
-       {
-        "Id": "771626168"
-       },
-       {
-        "Id": "1016809254"
-       },
-       {
-        "Id": "1060677517"
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "Id": "123926582",
-    "Type": "Event",
-    "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
-    "Language": "SFX",
-    "Hash": "{76D8A0F8-644B-0ECD-D1B7-918A0534A55F}",
-    "ObjectPath": "AMB_NearTraffic_L",
-    "ShortName": "AMB_NearTraffic_L",
-    "Path": "Event/AMB_NearTraffic_L.bnk",
-    "Media": [
-     {
-      "Id": "17785737",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B3_04.wav",
-      "Path": "Media/17785737.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B3_04_10C4C929.wem"
-     },
-     {
-      "Id": "250285595",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B1_02.wav",
-      "Path": "Media/250285595.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B1_02_10C4C929.wem"
-     },
-     {
-      "Id": "318391763",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B2_04.wav",
-      "Path": "Media/318391763.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B2_04_10C4C929.wem"
-     },
-     {
-      "Id": "338971624",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B3_01.wav",
-      "Path": "Media/338971624.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B3_01_10C4C929.wem"
-     },
-     {
-      "Id": "508714875",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B1_04.wav",
-      "Path": "Media/508714875.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B1_04_10C4C929.wem"
-     },
-     {
-      "Id": "521011312",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B3_02.wav",
-      "Path": "Media/521011312.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B3_02_10C4C929.wem"
-     },
-     {
-      "Id": "525122848",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B2_01.wav",
-      "Path": "Media/525122848.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B2_01_10C4C929.wem"
-     },
-     {
-      "Id": "603729134",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B2_02.wav",
-      "Path": "Media/603729134.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B2_02_10C4C929.wem"
-     },
-     {
-      "Id": "643032324",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B2_05.wav",
-      "Path": "Media/643032324.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B2_05_10C4C929.wem"
-     },
-     {
-      "Id": "701489611",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B1_03.wav",
-      "Path": "Media/701489611.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B1_03_10C4C929.wem"
-     },
-     {
-      "Id": "771626168",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B3_03.wav",
-      "Path": "Media/771626168.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B3_03_10C4C929.wem"
-     },
-     {
-      "Id": "1016809254",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B1_01.wav",
-      "Path": "Media/1016809254.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B1_01_10C4C929.wem"
-     },
-     {
-      "Id": "1060677517",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B2_03.wav",
-      "Path": "Media/1060677517.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B2_03_10C4C929.wem"
-     }
-    ],
-    "Events": [
-     {
-      "Id": "123926582",
-      "Name": "AMB_NearTraffic_L",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\HoverCars\\TrafficStatic\\AMB_NearTraffic_L",
-      "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
-      "MaxAttenuation": "4000",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "17785737"
-       },
-       {
-        "Id": "250285595"
-       },
-       {
-        "Id": "318391763"
-       },
-       {
-        "Id": "338971624"
-       },
-       {
-        "Id": "508714875"
-       },
-       {
-        "Id": "521011312"
-       },
-       {
-        "Id": "525122848"
-       },
-       {
-        "Id": "603729134"
-       },
-       {
-        "Id": "643032324"
-       },
-       {
-        "Id": "701489611"
-       },
-       {
-        "Id": "771626168"
-       },
-       {
-        "Id": "1016809254"
-       },
-       {
-        "Id": "1060677517"
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "Id": "123926585",
-    "Type": "Event",
-    "GUID": "{C5ED1BFB-22A9-41F4-A56D-7095120AA1D2}",
-    "Language": "SFX",
-    "Hash": "{9D22070A-E4ED-75C6-50C2-F59771B701BC}",
-    "ObjectPath": "AMB_NearTraffic_C",
-    "ShortName": "AMB_NearTraffic_C",
-    "Path": "Event/AMB_NearTraffic_C.bnk",
-    "Media": [
-     {
-      "Id": "17785737",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B3_04.wav",
-      "Path": "Media/17785737.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B3_04_10C4C929.wem"
-     },
-     {
-      "Id": "250285595",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B1_02.wav",
-      "Path": "Media/250285595.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B1_02_10C4C929.wem"
-     },
-     {
-      "Id": "318391763",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B2_04.wav",
-      "Path": "Media/318391763.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B2_04_10C4C929.wem"
-     },
-     {
-      "Id": "338971624",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B3_01.wav",
-      "Path": "Media/338971624.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B3_01_10C4C929.wem"
-     },
-     {
-      "Id": "508714875",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B1_04.wav",
-      "Path": "Media/508714875.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B1_04_10C4C929.wem"
-     },
-     {
-      "Id": "521011312",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B3_02.wav",
-      "Path": "Media/521011312.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B3_02_10C4C929.wem"
-     },
-     {
-      "Id": "525122848",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B2_01.wav",
-      "Path": "Media/525122848.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B2_01_10C4C929.wem"
-     },
-     {
-      "Id": "603729134",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B2_02.wav",
-      "Path": "Media/603729134.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B2_02_10C4C929.wem"
-     },
-     {
-      "Id": "643032324",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B2_05.wav",
-      "Path": "Media/643032324.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B2_05_10C4C929.wem"
-     },
-     {
-      "Id": "701489611",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B1_03.wav",
-      "Path": "Media/701489611.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B1_03_10C4C929.wem"
-     },
-     {
-      "Id": "771626168",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B3_03.wav",
-      "Path": "Media/771626168.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B3_03_10C4C929.wem"
-     },
-     {
-      "Id": "1016809254",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B1_01.wav",
-      "Path": "Media/1016809254.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B1_01_10C4C929.wem"
-     },
-     {
-      "Id": "1060677517",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_NearTraffic_B2_03.wav",
-      "Path": "Media/1060677517.wem",
-      "CachePath": "SFX/AMB_HoverCars_NearTraffic_B2_03_10C4C929.wem"
-     }
-    ],
-    "Events": [
-     {
-      "Id": "123926585",
-      "Name": "AMB_NearTraffic_C",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\HoverCars\\TrafficStatic\\AMB_NearTraffic_C",
-      "GUID": "{C5ED1BFB-22A9-41F4-A56D-7095120AA1D2}",
-      "MaxAttenuation": "8500",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "17785737"
-       },
-       {
-        "Id": "250285595"
-       },
-       {
-        "Id": "318391763"
-       },
-       {
-        "Id": "338971624"
-       },
-       {
-        "Id": "508714875"
-       },
-       {
-        "Id": "521011312"
-       },
-       {
-        "Id": "525122848"
-       },
-       {
-        "Id": "603729134"
-       },
-       {
-        "Id": "643032324"
-       },
-       {
-        "Id": "701489611"
-       },
-       {
-        "Id": "771626168"
-       },
-       {
-        "Id": "1016809254"
-       },
-       {
-        "Id": "1060677517"
        }
       ]
      }
@@ -1345,7 +947,7 @@
      {
       "Id": "977986739",
       "Name": "AMB_ScifiDrones",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_ScifiDrones",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\AMB_ScifiDrones",
       "GUID": "{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}",
       "DurationType": "OneShot",
       "DurationMin": "6.488638",
@@ -1651,7 +1253,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{14C1630A-64EB-1EAD-AE33-A01D34F840AD}",
+    "Hash": "{64BF9DD7-F141-59EE-6BCE-8F86CC1E8F20}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -1868,6 +1470,12 @@
      }
     ],
     "GameParameters": [
+     {
+      "Id": "866022863",
+      "Name": "PAR_Doppler",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Doppler",
+      "GUID": "{D40C9741-1633-4046-A65F-904ED87051FE}"
+     },
      {
       "Id": "1228207839",
       "Name": "PAR_Heartbeat",
@@ -2777,251 +2385,11 @@
     ]
    },
    {
-    "Id": "2263523777",
-    "Type": "Event",
-    "GUID": "{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}",
-    "Language": "SFX",
-    "Hash": "{10C02592-E7E1-3981-2770-464D29218912}",
-    "ObjectPath": "AMB_DistantTraffic_L",
-    "ShortName": "AMB_DistantTraffic_L",
-    "Path": "Event/AMB_DistantTraffic_L.bnk",
-    "Media": [
-     {
-      "Id": "225437181",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B2_04.wav",
-      "Path": "Media/225437181.wem",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_04_10C4C929.wem"
-     },
-     {
-      "Id": "268123456",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B1_01.wav",
-      "Path": "Media/268123456.wem",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_01_10C4C929.wem"
-     },
-     {
-      "Id": "417150525",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B2_02.wav",
-      "Path": "Media/417150525.wem",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_02_10C4C929.wem"
-     },
-     {
-      "Id": "559398965",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B2_03.wav",
-      "Path": "Media/559398965.wem",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_03_10C4C929.wem"
-     },
-     {
-      "Id": "642141231",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B1_04.wav",
-      "Path": "Media/642141231.wem",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_04_10C4C929.wem"
-     },
-     {
-      "Id": "802290447",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B1_02.wav",
-      "Path": "Media/802290447.wem",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_02_10C4C929.wem"
-     },
-     {
-      "Id": "1013661680",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B1_03.wav",
-      "Path": "Media/1013661680.wem",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_03_10C4C929.wem"
-     },
-     {
-      "Id": "1035687485",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B2_01.wav",
-      "Path": "Media/1035687485.wem",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem"
-     }
-    ],
-    "Events": [
-     {
-      "Id": "2263523777",
-      "Name": "AMB_DistantTraffic_L",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\HoverCars\\TrafficDynamic\\AMB_DistantTraffic_L",
-      "GUID": "{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}",
-      "MaxAttenuation": "4500",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "225437181"
-       },
-       {
-        "Id": "268123456"
-       },
-       {
-        "Id": "417150525"
-       },
-       {
-        "Id": "559398965"
-       },
-       {
-        "Id": "642141231"
-       },
-       {
-        "Id": "802290447"
-       },
-       {
-        "Id": "1013661680"
-       },
-       {
-        "Id": "1035687485"
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "Id": "2263523807",
-    "Type": "Event",
-    "GUID": "{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}",
-    "Language": "SFX",
-    "Hash": "{8F77F27B-9F5B-433A-7A2B-19E6D40B62E7}",
-    "ObjectPath": "AMB_DistantTraffic_R",
-    "ShortName": "AMB_DistantTraffic_R",
-    "Path": "Event/AMB_DistantTraffic_R.bnk",
-    "Media": [
-     {
-      "Id": "225437181",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B2_04.wav",
-      "Path": "Media/225437181.wem",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_04_10C4C929.wem"
-     },
-     {
-      "Id": "268123456",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B1_01.wav",
-      "Path": "Media/268123456.wem",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_01_10C4C929.wem"
-     },
-     {
-      "Id": "417150525",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B2_02.wav",
-      "Path": "Media/417150525.wem",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_02_10C4C929.wem"
-     },
-     {
-      "Id": "559398965",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B2_03.wav",
-      "Path": "Media/559398965.wem",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_03_10C4C929.wem"
-     },
-     {
-      "Id": "642141231",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B1_04.wav",
-      "Path": "Media/642141231.wem",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_04_10C4C929.wem"
-     },
-     {
-      "Id": "802290447",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B1_02.wav",
-      "Path": "Media/802290447.wem",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_02_10C4C929.wem"
-     },
-     {
-      "Id": "1013661680",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B1_03.wav",
-      "Path": "Media/1013661680.wem",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B1_03_10C4C929.wem"
-     },
-     {
-      "Id": "1035687485",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_DistantTraffic_B2_01.wav",
-      "Path": "Media/1035687485.wem",
-      "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem"
-     }
-    ],
-    "Events": [
-     {
-      "Id": "2263523807",
-      "Name": "AMB_DistantTraffic_R",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Static\\HoverCars\\TrafficDynamic\\AMB_DistantTraffic_R",
-      "GUID": "{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}",
-      "MaxAttenuation": "4500",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "225437181"
-       },
-       {
-        "Id": "268123456"
-       },
-       {
-        "Id": "417150525"
-       },
-       {
-        "Id": "559398965"
-       },
-       {
-        "Id": "642141231"
-       },
-       {
-        "Id": "802290447"
-       },
-       {
-        "Id": "1013661680"
-       },
-       {
-        "Id": "1035687485"
-       }
-      ]
-     }
-    ]
-   },
-   {
     "Id": "2333830952",
     "Type": "Event",
     "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
     "Language": "SFX",
-    "Hash": "{CF682C8C-08D6-204D-9F7F-94AE6C7DEF1C}",
+    "Hash": "{61CF79DE-97C7-D248-8BAB-68797E41C583}",
     "ObjectPath": "AMB_EnergyPillar_C",
     "ShortName": "AMB_EnergyPillar_C",
     "Path": "Event/AMB_EnergyPillar_C.bnk",
@@ -3130,7 +2498,7 @@
      {
       "Id": "2333830952",
       "Name": "AMB_EnergyPillar_C",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_EnergyPillar_C",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\EnergyPillar\\AMB_EnergyPillar_C",
       "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
       "MaxAttenuation": "4500",
       "DurationType": "Infinite",
@@ -3205,7 +2573,7 @@
      {
       "Id": "2333830969",
       "Name": "AMB_EnergyPillar_R",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\AMB_EnergyPillar_R",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\EnergyPillar\\AMB_EnergyPillar_R",
       "GUID": "{1139BF59-E796-44F8-A41A-58F596E277FE}",
       "MaxAttenuation": "2200",
       "DurationType": "Infinite",
@@ -3217,6 +2585,334 @@
         "Id": "638307787"
        }
       ]
+     }
+    ]
+   },
+   {
+    "Id": "2496008984",
+    "Type": "Event",
+    "GUID": "{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}",
+    "Language": "SFX",
+    "Hash": "{9561C0F1-1817-3ED2-11CB-431E49C0B21B}",
+    "ObjectPath": "AMB_HoverCars_ParticleStream_7",
+    "ShortName": "AMB_HoverCars_ParticleStream_7",
+    "Path": "Event/AMB_HoverCars_ParticleStream_7.bnk",
+    "Media": [
+     {
+      "Id": "11200066",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Mids_1.wav",
+      "Path": "Media/11200066.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Mids_1_10C4C929.wem"
+     },
+     {
+      "Id": "147460230",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Lows_2.wav",
+      "Path": "Media/147460230.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Lows_2_10C4C929.wem"
+     },
+     {
+      "Id": "549764293",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Rumble.wav",
+      "Path": "Media/549764293.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Rumble_10C4C929.wem"
+     },
+     {
+      "Id": "578245340",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Highs_3.wav",
+      "Path": "Media/578245340.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Highs_3_10C4C929.wem"
+     },
+     {
+      "Id": "585816022",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Highs_1.wav",
+      "Path": "Media/585816022.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Highs_1_10C4C929.wem"
+     },
+     {
+      "Id": "606304149",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Highs_2.wav",
+      "Path": "Media/606304149.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Highs_2_10C4C929.wem"
+     },
+     {
+      "Id": "684584483",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Highs_4.wav",
+      "Path": "Media/684584483.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Highs_4_10C4C929.wem"
+     },
+     {
+      "Id": "797408764",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Mids_2.wav",
+      "Path": "Media/797408764.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Mids_2_10C4C929.wem"
+     },
+     {
+      "Id": "861122326",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Mids_3.wav",
+      "Path": "Media/861122326.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Mids_3_10C4C929.wem"
+     },
+     {
+      "Id": "967271830",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Lows_1.wav",
+      "Path": "Media/967271830.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Lows_1_10C4C929.wem"
+     },
+     {
+      "Id": "1028623358",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Mids_4.wav",
+      "Path": "Media/1028623358.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Mids_4_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2496008984",
+      "Name": "AMB_HoverCars_ParticleStream_7",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\HoverCars\\AMB_HoverCars_ParticleStream_7",
+      "GUID": "{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}",
+      "MaxAttenuation": "25000",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "11200066"
+       },
+       {
+        "Id": "147460230"
+       },
+       {
+        "Id": "549764293"
+       },
+       {
+        "Id": "578245340"
+       },
+       {
+        "Id": "585816022"
+       },
+       {
+        "Id": "606304149"
+       },
+       {
+        "Id": "684584483"
+       },
+       {
+        "Id": "797408764"
+       },
+       {
+        "Id": "861122326"
+       },
+       {
+        "Id": "967271830"
+       },
+       {
+        "Id": "1028623358"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "866022863",
+      "Name": "PAR_Doppler",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Doppler",
+      "GUID": "{D40C9741-1633-4046-A65F-904ED87051FE}"
+     }
+    ]
+   },
+   {
+    "Id": "2496008986",
+    "Type": "Event",
+    "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
+    "Language": "SFX",
+    "Hash": "{BCFAA382-25E1-40F2-0AAA-EE64645D4F86}",
+    "ObjectPath": "AMB_HoverCars_ParticleStream_5",
+    "ShortName": "AMB_HoverCars_ParticleStream_5",
+    "Path": "Event/AMB_HoverCars_ParticleStream_5.bnk",
+    "Media": [
+     {
+      "Id": "11200066",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Mids_1.wav",
+      "Path": "Media/11200066.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Mids_1_10C4C929.wem"
+     },
+     {
+      "Id": "147460230",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Lows_2.wav",
+      "Path": "Media/147460230.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Lows_2_10C4C929.wem"
+     },
+     {
+      "Id": "549764293",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Rumble.wav",
+      "Path": "Media/549764293.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Rumble_10C4C929.wem"
+     },
+     {
+      "Id": "578245340",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Highs_3.wav",
+      "Path": "Media/578245340.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Highs_3_10C4C929.wem"
+     },
+     {
+      "Id": "585816022",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Highs_1.wav",
+      "Path": "Media/585816022.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Highs_1_10C4C929.wem"
+     },
+     {
+      "Id": "606304149",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Highs_2.wav",
+      "Path": "Media/606304149.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Highs_2_10C4C929.wem"
+     },
+     {
+      "Id": "684584483",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Highs_4.wav",
+      "Path": "Media/684584483.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Highs_4_10C4C929.wem"
+     },
+     {
+      "Id": "797408764",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Mids_2.wav",
+      "Path": "Media/797408764.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Mids_2_10C4C929.wem"
+     },
+     {
+      "Id": "861122326",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Mids_3.wav",
+      "Path": "Media/861122326.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Mids_3_10C4C929.wem"
+     },
+     {
+      "Id": "967271830",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Lows_1.wav",
+      "Path": "Media/967271830.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Lows_1_10C4C929.wem"
+     },
+     {
+      "Id": "1028623358",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Mids_4.wav",
+      "Path": "Media/1028623358.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Mids_4_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2496008986",
+      "Name": "AMB_HoverCars_ParticleStream_5",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\HoverCars\\AMB_HoverCars_ParticleStream_5",
+      "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
+      "MaxAttenuation": "45000",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "11200066"
+       },
+       {
+        "Id": "147460230"
+       },
+       {
+        "Id": "549764293"
+       },
+       {
+        "Id": "578245340"
+       },
+       {
+        "Id": "585816022"
+       },
+       {
+        "Id": "606304149"
+       },
+       {
+        "Id": "684584483"
+       },
+       {
+        "Id": "797408764"
+       },
+       {
+        "Id": "861122326"
+       },
+       {
+        "Id": "967271830"
+       },
+       {
+        "Id": "1028623358"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "866022863",
+      "Name": "PAR_Doppler",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Doppler",
+      "GUID": "{D40C9741-1633-4046-A65F-904ED87051FE}"
      }
     ]
    },
@@ -3516,6 +3212,6 @@
     ]
    }
   ],
-  "FileHash": "{4E8CD401-82B2-9A23-972A-0DF04B213D64}"
+  "FileHash": "{2A67430B-2695-1C56-9433-EC28237E53C7}"
  }
 }

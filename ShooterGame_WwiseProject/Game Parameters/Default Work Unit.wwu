@@ -3,14 +3,21 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{45A6305D-DE92-45B5-93D4-976360EB2166}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="PAR_Heartbeat" ID="{1A7627A7-5A7D-470D-B1E0-2B091B679836}"/>
-				<GameParameter Name="PAR_Breaths" ID="{AD59135C-7832-4545-A14C-AA5DD622DAAC}"/>
 				<GameParameter Name="PAR_Distance" ID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}">
 					<PropertyList>
 						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="PAR_Doppler" ID="{D40C9741-1633-4046-A65F-904ED87051FE}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="PAR_Heartbeat" ID="{1A7627A7-5A7D-470D-B1E0-2B091B679836}"/>
+				<GameParameter Name="PAR_Breaths" ID="{AD59135C-7832-4545-A14C-AA5DD622DAAC}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
