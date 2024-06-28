@@ -10,11 +10,20 @@
     "Type": "Event",
     "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
     "Language": "SFX",
-    "Hash": "{42861710-22F1-407F-6F12-D2FF87F01F4F}",
+    "Hash": "{B39FCCAF-358F-B788-28EE-3200F5570B4D}",
     "ObjectPath": "AMB_EnergyPillar_C",
     "ShortName": "AMB_EnergyPillar_C",
     "Path": "Event/AMB_EnergyPillar_C.bnk",
     "Media": [
+     {
+      "Id": "55940149",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Emitters_EnergyPillar_Sum.wav",
+      "Path": "Media/55940149.wem",
+      "CachePath": "SFX/Emitters_EnergyPillar_Sum_AD4483C9.wem"
+     },
      {
       "Id": "225437181",
       "Language": "SFX",
@@ -43,24 +52,6 @@
       "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_02_10C4C929.wem"
      },
      {
-      "Id": "446621592",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "Emitters_EnergyPillar_Waterfall.wav",
-      "Path": "Media/446621592.wem",
-      "CachePath": "SFX/Emitters_EnergyPillar_Waterfall_94990CF8.wem"
-     },
-     {
-      "Id": "551839656",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "Emitters_EnergyPillar_Arcs.wav",
-      "Path": "Media/551839656.wem",
-      "CachePath": "SFX/Emitters_EnergyPillar_Arcs_B261B7F4.wem"
-     },
-     {
       "Id": "559398965",
       "Language": "SFX",
       "Streaming": "false",
@@ -68,15 +59,6 @@
       "ShortName": "AMB_HoverCars_DistantTraffic_B2_03.wav",
       "Path": "Media/559398965.wem",
       "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_03_10C4C929.wem"
-     },
-     {
-      "Id": "638307787",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "Emitters_EnergyPillar_Beam.wav",
-      "Path": "Media/638307787.wem",
-      "CachePath": "SFX/Emitters_EnergyPillar_Beam_74E134E9.wem"
      },
      {
       "Id": "642141231",
@@ -125,6 +107,9 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
+        "Id": "55940149"
+       },
+       {
         "Id": "225437181"
        },
        {
@@ -134,16 +119,7 @@
         "Id": "417150525"
        },
        {
-        "Id": "446621592"
-       },
-       {
-        "Id": "551839656"
-       },
-       {
         "Id": "559398965"
-       },
-       {
-        "Id": "638307787"
        },
        {
         "Id": "642141231"
@@ -162,6 +138,6 @@
     ]
    }
   ],
-  "FileHash": "{ECA7EB39-5851-F8AA-528A-2D3FFFCB49B9}"
+  "FileHash": "{9913A701-E063-0B2C-2785-CB9BED0D7DD3}"
  }
 }

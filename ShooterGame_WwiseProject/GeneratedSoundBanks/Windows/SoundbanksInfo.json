@@ -18,7 +18,7 @@
     "Type": "Event",
     "GUID": "{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}",
     "Language": "SFX",
-    "Hash": "{AEFED851-FE2B-3572-E6EE-0A1661B310A8}",
+    "Hash": "{0FC4C5DB-E01C-A384-20EE-910D8D17D62C}",
     "ObjectPath": "AMB_HoverCars_Spline_R",
     "ShortName": "AMB_HoverCars_Spline_R",
     "Path": "Event/AMB_HoverCars_Spline_R.bnk",
@@ -138,7 +138,7 @@
     "Type": "Event",
     "GUID": "{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}",
     "Language": "SFX",
-    "Hash": "{F464FADC-E2EC-E753-6F0A-4D7EEF7D5939}",
+    "Hash": "{067BB957-8E37-4E53-B076-42E0E36A4F2F}",
     "ObjectPath": "AMB_HoverCars_Spline_L",
     "ShortName": "AMB_HoverCars_Spline_L",
     "Path": "Event/AMB_HoverCars_Spline_L.bnk",
@@ -258,7 +258,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{BFB95806-6C80-CE93-F4D5-75E1BCB5A011}",
+    "Hash": "{A894A70A-2857-49E3-B168-8DC0E5EF7025}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -720,7 +720,7 @@
     "Type": "Event",
     "GUID": "{7228D143-91CD-48AB-B419-E16DEE2BF95F}",
     "Language": "SFX",
-    "Hash": "{94220CBD-133D-A4BB-008F-B8A2251F1115}",
+    "Hash": "{507E9A58-FE64-3F3E-D2D1-82DD3EA07527}",
     "ObjectPath": "AMB_RoomGusts_SmallEntrance_Interior",
     "ShortName": "AMB_RoomGusts_SmallEntrance_Interior",
     "Path": "Event/AMB_RoomGusts_SmallEntrance_Interior.bnk",
@@ -775,7 +775,7 @@
     "Type": "Event",
     "GUID": "{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}",
     "Language": "SFX",
-    "Hash": "{9CF1E721-A6BC-0C18-2D0C-D5CFE1DEB26F}",
+    "Hash": "{502608F1-C49E-A242-E1CC-5CB7EF80C575}",
     "ObjectPath": "AMB_ScifiDrones",
     "ShortName": "AMB_ScifiDrones",
     "Path": "Event/AMB_ScifiDrones.bnk",
@@ -2233,7 +2233,7 @@
     "Type": "Event",
     "GUID": "{838EFBCF-7300-40E4-B598-D1699C261CB8}",
     "Language": "SFX",
-    "Hash": "{F9653DFA-91F1-AC66-4D56-251DD23B3E6B}",
+    "Hash": "{1A949E8E-FB61-403A-E065-483E72580361}",
     "ObjectPath": "AMB_WindGusts_Static_Play",
     "ShortName": "AMB_WindGusts_Static_Play",
     "Path": "Event/AMB_WindGusts_Static_Play.bnk",
@@ -2447,11 +2447,20 @@
     "Type": "Event",
     "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
     "Language": "SFX",
-    "Hash": "{42861710-22F1-407F-6F12-D2FF87F01F4F}",
+    "Hash": "{B39FCCAF-358F-B788-28EE-3200F5570B4D}",
     "ObjectPath": "AMB_EnergyPillar_C",
     "ShortName": "AMB_EnergyPillar_C",
     "Path": "Event/AMB_EnergyPillar_C.bnk",
     "Media": [
+     {
+      "Id": "55940149",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Emitters_EnergyPillar_Sum.wav",
+      "Path": "Media/55940149.wem",
+      "CachePath": "SFX/Emitters_EnergyPillar_Sum_AD4483C9.wem"
+     },
      {
       "Id": "225437181",
       "Language": "SFX",
@@ -2480,24 +2489,6 @@
       "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_02_10C4C929.wem"
      },
      {
-      "Id": "446621592",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "Emitters_EnergyPillar_Waterfall.wav",
-      "Path": "Media/446621592.wem",
-      "CachePath": "SFX/Emitters_EnergyPillar_Waterfall_94990CF8.wem"
-     },
-     {
-      "Id": "551839656",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "Emitters_EnergyPillar_Arcs.wav",
-      "Path": "Media/551839656.wem",
-      "CachePath": "SFX/Emitters_EnergyPillar_Arcs_B261B7F4.wem"
-     },
-     {
       "Id": "559398965",
       "Language": "SFX",
       "Streaming": "false",
@@ -2505,15 +2496,6 @@
       "ShortName": "AMB_HoverCars_DistantTraffic_B2_03.wav",
       "Path": "Media/559398965.wem",
       "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_03_10C4C929.wem"
-     },
-     {
-      "Id": "638307787",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "Emitters_EnergyPillar_Beam.wav",
-      "Path": "Media/638307787.wem",
-      "CachePath": "SFX/Emitters_EnergyPillar_Beam_74E134E9.wem"
      },
      {
       "Id": "642141231",
@@ -2562,6 +2544,9 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
+        "Id": "55940149"
+       },
+       {
         "Id": "225437181"
        },
        {
@@ -2571,16 +2556,7 @@
         "Id": "417150525"
        },
        {
-        "Id": "446621592"
-       },
-       {
-        "Id": "551839656"
-       },
-       {
         "Id": "559398965"
-       },
-       {
-        "Id": "638307787"
        },
        {
         "Id": "642141231"
@@ -2603,28 +2579,19 @@
     "Type": "Event",
     "GUID": "{1139BF59-E796-44F8-A41A-58F596E277FE}",
     "Language": "SFX",
-    "Hash": "{DBEA2374-7A32-6908-2CC0-120E3735BD2A}",
+    "Hash": "{9AD1A8EF-ED21-934C-C4B7-3303AB854F25}",
     "ObjectPath": "AMB_EnergyPillar_R",
     "ShortName": "AMB_EnergyPillar_R",
     "Path": "Event/AMB_EnergyPillar_R.bnk",
     "Media": [
      {
-      "Id": "551839656",
+      "Id": "1027930209",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "Emitters_EnergyPillar_Arcs.wav",
-      "Path": "Media/551839656.wem",
-      "CachePath": "SFX/Emitters_EnergyPillar_Arcs_B261B7F4.wem"
-     },
-     {
-      "Id": "638307787",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "Emitters_EnergyPillar_Beam.wav",
-      "Path": "Media/638307787.wem",
-      "CachePath": "SFX/Emitters_EnergyPillar_Beam_74E134E9.wem"
+      "ShortName": "Emitters_EnergyPillar_Sum.wav",
+      "Path": "Media/1027930209.wem",
+      "CachePath": "SFX/Emitters_EnergyPillar_Sum_58CA2812.wem"
      }
     ],
     "Events": [
@@ -2637,10 +2604,7 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "551839656"
-       },
-       {
-        "Id": "638307787"
+        "Id": "1027930209"
        }
       ]
      }
@@ -2703,7 +2667,7 @@
     "Type": "Event",
     "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
     "Language": "SFX",
-    "Hash": "{FC02729A-4F15-C2ED-62DB-BDBE90B4F01B}",
+    "Hash": "{E1A41F63-308A-E4F5-6B5C-7CAE679DBA2C}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_5",
     "ShortName": "AMB_HoverCars_ParticleStream_5",
     "Path": "Event/AMB_HoverCars_ParticleStream_5.bnk",
@@ -2995,7 +2959,7 @@
     "Type": "Event",
     "GUID": "{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}",
     "Language": "SFX",
-    "Hash": "{5908FE2A-CFE8-DA91-53EA-4EEE7F850AB6}",
+    "Hash": "{69789E7C-BC90-D559-38DB-BA2FC322F4D9}",
     "ObjectPath": "AMB_RoomGusts_SmallEntrance_Exterior",
     "ShortName": "AMB_RoomGusts_SmallEntrance_Exterior",
     "Path": "Event/AMB_RoomGusts_SmallEntrance_Exterior.bnk",
@@ -3046,6 +3010,6 @@
     ]
    }
   ],
-  "FileHash": "{5E99B5C1-CD4D-2C0B-A7A1-0A4EB985B165}"
+  "FileHash": "{C411D85C-FD13-DA7F-472C-0637411874B9}"
  }
 }

@@ -10,28 +10,19 @@
     "Type": "Event",
     "GUID": "{1139BF59-E796-44F8-A41A-58F596E277FE}",
     "Language": "SFX",
-    "Hash": "{DBEA2374-7A32-6908-2CC0-120E3735BD2A}",
+    "Hash": "{9AD1A8EF-ED21-934C-C4B7-3303AB854F25}",
     "ObjectPath": "AMB_EnergyPillar_R",
     "ShortName": "AMB_EnergyPillar_R",
     "Path": "Event/AMB_EnergyPillar_R.bnk",
     "Media": [
      {
-      "Id": "551839656",
+      "Id": "1027930209",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "Emitters_EnergyPillar_Arcs.wav",
-      "Path": "Media/551839656.wem",
-      "CachePath": "SFX/Emitters_EnergyPillar_Arcs_B261B7F4.wem"
-     },
-     {
-      "Id": "638307787",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "Emitters_EnergyPillar_Beam.wav",
-      "Path": "Media/638307787.wem",
-      "CachePath": "SFX/Emitters_EnergyPillar_Beam_74E134E9.wem"
+      "ShortName": "Emitters_EnergyPillar_Sum.wav",
+      "Path": "Media/1027930209.wem",
+      "CachePath": "SFX/Emitters_EnergyPillar_Sum_58CA2812.wem"
      }
     ],
     "Events": [
@@ -44,16 +35,13 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "551839656"
-       },
-       {
-        "Id": "638307787"
+        "Id": "1027930209"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{C2C53122-5730-6FE0-B85D-5B720AD5F78A}"
+  "FileHash": "{FC194848-AA41-BF20-E2DB-DB9CEA2D8548}"
  }
 }

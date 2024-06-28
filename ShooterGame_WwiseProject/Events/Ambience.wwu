@@ -369,21 +369,7 @@
 														<Action Name="" ID="{2D046843-4D86-4314-AED1-48C8D4A91CDD}" ShortID="40391474">
 															<ReferenceList>
 																<Reference Name="Target">
-																	<ObjectRef Name="AMB_EnergyPillar_Arcs" ID="{3A3D8AE7-7A42-4352-AB02-DA0B25E7B37C}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-														<Action Name="" ID="{2D7749D7-C4CB-43B0-8AFA-3138B65A24D6}" ShortID="967837799">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_EnergyPillar_Beam" ID="{7AE711D9-3F11-415B-8F72-C0D2D8D4CD86}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-														<Action Name="" ID="{22136468-79CF-4D04-B0AA-50BD8FB9B86E}" ShortID="527548332">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_EnergyPillar_Waterfall" ID="{6D9BCEF2-9A35-421E-9AAB-DD0D45BD145E}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																	<ObjectRef Name="AMB_EnergyPillar_Sum_C" ID="{3A3D8AE7-7A42-4352-AB02-DA0B25E7B37C}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 																</Reference>
 															</ReferenceList>
 														</Action>
@@ -401,14 +387,7 @@
 														<Action Name="" ID="{57A6CF41-1D01-49AF-A203-83F165A075EA}" ShortID="334125578">
 															<ReferenceList>
 																<Reference Name="Target">
-																	<ObjectRef Name="AMB_EnergyPillar_Arcs" ID="{8089DD7F-9C5D-414C-805A-F2F6A2B7A695}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-														<Action Name="" ID="{4D90E2FC-9596-4DF4-A595-05D050D65471}" ShortID="354341073">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_EnergyPillar_Beam" ID="{FFA7883A-B02C-4512-8DF6-E767D31E2EEB}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+																	<ObjectRef Name="AMB_EnergyPillar_Sum_R" ID="{3C1EDC52-0CAA-4F1C-A2BF-CCD863E4A407}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 																</Reference>
 															</ReferenceList>
 														</Action>
