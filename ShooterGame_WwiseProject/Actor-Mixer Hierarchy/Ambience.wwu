@@ -1746,8 +1746,17 @@
 										</ActorMixer>
 										<ActorMixer Name="AMB_HoverCars" ID="{6A12B4A7-158F-4D6C-BABC-953504BEB8BE}" ShortID="856935690">
 											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>48</Value>
+													</ValueList>
+												</Property>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2159,19 +2168,35 @@
 												<ActorMixer Name="AMB_HoverCars_ParticleStream_5" ID="{21C30DBE-9949-4474-B4D4-F46D62F10CA5}" ShortID="1043268359">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>12</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 														<Property Name="UserAuxSendVolume0" Type="Real64">
 															<ValueList>
-																<Value>-23</Value>
+																<Value>-40</Value>
 															</ValueList>
 														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-11</Value>
-															</ValueList>
-														</Property>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
@@ -2293,6 +2318,11 @@
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																		<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																		<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 																	</PropertyList>
@@ -2373,6 +2403,11 @@
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																		<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																		<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 																	</PropertyList>
@@ -2453,6 +2488,11 @@
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																		<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																		<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 																	</PropertyList>
@@ -2576,6 +2616,11 @@
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -2799,6 +2844,11 @@
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -2819,6 +2869,11 @@
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																		<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																		<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 																	</PropertyList>
@@ -2899,6 +2954,11 @@
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																		<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																		<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 																	</PropertyList>
@@ -3112,6 +3172,11 @@
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 															</PropertyList>
@@ -4100,14 +4165,21 @@
 												<ActorMixer Name="AMB_HoverCars_ParticleStream_7" ID="{40EC6069-75E9-45C6-B4FF-8467526B64FC}" ShortID="676216962">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
-														<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
-														<Property Name="MaxSoundPerInstance" Type="int16">
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
 																<Value>4</Value>
 															</ValueList>
 														</Property>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>12</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
@@ -4123,11 +4195,6 @@
 															</ValueList>
 														</Property>
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-6</Value>
-															</ValueList>
-														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
@@ -4182,6 +4249,11 @@
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																		<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																		<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 																	</PropertyList>
@@ -4342,6 +4414,11 @@
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																		<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																		<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 																	</PropertyList>
@@ -4422,6 +4499,11 @@
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																		<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																		<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 																	</PropertyList>
@@ -4545,6 +4627,11 @@
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Pitch" Type="int32">
 																	<ModifierList>
 																		<ModifierInfo>
@@ -4578,6 +4665,11 @@
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																		<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																		<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 																	</PropertyList>
@@ -4658,6 +4750,11 @@
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																		<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																		<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 																	</PropertyList>
@@ -4781,6 +4878,11 @@
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Pitch" Type="int32">
 																	<ModifierList>
 																		<ModifierInfo>
@@ -4814,6 +4916,11 @@
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																		<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																		<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 																	</PropertyList>
@@ -4894,6 +5001,11 @@
 																	<PropertyList>
 																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																		<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																		<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 																	</PropertyList>
@@ -5112,6 +5224,11 @@
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																<Property Name="Pitch" Type="int32">
 																	<ModifierList>

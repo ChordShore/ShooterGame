@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="67622880" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{35E8F412-7AE1-17CD-6AEB-A2C7470A7379}">
+		<SoundBank Id="67622880" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{AEFED851-FE2B-3572-E6EE-0A1661B310A8}">
 			<ObjectPath>AMB_HoverCars_Spline_R</ObjectPath>
 			<ShortName>AMB_HoverCars_Spline_R</ShortName>
 			<Path>Event/AMB_HoverCars_Spline_R.bnk</Path>
@@ -70,7 +70,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="67622910" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{E2752461-95AA-F56E-5D85-4A4BC58AC38F}">
+		<SoundBank Id="67622910" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{F464FADC-E2EC-E753-6F0A-4D7EEF7D5939}">
 			<ObjectPath>AMB_HoverCars_Spline_L</ObjectPath>
 			<ShortName>AMB_HoverCars_Spline_L</ShortName>
 			<Path>Event/AMB_HoverCars_Spline_L.bnk</Path>
@@ -916,7 +916,7 @@
 				<Event Id="3787053379" Name="ITM_Health_Pickup" ObjectPath="\Events\Items\ITM_Health_Pickup" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{61CF79DE-97C7-D248-8BAB-68797E41C583}">
+		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{42861710-22F1-407F-6F12-D2FF87F01F4F}">
 			<ObjectPath>AMB_EnergyPillar_C</ObjectPath>
 			<ShortName>AMB_EnergyPillar_C</ShortName>
 			<Path>Event/AMB_EnergyPillar_C.bnk</Path>
@@ -1020,69 +1020,21 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2496008984" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{79578D28-E597-316C-D151-8FE5B28318A3}">
+		<SoundBank Id="2496008984" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{178347EB-FFD9-1923-177C-709B4E84DC73}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_7</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_7</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_7.bnk</Path>
 			<Media>
-				<File Id="11200066" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Mids_1.wav</ShortName>
-					<Path>Media/11200066.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Mids_1_619B2BCB.wem</CachePath>
-				</File>
-				<File Id="147460230" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Lows_2.wav</ShortName>
-					<Path>Media/147460230.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Lows_2_619B2BCB.wem</CachePath>
-				</File>
-				<File Id="578245340" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Highs_3.wav</ShortName>
-					<Path>Media/578245340.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Highs_3_619B2BCB.wem</CachePath>
-				</File>
-				<File Id="585816022" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Highs_1.wav</ShortName>
-					<Path>Media/585816022.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Highs_1_619B2BCB.wem</CachePath>
-				</File>
 				<File Id="797408764" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>AMB_HoverCars_Engine_Mids_2.wav</ShortName>
 					<Path>Media/797408764.wem</Path>
 					<CachePath>SFX/AMB_HoverCars_Engine_Mids_2_619B2BCB.wem</CachePath>
 				</File>
-				<File Id="861122326" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Mids_3.wav</ShortName>
-					<Path>Media/861122326.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Mids_3_619B2BCB.wem</CachePath>
-				</File>
-				<File Id="875865564" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Rumble.wav</ShortName>
-					<Path>Media/875865564.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Rumble_2878B342.wem</CachePath>
-				</File>
-				<File Id="967271830" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Lows_1.wav</ShortName>
-					<Path>Media/967271830.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Lows_1_619B2BCB.wem</CachePath>
-				</File>
-				<File Id="1028623358" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Mids_4.wav</ShortName>
-					<Path>Media/1028623358.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Mids_4_619B2BCB.wem</CachePath>
-				</File>
 			</Media>
 			<Events>
-				<Event Id="2496008984" Name="AMB_HoverCars_ParticleStream_7" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_ParticleStream_7" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" MaxAttenuation="23000" DurationType="Infinite">
+				<Event Id="2496008984" Name="AMB_HoverCars_ParticleStream_7" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_ParticleStream_7" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" MaxAttenuation="20000" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="11200066"/>
-						<MediaRef Id="147460230"/>
-						<MediaRef Id="578245340"/>
-						<MediaRef Id="585816022"/>
 						<MediaRef Id="797408764"/>
-						<MediaRef Id="861122326"/>
-						<MediaRef Id="875865564"/>
-						<MediaRef Id="967271830"/>
-						<MediaRef Id="1028623358"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="1289661192" Name="Highrise_HoverCars" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_HoverCars" GUID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}"/>
@@ -1093,69 +1045,21 @@
 				<GameParameter Id="866022863" Name="PAR_Doppler" ObjectPath="\Game Parameters\Default Work Unit\PAR_Doppler" GUID="{D40C9741-1633-4046-A65F-904ED87051FE}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{80F89717-50F2-0AB1-1DFE-8FB43D55B988}">
+		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{FC02729A-4F15-C2ED-62DB-BDBE90B4F01B}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_5</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_5</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_5.bnk</Path>
 			<Media>
-				<File Id="11200066" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Mids_1.wav</ShortName>
-					<Path>Media/11200066.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Mids_1_619B2BCB.wem</CachePath>
-				</File>
-				<File Id="147460230" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Lows_2.wav</ShortName>
-					<Path>Media/147460230.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Lows_2_619B2BCB.wem</CachePath>
-				</File>
-				<File Id="578245340" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Highs_3.wav</ShortName>
-					<Path>Media/578245340.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Highs_3_619B2BCB.wem</CachePath>
-				</File>
-				<File Id="585816022" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Highs_1.wav</ShortName>
-					<Path>Media/585816022.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Highs_1_619B2BCB.wem</CachePath>
-				</File>
 				<File Id="797408764" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>AMB_HoverCars_Engine_Mids_2.wav</ShortName>
 					<Path>Media/797408764.wem</Path>
 					<CachePath>SFX/AMB_HoverCars_Engine_Mids_2_619B2BCB.wem</CachePath>
 				</File>
-				<File Id="861122326" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Mids_3.wav</ShortName>
-					<Path>Media/861122326.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Mids_3_619B2BCB.wem</CachePath>
-				</File>
-				<File Id="875865564" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Rumble.wav</ShortName>
-					<Path>Media/875865564.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Rumble_2878B342.wem</CachePath>
-				</File>
-				<File Id="967271830" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Lows_1.wav</ShortName>
-					<Path>Media/967271830.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Lows_1_619B2BCB.wem</CachePath>
-				</File>
-				<File Id="1028623358" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Mids_4.wav</ShortName>
-					<Path>Media/1028623358.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Mids_4_619B2BCB.wem</CachePath>
-				</File>
 			</Media>
 			<Events>
-				<Event Id="2496008986" Name="AMB_HoverCars_ParticleStream_5" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_ParticleStream_5" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" MaxAttenuation="40000" DurationType="Infinite">
+				<Event Id="2496008986" Name="AMB_HoverCars_ParticleStream_5" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_ParticleStream_5" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" MaxAttenuation="30000" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="11200066"/>
-						<MediaRef Id="147460230"/>
-						<MediaRef Id="578245340"/>
-						<MediaRef Id="585816022"/>
 						<MediaRef Id="797408764"/>
-						<MediaRef Id="861122326"/>
-						<MediaRef Id="875865564"/>
-						<MediaRef Id="967271830"/>
-						<MediaRef Id="1028623358"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="1289661192" Name="Highrise_HoverCars" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_HoverCars" GUID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}"/>
@@ -1302,5 +1206,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{69596CDD-46AA-94EB-5742-2AFAAADFD653}</FileHash>
+	<FileHash>{E4E5515F-3A65-BEFC-F7E2-347DA285D097}</FileHash>
 </SoundBanksInfo>
