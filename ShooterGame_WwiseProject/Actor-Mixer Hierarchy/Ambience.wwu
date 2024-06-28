@@ -25,6 +25,11 @@
 								<ActorMixer Name="AMB_Static" ID="{422C0378-9F19-4AB2-88BC-811B07D32FA5}" ShortID="487287838">
 									<PropertyList>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1188,6 +1193,11 @@
 												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -1264,6 +1274,11 @@
 										<ActorMixer Name="AMB_WindGusts" ID="{9A826456-7F3B-417B-AAC8-A7AFEEF96802}" ShortID="336050374">
 											<PropertyList>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1778,6 +1793,11 @@
 															</ValueList>
 														</Property>
 														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>-96</Value>
+															</ValueList>
+														</Property>
 														<Property Name="MaxSoundPerInstance" Type="int16">
 															<ValueList>
 																<Value>10</Value>
@@ -2193,7 +2213,7 @@
 														</Property>
 														<Property Name="UserAuxSendVolume0" Type="Real64">
 															<ValueList>
-																<Value>-40</Value>
+																<Value>-30</Value>
 															</ValueList>
 														</Property>
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -3301,12 +3321,12 @@
 																						<PointList>
 																							<Point>
 																								<XPos>-1</XPos>
-																								<YPos>-500</YPos>
+																								<YPos>1500</YPos>
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
 																								<XPos>1</XPos>
-																								<YPos>500</YPos>
+																								<YPos>-1000</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>
@@ -3325,6 +3345,11 @@
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
 														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>-96</Value>
+															</ValueList>
+														</Property>
 														<Property Name="MaxSoundPerInstance" Type="int16">
 															<ValueList>
 																<Value>6</Value>
@@ -3751,6 +3776,11 @@
 														<Property Name="Lowpass" Type="int16">
 															<ValueList>
 																<Value>20</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>-96</Value>
 															</ValueList>
 														</Property>
 														<Property Name="MaxSoundPerInstance" Type="int16">
@@ -5418,6 +5448,11 @@
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -5956,6 +5991,11 @@
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -6231,6 +6271,11 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-96</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
