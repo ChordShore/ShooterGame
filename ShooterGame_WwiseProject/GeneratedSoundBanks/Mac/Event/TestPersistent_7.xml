@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="4229777692" Type="Event" GUID="{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}" Language="SFX" Hash="{EFEEFA1B-901C-FE83-2969-EB859AD5BDE6}">
+			<ObjectPath>TestPersistent_7</ObjectPath>
+			<ShortName>TestPersistent_7</ShortName>
+			<Path>Event/TestPersistent_7.bnk</Path>
+			<Media>
+				<File Id="456057735" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Emitters_UnrealHolograph_Main_LP.wav</ShortName>
+					<Path>Media/456057735.wem</Path>
+					<CachePath>SFX/Emitters_UnrealHolograph_Main_LP_1EF12818.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4229777692" Name="TestPersistent_7" ObjectPath="\Events\Default Work Unit\Event Probe\TestPersistent_7" GUID="{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}" MaxAttenuation="24000" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="456057735"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="866022863" Name="PAR_Doppler" ObjectPath="\Game Parameters\Default Work Unit\PAR_Doppler" GUID="{C2AABFFD-349C-4FED-831A-565CCB211565}"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{ABDCEF18-8C92-34D7-C906-8307496D57BF}</FileHash>
+</SoundBanksInfo>

@@ -1651,7 +1651,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{E697E5C2-2E03-67A8-C58E-F24AAF353313}",
+    "Hash": "{B9DE805A-82F4-22CB-F421-3FF69EE0BFB1}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -3420,50 +3420,6 @@
     ]
    },
    {
-    "Id": "3472690962",
-    "Type": "Event",
-    "GUID": "{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}",
-    "Language": "SFX",
-    "Hash": "{D62597C9-F61C-D674-A72B-AD8C8D8D42A1}",
-    "ObjectPath": "TestPersistent",
-    "ShortName": "TestPersistent",
-    "Path": "Event/TestPersistent.bnk",
-    "Media": [
-     {
-      "Id": "456057735",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "Emitters_UnrealHolograph_Main_LP.wav",
-      "Path": "Media/456057735.wem",
-      "CachePath": "SFX/Emitters_UnrealHolograph_Main_LP_1EF12818.wem"
-     }
-    ],
-    "Events": [
-     {
-      "Id": "3472690962",
-      "Name": "TestPersistent",
-      "ObjectPath": "\\Events\\Default Work Unit\\Event Probe\\TestPersistent",
-      "GUID": "{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}",
-      "MaxAttenuation": "24000",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "456057735"
-       }
-      ]
-     }
-    ],
-    "GameParameters": [
-     {
-      "Id": "866022863",
-      "Name": "PAR_Doppler",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Doppler",
-      "GUID": "{C2AABFFD-349C-4FED-831A-565CCB211565}"
-     }
-    ]
-   },
-   {
     "Id": "3814800052",
     "Type": "Bus",
     "GUID": "{37B304F5-72C5-4988-84FA-0475BEFB7C26}",
@@ -3564,8 +3520,96 @@
       }
      }
     ]
+   },
+   {
+    "Id": "4229777692",
+    "Type": "Event",
+    "GUID": "{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}",
+    "Language": "SFX",
+    "Hash": "{EFEEFA1B-901C-FE83-2969-EB859AD5BDE6}",
+    "ObjectPath": "TestPersistent_7",
+    "ShortName": "TestPersistent_7",
+    "Path": "Event/TestPersistent_7.bnk",
+    "Media": [
+     {
+      "Id": "456057735",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Emitters_UnrealHolograph_Main_LP.wav",
+      "Path": "Media/456057735.wem",
+      "CachePath": "SFX/Emitters_UnrealHolograph_Main_LP_1EF12818.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4229777692",
+      "Name": "TestPersistent_7",
+      "ObjectPath": "\\Events\\Default Work Unit\\Event Probe\\TestPersistent_7",
+      "GUID": "{D43FAB5D-8C1D-411E-A4AE-FEB9C30ECBA5}",
+      "MaxAttenuation": "24000",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "456057735"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "866022863",
+      "Name": "PAR_Doppler",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Doppler",
+      "GUID": "{C2AABFFD-349C-4FED-831A-565CCB211565}"
+     }
+    ]
+   },
+   {
+    "Id": "4229777694",
+    "Type": "Event",
+    "GUID": "{59C7F4E2-DE6C-413D-94FA-5E30B582692F}",
+    "Language": "SFX",
+    "Hash": "{6D94E7E6-F135-C049-A517-82F725B7E77C}",
+    "ObjectPath": "TestPersistent_5",
+    "ShortName": "TestPersistent_5",
+    "Path": "Event/TestPersistent_5.bnk",
+    "Media": [
+     {
+      "Id": "456057735",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Emitters_UnrealHolograph_Main_LP.wav",
+      "Path": "Media/456057735.wem",
+      "CachePath": "SFX/Emitters_UnrealHolograph_Main_LP_1EF12818.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4229777694",
+      "Name": "TestPersistent_5",
+      "ObjectPath": "\\Events\\Default Work Unit\\Event Probe\\TestPersistent_5",
+      "GUID": "{59C7F4E2-DE6C-413D-94FA-5E30B582692F}",
+      "MaxAttenuation": "24000",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "456057735"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "866022863",
+      "Name": "PAR_Doppler",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Doppler",
+      "GUID": "{C2AABFFD-349C-4FED-831A-565CCB211565}"
+     }
+    ]
    }
   ],
-  "FileHash": "{C573E798-1F08-14F6-DF86-E978591F3580}"
+  "FileHash": "{6EFFCE8A-0726-FD94-5E05-18C72D8E138F}"
  }
 }

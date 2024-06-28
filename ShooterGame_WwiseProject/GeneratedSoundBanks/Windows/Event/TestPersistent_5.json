@@ -1,0 +1,55 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "4229777694",
+    "Type": "Event",
+    "GUID": "{59C7F4E2-DE6C-413D-94FA-5E30B582692F}",
+    "Language": "SFX",
+    "Hash": "{6D94E7E6-F135-C049-A517-82F725B7E77C}",
+    "ObjectPath": "TestPersistent_5",
+    "ShortName": "TestPersistent_5",
+    "Path": "Event/TestPersistent_5.bnk",
+    "Media": [
+     {
+      "Id": "456057735",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Emitters_UnrealHolograph_Main_LP.wav",
+      "Path": "Media/456057735.wem",
+      "CachePath": "SFX/Emitters_UnrealHolograph_Main_LP_1EF12818.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4229777694",
+      "Name": "TestPersistent_5",
+      "ObjectPath": "\\Events\\Default Work Unit\\Event Probe\\TestPersistent_5",
+      "GUID": "{59C7F4E2-DE6C-413D-94FA-5E30B582692F}",
+      "MaxAttenuation": "24000",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "456057735"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "866022863",
+      "Name": "PAR_Doppler",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Doppler",
+      "GUID": "{C2AABFFD-349C-4FED-831A-565CCB211565}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{DE3E91B9-DB43-7646-5CA6-B657B6ABA72E}"
+ }
+}

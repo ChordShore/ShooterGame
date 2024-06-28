@@ -1194,15 +1194,24 @@
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-700</Value>
+															</ValueList>
 															<ModifierList>
 																<ModifierInfo>
-																	<Modifier Name="" ID="{147D1BED-92F5-49C0-846A-C34D9D2FE977}"/>
+																	<Modifier Name="" ID="{147D1BED-92F5-49C0-846A-C34D9D2FE977}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="400"/>
+																			<Property Name="Min" Type="Real64" Value="-400"/>
+																		</PropertyList>
+																	</Modifier>
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-10</Value>
+																<Value>-7</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1276,6 +1285,126 @@
 													</ObjectLists>
 													<ActiveSourceList>
 														<ActiveSource Name="Emitters_UnrealHolograph_Main_LP" ID="{854C3CCA-CD17-409A-A77B-E8CA261F2B77}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</ActorMixer>
+										<ActorMixer Name="AMB_UnrealHolograph_02" ID="{0CE6FC9A-F60D-42C7-B2E1-E491CD7FAEFF}" ShortID="839486048">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATN_UnrealHolograph_02" ID="{FBBF3BFA-009D-4172-B567-DE0D057F1680}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AMB_UnrealHolograph_Main_LP_Test" ID="{1E85CACB-5658-4751-95F4-DBAD72BF5500}" ShortID="701732420">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-700</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{AFFB4208-0764-474F-BFD5-401C60A88364}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="400"/>
+																			<Property Name="Min" Type="Real64" Value="-400"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-7</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATN_UnrealHolograph" ID="{044D3425-A485-4809-96BA-ED930F9C1310}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Emitters_UnrealHolograph_Main_LP" ID="{29A67606-E45B-4F38-BA04-04E82B40687D}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="2868.421"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="1.32552010541868"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.239602169981916"/>
+																<Property Name="LoopBegin" Type="Real64" Value="5.35983012445484"/>
+																<Property Name="LoopEnd" Type="Real64" Value="28.2694566535475"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0678119349005425"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Emitters_UnrealHolograph_Main_LP.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="456057735"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{63572F94-E189-4109-934C-E45496214E5C}" ShortID="870496485">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Pitch"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="PAR_Doppler" ID="{C2AABFFD-349C-4FED-831A-565CCB211565}" WorkUnitID="{45A6305D-DE92-45B5-93D4-976360EB2166}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{585C9A04-916C-44B6-819A-10DE73D04696}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="65537"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>-1</XPos>
+																								<YPos>-2500</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1</XPos>
+																								<YPos>500</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+													<ActiveSourceList>
+														<ActiveSource Name="Emitters_UnrealHolograph_Main_LP" ID="{29A67606-E45B-4F38-BA04-04E82B40687D}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
