@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{E697E5C2-2E03-67A8-C58E-F24AAF353313}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{23A6E005-BBD6-E235-E040-5DAA8DDE2A98}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<ShareSets>
 					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" ObjectPath="\Effects\Factory Effects\RoomVerb\Exteriors\Have_U_Ever_Been_Outside" GUID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="400317747" Name="Hall_Large_TooBright" ObjectPath="\Effects\Factory Effects\RoomVerb\Halls\Hall_Large_TooBright" GUID="{5F144EE3-081F-4BEC-ABCF-F88E111FECAE}" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="1159390747" Name="Room_Medium_Tiled" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Medium_Tiled" GUID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="2180422931" Name="One_Tap_Quarter_Second" ObjectPath="\Effects\Factory Effects\Delay\One_Tap_Quarter_Second" GUID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" LibName="Wwise Delay" LibId="6946819"/>
 					<Plugin Id="2995775460" Name="Room_Small" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Small" GUID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" LibName="Wwise RoomVerb" LibId="7733251"/>
@@ -41,6 +42,13 @@
 					<PluginRefs>
 						<ShareSets>
 							<PluginRef Id="2995775460"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="1289661192" Name="Highrise_HoverCars" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_HoverCars" GUID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="400317747"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
@@ -219,5 +227,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6DD948D0-D6CB-82D7-463A-D685D1D683EB}</FileHash>
+	<FileHash>{93F56EB6-2284-4C2B-4264-66AEEB463A2A}</FileHash>
 </SoundBanksInfo>

@@ -56,6 +56,13 @@
 														</Reference>
 													</ReferenceList>
 												</AuxBus>
+												<AuxBus Name="Highrise_HoverCars" ID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}">
+													<ReferenceList>
+														<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<ObjectRef Name="Hall_Large_TooBright" ID="{5F144EE3-081F-4BEC-ABCF-F88E111FECAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+														</Reference>
+													</ReferenceList>
+												</AuxBus>
 											</ChildrenList>
 										</Bus>
 										<Bus Name="Sanctuary" ID="{5BA6AF2C-2325-4C30-8363-C8F3B4D195B0}"/>

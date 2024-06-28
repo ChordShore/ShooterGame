@@ -1023,7 +1023,7 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="RadiusMax" Type="Real64" Value="45000"/>
+										<Property Name="RadiusMax" Type="Real64" Value="40000"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
@@ -1040,7 +1040,7 @@
 															<SegmentShape>Log1</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>45000</XPos>
+															<XPos>40000</XPos>
 															<YPos>-200</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -1068,8 +1068,8 @@
 															<SegmentShape>Exp1</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>45000</XPos>
-															<YPos>100</YPos>
+															<XPos>40000</XPos>
+															<YPos>0</YPos>
 															<Flags>37</Flags>
 														</Point>
 													</PointList>
@@ -1090,7 +1090,7 @@
 															<SegmentShape>Exp2</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>45000</XPos>
+															<XPos>40000</XPos>
 															<YPos>0</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -1111,13 +1111,13 @@
 															<Flags>5</Flags>
 														</Point>
 														<Point>
-															<XPos>7508.23949999998</XPos>
+															<XPos>6673.99066666665</XPos>
 															<YPos>100</YPos>
 															<Flags>0</Flags>
 															<SegmentShape>Log3</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>45000</XPos>
+															<XPos>40000</XPos>
 															<YPos>0</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -1396,7 +1396,7 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="RadiusMax" Type="Real64" Value="25000"/>
+										<Property Name="RadiusMax" Type="Real64" Value="23000"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
@@ -1413,7 +1413,7 @@
 															<SegmentShape>Log1</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>25000</XPos>
+															<XPos>23000</XPos>
 															<YPos>-200</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -1441,8 +1441,14 @@
 															<SegmentShape>Exp1</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>25000</XPos>
-															<YPos>100</YPos>
+															<XPos>16498.2948088</XPos>
+															<YPos>0</YPos>
+															<Flags>0</Flags>
+															<SegmentShape>Exp3</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>23000</XPos>
+															<YPos>24</YPos>
 															<Flags>37</Flags>
 														</Point>
 													</PointList>
@@ -1463,19 +1469,19 @@
 															<SegmentShape>Exp2</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>4181.18466666668</XPos>
+															<XPos>3846.68989333335</XPos>
 															<YPos>0</YPos>
 															<Flags>0</Flags>
 															<SegmentShape>Exp2</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>21912.5048235294</XPos>
+															<XPos>20159.5044376471</XPos>
 															<YPos>24</YPos>
 															<Flags>0</Flags>
 															<SegmentShape>Log2</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>25000</XPos>
+															<XPos>23000</XPos>
 															<YPos>25</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -1484,7 +1490,7 @@
 											</CurveUsageInfo>
 										</HighPassFilterUsage>
 										<SpreadUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None">
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
 												<Curve Name="Spread" ID="{6887EF2D-375C-4E50-A3CB-9DB7CE17F2D5}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="1"/>
@@ -1496,13 +1502,13 @@
 															<Flags>5</Flags>
 														</Point>
 														<Point>
-															<XPos>7149.28478571431</XPos>
+															<XPos>6577.34200285716</XPos>
 															<YPos>100</YPos>
 															<Flags>0</Flags>
-															<SegmentShape>Log1</SegmentShape>
+															<SegmentShape>Log3</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>25000</XPos>
+															<XPos>23000</XPos>
 															<YPos>0</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -1524,7 +1530,7 @@
 															<SegmentShape>Log3</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>25000</XPos>
+															<XPos>23000</XPos>
 															<YPos>0</YPos>
 															<Flags>37</Flags>
 														</Point>

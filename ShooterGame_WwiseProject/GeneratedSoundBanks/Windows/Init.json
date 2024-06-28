@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{E697E5C2-2E03-67A8-C58E-F24AAF353313}",
+    "Hash": "{23A6E005-BBD6-E235-E040-5DAA8DDE2A98}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -21,6 +21,14 @@
        "Name": "Have_U_Ever_Been_Outside",
        "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Exteriors\\Have_U_Ever_Been_Outside",
        "GUID": "{FE29AE8D-FD86-4652-A95D-68D32F5760EC}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "400317747",
+       "Name": "Hall_Large_TooBright",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Halls\\Hall_Large_TooBright",
+       "GUID": "{5F144EE3-081F-4BEC-ABCF-F88E111FECAE}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
       },
@@ -182,6 +190,19 @@
        "ShareSets": [
         {
          "Id": "2995775460"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "1289661192",
+      "Name": "Highrise_HoverCars",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_HoverCars",
+      "GUID": "{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "400317747"
         }
        ]
       }
@@ -766,6 +787,6 @@
     ]
    }
   ],
-  "FileHash": "{8C6C6FD5-BF8C-884A-CF92-71D9D41B7C0D}"
+  "FileHash": "{0104CBC7-06DD-32AF-A5FB-657AE4A9CCE1}"
  }
 }

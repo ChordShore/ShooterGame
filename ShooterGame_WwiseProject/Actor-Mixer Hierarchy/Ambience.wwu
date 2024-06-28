@@ -2161,9 +2161,15 @@
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="UserAuxSendVolume0" Type="Real64">
+															<ValueList>
+																<Value>-23</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-8</Value>
+																<Value>-11</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -2176,6 +2182,9 @@
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Highrise_HoverCars" ID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -4099,17 +4108,24 @@
 																<Value>4</Value>
 															</ValueList>
 														</Property>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 														<Property Name="UseMaxSoundPerInstance" Type="bool">
 															<ValueList>
 																<Value>True</Value>
 															</ValueList>
 														</Property>
+														<Property Name="UserAuxSendVolume0" Type="Real64">
+															<ValueList>
+																<Value>-23</Value>
+															</ValueList>
+														</Property>
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-8</Value>
+																<Value>-6</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -4123,12 +4139,28 @@
 														<Reference Name="OutputBus">
 															<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Highrise_HoverCars" ID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
 													</ReferenceList>
 													<ChildrenList>
 														<RandomSequenceContainer Name="AMB_HoverCars_Engine_Mids_LP_PS7" ID="{45106B71-DBAF-45BD-A8B9-F4AA708A1911}" ShortID="20082605">
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{0B316E8E-F6B5-47F4-BAAE-B535999E002A}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="400"/>
+																					<Property Name="Min" Type="Real64" Value="-400"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
@@ -4513,6 +4545,19 @@
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{75D59610-3E2A-4223-8FAB-7D502F41D134}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="400"/>
+																					<Property Name="Min" Type="Real64" Value="-400"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -4736,6 +4781,19 @@
 															<PropertyList>
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{4897CCF0-BA5A-4E84-BF20-249CC80CF632}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="400"/>
+																					<Property Name="Min" Type="Real64" Value="-400"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -5055,6 +5113,18 @@
 																<Property Name="3DSpatialization" Type="int16" Value="1"/>
 																<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{83937EF2-F768-4BCD-8C54-11D342DFF30D}">
+																				<PropertyList>
+																					<Property Name="Max" Type="Real64" Value="400"/>
+																					<Property Name="Min" Type="Real64" Value="-400"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
 																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 															</PropertyList>
 															<ReferenceList>
@@ -5193,12 +5263,12 @@
 																						<PointList>
 																							<Point>
 																								<XPos>-1</XPos>
-																								<YPos>-500</YPos>
+																								<YPos>-1655</YPos>
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
 																								<XPos>1</XPos>
-																								<YPos>500</YPos>
+																								<YPos>1544</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>

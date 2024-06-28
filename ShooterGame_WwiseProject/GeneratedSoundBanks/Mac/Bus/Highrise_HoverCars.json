@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "1289661192",
+    "Type": "Bus",
+    "GUID": "{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}",
+    "Language": "SFX",
+    "Hash": "{93CEB44C-E9B7-501D-F431-7BC6C48B3064}",
+    "ObjectPath": "Highrise_HoverCars",
+    "ShortName": "Highrise_HoverCars",
+    "Path": "Bus/Highrise_HoverCars.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "400317747",
+       "Name": "Hall_Large_TooBright",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Halls\\Hall_Large_TooBright",
+       "GUID": "{5F144EE3-081F-4BEC-ABCF-F88E111FECAE}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "1289661192",
+      "Name": "Highrise_HoverCars",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_HoverCars",
+      "GUID": "{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "400317747"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E4C25496-B4D9-E5F3-69C0-6D1689CE4390}"
+ }
+}
