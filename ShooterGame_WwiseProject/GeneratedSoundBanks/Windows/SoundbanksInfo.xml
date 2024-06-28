@@ -1467,7 +1467,7 @@
 				<GameParameter Id="866022863" Name="PAR_Doppler" ObjectPath="\Game Parameters\Default Work Unit\PAR_Doppler" GUID="{C2AABFFD-349C-4FED-831A-565CCB211565}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="4229777694" Type="Event" GUID="{59C7F4E2-DE6C-413D-94FA-5E30B582692F}" Language="SFX" Hash="{1E242664-7F97-011E-0309-255E05FA7BE8}">
+		<SoundBank Id="4229777694" Type="Event" GUID="{59C7F4E2-DE6C-413D-94FA-5E30B582692F}" Language="SFX" Hash="{D8567D76-3BEF-EAC5-68D9-BE8141E222F2}">
 			<ObjectPath>TestPersistent_5</ObjectPath>
 			<ShortName>TestPersistent_5</ShortName>
 			<Path>Event/TestPersistent_5.bnk</Path>
@@ -1479,7 +1479,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="4229777694" Name="TestPersistent_5" ObjectPath="\Events\Default Work Unit\Event Probe\TestPersistent_5" GUID="{59C7F4E2-DE6C-413D-94FA-5E30B582692F}" MaxAttenuation="45000" DurationType="Infinite">
+				<Event Id="4229777694" Name="TestPersistent_5" ObjectPath="\Events\Default Work Unit\Event Probe\TestPersistent_5" GUID="{59C7F4E2-DE6C-413D-94FA-5E30B582692F}" MaxAttenuation="40000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="456057735"/>
 					</MediaRefs>
@@ -1490,5 +1490,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{86CDF56D-7227-1487-5B44-E40324E22C7A}</FileHash>
+	<FileHash>{A6B612E4-740E-FA28-C0A3-5514F0C7DFCD}</FileHash>
 </SoundBanksInfo>
