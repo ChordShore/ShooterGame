@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
     "Language": "SFX",
-    "Hash": "{B39FCCAF-358F-B788-28EE-3200F5570B4D}",
+    "Hash": "{B1CFBC59-1AE0-78EE-3F65-A3DF14A54FAC}",
     "ObjectPath": "AMB_EnergyPillar_C",
     "ShortName": "AMB_EnergyPillar_C",
     "Path": "Event/AMB_EnergyPillar_C.bnk",
@@ -97,6 +97,18 @@
       "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2258521792",
+       "Name": "Brick_Wall_Minus_1dB_Peak_Slow_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Slow_Release",
+       "GUID": "{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "2333830952",
@@ -133,11 +145,18 @@
        {
         "Id": "1035687485"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2258521792"
+        }
+       ]
+      }
      }
     ]
    }
   ],
-  "FileHash": "{9913A701-E063-0B2C-2785-CB9BED0D7DD3}"
+  "FileHash": "{53A66728-5AD7-F7CC-7450-0A48A7066844}"
  }
 }

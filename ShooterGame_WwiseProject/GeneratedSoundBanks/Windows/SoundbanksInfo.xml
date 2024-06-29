@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="67622880" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{0FC4C5DB-E01C-A384-20EE-910D8D17D62C}">
+		<SoundBank Id="67622880" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{29807653-E775-1907-8AE3-1A7D196D1FCC}">
 			<ObjectPath>AMB_HoverCars_Spline_R</ObjectPath>
 			<ShortName>AMB_HoverCars_Spline_R</ShortName>
 			<Path>Event/AMB_HoverCars_Spline_R.bnk</Path>
@@ -55,8 +55,13 @@
 					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
-				<Event Id="67622880" Name="AMB_HoverCars_Spline_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_Spline_R" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" MaxAttenuation="4500" DurationType="Infinite">
+				<Event Id="67622880" Name="AMB_HoverCars_Spline_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_Spline_R" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" MaxAttenuation="4200" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="225437181"/>
 						<MediaRef Id="268123456"/>
@@ -70,7 +75,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="67622910" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{067BB957-8E37-4E53-B076-42E0E36A4F2F}">
+		<SoundBank Id="67622910" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{07597CA0-5B69-A449-A5C1-F0306892DC89}">
 			<ObjectPath>AMB_HoverCars_Spline_L</ObjectPath>
 			<ShortName>AMB_HoverCars_Spline_L</ShortName>
 			<Path>Event/AMB_HoverCars_Spline_L.bnk</Path>
@@ -116,6 +121,11 @@
 					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="67622910" Name="AMB_HoverCars_Spline_L" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_Spline_L" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" MaxAttenuation="4500" DurationType="Infinite">
 					<MediaRefs>
@@ -131,7 +141,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{BFB95806-6C80-CE93-F4D5-75E1BCB5A011}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{00492CF9-AF16-06F9-E71A-81F22338142D}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -297,7 +307,7 @@
 						<MediaRef Id="864735500"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2759038044" Name="AMB_UnrealSign" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealSign" GUID="{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}" MaxAttenuation="1800" DurationType="Infinite">
+				<Event Id="2759038044" Name="AMB_UnrealSign" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_UnrealSign" GUID="{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}" MaxAttenuation="2100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="218188666"/>
 					</MediaRefs>
@@ -350,7 +360,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{9CF1E721-A6BC-0C18-2D0C-D5CFE1DEB26F}">
+		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{9CAD90DA-D479-0F26-7BA5-5512A423D5EB}">
 			<ObjectPath>AMB_ScifiDrones</ObjectPath>
 			<ShortName>AMB_ScifiDrones</ShortName>
 			<Path>Event/AMB_ScifiDrones.bnk</Path>
@@ -446,6 +456,11 @@
 					<CachePath>SFX/AMB_Highrise_ScifiDrone_Atrium_11_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2781261543" Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Slow_Release" GUID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="977986739" Name="AMB_ScifiDrones" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_ScifiDrones" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" DurationType="OneShot" DurationMin="6.488638" DurationMax="19.075377">
 					<SwitchContainers>
@@ -462,6 +477,11 @@
 								<MediaRef Id="989802043"/>
 								<MediaRef Id="1005364083"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2781261543"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="1777405841" Id="3768889528" GUID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
@@ -476,6 +496,11 @@
 								<MediaRef Id="795597231"/>
 								<MediaRef Id="876622919"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2781261543"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -569,7 +594,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{23A6E005-BBD6-E235-E040-5DAA8DDE2A98}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{1B6E4172-9DE0-F3A1-DFCE-611DF086998B}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -916,7 +941,7 @@
 				<Event Id="3787053379" Name="ITM_Health_Pickup" ObjectPath="\Events\Items\ITM_Health_Pickup" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{B39FCCAF-358F-B788-28EE-3200F5570B4D}">
+		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{B1CFBC59-1AE0-78EE-3F65-A3DF14A54FAC}">
 			<ObjectPath>AMB_EnergyPillar_C</ObjectPath>
 			<ShortName>AMB_EnergyPillar_C</ShortName>
 			<Path>Event/AMB_EnergyPillar_C.bnk</Path>
@@ -967,6 +992,11 @@
 					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="2333830952" Name="AMB_EnergyPillar_C" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\EnergyPillar\AMB_EnergyPillar_C" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" MaxAttenuation="4500" DurationType="Infinite">
 					<MediaRefs>
@@ -980,10 +1010,15 @@
 						<MediaRef Id="1013661680"/>
 						<MediaRef Id="1035687485"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2258521792"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2333830969" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{9AD1A8EF-ED21-934C-C4B7-3303AB854F25}">
+		<SoundBank Id="2333830969" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{5592E9D6-F02C-E645-8EF3-1DAC7E8C13F5}">
 			<ObjectPath>AMB_EnergyPillar_R</ObjectPath>
 			<ShortName>AMB_EnergyPillar_R</ShortName>
 			<Path>Event/AMB_EnergyPillar_R.bnk</Path>
@@ -1002,7 +1037,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2496008984" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{24A28DB2-3787-2A2D-9251-C3B7AAB871C5}">
+		<SoundBank Id="2496008984" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{0B748B54-3586-62B5-B241-4EC19C287C93}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_7</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_7</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_7.bnk</Path>
@@ -1028,14 +1063,24 @@
 					<CachePath>SFX/AMB_HoverCars_Engine_Sum_1_34B5CAC0.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
-				<Event Id="2496008984" Name="AMB_HoverCars_ParticleStream_7" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_ParticleStream_7" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" MaxAttenuation="20000" DurationType="Infinite">
+				<Event Id="2496008984" Name="AMB_HoverCars_ParticleStream_7" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_ParticleStream_7" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" MaxAttenuation="20500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="705314639"/>
 						<MediaRef Id="752046821"/>
 						<MediaRef Id="776674335"/>
 						<MediaRef Id="920069920"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2258521792"/>
+						</ShareSets>
+					</PluginRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="1289661192" Name="Highrise_HoverCars" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_HoverCars" GUID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}"/>
 					</AuxBusRefs>
@@ -1045,7 +1090,7 @@
 				<GameParameter Id="866022863" Name="PAR_Doppler" ObjectPath="\Game Parameters\Default Work Unit\PAR_Doppler" GUID="{D40C9741-1633-4046-A65F-904ED87051FE}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{A50A0C40-2A88-0DC2-3EF8-C93DED7FD668}">
+		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{91951F2F-EA7C-2217-99C2-688FBB1A7302}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_5</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_5</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_5.bnk</Path>
@@ -1071,14 +1116,24 @@
 					<CachePath>SFX/AMB_HoverCars_Engine_Sum_1_34B5CAC0.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
-				<Event Id="2496008986" Name="AMB_HoverCars_ParticleStream_5" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_ParticleStream_5" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" MaxAttenuation="30000" DurationType="Infinite">
+				<Event Id="2496008986" Name="AMB_HoverCars_ParticleStream_5" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_ParticleStream_5" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" MaxAttenuation="28000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="705314639"/>
 						<MediaRef Id="752046821"/>
 						<MediaRef Id="776674335"/>
 						<MediaRef Id="920069920"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2258521792"/>
+						</ShareSets>
+					</PluginRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="1289661192" Name="Highrise_HoverCars" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_HoverCars" GUID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}"/>
 					</AuxBusRefs>
@@ -1088,7 +1143,7 @@
 				<GameParameter Id="866022863" Name="PAR_Doppler" ObjectPath="\Game Parameters\Default Work Unit\PAR_Doppler" GUID="{D40C9741-1633-4046-A65F-904ED87051FE}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{8B386489-0AC9-B9D6-76E2-EFEE5BF2E723}">
+		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{56580432-10AD-4BDE-53B4-C32078FF56D7}">
 			<ObjectPath>\SoundBanks\Default Work Unit\EventProbe</ObjectPath>
 			<ShortName>EventProbe</ShortName>
 			<Path>EventProbe.bnk</Path>
@@ -1224,5 +1279,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{054ADA75-68FE-5AF8-ED5B-ED664EC4EE15}</FileHash>
+	<FileHash>{11E195C5-7697-6A19-6889-69F484480253}</FileHash>
 </SoundBanksInfo>

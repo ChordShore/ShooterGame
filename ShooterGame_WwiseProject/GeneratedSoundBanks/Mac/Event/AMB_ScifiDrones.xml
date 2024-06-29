@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{9CF1E721-A6BC-0C18-2D0C-D5CFE1DEB26F}">
+		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{9CAD90DA-D479-0F26-7BA5-5512A423D5EB}">
 			<ObjectPath>AMB_ScifiDrones</ObjectPath>
 			<ShortName>AMB_ScifiDrones</ShortName>
 			<Path>Event/AMB_ScifiDrones.bnk</Path>
@@ -97,6 +97,11 @@
 					<CachePath>SFX/AMB_Highrise_ScifiDrone_Atrium_11_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2781261543" Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Slow_Release" GUID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="977986739" Name="AMB_ScifiDrones" ObjectPath="\Events\Ambience\Emitters\Highrise\Static\AMB_ScifiDrones" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" DurationType="OneShot" DurationMin="6.488638" DurationMax="19.075377">
 					<SwitchContainers>
@@ -113,6 +118,11 @@
 								<MediaRef Id="989802043"/>
 								<MediaRef Id="1005364083"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2781261543"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="1777405841" Id="3768889528" GUID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
@@ -127,6 +137,11 @@
 								<MediaRef Id="795597231"/>
 								<MediaRef Id="876622919"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2781261543"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -142,5 +157,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0364E0CD-CAE8-045B-059D-361207919D11}</FileHash>
+	<FileHash>{B1C7FCFE-00FB-866E-1E28-0DA993DF375A}</FileHash>
 </SoundBanksInfo>

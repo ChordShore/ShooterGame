@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{B39FCCAF-358F-B788-28EE-3200F5570B4D}">
+		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{B1CFBC59-1AE0-78EE-3F65-A3DF14A54FAC}">
 			<ObjectPath>AMB_EnergyPillar_C</ObjectPath>
 			<ShortName>AMB_EnergyPillar_C</ShortName>
 			<Path>Event/AMB_EnergyPillar_C.bnk</Path>
@@ -52,6 +52,11 @@
 					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="2333830952" Name="AMB_EnergyPillar_C" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\EnergyPillar\AMB_EnergyPillar_C" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" MaxAttenuation="4500" DurationType="Infinite">
 					<MediaRefs>
@@ -65,9 +70,14 @@
 						<MediaRef Id="1013661680"/>
 						<MediaRef Id="1035687485"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2258521792"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DFA62B90-2B7F-C2AB-1721-5D098ECDBA2D}</FileHash>
+	<FileHash>{954BFBB1-0782-EB59-3DE6-768E7093522B}</FileHash>
 </SoundBanksInfo>

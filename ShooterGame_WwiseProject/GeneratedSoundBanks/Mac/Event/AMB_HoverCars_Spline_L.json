@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}",
     "Language": "SFX",
-    "Hash": "{067BB957-8E37-4E53-B076-42E0E36A4F2F}",
+    "Hash": "{07597CA0-5B69-A449-A5C1-F0306892DC89}",
     "ObjectPath": "AMB_HoverCars_Spline_L",
     "ShortName": "AMB_HoverCars_Spline_L",
     "Path": "Event/AMB_HoverCars_Spline_L.bnk",
@@ -88,6 +88,18 @@
       "CachePath": "SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2258521792",
+       "Name": "Brick_Wall_Minus_1dB_Peak_Slow_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Slow_Release",
+       "GUID": "{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "67622910",
@@ -126,6 +138,6 @@
     ]
    }
   ],
-  "FileHash": "{983946E9-6DED-57A1-76CF-21F92BA9D5BF}"
+  "FileHash": "{4276CCDF-17A1-AFB0-E7BF-BFA72A38C20E}"
  }
 }

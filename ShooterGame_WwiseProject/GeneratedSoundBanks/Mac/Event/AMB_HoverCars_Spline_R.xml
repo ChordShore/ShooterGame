@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="67622880" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{0FC4C5DB-E01C-A384-20EE-910D8D17D62C}">
+		<SoundBank Id="67622880" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{29807653-E775-1907-8AE3-1A7D196D1FCC}">
 			<ObjectPath>AMB_HoverCars_Spline_R</ObjectPath>
 			<ShortName>AMB_HoverCars_Spline_R</ShortName>
 			<Path>Event/AMB_HoverCars_Spline_R.bnk</Path>
@@ -47,8 +47,13 @@
 					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
-				<Event Id="67622880" Name="AMB_HoverCars_Spline_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_Spline_R" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" MaxAttenuation="4500" DurationType="Infinite">
+				<Event Id="67622880" Name="AMB_HoverCars_Spline_R" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_Spline_R" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" MaxAttenuation="4200" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="225437181"/>
 						<MediaRef Id="268123456"/>
@@ -63,5 +68,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{85A1C2BE-B88F-CC64-67C5-B081BFD1BA0C}</FileHash>
+	<FileHash>{ABCBCD72-AB92-B2B8-7636-6BF3D8D15400}</FileHash>
 </SoundBanksInfo>

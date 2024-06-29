@@ -25,11 +25,6 @@
 								<ActorMixer Name="AMB_Static" ID="{422C0378-9F19-4AB2-88BC-811B07D32FA5}" ShortID="487287838">
 									<PropertyList>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-96</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -293,11 +288,6 @@
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-1</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -323,7 +313,7 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-5</Value>
+																<Value>-6</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -367,7 +357,7 @@
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-1</Value>
+																<Value>-2</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -407,7 +397,7 @@
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>3</Value>
+																<Value>2</Value>
 															</ValueList>
 														</Property>
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -450,7 +440,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-19</Value>
+																<Value>-20</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -476,6 +466,27 @@
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="STA_Location" ID="{686E9A02-FA99-467B-99D7-939C1DC93153}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="STA_Outdoors" ID="{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"/>
+														<CustomState Name="" ID="{EBE39F41-EB60-4895-AEF1-7A5A85D20E2A}" ShortID="986517809"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="STA_Indoors" ID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
+														<CustomState Name="" ID="{11610E13-9B5A-438D-880C-CA864FCE542F}" ShortID="548754314">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="50"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 										</ActorMixer>
 										<ActorMixer Name="AMB_UnrealSign" ID="{CA2AEBEB-8FBD-497E-BF8F-76F75BF428C5}" ShortID="746517449">
 											<PropertyList>
@@ -502,7 +513,7 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-25</Value>
+																<Value>-22</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -840,16 +851,11 @@
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-														<Property Name="MakeUpGain" Type="Real64">
-															<ValueList>
-																<Value>2</Value>
-															</ValueList>
-														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-5</Value>
+																<Value>-1</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -882,7 +888,7 @@
 																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-6</Value>
+																		<Value>-9</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -952,11 +958,6 @@
 														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-2</Value>
-															</ValueList>
-														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
@@ -978,9 +979,14 @@
 																	</ValueList>
 																</Property>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Lowpass" Type="int16">
+																	<ValueList>
+																		<Value>25</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-6</Value>
+																		<Value>-8</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -1054,11 +1060,6 @@
 												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -1083,7 +1084,7 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-10</Value>
+																<Value>-11</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1627,16 +1628,15 @@
 														<Value>48</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-96</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+													<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
@@ -1654,11 +1654,6 @@
 															</ValueList>
 														</Property>
 														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
-														<Property Name="MakeUpGain" Type="Real64">
-															<ValueList>
-																<Value>-96</Value>
-															</ValueList>
-														</Property>
 														<Property Name="MaxSoundPerInstance" Type="int16">
 															<ValueList>
 																<Value>10</Value>
@@ -1675,11 +1670,6 @@
 														<Property Name="UseMaxSoundPerInstance" Type="bool">
 															<ValueList>
 																<Value>True</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-4</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1745,7 +1735,7 @@
 																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-6</Value>
+																		<Value>-11</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -2341,6 +2331,27 @@
 															</ChildrenList>
 														</Position>
 													</PositioningInfo>
+													<StateInfo>
+														<StateGroupList>
+															<StateGroupInfo>
+																<StateGroupRef Name="STA_Location" ID="{686E9A02-FA99-467B-99D7-939C1DC93153}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="STA_Outdoors" ID="{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"/>
+																<CustomState Name="" ID="{85EF5A4B-1E87-4632-9DAA-05296C1E5E78}" ShortID="252501188"/>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="STA_Indoors" ID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
+																<CustomState Name="" ID="{5FC3746F-8787-40A3-A754-D753E13BF1C9}" ShortID="94153833">
+																	<PropertyList>
+																		<Property Name="Lowpass" Type="int16" Value="55"/>
+																	</PropertyList>
+																</CustomState>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
 													<ObjectLists>
 														<ObjectList Name="RTPC">
 															<Reference>
@@ -2386,11 +2397,6 @@
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
 														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
-														<Property Name="MakeUpGain" Type="Real64">
-															<ValueList>
-																<Value>-96</Value>
-															</ValueList>
-														</Property>
 														<Property Name="MaxSoundPerInstance" Type="int16">
 															<ValueList>
 																<Value>6</Value>
@@ -2401,11 +2407,6 @@
 														<Property Name="UseMaxSoundPerInstance" Type="bool">
 															<ValueList>
 																<Value>True</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-4</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -2481,7 +2482,7 @@
 																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-2</Value>
+																		<Value>-7</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -2819,11 +2820,6 @@
 																<Value>20</Value>
 															</ValueList>
 														</Property>
-														<Property Name="MakeUpGain" Type="Real64">
-															<ValueList>
-																<Value>-96</Value>
-															</ValueList>
-														</Property>
 														<Property Name="MaxSoundPerInstance" Type="int16">
 															<ValueList>
 																<Value>6</Value>
@@ -2840,11 +2836,6 @@
 														<Property Name="UseMaxSoundPerInstance" Type="bool">
 															<ValueList>
 																<Value>True</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -2910,7 +2901,7 @@
 																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-2</Value>
+																		<Value>-8</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -3269,6 +3260,9 @@
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+															<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 														</Reference>
@@ -3301,6 +3295,11 @@
 																</Property>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-5</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Attenuation">
@@ -3531,6 +3530,27 @@
 															</ChildrenList>
 														</Position>
 													</PositioningInfo>
+													<StateInfo>
+														<StateGroupList>
+															<StateGroupInfo>
+																<StateGroupRef Name="STA_Location" ID="{686E9A02-FA99-467B-99D7-939C1DC93153}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="STA_Outdoors" ID="{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"/>
+																<CustomState Name="" ID="{073DE86B-838B-44EC-AEB5-B27B3C23B4DA}" ShortID="433215674"/>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="STA_Indoors" ID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
+																<CustomState Name="" ID="{0E797CBE-075B-464B-AACA-3CD085332EC3}" ShortID="573942729">
+																	<PropertyList>
+																		<Property Name="Lowpass" Type="int16" Value="55"/>
+																	</PropertyList>
+																</CustomState>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
 													<ObjectLists>
 														<ObjectList Name="RTPC">
 															<Reference>
@@ -3557,7 +3577,7 @@
 																							</Point>
 																							<Point>
 																								<XPos>1</XPos>
-																								<YPos>2000</YPos>
+																								<YPos>3000</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>
@@ -3583,6 +3603,7 @@
 														<Value>3</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 												<Property Name="UseMaxSoundPerInstance" Type="bool">
@@ -3594,6 +3615,9 @@
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+													<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
@@ -3617,7 +3641,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-10</Value>
+																<Value>-8</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>

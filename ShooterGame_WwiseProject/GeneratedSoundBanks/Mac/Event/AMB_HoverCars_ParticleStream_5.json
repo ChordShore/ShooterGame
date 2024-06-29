@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
     "Language": "SFX",
-    "Hash": "{A50A0C40-2A88-0DC2-3EF8-C93DED7FD668}",
+    "Hash": "{91951F2F-EA7C-2217-99C2-688FBB1A7302}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_5",
     "ShortName": "AMB_HoverCars_ParticleStream_5",
     "Path": "Event/AMB_HoverCars_ParticleStream_5.bnk",
@@ -52,13 +52,25 @@
       "CachePath": "SFX/AMB_HoverCars_Engine_Sum_1_34B5CAC0.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2258521792",
+       "Name": "Brick_Wall_Minus_1dB_Peak_Slow_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Slow_Release",
+       "GUID": "{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "2496008986",
       "Name": "AMB_HoverCars_ParticleStream_5",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\Dynamic\\HoverCars\\AMB_HoverCars_ParticleStream_5",
       "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
-      "MaxAttenuation": "30000",
+      "MaxAttenuation": "28000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -74,6 +86,13 @@
         "Id": "920069920"
        }
       ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2258521792"
+        }
+       ]
+      },
       "AuxBusRefs": [
        {
         "Id": "1289661192",
@@ -94,6 +113,6 @@
     ]
    }
   ],
-  "FileHash": "{09081D30-5F83-94FB-9F7C-E39972FD1D6E}"
+  "FileHash": "{714710FD-9F7A-E350-9EF2-53E0EEA4F34C}"
  }
 }

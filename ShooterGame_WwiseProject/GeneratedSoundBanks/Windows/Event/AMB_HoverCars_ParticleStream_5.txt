@@ -1,6 +1,20 @@
 Event	ID	Name			Wwise Object Path	Notes
 	2496008986	AMB_HoverCars_ParticleStream_5			\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_ParticleStream_5	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	1777405841	STA_Location			\Default Work Unit\STA_Location	
+
+State	ID	Name	State Group			Notes
+	748895195	None	STA_Location			
+	3768889528	STA_Indoors	STA_Location			
+	4157082203	STA_Outdoors	STA_Location			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	94153833	STA_Indoors	STA_Location	\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_Dynamic\AMB_HoverCars\AMB_HoverCars_ParticleStream_5		
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	866022863	PAR_Doppler			\Default Work Unit\PAR_Doppler	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2258521792	Brick_Wall_Minus_1dB_Peak_Slow_Release	Wwise Peak Limiter			
 

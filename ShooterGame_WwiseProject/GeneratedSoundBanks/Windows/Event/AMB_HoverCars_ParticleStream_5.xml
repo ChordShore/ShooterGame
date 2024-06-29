@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{A50A0C40-2A88-0DC2-3EF8-C93DED7FD668}">
+		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{91951F2F-EA7C-2217-99C2-688FBB1A7302}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_5</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_5</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_5.bnk</Path>
@@ -27,14 +27,24 @@
 					<CachePath>SFX/AMB_HoverCars_Engine_Sum_1_34B5CAC0.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
-				<Event Id="2496008986" Name="AMB_HoverCars_ParticleStream_5" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_ParticleStream_5" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" MaxAttenuation="30000" DurationType="Infinite">
+				<Event Id="2496008986" Name="AMB_HoverCars_ParticleStream_5" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_ParticleStream_5" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" MaxAttenuation="28000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="705314639"/>
 						<MediaRef Id="752046821"/>
 						<MediaRef Id="776674335"/>
 						<MediaRef Id="920069920"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2258521792"/>
+						</ShareSets>
+					</PluginRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="1289661192" Name="Highrise_HoverCars" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_HoverCars" GUID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}"/>
 					</AuxBusRefs>
@@ -45,5 +55,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{832D2076-F744-E09A-92B7-ADD433DB533C}</FileHash>
+	<FileHash>{0B2F9B0C-1DEC-6B85-9D8C-BF574177A266}</FileHash>
 </SoundBanksInfo>

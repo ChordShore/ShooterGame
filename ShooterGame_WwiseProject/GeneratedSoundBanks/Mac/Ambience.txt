@@ -13,6 +13,17 @@ Event	ID	Name			Wwise Object Path	Notes
 	3641000233	AMB_UnrealHolograph			\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph	
 	3686232698	AMB_UnrealHolograph_FadeOut			\Ambience\Emitters\Highrise\Static\UnrealHolograph\AMB_UnrealHolograph_FadeOut	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	1777405841	STA_Location			\Default Work Unit\STA_Location	
+
+State	ID	Name	State Group			Notes
+	748895195	None	STA_Location			
+	3768889528	STA_Indoors	STA_Location			
+	4157082203	STA_Outdoors	STA_Location			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	548754314	STA_Indoors	STA_Location	\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_Static\AMB_UnrealHolograph		
+
 Effect plug-ins	ID	Name	Type				Notes
 	2781261543	Brick_Wall_Minus_6dB_Peak_Slow_Release	Wwise Peak Limiter			
 
