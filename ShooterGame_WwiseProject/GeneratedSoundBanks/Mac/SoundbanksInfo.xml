@@ -131,7 +131,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{A894A70A-2857-49E3-B168-8DC0E5EF7025}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{52B4AFD6-2D14-F83B-2EFF-D31C76B47281}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -544,7 +544,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="1322180291" Type="Event" GUID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}" Language="SFX" Hash="{57CB7977-57B8-AA64-4127-56F96403563A}">
+		<SoundBank Id="1322180291" Type="Event" GUID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}" Language="SFX" Hash="{CC7D7CEB-5122-936E-D5B3-BC07D996F910}">
 			<ObjectPath>AMB_PhoneBox_ErrorRecording</ObjectPath>
 			<ShortName>AMB_PhoneBox_ErrorRecording</ShortName>
 			<Path>Event/AMB_PhoneBox_ErrorRecording.bnk</Path>
@@ -916,7 +916,7 @@
 				<Event Id="3787053379" Name="ITM_Health_Pickup" ObjectPath="\Events\Items\ITM_Health_Pickup" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{B39FCCAF-358F-B788-28EE-3200F5570B4D}">
+		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{21AAF409-0D3B-3CBD-FAF6-A28B25080AED}">
 			<ObjectPath>AMB_EnergyPillar_C</ObjectPath>
 			<ShortName>AMB_EnergyPillar_C</ShortName>
 			<Path>Event/AMB_EnergyPillar_C.bnk</Path>
@@ -983,7 +983,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2333830969" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{9AD1A8EF-ED21-934C-C4B7-3303AB854F25}">
+		<SoundBank Id="2333830969" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{D1B2797C-438F-CDBE-2E97-6B1CAE9F058D}">
 			<ObjectPath>AMB_EnergyPillar_R</ObjectPath>
 			<ShortName>AMB_EnergyPillar_R</ShortName>
 			<Path>Event/AMB_EnergyPillar_R.bnk</Path>
@@ -1002,21 +1002,39 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2496008984" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{178347EB-FFD9-1923-177C-709B4E84DC73}">
+		<SoundBank Id="2496008984" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{24A28DB2-3787-2A2D-9251-C3B7AAB871C5}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_7</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_7</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_7.bnk</Path>
 			<Media>
-				<File Id="797408764" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Mids_2.wav</ShortName>
-					<Path>Media/797408764.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Mids_2_619B2BCB.wem</CachePath>
+				<File Id="705314639" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Sum_2.wav</ShortName>
+					<Path>Media/705314639.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Sum_2_5BFA3172.wem</CachePath>
+				</File>
+				<File Id="752046821" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Sum_4.wav</ShortName>
+					<Path>Media/752046821.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Sum_4_956690D4.wem</CachePath>
+				</File>
+				<File Id="776674335" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Sum_3.wav</ShortName>
+					<Path>Media/776674335.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Sum_3_7C5D7EAC.wem</CachePath>
+				</File>
+				<File Id="920069920" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Sum_1.wav</ShortName>
+					<Path>Media/920069920.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Sum_1_34B5CAC0.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
 				<Event Id="2496008984" Name="AMB_HoverCars_ParticleStream_7" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_ParticleStream_7" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" MaxAttenuation="20000" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="797408764"/>
+						<MediaRef Id="705314639"/>
+						<MediaRef Id="752046821"/>
+						<MediaRef Id="776674335"/>
+						<MediaRef Id="920069920"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="1289661192" Name="Highrise_HoverCars" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_HoverCars" GUID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}"/>
@@ -1027,21 +1045,39 @@
 				<GameParameter Id="866022863" Name="PAR_Doppler" ObjectPath="\Game Parameters\Default Work Unit\PAR_Doppler" GUID="{D40C9741-1633-4046-A65F-904ED87051FE}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{E1A41F63-308A-E4F5-6B5C-7CAE679DBA2C}">
+		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{A50A0C40-2A88-0DC2-3EF8-C93DED7FD668}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_5</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_5</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_5.bnk</Path>
 			<Media>
-				<File Id="797408764" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Engine_Mids_2.wav</ShortName>
-					<Path>Media/797408764.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Engine_Mids_2_619B2BCB.wem</CachePath>
+				<File Id="705314639" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Sum_2.wav</ShortName>
+					<Path>Media/705314639.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Sum_2_5BFA3172.wem</CachePath>
+				</File>
+				<File Id="752046821" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Sum_4.wav</ShortName>
+					<Path>Media/752046821.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Sum_4_956690D4.wem</CachePath>
+				</File>
+				<File Id="776674335" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Sum_3.wav</ShortName>
+					<Path>Media/776674335.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Sum_3_7C5D7EAC.wem</CachePath>
+				</File>
+				<File Id="920069920" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Engine_Sum_1.wav</ShortName>
+					<Path>Media/920069920.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Engine_Sum_1_34B5CAC0.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
 				<Event Id="2496008986" Name="AMB_HoverCars_ParticleStream_5" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_ParticleStream_5" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" MaxAttenuation="30000" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="797408764"/>
+						<MediaRef Id="705314639"/>
+						<MediaRef Id="752046821"/>
+						<MediaRef Id="776674335"/>
+						<MediaRef Id="920069920"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="1289661192" Name="Highrise_HoverCars" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_HoverCars" GUID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}"/>
@@ -1188,5 +1224,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A3826B16-65B4-93C4-6C19-884A574F63A4}</FileHash>
+	<FileHash>{76412D15-BA35-5A93-ADB7-97258DEF5B1A}</FileHash>
 </SoundBanksInfo>

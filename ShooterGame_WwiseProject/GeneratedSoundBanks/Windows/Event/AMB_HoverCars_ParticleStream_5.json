@@ -10,19 +10,46 @@
     "Type": "Event",
     "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
     "Language": "SFX",
-    "Hash": "{E1A41F63-308A-E4F5-6B5C-7CAE679DBA2C}",
+    "Hash": "{A50A0C40-2A88-0DC2-3EF8-C93DED7FD668}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_5",
     "ShortName": "AMB_HoverCars_ParticleStream_5",
     "Path": "Event/AMB_HoverCars_ParticleStream_5.bnk",
     "Media": [
      {
-      "Id": "797408764",
+      "Id": "705314639",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "AMB_HoverCars_Engine_Mids_2.wav",
-      "Path": "Media/797408764.wem",
-      "CachePath": "SFX/AMB_HoverCars_Engine_Mids_2_619B2BCB.wem"
+      "ShortName": "AMB_HoverCars_Engine_Sum_2.wav",
+      "Path": "Media/705314639.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_2_5BFA3172.wem"
+     },
+     {
+      "Id": "752046821",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Sum_4.wav",
+      "Path": "Media/752046821.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_4_956690D4.wem"
+     },
+     {
+      "Id": "776674335",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Sum_3.wav",
+      "Path": "Media/776674335.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_3_7C5D7EAC.wem"
+     },
+     {
+      "Id": "920069920",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Sum_1.wav",
+      "Path": "Media/920069920.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_1_34B5CAC0.wem"
      }
     ],
     "Events": [
@@ -35,7 +62,16 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "797408764"
+        "Id": "705314639"
+       },
+       {
+        "Id": "752046821"
+       },
+       {
+        "Id": "776674335"
+       },
+       {
+        "Id": "920069920"
        }
       ],
       "AuxBusRefs": [
@@ -58,6 +94,6 @@
     ]
    }
   ],
-  "FileHash": "{FFE1EDA5-EC42-3725-3A3D-7E46C1D4EA46}"
+  "FileHash": "{46E5468E-761D-FD12-D250-16EC35F57B1B}"
  }
 }

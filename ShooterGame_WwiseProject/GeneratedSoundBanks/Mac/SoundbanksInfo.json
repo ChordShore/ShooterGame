@@ -258,7 +258,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{A894A70A-2857-49E3-B168-8DC0E5EF7025}",
+    "Hash": "{52B4AFD6-2D14-F83B-2EFF-D31C76B47281}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -1240,7 +1240,7 @@
     "Type": "Event",
     "GUID": "{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}",
     "Language": "SFX",
-    "Hash": "{57CB7977-57B8-AA64-4127-56F96403563A}",
+    "Hash": "{CC7D7CEB-5122-936E-D5B3-BC07D996F910}",
     "ObjectPath": "AMB_PhoneBox_ErrorRecording",
     "ShortName": "AMB_PhoneBox_ErrorRecording",
     "Path": "Event/AMB_PhoneBox_ErrorRecording.bnk",
@@ -2447,7 +2447,7 @@
     "Type": "Event",
     "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
     "Language": "SFX",
-    "Hash": "{B39FCCAF-358F-B788-28EE-3200F5570B4D}",
+    "Hash": "{21AAF409-0D3B-3CBD-FAF6-A28B25080AED}",
     "ObjectPath": "AMB_EnergyPillar_C",
     "ShortName": "AMB_EnergyPillar_C",
     "Path": "Event/AMB_EnergyPillar_C.bnk",
@@ -2579,7 +2579,7 @@
     "Type": "Event",
     "GUID": "{1139BF59-E796-44F8-A41A-58F596E277FE}",
     "Language": "SFX",
-    "Hash": "{9AD1A8EF-ED21-934C-C4B7-3303AB854F25}",
+    "Hash": "{D1B2797C-438F-CDBE-2E97-6B1CAE9F058D}",
     "ObjectPath": "AMB_EnergyPillar_R",
     "ShortName": "AMB_EnergyPillar_R",
     "Path": "Event/AMB_EnergyPillar_R.bnk",
@@ -2615,19 +2615,46 @@
     "Type": "Event",
     "GUID": "{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}",
     "Language": "SFX",
-    "Hash": "{178347EB-FFD9-1923-177C-709B4E84DC73}",
+    "Hash": "{24A28DB2-3787-2A2D-9251-C3B7AAB871C5}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_7",
     "ShortName": "AMB_HoverCars_ParticleStream_7",
     "Path": "Event/AMB_HoverCars_ParticleStream_7.bnk",
     "Media": [
      {
-      "Id": "797408764",
+      "Id": "705314639",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "AMB_HoverCars_Engine_Mids_2.wav",
-      "Path": "Media/797408764.wem",
-      "CachePath": "SFX/AMB_HoverCars_Engine_Mids_2_619B2BCB.wem"
+      "ShortName": "AMB_HoverCars_Engine_Sum_2.wav",
+      "Path": "Media/705314639.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_2_5BFA3172.wem"
+     },
+     {
+      "Id": "752046821",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Sum_4.wav",
+      "Path": "Media/752046821.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_4_956690D4.wem"
+     },
+     {
+      "Id": "776674335",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Sum_3.wav",
+      "Path": "Media/776674335.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_3_7C5D7EAC.wem"
+     },
+     {
+      "Id": "920069920",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Sum_1.wav",
+      "Path": "Media/920069920.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_1_34B5CAC0.wem"
      }
     ],
     "Events": [
@@ -2640,7 +2667,16 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "797408764"
+        "Id": "705314639"
+       },
+       {
+        "Id": "752046821"
+       },
+       {
+        "Id": "776674335"
+       },
+       {
+        "Id": "920069920"
        }
       ],
       "AuxBusRefs": [
@@ -2667,19 +2703,46 @@
     "Type": "Event",
     "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
     "Language": "SFX",
-    "Hash": "{E1A41F63-308A-E4F5-6B5C-7CAE679DBA2C}",
+    "Hash": "{A50A0C40-2A88-0DC2-3EF8-C93DED7FD668}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_5",
     "ShortName": "AMB_HoverCars_ParticleStream_5",
     "Path": "Event/AMB_HoverCars_ParticleStream_5.bnk",
     "Media": [
      {
-      "Id": "797408764",
+      "Id": "705314639",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Loose",
-      "ShortName": "AMB_HoverCars_Engine_Mids_2.wav",
-      "Path": "Media/797408764.wem",
-      "CachePath": "SFX/AMB_HoverCars_Engine_Mids_2_619B2BCB.wem"
+      "ShortName": "AMB_HoverCars_Engine_Sum_2.wav",
+      "Path": "Media/705314639.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_2_5BFA3172.wem"
+     },
+     {
+      "Id": "752046821",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Sum_4.wav",
+      "Path": "Media/752046821.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_4_956690D4.wem"
+     },
+     {
+      "Id": "776674335",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Sum_3.wav",
+      "Path": "Media/776674335.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_3_7C5D7EAC.wem"
+     },
+     {
+      "Id": "920069920",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Sum_1.wav",
+      "Path": "Media/920069920.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_1_34B5CAC0.wem"
      }
     ],
     "Events": [
@@ -2692,7 +2755,16 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "797408764"
+        "Id": "705314639"
+       },
+       {
+        "Id": "752046821"
+       },
+       {
+        "Id": "776674335"
+       },
+       {
+        "Id": "920069920"
        }
       ],
       "AuxBusRefs": [
@@ -3010,6 +3082,6 @@
     ]
    }
   ],
-  "FileHash": "{8C264441-EEFF-1D22-FDEB-62FEEFB2A5E7}"
+  "FileHash": "{53E44A24-3E12-0BBC-4A8A-07EDDB756093}"
  }
 }
