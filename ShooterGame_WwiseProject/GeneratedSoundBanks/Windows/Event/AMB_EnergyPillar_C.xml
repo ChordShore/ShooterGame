@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{B1CFBC59-1AE0-78EE-3F65-A3DF14A54FAC}">
+		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{D0B1755E-9479-C466-F811-31249F8AAB11}">
 			<ObjectPath>AMB_EnergyPillar_C</ObjectPath>
 			<ShortName>AMB_EnergyPillar_C</ShortName>
 			<Path>Event/AMB_EnergyPillar_C.bnk</Path>
@@ -11,45 +11,10 @@
 					<Path>Media/55940149.wem</Path>
 					<CachePath>SFX/Emitters_EnergyPillar_Sum_AD4483C9.wem</CachePath>
 				</File>
-				<File Id="225437181" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_DistantTraffic_B2_04.wav</ShortName>
-					<Path>Media/225437181.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_04_10C4C929.wem</CachePath>
-				</File>
-				<File Id="268123456" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_DistantTraffic_B1_01.wav</ShortName>
-					<Path>Media/268123456.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B1_01_10C4C929.wem</CachePath>
-				</File>
-				<File Id="417150525" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_DistantTraffic_B2_02.wav</ShortName>
-					<Path>Media/417150525.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_02_10C4C929.wem</CachePath>
-				</File>
-				<File Id="559398965" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_DistantTraffic_B2_03.wav</ShortName>
-					<Path>Media/559398965.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_03_10C4C929.wem</CachePath>
-				</File>
-				<File Id="642141231" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_DistantTraffic_B1_04.wav</ShortName>
-					<Path>Media/642141231.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B1_04_10C4C929.wem</CachePath>
-				</File>
-				<File Id="802290447" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_DistantTraffic_B1_02.wav</ShortName>
-					<Path>Media/802290447.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B1_02_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1013661680" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_DistantTraffic_B1_03.wav</ShortName>
-					<Path>Media/1013661680.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B1_03_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1035687485" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_DistantTraffic_B2_01.wav</ShortName>
-					<Path>Media/1035687485.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_DistantTraffic_B2_01_10C4C929.wem</CachePath>
+				<File Id="359998175" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_HoverCars_Passbys_Sum.wav</ShortName>
+					<Path>Media/359998175.wem</Path>
+					<CachePath>SFX/AMB_HoverCars_Passbys_Sum_0E9E093B.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -61,14 +26,7 @@
 				<Event Id="2333830952" Name="AMB_EnergyPillar_C" ObjectPath="\Events\Ambience\Emitters\Highrise\Dynamic\EnergyPillar\AMB_EnergyPillar_C" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" MaxAttenuation="4500" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="55940149"/>
-						<MediaRef Id="225437181"/>
-						<MediaRef Id="268123456"/>
-						<MediaRef Id="417150525"/>
-						<MediaRef Id="559398965"/>
-						<MediaRef Id="642141231"/>
-						<MediaRef Id="802290447"/>
-						<MediaRef Id="1013661680"/>
-						<MediaRef Id="1035687485"/>
+						<MediaRef Id="359998175"/>
 					</MediaRefs>
 					<PluginRefs>
 						<ShareSets>
@@ -79,5 +37,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{954BFBB1-0782-EB59-3DE6-768E7093522B}</FileHash>
+	<FileHash>{2214DF48-7C7C-96E0-D860-B3DE1BA163E5}</FileHash>
 </SoundBanksInfo>
