@@ -29,11 +29,45 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="PAR_Wind" ID="{5AA64F25-2B48-4F0C-8EF5-838EB08AB4B3}"/>
-							<Value>50</Value>
+							<Value>40</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="STA_Outdoors" ID="{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"/>
+						<CurrentStateRef Name="STA_Indoors" ID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Wind Envelopes" ID="{AA35DB92-7EBB-464D-A276-7A0BFCCFB478}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="AMB_WindGusts_Spline_LP" ID="{C95996A4-33BF-4957-A310-E96D0EC57040}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMB_RoomGusts_MainEntrance_Exterior" ID="{4E360744-3F77-422A-A2B5-787222393838}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMB_RoomGusts_MainEntrance_Interior" ID="{24CD36E0-49F3-4EC4-B5D6-65913D32EC35}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMB_RoomGusts_SmallEntrance_Exterior" ID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMB_RoomGusts_SmallEntrance_Interior" ID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="PAR_Wind" ID="{5AA64F25-2B48-4F0C-8EF5-838EB08AB4B3}"/>
+							<Value>40</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="STA_Indoors" ID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
