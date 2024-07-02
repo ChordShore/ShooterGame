@@ -114,7 +114,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{EDA75F8D-A9F3-4989-6530-D4DE5F46529A}",
+    "Hash": "{919DEC19-E80E-6730-B7A1-A1844D0867A8}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -576,7 +576,7 @@
     "Type": "Event",
     "GUID": "{7228D143-91CD-48AB-B419-E16DEE2BF95F}",
     "Language": "SFX",
-    "Hash": "{94220CBD-133D-A4BB-008F-B8A2251F1115}",
+    "Hash": "{8FC24ECC-D8BB-0C37-64B2-8FB99992E0E8}",
     "ObjectPath": "AMB_RoomGusts_SmallEntrance_Interior",
     "ShortName": "AMB_RoomGusts_SmallEntrance_Interior",
     "Path": "Event/AMB_RoomGusts_SmallEntrance_Interior.bnk",
@@ -1172,7 +1172,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{0825ED83-9513-F58C-8032-AC635A598DEB}",
+    "Hash": "{0E821FB5-5E38-117B-6484-8DC2D197096C}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -1429,10 +1429,22 @@
       "GUID": "{AD59135C-7832-4545-A14C-AA5DD622DAAC}"
      },
      {
-      "Id": "4014555216",
-      "Name": "PAR_Distance",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Distance",
+      "Id": "1791116251",
+      "Name": "PAR_Wind",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Wind",
+      "GUID": "{5AA64F25-2B48-4F0C-8EF5-838EB08AB4B3}"
+     },
+     {
+      "Id": "2940353649",
+      "Name": "PAR_Distance_HoverCars_PS7",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Distance_HoverCars_PS7",
       "GUID": "{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"
+     },
+     {
+      "Id": "2940353651",
+      "Name": "PAR_Distance_HoverCars_PS5",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Distance_HoverCars_PS5",
+      "GUID": "{12811BF6-789D-4EFB-A3B6-2A817E909100}"
      }
     ],
     "StateGroups": [
@@ -2432,7 +2444,7 @@
     "Type": "Event",
     "GUID": "{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}",
     "Language": "SFX",
-    "Hash": "{8CD91CEF-B8F2-7EE6-2076-C84A07DFFED2}",
+    "Hash": "{C31867FF-1C70-8A22-31AF-A443B6BEA30E}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_7",
     "ShortName": "AMB_HoverCars_ParticleStream_7",
     "Path": "Event/AMB_HoverCars_ParticleStream_7.bnk",
@@ -2477,6 +2489,14 @@
     "Plugins": {
      "ShareSets": [
       {
+       "Id": "529418190",
+       "Name": "Tremolo_HoverCars_PS7",
+       "ObjectPath": "\\Effects\\Default Work Unit\\Tremolo_HoverCars_PS7",
+       "GUID": "{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}",
+       "LibName": "Wwise Tremolo",
+       "LibId": "8585219"
+      },
+      {
        "Id": "2258521792",
        "Name": "Brick_Wall_Minus_1dB_Peak_Slow_Release",
        "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Slow_Release",
@@ -2511,7 +2531,7 @@
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "2258521792"
+         "Id": "529418190"
         }
        ]
       },
@@ -2531,6 +2551,12 @@
       "Name": "PAR_Doppler",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Doppler",
       "GUID": "{D40C9741-1633-4046-A65F-904ED87051FE}"
+     },
+     {
+      "Id": "2940353649",
+      "Name": "PAR_Distance_HoverCars_PS7",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Distance_HoverCars_PS7",
+      "GUID": "{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"
      }
     ]
    },
@@ -2539,7 +2565,7 @@
     "Type": "Event",
     "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
     "Language": "SFX",
-    "Hash": "{390ECB20-DFB7-01C2-BD9B-5507C18A89BB}",
+    "Hash": "{CB012164-AE5D-FCD2-A3DC-17F1E9AD9271}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_5",
     "ShortName": "AMB_HoverCars_ParticleStream_5",
     "Path": "Event/AMB_HoverCars_ParticleStream_5.bnk",
@@ -2584,6 +2610,14 @@
     "Plugins": {
      "ShareSets": [
       {
+       "Id": "529418188",
+       "Name": "Tremolo_HoverCars_PS5",
+       "ObjectPath": "\\Effects\\Default Work Unit\\Tremolo_HoverCars_PS5",
+       "GUID": "{C2D44633-8367-4F1B-ABE3-8028C4D3B172}",
+       "LibName": "Wwise Tremolo",
+       "LibId": "8585219"
+      },
+      {
        "Id": "2258521792",
        "Name": "Brick_Wall_Minus_1dB_Peak_Slow_Release",
        "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Slow_Release",
@@ -2618,7 +2652,7 @@
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "2258521792"
+         "Id": "529418188"
         }
        ]
       },
@@ -2638,6 +2672,12 @@
       "Name": "PAR_Doppler",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Doppler",
       "GUID": "{D40C9741-1633-4046-A65F-904ED87051FE}"
+     },
+     {
+      "Id": "2940353651",
+      "Name": "PAR_Distance_HoverCars_PS5",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Distance_HoverCars_PS5",
+      "GUID": "{12811BF6-789D-4EFB-A3B6-2A817E909100}"
      }
     ]
    },
@@ -2886,7 +2926,7 @@
     "Type": "Event",
     "GUID": "{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}",
     "Language": "SFX",
-    "Hash": "{5908FE2A-CFE8-DA91-53EA-4EEE7F850AB6}",
+    "Hash": "{5DD1D34F-C42B-A841-681F-F4C9E94BABE6}",
     "ObjectPath": "AMB_RoomGusts_SmallEntrance_Exterior",
     "ShortName": "AMB_RoomGusts_SmallEntrance_Exterior",
     "Path": "Event/AMB_RoomGusts_SmallEntrance_Exterior.bnk",
@@ -2937,6 +2977,6 @@
     ]
    }
   ],
-  "FileHash": "{BEBF41F8-1FC4-AA6D-D27D-F1CAE5BF91AC}"
+  "FileHash": "{8AAC5879-10C3-D08B-40AA-29234D12A540}"
  }
 }

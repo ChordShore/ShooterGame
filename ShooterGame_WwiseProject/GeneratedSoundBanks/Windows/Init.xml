@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{0825ED83-9513-F58C-8032-AC635A598DEB}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{0E821FB5-5E38-117B-6484-8DC2D197096C}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -78,7 +78,9 @@
 				<GameParameter Id="866022863" Name="PAR_Doppler" ObjectPath="\Game Parameters\Default Work Unit\PAR_Doppler" GUID="{D40C9741-1633-4046-A65F-904ED87051FE}"/>
 				<GameParameter Id="1228207839" Name="PAR_Heartbeat" ObjectPath="\Game Parameters\Default Work Unit\PAR_Heartbeat" GUID="{1A7627A7-5A7D-470D-B1E0-2B091B679836}"/>
 				<GameParameter Id="1714946050" Name="PAR_Breaths" ObjectPath="\Game Parameters\Default Work Unit\PAR_Breaths" GUID="{AD59135C-7832-4545-A14C-AA5DD622DAAC}"/>
-				<GameParameter Id="4014555216" Name="PAR_Distance" ObjectPath="\Game Parameters\Default Work Unit\PAR_Distance" GUID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"/>
+				<GameParameter Id="1791116251" Name="PAR_Wind" ObjectPath="\Game Parameters\Default Work Unit\PAR_Wind" GUID="{5AA64F25-2B48-4F0C-8EF5-838EB08AB4B3}"/>
+				<GameParameter Id="2940353649" Name="PAR_Distance_HoverCars_PS7" ObjectPath="\Game Parameters\Default Work Unit\PAR_Distance_HoverCars_PS7" GUID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"/>
+				<GameParameter Id="2940353651" Name="PAR_Distance_HoverCars_PS5" ObjectPath="\Game Parameters\Default Work Unit\PAR_Distance_HoverCars_PS5" GUID="{12811BF6-789D-4EFB-A3B6-2A817E909100}"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="1777405841" Name="STA_Location" ObjectPath="\States\Default Work Unit\STA_Location" GUID="{686E9A02-FA99-467B-99D7-939C1DC93153}">
@@ -227,5 +229,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0EF8C377-6BB3-86C1-CBED-A3CEDB0C9044}</FileHash>
+	<FileHash>{8CB177AC-36D6-BAF8-3D28-477A9023CFE1}</FileHash>
 </SoundBanksInfo>

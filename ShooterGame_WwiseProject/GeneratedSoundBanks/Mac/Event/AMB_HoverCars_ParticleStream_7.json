@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}",
     "Language": "SFX",
-    "Hash": "{8CD91CEF-B8F2-7EE6-2076-C84A07DFFED2}",
+    "Hash": "{C31867FF-1C70-8A22-31AF-A443B6BEA30E}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_7",
     "ShortName": "AMB_HoverCars_ParticleStream_7",
     "Path": "Event/AMB_HoverCars_ParticleStream_7.bnk",
@@ -55,6 +55,14 @@
     "Plugins": {
      "ShareSets": [
       {
+       "Id": "529418190",
+       "Name": "Tremolo_HoverCars_PS7",
+       "ObjectPath": "\\Effects\\Default Work Unit\\Tremolo_HoverCars_PS7",
+       "GUID": "{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}",
+       "LibName": "Wwise Tremolo",
+       "LibId": "8585219"
+      },
+      {
        "Id": "2258521792",
        "Name": "Brick_Wall_Minus_1dB_Peak_Slow_Release",
        "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Slow_Release",
@@ -89,7 +97,7 @@
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "2258521792"
+         "Id": "529418190"
         }
        ]
       },
@@ -109,10 +117,16 @@
       "Name": "PAR_Doppler",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Doppler",
       "GUID": "{D40C9741-1633-4046-A65F-904ED87051FE}"
+     },
+     {
+      "Id": "2940353649",
+      "Name": "PAR_Distance_HoverCars_PS7",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_Distance_HoverCars_PS7",
+      "GUID": "{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"
      }
     ]
    }
   ],
-  "FileHash": "{659830A8-2630-5F58-65FA-31A048FC3392}"
+  "FileHash": "{EA773998-170E-3BF8-8684-35B8A9E04C8D}"
  }
 }

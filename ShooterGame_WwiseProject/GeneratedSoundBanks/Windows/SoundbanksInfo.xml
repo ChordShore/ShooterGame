@@ -57,7 +57,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{EDA75F8D-A9F3-4989-6530-D4DE5F46529A}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{919DEC19-E80E-6730-B7A1-A1844D0867A8}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -247,7 +247,7 @@
 				<Event Id="378132258" Name="FOL_Trashcan_Collision" ObjectPath="\Events\Foley\Props\FOL_Trashcan_Collision" GUID="{83AF3510-8046-4206-B4B6-E1A12D72AC55}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="636673922" Type="Event" GUID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}" Language="SFX" Hash="{94220CBD-133D-A4BB-008F-B8A2251F1115}">
+		<SoundBank Id="636673922" Type="Event" GUID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}" Language="SFX" Hash="{8FC24ECC-D8BB-0C37-64B2-8FB99992E0E8}">
 			<ObjectPath>AMB_RoomGusts_SmallEntrance_Interior</ObjectPath>
 			<ShortName>AMB_RoomGusts_SmallEntrance_Interior</ShortName>
 			<Path>Event/AMB_RoomGusts_SmallEntrance_Interior.bnk</Path>
@@ -510,7 +510,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{0825ED83-9513-F58C-8032-AC635A598DEB}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{0E821FB5-5E38-117B-6484-8DC2D197096C}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -587,7 +587,9 @@
 				<GameParameter Id="866022863" Name="PAR_Doppler" ObjectPath="\Game Parameters\Default Work Unit\PAR_Doppler" GUID="{D40C9741-1633-4046-A65F-904ED87051FE}"/>
 				<GameParameter Id="1228207839" Name="PAR_Heartbeat" ObjectPath="\Game Parameters\Default Work Unit\PAR_Heartbeat" GUID="{1A7627A7-5A7D-470D-B1E0-2B091B679836}"/>
 				<GameParameter Id="1714946050" Name="PAR_Breaths" ObjectPath="\Game Parameters\Default Work Unit\PAR_Breaths" GUID="{AD59135C-7832-4545-A14C-AA5DD622DAAC}"/>
-				<GameParameter Id="4014555216" Name="PAR_Distance" ObjectPath="\Game Parameters\Default Work Unit\PAR_Distance" GUID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"/>
+				<GameParameter Id="1791116251" Name="PAR_Wind" ObjectPath="\Game Parameters\Default Work Unit\PAR_Wind" GUID="{5AA64F25-2B48-4F0C-8EF5-838EB08AB4B3}"/>
+				<GameParameter Id="2940353649" Name="PAR_Distance_HoverCars_PS7" ObjectPath="\Game Parameters\Default Work Unit\PAR_Distance_HoverCars_PS7" GUID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"/>
+				<GameParameter Id="2940353651" Name="PAR_Distance_HoverCars_PS5" ObjectPath="\Game Parameters\Default Work Unit\PAR_Distance_HoverCars_PS5" GUID="{12811BF6-789D-4EFB-A3B6-2A817E909100}"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="1777405841" Name="STA_Location" ObjectPath="\States\Default Work Unit\STA_Location" GUID="{686E9A02-FA99-467B-99D7-939C1DC93153}">
@@ -911,7 +913,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2496008984" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{8CD91CEF-B8F2-7EE6-2076-C84A07DFFED2}">
+		<SoundBank Id="2496008984" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{C31867FF-1C70-8A22-31AF-A443B6BEA30E}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_7</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_7</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_7.bnk</Path>
@@ -939,6 +941,7 @@
 			</Media>
 			<Plugins>
 				<ShareSets>
+					<Plugin Id="529418190" Name="Tremolo_HoverCars_PS7" ObjectPath="\Effects\Default Work Unit\Tremolo_HoverCars_PS7" GUID="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}" LibName="Wwise Tremolo" LibId="8585219"/>
 					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
 				</ShareSets>
 			</Plugins>
@@ -952,7 +955,7 @@
 					</MediaRefs>
 					<PluginRefs>
 						<ShareSets>
-							<PluginRef Id="2258521792"/>
+							<PluginRef Id="529418190"/>
 						</ShareSets>
 					</PluginRefs>
 					<AuxBusRefs>
@@ -962,9 +965,10 @@
 			</Events>
 			<GameParameters>
 				<GameParameter Id="866022863" Name="PAR_Doppler" ObjectPath="\Game Parameters\Default Work Unit\PAR_Doppler" GUID="{D40C9741-1633-4046-A65F-904ED87051FE}"/>
+				<GameParameter Id="2940353649" Name="PAR_Distance_HoverCars_PS7" ObjectPath="\Game Parameters\Default Work Unit\PAR_Distance_HoverCars_PS7" GUID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{390ECB20-DFB7-01C2-BD9B-5507C18A89BB}">
+		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{CB012164-AE5D-FCD2-A3DC-17F1E9AD9271}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_5</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_5</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_5.bnk</Path>
@@ -992,6 +996,7 @@
 			</Media>
 			<Plugins>
 				<ShareSets>
+					<Plugin Id="529418188" Name="Tremolo_HoverCars_PS5" ObjectPath="\Effects\Default Work Unit\Tremolo_HoverCars_PS5" GUID="{C2D44633-8367-4F1B-ABE3-8028C4D3B172}" LibName="Wwise Tremolo" LibId="8585219"/>
 					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
 				</ShareSets>
 			</Plugins>
@@ -1005,7 +1010,7 @@
 					</MediaRefs>
 					<PluginRefs>
 						<ShareSets>
-							<PluginRef Id="2258521792"/>
+							<PluginRef Id="529418188"/>
 						</ShareSets>
 					</PluginRefs>
 					<AuxBusRefs>
@@ -1015,6 +1020,7 @@
 			</Events>
 			<GameParameters>
 				<GameParameter Id="866022863" Name="PAR_Doppler" ObjectPath="\Game Parameters\Default Work Unit\PAR_Doppler" GUID="{D40C9741-1633-4046-A65F-904ED87051FE}"/>
+				<GameParameter Id="2940353651" Name="PAR_Distance_HoverCars_PS5" ObjectPath="\Game Parameters\Default Work Unit\PAR_Distance_HoverCars_PS5" GUID="{12811BF6-789D-4EFB-A3B6-2A817E909100}"/>
 			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{56580432-10AD-4BDE-53B4-C32078FF56D7}">
@@ -1123,7 +1129,7 @@
 			<ShortName>Dialogue</ShortName>
 			<Path>Dialogue.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4134637028" Type="Event" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" Language="SFX" Hash="{5908FE2A-CFE8-DA91-53EA-4EEE7F850AB6}">
+		<SoundBank Id="4134637028" Type="Event" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" Language="SFX" Hash="{5DD1D34F-C42B-A841-681F-F4C9E94BABE6}">
 			<ObjectPath>AMB_RoomGusts_SmallEntrance_Exterior</ObjectPath>
 			<ShortName>AMB_RoomGusts_SmallEntrance_Exterior</ShortName>
 			<Path>Event/AMB_RoomGusts_SmallEntrance_Exterior.bnk</Path>
@@ -1153,5 +1159,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DAD3A4B5-8096-1C08-7295-C325BCC9E456}</FileHash>
+	<FileHash>{2E74C558-A889-DF79-C5FF-F26772DD217B}</FileHash>
 </SoundBanksInfo>

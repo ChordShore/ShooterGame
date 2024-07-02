@@ -3,10 +3,11 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{45A6305D-DE92-45B5-93D4-976360EB2166}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="PAR_Distance" ID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}">
+				<GameParameter Name="PAR_Distance_HoverCars_PS7" ID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}">
 					<PropertyList>
 						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="20500"/>
+						<Property Name="Max" Type="Real64" Value="20500"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="PAR_Doppler" ID="{D40C9741-1633-4046-A65F-904ED87051FE}">
@@ -18,6 +19,14 @@
 				</GameParameter>
 				<GameParameter Name="PAR_Heartbeat" ID="{1A7627A7-5A7D-470D-B1E0-2B091B679836}"/>
 				<GameParameter Name="PAR_Breaths" ID="{AD59135C-7832-4545-A14C-AA5DD622DAAC}"/>
+				<GameParameter Name="PAR_Wind" ID="{5AA64F25-2B48-4F0C-8EF5-838EB08AB4B3}"/>
+				<GameParameter Name="PAR_Distance_HoverCars_PS5" ID="{12811BF6-789D-4EFB-A3B6-2A817E909100}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="28000"/>
+						<Property Name="Max" Type="Real64" Value="28000"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

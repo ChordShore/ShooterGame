@@ -19,13 +19,114 @@
 						<Property Name="OnOffBand2" Type="bool" Value="False"/>
 					</PropertyList>
 				</Effect>
-				<Effect Name="Tremolo_HoverCars" ID="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+				<Effect Name="Tremolo_HoverCars_PS7" ID="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 					<PropertyList>
 						<Property Name="ModDepth" Type="Real32" Value="50"/>
-						<Property Name="ModFrequency" Type="Real32" Value="11"/>
+						<Property Name="ModFrequency" Type="Real32" Value="10"/>
 						<Property Name="ModPWM" Type="Real32" Value="0"/>
-						<Property Name="ModSmoothing" Type="Real32" Value="38"/>
+						<Property Name="ModSmoothing" Type="Real32" Value="25"/>
 					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{BEAB7E22-CC23-46A9-A226-72466E44B7B3}" ShortID="115049771">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="ModFrequency"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="PAR_Distance_HoverCars_PS7" ID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}" WorkUnitID="{45A6305D-DE92-45B5-93D4-976360EB2166}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{BC3BC256-078A-42BE-A456-ACFCBB2DD13F}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="5"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>25</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>13325</XPos>
+																<YPos>25</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>20500</XPos>
+																<YPos>5</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Effect>
+				<Effect Name="Gain_Wind" ID="{45086AEA-94BA-4FB3-90D5-AA15426DF845}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3"/>
+				<Effect Name="Meter_Wind" ID="{345FFC55-974D-49F5-86FA-E54C556DF69F}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
+	<GameParameter Name="PAR_Wind" ID="{5AA64F25-2B48-4F0C-8EF5-838EB08AB4B3}"/>
+</PluginData>
+				</Effect>
+				<Effect Name="Tremolo_HoverCars_PS5" ID="{C2D44633-8367-4F1B-ABE3-8028C4D3B172}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+					<PropertyList>
+						<Property Name="ModDepth" Type="Real32" Value="50"/>
+						<Property Name="ModFrequency" Type="Real32" Value="10"/>
+						<Property Name="ModPWM" Type="Real32" Value="0"/>
+						<Property Name="ModSmoothing" Type="Real32" Value="25"/>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{A481E54F-F4D9-4A60-84AB-9BD6C18903FC}" ShortID="456080843">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="ModFrequency"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="PAR_Distance_HoverCars_PS5" ID="{12811BF6-789D-4EFB-A3B6-2A817E909100}" WorkUnitID="{45A6305D-DE92-45B5-93D4-976360EB2166}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{C16C9807-219B-4B20-8474-9B6BC0D13470}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="5"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>25</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>18200</XPos>
+																<YPos>25</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>28000</XPos>
+																<YPos>7</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</Effect>
 			</ChildrenList>
 		</WorkUnit>

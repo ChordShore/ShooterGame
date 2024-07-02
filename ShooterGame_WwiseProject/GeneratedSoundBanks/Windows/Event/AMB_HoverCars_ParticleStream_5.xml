@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{390ECB20-DFB7-01C2-BD9B-5507C18A89BB}">
+		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{CB012164-AE5D-FCD2-A3DC-17F1E9AD9271}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_5</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_5</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_5.bnk</Path>
@@ -29,6 +29,7 @@
 			</Media>
 			<Plugins>
 				<ShareSets>
+					<Plugin Id="529418188" Name="Tremolo_HoverCars_PS5" ObjectPath="\Effects\Default Work Unit\Tremolo_HoverCars_PS5" GUID="{C2D44633-8367-4F1B-ABE3-8028C4D3B172}" LibName="Wwise Tremolo" LibId="8585219"/>
 					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
 				</ShareSets>
 			</Plugins>
@@ -42,7 +43,7 @@
 					</MediaRefs>
 					<PluginRefs>
 						<ShareSets>
-							<PluginRef Id="2258521792"/>
+							<PluginRef Id="529418188"/>
 						</ShareSets>
 					</PluginRefs>
 					<AuxBusRefs>
@@ -52,8 +53,9 @@
 			</Events>
 			<GameParameters>
 				<GameParameter Id="866022863" Name="PAR_Doppler" ObjectPath="\Game Parameters\Default Work Unit\PAR_Doppler" GUID="{D40C9741-1633-4046-A65F-904ED87051FE}"/>
+				<GameParameter Id="2940353651" Name="PAR_Distance_HoverCars_PS5" ObjectPath="\Game Parameters\Default Work Unit\PAR_Distance_HoverCars_PS5" GUID="{12811BF6-789D-4EFB-A3B6-2A817E909100}"/>
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1EE65CBD-3603-B961-1A35-62524D1EE280}</FileHash>
+	<FileHash>{E3C07DF9-36F6-0A35-EA7D-3AE3AD489E7E}</FileHash>
 </SoundBanksInfo>
