@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{5EE7EC9A-27C9-1D28-F2B6-B33C3BDADD2E}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{363CDCCE-06C1-20E9-6532-C3B48F40F852}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -158,7 +158,7 @@
 						<MediaRef Id="864735500"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2759038044" Name="AMB_UnrealSign" ObjectPath="\Events\Ambience\Emitters\Highrise\UnrealSigns\AMB_UnrealSign" GUID="{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}" MaxAttenuation="2100" DurationType="Infinite">
+				<Event Id="2759038044" Name="AMB_UnrealSign" ObjectPath="\Events\Ambience\Emitters\Highrise\UnrealSigns\AMB_UnrealSign" GUID="{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}" MaxAttenuation="1000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="218188666"/>
 					</MediaRefs>
@@ -171,5 +171,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3F48EBC1-9FD1-EE9E-923C-6BC69926C865}</FileHash>
+	<FileHash>{B6DFFE72-FCD6-CF06-595E-D8EFA098EC9A}</FileHash>
 </SoundBanksInfo>

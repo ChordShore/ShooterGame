@@ -114,7 +114,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{5EE7EC9A-27C9-1D28-F2B6-B33C3BDADD2E}",
+    "Hash": "{363CDCCE-06C1-20E9-6532-C3B48F40F852}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -465,7 +465,7 @@
       "Name": "AMB_UnrealSign",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\UnrealSigns\\AMB_UnrealSign",
       "GUID": "{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}",
-      "MaxAttenuation": "2100",
+      "MaxAttenuation": "1000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -610,7 +610,7 @@
     "Type": "Event",
     "GUID": "{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}",
     "Language": "SFX",
-    "Hash": "{EEB59F34-C9DA-3783-B15E-3B66B93ACAE2}",
+    "Hash": "{80A37D57-512A-9909-8379-1AABC64D8095}",
     "ObjectPath": "AMB_ScifiDrones",
     "ShortName": "AMB_ScifiDrones",
     "Path": "Event/AMB_ScifiDrones.bnk",
@@ -804,8 +804,52 @@
         "SwitchValue": {
          "GroupType": "State",
          "GroupId": "1777405841",
-         "Id": "4157082203",
-         "GUID": "{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"
+         "Id": "301467384",
+         "GUID": "{2C1C780E-EFA5-4772-8620-E06CA40932F3}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "97223412"
+         },
+         {
+          "Id": "453557799"
+         },
+         {
+          "Id": "508650582"
+         },
+         {
+          "Id": "548291984"
+         },
+         {
+          "Id": "725138936"
+         },
+         {
+          "Id": "756873659"
+         },
+         {
+          "Id": "795419111"
+         },
+         {
+          "Id": "795597231"
+         },
+         {
+          "Id": "876622919"
+         }
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2781261543"
+          }
+         ]
+        }
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "1777405841",
+         "Id": "877225536",
+         "GUID": "{E9597652-781B-4852-95B1-CADA7D874365}"
         },
         "MediaRefs": [
          {
@@ -848,8 +892,8 @@
         "SwitchValue": {
          "GroupType": "State",
          "GroupId": "1777405841",
-         "Id": "3768889528",
-         "GUID": "{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"
+         "Id": "1657765358",
+         "GUID": "{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"
         },
         "MediaRefs": [
          {
@@ -896,25 +940,31 @@
       "Id": "1777405841",
       "Name": "STA_Location",
       "ObjectPath": "\\States\\Default Work Unit\\STA_Location",
-      "GUID": "{686E9A02-FA99-467B-99D7-939C1DC93153}",
+      "GUID": "{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}",
       "States": [
+       {
+        "Id": "301467384",
+        "Name": "STA_Indoors_Spawn",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors_Spawn",
+        "GUID": "{2C1C780E-EFA5-4772-8620-E06CA40932F3}"
+       },
        {
         "Id": "748895195",
         "Name": "None",
         "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\None",
-        "GUID": "{05BC4704-4528-42BF-8FF0-1F5E28FBD976}"
+        "GUID": "{C7162D63-5030-4C71-878E-49C2A4492744}"
        },
        {
-        "Id": "3768889528",
-        "Name": "STA_Indoors",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors",
-        "GUID": "{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"
+        "Id": "877225536",
+        "Name": "STA_Outdoors_Atrium",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Atrium",
+        "GUID": "{E9597652-781B-4852-95B1-CADA7D874365}"
        },
        {
-        "Id": "4157082203",
-        "Name": "STA_Outdoors",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors",
-        "GUID": "{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"
+        "Id": "1657765358",
+        "Name": "STA_Indoors_Room",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors_Room",
+        "GUID": "{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"
        }
       ]
      }
@@ -1151,7 +1201,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{0E821FB5-5E38-117B-6484-8DC2D197096C}",
+    "Hash": "{C69B132E-ADA5-040C-7CB5-69A3E9149966}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -1431,25 +1481,31 @@
       "Id": "1777405841",
       "Name": "STA_Location",
       "ObjectPath": "\\States\\Default Work Unit\\STA_Location",
-      "GUID": "{686E9A02-FA99-467B-99D7-939C1DC93153}",
+      "GUID": "{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}",
       "States": [
+       {
+        "Id": "301467384",
+        "Name": "STA_Indoors_Spawn",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors_Spawn",
+        "GUID": "{2C1C780E-EFA5-4772-8620-E06CA40932F3}"
+       },
        {
         "Id": "748895195",
         "Name": "None",
         "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\None",
-        "GUID": "{05BC4704-4528-42BF-8FF0-1F5E28FBD976}"
+        "GUID": "{C7162D63-5030-4C71-878E-49C2A4492744}"
        },
        {
-        "Id": "3768889528",
-        "Name": "STA_Indoors",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors",
-        "GUID": "{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"
+        "Id": "877225536",
+        "Name": "STA_Outdoors_Atrium",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Atrium",
+        "GUID": "{E9597652-781B-4852-95B1-CADA7D874365}"
        },
        {
-        "Id": "4157082203",
-        "Name": "STA_Outdoors",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors",
-        "GUID": "{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"
+        "Id": "1657765358",
+        "Name": "STA_Indoors_Room",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors_Room",
+        "GUID": "{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"
        }
       ]
      }
@@ -2423,7 +2479,7 @@
     "Type": "Event",
     "GUID": "{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}",
     "Language": "SFX",
-    "Hash": "{15C8883A-3A67-4C9F-D2F3-1438E19F5856}",
+    "Hash": "{BD3C2917-4DA3-4770-62D8-34161A526314}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_7",
     "ShortName": "AMB_HoverCars_ParticleStream_7",
     "Path": "Event/AMB_HoverCars_ParticleStream_7.bnk",
@@ -2544,7 +2600,7 @@
     "Type": "Event",
     "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
     "Language": "SFX",
-    "Hash": "{39CFA996-47B1-2AD9-E24B-8DA5B46A3D35}",
+    "Hash": "{DC1FFA35-9266-EECC-5022-0BFCA81381E5}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_5",
     "ShortName": "AMB_HoverCars_ParticleStream_5",
     "Path": "Event/AMB_HoverCars_ParticleStream_5.bnk",
@@ -2784,7 +2840,7 @@
     "Type": "Event",
     "GUID": "{3C0DA367-FE08-40AC-B96C-0BCFE38BE080}",
     "Language": "SFX",
-    "Hash": "{00556041-0103-C0BB-90AB-2909260D4434}",
+    "Hash": "{819980C6-1A7A-0E93-E93B-97BDAB374604}",
     "ObjectPath": "AMB_BarrierFence",
     "ShortName": "AMB_BarrierFence",
     "Path": "Event/AMB_BarrierFence.bnk",
@@ -2992,6 +3048,6 @@
     ]
    }
   ],
-  "FileHash": "{7D0B52B7-8036-073B-D92B-2508A7B1D2B0}"
+  "FileHash": "{228F7ADB-9F37-FB51-7573-9CD37BFFC446}"
  }
 }

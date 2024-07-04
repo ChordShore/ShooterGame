@@ -517,6 +517,9 @@
 										<Event Name="AMB_PhoneBox" ID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}">
 											<ChildrenList>
 												<Action Name="" ID="{5AC65C0A-0689-43FA-B1F8-63C17C80462C}" ShortID="659594679">
+													<PropertyList>
+														<Property Name="FadeTime" Type="Real64" Value="1"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="AMB_PhoneBox_DialTone_LP" ID="{547F9306-FBCE-4EE7-88C6-557493CA9F98}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
@@ -543,6 +546,9 @@
 										<Event Name="AMB_BarrierFence" ID="{3C0DA367-FE08-40AC-B96C-0BCFE38BE080}">
 											<ChildrenList>
 												<Action Name="" ID="{3B32AEFB-1B3C-4B20-9FB9-27CF852E4E67}" ShortID="593243471">
+													<PropertyList>
+														<Property Name="FadeTime" Type="Real64" Value="1"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="AMB_BarrierFence_LP" ID="{21B05601-534E-4D7E-BA20-A9C79FE23DBC}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
@@ -573,6 +579,9 @@
 										<Event Name="AMB_StreetLamp" ID="{82B95D5C-4BE9-4DFC-9A31-59E8AEF7E2FC}">
 											<ChildrenList>
 												<Action Name="" ID="{9688B892-FEDC-4F58-95F4-0D7D8E864CE4}" ShortID="611311653">
+													<PropertyList>
+														<Property Name="FadeTime" Type="Real64" Value="1"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="AMB_StreetLamp_Hum_LP" ID="{AE960BD0-3C81-4719-93C5-4B68C55E44C1}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
@@ -595,6 +604,9 @@
 										<Event Name="AMB_UnrealSign" ID="{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}">
 											<ChildrenList>
 												<Action Name="" ID="{AE289769-5F3C-45E6-8431-4F5D20C7D90C}" ShortID="798681416">
+													<PropertyList>
+														<Property Name="FadeTime" Type="Real64" Value="1"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="AMB_UnrealSign_LP" ID="{590D5A02-2C18-4FE7-9702-6D4F182282B8}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{0E821FB5-5E38-117B-6484-8DC2D197096C}",
+    "Hash": "{C69B132E-ADA5-040C-7CB5-69A3E9149966}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -290,25 +290,31 @@
       "Id": "1777405841",
       "Name": "STA_Location",
       "ObjectPath": "\\States\\Default Work Unit\\STA_Location",
-      "GUID": "{686E9A02-FA99-467B-99D7-939C1DC93153}",
+      "GUID": "{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}",
       "States": [
+       {
+        "Id": "301467384",
+        "Name": "STA_Indoors_Spawn",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors_Spawn",
+        "GUID": "{2C1C780E-EFA5-4772-8620-E06CA40932F3}"
+       },
        {
         "Id": "748895195",
         "Name": "None",
         "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\None",
-        "GUID": "{05BC4704-4528-42BF-8FF0-1F5E28FBD976}"
+        "GUID": "{C7162D63-5030-4C71-878E-49C2A4492744}"
        },
        {
-        "Id": "3768889528",
-        "Name": "STA_Indoors",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors",
-        "GUID": "{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"
+        "Id": "877225536",
+        "Name": "STA_Outdoors_Atrium",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Atrium",
+        "GUID": "{E9597652-781B-4852-95B1-CADA7D874365}"
        },
        {
-        "Id": "4157082203",
-        "Name": "STA_Outdoors",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors",
-        "GUID": "{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"
+        "Id": "1657765358",
+        "Name": "STA_Indoors_Room",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors_Room",
+        "GUID": "{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"
        }
       ]
      }
@@ -799,6 +805,6 @@
     ]
    }
   ],
-  "FileHash": "{8EC3DD99-060F-330D-F079-89BDA76AE4FF}"
+  "FileHash": "{30106C09-A9A3-35E9-8CD8-8A16FD698870}"
  }
 }

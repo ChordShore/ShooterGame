@@ -95,6 +95,11 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.01</Value>
+													</ValueList>
+												</Property>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
@@ -205,21 +210,21 @@
 									<StateInfo>
 										<StateGroupList>
 											<StateGroupInfo>
-												<StateGroupRef Name="STA_Location" ID="{686E9A02-FA99-467B-99D7-939C1DC93153}"/>
+												<StateGroupRef Name="STA_Location" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}"/>
 											</StateGroupInfo>
 										</StateGroupList>
 										<CustomStateList>
 											<CustomState>
-												<StateRef Name="STA_Outdoors" ID="{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"/>
-												<CustomState Name="" ID="{EBE39F41-EB60-4895-AEF1-7A5A85D20E2A}" ShortID="986517809"/>
+												<StateRef Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
+												<CustomState Name="" ID="{6A8BB81C-804B-4872-B395-E401ECC6A7F5}" ShortID="994824208"/>
 											</CustomState>
 											<CustomState>
-												<StateRef Name="STA_Indoors" ID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
-												<CustomState Name="" ID="{11610E13-9B5A-438D-880C-CA864FCE542F}" ShortID="548754314">
-													<PropertyList>
-														<Property Name="Lowpass" Type="int16" Value="50"/>
-													</PropertyList>
-												</CustomState>
+												<StateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+												<CustomState Name="" ID="{BBEB6A36-3CA2-4300-835A-F3A02AC8EC91}" ShortID="664518417"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
+												<CustomState Name="" ID="{02BB6750-4C08-4132-9AAC-37C222A7A55D}" ShortID="970695117"/>
 											</CustomState>
 										</CustomStateList>
 									</StateInfo>
@@ -246,11 +251,6 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="InitialDelay" Type="Real64">
-													<ValueList>
-														<Value>2</Value>
-													</ValueList>
-												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
@@ -1451,19 +1451,28 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="STA_Location" ID="{686E9A02-FA99-467B-99D7-939C1DC93153}"/>
+														<StateGroupRef Name="STA_Location" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="STA_Outdoors" ID="{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"/>
-														<CustomState Name="" ID="{85EF5A4B-1E87-4632-9DAA-05296C1E5E78}" ShortID="252501188"/>
+														<StateRef Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
+														<CustomState Name="" ID="{27F99607-E440-4D5D-BCEC-3DAE75ED6805}" ShortID="718591365">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="40"/>
+															</PropertyList>
+														</CustomState>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="STA_Indoors" ID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
-														<CustomState Name="" ID="{5FC3746F-8787-40A3-A754-D753E13BF1C9}" ShortID="94153833">
+														<StateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+														<CustomState Name="" ID="{DEF203FC-F739-4F00-BDB0-0C067D5BCB86}" ShortID="629278159"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
+														<CustomState Name="" ID="{205E9123-0A5F-49AC-8451-14062FE30502}" ShortID="682710188">
 															<PropertyList>
-																<Property Name="Lowpass" Type="int16" Value="55"/>
+																<Property Name="Lowpass" Type="int16" Value="50"/>
+																<Property Name="Volume" Type="Real64" Value="-3"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -2078,19 +2087,28 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="STA_Location" ID="{686E9A02-FA99-467B-99D7-939C1DC93153}"/>
+														<StateGroupRef Name="STA_Location" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="STA_Outdoors" ID="{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"/>
-														<CustomState Name="" ID="{073DE86B-838B-44EC-AEB5-B27B3C23B4DA}" ShortID="433215674"/>
+														<StateRef Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
+														<CustomState Name="" ID="{CEFA2D83-5C22-4CCC-9E07-01A2BDC6EDC1}" ShortID="425302535">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="40"/>
+															</PropertyList>
+														</CustomState>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="STA_Indoors" ID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
-														<CustomState Name="" ID="{0E797CBE-075B-464B-AACA-3CD085332EC3}" ShortID="573942729">
+														<StateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+														<CustomState Name="" ID="{6853437F-80B5-4D41-95B1-5D5656C7700A}" ShortID="767367059"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
+														<CustomState Name="" ID="{4C4AE3AC-B7F2-4838-BF17-7F41CD04FD1A}" ShortID="1014732078">
 															<PropertyList>
-																<Property Name="Lowpass" Type="int16" Value="55"/>
+																<Property Name="Lowpass" Type="int16" Value="50"/>
+																<Property Name="Volume" Type="Real64" Value="-3"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -2773,13 +2791,13 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 												</Reference>
 												<Reference Name="DefaultSwitchOrState">
-													<ObjectRef Name="None" ID="{05BC4704-4528-42BF-8FF0-1F5E28FBD976}" WorkUnitID="{5DA9743F-24CB-48C8-8072-C39EB4F5CC2B}"/>
+													<ObjectRef Name="None" ID="{C7162D63-5030-4C71-878E-49C2A4492744}" WorkUnitID="{5DA9743F-24CB-48C8-8072-C39EB4F5CC2B}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 												<Reference Name="SwitchGroupOrStateGroup">
-													<ObjectRef Name="STA_Location" ID="{686E9A02-FA99-467B-99D7-939C1DC93153}" WorkUnitID="{5DA9743F-24CB-48C8-8072-C39EB4F5CC2B}"/>
+													<ObjectRef Name="STA_Location" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}" WorkUnitID="{5DA9743F-24CB-48C8-8072-C39EB4F5CC2B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -3248,13 +3266,19 @@
 												</GroupingBehaviorList>
 												<GroupingList>
 													<Grouping>
-														<SwitchRef Name="STA_Outdoors" ID="{0BB1DECF-3D4D-4AF7-911F-70118D23DD55}"/>
+														<SwitchRef Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
+														<ItemList>
+															<ItemRef Name="AMB_Highrise_Room_OS" ID="{53FAFEC3-E750-4552-8A08-2A993F768ECF}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 														<ItemList>
 															<ItemRef Name="AMB_Highrise_Atrium_OS" ID="{A27AAC41-368C-47B8-9852-654CFB647800}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
-														<SwitchRef Name="STA_Indoors" ID="{43D0CFE7-0C97-4FF8-889E-C0169F73F0AF}"/>
+														<SwitchRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 														<ItemList>
 															<ItemRef Name="AMB_Highrise_Room_OS" ID="{53FAFEC3-E750-4552-8A08-2A993F768ECF}"/>
 														</ItemList>

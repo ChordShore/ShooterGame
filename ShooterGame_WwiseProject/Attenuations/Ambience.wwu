@@ -439,7 +439,7 @@
 						</Attenuation>
 						<Attenuation Name="ATN_UnrealSign" ID="{AB893DBD-799F-4429-9641-0F1A338D76F9}" ShortID="363600411">
 							<PropertyList>
-								<Property Name="RadiusMax" Type="Real64" Value="2100"/>
+								<Property Name="RadiusMax" Type="Real64" Value="1000"/>
 							</PropertyList>
 							<CurveUsageInfoList>
 								<VolumeDryUsage>
@@ -456,13 +456,13 @@
 													<SegmentShape>SCurve</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>0.00190909090909091</XPos>
+													<XPos>0.001</XPos>
 													<YPos>0</YPos>
 													<Flags>0</Flags>
-													<SegmentShape>Log2</SegmentShape>
+													<SegmentShape>Log1</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>2100</XPos>
+													<XPos>1000</XPos>
 													<YPos>-200</YPos>
 													<Flags>37</Flags>
 												</Point>
@@ -490,7 +490,7 @@
 													<SegmentShape>Exp1</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>2100</XPos>
+													<XPos>1000</XPos>
 													<YPos>70</YPos>
 													<Flags>37</Flags>
 												</Point>
@@ -512,7 +512,7 @@
 													<SegmentShape>Exp1</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>2100</XPos>
+													<XPos>1000</XPos>
 													<YPos>70</YPos>
 													<Flags>37</Flags>
 												</Point>
@@ -533,13 +533,13 @@
 													<Flags>5</Flags>
 												</Point>
 												<Point>
-													<XPos>110.526315789473</XPos>
+													<XPos>52.6315789473681</XPos>
 													<YPos>25</YPos>
 													<Flags>0</Flags>
 													<SegmentShape>Log3</SegmentShape>
 												</Point>
 												<Point>
-													<XPos>2100</XPos>
+													<XPos>1000</XPos>
 													<YPos>0</YPos>
 													<Flags>37</Flags>
 												</Point>

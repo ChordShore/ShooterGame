@@ -1,16 +1,18 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2496008984	AMB_HoverCars_ParticleStream_7			\Ambience\Emitters\Highrise\Dynamic\HoverCars\AMB_HoverCars_ParticleStream_7	
+	2496008984	AMB_HoverCars_ParticleStream_7			\Ambience\Emitters\Highrise\HoverCars\AMB_HoverCars_ParticleStream_7	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1777405841	STA_Location			\Default Work Unit\STA_Location	
 
 State	ID	Name	State Group			Notes
+	301467384	STA_Indoors_Spawn	STA_Location			
 	748895195	None	STA_Location			
-	3768889528	STA_Indoors	STA_Location			
-	4157082203	STA_Outdoors	STA_Location			
+	877225536	STA_Outdoors_Atrium	STA_Location			
+	1657765358	STA_Indoors_Room	STA_Location			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	573942729	STA_Indoors	STA_Location	\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_HoverCars\AMB_HoverCars_ParticleStream_7		
+	425302535	STA_Indoors_Spawn	STA_Location	\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_HoverCars\AMB_HoverCars_ParticleStream_7		
+	1014732078	STA_Indoors_Room	STA_Location	\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_HoverCars\AMB_HoverCars_ParticleStream_7		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	866022863	PAR_Doppler			\Default Work Unit\PAR_Doppler	
