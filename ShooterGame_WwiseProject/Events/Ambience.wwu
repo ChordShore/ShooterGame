@@ -245,11 +245,304 @@
 					<ChildrenList>
 						<Folder Name="Highrise" ID="{CA2E8AD5-B02D-4F95-89E5-856A6D8770D8}" ShortID="571113325">
 							<ChildrenList>
-								<Folder Name="Dynamic" ID="{5119A02C-4887-4C9F-A0E1-68B792237951}" ShortID="155134157">
+								<Folder Name="RoomGusts" ID="{197AB3FA-E979-4674-B1B1-180389371AC2}" ShortID="534869423">
 									<ChildrenList>
-										<Event Name="AMB_BarrierFence" ID="{427593F0-92C8-4CA8-8FCD-C163A0B02BEC}">
+										<Event Name="AMB_RoomGusts_MainEntrance_Interior" ID="{24CD36E0-49F3-4EC4-B5D6-65913D32EC35}">
 											<ChildrenList>
-												<Action Name="" ID="{EFFC5F03-48D8-46AB-B0B0-DEC533855A7D}" ShortID="374733739">
+												<Action Name="" ID="{D6F2780D-DF94-4782-ABE6-D0888BEE116F}" ShortID="939404297">
+													<PropertyList>
+														<Property Name="Delay" Type="Real64" Value="1.5"/>
+														<Property Name="FadeTime" Type="Real64" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_RoomGusts_LP" ID="{E1F9EAEB-812F-4CFD-B6A6-FE3C505A753E}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="AMB_RoomGusts_MainEntrance_Exterior" ID="{4E360744-3F77-422A-A2B5-787222393838}">
+											<ChildrenList>
+												<Action Name="" ID="{F42F0D31-30A1-4A47-A3F8-938A6209F862}" ShortID="711019759">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_WindGusts_LP" ID="{F0F8BEDB-0414-4E88-BF02-5E4AC4D87F98}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="AMB_RoomGusts_SmallEntrance_Exterior" ID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}">
+											<ChildrenList>
+												<Action Name="" ID="{F266F6D2-2433-4515-9C93-A6E71525A942}" ShortID="409985400">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_WindGusts_LP" ID="{17C43801-8EC6-4057-BC4E-0539978E180B}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="AMB_RoomGusts_SmallEntrance_Interior" ID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}">
+											<ChildrenList>
+												<Action Name="" ID="{DD0DD029-EEC4-49C1-A7E0-BF3EEC0BCC7A}" ShortID="543937671">
+													<PropertyList>
+														<Property Name="Delay" Type="Real64" Value="1.5"/>
+														<Property Name="FadeTime" Type="Real64" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_Emitter_RoomGusts_LP" ID="{67350D9C-CA38-40F3-9276-3F8A75B14E60}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="EnergyPillar" ID="{8CE60758-ECF2-4E6F-B064-3F865D80ADA2}" ShortID="974259189">
+									<ChildrenList>
+										<Event Name="AMB_EnergyPillar_C" ID="{59B52E0A-A590-4C41-B895-B6222DEA8792}">
+											<ChildrenList>
+												<Action Name="" ID="{2D046843-4D86-4314-AED1-48C8D4A91CDD}" ShortID="40391474">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_EnergyPillar_Sum_C" ID="{3A3D8AE7-7A42-4352-AB02-DA0B25E7B37C}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{DD947746-039E-41A9-BAC9-2E5487108CF4}" ShortID="308115780">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_HoverCars_Passbys_Spline_C_LP" ID="{3C898A1A-8E7C-4012-9F17-54B4B59F28CE}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="AMB_EnergyPillar_R" ID="{1139BF59-E796-44F8-A41A-58F596E277FE}">
+											<ChildrenList>
+												<Action Name="" ID="{57A6CF41-1D01-49AF-A203-83F165A075EA}" ShortID="334125578">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_EnergyPillar_Sum_R" ID="{3C1EDC52-0CAA-4F1C-A2BF-CCD863E4A407}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="WindGusts" ID="{953AE9D4-5D23-4FD4-B673-B266A7C9F0A3}" ShortID="292112688">
+									<ChildrenList>
+										<Event Name="AMB_WindGusts_Static_Play" ID="{838EFBCF-7300-40E4-B598-D1699C261CB8}">
+											<ChildrenList>
+												<Action Name="" ID="{F80CABD6-8791-4663-841D-5EF3EF362A40}" ShortID="673931917">
+													<PropertyList>
+														<Property Name="FadeTime" Type="Real64" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_WindGusts_OS" ID="{2AB2126E-C5F5-4842-A8CD-1BA94AB56C09}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="AMB_WindGusts_Spline" ID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}">
+											<ChildrenList>
+												<Action Name="" ID="{1710766F-F2A4-45E0-B2BA-61DA4E454B78}" ShortID="810291939">
+													<PropertyList>
+														<Property Name="Delay" Type="Real64" Value="1.5"/>
+														<Property Name="FadeTime" Type="Real64" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_WindGusts_Spline_LP" ID="{C95996A4-33BF-4957-A310-E96D0EC57040}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="AMB_WindGusts_Static_Stop" ID="{672C5AA3-D760-4145-8932-779B95AF8317}">
+											<ChildrenList>
+												<Action Name="" ID="{A4F6BE5F-C83C-4B6A-9708-A9585DC2DF7D}" ShortID="338577374">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="3"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_WindGusts_OS" ID="{2AB2126E-C5F5-4842-A8CD-1BA94AB56C09}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="HoverCars" ID="{E60B9BE2-648B-4B98-9CA0-BE8F7C3B8A73}" ShortID="828572442">
+									<ChildrenList>
+										<Event Name="AMB_HoverCars_Spline_L" ID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}">
+											<ChildrenList>
+												<Action Name="" ID="{F00BECB9-8ECF-40E3-8B79-F9464119E128}" ShortID="598574139">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_HoverCars_Passbys_Spline_L_LP" ID="{15F96768-329A-430F-A93F-478CD396FBFA}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="AMB_HoverCars_Spline_R" ID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}">
+											<ChildrenList>
+												<Action Name="" ID="{3F6FAE9F-9387-455E-9F6A-84A0D2B49E11}" ShortID="386980522">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_HoverCars_Passbys_Spline_R_LP" ID="{B5E04E09-22D7-4994-A055-B1DC0B0C772A}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="AMB_HoverCars_ParticleStream_7" ID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}">
+											<ChildrenList>
+												<Action Name="" ID="{CE7DDC78-5316-43E4-942F-4243E993D427}" ShortID="996982408">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_HoverCars_Engines_LP_PS7" ID="{45106B71-DBAF-45BD-A8B9-F4AA708A1911}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="AMB_HoverCars_ParticleStream_5" ID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}">
+											<ChildrenList>
+												<Action Name="" ID="{96F2E233-C5FE-4907-AD96-BEC4EE68393A}" ShortID="276986791">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_HoverCars_Engines_LP_PS5" ID="{F438BD44-41C8-4FBA-A37C-313FECA4D81D}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="UnrealHolograph" ID="{21B29F72-3A40-4B43-AA3C-6F6355C68ED3}" ShortID="867970519">
+									<ChildrenList>
+										<Event Name="AMB_UnrealHolograph_FadeIn" ID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}">
+											<ChildrenList>
+												<Action Name="" ID="{0AB234EB-19D8-41DC-BC51-853675710AD3}" ShortID="381251411">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_UnrealHolograph_FadeIn_OS" ID="{3859B0B2-BF31-46F7-8318-8E5DA5DFA478}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{B0D1B1AC-17FD-4990-B1E5-1C1FE43771C0}" ShortID="525092379">
+													<PropertyList>
+														<Property Name="Delay" Type="Real64" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_UnrealHolograph_Swirl_OS" ID="{C97D2120-C45C-41F7-BCE2-F68F151F3194}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{6CF90DFD-9930-4565-A0F7-256AD833E3FB}" ShortID="501089948">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="5"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_UnrealHolograph_FadeOut_OS" ID="{B29F0006-9607-4E80-BD8C-9D735304C22D}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="AMB_UnrealHolograph" ID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}">
+											<ChildrenList>
+												<Action Name="" ID="{BD8DFDA4-7D52-441E-AAD5-2EB8FF9B0921}" ShortID="2501739">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_UnrealHolograph_Main_LP" ID="{B4D1D511-83CE-42EA-B8FF-0B22ED42B990}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="AMB_UnrealHolograph_FadeOut" ID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}">
+											<ChildrenList>
+												<Action Name="" ID="{786C4880-6E5E-4015-9B78-ADBA76F2AED8}" ShortID="120890481">
+													<PropertyList>
+														<Property Name="FadeTime" Type="Real64" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_UnrealHolograph_FadeOut_OS" ID="{B29F0006-9607-4E80-BD8C-9D735304C22D}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{B6EAB722-14A8-439D-85E3-8289390A315E}" ShortID="800074601">
+													<PropertyList>
+														<Property Name="Delay" Type="Real64" Value="0.5"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_UnrealHolograph_Swirl_OS" ID="{C97D2120-C45C-41F7-BCE2-F68F151F3194}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{8E442CB0-9419-4A4F-91AF-AA6CAFEBF6B3}" ShortID="572470072">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+														<Property Name="FadeTime" Type="Real64" Value="7"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_UnrealHolograph_FadeIn_OS" ID="{3859B0B2-BF31-46F7-8318-8E5DA5DFA478}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="PhoneBox" ID="{9E4DD807-50CB-482D-9C20-BADF00DC3793}" ShortID="473441785">
+									<ChildrenList>
+										<Event Name="AMB_PhoneBox" ID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}">
+											<ChildrenList>
+												<Action Name="" ID="{5AC65C0A-0689-43FA-B1F8-63C17C80462C}" ShortID="659594679">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_PhoneBox_DialTone_LP" ID="{547F9306-FBCE-4EE7-88C6-557493CA9F98}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="AMB_PhoneBox_ErrorRecording" ID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}">
+											<ChildrenList>
+												<Action Name="" ID="{F22D20FC-F31E-4DA8-97DB-8CD8F8BEE5F6}" ShortID="927230627">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_ErrorRecording_Seq" ID="{95AC5E42-6E73-4571-AA1C-00D6CF2FDF73}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="BarrierFence" ID="{C445D210-EE3E-41C2-8837-291BAEF98646}" ShortID="190083146">
+									<ChildrenList>
+										<Event Name="AMB_BarrierFence" ID="{3C0DA367-FE08-40AC-B96C-0BCFE38BE080}">
+											<ChildrenList>
+												<Action Name="" ID="{3B32AEFB-1B3C-4B20-9FB9-27CF852E4E67}" ShortID="593243471">
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="AMB_BarrierFence_LP" ID="{21B05601-534E-4D7E-BA20-A9C79FE23DBC}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
@@ -258,194 +551,24 @@
 												</Action>
 											</ChildrenList>
 										</Event>
-										<Folder Name="RoomGusts" ID="{197AB3FA-E979-4674-B1B1-180389371AC2}" ShortID="534869423">
-											<ChildrenList>
-												<Event Name="AMB_RoomGusts_MainEntrance_Interior" ID="{24CD36E0-49F3-4EC4-B5D6-65913D32EC35}">
-													<ChildrenList>
-														<Action Name="" ID="{D6F2780D-DF94-4782-ABE6-D0888BEE116F}" ShortID="939404297">
-															<PropertyList>
-																<Property Name="Delay" Type="Real64" Value="1.5"/>
-																<Property Name="FadeTime" Type="Real64" Value="1"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_RoomGusts_LP" ID="{E1F9EAEB-812F-4CFD-B6A6-FE3C505A753E}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-												<Event Name="AMB_RoomGusts_MainEntrance_Exterior" ID="{4E360744-3F77-422A-A2B5-787222393838}">
-													<ChildrenList>
-														<Action Name="" ID="{F42F0D31-30A1-4A47-A3F8-938A6209F862}" ShortID="711019759">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_WindGusts_LP" ID="{F0F8BEDB-0414-4E88-BF02-5E4AC4D87F98}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-												<Event Name="AMB_RoomGusts_SmallEntrance_Exterior" ID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}">
-													<ChildrenList>
-														<Action Name="" ID="{F266F6D2-2433-4515-9C93-A6E71525A942}" ShortID="409985400">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_WindGusts_LP" ID="{17C43801-8EC6-4057-BC4E-0539978E180B}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-												<Event Name="AMB_RoomGusts_SmallEntrance_Interior" ID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}">
-													<ChildrenList>
-														<Action Name="" ID="{DD0DD029-EEC4-49C1-A7E0-BF3EEC0BCC7A}" ShortID="543937671">
-															<PropertyList>
-																<Property Name="Delay" Type="Real64" Value="1.5"/>
-																<Property Name="FadeTime" Type="Real64" Value="1"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_Emitter_RoomGusts_LP" ID="{67350D9C-CA38-40F3-9276-3F8A75B14E60}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="WindGusts" ID="{953AE9D4-5D23-4FD4-B673-B266A7C9F0A3}" ShortID="292112688">
-											<ChildrenList>
-												<Event Name="AMB_WindGusts_Static_Play" ID="{838EFBCF-7300-40E4-B598-D1699C261CB8}">
-													<ChildrenList>
-														<Action Name="" ID="{F80CABD6-8791-4663-841D-5EF3EF362A40}" ShortID="673931917">
-															<PropertyList>
-																<Property Name="FadeTime" Type="Real64" Value="2"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_WindGusts_OS" ID="{2AB2126E-C5F5-4842-A8CD-1BA94AB56C09}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-												<Event Name="AMB_WindGusts_Spline" ID="{B1473C73-10B0-46BB-AA72-8ABA06D25E40}">
-													<ChildrenList>
-														<Action Name="" ID="{1710766F-F2A4-45E0-B2BA-61DA4E454B78}" ShortID="810291939">
-															<PropertyList>
-																<Property Name="Delay" Type="Real64" Value="1.5"/>
-																<Property Name="FadeTime" Type="Real64" Value="1"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_WindGusts_Spline_LP" ID="{C95996A4-33BF-4957-A310-E96D0EC57040}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-												<Event Name="AMB_WindGusts_Static_Stop" ID="{672C5AA3-D760-4145-8932-779B95AF8317}">
-													<ChildrenList>
-														<Action Name="" ID="{A4F6BE5F-C83C-4B6A-9708-A9585DC2DF7D}" ShortID="338577374">
-															<PropertyList>
-																<Property Name="ActionType" Type="int16" Value="2"/>
-																<Property Name="FadeTime" Type="Real64" Value="3"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_WindGusts_OS" ID="{2AB2126E-C5F5-4842-A8CD-1BA94AB56C09}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="EnergyPillar" ID="{8CE60758-ECF2-4E6F-B064-3F865D80ADA2}" ShortID="974259189">
-											<ChildrenList>
-												<Event Name="AMB_EnergyPillar_C" ID="{59B52E0A-A590-4C41-B895-B6222DEA8792}">
-													<ChildrenList>
-														<Action Name="" ID="{2D046843-4D86-4314-AED1-48C8D4A91CDD}" ShortID="40391474">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_EnergyPillar_Sum_C" ID="{3A3D8AE7-7A42-4352-AB02-DA0B25E7B37C}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-														<Action Name="" ID="{DD947746-039E-41A9-BAC9-2E5487108CF4}" ShortID="308115780">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_HoverCars_Passbys_Spline_C_LP" ID="{3C898A1A-8E7C-4012-9F17-54B4B59F28CE}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-												<Event Name="AMB_EnergyPillar_R" ID="{1139BF59-E796-44F8-A41A-58F596E277FE}">
-													<ChildrenList>
-														<Action Name="" ID="{57A6CF41-1D01-49AF-A203-83F165A075EA}" ShortID="334125578">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_EnergyPillar_Sum_R" ID="{3C1EDC52-0CAA-4F1C-A2BF-CCD863E4A407}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="HoverCars" ID="{E60B9BE2-648B-4B98-9CA0-BE8F7C3B8A73}" ShortID="828572442">
-											<ChildrenList>
-												<Event Name="AMB_HoverCars_Spline_L" ID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}">
-													<ChildrenList>
-														<Action Name="" ID="{F00BECB9-8ECF-40E3-8B79-F9464119E128}" ShortID="598574139">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_HoverCars_Passbys_Spline_L_LP" ID="{15F96768-329A-430F-A93F-478CD396FBFA}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-												<Event Name="AMB_HoverCars_Spline_R" ID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}">
-													<ChildrenList>
-														<Action Name="" ID="{3F6FAE9F-9387-455E-9F6A-84A0D2B49E11}" ShortID="386980522">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_HoverCars_Passbys_Spline_R_LP" ID="{B5E04E09-22D7-4994-A055-B1DC0B0C772A}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-												<Event Name="AMB_HoverCars_ParticleStream_7" ID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}">
-													<ChildrenList>
-														<Action Name="" ID="{CE7DDC78-5316-43E4-942F-4243E993D427}" ShortID="996982408">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_HoverCars_Engines_LP_PS7" ID="{45106B71-DBAF-45BD-A8B9-F4AA708A1911}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-												<Event Name="AMB_HoverCars_ParticleStream_5" ID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}">
-													<ChildrenList>
-														<Action Name="" ID="{96F2E233-C5FE-4907-AD96-BEC4EE68393A}" ShortID="276986791">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_HoverCars_Engines_LP_PS5" ID="{F438BD44-41C8-4FBA-A37C-313FECA4D81D}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-											</ChildrenList>
-										</Folder>
 									</ChildrenList>
 								</Folder>
-								<Folder Name="Static" ID="{4C479134-8E12-4BAB-A017-FC5CA692CB18}" ShortID="203033786">
+								<Folder Name="SciFiDrones" ID="{98BFC60B-5C26-4E5C-9A48-4EC2FD99FE8B}" ShortID="1015159688">
+									<ChildrenList>
+										<Event Name="AMB_ScifiDrones" ID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}">
+											<ChildrenList>
+												<Action Name="" ID="{B2A58ED0-3D2C-4CE9-A4E3-08D7A698C1D4}" ShortID="456576216">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_ScifiDrones_OS" ID="{30DA05DC-6E2C-4C1A-96BA-5072975B553A}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="StreetLamps" ID="{D952FC2E-8A5B-47F2-96C1-061BF5008C64}" ShortID="639709161">
 									<ChildrenList>
 										<Event Name="AMB_StreetLamp" ID="{82B95D5C-4BE9-4DFC-9A31-59E8AEF7E2FC}">
 											<ChildrenList>
@@ -465,131 +588,16 @@
 												</Action>
 											</ChildrenList>
 										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="UnrealSigns" ID="{3A23D510-6EBD-4394-B9F9-F7BA4A912C59}" ShortID="465326651">
+									<ChildrenList>
 										<Event Name="AMB_UnrealSign" ID="{42FDDAEB-F4A4-4C1D-95E4-8BC7357B93FB}">
 											<ChildrenList>
 												<Action Name="" ID="{AE289769-5F3C-45E6-8431-4F5D20C7D90C}" ShortID="798681416">
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="AMB_UnrealSign_LP" ID="{590D5A02-2C18-4FE7-9702-6D4F182282B8}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Folder Name="UnrealHolograph" ID="{21B29F72-3A40-4B43-AA3C-6F6355C68ED3}" ShortID="867970519">
-											<ChildrenList>
-												<Event Name="AMB_UnrealHolograph_FadeIn" ID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}">
-													<ChildrenList>
-														<Action Name="" ID="{0AB234EB-19D8-41DC-BC51-853675710AD3}" ShortID="381251411">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_UnrealHolograph_FadeIn_OS" ID="{3859B0B2-BF31-46F7-8318-8E5DA5DFA478}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-														<Action Name="" ID="{B0D1B1AC-17FD-4990-B1E5-1C1FE43771C0}" ShortID="525092379">
-															<PropertyList>
-																<Property Name="Delay" Type="Real64" Value="1"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_UnrealHolograph_Swirl_OS" ID="{C97D2120-C45C-41F7-BCE2-F68F151F3194}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-														<Action Name="" ID="{6CF90DFD-9930-4565-A0F7-256AD833E3FB}" ShortID="501089948">
-															<PropertyList>
-																<Property Name="ActionType" Type="int16" Value="2"/>
-																<Property Name="FadeTime" Type="Real64" Value="5"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_UnrealHolograph_FadeOut_OS" ID="{B29F0006-9607-4E80-BD8C-9D735304C22D}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-												<Event Name="AMB_UnrealHolograph" ID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}">
-													<ChildrenList>
-														<Action Name="" ID="{BD8DFDA4-7D52-441E-AAD5-2EB8FF9B0921}" ShortID="2501739">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_UnrealHolograph_Main_LP" ID="{B4D1D511-83CE-42EA-B8FF-0B22ED42B990}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-												<Event Name="AMB_UnrealHolograph_FadeOut" ID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}">
-													<ChildrenList>
-														<Action Name="" ID="{786C4880-6E5E-4015-9B78-ADBA76F2AED8}" ShortID="120890481">
-															<PropertyList>
-																<Property Name="FadeTime" Type="Real64" Value="1"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_UnrealHolograph_FadeOut_OS" ID="{B29F0006-9607-4E80-BD8C-9D735304C22D}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-														<Action Name="" ID="{B6EAB722-14A8-439D-85E3-8289390A315E}" ShortID="800074601">
-															<PropertyList>
-																<Property Name="Delay" Type="Real64" Value="0.5"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_UnrealHolograph_Swirl_OS" ID="{C97D2120-C45C-41F7-BCE2-F68F151F3194}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-														<Action Name="" ID="{8E442CB0-9419-4A4F-91AF-AA6CAFEBF6B3}" ShortID="572470072">
-															<PropertyList>
-																<Property Name="ActionType" Type="int16" Value="2"/>
-																<Property Name="FadeTime" Type="Real64" Value="7"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_UnrealHolograph_FadeIn_OS" ID="{3859B0B2-BF31-46F7-8318-8E5DA5DFA478}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="PhoneBox" ID="{9E4DD807-50CB-482D-9C20-BADF00DC3793}" ShortID="473441785">
-											<ChildrenList>
-												<Event Name="AMB_PhoneBox" ID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}">
-													<ChildrenList>
-														<Action Name="" ID="{5AC65C0A-0689-43FA-B1F8-63C17C80462C}" ShortID="659594679">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_PhoneBox_DialTone_LP" ID="{547F9306-FBCE-4EE7-88C6-557493CA9F98}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-												<Event Name="AMB_PhoneBox_ErrorRecording" ID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}">
-													<ChildrenList>
-														<Action Name="" ID="{F22D20FC-F31E-4DA8-97DB-8CD8F8BEE5F6}" ShortID="927230627">
-															<ReferenceList>
-																<Reference Name="Target">
-																	<ObjectRef Name="AMB_ErrorRecording_Seq" ID="{95AC5E42-6E73-4571-AA1C-00D6CF2FDF73}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-																</Reference>
-															</ReferenceList>
-														</Action>
-													</ChildrenList>
-												</Event>
-											</ChildrenList>
-										</Folder>
-										<Event Name="AMB_ScifiDrones" ID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}">
-											<ChildrenList>
-												<Action Name="" ID="{B2A58ED0-3D2C-4CE9-A4E3-08D7A698C1D4}" ShortID="456576216">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_ScifiDrones_OS" ID="{30DA05DC-6E2C-4C1A-96BA-5072975B553A}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>

@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "2992962930",
+    "Type": "Event",
+    "GUID": "{3C0DA367-FE08-40AC-B96C-0BCFE38BE080}",
+    "Language": "SFX",
+    "Hash": "{00556041-0103-C0BB-90AB-2909260D4434}",
+    "ObjectPath": "AMB_BarrierFence",
+    "ShortName": "AMB_BarrierFence",
+    "Path": "Event/AMB_BarrierFence.bnk",
+    "Media": [
+     {
+      "Id": "1041432378",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_BarrierFence_LP.wav",
+      "Path": "Media/1041432378.wem",
+      "CachePath": "SFX/AMB_BarrierFence_LP_3860FEB7.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2992962930",
+      "Name": "AMB_BarrierFence",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\BarrierFence\\AMB_BarrierFence",
+      "GUID": "{3C0DA367-FE08-40AC-B96C-0BCFE38BE080}",
+      "MaxAttenuation": "2000",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "1041432378"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{043DE319-428E-8CF6-0298-843C84FCF474}"
+ }
+}
