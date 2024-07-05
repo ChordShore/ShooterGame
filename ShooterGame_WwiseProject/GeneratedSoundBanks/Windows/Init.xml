@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{C69B132E-ADA5-040C-7CB5-69A3E9149966}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{C3861F44-1D57-01C4-9466-941ED605C71C}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -88,6 +88,7 @@
 						<State Id="301467384" Name="STA_Indoors_Spawn" ObjectPath="\States\Default Work Unit\STA_Location\STA_Indoors_Spawn" GUID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\STA_Location\None" GUID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
 						<State Id="877225536" Name="STA_Outdoors_Atrium" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors_Atrium" GUID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+						<State Id="949156522" Name="STA_Outdoors_Balcony_Center" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors_Balcony_Center" GUID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
 						<State Id="1657765358" Name="STA_Indoors_Room" ObjectPath="\States\Default Work Unit\STA_Location\STA_Indoors_Room" GUID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 					</States>
 				</StateGroup>
@@ -230,5 +231,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{152E5604-51FC-C509-3741-64F776F7BA3D}</FileHash>
+	<FileHash>{84723D39-6888-BAE5-DAED-D987D725CBF0}</FileHash>
 </SoundBanksInfo>

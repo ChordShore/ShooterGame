@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "2333830951",
+    "Type": "Event",
+    "GUID": "{1139BF59-E796-44F8-A41A-58F596E277FE}",
+    "Language": "SFX",
+    "Hash": "{B4798DEE-130E-CA51-D07A-582A63FD690F}",
+    "ObjectPath": "AMB_EnergyPillar_L",
+    "ShortName": "AMB_EnergyPillar_L",
+    "Path": "Event/AMB_EnergyPillar_L.bnk",
+    "Media": [
+     {
+      "Id": "1027930209",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Emitters_EnergyPillar_Sum.wav",
+      "Path": "Media/1027930209.wem",
+      "CachePath": "SFX/Emitters_EnergyPillar_Sum_58CA2812.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2333830951",
+      "Name": "AMB_EnergyPillar_L",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\EnergyPillar\\AMB_EnergyPillar_L",
+      "GUID": "{1139BF59-E796-44F8-A41A-58F596E277FE}",
+      "MaxAttenuation": "2200",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "1027930209"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{FE73A97F-F6B1-F1DD-2EBE-56BBAC907F38}"
+ }
+}

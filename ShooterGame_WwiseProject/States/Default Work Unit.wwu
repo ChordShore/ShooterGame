@@ -4,42 +4,52 @@
 		<WorkUnit Name="Default Work Unit" ID="{5DA9743F-24CB-48C8-8072-C39EB4F5CC2B}" PersistMode="Standalone">
 			<ChildrenList>
 				<StateGroup Name="STA_Location" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="2"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
 						<State Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 						<State Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
 						<State Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+						<State Name="STA_Outdoors_Balcony_Center" ID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
 					</ChildrenList>
 					<TransitionList>
 						<Transition>
 							<StartState Name="None" ID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
 							<EndState Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 							<Time>1</Time>
-							<IsShared>true</IsShared>
+							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
 							<StartState Name="None" ID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
 							<EndState Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
 							<Time>1</Time>
-							<IsShared>true</IsShared>
+							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
 							<StartState Name="None" ID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
 							<EndState Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 							<Time>1</Time>
-							<IsShared>true</IsShared>
-						</Transition>
-						<Transition>
-							<StartState Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
-							<EndState Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
-							<Time>2</Time>
-							<IsShared>true</IsShared>
+							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
 							<StartState Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 							<EndState Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 							<Time>2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+							<EndState Name="STA_Outdoors_Balcony_Center" ID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
+							<Time>1</Time>
 							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+							<EndState Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
 						</Transition>
 					</TransitionList>
 				</StateGroup>

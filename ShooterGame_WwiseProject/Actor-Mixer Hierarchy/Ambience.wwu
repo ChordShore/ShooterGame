@@ -216,7 +216,11 @@
 										<CustomStateList>
 											<CustomState>
 												<StateRef Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
-												<CustomState Name="" ID="{6A8BB81C-804B-4872-B395-E401ECC6A7F5}" ShortID="994824208"/>
+												<CustomState Name="" ID="{6A8BB81C-804B-4872-B395-E401ECC6A7F5}" ShortID="994824208">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="20"/>
+													</PropertyList>
+												</CustomState>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
@@ -224,7 +228,15 @@
 											</CustomState>
 											<CustomState>
 												<StateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
-												<CustomState Name="" ID="{02BB6750-4C08-4132-9AAC-37C222A7A55D}" ShortID="970695117"/>
+												<CustomState Name="" ID="{02BB6750-4C08-4132-9AAC-37C222A7A55D}" ShortID="970695117">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="20"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="STA_Outdoors_Balcony_Center" ID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
+												<CustomState Name="" ID="{BEC081DB-22CF-45E9-991A-2AFC77A87C9C}" ShortID="445458544"/>
 											</CustomState>
 										</CustomStateList>
 									</StateInfo>
@@ -255,7 +267,7 @@
 												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-25</Value>
+														<Value>-20</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -493,7 +505,7 @@
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-22</Value>
+														<Value>-20</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -546,7 +558,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<ActorMixer Name="AMB_EnergyPillar_R" ID="{95F8297B-9089-4EF2-B457-08196102E7F5}" ShortID="758592762">
+										<ActorMixer Name="AMB_EnergyPillar_L" ID="{95F8297B-9089-4EF2-B457-08196102E7F5}" ShortID="758592762">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
@@ -570,7 +582,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="AMB_EnergyPillar_Sum_R" ID="{3C1EDC52-0CAA-4F1C-A2BF-CCD863E4A407}" ShortID="705204719">
+												<Sound Name="AMB_EnergyPillar_Sum_L" ID="{3C1EDC52-0CAA-4F1C-A2BF-CCD863E4A407}" ShortID="705204719">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
@@ -753,7 +765,7 @@
 												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-27</Value>
+														<Value>-23</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -839,7 +851,7 @@
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-29</Value>
+														<Value>-21</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1473,6 +1485,16 @@
 															<PropertyList>
 																<Property Name="Lowpass" Type="int16" Value="50"/>
 																<Property Name="Volume" Type="Real64" Value="-3"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="STA_Outdoors_Balcony_Center" ID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
+														<CustomState Name="" ID="{0B5CFE02-C389-4036-823D-D52403325FE6}" ShortID="563656413">
+															<PropertyList>
+																<Property Name="Highpass" Type="int16" Value="20"/>
+																<Property Name="Lowpass" Type="int16" Value="20"/>
+																<Property Name="Volume" Type="Real64" Value="-5"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -2111,6 +2133,10 @@
 																<Property Name="Volume" Type="Real64" Value="-3"/>
 															</PropertyList>
 														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="STA_Outdoors_Balcony_Center" ID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
+														<CustomState Name="" ID="{0EAB4E26-3E00-41A9-A601-6F4223400252}" ShortID="740409908"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -3572,11 +3598,6 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-4</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -3613,7 +3634,7 @@
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-18</Value>
+														<Value>-22</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -3671,7 +3692,7 @@
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-16</Value>
+														<Value>-20</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -3752,7 +3773,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-18</Value>
+														<Value>-22</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>

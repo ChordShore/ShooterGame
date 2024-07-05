@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{363CDCCE-06C1-20E9-6532-C3B48F40F852}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{7E81E85A-1872-FF24-4F16-59F294096BC4}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -104,7 +104,7 @@
 						<MediaRef Id="229272092"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1196422761" Name="AMB_PhoneBox" ObjectPath="\Events\Ambience\Emitters\Highrise\PhoneBox\AMB_PhoneBox" GUID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" MaxAttenuation="2200" DurationType="Infinite">
+				<Event Id="1196422761" Name="AMB_PhoneBox" ObjectPath="\Events\Ambience\Emitters\Highrise\PhoneBox\AMB_PhoneBox" GUID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" MaxAttenuation="1800" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="537312981"/>
 					</MediaRefs>
@@ -171,5 +171,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9F657916-D67F-4C4A-287B-E283654CD513}</FileHash>
+	<FileHash>{52EDC9A4-5BD3-2D1B-DE57-56D35233814E}</FileHash>
 </SoundBanksInfo>

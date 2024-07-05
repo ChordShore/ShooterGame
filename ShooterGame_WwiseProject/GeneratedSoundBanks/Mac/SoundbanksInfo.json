@@ -114,7 +114,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{363CDCCE-06C1-20E9-6532-C3B48F40F852}",
+    "Hash": "{7E81E85A-1872-FF24-4F16-59F294096BC4}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -329,7 +329,7 @@
       "Name": "AMB_PhoneBox",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\PhoneBox\\AMB_PhoneBox",
       "GUID": "{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}",
-      "MaxAttenuation": "2200",
+      "MaxAttenuation": "1800",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -610,7 +610,7 @@
     "Type": "Event",
     "GUID": "{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}",
     "Language": "SFX",
-    "Hash": "{80A37D57-512A-9909-8379-1AABC64D8095}",
+    "Hash": "{B35BB659-5896-A45F-33A5-93203D80B7C8}",
     "ObjectPath": "AMB_ScifiDrones",
     "ShortName": "AMB_ScifiDrones",
     "Path": "Event/AMB_ScifiDrones.bnk",
@@ -961,6 +961,12 @@
         "GUID": "{E9597652-781B-4852-95B1-CADA7D874365}"
        },
        {
+        "Id": "949156522",
+        "Name": "STA_Outdoors_Balcony_Center",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Balcony_Center",
+        "GUID": "{72B927E3-2951-4E7F-B493-1DD0425F5518}"
+       },
+       {
         "Id": "1657765358",
         "Name": "STA_Indoors_Room",
         "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors_Room",
@@ -1151,7 +1157,7 @@
     "Type": "Event",
     "GUID": "{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}",
     "Language": "SFX",
-    "Hash": "{0E33F814-6480-46F0-BED4-AF8769E4BF04}",
+    "Hash": "{A2402A83-014E-4233-F2FD-2680C368E614}",
     "ObjectPath": "AMB_PhoneBox_ErrorRecording",
     "ShortName": "AMB_PhoneBox_ErrorRecording",
     "Path": "Event/AMB_PhoneBox_ErrorRecording.bnk",
@@ -1181,7 +1187,7 @@
       "Name": "AMB_PhoneBox_ErrorRecording",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\PhoneBox\\AMB_PhoneBox_ErrorRecording",
       "GUID": "{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}",
-      "MaxAttenuation": "2200",
+      "MaxAttenuation": "1800",
       "DurationType": "OneShot",
       "DurationMin": "10.017575",
       "DurationMax": "10.017575",
@@ -1201,7 +1207,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{8D6C1D2B-E936-3686-0488-0A1E51EA3B59}",
+    "Hash": "{541CED97-7DED-F0BD-8584-A35E5535CD15}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -1500,6 +1506,12 @@
         "Name": "STA_Outdoors_Atrium",
         "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Atrium",
         "GUID": "{E9597652-781B-4852-95B1-CADA7D874365}"
+       },
+       {
+        "Id": "949156522",
+        "Name": "STA_Outdoors_Balcony_Center",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Balcony_Center",
+        "GUID": "{72B927E3-2951-4E7F-B493-1DD0425F5518}"
        },
        {
         "Id": "1657765358",
@@ -2372,6 +2384,42 @@
     ]
    },
    {
+    "Id": "2333830951",
+    "Type": "Event",
+    "GUID": "{1139BF59-E796-44F8-A41A-58F596E277FE}",
+    "Language": "SFX",
+    "Hash": "{B4798DEE-130E-CA51-D07A-582A63FD690F}",
+    "ObjectPath": "AMB_EnergyPillar_L",
+    "ShortName": "AMB_EnergyPillar_L",
+    "Path": "Event/AMB_EnergyPillar_L.bnk",
+    "Media": [
+     {
+      "Id": "1027930209",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Emitters_EnergyPillar_Sum.wav",
+      "Path": "Media/1027930209.wem",
+      "CachePath": "SFX/Emitters_EnergyPillar_Sum_58CA2812.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2333830951",
+      "Name": "AMB_EnergyPillar_L",
+      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\EnergyPillar\\AMB_EnergyPillar_L",
+      "GUID": "{1139BF59-E796-44F8-A41A-58F596E277FE}",
+      "MaxAttenuation": "2200",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "1027930209"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "2333830952",
     "Type": "Event",
     "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
@@ -2435,42 +2483,6 @@
         }
        ]
       }
-     }
-    ]
-   },
-   {
-    "Id": "2333830969",
-    "Type": "Event",
-    "GUID": "{1139BF59-E796-44F8-A41A-58F596E277FE}",
-    "Language": "SFX",
-    "Hash": "{BBD4B9D9-D4D4-0D7E-28E2-3CC13A2A2D22}",
-    "ObjectPath": "AMB_EnergyPillar_R",
-    "ShortName": "AMB_EnergyPillar_R",
-    "Path": "Event/AMB_EnergyPillar_R.bnk",
-    "Media": [
-     {
-      "Id": "1027930209",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "Emitters_EnergyPillar_Sum.wav",
-      "Path": "Media/1027930209.wem",
-      "CachePath": "SFX/Emitters_EnergyPillar_Sum_58CA2812.wem"
-     }
-    ],
-    "Events": [
-     {
-      "Id": "2333830969",
-      "Name": "AMB_EnergyPillar_R",
-      "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\EnergyPillar\\AMB_EnergyPillar_R",
-      "GUID": "{1139BF59-E796-44F8-A41A-58F596E277FE}",
-      "MaxAttenuation": "2200",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "1027930209"
-       }
-      ]
      }
     ]
    },
@@ -2600,7 +2612,7 @@
     "Type": "Event",
     "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
     "Language": "SFX",
-    "Hash": "{DC1FFA35-9266-EECC-5022-0BFCA81381E5}",
+    "Hash": "{B93646F7-F700-DAF4-C18D-F3A96CF701F5}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_5",
     "ShortName": "AMB_HoverCars_ParticleStream_5",
     "Path": "Event/AMB_HoverCars_ParticleStream_5.bnk",
@@ -3048,6 +3060,6 @@
     ]
    }
   ],
-  "FileHash": "{92DCE53E-3071-2136-F02E-7A0E7FF96E25}"
+  "FileHash": "{CB586589-32F8-DEB6-A747-C98379465C81}"
  }
 }

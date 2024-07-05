@@ -57,7 +57,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{363CDCCE-06C1-20E9-6532-C3B48F40F852}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{7E81E85A-1872-FF24-4F16-59F294096BC4}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -160,7 +160,7 @@
 						<MediaRef Id="229272092"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1196422761" Name="AMB_PhoneBox" ObjectPath="\Events\Ambience\Emitters\Highrise\PhoneBox\AMB_PhoneBox" GUID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" MaxAttenuation="2200" DurationType="Infinite">
+				<Event Id="1196422761" Name="AMB_PhoneBox" ObjectPath="\Events\Ambience\Emitters\Highrise\PhoneBox\AMB_PhoneBox" GUID="{7C45B600-E3DA-4F8D-9161-7BC3BF602FE5}" MaxAttenuation="1800" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="537312981"/>
 					</MediaRefs>
@@ -267,7 +267,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{80A37D57-512A-9909-8379-1AABC64D8095}">
+		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{B35BB659-5896-A45F-33A5-93203D80B7C8}">
 			<ObjectPath>AMB_ScifiDrones</ObjectPath>
 			<ShortName>AMB_ScifiDrones</ShortName>
 			<Path>Event/AMB_ScifiDrones.bnk</Path>
@@ -437,6 +437,7 @@
 						<State Id="301467384" Name="STA_Indoors_Spawn" ObjectPath="\States\Default Work Unit\STA_Location\STA_Indoors_Spawn" GUID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\STA_Location\None" GUID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
 						<State Id="877225536" Name="STA_Outdoors_Atrium" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors_Atrium" GUID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+						<State Id="949156522" Name="STA_Outdoors_Balcony_Center" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors_Balcony_Center" GUID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
 						<State Id="1657765358" Name="STA_Indoors_Room" ObjectPath="\States\Default Work Unit\STA_Location\STA_Indoors_Room" GUID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 					</States>
 				</StateGroup>
@@ -496,7 +497,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="1322180291" Type="Event" GUID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}" Language="SFX" Hash="{0E33F814-6480-46F0-BED4-AF8769E4BF04}">
+		<SoundBank Id="1322180291" Type="Event" GUID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}" Language="SFX" Hash="{A2402A83-014E-4233-F2FD-2680C368E614}">
 			<ObjectPath>AMB_PhoneBox_ErrorRecording</ObjectPath>
 			<ShortName>AMB_PhoneBox_ErrorRecording</ShortName>
 			<Path>Event/AMB_PhoneBox_ErrorRecording.bnk</Path>
@@ -513,7 +514,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1322180291" Name="AMB_PhoneBox_ErrorRecording" ObjectPath="\Events\Ambience\Emitters\Highrise\PhoneBox\AMB_PhoneBox_ErrorRecording" GUID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}" MaxAttenuation="2200" DurationType="OneShot" DurationMin="10.017575" DurationMax="10.017575">
+				<Event Id="1322180291" Name="AMB_PhoneBox_ErrorRecording" ObjectPath="\Events\Ambience\Emitters\Highrise\PhoneBox\AMB_PhoneBox_ErrorRecording" GUID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}" MaxAttenuation="1800" DurationType="OneShot" DurationMin="10.017575" DurationMax="10.017575">
 					<MediaRefs>
 						<MediaRef Id="539953251"/>
 						<MediaRef Id="992552206"/>
@@ -521,7 +522,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{8D6C1D2B-E936-3686-0488-0A1E51EA3B59}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{541CED97-7DED-F0BD-8584-A35E5535CD15}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -608,6 +609,7 @@
 						<State Id="301467384" Name="STA_Indoors_Spawn" ObjectPath="\States\Default Work Unit\STA_Location\STA_Indoors_Spawn" GUID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\STA_Location\None" GUID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
 						<State Id="877225536" Name="STA_Outdoors_Atrium" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors_Atrium" GUID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+						<State Id="949156522" Name="STA_Outdoors_Balcony_Center" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors_Balcony_Center" GUID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
 						<State Id="1657765358" Name="STA_Indoors_Room" ObjectPath="\States\Default Work Unit\STA_Location\STA_Indoors_Room" GUID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 					</States>
 				</StateGroup>
@@ -871,6 +873,25 @@
 				<Event Id="3787053379" Name="ITM_Health_Pickup" ObjectPath="\Events\Items\ITM_Health_Pickup" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="2333830951" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{B4798DEE-130E-CA51-D07A-582A63FD690F}">
+			<ObjectPath>AMB_EnergyPillar_L</ObjectPath>
+			<ShortName>AMB_EnergyPillar_L</ShortName>
+			<Path>Event/AMB_EnergyPillar_L.bnk</Path>
+			<Media>
+				<File Id="1027930209" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>Emitters_EnergyPillar_Sum.wav</ShortName>
+					<Path>Media/1027930209.wem</Path>
+					<CachePath>SFX/Emitters_EnergyPillar_Sum_58CA2812.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2333830951" Name="AMB_EnergyPillar_L" ObjectPath="\Events\Ambience\Emitters\Highrise\EnergyPillar\AMB_EnergyPillar_L" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" MaxAttenuation="2200" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="1027930209"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{79FE28D6-08CA-80D3-9EED-9E1BB01FCFF2}">
 			<ObjectPath>AMB_EnergyPillar_C</ObjectPath>
 			<ShortName>AMB_EnergyPillar_C</ShortName>
@@ -903,25 +924,6 @@
 							<PluginRef Id="2258521792"/>
 						</ShareSets>
 					</PluginRefs>
-				</Event>
-			</Events>
-		</SoundBank>
-		<SoundBank Id="2333830969" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{BBD4B9D9-D4D4-0D7E-28E2-3CC13A2A2D22}">
-			<ObjectPath>AMB_EnergyPillar_R</ObjectPath>
-			<ShortName>AMB_EnergyPillar_R</ShortName>
-			<Path>Event/AMB_EnergyPillar_R.bnk</Path>
-			<Media>
-				<File Id="1027930209" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>Emitters_EnergyPillar_Sum.wav</ShortName>
-					<Path>Media/1027930209.wem</Path>
-					<CachePath>SFX/Emitters_EnergyPillar_Sum_58CA2812.wem</CachePath>
-				</File>
-			</Media>
-			<Events>
-				<Event Id="2333830969" Name="AMB_EnergyPillar_R" ObjectPath="\Events\Ambience\Emitters\Highrise\EnergyPillar\AMB_EnergyPillar_R" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" MaxAttenuation="2200" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="1027930209"/>
-					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
@@ -980,7 +982,7 @@
 				<GameParameter Id="2940353649" Name="PAR_Distance_HoverCars_PS7" ObjectPath="\Game Parameters\Default Work Unit\PAR_Distance_HoverCars_PS7" GUID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{DC1FFA35-9266-EECC-5022-0BFCA81381E5}">
+		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{B93646F7-F700-DAF4-C18D-F3A96CF701F5}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_5</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_5</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_5.bnk</Path>
@@ -1190,5 +1192,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{78A6D042-DF57-1CB8-FE77-7893A8513E94}</FileHash>
+	<FileHash>{DCC4EF69-C81C-4C7D-75F5-B627DD458714}</FileHash>
 </SoundBanksInfo>
