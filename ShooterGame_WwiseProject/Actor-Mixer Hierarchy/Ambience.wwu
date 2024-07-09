@@ -227,6 +227,10 @@
 												<CustomState Name="" ID="{BBEB6A36-3CA2-4300-835A-F3A02AC8EC91}" ShortID="664518417"/>
 											</CustomState>
 											<CustomState>
+												<StateRef Name="STA_Outdoors_Atrium_Center" ID="{0200D94C-7812-4B1C-BB51-2F3425FB3FDA}"/>
+												<CustomState Name="" ID="{6C2FEE05-BFCD-4323-989F-9BAC97EB320B}" ShortID="78826411"/>
+											</CustomState>
+											<CustomState>
 												<StateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 												<CustomState Name="" ID="{02BB6750-4C08-4132-9AAC-37C222A7A55D}" ShortID="970695117">
 													<PropertyList>
@@ -702,7 +706,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-9</Value>
+																<Value>-13</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1238,7 +1242,7 @@
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-3</Value>
+																<Value>-4</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1482,6 +1486,14 @@
 														<CustomState Name="" ID="{DEF203FC-F739-4F00-BDB0-0C067D5BCB86}" ShortID="629278159"/>
 													</CustomState>
 													<CustomState>
+														<StateRef Name="STA_Outdoors_Atrium_Center" ID="{0200D94C-7812-4B1C-BB51-2F3425FB3FDA}"/>
+														<CustomState Name="" ID="{1C7AAAEE-5FD6-47F7-86C2-1A2A0E478D78}" ShortID="902689280">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
 														<StateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 														<CustomState Name="" ID="{205E9123-0A5F-49AC-8451-14062FE30502}" ShortID="682710188">
 															<PropertyList>
@@ -1496,7 +1508,7 @@
 															<PropertyList>
 																<Property Name="Highpass" Type="int16" Value="20"/>
 																<Property Name="Lowpass" Type="int16" Value="20"/>
-																<Property Name="Volume" Type="Real64" Value="-5"/>
+																<Property Name="Volume" Type="Real64" Value="-8"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -1587,7 +1599,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-9</Value>
+																<Value>-5</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1864,7 +1876,7 @@
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-2</Value>
+																<Value>-4</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -2120,6 +2132,10 @@
 														<CustomState Name="" ID="{6853437F-80B5-4D41-95B1-5D5656C7700A}" ShortID="767367059"/>
 													</CustomState>
 													<CustomState>
+														<StateRef Name="STA_Outdoors_Atrium_Center" ID="{0200D94C-7812-4B1C-BB51-2F3425FB3FDA}"/>
+														<CustomState Name="" ID="{D59C12EF-2806-4A71-A4A8-85DC35679B01}" ShortID="945420193"/>
+													</CustomState>
+													<CustomState>
 														<StateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 														<CustomState Name="" ID="{4C4AE3AC-B7F2-4838-BF17-7F41CD04FD1A}" ShortID="1014732078">
 															<PropertyList>
@@ -2133,6 +2149,7 @@
 														<CustomState Name="" ID="{0EAB4E26-3E00-41A9-A601-6F4223400252}" ShortID="740409908">
 															<PropertyList>
 																<Property Name="MakeUpGain" Type="Real64" Value="3"/>
+																<Property Name="Volume" Type="Real64" Value="-3"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>

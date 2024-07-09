@@ -387,6 +387,9 @@
 										<Event Name="AMB_HoverCars_Spline_L" ID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}">
 											<ChildrenList>
 												<Action Name="" ID="{F00BECB9-8ECF-40E3-8B79-F9464119E128}" ShortID="598574139">
+													<PropertyList>
+														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="AMB_HoverCars_Passbys_Spline_L_LP" ID="{15F96768-329A-430F-A93F-478CD396FBFA}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
@@ -398,6 +401,9 @@
 										<Event Name="AMB_HoverCars_Spline_R" ID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}">
 											<ChildrenList>
 												<Action Name="" ID="{3F6FAE9F-9387-455E-9F6A-84A0D2B49E11}" ShortID="386980522">
+													<PropertyList>
+														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="AMB_HoverCars_Passbys_Spline_R_LP" ID="{B5E04E09-22D7-4994-A055-B1DC0B0C772A}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
@@ -409,6 +415,9 @@
 										<Event Name="AMB_HoverCars_ParticleStream_7" ID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}">
 											<ChildrenList>
 												<Action Name="" ID="{CE7DDC78-5316-43E4-942F-4243E993D427}" ShortID="996982408">
+													<PropertyList>
+														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="AMB_HoverCars_Engines_LP_PS7" ID="{45106B71-DBAF-45BD-A8B9-F4AA708A1911}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
@@ -420,6 +429,9 @@
 										<Event Name="AMB_HoverCars_ParticleStream_5" ID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}">
 											<ChildrenList>
 												<Action Name="" ID="{96F2E233-C5FE-4907-AD96-BEC4EE68393A}" ShortID="276986791">
+													<PropertyList>
+														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="AMB_HoverCars_Engines_LP_PS5" ID="{F438BD44-41C8-4FBA-A37C-313FECA4D81D}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>

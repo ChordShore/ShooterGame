@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="67622880" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{201C2530-875C-B712-A982-11CDBD7EC9D4}">
+		<SoundBank Id="67622880" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{4292DC26-F155-A040-F26C-46D499CAA0C4}">
 			<ObjectPath>AMB_HoverCars_Spline_R</ObjectPath>
 			<ShortName>AMB_HoverCars_Spline_R</ShortName>
 			<Path>Event/AMB_HoverCars_Spline_R.bnk</Path>
@@ -33,7 +33,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="67622910" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{C372059E-527E-8405-51E6-616C3C11B13B}">
+		<SoundBank Id="67622910" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{BAC347F4-A544-D29C-DFD8-F19DF55CD82D}">
 			<ObjectPath>AMB_HoverCars_Spline_L</ObjectPath>
 			<ShortName>AMB_HoverCars_Spline_L</ShortName>
 			<Path>Event/AMB_HoverCars_Spline_L.bnk</Path>
@@ -267,7 +267,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{B35BB659-5896-A45F-33A5-93203D80B7C8}">
+		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{422F4784-8C16-DFAA-17DA-21894093E403}">
 			<ObjectPath>AMB_ScifiDrones</ObjectPath>
 			<ShortName>AMB_ScifiDrones</ShortName>
 			<Path>Event/AMB_ScifiDrones.bnk</Path>
@@ -437,6 +437,7 @@
 						<State Id="301467384" Name="STA_Indoors_Spawn" ObjectPath="\States\Default Work Unit\STA_Location\STA_Indoors_Spawn" GUID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\STA_Location\None" GUID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
 						<State Id="877225536" Name="STA_Outdoors_Atrium" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors_Atrium" GUID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+						<State Id="948217588" Name="STA_Outdoors_Atrium_Center" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors_Atrium_Center" GUID="{0200D94C-7812-4B1C-BB51-2F3425FB3FDA}"/>
 						<State Id="949156522" Name="STA_Outdoors_Balcony_Center" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors_Balcony_Center" GUID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
 						<State Id="1657765358" Name="STA_Indoors_Room" ObjectPath="\States\Default Work Unit\STA_Location\STA_Indoors_Room" GUID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 					</States>
@@ -522,7 +523,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{FDE8DBA2-AF87-8F76-EC38-92657AD87D4E}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{0161419B-3E27-53E9-25F7-D590B8C1DF0C}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -609,6 +610,7 @@
 						<State Id="301467384" Name="STA_Indoors_Spawn" ObjectPath="\States\Default Work Unit\STA_Location\STA_Indoors_Spawn" GUID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\STA_Location\None" GUID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
 						<State Id="877225536" Name="STA_Outdoors_Atrium" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors_Atrium" GUID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+						<State Id="948217588" Name="STA_Outdoors_Atrium_Center" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors_Atrium_Center" GUID="{0200D94C-7812-4B1C-BB51-2F3425FB3FDA}"/>
 						<State Id="949156522" Name="STA_Outdoors_Balcony_Center" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors_Balcony_Center" GUID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
 						<State Id="1657765358" Name="STA_Indoors_Room" ObjectPath="\States\Default Work Unit\STA_Location\STA_Indoors_Room" GUID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 					</States>
@@ -927,7 +929,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2496008984" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{867683D8-A5B1-E437-3E88-C30029E94E1C}">
+		<SoundBank Id="2496008984" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{4529146F-1B8C-A871-B207-EC21C415DEFA}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_7</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_7</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_7.bnk</Path>
@@ -982,7 +984,7 @@
 				<GameParameter Id="2940353649" Name="PAR_Distance_HoverCars_PS7" ObjectPath="\Game Parameters\Default Work Unit\PAR_Distance_HoverCars_PS7" GUID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{4B35EBB7-2D15-4F56-463D-96B9F5707B9B}">
+		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{DF19477E-826C-947F-3FDB-1CB032070168}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_5</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_5</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_5.bnk</Path>
@@ -1192,5 +1194,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DC36556A-A30A-DF5B-ECEF-A73D5E809843}</FileHash>
+	<FileHash>{C0E3E1AA-933C-D86D-682E-795F75414F36}</FileHash>
 </SoundBanksInfo>

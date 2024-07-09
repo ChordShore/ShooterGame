@@ -13,6 +13,7 @@
 						<State Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
 						<State Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 						<State Name="STA_Outdoors_Balcony_Center" ID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
+						<State Name="STA_Outdoors_Atrium_Center" ID="{0200D94C-7812-4B1C-BB51-2F3425FB3FDA}"/>
 					</ChildrenList>
 					<TransitionList>
 						<Transition>
@@ -56,6 +57,12 @@
 							<EndState Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 							<Time>2</Time>
 							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+							<EndState Name="STA_Outdoors_Atrium_Center" ID="{0200D94C-7812-4B1C-BB51-2F3425FB3FDA}"/>
+							<Time>4</Time>
+							<IsShared>true</IsShared>
 						</Transition>
 					</TransitionList>
 				</StateGroup>
