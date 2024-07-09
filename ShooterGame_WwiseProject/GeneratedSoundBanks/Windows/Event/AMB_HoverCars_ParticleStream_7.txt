@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1777405841	STA_Location			\Default Work Unit\STA_Location	
+	2593372937	STA_CullTransition			\Default Work Unit\STA_CullTransition	
 
 State	ID	Name	State Group			Notes
 	301467384	STA_Indoors_Spawn	STA_Location			
@@ -11,6 +12,8 @@ State	ID	Name	State Group			Notes
 	948217588	STA_Outdoors_Atrium_Center	STA_Location			
 	949156522	STA_Outdoors_Balcony_Center	STA_Location			
 	1657765358	STA_Indoors_Room	STA_Location			
+	748895195	None	STA_CullTransition			
+	3387596473	STA_Path5_Cull	STA_CullTransition			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	425302535	STA_Indoors_Spawn	STA_Location	\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_HoverCars\AMB_HoverCars_ParticleStream_7		

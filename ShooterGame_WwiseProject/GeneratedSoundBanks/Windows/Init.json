@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{1FE97C31-0F71-ED9B-D305-43AFDA156C45}",
+    "Hash": "{B3EB0756-44E5-FFF3-B168-C8AFF9C4DAD0}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -311,12 +311,6 @@
         "GUID": "{E9597652-781B-4852-95B1-CADA7D874365}"
        },
        {
-        "Id": "948217588",
-        "Name": "STA_Outdoors_Atrium_Center",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Atrium_Center",
-        "GUID": "{0200D94C-7812-4B1C-BB51-2F3425FB3FDA}"
-       },
-       {
         "Id": "949156522",
         "Name": "STA_Outdoors_Balcony_Center",
         "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Balcony_Center",
@@ -327,6 +321,26 @@
         "Name": "STA_Indoors_Room",
         "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors_Room",
         "GUID": "{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"
+       }
+      ]
+     },
+     {
+      "Id": "2593372937",
+      "Name": "STA_CullTransition",
+      "ObjectPath": "\\States\\Default Work Unit\\STA_CullTransition",
+      "GUID": "{20E30A54-6A5E-41F2-A8E2-CEA79C9493C9}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_CullTransition\\None",
+        "GUID": "{BB4FD5EE-2E84-4BFE-B7E1-EF4CB10C6C67}"
+       },
+       {
+        "Id": "3387596473",
+        "Name": "STA_Path5_Cull",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_CullTransition\\STA_Path5_Cull",
+        "GUID": "{AC8E4352-EFB9-46F5-86BA-3C6204E9B6B3}"
        }
       ]
      }
@@ -817,6 +831,6 @@
     ]
    }
   ],
-  "FileHash": "{3EC392BD-AF32-B62B-E426-10CEC0463382}"
+  "FileHash": "{A7E5DD8E-34FF-3F2C-3E8F-05B0AC6118FB}"
  }
 }

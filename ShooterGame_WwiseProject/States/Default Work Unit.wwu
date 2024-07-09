@@ -13,7 +13,6 @@
 						<State Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
 						<State Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 						<State Name="STA_Outdoors_Balcony_Center" ID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
-						<State Name="STA_Outdoors_Atrium_Center" ID="{0200D94C-7812-4B1C-BB51-2F3425FB3FDA}"/>
 					</ChildrenList>
 					<TransitionList>
 						<Transition>
@@ -58,10 +57,18 @@
 							<Time>2</Time>
 							<IsShared>false</IsShared>
 						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="STA_CullTransition" ID="{20E30A54-6A5E-41F2-A8E2-CEA79C9493C9}">
+					<ChildrenList>
+						<State Name="None" ID="{BB4FD5EE-2E84-4BFE-B7E1-EF4CB10C6C67}"/>
+						<State Name="STA_Path5_Cull" ID="{AC8E4352-EFB9-46F5-86BA-3C6204E9B6B3}"/>
+					</ChildrenList>
+					<TransitionList>
 						<Transition>
-							<StartState Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
-							<EndState Name="STA_Outdoors_Atrium_Center" ID="{0200D94C-7812-4B1C-BB51-2F3425FB3FDA}"/>
-							<Time>4</Time>
+							<StartState Name="None" ID="{BB4FD5EE-2E84-4BFE-B7E1-EF4CB10C6C67}"/>
+							<EndState Name="STA_Path5_Cull" ID="{AC8E4352-EFB9-46F5-86BA-3C6204E9B6B3}"/>
+							<Time>5</Time>
 							<IsShared>true</IsShared>
 						</Transition>
 					</TransitionList>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{1FE97C31-0F71-ED9B-D305-43AFDA156C45}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{B3EB0756-44E5-FFF3-B168-C8AFF9C4DAD0}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -88,9 +88,14 @@
 						<State Id="301467384" Name="STA_Indoors_Spawn" ObjectPath="\States\Default Work Unit\STA_Location\STA_Indoors_Spawn" GUID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\STA_Location\None" GUID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
 						<State Id="877225536" Name="STA_Outdoors_Atrium" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors_Atrium" GUID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
-						<State Id="948217588" Name="STA_Outdoors_Atrium_Center" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors_Atrium_Center" GUID="{0200D94C-7812-4B1C-BB51-2F3425FB3FDA}"/>
 						<State Id="949156522" Name="STA_Outdoors_Balcony_Center" ObjectPath="\States\Default Work Unit\STA_Location\STA_Outdoors_Balcony_Center" GUID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
 						<State Id="1657765358" Name="STA_Indoors_Room" ObjectPath="\States\Default Work Unit\STA_Location\STA_Indoors_Room" GUID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2593372937" Name="STA_CullTransition" ObjectPath="\States\Default Work Unit\STA_CullTransition" GUID="{20E30A54-6A5E-41F2-A8E2-CEA79C9493C9}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\STA_CullTransition\None" GUID="{BB4FD5EE-2E84-4BFE-B7E1-EF4CB10C6C67}"/>
+						<State Id="3387596473" Name="STA_Path5_Cull" ObjectPath="\States\Default Work Unit\STA_CullTransition\STA_Path5_Cull" GUID="{AC8E4352-EFB9-46F5-86BA-3C6204E9B6B3}"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -232,5 +237,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{844DE863-8A3C-9363-D008-41B43E884F49}</FileHash>
+	<FileHash>{3C1C70EC-2062-060F-42DF-80A58ECB937C}</FileHash>
 </SoundBanksInfo>

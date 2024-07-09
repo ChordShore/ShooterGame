@@ -610,7 +610,7 @@
     "Type": "Event",
     "GUID": "{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}",
     "Language": "SFX",
-    "Hash": "{422F4784-8C16-DFAA-17DA-21894093E403}",
+    "Hash": "{B35BB659-5896-A45F-33A5-93203D80B7C8}",
     "ObjectPath": "AMB_ScifiDrones",
     "ShortName": "AMB_ScifiDrones",
     "Path": "Event/AMB_ScifiDrones.bnk",
@@ -961,12 +961,6 @@
         "GUID": "{E9597652-781B-4852-95B1-CADA7D874365}"
        },
        {
-        "Id": "948217588",
-        "Name": "STA_Outdoors_Atrium_Center",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Atrium_Center",
-        "GUID": "{0200D94C-7812-4B1C-BB51-2F3425FB3FDA}"
-       },
-       {
         "Id": "949156522",
         "Name": "STA_Outdoors_Balcony_Center",
         "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Balcony_Center",
@@ -1213,7 +1207,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{0161419B-3E27-53E9-25F7-D590B8C1DF0C}",
+    "Hash": "{DB047400-0E1F-AD19-F0D7-C6DE4C0BDBA6}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -1514,12 +1508,6 @@
         "GUID": "{E9597652-781B-4852-95B1-CADA7D874365}"
        },
        {
-        "Id": "948217588",
-        "Name": "STA_Outdoors_Atrium_Center",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Atrium_Center",
-        "GUID": "{0200D94C-7812-4B1C-BB51-2F3425FB3FDA}"
-       },
-       {
         "Id": "949156522",
         "Name": "STA_Outdoors_Balcony_Center",
         "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Balcony_Center",
@@ -1530,6 +1518,26 @@
         "Name": "STA_Indoors_Room",
         "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors_Room",
         "GUID": "{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"
+       }
+      ]
+     },
+     {
+      "Id": "2593372937",
+      "Name": "STA_CullTransition",
+      "ObjectPath": "\\States\\Default Work Unit\\STA_CullTransition",
+      "GUID": "{20E30A54-6A5E-41F2-A8E2-CEA79C9493C9}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_CullTransition\\None",
+        "GUID": "{BB4FD5EE-2E84-4BFE-B7E1-EF4CB10C6C67}"
+       },
+       {
+        "Id": "3387596473",
+        "Name": "STA_Path5_Cull",
+        "ObjectPath": "\\States\\Default Work Unit\\STA_CullTransition\\STA_Path5_Cull",
+        "GUID": "{AC8E4352-EFB9-46F5-86BA-3C6204E9B6B3}"
        }
       ]
      }
@@ -2436,7 +2444,7 @@
     "Type": "Event",
     "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
     "Language": "SFX",
-    "Hash": "{BD6E6132-D9E4-1BF2-9481-B4C2D316E803}",
+    "Hash": "{05300C88-2140-049A-71D4-6E9574897310}",
     "ObjectPath": "AMB_EnergyPillar_C",
     "ShortName": "AMB_EnergyPillar_C",
     "Path": "Event/AMB_EnergyPillar_C.bnk",
@@ -2503,7 +2511,7 @@
     "Type": "Event",
     "GUID": "{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}",
     "Language": "SFX",
-    "Hash": "{4529146F-1B8C-A871-B207-EC21C415DEFA}",
+    "Hash": "{50572C87-7717-C377-D293-C40DC614C7CF}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_7",
     "ShortName": "AMB_HoverCars_ParticleStream_7",
     "Path": "Event/AMB_HoverCars_ParticleStream_7.bnk",
@@ -2571,7 +2579,7 @@
       "Name": "AMB_HoverCars_ParticleStream_7",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\HoverCars\\AMB_HoverCars_ParticleStream_7",
       "GUID": "{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}",
-      "MaxAttenuation": "19000",
+      "MaxAttenuation": "21000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -2624,7 +2632,7 @@
     "Type": "Event",
     "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
     "Language": "SFX",
-    "Hash": "{DF19477E-826C-947F-3FDB-1CB032070168}",
+    "Hash": "{53839A27-4408-CE61-FBE6-C3FFF68695E0}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_5",
     "ShortName": "AMB_HoverCars_ParticleStream_5",
     "Path": "Event/AMB_HoverCars_ParticleStream_5.bnk",
@@ -2692,7 +2700,7 @@
       "Name": "AMB_HoverCars_ParticleStream_5",
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\HoverCars\\AMB_HoverCars_ParticleStream_5",
       "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
-      "MaxAttenuation": "30000",
+      "MaxAttenuation": "33000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -3072,6 +3080,6 @@
     ]
    }
   ],
-  "FileHash": "{0839F521-649F-D3F4-C714-040CA2EB93B8}"
+  "FileHash": "{9B4C36EE-98C3-5D97-2652-55895BAC1ADC}"
  }
 }

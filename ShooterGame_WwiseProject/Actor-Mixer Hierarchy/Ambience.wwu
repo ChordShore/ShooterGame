@@ -227,10 +227,6 @@
 												<CustomState Name="" ID="{BBEB6A36-3CA2-4300-835A-F3A02AC8EC91}" ShortID="664518417"/>
 											</CustomState>
 											<CustomState>
-												<StateRef Name="STA_Outdoors_Atrium_Center" ID="{0200D94C-7812-4B1C-BB51-2F3425FB3FDA}"/>
-												<CustomState Name="" ID="{6C2FEE05-BFCD-4323-989F-9BAC97EB320B}" ShortID="78826411"/>
-											</CustomState>
-											<CustomState>
 												<StateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 												<CustomState Name="" ID="{02BB6750-4C08-4132-9AAC-37C222A7A55D}" ShortID="970695117">
 													<PropertyList>
@@ -1471,8 +1467,19 @@
 													<StateGroupInfo>
 														<StateGroupRef Name="STA_Location" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}"/>
 													</StateGroupInfo>
+													<StateGroupInfo>
+														<StateGroupRef Name="STA_CullTransition" ID="{20E30A54-6A5E-41F2-A8E2-CEA79C9493C9}"/>
+													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
+													<CustomState>
+														<StateRef Name="STA_Path5_Cull" ID="{AC8E4352-EFB9-46F5-86BA-3C6204E9B6B3}"/>
+														<CustomState Name="" ID="{58C88959-9426-4801-B0AE-3FFD68E6C0E9}" ShortID="534023631">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
 													<CustomState>
 														<StateRef Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
 														<CustomState Name="" ID="{27F99607-E440-4D5D-BCEC-3DAE75ED6805}" ShortID="718591365">
@@ -1484,14 +1491,6 @@
 													<CustomState>
 														<StateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 														<CustomState Name="" ID="{DEF203FC-F739-4F00-BDB0-0C067D5BCB86}" ShortID="629278159"/>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="STA_Outdoors_Atrium_Center" ID="{0200D94C-7812-4B1C-BB51-2F3425FB3FDA}"/>
-														<CustomState Name="" ID="{1C7AAAEE-5FD6-47F7-86C2-1A2A0E478D78}" ShortID="902689280">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64" Value="-108"/>
-															</PropertyList>
-														</CustomState>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
@@ -2117,8 +2116,15 @@
 													<StateGroupInfo>
 														<StateGroupRef Name="STA_Location" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}"/>
 													</StateGroupInfo>
+													<StateGroupInfo>
+														<StateGroupRef Name="STA_CullTransition" ID="{20E30A54-6A5E-41F2-A8E2-CEA79C9493C9}"/>
+													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
+													<CustomState>
+														<StateRef Name="STA_Path5_Cull" ID="{AC8E4352-EFB9-46F5-86BA-3C6204E9B6B3}"/>
+														<CustomState Name="" ID="{2F441C44-F612-4594-A05D-EEC11C1086C4}" ShortID="419381245"/>
+													</CustomState>
 													<CustomState>
 														<StateRef Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
 														<CustomState Name="" ID="{CEFA2D83-5C22-4CCC-9E07-01A2BDC6EDC1}" ShortID="425302535">
@@ -2130,10 +2136,6 @@
 													<CustomState>
 														<StateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 														<CustomState Name="" ID="{6853437F-80B5-4D41-95B1-5D5656C7700A}" ShortID="767367059"/>
-													</CustomState>
-													<CustomState>
-														<StateRef Name="STA_Outdoors_Atrium_Center" ID="{0200D94C-7812-4B1C-BB51-2F3425FB3FDA}"/>
-														<CustomState Name="" ID="{D59C12EF-2806-4A71-A4A8-85DC35679B01}" ShortID="945420193"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
