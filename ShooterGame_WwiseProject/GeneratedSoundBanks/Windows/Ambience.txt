@@ -13,18 +13,19 @@ Event	ID	Name			Wwise Object Path	Notes
 	3686232698	AMB_UnrealHolograph_FadeOut			\Ambience\Emitters\Highrise\UnrealHolograph\AMB_UnrealHolograph_FadeOut	
 
 State Group	ID	Name			Wwise Object Path	Notes
-	1777405841	STA_Location			\Default Work Unit\STA_Location	
+	747849153	STA_LocationMix			\Default Work Unit\Highrise\STA_LocationMix	
 
 State	ID	Name	State Group			Notes
-	301467384	STA_Indoors_Spawn	STA_Location			
-	748895195	None	STA_Location			
-	877225536	STA_Outdoors_Atrium	STA_Location			
-	949156522	STA_Outdoors_Balcony_Center	STA_Location			
-	1657765358	STA_Indoors_Room	STA_Location			
+	301467384	STA_Indoors_Spawn	STA_LocationMix			
+	748895195	None	STA_LocationMix			
+	877225536	STA_Outdoors_Atrium	STA_LocationMix			
+	949156522	STA_Outdoors_Balcony_Center	STA_LocationMix			
+	1657765358	STA_Indoors_Room	STA_LocationMix			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	970695117	STA_Indoors_Room	STA_Location	\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_UnrealHolograph		
-	994824208	STA_Indoors_Spawn	STA_Location	\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_UnrealHolograph		
+	445458544	STA_Outdoors_Balcony_Center	STA_LocationMix	\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_UnrealHolograph		
+	970695117	STA_Indoors_Room	STA_LocationMix	\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_UnrealHolograph		
+	994824208	STA_Indoors_Spawn	STA_LocationMix	\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_UnrealHolograph		
 
 Effect plug-ins	ID	Name	Type				Notes
 	2781261543	Brick_Wall_Minus_6dB_Peak_Slow_Release	Wwise Peak Limiter			

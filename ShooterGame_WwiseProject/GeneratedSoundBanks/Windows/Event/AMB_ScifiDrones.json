@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}",
     "Language": "SFX",
-    "Hash": "{B35BB659-5896-A45F-33A5-93203D80B7C8}",
+    "Hash": "{E48FADF0-0486-D8D9-E9FA-B72A7FF6DDB5}",
     "ObjectPath": "AMB_ScifiDrones",
     "ShortName": "AMB_ScifiDrones",
     "Path": "Event/AMB_ScifiDrones.bnk",
@@ -203,7 +203,7 @@
        {
         "SwitchValue": {
          "GroupType": "State",
-         "GroupId": "1777405841",
+         "GroupId": "747849153",
          "Id": "301467384",
          "GUID": "{2C1C780E-EFA5-4772-8620-E06CA40932F3}"
         },
@@ -247,7 +247,7 @@
        {
         "SwitchValue": {
          "GroupType": "State",
-         "GroupId": "1777405841",
+         "GroupId": "747849153",
          "Id": "877225536",
          "GUID": "{E9597652-781B-4852-95B1-CADA7D874365}"
         },
@@ -291,7 +291,7 @@
        {
         "SwitchValue": {
          "GroupType": "State",
-         "GroupId": "1777405841",
+         "GroupId": "747849153",
          "Id": "1657765358",
          "GUID": "{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"
         },
@@ -337,39 +337,39 @@
     ],
     "StateGroups": [
      {
-      "Id": "1777405841",
-      "Name": "STA_Location",
-      "ObjectPath": "\\States\\Default Work Unit\\STA_Location",
+      "Id": "747849153",
+      "Name": "STA_LocationMix",
+      "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix",
       "GUID": "{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}",
       "States": [
        {
         "Id": "301467384",
         "Name": "STA_Indoors_Spawn",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors_Spawn",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\STA_Indoors_Spawn",
         "GUID": "{2C1C780E-EFA5-4772-8620-E06CA40932F3}"
        },
        {
         "Id": "748895195",
         "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\None",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\None",
         "GUID": "{C7162D63-5030-4C71-878E-49C2A4492744}"
        },
        {
         "Id": "877225536",
         "Name": "STA_Outdoors_Atrium",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Atrium",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\STA_Outdoors_Atrium",
         "GUID": "{E9597652-781B-4852-95B1-CADA7D874365}"
        },
        {
         "Id": "949156522",
         "Name": "STA_Outdoors_Balcony_Center",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Balcony_Center",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\STA_Outdoors_Balcony_Center",
         "GUID": "{72B927E3-2951-4E7F-B493-1DD0425F5518}"
        },
        {
         "Id": "1657765358",
         "Name": "STA_Indoors_Room",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors_Room",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\STA_Indoors_Room",
         "GUID": "{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"
        }
       ]
@@ -377,6 +377,6 @@
     ]
    }
   ],
-  "FileHash": "{7039AEE8-8123-5319-E11C-3D9827C2BBA2}"
+  "FileHash": "{1ABFD079-E45D-2AFC-16D2-D7A08BF1B0DF}"
  }
 }

@@ -114,7 +114,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{7E81E85A-1872-FF24-4F16-59F294096BC4}",
+    "Hash": "{ADABC0CE-DF02-755D-4C39-A89130B756A1}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -610,7 +610,7 @@
     "Type": "Event",
     "GUID": "{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}",
     "Language": "SFX",
-    "Hash": "{B35BB659-5896-A45F-33A5-93203D80B7C8}",
+    "Hash": "{E48FADF0-0486-D8D9-E9FA-B72A7FF6DDB5}",
     "ObjectPath": "AMB_ScifiDrones",
     "ShortName": "AMB_ScifiDrones",
     "Path": "Event/AMB_ScifiDrones.bnk",
@@ -803,7 +803,7 @@
        {
         "SwitchValue": {
          "GroupType": "State",
-         "GroupId": "1777405841",
+         "GroupId": "747849153",
          "Id": "301467384",
          "GUID": "{2C1C780E-EFA5-4772-8620-E06CA40932F3}"
         },
@@ -847,7 +847,7 @@
        {
         "SwitchValue": {
          "GroupType": "State",
-         "GroupId": "1777405841",
+         "GroupId": "747849153",
          "Id": "877225536",
          "GUID": "{E9597652-781B-4852-95B1-CADA7D874365}"
         },
@@ -891,7 +891,7 @@
        {
         "SwitchValue": {
          "GroupType": "State",
-         "GroupId": "1777405841",
+         "GroupId": "747849153",
          "Id": "1657765358",
          "GUID": "{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"
         },
@@ -937,39 +937,39 @@
     ],
     "StateGroups": [
      {
-      "Id": "1777405841",
-      "Name": "STA_Location",
-      "ObjectPath": "\\States\\Default Work Unit\\STA_Location",
+      "Id": "747849153",
+      "Name": "STA_LocationMix",
+      "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix",
       "GUID": "{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}",
       "States": [
        {
         "Id": "301467384",
         "Name": "STA_Indoors_Spawn",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors_Spawn",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\STA_Indoors_Spawn",
         "GUID": "{2C1C780E-EFA5-4772-8620-E06CA40932F3}"
        },
        {
         "Id": "748895195",
         "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\None",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\None",
         "GUID": "{C7162D63-5030-4C71-878E-49C2A4492744}"
        },
        {
         "Id": "877225536",
         "Name": "STA_Outdoors_Atrium",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Atrium",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\STA_Outdoors_Atrium",
         "GUID": "{E9597652-781B-4852-95B1-CADA7D874365}"
        },
        {
         "Id": "949156522",
         "Name": "STA_Outdoors_Balcony_Center",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Balcony_Center",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\STA_Outdoors_Balcony_Center",
         "GUID": "{72B927E3-2951-4E7F-B493-1DD0425F5518}"
        },
        {
         "Id": "1657765358",
         "Name": "STA_Indoors_Room",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors_Room",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\STA_Indoors_Room",
         "GUID": "{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"
        }
       ]
@@ -1207,7 +1207,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{DB047400-0E1F-AD19-F0D7-C6DE4C0BDBA6}",
+    "Hash": "{0D19464D-0327-981F-2824-6BB79B300F75}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -1484,59 +1484,79 @@
     ],
     "StateGroups": [
      {
-      "Id": "1777405841",
-      "Name": "STA_Location",
-      "ObjectPath": "\\States\\Default Work Unit\\STA_Location",
+      "Id": "747849153",
+      "Name": "STA_LocationMix",
+      "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix",
       "GUID": "{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}",
       "States": [
        {
         "Id": "301467384",
         "Name": "STA_Indoors_Spawn",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors_Spawn",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\STA_Indoors_Spawn",
         "GUID": "{2C1C780E-EFA5-4772-8620-E06CA40932F3}"
        },
        {
         "Id": "748895195",
         "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\None",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\None",
         "GUID": "{C7162D63-5030-4C71-878E-49C2A4492744}"
        },
        {
         "Id": "877225536",
         "Name": "STA_Outdoors_Atrium",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Atrium",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\STA_Outdoors_Atrium",
         "GUID": "{E9597652-781B-4852-95B1-CADA7D874365}"
        },
        {
         "Id": "949156522",
         "Name": "STA_Outdoors_Balcony_Center",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Balcony_Center",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\STA_Outdoors_Balcony_Center",
         "GUID": "{72B927E3-2951-4E7F-B493-1DD0425F5518}"
        },
        {
         "Id": "1657765358",
         "Name": "STA_Indoors_Room",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors_Room",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\STA_Indoors_Room",
         "GUID": "{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"
        }
       ]
      },
      {
-      "Id": "2593372937",
-      "Name": "STA_CullTransition",
-      "ObjectPath": "\\States\\Default Work Unit\\STA_CullTransition",
+      "Id": "3735133706",
+      "Name": "STA_PathAllCull",
+      "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_PathAllCull",
+      "GUID": "{8EC1AD5E-E5AF-4629-9DD6-16A80EA9C816}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_PathAllCull\\None",
+        "GUID": "{58E0E97C-6C8E-42CB-BD10-0B2B26B95058}"
+       },
+       {
+        "Id": "1031520845",
+        "Name": "STA_PathAll_Cull",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_PathAllCull\\STA_PathAll_Cull",
+        "GUID": "{371ECE0D-7F82-4886-A602-422FF6DBC9C1}"
+       }
+      ]
+     },
+     {
+      "Id": "4208954102",
+      "Name": "STA_Path5Cull",
+      "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_Path5Cull",
       "GUID": "{20E30A54-6A5E-41F2-A8E2-CEA79C9493C9}",
       "States": [
        {
         "Id": "748895195",
         "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_CullTransition\\None",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_Path5Cull\\None",
         "GUID": "{BB4FD5EE-2E84-4BFE-B7E1-EF4CB10C6C67}"
        },
        {
         "Id": "3387596473",
         "Name": "STA_Path5_Cull",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_CullTransition\\STA_Path5_Cull",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_Path5Cull\\STA_Path5_Cull",
         "GUID": "{AC8E4352-EFB9-46F5-86BA-3C6204E9B6B3}"
        }
       ]
@@ -2408,7 +2428,7 @@
     "Type": "Event",
     "GUID": "{1139BF59-E796-44F8-A41A-58F596E277FE}",
     "Language": "SFX",
-    "Hash": "{B4798DEE-130E-CA51-D07A-582A63FD690F}",
+    "Hash": "{28F99B2C-B3C4-5D50-2A16-5DD782D82CCB}",
     "ObjectPath": "AMB_EnergyPillar_L",
     "ShortName": "AMB_EnergyPillar_L",
     "Path": "Event/AMB_EnergyPillar_L.bnk",
@@ -2444,7 +2464,7 @@
     "Type": "Event",
     "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
     "Language": "SFX",
-    "Hash": "{05300C88-2140-049A-71D4-6E9574897310}",
+    "Hash": "{A75A8B88-8E4C-4A1C-290B-8E181E2C7082}",
     "ObjectPath": "AMB_EnergyPillar_C",
     "ShortName": "AMB_EnergyPillar_C",
     "Path": "Event/AMB_EnergyPillar_C.bnk",
@@ -2511,7 +2531,7 @@
     "Type": "Event",
     "GUID": "{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}",
     "Language": "SFX",
-    "Hash": "{50572C87-7717-C377-D293-C40DC614C7CF}",
+    "Hash": "{926323DC-0AA7-CD5F-2DB6-8E03031E5EC2}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_7",
     "ShortName": "AMB_HoverCars_ParticleStream_7",
     "Path": "Event/AMB_HoverCars_ParticleStream_7.bnk",
@@ -2632,7 +2652,7 @@
     "Type": "Event",
     "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
     "Language": "SFX",
-    "Hash": "{53839A27-4408-CE61-FBE6-C3FFF68695E0}",
+    "Hash": "{16821A3E-2553-8E45-0049-24A7793281E1}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_5",
     "ShortName": "AMB_HoverCars_ParticleStream_5",
     "Path": "Event/AMB_HoverCars_ParticleStream_5.bnk",
@@ -3080,6 +3100,6 @@
     ]
    }
   ],
-  "FileHash": "{9B4C36EE-98C3-5D97-2652-55895BAC1ADC}"
+  "FileHash": "{5852BC24-3CE4-CBE0-D537-A7F6FC2FBA69}"
  }
 }

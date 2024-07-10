@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{DB047400-0E1F-AD19-F0D7-C6DE4C0BDBA6}",
+    "Hash": "{0D19464D-0327-981F-2824-6BB79B300F75}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -287,59 +287,79 @@
     ],
     "StateGroups": [
      {
-      "Id": "1777405841",
-      "Name": "STA_Location",
-      "ObjectPath": "\\States\\Default Work Unit\\STA_Location",
+      "Id": "747849153",
+      "Name": "STA_LocationMix",
+      "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix",
       "GUID": "{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}",
       "States": [
        {
         "Id": "301467384",
         "Name": "STA_Indoors_Spawn",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors_Spawn",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\STA_Indoors_Spawn",
         "GUID": "{2C1C780E-EFA5-4772-8620-E06CA40932F3}"
        },
        {
         "Id": "748895195",
         "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\None",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\None",
         "GUID": "{C7162D63-5030-4C71-878E-49C2A4492744}"
        },
        {
         "Id": "877225536",
         "Name": "STA_Outdoors_Atrium",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Atrium",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\STA_Outdoors_Atrium",
         "GUID": "{E9597652-781B-4852-95B1-CADA7D874365}"
        },
        {
         "Id": "949156522",
         "Name": "STA_Outdoors_Balcony_Center",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Outdoors_Balcony_Center",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\STA_Outdoors_Balcony_Center",
         "GUID": "{72B927E3-2951-4E7F-B493-1DD0425F5518}"
        },
        {
         "Id": "1657765358",
         "Name": "STA_Indoors_Room",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_Location\\STA_Indoors_Room",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_LocationMix\\STA_Indoors_Room",
         "GUID": "{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"
        }
       ]
      },
      {
-      "Id": "2593372937",
-      "Name": "STA_CullTransition",
-      "ObjectPath": "\\States\\Default Work Unit\\STA_CullTransition",
+      "Id": "3735133706",
+      "Name": "STA_PathAllCull",
+      "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_PathAllCull",
+      "GUID": "{8EC1AD5E-E5AF-4629-9DD6-16A80EA9C816}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_PathAllCull\\None",
+        "GUID": "{58E0E97C-6C8E-42CB-BD10-0B2B26B95058}"
+       },
+       {
+        "Id": "1031520845",
+        "Name": "STA_PathAll_Cull",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_PathAllCull\\STA_PathAll_Cull",
+        "GUID": "{371ECE0D-7F82-4886-A602-422FF6DBC9C1}"
+       }
+      ]
+     },
+     {
+      "Id": "4208954102",
+      "Name": "STA_Path5Cull",
+      "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_Path5Cull",
       "GUID": "{20E30A54-6A5E-41F2-A8E2-CEA79C9493C9}",
       "States": [
        {
         "Id": "748895195",
         "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_CullTransition\\None",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_Path5Cull\\None",
         "GUID": "{BB4FD5EE-2E84-4BFE-B7E1-EF4CB10C6C67}"
        },
        {
         "Id": "3387596473",
         "Name": "STA_Path5_Cull",
-        "ObjectPath": "\\States\\Default Work Unit\\STA_CullTransition\\STA_Path5_Cull",
+        "ObjectPath": "\\States\\Default Work Unit\\Highrise\\STA_Path5Cull\\STA_Path5_Cull",
         "GUID": "{AC8E4352-EFB9-46F5-86BA-3C6204E9B6B3}"
        }
       ]
@@ -831,6 +851,6 @@
     ]
    }
   ],
-  "FileHash": "{8B31CE64-B097-ACC1-AE12-F66D9FF5FF4A}"
+  "FileHash": "{C7AE72AD-BA5D-0B3E-BF7C-334B7A86D8AA}"
  }
 }

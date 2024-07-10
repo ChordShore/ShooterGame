@@ -97,7 +97,7 @@
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
 												<Property Name="InitialDelay" Type="Real64">
 													<ValueList>
-														<Value>0.01</Value>
+														<Value>0.1</Value>
 													</ValueList>
 												</Property>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -210,7 +210,7 @@
 									<StateInfo>
 										<StateGroupList>
 											<StateGroupInfo>
-												<StateGroupRef Name="STA_Location" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}"/>
+												<StateGroupRef Name="STA_LocationMix" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}"/>
 											</StateGroupInfo>
 										</StateGroupList>
 										<CustomStateList>
@@ -236,7 +236,12 @@
 											</CustomState>
 											<CustomState>
 												<StateRef Name="STA_Outdoors_Balcony_Center" ID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
-												<CustomState Name="" ID="{BEC081DB-22CF-45E9-991A-2AFC77A87C9C}" ShortID="445458544"/>
+												<CustomState Name="" ID="{BEC081DB-22CF-45E9-991A-2AFC77A87C9C}" ShortID="445458544">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="20"/>
+														<Property Name="Volume" Type="Real64" Value="-10"/>
+													</PropertyList>
+												</CustomState>
 											</CustomState>
 										</CustomStateList>
 									</StateInfo>
@@ -592,14 +597,9 @@
 															</ValueList>
 														</Property>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-														<Property Name="Lowpass" Type="int16">
-															<ValueList>
-																<Value>15</Value>
-															</ValueList>
-														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-9</Value>
+																<Value>-7</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -702,7 +702,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-13</Value>
+																<Value>-10</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1465,10 +1465,13 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="STA_Location" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}"/>
+														<StateGroupRef Name="STA_LocationMix" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}"/>
 													</StateGroupInfo>
 													<StateGroupInfo>
-														<StateGroupRef Name="STA_CullTransition" ID="{20E30A54-6A5E-41F2-A8E2-CEA79C9493C9}"/>
+														<StateGroupRef Name="STA_Path5Cull" ID="{20E30A54-6A5E-41F2-A8E2-CEA79C9493C9}"/>
+													</StateGroupInfo>
+													<StateGroupInfo>
+														<StateGroupRef Name="STA_PathAllCull" ID="{8EC1AD5E-E5AF-4629-9DD6-16A80EA9C816}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
@@ -1493,6 +1496,14 @@
 														<CustomState Name="" ID="{DEF203FC-F739-4F00-BDB0-0C067D5BCB86}" ShortID="629278159"/>
 													</CustomState>
 													<CustomState>
+														<StateRef Name="STA_PathAll_Cull" ID="{371ECE0D-7F82-4886-A602-422FF6DBC9C1}"/>
+														<CustomState Name="" ID="{BAEF14A4-1B8B-4F82-BEFF-C6884B3D57C0}" ShortID="524176389">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
 														<StateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 														<CustomState Name="" ID="{205E9123-0A5F-49AC-8451-14062FE30502}" ShortID="682710188">
 															<PropertyList>
@@ -1507,7 +1518,7 @@
 															<PropertyList>
 																<Property Name="Highpass" Type="int16" Value="20"/>
 																<Property Name="Lowpass" Type="int16" Value="20"/>
-																<Property Name="Volume" Type="Real64" Value="-8"/>
+																<Property Name="Volume" Type="Real64" Value="-6"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -1598,7 +1609,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-5</Value>
+																<Value>-6</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -2114,10 +2125,13 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="STA_Location" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}"/>
+														<StateGroupRef Name="STA_LocationMix" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}"/>
 													</StateGroupInfo>
 													<StateGroupInfo>
-														<StateGroupRef Name="STA_CullTransition" ID="{20E30A54-6A5E-41F2-A8E2-CEA79C9493C9}"/>
+														<StateGroupRef Name="STA_Path5Cull" ID="{20E30A54-6A5E-41F2-A8E2-CEA79C9493C9}"/>
+													</StateGroupInfo>
+													<StateGroupInfo>
+														<StateGroupRef Name="STA_PathAllCull" ID="{8EC1AD5E-E5AF-4629-9DD6-16A80EA9C816}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
@@ -2136,6 +2150,14 @@
 													<CustomState>
 														<StateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 														<CustomState Name="" ID="{6853437F-80B5-4D41-95B1-5D5656C7700A}" ShortID="767367059"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="STA_PathAll_Cull" ID="{371ECE0D-7F82-4886-A602-422FF6DBC9C1}"/>
+														<CustomState Name="" ID="{E757DAB0-15ED-4493-BD61-738BDC7637FC}" ShortID="687514343">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
@@ -2840,7 +2862,7 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 												<Reference Name="SwitchGroupOrStateGroup">
-													<ObjectRef Name="STA_Location" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}" WorkUnitID="{5DA9743F-24CB-48C8-8072-C39EB4F5CC2B}"/>
+													<ObjectRef Name="STA_LocationMix" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}" WorkUnitID="{5DA9743F-24CB-48C8-8072-C39EB4F5CC2B}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>

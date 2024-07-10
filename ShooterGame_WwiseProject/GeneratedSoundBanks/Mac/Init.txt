@@ -1,15 +1,18 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	1777405841	STA_Location			\Default Work Unit\STA_Location	
-	2593372937	STA_CullTransition			\Default Work Unit\STA_CullTransition	
+	747849153	STA_LocationMix			\Default Work Unit\Highrise\STA_LocationMix	
+	3735133706	STA_PathAllCull			\Default Work Unit\Highrise\STA_PathAllCull	
+	4208954102	STA_Path5Cull			\Default Work Unit\Highrise\STA_Path5Cull	
 
 State	ID	Name	State Group			Notes
-	301467384	STA_Indoors_Spawn	STA_Location			
-	748895195	None	STA_Location			
-	877225536	STA_Outdoors_Atrium	STA_Location			
-	949156522	STA_Outdoors_Balcony_Center	STA_Location			
-	1657765358	STA_Indoors_Room	STA_Location			
-	748895195	None	STA_CullTransition			
-	3387596473	STA_Path5_Cull	STA_CullTransition			
+	301467384	STA_Indoors_Spawn	STA_LocationMix			
+	748895195	None	STA_LocationMix			
+	877225536	STA_Outdoors_Atrium	STA_LocationMix			
+	949156522	STA_Outdoors_Balcony_Center	STA_LocationMix			
+	1657765358	STA_Indoors_Room	STA_LocationMix			
+	748895195	None	STA_PathAllCull			
+	1031520845	STA_PathAll_Cull	STA_PathAllCull			
+	748895195	None	STA_Path5Cull			
+	3387596473	STA_Path5_Cull	STA_Path5Cull			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
