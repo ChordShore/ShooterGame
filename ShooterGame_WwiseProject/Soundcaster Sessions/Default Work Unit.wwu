@@ -17,7 +17,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="PAR_Doppler" ID="{D40C9741-1633-4046-A65F-904ED87051FE}"/>
-							<Value>0</Value>
+							<Value>0.03</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="PAR_Distance_HoverCars_PS5" ID="{12811BF6-789D-4EFB-A3B6-2A817E909100}"/>
@@ -25,7 +25,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="PAR_Distance_HoverCars_PS7" ID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"/>
-							<Value>20500</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="PAR_Wind" ID="{5AA64F25-2B48-4F0C-8EF5-838EB08AB4B3}"/>
@@ -34,8 +34,8 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{BB4FD5EE-2E84-4BFE-B7E1-EF4CB10C6C67}"/>
-						<CurrentStateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
-						<CurrentStateRef Name="STA_PathAll_Cull" ID="{371ECE0D-7F82-4886-A602-422FF6DBC9C1}"/>
+						<CurrentStateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
+						<CurrentStateRef Name="None" ID="{58E0E97C-6C8E-42CB-BD10-0B2B26B95058}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
