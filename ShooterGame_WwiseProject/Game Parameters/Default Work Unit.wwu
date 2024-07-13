@@ -12,9 +12,9 @@
 				</GameParameter>
 				<GameParameter Name="PAR_Doppler" ID="{D40C9741-1633-4046-A65F-904ED87051FE}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="1"/>
-						<Property Name="Max" Type="Real64" Value="1"/>
-						<Property Name="Min" Type="Real64" Value="-1"/>
+						<Property Name="InitialValue" Type="Real64" Value="-0.5"/>
+						<Property Name="Max" Type="Real64" Value="0.5"/>
+						<Property Name="Min" Type="Real64" Value="-0.5"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="PAR_Heartbeat" ID="{1A7627A7-5A7D-470D-B1E0-2B091B679836}"/>

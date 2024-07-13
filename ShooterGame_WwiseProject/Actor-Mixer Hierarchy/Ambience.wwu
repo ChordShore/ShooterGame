@@ -1494,13 +1494,13 @@
 																				</PropertyList>
 																				<PointList>
 																					<Point>
-																						<XPos>-1</XPos>
-																						<YPos>2000</YPos>
+																						<XPos>-0.5</XPos>
+																						<YPos>-2000</YPos>
 																						<Flags>5</Flags>
 																					</Point>
 																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>-2000</YPos>
+																						<XPos>0.5</XPos>
+																						<YPos>2800</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -1836,7 +1836,7 @@
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-2</Value>
+																<Value>-1</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1858,11 +1858,6 @@
 														<Sound Name="AMB_HoverCars_Engine_Sum_1" ID="{24DA3875-91ED-411B-B87C-15ABB701D20F}" ShortID="731540681">
 															<PropertyList>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																<Property Name="Pitch" Type="int32">
-																	<ValueList>
-																		<Value>200</Value>
-																	</ValueList>
-																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -1896,11 +1891,6 @@
 														<Sound Name="AMB_HoverCars_Engine_Sum_2" ID="{6FCE34B7-0D0C-4712-915D-3E7C1806AC74}" ShortID="410878844">
 															<PropertyList>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																<Property Name="Pitch" Type="int32">
-																	<ValueList>
-																		<Value>200</Value>
-																	</ValueList>
-																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -2174,13 +2164,13 @@
 																				</PropertyList>
 																				<PointList>
 																					<Point>
-																						<XPos>-1</XPos>
-																						<YPos>-2000</YPos>
+																						<XPos>-0.5</XPos>
+																						<YPos>3600</YPos>
 																						<Flags>5</Flags>
 																					</Point>
 																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>3000</YPos>
+																						<XPos>0.5</XPos>
+																						<YPos>-2400</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
