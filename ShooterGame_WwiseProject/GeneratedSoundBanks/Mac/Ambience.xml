@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{81090B82-EEE5-AA14-8E67-78CA58615DDD}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{5D75B910-64C8-B165-BB03-D506D6C2D30A}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -169,7 +169,10 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="1999698287" Name="PAR_DopplerTest" ObjectPath="\Game Parameters\Default Work Unit\PAR_DopplerTest" GUID="{0D9B0517-BBD5-43F7-B856-30943D58C338}"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5FF19403-3531-8C03-E762-9839FEE4788D}</FileHash>
+	<FileHash>{396832D0-D862-720A-2E59-06A8158E5E50}</FileHash>
 </SoundBanksInfo>

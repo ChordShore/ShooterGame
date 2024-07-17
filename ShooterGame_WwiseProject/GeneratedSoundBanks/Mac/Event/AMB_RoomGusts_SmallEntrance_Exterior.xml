@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="4134637028" Type="Event" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" Language="SFX" Hash="{E8F62CBB-2FC5-D3F4-858D-E6D00AAC8F9B}">
+		<SoundBank Id="4134637028" Type="Event" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" Language="SFX" Hash="{11718A8D-3829-2E2B-CC51-FB22BCD147EC}">
 			<ObjectPath>AMB_RoomGusts_SmallEntrance_Exterior</ObjectPath>
 			<ShortName>AMB_RoomGusts_SmallEntrance_Exterior</ShortName>
 			<Path>Event/AMB_RoomGusts_SmallEntrance_Exterior.bnk</Path>
@@ -29,7 +29,10 @@
 					</PluginRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="1999698287" Name="PAR_DopplerTest" ObjectPath="\Game Parameters\Default Work Unit\PAR_DopplerTest" GUID="{0D9B0517-BBD5-43F7-B856-30943D58C338}"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F2757B83-410E-ACE0-C023-133F0A3D8873}</FileHash>
+	<FileHash>{B882CCF5-A481-DDCC-18E2-0DBF18B2AE6A}</FileHash>
 </SoundBanksInfo>
