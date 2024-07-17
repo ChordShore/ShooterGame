@@ -544,7 +544,7 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-8</Value>
+																<Value>-11</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -647,7 +647,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-10</Value>
+																<Value>-9</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1046,7 +1046,7 @@
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-13</Value>
+																<Value>-11</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1188,7 +1188,7 @@
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-4</Value>
+																<Value>-6</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1467,8 +1467,8 @@
 														<CustomState Name="" ID="{0B5CFE02-C389-4036-823D-D52403325FE6}" ShortID="563656413">
 															<PropertyList>
 																<Property Name="Highpass" Type="int16" Value="20"/>
-																<Property Name="Lowpass" Type="int16" Value="20"/>
-																<Property Name="Volume" Type="Real64" Value="-6"/>
+																<Property Name="Lowpass" Type="int16" Value="15"/>
+																<Property Name="Volume" Type="Real64" Value="-3"/>
 															</PropertyList>
 														</CustomState>
 													</CustomState>
@@ -1495,13 +1495,13 @@
 																				<PointList>
 																					<Point>
 																						<XPos>-10000</XPos>
-																						<YPos>-3600</YPos>
+																						<YPos>-2400</YPos>
 																						<Flags>5</Flags>
 																						<SegmentShape>SCurve</SegmentShape>
 																					</Point>
 																					<Point>
 																						<XPos>10000</XPos>
-																						<YPos>3600</YPos>
+																						<YPos>2400</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -1560,7 +1560,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-6</Value>
+																<Value>-7</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1837,7 +1837,7 @@
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-1</Value>
+																<Value>-3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
