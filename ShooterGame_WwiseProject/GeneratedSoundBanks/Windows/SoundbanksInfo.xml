@@ -57,7 +57,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{5D75B910-64C8-B165-BB03-D506D6C2D30A}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{81090B82-EEE5-AA14-8E67-78CA58615DDD}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -225,9 +225,6 @@
 					</MediaRefs>
 				</Event>
 			</Events>
-			<GameParameters>
-				<GameParameter Id="1999698287" Name="PAR_DopplerTest" ObjectPath="\Game Parameters\Default Work Unit\PAR_DopplerTest" GUID="{0D9B0517-BBD5-43F7-B856-30943D58C338}"/>
-			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{3D6A2156-CDC5-136D-A6E7-49F27AF886DD}">
 			<ObjectPath>\SoundBanks\Foley\Foley</ObjectPath>
@@ -241,7 +238,7 @@
 				<Event Id="378132258" Name="FOL_Trashcan_Collision" ObjectPath="\Events\Foley\Props\FOL_Trashcan_Collision" GUID="{83AF3510-8046-4206-B4B6-E1A12D72AC55}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="636673922" Type="Event" GUID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}" Language="SFX" Hash="{A62A2D52-4D84-B9CF-9A7A-6E9770DD62E5}">
+		<SoundBank Id="636673922" Type="Event" GUID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}" Language="SFX" Hash="{BAB1059E-891A-CA48-F54B-35D2366A4A0E}">
 			<ObjectPath>AMB_RoomGusts_SmallEntrance_Interior</ObjectPath>
 			<ShortName>AMB_RoomGusts_SmallEntrance_Interior</ShortName>
 			<Path>Event/AMB_RoomGusts_SmallEntrance_Interior.bnk</Path>
@@ -269,9 +266,6 @@
 					</PluginRefs>
 				</Event>
 			</Events>
-			<GameParameters>
-				<GameParameter Id="1999698287" Name="PAR_DopplerTest" ObjectPath="\Game Parameters\Default Work Unit\PAR_DopplerTest" GUID="{0D9B0517-BBD5-43F7-B856-30943D58C338}"/>
-			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{E48FADF0-0486-D8D9-E9FA-B72A7FF6DDB5}">
 			<ObjectPath>AMB_ScifiDrones</ObjectPath>
@@ -528,7 +522,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{C6BB8F08-44A2-31D9-A4B7-BFD87B6D9092}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{ACB0F080-EAC6-CCC7-00E8-3D87F6C8EB66}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -946,7 +940,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2496008984" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{C571C1E4-C898-0CCE-8037-95D691FD1903}">
+		<SoundBank Id="2496008984" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{E277B8EE-3AD1-F73E-1665-95E391E326CC}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_7</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_7</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_7.bnk</Path>
@@ -1001,7 +995,7 @@
 				<GameParameter Id="2940353649" Name="PAR_Distance_HoverCars_PS7" ObjectPath="\Game Parameters\Default Work Unit\PAR_Distance_HoverCars_PS7" GUID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{F3F04389-C686-1EF4-0163-0FD0BB71DC88}">
+		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{88E09DB8-8014-9AA2-2DBD-BE42A3F37E24}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_5</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_5</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_5.bnk</Path>
@@ -1181,7 +1175,7 @@
 			<ShortName>Dialogue</ShortName>
 			<Path>Dialogue.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4134637028" Type="Event" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" Language="SFX" Hash="{11718A8D-3829-2E2B-CC51-FB22BCD147EC}">
+		<SoundBank Id="4134637028" Type="Event" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" Language="SFX" Hash="{E8F62CBB-2FC5-D3F4-858D-E6D00AAC8F9B}">
 			<ObjectPath>AMB_RoomGusts_SmallEntrance_Exterior</ObjectPath>
 			<ShortName>AMB_RoomGusts_SmallEntrance_Exterior</ShortName>
 			<Path>Event/AMB_RoomGusts_SmallEntrance_Exterior.bnk</Path>
@@ -1209,10 +1203,7 @@
 					</PluginRefs>
 				</Event>
 			</Events>
-			<GameParameters>
-				<GameParameter Id="1999698287" Name="PAR_DopplerTest" ObjectPath="\Game Parameters\Default Work Unit\PAR_DopplerTest" GUID="{0D9B0517-BBD5-43F7-B856-30943D58C338}"/>
-			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{CFDFC2BD-E7FB-FFE3-4A1E-0ED7FBE2C738}</FileHash>
+	<FileHash>{687E707F-4BC1-69B4-9DD6-00E4EBEFF829}</FileHash>
 </SoundBanksInfo>

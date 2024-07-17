@@ -1188,7 +1188,7 @@
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-5</Value>
+																<Value>-4</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1495,27 +1495,13 @@
 																				<PointList>
 																					<Point>
 																						<XPos>-10000</XPos>
-																						<YPos>1000</YPos>
+																						<YPos>-3600</YPos>
 																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>-9999.999</XPos>
-																						<YPos>-671</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>-7288.00313</XPos>
-																						<YPos>744</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>-19.5388799999982</XPos>
-																						<YPos>1200</YPos>
-																						<Flags>0</Flags>
+																						<SegmentShape>SCurve</SegmentShape>
 																					</Point>
 																					<Point>
 																						<XPos>10000</XPos>
-																						<YPos>-1200</YPos>
+																						<YPos>3600</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -3609,45 +3595,6 @@
 											</ChildrenList>
 										</Folder>
 									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="RTPC">
-											<Reference>
-												<Local>
-													<RTPC Name="" ID="{BDFAC93A-2147-4D07-A848-8A5099C666C0}" ShortID="294445493">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="Volume"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<ObjectRef Name="PAR_DopplerTest" ID="{0D9B0517-BBD5-43F7-B856-30943D58C338}" WorkUnitID="{45A6305D-DE92-45B5-93D4-976360EB2166}"/>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{FE05ABF0-D8EF-4C21-A89E-27CE7BD1057E}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>-1000</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>1000</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
 								</ActorMixer>
 							</ChildrenList>
 						</Folder>
