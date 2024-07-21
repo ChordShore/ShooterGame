@@ -41,7 +41,9 @@
 						<CurrentStateRef Name="STA_Outdoors_Balcony_Center" ID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
 						<CurrentStateRef Name="None" ID="{58E0E97C-6C8E-42CB-BD10-0B2B26B95058}"/>
 					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="M_Concrete" ID="{7793252A-8C3B-42B3-A5BE-5BD85E592AF5}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Wind Envelopes" ID="{AA35DB92-7EBB-464D-A276-7A0BFCCFB478}">
 					<ModuleList>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="Foley" ID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<GameParameter Name="PAR_Breaths" ID="{AD59135C-7832-4545-A14C-AA5DD622DAAC}"/>
+				<GameParameter Name="PAR_Heartbeats" ID="{1A7627A7-5A7D-470D-B1E0-2B091B679836}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
