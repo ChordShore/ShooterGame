@@ -234,7 +234,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>50</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
@@ -444,7 +444,6 @@
 																<PropertyList>
 																	<Property Name="PropertyName" Type="string" Value="Volume"/>
 																</PropertyList>
-																<ReferenceList/>
 															</RTPC>
 														</Local>
 													</Reference>
@@ -837,6 +836,11 @@
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="FOL_Footsteps" ID="{CB88C88F-FF5A-4AE7-9278-16C293DEE9B8}" ShortID="902234522">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -847,6 +851,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<SwitchContainer Name="FOL_Footsteps_Switch" ID="{5EB2F366-85BF-4294-9694-7250720C196C}" ShortID="523323634">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -864,6 +875,10 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="FOL_Footsteps_Metal_Seq" ID="{8C19BC4E-9A9A-4EDE-A247-44F23F1FCDD3}" ShortID="871622080">
 													<PropertyList>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.04"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 													</PropertyList>
 													<ReferenceList>
@@ -884,6 +899,342 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																</Reference>
 															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="FOL_Footsteps_Metal_Toe_01" ID="{6A883861-E53D-43CB-AB78-1E69B07A1F04}" ShortID="305697041">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{443C578B-9CAA-4E3B-8333-EAC253991BEF}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.342092472485814"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.372934308592945"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="696625844"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{443C578B-9CAA-4E3B-8333-EAC253991BEF}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Toe_02" ID="{560F113F-6865-4FAF-A5E7-02300087CDF2}" ShortID="808920350">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{49009906-CFF5-432F-8F77-8B36AC83DB59}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.342092472485814"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.3662471395881"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.744845063741686"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="523994097"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{49009906-CFF5-432F-8F77-8B36AC83DB59}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Toe_03" ID="{3984CEA2-BDCA-4182-B6D1-F1088D161B17}" ShortID="408918218">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{E8B81DA4-1A17-409F-B901-A6B202582EB0}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.342092472485814"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.738157894736842"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.12053156259752"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="566922794"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{E8B81DA4-1A17-409F-B901-A6B202582EB0}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Toe_04" ID="{D64BE4B5-85EF-48D7-934B-6505A499FA1F}" ShortID="158884026">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{CB29D8B9-F360-4623-AB6D-F8E1ED8007C5}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.342092472485814"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.11762013729977"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.4981059333069"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="562787734"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{CB29D8B9-F360-4623-AB6D-F8E1ED8007C5}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Toe_05" ID="{A93BF3A5-7E99-4484-A3CF-60341C219C81}" ShortID="464649934">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{A76EB00A-F78D-4148-B4C5-2F6B8FB89912}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.342092472485814"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.49141876430206"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.87001668845564"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="528639656"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{A76EB00A-F78D-4148-B4C5-2F6B8FB89912}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Toe_06" ID="{731DC90B-3006-44AD-90D8-A3877A9FA9D7}" ShortID="929550018">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{96653DD0-C533-4D6C-9CB0-197AFF4C77DE}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.342092472485814"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.87088100686499"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.24381531545793"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="793673866"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{96653DD0-C533-4D6C-9CB0-197AFF4C77DE}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Toe_07" ID="{69A733A2-8DE1-488D-B265-EA8560418C27}" ShortID="102114714">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{08D35081-FF65-48F7-8E3A-32097A6535B4}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.342092472485814"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.23901601830664"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.61950181431377"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="212849139"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{08D35081-FF65-48F7-8E3A-32097A6535B4}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Toe_08" ID="{75A34D6A-01BF-4642-8EC2-08776FBF0718}" ShortID="825141149">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{AE39CE11-508B-4DA3-8A81-7A6177C2ED6C}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.342092472485814"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.23901601830664"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.61950181431377"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="212849139"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{AE39CE11-508B-4DA3-8A81-7A6177C2ED6C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Toe_09" ID="{0AF572DA-37A4-4678-9705-4CD9700848D3}" ShortID="896897708">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{252FFA04-8545-42D4-914F-FE67934C0F4C}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.342092472485814"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.61470251716247"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.9951883131696"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="533586274"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{252FFA04-8545-42D4-914F-FE67934C0F4C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Toe_10" ID="{A2C08262-BA83-408E-8E87-81313FB4CA4D}" ShortID="1072010180">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{2A63EF97-AF8E-4D7D-9AC2-EA3543412AC4}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.342092472485814"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.99227688787185"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.37276268387899"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="939877805"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{2A63EF97-AF8E-4D7D-9AC2-EA3543412AC4}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Toe_11" ID="{353E7FF3-C2A8-4C4F-A3AC-319FBDC653ED}" ShortID="209497539">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{760EC2DE-2B0B-464C-9025-3366B4835225}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.342092472485814"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.36796338672769"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.74656131088127"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="758580086"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{760EC2DE-2B0B-464C-9025-3366B4835225}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Toe_12" ID="{F4B915D3-595C-4263-AC77-B241FB67DEA6}" ShortID="306830793">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{A4DA612F-989C-4B42-9595-705025EBEDF4}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.342092472485814"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.74176201372998"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="699277577"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Toe_Stem" ID="{A4DA612F-989C-4B42-9595-705025EBEDF4}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="FOL_Footsteps_Heel" ID="{20B79221-B39F-4F9C-AD60-A9AEAB388242}" ShortID="646858367">
 															<ReferenceList>
@@ -894,11 +1245,378 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																</Reference>
 															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="FOL_Footsteps_Metal_Heel_01" ID="{D0F52806-D769-4AE9-8ACA-6242B87A10FE}" ShortID="548922037">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{500D58BB-5AE9-4414-AB33-5BECA8819379}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.265667558419834"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.372775073558084"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="455302530"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{500D58BB-5AE9-4414-AB33-5BECA8819379}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Heel_02" ID="{6D817C15-E692-40B7-A4BC-04F3F7AEB9C1}" ShortID="359993450">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{49CBF03E-181D-473D-A58C-407F501150ED}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.265667558419834"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.383237986270022"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.744685828706825"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="124457290"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{49CBF03E-181D-473D-A58C-407F501150ED}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Heel_03" ID="{24987142-0F08-4202-9B7D-0C480E191EA4}" ShortID="474554302">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{D17AA3E2-C07D-432D-B3DF-4979A7EFB1BD}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.265667558419834"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.738157894736842"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.11848445570911"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="643174161"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{D17AA3E2-C07D-432D-B3DF-4979A7EFB1BD}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Heel_04" ID="{B36B873D-5028-46C5-A92E-834DDAA9AB55}" ShortID="843288143">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{7E21A38D-EE61-4A41-B32C-25B140BBB7D0}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.265667558419834"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.11762013729977"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.49983457012559"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="990966566"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{7E21A38D-EE61-4A41-B32C-25B140BBB7D0}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Heel_05" ID="{631B491F-E271-4374-B474-5B0F115D7E64}" ShortID="934602543">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{9D74198A-0E63-4D06-A975-06DD7787A9E3}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.265667558419834"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.49519450800915"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.87363319712788"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="941562592"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{9D74198A-0E63-4D06-A975-06DD7787A9E3}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Heel_06" ID="{4219D212-DF0E-4486-8436-0B42079B5A59}" ShortID="487309547">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{08EAF2E2-A4EA-45FE-9755-3CC041CBDCA8}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.265667558419834"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.87088100686499"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.25120756783726"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="230738203"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{08EAF2E2-A4EA-45FE-9755-3CC041CBDCA8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Heel_07" ID="{02054EBB-DB1B-4B9C-AAD8-07EC5DBEC6F9}" ShortID="317934961">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{039D5385-DCD7-4B12-8E3F-1BBEC5507CA8}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.265667558419834"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.23901601830664"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.61934257927891"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="649345269"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{039D5385-DCD7-4B12-8E3F-1BBEC5507CA8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Heel_08" ID="{712EF7B5-483F-4FC3-AB28-91B33D03705F}" ShortID="199142055">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{CA2A868E-E950-4AA7-B32D-FDAA92ACC8E2}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.265667558419834"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.61659038901602"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.99880482184184"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="659589069"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{CA2A868E-E950-4AA7-B32D-FDAA92ACC8E2}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Heel_09" ID="{E36C7AAC-50D4-46D7-A032-E631C4AEFB31}" ShortID="267781660">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{08D2CE25-FBDF-4482-A092-923CDEC3B0F9}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.265667558419834"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.9941647597254"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.37637919255122"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="203547695"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{08D2CE25-FBDF-4482-A092-923CDEC3B0F9}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Heel_10" ID="{9E9ACF57-5487-434A-914A-1FFAEE97B96E}" ShortID="502330967">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{AEB7B097-E212-41C5-868E-5835DAFA07F3}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.265667558419834"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.36985125858124"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.75206569140705"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="403413120"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{AEB7B097-E212-41C5-868E-5835DAFA07F3}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Metal_Heel_11" ID="{8FD705E1-F316-4293-A523-CF2B8872C715}" ShortID="159408901">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{DFDDD499-CCFD-4079-AABD-8373CF6CFA93}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.265667558419834"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.74553775743707"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Metal_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="814129827"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Metal_Heel_Stem" ID="{DFDDD499-CCFD-4079-AABD-8373CF6CFA93}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
 														</RandomSequenceContainer>
 													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{C5381B60-7FC6-41DA-8263-93F1222BF81B}" ShortID="874560232">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{1AA3073D-2464-4C50-800C-30D3CB581C1B}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+													<Playlist>
+														<ItemRef Name="FOL_Footsteps_Toe" ID="{36EFAE37-E7DF-4B9B-B2A9-11EDD5424E96}"/>
+														<ItemRef Name="FOL_Footsteps_Heel" ID="{20B79221-B39F-4F9C-AD60-A9AEAB388242}"/>
+													</Playlist>
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="FOL_Footsteps_Tile_Seq" ID="{E07249B8-8F89-40F0-BAD9-F18BB55AC528}" ShortID="67842615">
 													<PropertyList>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.035">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{9FAE7B61-8111-493C-B0B7-6733D408543F}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="0.005"/>
+																			<Property Name="Min" Type="Real64" Value="-0.005"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 													</PropertyList>
 													<ReferenceList>
@@ -919,6 +1637,258 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																</Reference>
 															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="FOL_Footsteps_Tile_Toe_01" ID="{AF3BFAF6-1BA3-419A-96D3-C24FAAE52B94}" ShortID="645018026">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{62D3CE84-8BDC-4784-B5D1-4BB318940B44}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.307379862700229"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.369164759725401"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="1058194484"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{62D3CE84-8BDC-4784-B5D1-4BB318940B44}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Tile_Toe_02" ID="{809D306F-106C-4097-9894-894F19AC4BC1}" ShortID="907622516">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{1FD7FFE6-A329-4693-A3AD-5DF3A3F34FD6}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.307379862700229"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.367620137299771"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.744508009153319"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="547194787"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{1FD7FFE6-A329-4693-A3AD-5DF3A3F34FD6}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Tile_Toe_03" ID="{5B4344F6-B814-4B58-91E0-7CB14B085193}" ShortID="654564626">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{82431090-2443-43C2-ABC6-4785EF951302}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.307379862700229"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.744508009153318"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.11830663615561"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="1035261983"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{82431090-2443-43C2-ABC6-4785EF951302}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Tile_Toe_04" ID="{1ED1A83E-0389-4927-938B-A6F764CB8263}" ShortID="90020963">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{864F39AD-ECC2-4173-93B9-BD9878856B0F}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.307379862700229"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.11676201372998"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.48901601830664"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="709975513"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{864F39AD-ECC2-4173-93B9-BD9878856B0F}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Tile_Toe_05" ID="{C85E2FE2-6A0A-48AA-BE8F-37DE3128601D}" ShortID="30196855">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{7A30E51B-4FF5-458F-95AD-C09FB80CC10E}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.307379862700229"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.49364988558352"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.87053775743707"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="508104013"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{7A30E51B-4FF5-458F-95AD-C09FB80CC10E}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Tile_Toe_06" ID="{5A525183-243D-4813-818E-FCCB19E696E3}" ShortID="992949573">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{5FE53FF6-4B38-4BAF-8E89-3E8DB3D8F760}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.307379862700229"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.86899313501144"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.2412471395881"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="513659890"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{5FE53FF6-4B38-4BAF-8E89-3E8DB3D8F760}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Tile_Toe_07" ID="{3E35258F-E6F8-4D65-B0E0-C74F1D507647}" ShortID="146059312">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{D8ED2879-92A8-4D15-8217-CD595F07F293}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.307379862700229"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.2412471395881"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.61967963386728"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="165817808"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{D8ED2879-92A8-4D15-8217-CD595F07F293}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Tile_Toe_08" ID="{77DA58BE-0941-417D-ABE4-021BE21FBA22}" ShortID="729182086">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{EC499ECE-2077-4A78-8012-4B441A84BA71}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.307379862700229"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.61659038901602"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.99502288329519"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="784384970"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{EC499ECE-2077-4A78-8012-4B441A84BA71}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Tile_Toe_09" ID="{841BBE8E-904A-4718-82D2-03293DC2465E}" ShortID="862195950">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{9B2A50EC-76F8-452A-985B-87DE08A08D0D}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.307379862700229"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.99193363844393"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="631254887"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Toe_Stem" ID="{9B2A50EC-76F8-452A-985B-87DE08A08D0D}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="FOL_Footsteps_Heel" ID="{AD03F3AC-519D-44A2-A9A3-F31334682054}" ShortID="129631234">
 															<ReferenceList>
@@ -929,11 +1899,310 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																</Reference>
 															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="FOL_Footsteps_Tile_Heel_01" ID="{ED7CA540-8933-4A90-8A42-C9113CF8D647}" ShortID="562356876">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{E0A97E12-0148-44FE-8AA9-1E0F93B86426}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.271160617314735"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.370709382151029"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="882900389"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{E0A97E12-0148-44FE-8AA9-1E0F93B86426}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Tile_Heel_02" ID="{FA960D74-6840-457C-A1D5-6DB947216297}" ShortID="785571955">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{16B9EB28-697B-4B26-8E4A-B9929EC77532}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.271160617314735"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.366075514874142"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.744508009153318"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="641694777"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{16B9EB28-697B-4B26-8E4A-B9929EC77532}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Tile_Heel_03" ID="{3041199A-AA67-42B7-B526-86E769CBCD16}" ShortID="329630668">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{3C055405-FDA3-4998-851C-0F265B50E283}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.271160617314735"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.742963386727689"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.11830663615561"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="480901839"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{3C055405-FDA3-4998-851C-0F265B50E283}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Tile_Heel_04" ID="{D214706B-1829-4C1B-AE73-DF8CA401CC9A}" ShortID="1038853499">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{6184E989-0C58-4BF3-88F4-31FF473E98D4}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.271160617314735"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.11985125858124"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.49828375286041"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="248450513"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{6184E989-0C58-4BF3-88F4-31FF473E98D4}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Tile_Heel_05" ID="{DD3C2A54-2219-4EA8-AA87-C9FD21A7A3A9}" ShortID="313744263">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{E9816544-118B-410F-A844-7A1435322A26}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.271160617314735"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.49519450800915"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.86744851258581"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="262993406"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{E9816544-118B-410F-A844-7A1435322A26}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Tile_Heel_06" ID="{7D292051-AC34-4FFF-BC13-FFA3FB351535}" ShortID="817545586">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{E4902377-A8E1-45EE-B500-58F934D8EF2B}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.271160617314735"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.86899313501144"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.24588100686499"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="157065925"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{E4902377-A8E1-45EE-B500-58F934D8EF2B}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Tile_Heel_07" ID="{A37EC934-3261-4C6A-AB40-70B69965F858}" ShortID="189697620">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{F3146C73-0CBD-4F2A-AB47-86397CACA56C}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.271160617314735"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.2412471395881"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.61967963386728"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="624087980"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{F3146C73-0CBD-4F2A-AB47-86397CACA56C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Tile_Heel_08" ID="{28A327E8-6C53-4ED5-9EB8-FAC57D032A6F}" ShortID="896031626">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{279918F5-4F4F-400B-824F-121162FC9D35}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.271160617314735"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.61813501144165"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.99811212814645"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="264619378"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{279918F5-4F4F-400B-824F-121162FC9D35}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Tile_Heel_09" ID="{09B18949-D725-4C15-8247-362B57E56C0F}" ShortID="215732123">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{53552D19-8904-4C20-81AB-CE6536DF4062}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.271160617314735"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.99502288329519"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Tile_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="710095410"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Tile_Heel_Stem" ID="{53552D19-8904-4C20-81AB-CE6536DF4062}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
 														</RandomSequenceContainer>
 													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{FC9020B3-086E-4C84-B80A-D0D88B2DFA00}" ShortID="728008883">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{903D2C84-985F-4FC3-87DA-81583E156B58}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+													<Playlist>
+														<ItemRef Name="FOL_Footsteps_Toe" ID="{DA8A4659-C4F2-4416-8E69-3436ED25940B}"/>
+														<ItemRef Name="FOL_Footsteps_Heel" ID="{AD03F3AC-519D-44A2-A9A3-F31334682054}"/>
+													</Playlist>
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="FOL_Footsteps_Glass_Seq" ID="{278A63FC-4080-4CBB-82B9-4765390B9C6C}" ShortID="181646874">
 													<PropertyList>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.05"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 													</PropertyList>
 													<ReferenceList>
@@ -954,6 +2223,351 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																</Reference>
 															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="FOL_Footsteps_Glass_Toe_01" ID="{F3E1304F-1759-4DCA-A459-C48DF3836697}" ShortID="787082725">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{89A8C388-7A9F-4EAB-8866-7E2014D97D98}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.370709382151029"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.370709382151029"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="323679892"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{89A8C388-7A9F-4EAB-8866-7E2014D97D98}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Toe_02" ID="{9C7AFBD2-6FA3-41AD-AD32-8EE0811D7C5B}" ShortID="114945513">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{96AD0E8E-E9E5-4EF1-AD68-8C21B1FF1C6C}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.368901678318781"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.37663607911829"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.745537757437071"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="704421516"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{96AD0E8E-E9E5-4EF1-AD68-8C21B1FF1C6C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Toe_03" ID="{778465F6-FC86-475D-A332-394D8B13411E}" ShortID="29119989">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{A9700E82-880F-4703-A008-527C454F3FAC}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.370709382151029"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.749374205472215"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.12242562929062"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="955236200"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{A9700E82-880F-4703-A008-527C454F3FAC}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Toe_04" ID="{9B7B3F97-5601-4246-96D4-3FEDE2C46916}" ShortID="607421821">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{4487CDE0-7D84-4065-99D5-AF8B55602DCC}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.000487713920712451"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.367309080842376"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.12810726945099"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.49725400457666"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="206215426"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{4487CDE0-7D84-4065-99D5-AF8B55602DCC}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Toe_05" ID="{93343505-8C05-4061-99D1-669542474A40}" ShortID="392866531">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{7E2B78CC-5910-42F4-A9E0-54C3E8AFDA26}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.000487713920712451"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.367309080842376"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.5023493852407"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.87553477273198"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="811948149"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{7E2B78CC-5910-42F4-A9E0-54C3E8AFDA26}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Toe_06" ID="{22BB12F5-7334-41D6-9266-6B6A953463C0}" ShortID="953115949">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{D2CE2CB5-AC9E-409D-ACA8-9F623F04EA48}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.000487713920712451"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.367309080842376"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.87587132916483"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.25108468179478"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="624706860"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{D2CE2CB5-AC9E-409D-ACA8-9F623F04EA48}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Toe_07" ID="{5DE03F28-A8DF-4907-BE04-ABB496496AE0}" ShortID="931588006">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{FC337F88-9B7C-47B5-A7A9-8D690D2904AE}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.000487713920712451"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.36568990371306"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.25198516709774"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.6176750708108"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="886122471"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{FC337F88-9B7C-47B5-A7A9-8D690D2904AE}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Toe_08" ID="{F4AF4A26-1478-410E-9799-DC93F5FE609B}" ShortID="209918394">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{5B334FA2-83CE-437A-B9A1-B2D6553F7A84}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.000487713920712451"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.36568990371306"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.62550711102187"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.99456294266435"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="836381902"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{5B334FA2-83CE-437A-B9A1-B2D6553F7A84}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Toe_09" ID="{625E8ABE-B4EA-431B-A0E3-4A6FEC6069D0}" ShortID="138929922">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{58F519CC-D9EF-41C1-A91A-EED2469E0583}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.000487713920712451"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.36568990371306"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.00146299469143"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.36939131795039"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="983346073"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{58F519CC-D9EF-41C1-A91A-EED2469E0583}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Toe_10" ID="{D708F1EF-DC7F-4532-920B-E54D838F9CBB}" ShortID="9343611">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{A0032385-EA1F-4D72-B94F-3DADC5B4B7EC}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.000487713920712451"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.36568990371306"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.37562294753459"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.74923789213045"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="662443204"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{A0032385-EA1F-4D72-B94F-3DADC5B4B7EC}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Toe_11" ID="{5088F9CF-517D-4CD1-97E6-42BA7E484F7A}" ShortID="860834477">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{DAA0DD23-C556-485E-96B5-01FCE3EB8295}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.000487713920712451"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.36568990371306"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.74857842085268"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="4.12757278978894"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="634104523"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{DAA0DD23-C556-485E-96B5-01FCE3EB8295}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Toe_12" ID="{C6089ED6-E4D9-4653-9F68-247A04D76F50}" ShortID="852725230">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{51B0348D-AAB5-4D2F-8CBE-88CABC14647F}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.000487713920712451"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.36568990371306"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="4.1271393610424"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="797238419"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Toe_Stem" ID="{51B0348D-AAB5-4D2F-8CBE-88CABC14647F}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="FOL_Footsteps_Heel" ID="{92BF8A7C-12B2-4F83-962F-A06E77C41099}" ShortID="580406216">
 															<ReferenceList>
@@ -964,11 +2578,402 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																</Reference>
 															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="FOL_Footsteps_Glass_Heel_01" ID="{9D7F0077-E78D-451C-BF88-0706B39A91FA}" ShortID="711775842">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{31DE8205-D1A6-495C-9407-FE3096E9248A}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.37070938215103"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.37070938215103"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="150408898"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{31DE8205-D1A6-495C-9407-FE3096E9248A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Heel_02" ID="{FF5F444F-2B43-46D0-B864-2A6D2D448DCD}" ShortID="129452370">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{7CCCDFCB-9AEE-4FD8-8858-51B6897ED72A}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.37070938215103"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.372704382141296"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.747597254004577"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="901655009"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{7CCCDFCB-9AEE-4FD8-8858-51B6897ED72A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Heel_03" ID="{9632F475-6D9A-487E-9436-FEA445FCF89A}" ShortID="366923292">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{AAB0EED1-E265-4798-B970-65E2493B4E7D}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.369846874755188"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.754638251102936"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.12448512585812"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="871843932"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{AAB0EED1-E265-4798-B970-65E2493B4E7D}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Heel_04" ID="{D00E96D8-BD18-4858-A16A-DA769D8D4FC5}" ShortID="977854807">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{43D76757-6D0B-46AF-8890-EA0B63775EC4}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.366373250489153"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.13294025065501"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.49931350114417"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="233703757"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{43D76757-6D0B-46AF-8890-EA0B63775EC4}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Heel_05" ID="{F7108C4C-8C87-485A-A4EF-C8B4B9A2CB70}" ShortID="470117168">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{E37D0643-C635-4A9F-BCD7-B35159A93855}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.000202609495364214"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.348655335454"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.50310707218249"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.86796338672769"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="279553413"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{E37D0643-C635-4A9F-BCD7-B35159A93855}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Heel_06" ID="{8AFA893F-DE0E-4B65-9298-45078AFA93D7}" ShortID="260873002">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{93644AAA-33DD-4651-B799-CFDA591F749C}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.000202609495364214"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.348655335454"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.87403610340248"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.24485125858124"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="627054910"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{93644AAA-33DD-4651-B799-CFDA591F749C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Heel_07" ID="{05482CB5-5EFC-4502-9E3B-9631EC8B69FA}" ShortID="316276322">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{5B60CAAD-8740-4FF9-92E4-A1821B112847}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.000202609495364214"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.348655335454"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.25102548384953"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.61967963386728"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="638089289"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{5B60CAAD-8740-4FF9-92E4-A1821B112847}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Heel_08" ID="{B058A41C-E6ED-4B3F-9782-D63158D726B2}" ShortID="301161515">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{75EC073C-9F97-476F-B203-40DB06B1799F}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.000202609495364214"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.348655335454"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.62834663984162"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.99450800915332"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="680424709"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{75EC073C-9F97-476F-B203-40DB06B1799F}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Heel_09" ID="{D5086080-12B4-4DE9-9493-F249BEBED48A}" ShortID="203600841">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{34CA5A90-DCB9-4AAF-95DB-8CC22A6B3B8A}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.000202609495364214"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.348655335454"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.99843754551116"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.36933638443936"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="406868696"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{34CA5A90-DCB9-4AAF-95DB-8CC22A6B3B8A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Heel_10" ID="{583A7C2B-D8D1-4079-B6ED-30E1BFFEC410}" ShortID="1070181396">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{8FACC46F-A6D6-4FC8-B7E0-39168EEDDE14}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.000202609495364214"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.348655335454"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.37225874985617"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.7441647597254"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="90301459"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{8FACC46F-A6D6-4FC8-B7E0-39168EEDDE14}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Heel_11" ID="{37F57446-EEBC-4491-BF6A-2936808D0857}" ShortID="673796007">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{B3B97B4A-DF4F-4215-B661-9DBB4C061F1A}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.000202609495364214"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.348655335454"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.74956890118684"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="4.12481981896738"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="706757508"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{B3B97B4A-DF4F-4215-B661-9DBB4C061F1A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Glass_Heel_12" ID="{6E616824-A381-41B0-9371-B7ECDC7C053E}" ShortID="543468793">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{094B242C-A12E-413E-B7C2-0D211D7EFD47}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.000202609495364214"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.348655335454"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="4.12715941006037"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Glass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="587247305"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Glass_Heel_Stem" ID="{094B242C-A12E-413E-B7C2-0D211D7EFD47}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
 														</RandomSequenceContainer>
 													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{39EEF3B8-0A03-4D93-B402-1F45B82F3E7D}" ShortID="478630750">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{F7E56558-E859-47E4-A027-A4303B75CD47}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+													<Playlist>
+														<ItemRef Name="FOL_Footsteps_Toe" ID="{FEF39951-69FF-4DE7-B282-0ADC6DA1B3BC}"/>
+														<ItemRef Name="FOL_Footsteps_Heel" ID="{92BF8A7C-12B2-4F83-962F-A06E77C41099}"/>
+													</Playlist>
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="FOL_Footsteps_Grass_Seq" ID="{5B92D7E7-141F-4D60-AE5F-B0210DAC1825}" ShortID="861243192">
 													<PropertyList>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.04"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 													</PropertyList>
 													<ReferenceList>
@@ -989,8 +2994,295 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																</Reference>
 															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="FOL_Footsteps_Grass_Toe_01" ID="{C43FBE38-AEEE-4F75-A3E7-D89D0A83498C}" ShortID="17228716">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{49836858-CE78-4B1A-8FF7-CA97CFCDFB86}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.372425629290617"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.372425629290617"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="728012673"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{49836858-CE78-4B1A-8FF7-CA97CFCDFB86}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Toe_02" ID="{7DB0D3A9-5738-4AEE-A0FF-71E3137AC507}" ShortID="198096595">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{3C50B33F-2CFD-45C0-B65C-C501D0305F35}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.371749564370094"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.373101694211141"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.744851258581235"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="926981783"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{3C50B33F-2CFD-45C0-B65C-C501D0305F35}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Toe_03" ID="{39FD907A-BC0F-4944-B422-6DC8F6851366}" ShortID="602438306">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{FE57D5FB-CAD5-4535-AA9A-DFC8F8798DF0}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.372425629290617"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.750816886539199"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.12585812356979"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="905178655"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{FE57D5FB-CAD5-4535-AA9A-DFC8F8798DF0}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Toe_04" ID="{978794CD-BF97-4801-A28B-B49995BDED27}" ShortID="403022362">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{BC7C492C-D1AB-4952-B244-EFF61180D4EA}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.372425629290617"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.12152626869023"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.49656750572082"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="133830587"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{BC7C492C-D1AB-4952-B244-EFF61180D4EA}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Toe_05" ID="{F66BCC76-2811-42B0-8E0E-A4C2388D7B26}" ShortID="96867572">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{B22376B9-DFD6-4EA9-A438-B9C77E1786BB}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.372425629290617"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.49566814512044"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.87070938215103"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="327806807"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{B22376B9-DFD6-4EA9-A438-B9C77E1786BB}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Toe_06" ID="{008286D1-E048-49AE-B098-44B905022241}" ShortID="826178939">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{4AE54B54-9777-4ABA-902B-EC6E2536E5E1}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.372425629290617"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.87324251582982"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.25"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="229520958"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{4AE54B54-9777-4ABA-902B-EC6E2536E5E1}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Toe_07" ID="{88470C00-E2A0-4060-87FD-44EB0A5BCD2A}" ShortID="575543585">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{93BE60A6-3515-4899-BAF6-7C62551D2B5C}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.372425629290617"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.24738439226002"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.6241418764302"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="259023430"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{93BE60A6-3515-4899-BAF6-7C62551D2B5C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Toe_08" ID="{5188DE52-5212-41DF-AC54-944BD08249B4}" ShortID="470846895">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{4639E31C-88DF-4B98-8AF4-430AE29A9FCE}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.372425629290617"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.62324251582982"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="635757014"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{4639E31C-88DF-4B98-8AF4-430AE29A9FCE}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Toe_09" ID="{48021EB5-CE04-4BE1-AB41-6686C5FD0F10}" ShortID="646145753">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{9243CD67-CC26-4E96-BF72-FCD41D6552B1}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.372425629290617"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.99738439226002"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.3741418764302"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="367381090"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{9243CD67-CC26-4E96-BF72-FCD41D6552B1}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Toe_10" ID="{12CE582B-2200-46FE-AE44-584E7B4523E5}" ShortID="297081314">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{EC4CC96E-5F3A-4091-A38C-AC399F5BB667}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.372425629290617"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.37152626869023"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Toe_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="252550112"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Toe_Stem" ID="{EC4CC96E-5F3A-4091-A38C-AC399F5BB667}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="FOL_Footsteps_Heel" ID="{AE42FFCA-C08A-4067-963F-B68642F0E249}" ShortID="78339643">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16">
+																	<ValueList>
+																		<Value>15</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -999,8 +3291,331 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																</Reference>
 															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="FOL_Footsteps_Grass_Heel_01" ID="{C78F9565-1605-4A2B-820F-210FD9026ABF}" ShortID="922751351">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{3E499EF8-7E4B-49BC-B321-A351B92178D9}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.370709382151029"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.370709382151029"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="474151386"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{3E499EF8-7E4B-49BC-B321-A351B92178D9}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Heel_02" ID="{D3F7592E-D6A5-4E72-84F8-E272FFB45824}" ShortID="77830878">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{D1FDD315-CC84-4E1C-B328-BB684D0B1DA9}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.370709382151029"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.365560640732266"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.746567505720823"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="713378661"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{D1FDD315-CC84-4E1C-B328-BB684D0B1DA9}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Heel_03" ID="{E02404A6-4C7B-47A0-A466-65143D4DBC4E}" ShortID="264799647">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{63AEF57A-A1D0-4685-B58E-E40AE1EF377D}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.370709382151029"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.748106368073284"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.12070938215103"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="815122724"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{63AEF57A-A1D0-4685-B58E-E40AE1EF377D}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Heel_04" ID="{A0DE7204-2F91-40E3-8D74-CDEFBDF871A4}" ShortID="544633126">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{22496C26-1665-4893-B6E9-F6695B1DEC6D}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.370709382151029"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.11709950308473"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.49485125858123"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="186192136"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{22496C26-1665-4893-B6E9-F6695B1DEC6D}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Heel_05" ID="{77F033C9-FE8C-414F-A490-E2E88F700814}" ShortID="615393701">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{0BF9FB17-4EF7-4367-A76C-F82097C4B28E}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.370709382151029"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.49870929549201"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.87070938215103"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="922113776"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{0BF9FB17-4EF7-4367-A76C-F82097C4B28E}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Heel_06" ID="{AB3BB948-8688-43CE-AA21-1ACE3EED25FB}" ShortID="825132774">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{76F4A3B0-0D86-41F3-8A9A-C6D8FFF79262}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.370709382151029"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.86598618336386"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.24485125858123"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="117849200"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{76F4A3B0-0D86-41F3-8A9A-C6D8FFF79262}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Heel_07" ID="{F7641EFF-3A27-4CF8-9E48-FFC6E622E2BE}" ShortID="444260383">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{886D5B18-E8C0-48E4-AF52-452E7A411744}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.370709382151029"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.24184430693366"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.62070938215103"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="725887440"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{886D5B18-E8C0-48E4-AF52-452E7A411744}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Heel_08" ID="{B27564BA-472F-4F5E-BF54-57D0D9934343}" ShortID="672649767">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{5AEC723A-5E64-4F18-AE73-298BB9E9EA5A}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.370709382151029"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.61598618336386"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.99485125858123"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="877807197"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{5AEC723A-5E64-4F18-AE73-298BB9E9EA5A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Heel_09" ID="{F948ED62-D99F-4CF0-A8C7-A53768CB695B}" ShortID="676408498">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{4AF46551-CC8C-40B4-A226-510AC2A3EB85}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.370709382151029"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.99184430693366"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.36899313501144"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="966435357"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{4AF46551-CC8C-40B4-A226-510AC2A3EB85}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="FOL_Footsteps_Grass_Heel_10" ID="{663AAEDD-AD30-4B9B-ACEC-50125EBC7FC2}" ShortID="956171413">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{C73C1B2B-2E21-4ABC-A8CF-C0D31A44C33D}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.370709382151029"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.36598618336386"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>FOL_Footsteps_Grass_Heel_Stem.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="379953163"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="FOL_Footsteps_Grass_Heel_Stem" ID="{C73C1B2B-2E21-4ABC-A8CF-C0D31A44C33D}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
 														</RandomSequenceContainer>
 													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{8F0EC50F-2A7E-4890-89E1-96633EB3E0C1}" ShortID="1000209256">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{C4856491-B643-496A-BAE0-FECEC5435D91}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+													<Playlist>
+														<ItemRef Name="FOL_Footsteps_Toe" ID="{45FA0B67-F128-4CE1-9420-E0F0D6211BF0}"/>
+														<ItemRef Name="FOL_Footsteps_Heel" ID="{AE42FFCA-C08A-4067-963F-B68642F0E249}"/>
+													</Playlist>
 												</RandomSequenceContainer>
 											</ChildrenList>
 											<GroupingInfo>
@@ -1047,6 +3662,40 @@
 											</GroupingInfo>
 										</SwitchContainer>
 									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{38CE7A50-6C2F-470B-A136-C0FC671D9210}">
+											<ChildrenList>
+												<Path2D Name="FOL_Footsteps_Path_Left" ID="{A59384EE-FDAD-4884-B9C7-0D4E82A0EBEC}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="2"/>
+														<Property Name="RandomY" Type="Real64" Value="2"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-6</XPos>
+															<YPos>35</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="FOL_Footsteps_Path_Right" ID="{673D24C3-F0AE-44DD-95C0-DF0EC0A37C38}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="2"/>
+														<Property Name="RandomY" Type="Real64" Value="2"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>6</XPos>
+															<YPos>35</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
 								</ActorMixer>
 								<ActorMixer Name="FOL_Windrush" ID="{FD4295C9-0560-4216-A05B-F18AB5030FAC}" ShortID="853160150">
 									<ReferenceList>
@@ -1108,6 +3757,28 @@
 											</Reference>
 										</ObjectList>
 									</ObjectLists>
+								</ActorMixer>
+								<ActorMixer Name="FOL_Armor" ID="{62F8AE5D-75FA-423F-BEF8-979974688BC4}" ShortID="311480243">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="FOL_Armor" ID="{4025FEB5-F684-4665-BB3C-9616B9DF2B2F}" ShortID="629001226">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+										</RandomSequenceContainer>
+									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>
 						</Folder>
