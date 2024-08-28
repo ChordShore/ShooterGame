@@ -12,7 +12,32 @@
 						<Event Name="FOL_Land" ID="{9C0F3AE6-505C-4DC2-80DF-1A0F23DFE402}"/>
 						<Event Name="FOL_Bodyfall" ID="{8C389BC0-A8E4-4172-B60A-4329D5567561}"/>
 						<Event Name="FOL_Jump" ID="{54BD1D82-A9B7-48F0-B383-0DB48BD03160}"/>
-						<Event Name="FOL_Footstep" ID="{C7AF60A9-905E-4C25-94DB-228933B96D51}"/>
+						<Folder Name="FOL_Footsteps" ID="{F82F027B-5648-4623-BCD5-C629D4A4B56C}" ShortID="295278912">
+							<ChildrenList>
+								<Event Name="FOL_Footstep_R" ID="{C7AF60A9-905E-4C25-94DB-228933B96D51}">
+									<ChildrenList>
+										<Action Name="" ID="{F832211C-E430-48A5-A6DA-372D0F7E1C24}" ShortID="1065660901">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="FOL_Footsteps_Switch_R" ID="{33F3D81D-641A-47F4-BB5E-84BD24F5AFDD}" WorkUnitID="{86FE2FEF-52C2-4237-A56E-8F523A5859D5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="FOL_Footstep_L" ID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}">
+									<ChildrenList>
+										<Action Name="" ID="{39504E85-0984-493E-82EB-884CF76F4576}" ShortID="63945063">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="FOL_Footsteps_Switch_L" ID="{5EB2F366-85BF-4294-9694-7250720C196C}" WorkUnitID="{86FE2FEF-52C2-4237-A56E-8F523A5859D5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Props" ID="{9C6C28EC-B810-4AC6-833B-CC1E85297900}" ShortID="715449244">
