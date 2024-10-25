@@ -94,6 +94,11 @@
 								</Bus>
 								<Bus Name="Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}">
 									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Color" Type="int16" Value="4"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>

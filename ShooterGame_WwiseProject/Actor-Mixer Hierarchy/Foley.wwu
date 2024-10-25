@@ -2961,6 +2961,11 @@
 														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.04"/>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -3640,6 +3645,18 @@
 													</GroupingBehavior>
 												</GroupingBehaviorList>
 												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="M_Dirt" ID="{02773C27-1839-4638-A2AF-91E103D925E3}"/>
+														<ItemList>
+															<ItemRef Name="FOL_Footsteps_Grass_Seq" ID="{5B92D7E7-141F-4D60-AE5F-B0210DAC1825}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="M_Concrete" ID="{7793252A-8C3B-42B3-A5BE-5BD85E592AF5}"/>
+														<ItemList>
+															<ItemRef Name="FOL_Footsteps_Tile_Seq" ID="{E07249B8-8F89-40F0-BAD9-F18BB55AC528}"/>
+														</ItemList>
+													</Grouping>
 													<Grouping>
 														<SwitchRef Name="M_Tile" ID="{B4FDF75B-8B11-4F10-9CA5-B65DC3769474}"/>
 														<ItemList>
@@ -6457,6 +6474,18 @@
 													</GroupingBehavior>
 												</GroupingBehaviorList>
 												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="M_Dirt" ID="{02773C27-1839-4638-A2AF-91E103D925E3}"/>
+														<ItemList>
+															<ItemRef Name="FOL_Footsteps_Grass_Seq" ID="{E9C8B34E-9302-4104-8514-86FBA91D7C73}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="M_Concrete" ID="{7793252A-8C3B-42B3-A5BE-5BD85E592AF5}"/>
+														<ItemList>
+															<ItemRef Name="FOL_Footsteps_Tile_Seq" ID="{EE3D8BCF-CA84-46B9-B380-186EE5C4D8AA}"/>
+														</ItemList>
+													</Grouping>
 													<Grouping>
 														<SwitchRef Name="M_Tile" ID="{B4FDF75B-8B11-4F10-9CA5-B65DC3769474}"/>
 														<ItemList>
