@@ -11,7 +11,12 @@
 				<GameParameter Name="PAR_Heartbeats" ID="{1A7627A7-5A7D-470D-B1E0-2B091B679836}"/>
 				<GameParameter Name="PAR_Velocity_Vertical" ID="{847E4FAC-FEC0-42D9-8F95-EB060A41AE44}"/>
 				<GameParameter Name="PAR_Velocity_Rotational" ID="{122AD508-BFE4-4689-9B19-CEE8F8B7A09D}"/>
-				<GameParameter Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}"/>
+				<GameParameter Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="750"/>
+						<Property Name="Max" Type="Real64" Value="1500"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

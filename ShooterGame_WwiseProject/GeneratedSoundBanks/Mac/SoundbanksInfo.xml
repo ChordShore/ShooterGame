@@ -226,7 +226,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{1EE65EAD-F4F6-DEB2-4B51-75EC6C6386C4}">
+		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{9F2A45F4-AF43-B22B-544B-59BF44FB4375}">
 			<ObjectPath>\SoundBanks\Foley\Foley</ObjectPath>
 			<ShortName>Foley</ShortName>
 			<Path>Foley.bnk</Path>
@@ -570,7 +570,7 @@
 			</Media>
 			<Events>
 				<Event Id="1891391704" Name="FOL_Bodyfall" ObjectPath="\Events\Foley\Players\FOL_Bodyfall" GUID="{8C389BC0-A8E4-4172-B60A-4329D5567561}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2395369630" Name="FOL_Footstep_R" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_R" GUID="{C7AF60A9-905E-4C25-94DB-228933B96D51}" DurationType="OneShot" DurationMin="0.4007094" DurationMax="0.43512586">
+				<Event Id="2395369630" Name="FOL_Footstep_R" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_R" GUID="{C7AF60A9-905E-4C25-94DB-228933B96D51}" DurationType="OneShot" DurationMin="0.38264266" DurationMax="0.45574933">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="1488713918" GUID="{02773C27-1839-4638-A2AF-91E103D925E3}"/>
@@ -1034,7 +1034,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{E06E519E-8BE5-E64C-D2A6-2DAC6AE5807B}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{80581F8C-B531-5C86-E9DB-1F4F84A6BFD8}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -1455,7 +1455,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{FF540F7E-875F-4825-CF3C-D97CF078C8B8}">
+		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{1B0F899A-3794-AB4C-6524-A59B05DF5720}">
 			<ObjectPath>FOL_Footstep_L</ObjectPath>
 			<ShortName>FOL_Footstep_L</ShortName>
 			<Path>Event/FOL_Footstep_L.bnk</Path>
@@ -1882,7 +1882,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2395369600" Name="FOL_Footstep_L" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_L" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" DurationType="OneShot" DurationMin="0.4007094" DurationMax="0.43512586">
+				<Event Id="2395369600" Name="FOL_Footstep_L" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_L" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" DurationType="OneShot" DurationMin="0.38264266" DurationMax="0.45574933">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="1488713918" GUID="{02773C27-1839-4638-A2AF-91E103D925E3}"/>
@@ -2324,5 +2324,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3020D6D4-8248-66D8-E6D9-73AFDA951A6B}</FileHash>
+	<FileHash>{F9828708-44D5-6914-1115-B43B9C8D7713}</FileHash>
 </SoundBanksInfo>

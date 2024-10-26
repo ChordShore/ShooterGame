@@ -878,11 +878,26 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="FOL_Footsteps_Metal_Seq" ID="{8C19BC4E-9A9A-4EDE-A247-44F23F1FCDD3}" ShortID="871622080">
 													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>20</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-300</Value>
+															</ValueList>
+														</Property>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.04"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -1240,6 +1255,10 @@
 															</ChildrenList>
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="FOL_Footsteps_Heel" ID="{20B79221-B39F-4F9C-AD60-A9AEAB388242}" ShortID="646858367">
+															<PropertyList>
+																<Property Name="3DPosition" Type="int16" Value="1"/>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -1556,62 +1575,90 @@
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{84D3B274-DEBB-40AF-B891-5A963CC78A17}">
+																	<ChildrenList>
+																		<Path2D Name="FOL_Footsteps_Path_Left" ID="{C6F72C66-48FB-4DA0-992F-9189BFF6823E}">
+																			<PropertyList>
+																				<Property Name="RandomX" Type="Real64" Value="2"/>
+																				<Property Name="RandomY" Type="Real64" Value="2"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>-6</XPos>
+																					<YPos>35</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																	</ChildrenList>
+																</Position>
+															</PositioningInfo>
+															<ObjectLists>
+																<ObjectList Name="RTPC">
+																	<Reference>
+																		<Local>
+																			<RTPC Name="" ID="{0DC83796-3D92-4E62-B390-2695D56B6F47}" ShortID="868006749">
+																				<PropertyList>
+																					<Property Name="PropertyName" Type="string" Value="InitialDelay"/>
+																				</PropertyList>
+																				<ReferenceList>
+																					<Reference Name="ControlInput">
+																						<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
+																					</Reference>
+																					<Reference Name="Curve">
+																						<Custom>
+																							<Curve Name="" ID="{E2624A59-2C08-4DED-AEB2-BE830FF5BAEB}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0.07</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>1500</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</Custom>
+																					</Reference>
+																				</ReferenceList>
+																			</RTPC>
+																		</Local>
+																	</Reference>
+																</ObjectList>
+															</ObjectLists>
 														</RandomSequenceContainer>
 													</ChildrenList>
-													<ObjectLists>
-														<ObjectList Name="RTPC">
-															<Reference>
-																<Local>
-																	<RTPC Name="" ID="{C5381B60-7FC6-41DA-8263-93F1222BF81B}" ShortID="874560232">
-																		<PropertyList>
-																			<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
-																		</PropertyList>
-																		<ReferenceList>
-																			<Reference Name="ControlInput">
-																				<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
-																			</Reference>
-																			<Reference Name="Curve">
-																				<Custom>
-																					<Curve Name="" ID="{1AA3073D-2464-4C50-800C-30D3CB581C1B}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="1"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>0</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>100</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</Custom>
-																			</Reference>
-																		</ReferenceList>
-																	</RTPC>
-																</Local>
-															</Reference>
-														</ObjectList>
-													</ObjectLists>
 													<Playlist>
 														<ItemRef Name="FOL_Footsteps_Toe" ID="{36EFAE37-E7DF-4B9B-B2A9-11EDD5424E96}"/>
-														<ItemRef Name="FOL_Footsteps_Heel" ID="{20B79221-B39F-4F9C-AD60-A9AEAB388242}"/>
 													</Playlist>
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="FOL_Footsteps_Tile_Seq" ID="{E07249B8-8F89-40F0-BAD9-F18BB55AC528}" ShortID="67842615">
 													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>20</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-200</Value>
+															</ValueList>
+														</Property>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.035">
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0">
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{9FAE7B61-8111-493C-B0B7-6733D408543F}">
 																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
 																			<Property Name="Max" Type="Real64" Value="0.005"/>
 																			<Property Name="Min" Type="Real64" Value="-0.005"/>
 																		</PropertyList>
@@ -2154,47 +2201,47 @@
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
+															<ObjectLists>
+																<ObjectList Name="RTPC">
+																	<Reference>
+																		<Local>
+																			<RTPC Name="" ID="{AEE6B574-5B99-49F6-B8EC-B90AC7857B83}" ShortID="486388821">
+																				<PropertyList>
+																					<Property Name="PropertyName" Type="string" Value="InitialDelay"/>
+																				</PropertyList>
+																				<ReferenceList>
+																					<Reference Name="ControlInput">
+																						<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
+																					</Reference>
+																					<Reference Name="Curve">
+																						<Custom>
+																							<Curve Name="" ID="{50BDBE6F-26FC-4F33-924E-FA4ECF1A148D}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0.07</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>1500</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</Custom>
+																					</Reference>
+																				</ReferenceList>
+																			</RTPC>
+																		</Local>
+																	</Reference>
+																</ObjectList>
+															</ObjectLists>
 														</RandomSequenceContainer>
 													</ChildrenList>
-													<ObjectLists>
-														<ObjectList Name="RTPC">
-															<Reference>
-																<Local>
-																	<RTPC Name="" ID="{FC9020B3-086E-4C84-B80A-D0D88B2DFA00}" ShortID="728008883">
-																		<PropertyList>
-																			<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
-																		</PropertyList>
-																		<ReferenceList>
-																			<Reference Name="ControlInput">
-																				<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
-																			</Reference>
-																			<Reference Name="Curve">
-																				<Custom>
-																					<Curve Name="" ID="{903D2C84-985F-4FC3-87DA-81583E156B58}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="1"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>0</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>100</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</Custom>
-																			</Reference>
-																		</ReferenceList>
-																	</RTPC>
-																</Local>
-															</Reference>
-														</ObjectList>
-													</ObjectLists>
 													<Playlist>
 														<ItemRef Name="FOL_Footsteps_Toe" ID="{DA8A4659-C4F2-4416-8E69-3436ED25940B}"/>
 														<ItemRef Name="FOL_Footsteps_Heel" ID="{AD03F3AC-519D-44A2-A9A3-F31334682054}"/>
@@ -2202,11 +2249,21 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="FOL_Footsteps_Glass_Seq" ID="{278A63FC-4080-4CBB-82B9-4765390B9C6C}" ShortID="181646874">
 													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-100</Value>
+															</ValueList>
+														</Property>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.05"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -2908,47 +2965,47 @@
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
+															<ObjectLists>
+																<ObjectList Name="RTPC">
+																	<Reference>
+																		<Local>
+																			<RTPC Name="" ID="{B0297253-85B3-4DDB-BD08-CE1992A7429C}" ShortID="6757990">
+																				<PropertyList>
+																					<Property Name="PropertyName" Type="string" Value="InitialDelay"/>
+																				</PropertyList>
+																				<ReferenceList>
+																					<Reference Name="ControlInput">
+																						<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
+																					</Reference>
+																					<Reference Name="Curve">
+																						<Custom>
+																							<Curve Name="" ID="{8BBFB135-9BE3-42C7-BEEF-9AAC7E4D185A}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0.07</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>1500</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</Custom>
+																					</Reference>
+																				</ReferenceList>
+																			</RTPC>
+																		</Local>
+																	</Reference>
+																</ObjectList>
+															</ObjectLists>
 														</RandomSequenceContainer>
 													</ChildrenList>
-													<ObjectLists>
-														<ObjectList Name="RTPC">
-															<Reference>
-																<Local>
-																	<RTPC Name="" ID="{39EEF3B8-0A03-4D93-B402-1F45B82F3E7D}" ShortID="478630750">
-																		<PropertyList>
-																			<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
-																		</PropertyList>
-																		<ReferenceList>
-																			<Reference Name="ControlInput">
-																				<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
-																			</Reference>
-																			<Reference Name="Curve">
-																				<Custom>
-																					<Curve Name="" ID="{F7E56558-E859-47E4-A027-A4303B75CD47}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="1"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>0</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>100</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</Custom>
-																			</Reference>
-																		</ReferenceList>
-																	</RTPC>
-																</Local>
-															</Reference>
-														</ObjectList>
-													</ObjectLists>
 													<Playlist>
 														<ItemRef Name="FOL_Footsteps_Toe" ID="{FEF39951-69FF-4DE7-B282-0ADC6DA1B3BC}"/>
 														<ItemRef Name="FOL_Footsteps_Heel" ID="{92BF8A7C-12B2-4F83-962F-A06E77C41099}"/>
@@ -2956,14 +3013,19 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="FOL_Footsteps_Grass_Seq" ID="{5B92D7E7-141F-4D60-AE5F-B0210DAC1825}" ShortID="861243192">
 													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-50</Value>
+															</ValueList>
+														</Property>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.04"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-6</Value>
+																<Value>-12</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -3562,47 +3624,47 @@
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
+															<ObjectLists>
+																<ObjectList Name="RTPC">
+																	<Reference>
+																		<Local>
+																			<RTPC Name="" ID="{56CBA087-38A7-46E7-847D-187384D3408B}" ShortID="32415207">
+																				<PropertyList>
+																					<Property Name="PropertyName" Type="string" Value="InitialDelay"/>
+																				</PropertyList>
+																				<ReferenceList>
+																					<Reference Name="ControlInput">
+																						<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
+																					</Reference>
+																					<Reference Name="Curve">
+																						<Custom>
+																							<Curve Name="" ID="{650931E7-9C02-4DB7-A48D-1FE9AEDFAAA7}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0.07</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>1500</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</Custom>
+																					</Reference>
+																				</ReferenceList>
+																			</RTPC>
+																		</Local>
+																	</Reference>
+																</ObjectList>
+															</ObjectLists>
 														</RandomSequenceContainer>
 													</ChildrenList>
-													<ObjectLists>
-														<ObjectList Name="RTPC">
-															<Reference>
-																<Local>
-																	<RTPC Name="" ID="{8F0EC50F-2A7E-4890-89E1-96633EB3E0C1}" ShortID="1000209256">
-																		<PropertyList>
-																			<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
-																		</PropertyList>
-																		<ReferenceList>
-																			<Reference Name="ControlInput">
-																				<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
-																			</Reference>
-																			<Reference Name="Curve">
-																				<Custom>
-																					<Curve Name="" ID="{C4856491-B643-496A-BAE0-FECEC5435D91}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="1"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>0</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>100</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</Custom>
-																			</Reference>
-																		</ReferenceList>
-																	</RTPC>
-																</Local>
-															</Reference>
-														</ObjectList>
-													</ObjectLists>
 													<Playlist>
 														<ItemRef Name="FOL_Footsteps_Toe" ID="{45FA0B67-F128-4CE1-9420-E0F0D6211BF0}"/>
 														<ItemRef Name="FOL_Footsteps_Heel" ID="{AE42FFCA-C08A-4067-963F-B68642F0E249}"/>
@@ -3712,11 +3774,26 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="FOL_Footsteps_Metal_Seq" ID="{621E6D9E-C139-4E8B-AFCC-609BBD8E5FC7}" ShortID="487891157">
 													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>20</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-300</Value>
+															</ValueList>
+														</Property>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.04"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -4390,47 +4467,47 @@
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
+															<ObjectLists>
+																<ObjectList Name="RTPC">
+																	<Reference>
+																		<Local>
+																			<RTPC Name="" ID="{B9CD0A0A-9110-42CB-A01C-58BEFF06E49C}" ShortID="19482374">
+																				<PropertyList>
+																					<Property Name="PropertyName" Type="string" Value="InitialDelay"/>
+																				</PropertyList>
+																				<ReferenceList>
+																					<Reference Name="ControlInput">
+																						<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
+																					</Reference>
+																					<Reference Name="Curve">
+																						<Custom>
+																							<Curve Name="" ID="{10564F9F-05B5-47E8-BA93-941C666F67B3}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0.07</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>1500</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</Custom>
+																					</Reference>
+																				</ReferenceList>
+																			</RTPC>
+																		</Local>
+																	</Reference>
+																</ObjectList>
+															</ObjectLists>
 														</RandomSequenceContainer>
 													</ChildrenList>
-													<ObjectLists>
-														<ObjectList Name="RTPC">
-															<Reference>
-																<Local>
-																	<RTPC Name="" ID="{34C72D57-9593-41CD-8CF1-203FC781513F}" ShortID="661857093">
-																		<PropertyList>
-																			<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
-																		</PropertyList>
-																		<ReferenceList>
-																			<Reference Name="ControlInput">
-																				<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
-																			</Reference>
-																			<Reference Name="Curve">
-																				<Custom>
-																					<Curve Name="" ID="{F9EA5328-E820-4820-B541-28270B38CA2E}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="1"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>0</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>100</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</Custom>
-																			</Reference>
-																		</ReferenceList>
-																	</RTPC>
-																</Local>
-															</Reference>
-														</ObjectList>
-													</ObjectLists>
 													<Playlist>
 														<ItemRef Name="FOL_Footsteps_Toe" ID="{3A6BD63E-4065-4532-8049-D9DA01333EA5}"/>
 														<ItemRef Name="FOL_Footsteps_Heel" ID="{08DBF493-EBC8-4392-BAD0-FEEE59ABDA21}"/>
@@ -4438,14 +4515,23 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="FOL_Footsteps_Tile_Seq" ID="{EE3D8BCF-CA84-46B9-B380-186EE5C4D8AA}" ShortID="738588834">
 													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>20</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-200</Value>
+															</ValueList>
+														</Property>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.035">
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0">
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{9AEE1A44-5485-4161-A1C4-AECAA05CE1D4}">
 																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
 																			<Property Name="Max" Type="Real64" Value="0.005"/>
 																			<Property Name="Min" Type="Real64" Value="-0.005"/>
 																		</PropertyList>
@@ -4988,47 +5074,47 @@
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
+															<ObjectLists>
+																<ObjectList Name="RTPC">
+																	<Reference>
+																		<Local>
+																			<RTPC Name="" ID="{3F329A5D-4D01-4154-8307-6F9CF2CB9F9E}" ShortID="79933321">
+																				<PropertyList>
+																					<Property Name="PropertyName" Type="string" Value="InitialDelay"/>
+																				</PropertyList>
+																				<ReferenceList>
+																					<Reference Name="ControlInput">
+																						<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
+																					</Reference>
+																					<Reference Name="Curve">
+																						<Custom>
+																							<Curve Name="" ID="{166CE1D2-1DEE-4DDB-A685-C06021039048}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0.07</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>1500</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</Custom>
+																					</Reference>
+																				</ReferenceList>
+																			</RTPC>
+																		</Local>
+																	</Reference>
+																</ObjectList>
+															</ObjectLists>
 														</RandomSequenceContainer>
 													</ChildrenList>
-													<ObjectLists>
-														<ObjectList Name="RTPC">
-															<Reference>
-																<Local>
-																	<RTPC Name="" ID="{8DCC01AF-E76F-4D4D-BD94-8F9EAC08B657}" ShortID="658237778">
-																		<PropertyList>
-																			<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
-																		</PropertyList>
-																		<ReferenceList>
-																			<Reference Name="ControlInput">
-																				<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
-																			</Reference>
-																			<Reference Name="Curve">
-																				<Custom>
-																					<Curve Name="" ID="{DD9B9227-5BE1-435F-91C2-6F811CF39C67}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="1"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>0</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>100</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</Custom>
-																			</Reference>
-																		</ReferenceList>
-																	</RTPC>
-																</Local>
-															</Reference>
-														</ObjectList>
-													</ObjectLists>
 													<Playlist>
 														<ItemRef Name="FOL_Footsteps_Toe" ID="{36106779-7056-4902-8313-B1D7B12AF05C}"/>
 														<ItemRef Name="FOL_Footsteps_Heel" ID="{B1FDCFAC-19B2-4C7D-8055-A689C778C19E}"/>
@@ -5036,11 +5122,21 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="FOL_Footsteps_Glass_Seq" ID="{3FD404AB-3802-408A-B4AA-DBF131A3F57B}" ShortID="739211960">
 													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-100</Value>
+															</ValueList>
+														</Property>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.05"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -5742,47 +5838,47 @@
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
+															<ObjectLists>
+																<ObjectList Name="RTPC">
+																	<Reference>
+																		<Local>
+																			<RTPC Name="" ID="{B146011A-C09B-45EB-A760-C7E8C3844FC3}" ShortID="787193203">
+																				<PropertyList>
+																					<Property Name="PropertyName" Type="string" Value="InitialDelay"/>
+																				</PropertyList>
+																				<ReferenceList>
+																					<Reference Name="ControlInput">
+																						<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
+																					</Reference>
+																					<Reference Name="Curve">
+																						<Custom>
+																							<Curve Name="" ID="{84EAF749-5808-44D6-8F18-B41439A406F5}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0.07</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>1500</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</Custom>
+																					</Reference>
+																				</ReferenceList>
+																			</RTPC>
+																		</Local>
+																	</Reference>
+																</ObjectList>
+															</ObjectLists>
 														</RandomSequenceContainer>
 													</ChildrenList>
-													<ObjectLists>
-														<ObjectList Name="RTPC">
-															<Reference>
-																<Local>
-																	<RTPC Name="" ID="{E93B1F88-461F-44EC-BDBD-6CDCDD70BE00}" ShortID="640527593">
-																		<PropertyList>
-																			<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
-																		</PropertyList>
-																		<ReferenceList>
-																			<Reference Name="ControlInput">
-																				<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
-																			</Reference>
-																			<Reference Name="Curve">
-																				<Custom>
-																					<Curve Name="" ID="{F535E255-0467-433B-BD5C-41C7E02BAE91}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="1"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>0</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>100</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</Custom>
-																			</Reference>
-																		</ReferenceList>
-																	</RTPC>
-																</Local>
-															</Reference>
-														</ObjectList>
-													</ObjectLists>
 													<Playlist>
 														<ItemRef Name="FOL_Footsteps_Toe" ID="{0C7A5491-5E20-4619-96C2-82D6E9FF49E8}"/>
 														<ItemRef Name="FOL_Footsteps_Heel" ID="{52F67B4F-7C36-4468-8FB2-9B5DF67D066B}"/>
@@ -5790,11 +5886,21 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="FOL_Footsteps_Grass_Seq" ID="{E9C8B34E-9302-4104-8514-86FBA91D7C73}" ShortID="172449656">
 													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-50</Value>
+															</ValueList>
+														</Property>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.04"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -6391,47 +6497,47 @@
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
+															<ObjectLists>
+																<ObjectList Name="RTPC">
+																	<Reference>
+																		<Local>
+																			<RTPC Name="" ID="{A4EC86E2-13F5-4DC9-BEC2-B6F9063A037E}" ShortID="842312087">
+																				<PropertyList>
+																					<Property Name="PropertyName" Type="string" Value="InitialDelay"/>
+																				</PropertyList>
+																				<ReferenceList>
+																					<Reference Name="ControlInput">
+																						<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
+																					</Reference>
+																					<Reference Name="Curve">
+																						<Custom>
+																							<Curve Name="" ID="{636D9929-687D-40B7-984A-F174CE2BC56A}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0.07</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>1500</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</Custom>
+																					</Reference>
+																				</ReferenceList>
+																			</RTPC>
+																		</Local>
+																	</Reference>
+																</ObjectList>
+															</ObjectLists>
 														</RandomSequenceContainer>
 													</ChildrenList>
-													<ObjectLists>
-														<ObjectList Name="RTPC">
-															<Reference>
-																<Local>
-																	<RTPC Name="" ID="{345FBF2E-C6C8-4F5E-B0D5-1AD56B1388A0}" ShortID="882847033">
-																		<PropertyList>
-																			<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
-																		</PropertyList>
-																		<ReferenceList>
-																			<Reference Name="ControlInput">
-																				<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
-																			</Reference>
-																			<Reference Name="Curve">
-																				<Custom>
-																					<Curve Name="" ID="{EBDE5C52-B8B5-436D-92D2-88B019C45EAC}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="1"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>0</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>100</XPos>
-																								<YPos>0</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</Custom>
-																			</Reference>
-																		</ReferenceList>
-																	</RTPC>
-																</Local>
-															</Reference>
-														</ObjectList>
-													</ObjectLists>
 													<Playlist>
 														<ItemRef Name="FOL_Footsteps_Toe" ID="{EFB00115-9369-4EC8-9ED1-971FB6099B4B}"/>
 														<ItemRef Name="FOL_Footsteps_Heel" ID="{A5F9692C-E78B-4FA6-B808-C7C0EAC49A12}"/>

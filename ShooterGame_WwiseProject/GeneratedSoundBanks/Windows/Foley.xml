@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{1EE65EAD-F4F6-DEB2-4B51-75EC6C6386C4}">
+		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{9F2A45F4-AF43-B22B-544B-59BF44FB4375}">
 			<ObjectPath>\SoundBanks\Foley\Foley</ObjectPath>
 			<ShortName>Foley</ShortName>
 			<Path>Foley.bnk</Path>
@@ -345,7 +345,7 @@
 			</Media>
 			<Events>
 				<Event Id="1891391704" Name="FOL_Bodyfall" ObjectPath="\Events\Foley\Players\FOL_Bodyfall" GUID="{8C389BC0-A8E4-4172-B60A-4329D5567561}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2395369630" Name="FOL_Footstep_R" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_R" GUID="{C7AF60A9-905E-4C25-94DB-228933B96D51}" DurationType="OneShot" DurationMin="0.4007094" DurationMax="0.43512586">
+				<Event Id="2395369630" Name="FOL_Footstep_R" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_R" GUID="{C7AF60A9-905E-4C25-94DB-228933B96D51}" DurationType="OneShot" DurationMin="0.38264266" DurationMax="0.45574933">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="1488713918" GUID="{02773C27-1839-4638-A2AF-91E103D925E3}"/>
@@ -526,5 +526,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1A39BFAE-A0D5-1B05-FF5E-6C574E9D2CBE}</FileHash>
+	<FileHash>{0CC75487-4DC7-00E9-509E-D86A8536B991}</FileHash>
 </SoundBanksInfo>
