@@ -226,7 +226,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{FCA11215-1E40-0AF7-DFBF-28A71611ED94}">
+		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{8BCFCBDE-C2C7-EC00-FE54-063082C35EDD}">
 			<ObjectPath>\SoundBanks\Foley\Foley</ObjectPath>
 			<ShortName>Foley</ShortName>
 			<Path>Foley.bnk</Path>
@@ -823,6 +823,82 @@
 							<PluginRef Id="2781261543"/>
 						</ShareSets>
 					</PluginRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="677842196" Type="Event" GUID="{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}" Language="SFX" Hash="{9787C842-075B-C16E-0713-1D51829FAD31}">
+			<ObjectPath>FOL_Armor</ObjectPath>
+			<ShortName>FOL_Armor</ShortName>
+			<Path>Event/FOL_Armor.bnk</Path>
+			<Media>
+				<File Id="102201469" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>FOL_Armor_Rattle_Stem.wav</ShortName>
+					<Path>Media/102201469.wem</Path>
+					<CachePath>SFX/FOL_Armor_Rattle_Stem_B30F18EE.wem</CachePath>
+				</File>
+				<File Id="164743976" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>FOL_Armor_Rattle_Stem.wav</ShortName>
+					<Path>Media/164743976.wem</Path>
+					<CachePath>SFX/FOL_Armor_Rattle_Stem_79B4D352.wem</CachePath>
+				</File>
+				<File Id="511621327" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>FOL_Armor_Rattle_Stem.wav</ShortName>
+					<Path>Media/511621327.wem</Path>
+					<CachePath>SFX/FOL_Armor_Rattle_Stem_193450A4.wem</CachePath>
+				</File>
+				<File Id="532346930" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>FOL_Armor_Rattle_Stem.wav</ShortName>
+					<Path>Media/532346930.wem</Path>
+					<CachePath>SFX/FOL_Armor_Rattle_Stem_339F9A4C.wem</CachePath>
+				</File>
+				<File Id="688457535" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>FOL_Armor_Rattle_Stem.wav</ShortName>
+					<Path>Media/688457535.wem</Path>
+					<CachePath>SFX/FOL_Armor_Rattle_Stem_91C06AE9.wem</CachePath>
+				</File>
+				<File Id="756207494" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>FOL_Armor_Rattle_Stem.wav</ShortName>
+					<Path>Media/756207494.wem</Path>
+					<CachePath>SFX/FOL_Armor_Rattle_Stem_55028BA6.wem</CachePath>
+				</File>
+				<File Id="823663600" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>FOL_Armor_Rattle_Stem.wav</ShortName>
+					<Path>Media/823663600.wem</Path>
+					<CachePath>SFX/FOL_Armor_Rattle_Stem_AA1E0111.wem</CachePath>
+				</File>
+				<File Id="899127599" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>FOL_Armor_Rattle_Stem.wav</ShortName>
+					<Path>Media/899127599.wem</Path>
+					<CachePath>SFX/FOL_Armor_Rattle_Stem_63D03733.wem</CachePath>
+				</File>
+				<File Id="1035538733" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>FOL_Armor_Rattle_Stem.wav</ShortName>
+					<Path>Media/1035538733.wem</Path>
+					<CachePath>SFX/FOL_Armor_Rattle_Stem_9DF624D2.wem</CachePath>
+				</File>
+				<File Id="1067502798" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>FOL_Armor_Rattle_Stem.wav</ShortName>
+					<Path>Media/1067502798.wem</Path>
+					<CachePath>SFX/FOL_Armor_Rattle_Stem_EB98B55F.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="677842196" Name="FOL_Armor" ObjectPath="\Events\Foley\Players\FOL_Armor" GUID="{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}" DurationType="OneShot" DurationMin="0.6078924" DurationMax="0.7130319">
+					<MediaRefs>
+						<MediaRef Id="102201469"/>
+						<MediaRef Id="164743976"/>
+						<MediaRef Id="511621327"/>
+						<MediaRef Id="532346930"/>
+						<MediaRef Id="688457535"/>
+						<MediaRef Id="756207494"/>
+						<MediaRef Id="823663600"/>
+						<MediaRef Id="899127599"/>
+						<MediaRef Id="1035538733"/>
+						<MediaRef Id="1067502798"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
@@ -1510,7 +1586,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{E3DB0454-FBC9-4B81-B69F-317ADA6B01EB}">
+		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{4641D083-AA4B-9CC5-D8FB-136D572D1C91}">
 			<ObjectPath>FOL_Footstep_L</ObjectPath>
 			<ShortName>FOL_Footstep_L</ShortName>
 			<Path>Event/FOL_Footstep_L.bnk</Path>
@@ -2426,5 +2502,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D3782AF8-FFF9-B45E-26F1-3605D96E0AE4}</FileHash>
+	<FileHash>{B0D443F4-B462-84E8-282D-B7FB3C476F61}</FileHash>
 </SoundBanksInfo>

@@ -493,7 +493,7 @@
     "Type": "User",
     "GUID": "{E4E1B551-3907-4673-8D70-D72000D8EB19}",
     "Language": "SFX",
-    "Hash": "{FCA11215-1E40-0AF7-DFBF-28A71611ED94}",
+    "Hash": "{8BCFCBDE-C2C7-EC00-FE54-063082C35EDD}",
     "ObjectPath": "\\SoundBanks\\Foley\\Foley",
     "ShortName": "Foley",
     "Path": "Foley.bnk",
@@ -1922,6 +1922,159 @@
         }
        ]
       }
+     }
+    ]
+   },
+   {
+    "Id": "677842196",
+    "Type": "Event",
+    "GUID": "{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}",
+    "Language": "SFX",
+    "Hash": "{9787C842-075B-C16E-0713-1D51829FAD31}",
+    "ObjectPath": "FOL_Armor",
+    "ShortName": "FOL_Armor",
+    "Path": "Event/FOL_Armor.bnk",
+    "Media": [
+     {
+      "Id": "102201469",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FOL_Armor_Rattle_Stem.wav",
+      "Path": "Media/102201469.wem",
+      "CachePath": "SFX/FOL_Armor_Rattle_Stem_B30F18EE.wem"
+     },
+     {
+      "Id": "164743976",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FOL_Armor_Rattle_Stem.wav",
+      "Path": "Media/164743976.wem",
+      "CachePath": "SFX/FOL_Armor_Rattle_Stem_79B4D352.wem"
+     },
+     {
+      "Id": "511621327",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FOL_Armor_Rattle_Stem.wav",
+      "Path": "Media/511621327.wem",
+      "CachePath": "SFX/FOL_Armor_Rattle_Stem_193450A4.wem"
+     },
+     {
+      "Id": "532346930",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FOL_Armor_Rattle_Stem.wav",
+      "Path": "Media/532346930.wem",
+      "CachePath": "SFX/FOL_Armor_Rattle_Stem_339F9A4C.wem"
+     },
+     {
+      "Id": "688457535",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FOL_Armor_Rattle_Stem.wav",
+      "Path": "Media/688457535.wem",
+      "CachePath": "SFX/FOL_Armor_Rattle_Stem_91C06AE9.wem"
+     },
+     {
+      "Id": "756207494",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FOL_Armor_Rattle_Stem.wav",
+      "Path": "Media/756207494.wem",
+      "CachePath": "SFX/FOL_Armor_Rattle_Stem_55028BA6.wem"
+     },
+     {
+      "Id": "823663600",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FOL_Armor_Rattle_Stem.wav",
+      "Path": "Media/823663600.wem",
+      "CachePath": "SFX/FOL_Armor_Rattle_Stem_AA1E0111.wem"
+     },
+     {
+      "Id": "899127599",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FOL_Armor_Rattle_Stem.wav",
+      "Path": "Media/899127599.wem",
+      "CachePath": "SFX/FOL_Armor_Rattle_Stem_63D03733.wem"
+     },
+     {
+      "Id": "1035538733",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FOL_Armor_Rattle_Stem.wav",
+      "Path": "Media/1035538733.wem",
+      "CachePath": "SFX/FOL_Armor_Rattle_Stem_9DF624D2.wem"
+     },
+     {
+      "Id": "1067502798",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FOL_Armor_Rattle_Stem.wav",
+      "Path": "Media/1067502798.wem",
+      "CachePath": "SFX/FOL_Armor_Rattle_Stem_EB98B55F.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "677842196",
+      "Name": "FOL_Armor",
+      "ObjectPath": "\\Events\\Foley\\Players\\FOL_Armor",
+      "GUID": "{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.6078924",
+      "DurationMax": "0.7130319",
+      "MediaRefs": [
+       {
+        "Id": "102201469"
+       },
+       {
+        "Id": "164743976"
+       },
+       {
+        "Id": "511621327"
+       },
+       {
+        "Id": "532346930"
+       },
+       {
+        "Id": "688457535"
+       },
+       {
+        "Id": "756207494"
+       },
+       {
+        "Id": "823663600"
+       },
+       {
+        "Id": "899127599"
+       },
+       {
+        "Id": "1035538733"
+       },
+       {
+        "Id": "1067502798"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
      }
     ]
    },
@@ -3893,7 +4046,7 @@
     "Type": "Event",
     "GUID": "{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}",
     "Language": "SFX",
-    "Hash": "{E3DB0454-FBC9-4B81-B69F-317ADA6B01EB}",
+    "Hash": "{4641D083-AA4B-9CC5-D8FB-136D572D1C91}",
     "ObjectPath": "FOL_Footstep_L",
     "ShortName": "FOL_Footstep_L",
     "Path": "Event/FOL_Footstep_L.bnk",
@@ -5888,6 +6041,6 @@
     ]
    }
   ],
-  "FileHash": "{09B6A6C2-E3E6-44BB-7DD6-1CA44023F3FF}"
+  "FileHash": "{34C1B79A-E144-C3CC-83A5-0C44670B39DC}"
  }
 }

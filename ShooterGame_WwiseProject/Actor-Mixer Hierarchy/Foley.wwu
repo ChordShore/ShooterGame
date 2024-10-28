@@ -870,6 +870,11 @@
 												<Value>-12</Value>
 											</ValueList>
 										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
 										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -8853,7 +8858,18 @@
 								</ActorMixer>
 								<ActorMixer Name="FOL_Armor" ID="{62F8AE5D-75FA-423F-BEF8-979974688BC4}" ShortID="311480243">
 									<PropertyList>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="ReflectionsVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -8869,6 +8885,46 @@
 									</ReferenceList>
 									<ChildrenList>
 										<RandomSequenceContainer Name="FOL_Armor" ID="{4025FEB5-F684-4665-BB3C-9616B9DF2B2F}" ShortID="629001226">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.02</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>15</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-400</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{D5F543AF-FF33-4C69-A58F-2937C2221F7D}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-27</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -8877,6 +8933,277 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FOL_Armor_Rattle_01" ID="{7FEFCBFE-8AD1-4B35-B956-FD6F3A4AD886}" ShortID="626610520">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Rattle_Stem" ID="{C0EA7616-A4ED-498B-A497-788901668749}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.507900677200903"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Rattle_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="756207494"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Rattle_Stem" ID="{C0EA7616-A4ED-498B-A497-788901668749}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Rattle_02" ID="{102A04AA-AEEC-4E7F-9B63-B2275884A222}" ShortID="68986328">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Rattle_Stem" ID="{AD4754D9-8EAC-4652-AE88-3BA92A41B8C3}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.505643340857789"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.01580135440181"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Rattle_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="823663600"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Rattle_Stem" ID="{AD4754D9-8EAC-4652-AE88-3BA92A41B8C3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Rattle_03" ID="{3D89822E-9CD2-45D7-A145-2944DBA8CA7A}" ShortID="204589696">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Rattle_Stem" ID="{59E8470F-41A4-4346-A05A-BBDFE8437D03}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.01128668171558"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.51918735891648"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Rattle_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="532346930"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Rattle_Stem" ID="{59E8470F-41A4-4346-A05A-BBDFE8437D03}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Rattle_04" ID="{C42FD3E2-2E86-48A7-88DD-36040929FED3}" ShortID="838330808">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Rattle_Stem" ID="{72B7B179-EAF6-4D3D-A97D-AC8A02392E41}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.51693002257336"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.01128668171558"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Rattle_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="688457535"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Rattle_Stem" ID="{72B7B179-EAF6-4D3D-A97D-AC8A02392E41}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Rattle_05" ID="{EFEE1080-E45E-40B6-9B2C-AF37980E9D66}" ShortID="450595951">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Rattle_Stem" ID="{C7B9E24E-D31C-4EF1-A5B3-3853186CEF47}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.00225733634312"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.5214446952596"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Rattle_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="899127599"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Rattle_Stem" ID="{C7B9E24E-D31C-4EF1-A5B3-3853186CEF47}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Rattle_06" ID="{6210485F-9AF6-4B01-BD37-B8920AEE605F}" ShortID="369128118">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Rattle_Stem" ID="{08423A3B-48DF-4FEB-B83F-E5E0E6C6AA46}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.5079006772009"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.00451467268623"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Rattle_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="102201469"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Rattle_Stem" ID="{08423A3B-48DF-4FEB-B83F-E5E0E6C6AA46}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Rattle_07" ID="{6F188E76-14BA-4BD6-B580-331CFBB25D8E}" ShortID="349594413">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Rattle_Stem" ID="{45912280-F505-4DB0-AD69-6C79F55A0F95}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.99774266365689"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.51241534988714"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Rattle_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="511621327"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Rattle_Stem" ID="{45912280-F505-4DB0-AD69-6C79F55A0F95}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Rattle_08" ID="{B1394E71-7105-493A-A92E-1D46909EF43C}" ShortID="821092861">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Rattle_Stem" ID="{C8987D46-8A22-4AEA-B684-3B86BBE5E0E2}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="3.50338600451467"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.00902934537246"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Rattle_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1035538733"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Rattle_Stem" ID="{C8987D46-8A22-4AEA-B684-3B86BBE5E0E2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Rattle_09" ID="{4C12BF80-198C-44C6-BBDD-78E5E95AF9E2}" ShortID="810965767">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Rattle_Stem" ID="{4256BB0C-64C7-4B62-B45A-1E28DF9A6644}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="4.00225733634312"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.51241534988713"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Rattle_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="164743976"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Rattle_Stem" ID="{4256BB0C-64C7-4B62-B45A-1E28DF9A6644}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Rattle_10" ID="{E1CCCF45-D561-4EB1-AC69-3165BD25D9A2}" ShortID="296615611">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Rattle_Stem" ID="{05220CD2-7714-4D24-B963-3B48022647E4}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="4.50564334085779"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Rattle_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1067502798"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Rattle_Stem" ID="{05220CD2-7714-4D24-B963-3B48022647E4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</ActorMixer>

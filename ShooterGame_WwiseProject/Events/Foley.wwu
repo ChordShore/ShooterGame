@@ -38,6 +38,17 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="FOL_Armor" ID="{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}">
+							<ChildrenList>
+								<Action Name="" ID="{BD00522C-0BF6-42FB-9381-D4FAA1B1DCE5}" ShortID="73610016">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FOL_Armor" ID="{4025FEB5-F684-4665-BB3C-9616B9DF2B2F}" WorkUnitID="{86FE2FEF-52C2-4237-A56E-8F523A5859D5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Props" ID="{9C6C28EC-B810-4AC6-833B-CC1E85297900}" ShortID="715449244">
