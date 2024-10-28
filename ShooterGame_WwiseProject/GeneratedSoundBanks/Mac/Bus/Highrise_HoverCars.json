@@ -10,17 +10,17 @@
     "Type": "Bus",
     "GUID": "{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}",
     "Language": "SFX",
-    "Hash": "{93CEB44C-E9B7-501D-F431-7BC6C48B3064}",
+    "Hash": "{2707BA63-3416-3427-6836-0B266789DC91}",
     "ObjectPath": "Highrise_HoverCars",
     "ShortName": "Highrise_HoverCars",
     "Path": "Bus/Highrise_HoverCars.bnk",
     "Plugins": {
-     "ShareSets": [
+     "Custom": [
       {
-       "Id": "400317747",
-       "Name": "Hall_Large_TooBright",
-       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Halls\\Hall_Large_TooBright",
-       "GUID": "{5F144EE3-081F-4BEC-ABCF-F88E111FECAE}",
+       "Id": "423108128",
+       "Name": "Reverb_HoverCars_(Hall_Large_TooBright_Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_HoverCars\\Reverb_HoverCars_(Hall_Large_TooBright_Custom)",
+       "GUID": "{023C343D-618B-4411-8066-289915DAB8DB}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
       }
@@ -33,9 +33,9 @@
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_HoverCars",
       "GUID": "{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}",
       "PluginRefs": {
-       "ShareSets": [
+       "Custom": [
         {
-         "Id": "400317747"
+         "Id": "423108128"
         }
        ]
       }
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{E4C25496-B4D9-E5F3-69C0-6D1689CE4390}"
+  "FileHash": "{55B9BF35-0663-0401-51FF-301314AF4FFE}"
  }
 }

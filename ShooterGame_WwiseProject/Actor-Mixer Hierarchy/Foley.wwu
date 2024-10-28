@@ -11,7 +11,7 @@
 					<PropertyList>
 						<Property Name="GameAuxSendVolume" Type="Real64">
 							<ValueList>
-								<Value>-3</Value>
+								<Value>-9</Value>
 							</ValueList>
 						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -469,12 +469,18 @@
 						<Folder Name="Locomotion" ID="{F6741AE5-D419-44AE-8904-F7E9892B2E65}" ShortID="259455762">
 							<ChildrenList>
 								<ActorMixer Name="FOL_Bodyfalls" ID="{8F0693DA-E272-44B2-A32C-E39C680783BF}" ShortID="646634844">
+									<PropertyList>
+										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -581,12 +587,18 @@
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="FOL_Lands" ID="{8F0C7627-B2AD-4654-8804-F7ADBC754BC7}" ShortID="32832854">
+									<PropertyList>
+										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -732,12 +744,18 @@
 									</ObjectLists>
 								</ActorMixer>
 								<ActorMixer Name="FOL_Jumps" ID="{F09E8EC4-E850-4584-BE55-455134877E68}" ShortID="587730209">
+									<PropertyList>
+										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -849,10 +867,17 @@
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="GameAuxSendVolume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="ReflectionsVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -912,7 +937,7 @@
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-4</Value>
+																<Value>-6</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -2283,7 +2308,7 @@
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-4</Value>
+																<Value>-6</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -3035,9 +3060,14 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="FOL_Footsteps_Grass_Seq" ID="{5B92D7E7-141F-4D60-AE5F-B0210DAC1825}" ShortID="861243192">
 													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>7</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Pitch" Type="int32">
 															<ValueList>
-																<Value>-100</Value>
+																<Value>-50</Value>
 															</ValueList>
 														</Property>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
@@ -3813,7 +3843,7 @@
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-4</Value>
+																<Value>-6</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -5161,7 +5191,7 @@
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-4</Value>
+																<Value>-6</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -5913,9 +5943,14 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="FOL_Footsteps_Grass_Seq" ID="{E9C8B34E-9302-4104-8514-86FBA91D7C73}" ShortID="172449656">
 													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>7</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Pitch" Type="int32">
 															<ValueList>
-																<Value>-100</Value>
+																<Value>-50</Value>
 															</ValueList>
 														</Property>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
@@ -6751,6 +6786,7 @@
 								</ActorMixer>
 								<ActorMixer Name="FOL_Armor" ID="{62F8AE5D-75FA-423F-BEF8-979974688BC4}" ShortID="311480243">
 									<PropertyList>
+										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -6759,6 +6795,9 @@
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>

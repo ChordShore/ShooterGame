@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2333830951" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{11AC13E1-8993-C772-B21E-CA7ED7410BBE}">
+		<SoundBank Id="2333830951" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{1FD0A6A9-F0E1-38DF-7E82-71B412599E0B}">
 			<ObjectPath>AMB_EnergyPillar_L</ObjectPath>
 			<ShortName>AMB_EnergyPillar_L</ShortName>
 			<Path>Event/AMB_EnergyPillar_L.bnk</Path>
@@ -17,9 +17,12 @@
 					<MediaRefs>
 						<MediaRef Id="1027930209"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1289661192" Name="Highrise_HoverCars" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_HoverCars" GUID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FA6364CA-6DEB-A841-6933-B348E18F6A59}</FileHash>
+	<FileHash>{A9326354-1B06-7CA0-E5A2-C1C4FDF19EDD}</FileHash>
 </SoundBanksInfo>

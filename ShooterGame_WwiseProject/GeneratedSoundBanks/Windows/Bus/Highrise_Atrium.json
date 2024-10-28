@@ -10,17 +10,17 @@
     "Type": "Bus",
     "GUID": "{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}",
     "Language": "SFX",
-    "Hash": "{A0052B69-BD68-EF44-27FB-7CA3D476E4E4}",
+    "Hash": "{C6C73FD1-EDCB-0436-A0B6-FE9F7E4DA2E1}",
     "ObjectPath": "Highrise_Atrium",
     "ShortName": "Highrise_Atrium",
     "Path": "Bus/Highrise_Atrium.bnk",
     "Plugins": {
      "ShareSets": [
       {
-       "Id": "48620415",
-       "Name": "Have_U_Ever_Been_Outside",
-       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Exteriors\\Have_U_Ever_Been_Outside",
-       "GUID": "{FE29AE8D-FD86-4652-A95D-68D32F5760EC}",
+       "Id": "602546716",
+       "Name": "Room_Large",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Large",
+       "GUID": "{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
       }
@@ -35,7 +35,7 @@
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "48620415"
+         "Id": "602546716"
         }
        ]
       }
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{45D68510-5CC8-A9AD-520E-0EAE4BFB0A4E}"
+  "FileHash": "{73FA250D-0503-7D36-7153-F7CEDF5E8C73}"
  }
 }

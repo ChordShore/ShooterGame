@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}",
     "Language": "SFX",
-    "Hash": "{61E7A49E-0E0A-50ED-30C6-D2F272E159B1}",
+    "Hash": "{0BEB7A14-D76A-D93A-06A1-EF3B9684B3EE}",
     "ObjectPath": "FOL_Footstep_L",
     "ShortName": "FOL_Footstep_L",
     "Path": "Event/FOL_Footstep_L.bnk",
@@ -781,6 +781,14 @@
       "DurationType": "OneShot",
       "DurationMin": "0.38264266",
       "DurationMax": "0.45574933",
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -1292,6 +1300,6 @@
     ]
    }
   ],
-  "FileHash": "{A0EA664E-3624-5C18-360C-74AD6B777621}"
+  "FileHash": "{BF0A25A7-E334-C702-9531-747E450712B5}"
  }
 }

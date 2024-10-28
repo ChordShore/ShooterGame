@@ -18,7 +18,7 @@
     "Type": "Event",
     "GUID": "{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}",
     "Language": "SFX",
-    "Hash": "{BB821260-DF63-D280-1D82-4AA932B91B33}",
+    "Hash": "{76BEE03E-09E9-376F-5E5B-F8857CFDD3C8}",
     "ObjectPath": "AMB_HoverCars_Spline_R",
     "ShortName": "AMB_HoverCars_Spline_R",
     "Path": "Event/AMB_HoverCars_Spline_R.bnk",
@@ -66,7 +66,7 @@
     "Type": "Event",
     "GUID": "{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}",
     "Language": "SFX",
-    "Hash": "{BAC347F4-A544-D29C-DFD8-F19DF55CD82D}",
+    "Hash": "{6975CC18-D352-08B5-B594-3D7141D33B90}",
     "ObjectPath": "AMB_HoverCars_Spline_L",
     "ShortName": "AMB_HoverCars_Spline_L",
     "Path": "Event/AMB_HoverCars_Spline_L.bnk",
@@ -114,7 +114,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{81090B82-EEE5-AA14-8E67-78CA58615DDD}",
+    "Hash": "{328510AC-55DF-B72F-2BB4-8E535A3234D0}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -493,7 +493,7 @@
     "Type": "User",
     "GUID": "{E4E1B551-3907-4673-8D70-D72000D8EB19}",
     "Language": "SFX",
-    "Hash": "{67016D59-4359-D491-CD15-33651151578E}",
+    "Hash": "{4D4C62C2-F7BA-6A54-50E5-23FD2D3F4178}",
     "ObjectPath": "\\SoundBanks\\Foley\\Foley",
     "ShortName": "Foley",
     "Path": "Foley.bnk",
@@ -1190,6 +1190,14 @@
       "DurationType": "OneShot",
       "DurationMin": "0.38264266",
       "DurationMax": "0.45574933",
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -1735,7 +1743,7 @@
     "Type": "Event",
     "GUID": "{7228D143-91CD-48AB-B419-E16DEE2BF95F}",
     "Language": "SFX",
-    "Hash": "{BAB1059E-891A-CA48-F54B-35D2366A4A0E}",
+    "Hash": "{2C863D92-9EF8-4693-E851-7877EAE5D65D}",
     "ObjectPath": "AMB_RoomGusts_SmallEntrance_Interior",
     "ShortName": "AMB_RoomGusts_SmallEntrance_Interior",
     "Path": "Event/AMB_RoomGusts_SmallEntrance_Interior.bnk",
@@ -1790,7 +1798,7 @@
     "Type": "Event",
     "GUID": "{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}",
     "Language": "SFX",
-    "Hash": "{E48FADF0-0486-D8D9-E9FA-B72A7FF6DDB5}",
+    "Hash": "{543BCEDE-8D2C-33BC-BF56-F00E1DCA65D1}",
     "ObjectPath": "AMB_ScifiDrones",
     "ShortName": "AMB_ScifiDrones",
     "Path": "Event/AMB_ScifiDrones.bnk",
@@ -2263,17 +2271,17 @@
     "Type": "Bus",
     "GUID": "{55F14D17-2EFA-4F39-8772-765885B7CB75}",
     "Language": "SFX",
-    "Hash": "{F459CB92-EA66-104A-B526-B7EE7F666764}",
+    "Hash": "{A84E60AA-F023-3FE1-1728-516215BF081B}",
     "ObjectPath": "Highrise_Spawn",
     "ShortName": "Highrise_Spawn",
     "Path": "Bus/Highrise_Spawn.bnk",
     "Plugins": {
      "ShareSets": [
       {
-       "Id": "2995775460",
-       "Name": "Room_Small",
-       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Small",
-       "GUID": "{577F1466-A63B-47F7-98BD-C56E433F8B5D}",
+       "Id": "2945072214",
+       "Name": "My_Closet",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Claustrophobia\\My_Closet",
+       "GUID": "{384A82A1-3C92-4AC5-AFC2-474F2080642C}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
       }
@@ -2288,7 +2296,7 @@
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "2995775460"
+         "Id": "2945072214"
         }
        ]
       }
@@ -2300,17 +2308,17 @@
     "Type": "Bus",
     "GUID": "{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}",
     "Language": "SFX",
-    "Hash": "{93CEB44C-E9B7-501D-F431-7BC6C48B3064}",
+    "Hash": "{2707BA63-3416-3427-6836-0B266789DC91}",
     "ObjectPath": "Highrise_HoverCars",
     "ShortName": "Highrise_HoverCars",
     "Path": "Bus/Highrise_HoverCars.bnk",
     "Plugins": {
-     "ShareSets": [
+     "Custom": [
       {
-       "Id": "400317747",
-       "Name": "Hall_Large_TooBright",
-       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Halls\\Hall_Large_TooBright",
-       "GUID": "{5F144EE3-081F-4BEC-ABCF-F88E111FECAE}",
+       "Id": "423108128",
+       "Name": "Reverb_HoverCars_(Hall_Large_TooBright_Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_HoverCars\\Reverb_HoverCars_(Hall_Large_TooBright_Custom)",
+       "GUID": "{023C343D-618B-4411-8066-289915DAB8DB}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
       }
@@ -2323,9 +2331,9 @@
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_HoverCars",
       "GUID": "{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}",
       "PluginRefs": {
-       "ShareSets": [
+       "Custom": [
         {
-         "Id": "400317747"
+         "Id": "423108128"
         }
        ]
       }
@@ -2337,7 +2345,7 @@
     "Type": "Event",
     "GUID": "{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}",
     "Language": "SFX",
-    "Hash": "{A2402A83-014E-4233-F2FD-2680C368E614}",
+    "Hash": "{89FBF0EC-C6F7-32F7-66F4-C8DCA9EE1A26}",
     "ObjectPath": "AMB_PhoneBox_ErrorRecording",
     "ShortName": "AMB_PhoneBox_ErrorRecording",
     "Path": "Event/AMB_PhoneBox_ErrorRecording.bnk",
@@ -2387,33 +2395,35 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{099C155C-A224-16DB-596F-E1FD6A6C5E03}",
+    "Hash": "{9F10D42F-135D-B55B-5B40-47AC87E0E198}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "Custom": [
+      {
+       "Id": "423108128",
+       "Name": "Reverb_HoverCars_(Hall_Large_TooBright_Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_HoverCars\\Reverb_HoverCars_(Hall_Large_TooBright_Custom)",
+       "GUID": "{023C343D-618B-4411-8066-289915DAB8DB}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
      "ShareSets": [
       {
-       "Id": "48620415",
-       "Name": "Have_U_Ever_Been_Outside",
-       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Exteriors\\Have_U_Ever_Been_Outside",
-       "GUID": "{FE29AE8D-FD86-4652-A95D-68D32F5760EC}",
+       "Id": "602546716",
+       "Name": "Room_Large",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Large",
+       "GUID": "{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
       },
       {
-       "Id": "400317747",
-       "Name": "Hall_Large_TooBright",
-       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Halls\\Hall_Large_TooBright",
-       "GUID": "{5F144EE3-081F-4BEC-ABCF-F88E111FECAE}",
-       "LibName": "Wwise RoomVerb",
-       "LibId": "7733251"
-      },
-      {
-       "Id": "1159390747",
-       "Name": "Room_Medium_Tiled",
-       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Medium_Tiled",
-       "GUID": "{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}",
+       "Id": "1990128658",
+       "Name": "Room_Medium",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Medium",
+       "GUID": "{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
       },
@@ -2426,10 +2436,10 @@
        "LibId": "6946819"
       },
       {
-       "Id": "2995775460",
-       "Name": "Room_Small",
-       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Small",
-       "GUID": "{577F1466-A63B-47F7-98BD-C56E433F8B5D}",
+       "Id": "2945072214",
+       "Name": "My_Closet",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Claustrophobia\\My_Closet",
+       "GUID": "{384A82A1-3C92-4AC5-AFC2-474F2080642C}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
       }
@@ -2566,7 +2576,7 @@
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "2995775460"
+         "Id": "2945072214"
         }
        ]
       }
@@ -2577,9 +2587,9 @@
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_HoverCars",
       "GUID": "{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}",
       "PluginRefs": {
-       "ShareSets": [
+       "Custom": [
         {
-         "Id": "400317747"
+         "Id": "423108128"
         }
        ]
       }
@@ -2605,7 +2615,7 @@
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "48620415"
+         "Id": "602546716"
         }
        ]
       }
@@ -2618,7 +2628,7 @@
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "1159390747"
+         "Id": "1990128658"
         }
        ]
       }
@@ -3418,7 +3428,7 @@
     "Type": "Event",
     "GUID": "{838EFBCF-7300-40E4-B598-D1699C261CB8}",
     "Language": "SFX",
-    "Hash": "{7B85586F-5EE8-5952-11EF-6621FE8F9599}",
+    "Hash": "{98F8219C-1DB5-853F-D593-45BD073C7E96}",
     "ObjectPath": "AMB_WindGusts_Static_Play",
     "ShortName": "AMB_WindGusts_Static_Play",
     "Path": "Event/AMB_WindGusts_Static_Play.bnk",
@@ -3632,7 +3642,7 @@
     "Type": "Event",
     "GUID": "{1139BF59-E796-44F8-A41A-58F596E277FE}",
     "Language": "SFX",
-    "Hash": "{11AC13E1-8993-C772-B21E-CA7ED7410BBE}",
+    "Hash": "{1FD0A6A9-F0E1-38DF-7E82-71B412599E0B}",
     "ObjectPath": "AMB_EnergyPillar_L",
     "ShortName": "AMB_EnergyPillar_L",
     "Path": "Event/AMB_EnergyPillar_L.bnk",
@@ -3659,6 +3669,14 @@
        {
         "Id": "1027930209"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "1289661192",
+        "Name": "Highrise_HoverCars",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_HoverCars",
+        "GUID": "{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}"
+       }
       ]
      }
     ]
@@ -3668,7 +3686,7 @@
     "Type": "Event",
     "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
     "Language": "SFX",
-    "Hash": "{4533CF1C-5425-D944-A947-A2193E1BA5A6}",
+    "Hash": "{5F2B0D67-0C86-96B8-DBE3-D9DCB9357694}",
     "ObjectPath": "AMB_EnergyPillar_C",
     "ShortName": "AMB_EnergyPillar_C",
     "Path": "Event/AMB_EnergyPillar_C.bnk",
@@ -3726,7 +3744,15 @@
          "Id": "2258521792"
         }
        ]
-      }
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "1289661192",
+        "Name": "Highrise_HoverCars",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_HoverCars",
+        "GUID": "{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}"
+       }
+      ]
      }
     ]
    },
@@ -3735,7 +3761,7 @@
     "Type": "Event",
     "GUID": "{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}",
     "Language": "SFX",
-    "Hash": "{61E7A49E-0E0A-50ED-30C6-D2F272E159B1}",
+    "Hash": "{0BEB7A14-D76A-D93A-06A1-EF3B9684B3EE}",
     "ObjectPath": "FOL_Footstep_L",
     "ShortName": "FOL_Footstep_L",
     "Path": "Event/FOL_Footstep_L.bnk",
@@ -4506,6 +4532,14 @@
       "DurationType": "OneShot",
       "DurationMin": "0.38264266",
       "DurationMax": "0.45574933",
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -5021,7 +5055,7 @@
     "Type": "Event",
     "GUID": "{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}",
     "Language": "SFX",
-    "Hash": "{610EBA21-66E8-5654-389B-BC38AA4D449A}",
+    "Hash": "{E542C9F4-132C-59A1-EB25-637FBEDA7786}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_7",
     "ShortName": "AMB_HoverCars_ParticleStream_7",
     "Path": "Event/AMB_HoverCars_ParticleStream_7.bnk",
@@ -5142,7 +5176,7 @@
     "Type": "Event",
     "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
     "Language": "SFX",
-    "Hash": "{5A9FBF1C-A863-751D-2AE0-5D8DC5C21E77}",
+    "Hash": "{F7A36657-7EF5-E31B-58A2-F69E6D3680D3}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_5",
     "ShortName": "AMB_HoverCars_ParticleStream_5",
     "Path": "Event/AMB_HoverCars_ParticleStream_5.bnk",
@@ -5418,7 +5452,7 @@
     "Type": "Bus",
     "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}",
     "Language": "SFX",
-    "Hash": "{2BC4BC3E-B148-3614-DDDE-65547040EB91}",
+    "Hash": "{72CC5A4F-C1FE-62AC-3CF1-BD42A36E1DBB}",
     "ObjectPath": "Highrise_EarlyReflections",
     "ShortName": "Highrise_EarlyReflections",
     "Path": "Bus/Highrise_EarlyReflections.bnk",
@@ -5455,17 +5489,17 @@
     "Type": "Bus",
     "GUID": "{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}",
     "Language": "SFX",
-    "Hash": "{A0052B69-BD68-EF44-27FB-7CA3D476E4E4}",
+    "Hash": "{C6C73FD1-EDCB-0436-A0B6-FE9F7E4DA2E1}",
     "ObjectPath": "Highrise_Atrium",
     "ShortName": "Highrise_Atrium",
     "Path": "Bus/Highrise_Atrium.bnk",
     "Plugins": {
      "ShareSets": [
       {
-       "Id": "48620415",
-       "Name": "Have_U_Ever_Been_Outside",
-       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Exteriors\\Have_U_Ever_Been_Outside",
-       "GUID": "{FE29AE8D-FD86-4652-A95D-68D32F5760EC}",
+       "Id": "602546716",
+       "Name": "Room_Large",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Large",
+       "GUID": "{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
       }
@@ -5480,7 +5514,7 @@
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "48620415"
+         "Id": "602546716"
         }
        ]
       }
@@ -5492,17 +5526,17 @@
     "Type": "Bus",
     "GUID": "{37B304F5-72C5-4988-84FA-0475BEFB7C26}",
     "Language": "SFX",
-    "Hash": "{7E8452B5-8C39-7E3F-94D5-9CC9C6C77BB3}",
+    "Hash": "{B52DE591-1F5F-7701-8B01-AA12158F733A}",
     "ObjectPath": "Highrise_Room",
     "ShortName": "Highrise_Room",
     "Path": "Bus/Highrise_Room.bnk",
     "Plugins": {
      "ShareSets": [
       {
-       "Id": "1159390747",
-       "Name": "Room_Medium_Tiled",
-       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Medium_Tiled",
-       "GUID": "{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}",
+       "Id": "1990128658",
+       "Name": "Room_Medium",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Medium",
+       "GUID": "{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
       }
@@ -5517,7 +5551,7 @@
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "1159390747"
+         "Id": "1990128658"
         }
        ]
       }
@@ -5539,7 +5573,7 @@
     "Type": "Event",
     "GUID": "{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}",
     "Language": "SFX",
-    "Hash": "{E8F62CBB-2FC5-D3F4-858D-E6D00AAC8F9B}",
+    "Hash": "{FF4ED772-10EF-D4EB-8DB2-B6A57B789DAF}",
     "ObjectPath": "AMB_RoomGusts_SmallEntrance_Exterior",
     "ShortName": "AMB_RoomGusts_SmallEntrance_Exterior",
     "Path": "Event/AMB_RoomGusts_SmallEntrance_Exterior.bnk",
@@ -5590,6 +5624,6 @@
     ]
    }
   ],
-  "FileHash": "{93A5D331-AFAF-5C0C-42F0-5030B707F21E}"
+  "FileHash": "{186375CC-6EB9-0D21-8E97-25E9533C1E15}"
  }
 }

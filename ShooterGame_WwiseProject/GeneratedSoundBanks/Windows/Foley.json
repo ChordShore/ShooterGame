@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{E4E1B551-3907-4673-8D70-D72000D8EB19}",
     "Language": "SFX",
-    "Hash": "{67016D59-4359-D491-CD15-33651151578E}",
+    "Hash": "{4D4C62C2-F7BA-6A54-50E5-23FD2D3F4178}",
     "ObjectPath": "\\SoundBanks\\Foley\\Foley",
     "ShortName": "Foley",
     "Path": "Foley.bnk",
@@ -707,6 +707,14 @@
       "DurationType": "OneShot",
       "DurationMin": "0.38264266",
       "DurationMax": "0.45574933",
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -1248,6 +1256,6 @@
     ]
    }
   ],
-  "FileHash": "{560743A5-90E7-52F7-FC73-467D3491BEA6}"
+  "FileHash": "{C021DEC4-E5C8-A557-4209-84A49CB24A34}"
  }
 }
