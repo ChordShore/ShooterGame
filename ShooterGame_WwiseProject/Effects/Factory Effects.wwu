@@ -135,8 +135,59 @@
 						<Effect Name="One_Tap_Quarter_Second" ID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
 								<Property Name="DelayTime" Type="Real32" Value="0.09"/>
-								<Property Name="WetDryMix" Type="Real32" Value="15"/>
+								<Property Name="Feedback" Type="Real32" Value="0"/>
+								<Property Name="WetDryMix" Type="Real32" Value="0"/>
 							</PropertyList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="Feedback"/>
+									<Property Name="FeedbackEnabled"/>
+									<Property Name="OutputLevel"/>
+									<Property Name="WetDryMix"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="STA_LocationMix" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
+										<CustomState Name="" ID="{8EB3B1F8-EEE2-4C0E-BB9E-B833DA6B8AC5}" ShortID="794650321">
+											<PropertyList>
+												<Property Name="WetDryMix" Type="Real32" Value="30"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+										<CustomState Name="" ID="{0F1B1A0D-D23A-4195-AC32-978116EC0A17}" ShortID="10846493">
+											<PropertyList>
+												<Property Name="Feedback" Type="Real32" Value="10"/>
+												<Property Name="WetDryMix" Type="Real32" Value="20"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
+										<CustomState Name="" ID="{5C4CC105-D51A-413B-8A05-C4F72DAD13A6}" ShortID="651584360">
+											<PropertyList>
+												<Property Name="Feedback" Type="Real32" Value="25"/>
+												<Property Name="WetDryMix" Type="Real32" Value="30"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="STA_Outdoors_Balcony_Center" ID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
+										<CustomState Name="" ID="{F5ACB3A0-BC11-4A63-92E4-C6AC4DED1486}" ShortID="310274053">
+											<PropertyList>
+												<Property Name="Feedback" Type="Real32" Value="5"/>
+												<Property Name="WetDryMix" Type="Real32" Value="10"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Effect>
 						<Effect Name="Nearly_Forever" ID="{38550FDA-9236-4FC5-8AE0-68DB08164B25}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
@@ -1031,6 +1082,7 @@
 										<Property Name="Density" Type="Real32" Value="32"/>
 										<Property Name="ERLevel" Type="Real32" Value="-19"/>
 										<Property Name="ERPattern" Type="int32" Value="27"/>
+										<Property Name="EnableToneControls" Type="bool" Value="True"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="590"/>
 										<Property Name="Filter1Gain" Type="Real32" Value="-1.5"/>
 										<Property Name="Filter2Freq" Type="Real32" Value="300"/>
@@ -1245,13 +1297,16 @@
 										<Property Name="Density" Type="Real32" Value="60"/>
 										<Property Name="Diffusion" Type="Real32" Value="55"/>
 										<Property Name="ERLevel" Type="Real32" Value="-25"/>
+										<Property Name="EnableToneControls" Type="bool" Value="True"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="590"/>
+										<Property Name="Filter1Gain" Type="Real32" Value="-4.5"/>
+										<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
 										<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
-										<Property Name="Filter3Gain" Type="Real32" Value="-4.5"/>
+										<Property Name="Filter3Gain" Type="Real32" Value="-2"/>
 										<Property Name="HFDamping" Type="Real32" Value="3.4"/>
 										<Property Name="PreDelay" Type="Real32" Value="35"/>
 										<Property Name="Quality" Type="int32" Value="16"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-24"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-28"/>
 										<Property Name="RoomShape" Type="Real32" Value="19"/>
 										<Property Name="RoomSize" Type="Real32" Value="36"/>
 										<Property Name="StereoWidth" Type="Real32" Value="150"/>
@@ -1264,9 +1319,13 @@
 										<Property Name="Diffusion" Type="Real32" Value="35"/>
 										<Property Name="ERLevel" Type="Real32" Value="-23"/>
 										<Property Name="ERPattern" Type="int32" Value="26"/>
-										<Property Name="Filter1Freq" Type="Real32" Value="590"/>
-										<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
-										<Property Name="Filter3Gain" Type="Real32" Value="-4.5"/>
+										<Property Name="EnableToneControls" Type="bool" Value="True"/>
+										<Property Name="Filter1Freq" Type="Real32" Value="700"/>
+										<Property Name="Filter2Freq" Type="Real32" Value="560"/>
+										<Property Name="Filter2Gain" Type="Real32" Value="6"/>
+										<Property Name="Filter3Freq" Type="Real32" Value="9300"/>
+										<Property Name="Filter3Gain" Type="Real32" Value="-1"/>
+										<Property Name="Filter3InsertPos" Type="int32" Value="0"/>
 										<Property Name="HFDamping" Type="Real32" Value="2.65"/>
 										<Property Name="Quality" Type="int32" Value="10"/>
 										<Property Name="RoomShape" Type="Real32" Value="55"/>

@@ -226,7 +226,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{4D4C62C2-F7BA-6A54-50E5-23FD2D3F4178}">
+		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{FCA11215-1E40-0AF7-DFBF-28A71611ED94}">
 			<ObjectPath>\SoundBanks\Foley\Foley</ObjectPath>
 			<ShortName>Foley</ShortName>
 			<Path>Foley.bnk</Path>
@@ -570,7 +570,7 @@
 			</Media>
 			<Events>
 				<Event Id="1891391704" Name="FOL_Bodyfall" ObjectPath="\Events\Foley\Players\FOL_Bodyfall" GUID="{8C389BC0-A8E4-4172-B60A-4329D5567561}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2395369630" Name="FOL_Footstep_R" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_R" GUID="{C7AF60A9-905E-4C25-94DB-228933B96D51}" DurationType="OneShot" DurationMin="0.38264266" DurationMax="0.45574933">
+				<Event Id="2395369630" Name="FOL_Footstep_R" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_R" GUID="{C7AF60A9-905E-4C25-94DB-228933B96D51}" DurationType="OneShot" DurationMin="0.3707094" DurationMax="0.5742082">
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
@@ -579,25 +579,47 @@
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="1488713918" GUID="{02773C27-1839-4638-A2AF-91E103D925E3}"/>
 							<MediaRefs>
 								<MediaRef Id="117849200"/>
+								<MediaRef Id="124457290"/>
 								<MediaRef Id="133830587"/>
 								<MediaRef Id="186192136"/>
+								<MediaRef Id="203547695"/>
+								<MediaRef Id="212849139"/>
 								<MediaRef Id="229520958"/>
+								<MediaRef Id="230738203"/>
 								<MediaRef Id="252550112"/>
 								<MediaRef Id="259023430"/>
 								<MediaRef Id="327806807"/>
 								<MediaRef Id="367381090"/>
 								<MediaRef Id="379953163"/>
+								<MediaRef Id="403413120"/>
+								<MediaRef Id="455302530"/>
 								<MediaRef Id="474151386"/>
+								<MediaRef Id="523994097"/>
+								<MediaRef Id="528639656"/>
+								<MediaRef Id="533586274"/>
+								<MediaRef Id="562787734"/>
+								<MediaRef Id="566922794"/>
 								<MediaRef Id="635757014"/>
+								<MediaRef Id="643174161"/>
+								<MediaRef Id="649345269"/>
+								<MediaRef Id="659589069"/>
+								<MediaRef Id="696625844"/>
+								<MediaRef Id="699277577"/>
 								<MediaRef Id="713378661"/>
 								<MediaRef Id="725887440"/>
 								<MediaRef Id="728012673"/>
+								<MediaRef Id="758580086"/>
+								<MediaRef Id="793673866"/>
+								<MediaRef Id="814129827"/>
 								<MediaRef Id="815122724"/>
 								<MediaRef Id="877807197"/>
 								<MediaRef Id="905178655"/>
 								<MediaRef Id="922113776"/>
 								<MediaRef Id="926981783"/>
+								<MediaRef Id="939877805"/>
+								<MediaRef Id="941562592"/>
 								<MediaRef Id="966435357"/>
+								<MediaRef Id="990966566"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -679,25 +701,47 @@
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="4025267629" GUID="{63A5F2DE-9D45-455C-A02A-A165A88A6A74}"/>
 							<MediaRefs>
 								<MediaRef Id="117849200"/>
+								<MediaRef Id="124457290"/>
 								<MediaRef Id="133830587"/>
 								<MediaRef Id="186192136"/>
+								<MediaRef Id="203547695"/>
+								<MediaRef Id="212849139"/>
 								<MediaRef Id="229520958"/>
+								<MediaRef Id="230738203"/>
 								<MediaRef Id="252550112"/>
 								<MediaRef Id="259023430"/>
 								<MediaRef Id="327806807"/>
 								<MediaRef Id="367381090"/>
 								<MediaRef Id="379953163"/>
+								<MediaRef Id="403413120"/>
+								<MediaRef Id="455302530"/>
 								<MediaRef Id="474151386"/>
+								<MediaRef Id="523994097"/>
+								<MediaRef Id="528639656"/>
+								<MediaRef Id="533586274"/>
+								<MediaRef Id="562787734"/>
+								<MediaRef Id="566922794"/>
 								<MediaRef Id="635757014"/>
+								<MediaRef Id="643174161"/>
+								<MediaRef Id="649345269"/>
+								<MediaRef Id="659589069"/>
+								<MediaRef Id="696625844"/>
+								<MediaRef Id="699277577"/>
 								<MediaRef Id="713378661"/>
 								<MediaRef Id="725887440"/>
 								<MediaRef Id="728012673"/>
+								<MediaRef Id="758580086"/>
+								<MediaRef Id="793673866"/>
+								<MediaRef Id="814129827"/>
 								<MediaRef Id="815122724"/>
 								<MediaRef Id="877807197"/>
 								<MediaRef Id="905178655"/>
 								<MediaRef Id="922113776"/>
 								<MediaRef Id="926981783"/>
+								<MediaRef Id="939877805"/>
+								<MediaRef Id="941562592"/>
 								<MediaRef Id="966435357"/>
+								<MediaRef Id="990966566"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -974,7 +1018,7 @@
 				<Event Id="3006080354" Name="UI_Toggle" ObjectPath="\Events\Interface\UI_Toggle" GUID="{797C0C31-AE30-4A12-9686-6408980D163E}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1257150314" Type="Bus" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}" Language="SFX" Hash="{A84E60AA-F023-3FE1-1728-516215BF081B}">
+		<SoundBank Id="1257150314" Type="Bus" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}" Language="SFX" Hash="{6D7F0CFA-47DA-AEF6-69C7-6EBA1AFDA872}">
 			<ObjectPath>Highrise_Spawn</ObjectPath>
 			<ShortName>Highrise_Spawn</ShortName>
 			<Path>Bus/Highrise_Spawn.bnk</Path>
@@ -1037,7 +1081,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{9F10D42F-135D-B55B-5B40-47AC87E0E198}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{F4E22F7A-9896-5BFB-3F08-6833E7DBD416}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -1466,7 +1510,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{0BEB7A14-D76A-D93A-06A1-EF3B9684B3EE}">
+		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{E3DB0454-FBC9-4B81-B69F-317ADA6B01EB}">
 			<ObjectPath>FOL_Footstep_L</ObjectPath>
 			<ShortName>FOL_Footstep_L</ShortName>
 			<Path>Event/FOL_Footstep_L.bnk</Path>
@@ -1893,7 +1937,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2395369600" Name="FOL_Footstep_L" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_L" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" DurationType="OneShot" DurationMin="0.38264266" DurationMax="0.45574933">
+				<Event Id="2395369600" Name="FOL_Footstep_L" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_L" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" DurationType="OneShot" DurationMin="0.3707094" DurationMax="0.5742082">
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
@@ -1902,25 +1946,47 @@
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="1488713918" GUID="{02773C27-1839-4638-A2AF-91E103D925E3}"/>
 							<MediaRefs>
 								<MediaRef Id="117849200"/>
+								<MediaRef Id="124457290"/>
 								<MediaRef Id="133830587"/>
 								<MediaRef Id="186192136"/>
+								<MediaRef Id="203547695"/>
+								<MediaRef Id="212849139"/>
 								<MediaRef Id="229520958"/>
+								<MediaRef Id="230738203"/>
 								<MediaRef Id="252550112"/>
 								<MediaRef Id="259023430"/>
 								<MediaRef Id="327806807"/>
 								<MediaRef Id="367381090"/>
 								<MediaRef Id="379953163"/>
+								<MediaRef Id="403413120"/>
+								<MediaRef Id="455302530"/>
 								<MediaRef Id="474151386"/>
+								<MediaRef Id="523994097"/>
+								<MediaRef Id="528639656"/>
+								<MediaRef Id="533586274"/>
+								<MediaRef Id="562787734"/>
+								<MediaRef Id="566922794"/>
 								<MediaRef Id="635757014"/>
+								<MediaRef Id="643174161"/>
+								<MediaRef Id="649345269"/>
+								<MediaRef Id="659589069"/>
+								<MediaRef Id="696625844"/>
+								<MediaRef Id="699277577"/>
 								<MediaRef Id="713378661"/>
 								<MediaRef Id="725887440"/>
 								<MediaRef Id="728012673"/>
+								<MediaRef Id="758580086"/>
+								<MediaRef Id="793673866"/>
+								<MediaRef Id="814129827"/>
 								<MediaRef Id="815122724"/>
 								<MediaRef Id="877807197"/>
 								<MediaRef Id="905178655"/>
 								<MediaRef Id="922113776"/>
 								<MediaRef Id="926981783"/>
+								<MediaRef Id="939877805"/>
+								<MediaRef Id="941562592"/>
 								<MediaRef Id="966435357"/>
+								<MediaRef Id="990966566"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -2002,25 +2068,47 @@
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="4025267629" GUID="{63A5F2DE-9D45-455C-A02A-A165A88A6A74}"/>
 							<MediaRefs>
 								<MediaRef Id="117849200"/>
+								<MediaRef Id="124457290"/>
 								<MediaRef Id="133830587"/>
 								<MediaRef Id="186192136"/>
+								<MediaRef Id="203547695"/>
+								<MediaRef Id="212849139"/>
 								<MediaRef Id="229520958"/>
+								<MediaRef Id="230738203"/>
 								<MediaRef Id="252550112"/>
 								<MediaRef Id="259023430"/>
 								<MediaRef Id="327806807"/>
 								<MediaRef Id="367381090"/>
 								<MediaRef Id="379953163"/>
+								<MediaRef Id="403413120"/>
+								<MediaRef Id="455302530"/>
 								<MediaRef Id="474151386"/>
+								<MediaRef Id="523994097"/>
+								<MediaRef Id="528639656"/>
+								<MediaRef Id="533586274"/>
+								<MediaRef Id="562787734"/>
+								<MediaRef Id="566922794"/>
 								<MediaRef Id="635757014"/>
+								<MediaRef Id="643174161"/>
+								<MediaRef Id="649345269"/>
+								<MediaRef Id="659589069"/>
+								<MediaRef Id="696625844"/>
+								<MediaRef Id="699277577"/>
 								<MediaRef Id="713378661"/>
 								<MediaRef Id="725887440"/>
 								<MediaRef Id="728012673"/>
+								<MediaRef Id="758580086"/>
+								<MediaRef Id="793673866"/>
+								<MediaRef Id="814129827"/>
 								<MediaRef Id="815122724"/>
 								<MediaRef Id="877807197"/>
 								<MediaRef Id="905178655"/>
 								<MediaRef Id="922113776"/>
 								<MediaRef Id="926981783"/>
+								<MediaRef Id="939877805"/>
+								<MediaRef Id="941562592"/>
 								<MediaRef Id="966435357"/>
+								<MediaRef Id="990966566"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -2101,7 +2189,7 @@
 			</Media>
 			<Plugins>
 				<ShareSets>
-					<Plugin Id="529418190" Name="Tremolo_HoverCars_PS7" ObjectPath="\Effects\Default Work Unit\Tremolo_HoverCars_PS7" GUID="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}" LibName="Wwise Tremolo" LibId="8585219"/>
+					<Plugin Id="529418190" Name="Tremolo_HoverCars_PS7" ObjectPath="\Effects\Ambience\HoverCars\Tremolo_HoverCars_PS7" GUID="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}" LibName="Wwise Tremolo" LibId="8585219"/>
 					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
 				</ShareSets>
 			</Plugins>
@@ -2156,7 +2244,7 @@
 			</Media>
 			<Plugins>
 				<ShareSets>
-					<Plugin Id="529418188" Name="Tremolo_HoverCars_PS5" ObjectPath="\Effects\Default Work Unit\Tremolo_HoverCars_PS5" GUID="{C2D44633-8367-4F1B-ABE3-8028C4D3B172}" LibName="Wwise Tremolo" LibId="8585219"/>
+					<Plugin Id="529418188" Name="Tremolo_HoverCars_PS5" ObjectPath="\Effects\Ambience\HoverCars\Tremolo_HoverCars_PS5" GUID="{C2D44633-8367-4F1B-ABE3-8028C4D3B172}" LibName="Wwise Tremolo" LibId="8585219"/>
 					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
 				</ShareSets>
 			</Plugins>
@@ -2246,7 +2334,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3348775760" Type="Bus" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" Language="SFX" Hash="{72CC5A4F-C1FE-62AC-3CF1-BD42A36E1DBB}">
+		<SoundBank Id="3348775760" Type="Bus" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" Language="SFX" Hash="{A6B203F1-6014-976C-F37E-65AB6CC64ECB}">
 			<ObjectPath>Highrise_EarlyReflections</ObjectPath>
 			<ShortName>Highrise_EarlyReflections</ShortName>
 			<Path>Bus/Highrise_EarlyReflections.bnk</Path>
@@ -2265,7 +2353,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3466276443" Type="Bus" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}" Language="SFX" Hash="{C6C73FD1-EDCB-0436-A0B6-FE9F7E4DA2E1}">
+		<SoundBank Id="3466276443" Type="Bus" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}" Language="SFX" Hash="{9D208909-2DDC-87E3-B994-4315ACC871D8}">
 			<ObjectPath>Highrise_Atrium</ObjectPath>
 			<ShortName>Highrise_Atrium</ShortName>
 			<Path>Bus/Highrise_Atrium.bnk</Path>
@@ -2284,7 +2372,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3814800052" Type="Bus" GUID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}" Language="SFX" Hash="{B52DE591-1F5F-7701-8B01-AA12158F733A}">
+		<SoundBank Id="3814800052" Type="Bus" GUID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}" Language="SFX" Hash="{86588BA4-388C-F050-4AB9-86F853CD0DEA}">
 			<ObjectPath>Highrise_Room</ObjectPath>
 			<ShortName>Highrise_Room</ShortName>
 			<Path>Bus/Highrise_Room.bnk</Path>
@@ -2338,5 +2426,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{555B2CB7-EC29-9D2E-3B8D-618E5E1D0919}</FileHash>
+	<FileHash>{D3782AF8-FFF9-B45E-26F1-3605D96E0AE4}</FileHash>
 </SoundBanksInfo>
