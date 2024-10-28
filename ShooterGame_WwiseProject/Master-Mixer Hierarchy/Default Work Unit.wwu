@@ -22,7 +22,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-															<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 														</Reference>
 													</ReferenceList>
 												</AuxBus>
@@ -32,7 +32,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-															<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															<ObjectRef Name="My_Closet" ID="{384A82A1-3C92-4AC5-AFC2-474F2080642C}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 														</Reference>
 													</ReferenceList>
 												</AuxBus>
@@ -42,7 +42,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-															<ObjectRef Name="Room_Medium_Tiled" ID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 														</Reference>
 													</ReferenceList>
 												</AuxBus>
@@ -94,11 +94,6 @@
 								</Bus>
 								<Bus Name="Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}">
 									<PropertyList>
-										<Property Name="BusVolume" Type="Real64">
-											<ValueList>
-												<Value>-96</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Color" Type="int16" Value="4"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>

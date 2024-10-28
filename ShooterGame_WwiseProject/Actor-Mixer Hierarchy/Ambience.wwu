@@ -27,8 +27,15 @@
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -255,7 +262,9 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -498,6 +507,17 @@
 								<ActorMixer Name="AMB_EnergyPillar" ID="{C93C64CC-DD0D-461E-9A50-09B3A56294AF}" ShortID="660723535">
 									<PropertyList>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-30</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -505,6 +525,9 @@
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Highrise_HoverCars" ID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -984,6 +1007,11 @@
 											</ValueList>
 										</Property>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1133,7 +1161,7 @@
 												</Property>
 												<Property Name="UserAuxSendVolume0" Type="Real64">
 													<ValueList>
-														<Value>-30</Value>
+														<Value>-35</Value>
 													</ValueList>
 												</Property>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -1787,7 +1815,7 @@
 												</Property>
 												<Property Name="UserAuxSendVolume0" Type="Real64">
 													<ValueList>
-														<Value>-30</Value>
+														<Value>-35</Value>
 													</ValueList>
 												</Property>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -2198,8 +2226,6 @@
 												<Value>-9</Value>
 											</ValueList>
 										</Property>
-										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
-										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 										<Property Name="ReflectionsVolume" Type="Real64">
@@ -2207,7 +2233,6 @@
 												<Value>-6</Value>
 											</ValueList>
 										</Property>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -2285,6 +2310,8 @@
 								<ActorMixer Name="AMB_WindGusts" ID="{9A826456-7F3B-417B-AAC8-A7AFEEF96802}" ShortID="336050374">
 									<PropertyList>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2777,8 +2804,10 @@
 											</ValueList>
 										</Property>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>
@@ -3330,7 +3359,9 @@
 										</Property>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3604,6 +3635,7 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
