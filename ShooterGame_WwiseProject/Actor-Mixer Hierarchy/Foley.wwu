@@ -588,12 +588,19 @@
 								</ActorMixer>
 								<ActorMixer Name="FOL_Lands" ID="{8F0C7627-B2AD-4654-8804-F7ADBC754BC7}" ShortID="32832854">
 									<PropertyList>
-										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
+										<Property Name="GameAuxSendVolume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="ReflectionsVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -622,6 +629,11 @@
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -647,7 +659,7 @@
 														</Property>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>3</Value>
+																<Value>4</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Pitch" Type="int32">
@@ -1018,7 +1030,7 @@
 														</Property>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>4</Value>
+																<Value>3</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Pitch" Type="int32">
@@ -1376,7 +1388,7 @@
 														</Property>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>4</Value>
+																<Value>3</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Pitch" Type="int32">
@@ -1612,7 +1624,19 @@
 								</ActorMixer>
 								<ActorMixer Name="FOL_Jumps" ID="{F09E8EC4-E850-4584-BE55-455134877E68}" ShortID="587730209">
 									<PropertyList>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="ReflectionsVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1626,110 +1650,15 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<SwitchContainer Name="FOL_Jumps_Switch" ID="{FA1AF148-7252-4258-AB86-B246EE19A931}" ShortID="573258960">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-												</Reference>
-												<Reference Name="DefaultSwitchOrState">
-													<ObjectRef Name="M_Tile" ID="{B4FDF75B-8B11-4F10-9CA5-B65DC3769474}" WorkUnitID="{ECB4FF3E-F275-463C-9725-86A07FDE6049}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-												</Reference>
-												<Reference Name="SwitchGroupOrStateGroup">
-													<ObjectRef Name="SWT_Physical_Material" ID="{E561EBF9-47C4-4F13-A827-CF892AA0C054}" WorkUnitID="{ECB4FF3E-F275-463C-9725-86A07FDE6049}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<RandomSequenceContainer Name="FOL_Jumps_Grass" ID="{D70CC514-D10E-4B38-BF8B-A8D676A2AC5D}" ShortID="914323538">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="FOL_Jumps_Metal" ID="{E6498593-EA80-478F-8494-A47E67B2FF63}" ShortID="54035227">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="FOL_Jumps_Glass" ID="{311D92BF-9923-4ADD-B1FB-C72492D01CDF}" ShortID="933276533">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="FOL_Jumps_Tile" ID="{06E8A020-50B5-4F63-8E28-CFC193C5E6B9}" ShortID="143167409">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-												</RandomSequenceContainer>
-											</ChildrenList>
-											<GroupingInfo>
-												<GroupingBehaviorList>
-													<GroupingBehavior>
-														<ItemRef Name="FOL_Jumps_Grass" ID="{D70CC514-D10E-4B38-BF8B-A8D676A2AC5D}"/>
-													</GroupingBehavior>
-													<GroupingBehavior>
-														<ItemRef Name="FOL_Jumps_Tile" ID="{06E8A020-50B5-4F63-8E28-CFC193C5E6B9}"/>
-													</GroupingBehavior>
-													<GroupingBehavior>
-														<ItemRef Name="FOL_Jumps_Metal" ID="{E6498593-EA80-478F-8494-A47E67B2FF63}"/>
-													</GroupingBehavior>
-													<GroupingBehavior>
-														<ItemRef Name="FOL_Jumps_Glass" ID="{311D92BF-9923-4ADD-B1FB-C72492D01CDF}"/>
-													</GroupingBehavior>
-												</GroupingBehaviorList>
-												<GroupingList>
-													<Grouping>
-														<SwitchRef Name="M_Tile" ID="{B4FDF75B-8B11-4F10-9CA5-B65DC3769474}"/>
-														<ItemList>
-															<ItemRef Name="FOL_Jumps_Tile" ID="{06E8A020-50B5-4F63-8E28-CFC193C5E6B9}"/>
-														</ItemList>
-													</Grouping>
-													<Grouping>
-														<SwitchRef Name="M_Glass" ID="{467993A2-3942-43B0-9602-E4FADF206889}"/>
-														<ItemList>
-															<ItemRef Name="FOL_Jumps_Glass" ID="{311D92BF-9923-4ADD-B1FB-C72492D01CDF}"/>
-														</ItemList>
-													</Grouping>
-													<Grouping>
-														<SwitchRef Name="M_Grass" ID="{63A5F2DE-9D45-455C-A02A-A165A88A6A74}"/>
-														<ItemList>
-															<ItemRef Name="FOL_Jumps_Grass" ID="{D70CC514-D10E-4B38-BF8B-A8D676A2AC5D}"/>
-														</ItemList>
-													</Grouping>
-													<Grouping>
-														<SwitchRef Name="M_Metal" ID="{73EE52DF-CCB9-4B60-A98D-A85FE8F582CA}"/>
-														<ItemList>
-															<ItemRef Name="FOL_Jumps_Metal" ID="{E6498593-EA80-478F-8494-A47E67B2FF63}"/>
-														</ItemList>
-													</Grouping>
-												</GroupingList>
-											</GroupingInfo>
-										</SwitchContainer>
 										<RandomSequenceContainer Name="FOL_Jumps" ID="{535546B1-7C3F-48F7-9D5A-711A710BFE03}" ShortID="516984686">
 											<PropertyList>
 												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>15</Value>
+													</ValueList>
+												</Property>
 												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
@@ -1738,15 +1667,15 @@
 												</Property>
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
-														<Value>350</Value>
+														<Value>300</Value>
 													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
 															<Modifier Name="" ID="{1F2DC1AF-6117-4209-9CF3-D1593F8672B7}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="100"/>
-																	<Property Name="Min" Type="Real64" Value="-100"/>
+																	<Property Name="Max" Type="Real64" Value="200"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
@@ -1759,7 +1688,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-11</Value>
+														<Value>-13</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2795,7 +2724,7 @@
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-3</Value>
+																<Value>-4</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -6701,7 +6630,7 @@
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-3</Value>
+																<Value>-4</Value>
 															</ValueList>
 															<ModifierList>
 																<ModifierInfo>
@@ -10305,8 +10234,8 @@
 															<Modifier Name="" ID="{F5F83430-BD6C-420B-BEA2-9D1A5E25CAF2}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="100"/>
-																	<Property Name="Min" Type="Real64" Value="-100"/>
+																	<Property Name="Max" Type="Real64" Value="200"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
