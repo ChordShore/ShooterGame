@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{8BCFCBDE-C2C7-EC00-FE54-063082C35EDD}">
+		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{3457EC22-66E5-96D9-0378-BA84EF87ADB1}">
 			<ObjectPath>\SoundBanks\Foley\Foley</ObjectPath>
 			<ShortName>Foley</ShortName>
 			<Path>Foley.bnk</Path>
 			<Media>
+				<File Id="13764958" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Glass_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Glass_Stem_1B2DB84E.wem</CachePath>
+				</File>
+				<File Id="25879821" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Tile_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Tile_Stem_D64046F9.wem</CachePath>
+				</File>
+				<File Id="59904254" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Grass_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Grass_Stem_929CDACA.wem</CachePath>
+				</File>
+				<File Id="61200338" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Armor_Land_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Armor_Land_Stem_948AB197.wem</CachePath>
+				</File>
 				<File Id="90301459" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Glass_Heel_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Glass_Heel_Stem_1ABC3FFD.wem</CachePath>
+				</File>
+				<File Id="92574166" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Grass_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Grass_Stem_3F19B710.wem</CachePath>
 				</File>
 				<File Id="117849200" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Grass_Heel_Stem.wav</ShortName>
@@ -34,9 +54,17 @@
 					<ShortName>FOL_Footsteps_Tile_Toe_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Tile_Toe_Stem_B6360839.wem</CachePath>
 				</File>
+				<File Id="183337199" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Jumps_ClothSweep_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Jumps_ClothSweep_Stem_2164E07A.wem</CachePath>
+				</File>
 				<File Id="186192136" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Grass_Heel_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Grass_Heel_Stem_81E4235E.wem</CachePath>
+				</File>
+				<File Id="195017888" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Tile_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Tile_Stem_6C8A5B19.wem</CachePath>
 				</File>
 				<File Id="203547695" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Metal_Heel_Stem.wav</ShortName>
@@ -49,6 +77,10 @@
 				<File Id="212849139" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Metal_Toe_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Metal_Toe_Stem_A7474A7D.wem</CachePath>
+				</File>
+				<File Id="221192132" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Armor_Land_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Armor_Land_Stem_460FFB49.wem</CachePath>
 				</File>
 				<File Id="229520958" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Grass_Toe_Stem.wav</ShortName>
@@ -65,6 +97,10 @@
 				<File Id="248450513" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Tile_Heel_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Tile_Heel_Stem_DDD3DCCF.wem</CachePath>
+				</File>
+				<File Id="250131033" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Armor_Land_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Armor_Land_Stem_FF5AAD8C.wem</CachePath>
 				</File>
 				<File Id="252550112" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Grass_Toe_Stem.wav</ShortName>
@@ -86,6 +122,10 @@
 					<ShortName>FOL_Footsteps_Glass_Heel_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Glass_Heel_Stem_09F9547B.wem</CachePath>
 				</File>
+				<File Id="323990764" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Armor_Land_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Armor_Land_Stem_ECC678A0.wem</CachePath>
+				</File>
 				<File Id="327806807" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Grass_Toe_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Grass_Toe_Stem_FF32E189.wem</CachePath>
@@ -97,6 +137,10 @@
 				<File Id="379953163" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Grass_Heel_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Grass_Heel_Stem_61E0577D.wem</CachePath>
+				</File>
+				<File Id="388497900" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Jumps_ClothSweep_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Jumps_ClothSweep_Stem_41124957.wem</CachePath>
 				</File>
 				<File Id="403413120" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Metal_Heel_Stem.wav</ShortName>
@@ -142,6 +186,10 @@
 					<ShortName>FOL_Footsteps_Tile_Toe_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Tile_Toe_Stem_27667822.wem</CachePath>
 				</File>
+				<File Id="552953942" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Glass_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Glass_Stem_0E5D9A26.wem</CachePath>
+				</File>
 				<File Id="562787734" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Metal_Toe_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Metal_Toe_Stem_B5042D25.wem</CachePath>
@@ -150,9 +198,21 @@
 					<ShortName>FOL_Footsteps_Metal_Toe_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Metal_Toe_Stem_57B342A3.wem</CachePath>
 				</File>
+				<File Id="570533412" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Armor_Land_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Armor_Land_Stem_C5613B24.wem</CachePath>
+				</File>
+				<File Id="582355384" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Metal_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Metal_Stem_DA4A01A5.wem</CachePath>
+				</File>
 				<File Id="587247305" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Glass_Heel_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Glass_Heel_Stem_F0094DE5.wem</CachePath>
+				</File>
+				<File Id="604818133" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Tile_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Tile_Stem_7CF8013B.wem</CachePath>
 				</File>
 				<File Id="624087980" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Tile_Heel_Stem.wav</ShortName>
@@ -202,6 +262,10 @@
 					<ShortName>FOL_Footsteps_Glass_Toe_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Glass_Toe_Stem_C9F6086D.wem</CachePath>
 				</File>
+				<File Id="679719429" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Glass_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Glass_Stem_9E9CD10C.wem</CachePath>
+				</File>
 				<File Id="680424709" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Glass_Heel_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Glass_Heel_Stem_24618F88.wem</CachePath>
@@ -234,6 +298,10 @@
 					<ShortName>FOL_Footsteps_Grass_Heel_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Grass_Heel_Stem_9DCD5265.wem</CachePath>
 				</File>
+				<File Id="721385222" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Armor_Land_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Armor_Land_Stem_A9472C97.wem</CachePath>
+				</File>
 				<File Id="725887440" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Grass_Heel_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Grass_Heel_Stem_0EEED8E5.wem</CachePath>
@@ -242,9 +310,17 @@
 					<ShortName>FOL_Footsteps_Grass_Toe_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Grass_Toe_Stem_1BB28857.wem</CachePath>
 				</File>
+				<File Id="741983769" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Metal_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Metal_Stem_F9A07CB2.wem</CachePath>
+				</File>
 				<File Id="758580086" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Metal_Toe_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Metal_Toe_Stem_C1D218A7.wem</CachePath>
+				</File>
+				<File Id="782933215" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Grass_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Grass_Stem_7B2BDE73.wem</CachePath>
 				</File>
 				<File Id="784384970" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Tile_Toe_Stem.wav</ShortName>
@@ -274,13 +350,37 @@
 					<ShortName>FOL_Footsteps_Glass_Toe_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Glass_Toe_Stem_BDE57B3F.wem</CachePath>
 				</File>
+				<File Id="849602298" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Grass_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Grass_Stem_93E01E6D.wem</CachePath>
+				</File>
+				<File Id="854687036" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Metal_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Metal_Stem_FD334017.wem</CachePath>
+				</File>
+				<File Id="867409324" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Grass_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Grass_Stem_81AC3D35.wem</CachePath>
+				</File>
+				<File Id="868186493" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Jumps_ClothSweep_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Jumps_ClothSweep_Stem_87524002.wem</CachePath>
+				</File>
 				<File Id="871843932" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Glass_Heel_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Glass_Heel_Stem_686390F0.wem</CachePath>
 				</File>
+				<File Id="877535658" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Tile_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Tile_Stem_72D642B1.wem</CachePath>
+				</File>
 				<File Id="877807197" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Grass_Heel_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Grass_Heel_Stem_15D470F6.wem</CachePath>
+				</File>
+				<File Id="880776369" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Glass_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Glass_Stem_A291A877.wem</CachePath>
 				</File>
 				<File Id="882900389" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Tile_Heel_Stem.wav</ShortName>
@@ -290,6 +390,18 @@
 					<ShortName>FOL_Footsteps_Glass_Toe_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Glass_Toe_Stem_F35ADA4A.wem</CachePath>
 				</File>
+				<File Id="889588474" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Jumps_ClothSweep_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Jumps_ClothSweep_Stem_7D5FB9E8.wem</CachePath>
+				</File>
+				<File Id="890360612" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Tile_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Tile_Stem_2A323DD3.wem</CachePath>
+				</File>
+				<File Id="891103092" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Armor_Land_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Armor_Land_Stem_C07F0A5A.wem</CachePath>
+				</File>
 				<File Id="901655009" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Glass_Heel_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Glass_Heel_Stem_A422B9B1.wem</CachePath>
@@ -297,6 +409,10 @@
 				<File Id="905178655" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Grass_Toe_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Grass_Toe_Stem_EA224A24.wem</CachePath>
+				</File>
+				<File Id="905491949" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Metal_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Metal_Stem_86A8B22C.wem</CachePath>
 				</File>
 				<File Id="922113776" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Grass_Heel_Stem.wav</ShortName>
@@ -334,9 +450,17 @@
 					<ShortName>FOL_Footsteps_Metal_Heel_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Metal_Heel_Stem_6577735B.wem</CachePath>
 				</File>
+				<File Id="1015318436" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Glass_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Glass_Stem_B7319ED4.wem</CachePath>
+				</File>
 				<File Id="1035261983" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Tile_Toe_Stem.wav</ShortName>
 					<CachePath>SFX/FOL_Footsteps_Tile_Toe_Stem_B6EE0898.wem</CachePath>
+				</File>
+				<File Id="1042565849" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FOL_Lands_Metal_Stem.wav</ShortName>
+					<CachePath>SFX/FOL_Lands_Metal_Stem_22C6F9AB.wem</CachePath>
 				</File>
 				<File Id="1058194484" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FOL_Footsteps_Tile_Toe_Stem.wav</ShortName>
@@ -548,8 +672,103 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3639315175" Name="FOL_Jump" ObjectPath="\Events\Foley\Players\FOL_Jump" GUID="{54BD1D82-A9B7-48F0-B383-0DB48BD03160}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1318050460" Name="FOL_Land" ObjectPath="\Events\Foley\Players\FOL_Land" GUID="{9C0F3AE6-505C-4DC2-80DF-1A0F23DFE402}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3639315175" Name="FOL_Jump" ObjectPath="\Events\Foley\Players\FOL_Jump" GUID="{54BD1D82-A9B7-48F0-B383-0DB48BD03160}" DurationType="OneShot" DurationMin="0.48154923" DurationMax="0.6243391">
+					<MediaRefs>
+						<MediaRef Id="183337199"/>
+						<MediaRef Id="388497900"/>
+						<MediaRef Id="868186493"/>
+						<MediaRef Id="889588474"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="1318050460" Name="FOL_Land" ObjectPath="\Events\Foley\Players\FOL_Land" GUID="{9C0F3AE6-505C-4DC2-80DF-1A0F23DFE402}" DurationType="OneShot" DurationMin="0.47428083" DurationMax="0.82440674">
+					<MediaRefs>
+						<MediaRef Id="61200338"/>
+						<MediaRef Id="221192132"/>
+						<MediaRef Id="250131033"/>
+						<MediaRef Id="323990764"/>
+						<MediaRef Id="570533412"/>
+						<MediaRef Id="721385222"/>
+						<MediaRef Id="891103092"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="1488713918" GUID="{02773C27-1839-4638-A2AF-91E103D925E3}"/>
+							<MediaRefs>
+								<MediaRef Id="59904254"/>
+								<MediaRef Id="92574166"/>
+								<MediaRef Id="582355384"/>
+								<MediaRef Id="741983769"/>
+								<MediaRef Id="782933215"/>
+								<MediaRef Id="849602298"/>
+								<MediaRef Id="854687036"/>
+								<MediaRef Id="867409324"/>
+								<MediaRef Id="905491949"/>
+								<MediaRef Id="1042565849"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="2238306104" GUID="{7793252A-8C3B-42B3-A5BE-5BD85E592AF5}"/>
+							<MediaRefs>
+								<MediaRef Id="25879821"/>
+								<MediaRef Id="195017888"/>
+								<MediaRef Id="604818133"/>
+								<MediaRef Id="877535658"/>
+								<MediaRef Id="890360612"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="132749061" GUID="{B4FDF75B-8B11-4F10-9CA5-B65DC3769474}" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="25879821"/>
+								<MediaRef Id="195017888"/>
+								<MediaRef Id="604818133"/>
+								<MediaRef Id="877535658"/>
+								<MediaRef Id="890360612"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="4226644939" GUID="{467993A2-3942-43B0-9602-E4FADF206889}"/>
+							<MediaRefs>
+								<MediaRef Id="13764958"/>
+								<MediaRef Id="552953942"/>
+								<MediaRef Id="679719429"/>
+								<MediaRef Id="880776369"/>
+								<MediaRef Id="1015318436"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="4025267629" GUID="{63A5F2DE-9D45-455C-A02A-A165A88A6A74}"/>
+							<MediaRefs>
+								<MediaRef Id="59904254"/>
+								<MediaRef Id="92574166"/>
+								<MediaRef Id="582355384"/>
+								<MediaRef Id="741983769"/>
+								<MediaRef Id="782933215"/>
+								<MediaRef Id="849602298"/>
+								<MediaRef Id="854687036"/>
+								<MediaRef Id="867409324"/>
+								<MediaRef Id="905491949"/>
+								<MediaRef Id="1042565849"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="217513402" GUID="{73EE52DF-CCB9-4B60-A98D-A85FE8F582CA}"/>
+							<MediaRefs>
+								<MediaRef Id="582355384"/>
+								<MediaRef Id="741983769"/>
+								<MediaRef Id="854687036"/>
+								<MediaRef Id="905491949"/>
+								<MediaRef Id="1042565849"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="378132258" Name="FOL_Trashcan_Collision" ObjectPath="\Events\Foley\Props\FOL_Trashcan_Collision" GUID="{83AF3510-8046-4206-B4B6-E1A12D72AC55}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<GameParameters>
@@ -573,5 +792,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5D092273-4089-9F62-84CC-F3D6727A7D52}</FileHash>
+	<FileHash>{A8C97A66-1F1C-8637-B128-C820197DFE55}</FileHash>
 </SoundBanksInfo>

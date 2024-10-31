@@ -589,6 +589,11 @@
 								<ActorMixer Name="FOL_Lands" ID="{8F0C7627-B2AD-4654-8804-F7ADBC754BC7}" ShortID="32832854">
 									<PropertyList>
 										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -603,6 +608,21 @@
 									</ReferenceList>
 									<ChildrenList>
 										<SwitchContainer Name="FOL_Lands_Switch" ID="{EA62E50B-814F-484F-A702-759A20BDCAA9}" ShortID="732004684">
+											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -619,6 +639,34 @@
 											</ReferenceList>
 											<ChildrenList>
 												<RandomSequenceContainer Name="FOL_Lands_Metal" ID="{593E99A0-0116-4602-99FA-570EC9E441E1}" ShortID="773243470">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>28</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-200</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{C91892B0-AA4D-4454-8AF4-0B7A0F005358}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="100"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -627,8 +675,181 @@
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 														</Reference>
 													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="FOL_Lands_Metal_01" ID="{B5809604-D8BD-4D2E-B29A-D60E7F11A09D}" ShortID="446321534">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Metal_Stem" ID="{F5A48C9B-751F-4AD9-A710-84ABC4BE20B3}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0121896162528217"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.264108352144469"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.579683972911964"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Metal_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1042565849"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Metal_Stem" ID="{F5A48C9B-751F-4AD9-A710-84ABC4BE20B3}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Metal_02" ID="{E5C08230-EAB4-4B39-B957-9B1B156560B2}" ShortID="166018182">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Metal_Stem" ID="{FBD2278E-3364-49B6-A0F2-DE0FE0783575}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0162528216704289"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.490293453724605"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.606772009029346"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.20677200902935"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Metal_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="854687036"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Metal_Stem" ID="{FBD2278E-3364-49B6-A0F2-DE0FE0783575}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Metal_03" ID="{C34FA11F-55A6-4372-AE28-E5473CE44234}" ShortID="85532849">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Metal_Stem" ID="{D1EA9570-EAE5-4598-81DF-DC0656770CAB}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0162528216704289"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.490293453724605"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.22437923250564"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.82437923250564"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Metal_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="905491949"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Metal_Stem" ID="{D1EA9570-EAE5-4598-81DF-DC0656770CAB}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Metal_04" ID="{625D8BB8-2475-401B-80E2-87D0AE6A89A6}" ShortID="620646375">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Metal_Stem" ID="{D41D48DF-9EE0-4911-BBEB-A61C1FC961C4}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0162528216704289"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.490293453724605"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.84875846501129"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="2.47584650112867"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Metal_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="582355384"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Metal_Stem" ID="{D41D48DF-9EE0-4911-BBEB-A61C1FC961C4}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Metal_05" ID="{44A9021B-3B8E-4AA5-B89E-A7640164BD2D}" ShortID="1012640003">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Metal_Stem" ID="{2F59FA0B-1BDC-4461-A8A5-60D529BA262B}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0162528216704289"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.490293453724605"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="2.47855530474041"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Metal_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="741983769"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Metal_Stem" ID="{2F59FA0B-1BDC-4461-A8A5-60D529BA262B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="FOL_Lands_Glass" ID="{EAE45A21-B6FF-4C7A-81AB-5C109A7648CA}" ShortID="462642044">
+													<PropertyList>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-400</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{626724C7-4F09-4118-BAD5-2DB9F260F1FD}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="100"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -637,8 +858,186 @@
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 														</Reference>
 													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="FOL_Lands_Glass_01" ID="{D9C54537-F10A-40D0-8075-34E9A415B057}" ShortID="139181643">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Glass_Stem" ID="{25080E40-F0B6-4EBD-92C3-AF3F2789BF94}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0108352144469526"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.246501128668172"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.600000000000001"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Glass_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="880776369"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Glass_Stem" ID="{25080E40-F0B6-4EBD-92C3-AF3F2789BF94}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Glass_02" ID="{6E470EFE-CD9D-45CF-A057-90ACEC82777A}" ShortID="26030377">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Glass_Stem" ID="{D203E6A5-AE2B-405D-BA6C-E27772168A05}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0108352144469526"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.246501128668172"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.608126410835215"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.22573363431151"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Glass_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1015318436"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Glass_Stem" ID="{D203E6A5-AE2B-405D-BA6C-E27772168A05}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Glass_03" ID="{31880568-4A3E-4E81-90F9-88EE487746A8}" ShortID="1030630886">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Glass_Stem" ID="{846938B1-2D0A-4A78-ACAC-D38D20B64AAF}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0108352144469526"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.246501128668172"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.23792325056433"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.84063205417607"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Glass_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="679719429"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Glass_Stem" ID="{846938B1-2D0A-4A78-ACAC-D38D20B64AAF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Glass_04" ID="{63BAF5F8-30DD-4BC9-BD15-57BDD1C55FF7}" ShortID="505096903">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Glass_Stem" ID="{F592962E-D4FC-4DC4-A4D8-836AF3352383}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0108352144469526"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.246501128668172"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.86094808126411"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="2.46230248306998"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Glass_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="552953942"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Glass_Stem" ID="{F592962E-D4FC-4DC4-A4D8-836AF3352383}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Glass_05" ID="{137A5FF9-C9CE-41E1-9E53-F7DF4E38C140}" ShortID="747307912">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Glass_Stem" ID="{3E04EE2F-3294-407C-BB4F-4AF6352A81CB}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0108352144469526"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.246501128668172"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="2.49751693002257"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Glass_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="13764958"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Glass_Stem" ID="{3E04EE2F-3294-407C-BB4F-4AF6352A81CB}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="FOL_Lands_Grass" ID="{DFA090B7-46D2-4A6A-B7B2-0F5CC7E0E43A}" ShortID="887528881">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>4</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-100</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{794FDB00-AE81-4B4F-A5E3-1382BD21750E}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="100"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -647,8 +1046,173 @@
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 														</Reference>
 													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="FOL_Lands_Grass_01" ID="{55B7DBAD-6887-4CFF-9680-8A0C7DE8AB0E}" ShortID="231713107">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Grass_Stem" ID="{B21DC013-BD16-4A09-83E2-0D194B029900}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0121896162528217"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.376523702031603"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.572911963882618"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Grass_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="59904254"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Grass_Stem" ID="{B21DC013-BD16-4A09-83E2-0D194B029900}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Grass_02" ID="{D06E4561-BDA1-430B-AF8C-11A5DFD70B30}" ShortID="817954390">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Grass_Stem" ID="{9BDEB77B-2E0C-42EC-95BE-60FD4E13DD29}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0121896162528217"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.376523702031603"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.61489841986456"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.19729119638826"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Grass_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="782933215"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Grass_Stem" ID="{9BDEB77B-2E0C-42EC-95BE-60FD4E13DD29}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Grass_03" ID="{97CB07EC-C070-4C65-A231-DDFE78175515}" ShortID="953179764">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Grass_Stem" ID="{8CCFD4BC-C9CB-41F7-A3A4-72E67019F82E}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0121896162528217"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.376523702031603"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.2392776523702"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.8392776523702"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Grass_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="92574166"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Grass_Stem" ID="{8CCFD4BC-C9CB-41F7-A3A4-72E67019F82E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Grass_04" ID="{CF3475B2-0A89-43DA-9C2D-B568B243B78E}" ShortID="568125368">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Grass_Stem" ID="{5941D752-B405-4827-820D-684ED3F75063}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0121896162528217"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.376523702031603"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.86636568848758"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="2.48126410835214"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Grass_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="849602298"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Grass_Stem" ID="{5941D752-B405-4827-820D-684ED3F75063}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Grass_05" ID="{90019781-C60B-4DC1-9B9E-ED2BF376C92D}" ShortID="475652830">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Grass_Stem" ID="{9CC81C0F-CEF3-461C-8143-C73879BAF3E2}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0121896162528217"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.376523702031603"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="2.48261851015801"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Grass_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="867409324"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Grass_Stem" ID="{9CC81C0F-CEF3-461C-8143-C73879BAF3E2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="FOL_Lands_Tile" ID="{EC2CCE0F-DAF4-426D-8692-CDA29B4E6C94}" ShortID="545272372">
+													<PropertyList>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>4</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{08E96110-7164-4CF9-A476-538114CC8D47}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="100"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -657,6 +1221,331 @@
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 														</Reference>
 													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="FOL_Lands_Tile_01" ID="{90F0DED6-9E25-4277-9780-4D07BCDD8FBF}" ShortID="1033548446">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Tile_Stem" ID="{52D75578-7FB9-4AB5-9CCA-5628440807F8}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0162528216704289"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.220767494356659"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.502483069977426"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Tile_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="890360612"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Tile_Stem" ID="{52D75578-7FB9-4AB5-9CCA-5628440807F8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Tile_02" ID="{C954E666-EF72-4CB5-BCC3-53F01AA7795C}" ShortID="164380051">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Tile_Stem" ID="{DBB49FA3-CFD2-459E-A1D3-B86342E6B824}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0162528216704289"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.220767494356659"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.610835214446953"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.19729119638826"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Tile_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="195017888"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Tile_Stem" ID="{DBB49FA3-CFD2-459E-A1D3-B86342E6B824}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Tile_03" ID="{EC26098E-5C92-4091-AE59-D17EAE0B8BA4}" ShortID="733728841">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Tile_Stem" ID="{D281BBAA-364E-47E4-9746-33806D0683A4}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0162528216704289"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.220767494356659"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.22708803611738"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.79729119638826"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Tile_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="25879821"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Tile_Stem" ID="{D281BBAA-364E-47E4-9746-33806D0683A4}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Tile_04" ID="{2498E27F-CE3D-4DC3-8EC8-B02CAFA7E591}" ShortID="951344919">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Tile_Stem" ID="{CDF13939-860C-4564-9173-67D957E332AE}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0162528216704289"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.220767494356659"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.85011286681716"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="2.40135440180587"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Tile_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="877535658"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Tile_Stem" ID="{CDF13939-860C-4564-9173-67D957E332AE}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Tile_05" ID="{4268738C-28FF-4E09-BA7B-3B96E805CB7A}" ShortID="1061304895">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Tile_Stem" ID="{AF67B57F-199F-4B33-87E8-1B1429E04B5C}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0162528216704289"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.220767494356659"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="2.47990970654628"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Tile_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="604818133"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Tile_Stem" ID="{AF67B57F-199F-4B33-87E8-1B1429E04B5C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="FOL_Lands_MetalGrass_Layer" ID="{8C288C65-80DC-43A6-B0C1-2137BC41E580}" ShortID="874628969">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>34</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>4</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{8092F7C2-1905-46E5-92E4-87AC991A698C}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="100"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="FOL_Lands_Metal_01" ID="{1E15540D-D472-4896-A98D-B3E7B39AA83F}" ShortID="357942709">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Metal_Stem" ID="{CC43F430-200F-4142-B7C8-BE6C9758862B}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0121896162528217"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.264108352144469"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.579683972911964"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Metal_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1042565849"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Metal_Stem" ID="{CC43F430-200F-4142-B7C8-BE6C9758862B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Metal_02" ID="{6CFD27B0-C941-428B-A525-0CF8800F5F31}" ShortID="756848833">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Metal_Stem" ID="{394EBAD3-A26B-474C-B129-89D5F5C72477}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0162528216704289"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.490293453724605"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.606772009029346"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.20677200902935"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Metal_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="854687036"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Metal_Stem" ID="{394EBAD3-A26B-474C-B129-89D5F5C72477}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Metal_03" ID="{9687A798-052D-47C3-9D67-5329E842E226}" ShortID="833517592">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Metal_Stem" ID="{EF61DB10-3677-4C31-92D4-6947C5FFE4B6}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0162528216704289"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.490293453724605"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.22437923250564"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.82437923250564"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Metal_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="905491949"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Metal_Stem" ID="{EF61DB10-3677-4C31-92D4-6947C5FFE4B6}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Metal_04" ID="{25234489-CB1D-4480-8D97-88B83DB57F31}" ShortID="900107237">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Metal_Stem" ID="{F2462C58-B9A5-4283-80F6-A42A5C4AB712}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0162528216704289"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.490293453724605"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.84875846501129"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="2.47584650112867"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Metal_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="582355384"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Metal_Stem" ID="{F2462C58-B9A5-4283-80F6-A42A5C4AB712}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="FOL_Lands_Metal_05" ID="{4DF04216-7C9F-4B1E-A297-7A334F3FC096}" ShortID="551489532">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="FOL_Lands_Metal_Stem" ID="{96D703E3-173F-4759-A1AE-3AB19CAB9237}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0162528216704289"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.490293453724605"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="2.47855530474041"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>FOL_Lands_Metal_Stem.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="741983769"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="FOL_Lands_Metal_Stem" ID="{96D703E3-173F-4759-A1AE-3AB19CAB9237}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
 												</RandomSequenceContainer>
 											</ChildrenList>
 											<GroupingInfo>
@@ -668,6 +1557,9 @@
 														<ItemRef Name="FOL_Lands_Glass" ID="{EAE45A21-B6FF-4C7A-81AB-5C109A7648CA}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
+														<ItemRef Name="FOL_Lands_MetalGrass_Layer" ID="{8C288C65-80DC-43A6-B0C1-2137BC41E580}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
 														<ItemRef Name="FOL_Lands_Metal" ID="{593E99A0-0116-4602-99FA-570EC9E441E1}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
@@ -675,6 +1567,19 @@
 													</GroupingBehavior>
 												</GroupingBehaviorList>
 												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="M_Dirt" ID="{02773C27-1839-4638-A2AF-91E103D925E3}"/>
+														<ItemList>
+															<ItemRef Name="FOL_Lands_Grass" ID="{DFA090B7-46D2-4A6A-B7B2-0F5CC7E0E43A}"/>
+															<ItemRef Name="FOL_Lands_MetalGrass_Layer" ID="{8C288C65-80DC-43A6-B0C1-2137BC41E580}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="M_Concrete" ID="{7793252A-8C3B-42B3-A5BE-5BD85E592AF5}"/>
+														<ItemList>
+															<ItemRef Name="FOL_Lands_Tile" ID="{EC2CCE0F-DAF4-426D-8692-CDA29B4E6C94}"/>
+														</ItemList>
+													</Grouping>
 													<Grouping>
 														<SwitchRef Name="M_Tile" ID="{B4FDF75B-8B11-4F10-9CA5-B65DC3769474}"/>
 														<ItemList>
@@ -691,6 +1596,7 @@
 														<SwitchRef Name="M_Grass" ID="{63A5F2DE-9D45-455C-A02A-A165A88A6A74}"/>
 														<ItemList>
 															<ItemRef Name="FOL_Lands_Grass" ID="{DFA090B7-46D2-4A6A-B7B2-0F5CC7E0E43A}"/>
+															<ItemRef Name="FOL_Lands_MetalGrass_Layer" ID="{8C288C65-80DC-43A6-B0C1-2137BC41E580}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
@@ -703,45 +1609,6 @@
 											</GroupingInfo>
 										</SwitchContainer>
 									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="RTPC">
-											<Reference>
-												<Local>
-													<RTPC Name="" ID="{74B02A4B-8794-40C7-8711-1E4C05D6E1AB}" ShortID="370548232">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="Volume"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<ObjectRef Name="PAR_Velocity_Vertical" ID="{847E4FAC-FEC0-42D9-8F95-EB060A41AE44}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{BBF32D07-E3B8-4FD7-9696-67F09A6B1E7F}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
 								</ActorMixer>
 								<ActorMixer Name="FOL_Jumps" ID="{F09E8EC4-E850-4584-BE55-455134877E68}" ShortID="587730209">
 									<PropertyList>
@@ -859,6 +1726,169 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
+										<RandomSequenceContainer Name="FOL_Jumps" ID="{535546B1-7C3F-48F7-9D5A-711A710BFE03}" ShortID="516984686">
+											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>350</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{1F2DC1AF-6117-4209-9CF3-D1593F8672B7}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-11</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FOL_Jumps_ClothSweep_01" ID="{A604A444-3E5A-4166-B2CF-CDEA323D725D}" ShortID="88794873">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Jumps_ClothSweep_Stem" ID="{D2E22DE0-0C8D-4A20-AC5D-FCCA35A37C19}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0384875846501129"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.163882618510158"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0682844243792325"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.769751693002257"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Jumps_ClothSweep_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="388497900"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Jumps_ClothSweep_Stem" ID="{D2E22DE0-0C8D-4A20-AC5D-FCCA35A37C19}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Jumps_ClothSweep_02" ID="{9C0F2955-F367-4463-8572-A692E003C921}" ShortID="705758655">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Jumps_ClothSweep_Stem" ID="{38CC5F8F-2BA7-45A2-BF0E-AFEFCE9C6F0B}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0384875846501129"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.163882618510158"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.780925507900677"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.50225733634311"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Jumps_ClothSweep_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="183337199"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Jumps_ClothSweep_Stem" ID="{38CC5F8F-2BA7-45A2-BF0E-AFEFCE9C6F0B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Jumps_ClothSweep_03" ID="{BC5E4F0C-6DCE-4C48-B235-BA2D0B8527AB}" ShortID="378795839">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Jumps_ClothSweep_Stem" ID="{F8076276-47ED-4BBB-BB12-EC0D22EA5315}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0384875846501129"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.163882618510158"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.49853273137697"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.12302483069977"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Jumps_ClothSweep_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="889588474"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Jumps_ClothSweep_Stem" ID="{F8076276-47ED-4BBB-BB12-EC0D22EA5315}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Jumps_ClothSweep_04" ID="{361FA439-AE72-4E53-B228-801F1D05EFDE}" ShortID="515874250">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Jumps_ClothSweep_Stem" ID="{99C5978E-ED7F-4F36-A4CC-3DE3545DC455}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0384875846501129"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.163882618510158"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.12302483069977"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Jumps_ClothSweep_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="868186493"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Jumps_ClothSweep_Stem" ID="{99C5978E-ED7F-4F36-A4CC-3DE3545DC455}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="FOL_Footsteps" ID="{CB88C88F-FF5A-4AE7-9278-16C293DEE9B8}" ShortID="902234522">
@@ -8795,7 +9825,7 @@
 										</Position>
 									</PositioningInfo>
 								</ActorMixer>
-								<ActorMixer Name="FOL_Windrush" ID="{FD4295C9-0560-4216-A05B-F18AB5030FAC}" ShortID="853160150">
+								<ActorMixer Name="FOL_FallWhoosh" ID="{FD4295C9-0560-4216-A05B-F18AB5030FAC}" ShortID="853160150">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -8805,7 +9835,25 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="FOL_Windrush_LP" ID="{CD57951A-E283-4863-AC18-D14587D41157}" ShortID="479419354">
+										<Sound Name="FOL_FallWhoosh_LP" ID="{CD57951A-E283-4863-AC18-D14587D41157}" ShortID="479419354">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>15</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-400</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -8814,6 +9862,26 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FOL_FallWhoosh_LP" ID="{0B028E97-8285-4595-83CE-2AC1611E1E77}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="684.211"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.2"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.2"/>
+														<Property Name="LoopBegin" Type="Real64" Value="1.32731376975169"/>
+														<Property Name="LoopEnd" Type="Real64" Value="3.50338600451467"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FOL_FallWhoosh_LP.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="616719576"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FOL_FallWhoosh_LP" ID="{0B028E97-8285-4595-83CE-2AC1611E1E77}" Platform="Linked"/>
+											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 									<ObjectLists>
@@ -8826,7 +9894,7 @@
 														</PropertyList>
 														<ReferenceList>
 															<Reference Name="ControlInput">
-																<ObjectRef Name="PAR_Velocity_Vertical" ID="{847E4FAC-FEC0-42D9-8F95-EB060A41AE44}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
+																<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
 															</Reference>
 															<Reference Name="Curve">
 																<Custom>
@@ -8841,7 +9909,13 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>100</XPos>
+																				<XPos>900.34764</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>Log2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>1500</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -8884,7 +9958,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="FOL_Armor" ID="{4025FEB5-F684-4665-BB3C-9616B9DF2B2F}" ShortID="629001226">
+										<RandomSequenceContainer Name="FOL_Armor_Run" ID="{4025FEB5-F684-4665-BB3C-9616B9DF2B2F}" ShortID="629001226">
 											<PropertyList>
 												<Property Name="Highpass" Type="int16">
 													<ValueList>
@@ -9201,6 +10275,595 @@
 													</ChildrenList>
 													<ActiveSourceList>
 														<ActiveSource Name="FOL_Armor_Rattle_Stem" ID="{05220CD2-7714-4D24-B963-3B48022647E4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FOL_Armor_Jump" ID="{034E74A9-1886-47AF-A07A-3B20D21C85B1}" ShortID="873119722">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.02</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>15</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-200</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F5F83430-BD6C-420B-BEA2-9D1A5E25CAF2}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FOL_Armor_Jump_01" ID="{D0A17AA2-B0D7-4B6A-9C17-0C109B8D9A21}" ShortID="11472955">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Jump_Stem" ID="{6632A2B2-C02F-45BA-95CB-891CF4C3E422}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.036117381489842"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0428893905191874"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.512415349887134"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Jump_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="442400765"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Jump_Stem" ID="{6632A2B2-C02F-45BA-95CB-891CF4C3E422}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Jump_02" ID="{BA8BADF6-700E-4951-8D90-765BF7BAE9E6}" ShortID="645991139">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Jump_Stem" ID="{3F3E4145-327C-4D7B-A4FB-00A6109749F5}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.036117381489842"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0428893905191874"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.510158013544018"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.00677200902935"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Jump_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="588740712"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Jump_Stem" ID="{3F3E4145-327C-4D7B-A4FB-00A6109749F5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Jump_03" ID="{08CE4DA7-4FAD-4CA9-9374-DF1310663592}" ShortID="149219763">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Jump_Stem" ID="{2BDA8DD4-B01A-46D3-8477-112B29BE46C2}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.036117381489842"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0428893905191874"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.50338600451467"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Jump_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="996481806"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Jump_Stem" ID="{2BDA8DD4-B01A-46D3-8477-112B29BE46C2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Jump_04" ID="{C6AC0361-F10A-4DB1-8ED4-5046C24DE449}" ShortID="541830625">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Jump_Stem" ID="{29368E16-D6AC-4B5B-9F5A-9C12898E5397}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.036117381489842"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0428893905191874"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.48984198645598"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.00225733634312"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Jump_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="787809240"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Jump_Stem" ID="{29368E16-D6AC-4B5B-9F5A-9C12898E5397}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Jump_05" ID="{774F7A95-30D2-4CBF-AFE4-EF45375F2ACC}" ShortID="919136337">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Jump_Stem" ID="{ACCF407D-200F-40C2-99F6-3965F2609820}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.036117381489842"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0428893905191874"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.99097065462754"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.4920993227991"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Jump_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="672012641"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Jump_Stem" ID="{ACCF407D-200F-40C2-99F6-3965F2609820}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Jump_06" ID="{BA6110DF-CA4F-45CA-9A13-3F689AA09947}" ShortID="792961615">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Jump_Stem" ID="{24A91203-9D30-4558-8360-B9B8482524C2}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.036117381489842"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0428893905191874"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.48532731376975"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.01128668171558"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Jump_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="654181389"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Jump_Stem" ID="{24A91203-9D30-4558-8360-B9B8482524C2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Jump_07" ID="{9301982E-D0FA-4EC6-9889-669EEF677029}" ShortID="976695742">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Jump_Stem" ID="{01496BDF-7B01-4F72-B60B-B5DDD4E5FB4B}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.036117381489842"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0428893905191874"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="3.00225733634312"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.51467268623025"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Jump_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="264305722"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Jump_Stem" ID="{01496BDF-7B01-4F72-B60B-B5DDD4E5FB4B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Jump_08" ID="{2751E18A-DB65-4B60-A1AD-FCF516DB9B66}" ShortID="586823157">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Jump_Stem" ID="{240CC1FE-8C78-4F6B-92C2-73AACE4B6B6E}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.036117381489842"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0428893905191874"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="3.5079006772009"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.00225733634312"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Jump_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="224355790"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Jump_Stem" ID="{240CC1FE-8C78-4F6B-92C2-73AACE4B6B6E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Jump_09" ID="{1295E90E-966E-49CA-B4C3-AB21F9B1AEB5}" ShortID="585156976">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Jump_Stem" ID="{E62ECABE-3E46-46F1-A1E0-9BD814067BB3}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.036117381489842"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0428893905191874"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="3.99548532731377"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.48984198645598"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Jump_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="523255719"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Jump_Stem" ID="{E62ECABE-3E46-46F1-A1E0-9BD814067BB3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Jump_10" ID="{36268781-6FBB-4DA4-A5A7-EA80D50195B4}" ShortID="500988289">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Jump_Stem" ID="{4D4C3214-E56A-4379-A776-D9B10682997F}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.036117381489842"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0428893905191874"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="4.48306997742664"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Jump_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="513665799"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Jump_Stem" ID="{4D4C3214-E56A-4379-A776-D9B10682997F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FOL_Armor_Land" ID="{3D137D29-046E-4DC9-9132-51A569012EDE}" ShortID="843898731">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.03</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>17</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-200</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A55EB8E7-1C19-4765-A83C-28A711D1DBEF}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FOL_Armor_Land_01" ID="{C9D3F0EC-7434-4F2A-8212-869142072FAB}" ShortID="69166582">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Land_Stem" ID="{E3B4E7CB-91AC-4B30-BB9E-ECAEEC7294FB}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02686230248307"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.110609480812641"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.410835214446953"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Land_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="61200338"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Land_Stem" ID="{E3B4E7CB-91AC-4B30-BB9E-ECAEEC7294FB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Land_02" ID="{F4511576-9E4E-4BDC-853C-4189CB8B76BA}" ShortID="591916289">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Land_Stem" ID="{A4DA6D73-0D9A-4E6C-8256-FEAE74E6D07F}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02686230248307"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.110609480812641"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.48510158013544"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.900677200902935"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Land_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="250131033"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Land_Stem" ID="{A4DA6D73-0D9A-4E6C-8256-FEAE74E6D07F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Land_03" ID="{97272D24-40EA-4F02-849E-FAE0E4B7B21F}" ShortID="69611720">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Land_Stem" ID="{E59291C4-71A9-423B-A1F5-72E5F8217CD1}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02686230248307"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.110609480812641"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.974943566591422"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.48058690744921"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Land_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="221192132"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Land_Stem" ID="{E59291C4-71A9-423B-A1F5-72E5F8217CD1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Land_04" ID="{3FD85418-0661-46E2-AA20-270F9B0FA5E2}" ShortID="965365104">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Land_Stem" ID="{30D7E0DC-2137-4976-BF0B-72B6A508FC95}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02686230248307"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.110609480812641"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.48374717832957"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.99097065462754"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Land_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="323990764"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Land_Stem" ID="{30D7E0DC-2137-4976-BF0B-72B6A508FC95}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Land_05" ID="{99BC7D4A-3AF9-4485-A895-F499E7AE4AF3}" ShortID="180262556">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Land_Stem" ID="{79D91AB1-309D-488E-AA67-9FDE5DD11FCA}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02686230248307"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.110609480812641"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.98939051918736"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.48555304740406"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Land_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="570533412"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Land_Stem" ID="{79D91AB1-309D-488E-AA67-9FDE5DD11FCA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Land_06" ID="{A2D6F75C-B034-4A32-B25D-43F347500CE7}" ShortID="734865398">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Land_Stem" ID="{E2488804-EB21-47FE-8E67-A0F8B3D87A38}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02686230248307"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.110609480812641"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.48871331828442"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.99277652370203"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Land_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="721385222"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Land_Stem" ID="{E2488804-EB21-47FE-8E67-A0F8B3D87A38}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FOL_Armor_Land_07" ID="{92C06F05-85CD-411A-9EA4-8F98DEFF7104}" ShortID="130562831">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FOL_Armor_Land_Stem" ID="{8AB9B4C5-D231-49A8-BEBD-C999E020B03B}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02686230248307"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.110609480812641"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.97855530474041"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>FOL_Armor_Land_Stem.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="891103092"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="FOL_Armor_Land_Stem" ID="{8AB9B4C5-D231-49A8-BEBD-C999E020B03B}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
