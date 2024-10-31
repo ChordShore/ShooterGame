@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="3466276443" Type="Bus" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}" Language="SFX" Hash="{A0052B69-BD68-EF44-27FB-7CA3D476E4E4}">
+		<SoundBank Id="3466276443" Type="Bus" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}" Language="SFX" Hash="{9D208909-2DDC-87E3-B994-4315ACC871D8}">
 			<ObjectPath>Highrise_Atrium</ObjectPath>
 			<ShortName>Highrise_Atrium</ShortName>
 			<Path>Bus/Highrise_Atrium.bnk</Path>
 			<Plugins>
 				<ShareSets>
-					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" ObjectPath="\Effects\Factory Effects\RoomVerb\Exteriors\Have_U_Ever_Been_Outside" GUID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="602546716" Name="Room_Large" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Large" GUID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
 			</Plugins>
 			<AuxBusses>
 				<AuxBus Id="3466276443" Name="Highrise_Atrium" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Atrium" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}">
 					<PluginRefs>
 						<ShareSets>
-							<PluginRef Id="48620415"/>
+							<PluginRef Id="602546716"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7F2B72E2-2409-1613-4751-2FCE6184213C}</FileHash>
+	<FileHash>{65165622-959C-FBB0-E090-1DE6987569F9}</FileHash>
 </SoundBanksInfo>

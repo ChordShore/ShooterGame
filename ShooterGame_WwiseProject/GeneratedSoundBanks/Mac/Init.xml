@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{4822089A-7390-2519-60A8-4BB6F8B4E3A1}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{56A7C493-3AA0-5795-C354-F7EC0A1826C1}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<Custom>
+					<Plugin Id="423108128" Name="Reverb_HoverCars_(Hall_Large_TooBright_Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_HoverCars\Reverb_HoverCars_(Hall_Large_TooBright_Custom)" GUID="{023C343D-618B-4411-8066-289915DAB8DB}" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</Custom>
 				<ShareSets>
-					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" ObjectPath="\Effects\Factory Effects\RoomVerb\Exteriors\Have_U_Ever_Been_Outside" GUID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="400317747" Name="Hall_Large_TooBright" ObjectPath="\Effects\Factory Effects\RoomVerb\Halls\Hall_Large_TooBright" GUID="{5F144EE3-081F-4BEC-ABCF-F88E111FECAE}" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="1159390747" Name="Room_Medium_Tiled" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Medium_Tiled" GUID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="602546716" Name="Room_Large" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Large" GUID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="1990128658" Name="Room_Medium" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Medium" GUID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="2180422931" Name="One_Tap_Quarter_Second" ObjectPath="\Effects\Factory Effects\Delay\One_Tap_Quarter_Second" GUID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" LibName="Wwise Delay" LibId="6946819"/>
-					<Plugin Id="2995775460" Name="Room_Small" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Small" GUID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="2945072214" Name="My_Closet" ObjectPath="\Effects\Factory Effects\RoomVerb\Claustrophobia\My_Closet" GUID="{384A82A1-3C92-4AC5-AFC2-474F2080642C}" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" ObjectPath="\Audio Devices\Default Work Unit\No_Output" GUID="{F61791D9-22A4-4E2F-9309-529F94FD0850}" LibName="No Output" LibId="11862023"/>
@@ -41,15 +43,15 @@
 				<AuxBus Id="1257150314" Name="Highrise_Spawn" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Spawn" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}">
 					<PluginRefs>
 						<ShareSets>
-							<PluginRef Id="2995775460"/>
+							<PluginRef Id="2945072214"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
 				<AuxBus Id="1289661192" Name="Highrise_HoverCars" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_HoverCars" GUID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}">
 					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="400317747"/>
-						</ShareSets>
+						<Custom>
+							<PluginRef Id="423108128"/>
+						</Custom>
 					</PluginRefs>
 				</AuxBus>
 				<AuxBus Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}">
@@ -62,26 +64,29 @@
 				<AuxBus Id="3466276443" Name="Highrise_Atrium" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Atrium" GUID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}">
 					<PluginRefs>
 						<ShareSets>
-							<PluginRef Id="48620415"/>
+							<PluginRef Id="602546716"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
 				<AuxBus Id="3814800052" Name="Highrise_Room" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Room" GUID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}">
 					<PluginRefs>
 						<ShareSets>
-							<PluginRef Id="1159390747"/>
+							<PluginRef Id="1990128658"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
 			</AuxBusses>
 			<GameParameters>
-				<GameParameter Id="866022863" Name="PAR_Doppler" ObjectPath="\Game Parameters\Default Work Unit\PAR_Doppler" GUID="{D40C9741-1633-4046-A65F-904ED87051FE}"/>
-				<GameParameter Id="1228207839" Name="PAR_Heartbeat" ObjectPath="\Game Parameters\Default Work Unit\PAR_Heartbeat" GUID="{1A7627A7-5A7D-470D-B1E0-2B091B679836}"/>
-				<GameParameter Id="1714946050" Name="PAR_Breaths" ObjectPath="\Game Parameters\Default Work Unit\PAR_Breaths" GUID="{AD59135C-7832-4545-A14C-AA5DD622DAAC}"/>
-				<GameParameter Id="1791116251" Name="PAR_Wind" ObjectPath="\Game Parameters\Default Work Unit\PAR_Wind" GUID="{5AA64F25-2B48-4F0C-8EF5-838EB08AB4B3}"/>
+				<GameParameter Id="492872062" Name="PAR_Heartbeats" ObjectPath="\Game Parameters\Foley\PAR_Heartbeats" GUID="{1A7627A7-5A7D-470D-B1E0-2B091B679836}"/>
+				<GameParameter Id="866022863" Name="PAR_Doppler" ObjectPath="\Game Parameters\Ambience\PAR_Doppler" GUID="{D40C9741-1633-4046-A65F-904ED87051FE}"/>
+				<GameParameter Id="1139858337" Name="PAR_Velocity_Vertical" ObjectPath="\Game Parameters\Foley\PAR_Velocity_Vertical" GUID="{847E4FAC-FEC0-42D9-8F95-EB060A41AE44}"/>
+				<GameParameter Id="1714946050" Name="PAR_Breaths" ObjectPath="\Game Parameters\Foley\PAR_Breaths" GUID="{AD59135C-7832-4545-A14C-AA5DD622DAAC}"/>
+				<GameParameter Id="1791116251" Name="PAR_Wind" ObjectPath="\Game Parameters\Ambience\PAR_Wind" GUID="{5AA64F25-2B48-4F0C-8EF5-838EB08AB4B3}"/>
 				<GameParameter Id="1999698287" Name="PAR_DopplerTest" ObjectPath="\Game Parameters\Default Work Unit\PAR_DopplerTest" GUID="{0D9B0517-BBD5-43F7-B856-30943D58C338}"/>
-				<GameParameter Id="2940353649" Name="PAR_Distance_HoverCars_PS7" ObjectPath="\Game Parameters\Default Work Unit\PAR_Distance_HoverCars_PS7" GUID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"/>
-				<GameParameter Id="2940353651" Name="PAR_Distance_HoverCars_PS5" ObjectPath="\Game Parameters\Default Work Unit\PAR_Distance_HoverCars_PS5" GUID="{12811BF6-789D-4EFB-A3B6-2A817E909100}"/>
+				<GameParameter Id="2813573230" Name="PAR_Velocity_Rotational" ObjectPath="\Game Parameters\Foley\PAR_Velocity_Rotational" GUID="{122AD508-BFE4-4689-9B19-CEE8F8B7A09D}"/>
+				<GameParameter Id="2940353649" Name="PAR_Distance_HoverCars_PS7" ObjectPath="\Game Parameters\Ambience\PAR_Distance_HoverCars_PS7" GUID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"/>
+				<GameParameter Id="2940353651" Name="PAR_Distance_HoverCars_PS5" ObjectPath="\Game Parameters\Ambience\PAR_Distance_HoverCars_PS5" GUID="{12811BF6-789D-4EFB-A3B6-2A817E909100}"/>
+				<GameParameter Id="3162343787" Name="PAR_Velocity_Horizontal" ObjectPath="\Game Parameters\Foley\PAR_Velocity_Horizontal" GUID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="747849153" Name="STA_LocationMix" ObjectPath="\States\Default Work Unit\Highrise\STA_LocationMix" GUID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}">
@@ -244,5 +249,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{94AF188F-5E8C-CDCD-8E15-EC6C36F680DB}</FileHash>
+	<FileHash>{4ED15F2A-DDAE-B89E-43E3-05450EA11AD6}</FileHash>
 </SoundBanksInfo>

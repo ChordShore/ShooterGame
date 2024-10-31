@@ -9,10 +9,84 @@
 			<ChildrenList>
 				<Folder Name="Players" ID="{167D7310-37A5-45BF-96E3-9E659E002E84}" ShortID="104979984">
 					<ChildrenList>
-						<Event Name="FOL_Land" ID="{9C0F3AE6-505C-4DC2-80DF-1A0F23DFE402}"/>
+						<Event Name="FOL_Land" ID="{9C0F3AE6-505C-4DC2-80DF-1A0F23DFE402}">
+							<ChildrenList>
+								<Action Name="" ID="{E51DDF97-8EFC-4043-84B1-CA44785646E0}" ShortID="1052674681">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FOL_Lands_Switch" ID="{EA62E50B-814F-484F-A702-759A20BDCAA9}" WorkUnitID="{86FE2FEF-52C2-4237-A56E-8F523A5859D5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CF40A221-1C70-4FA1-AEE4-CCA83F825E79}" ShortID="529636047">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FOL_Armor_Land" ID="{3D137D29-046E-4DC9-9132-51A569012EDE}" WorkUnitID="{86FE2FEF-52C2-4237-A56E-8F523A5859D5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="FOL_Bodyfall" ID="{8C389BC0-A8E4-4172-B60A-4329D5567561}"/>
-						<Event Name="FOL_Jump" ID="{54BD1D82-A9B7-48F0-B383-0DB48BD03160}"/>
-						<Event Name="FOL_Footstep" ID="{C7AF60A9-905E-4C25-94DB-228933B96D51}"/>
+						<Event Name="FOL_Jump" ID="{54BD1D82-A9B7-48F0-B383-0DB48BD03160}">
+							<ChildrenList>
+								<Action Name="" ID="{F3786A5C-3BCC-4DF3-B870-C450DBA3C2B7}" ShortID="496337667">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FOL_Jumps" ID="{535546B1-7C3F-48F7-9D5A-711A710BFE03}" WorkUnitID="{86FE2FEF-52C2-4237-A56E-8F523A5859D5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="FOL_Footsteps" ID="{F82F027B-5648-4623-BCD5-C629D4A4B56C}" ShortID="295278912">
+							<ChildrenList>
+								<Event Name="FOL_Footstep_R" ID="{C7AF60A9-905E-4C25-94DB-228933B96D51}">
+									<ChildrenList>
+										<Action Name="" ID="{F832211C-E430-48A5-A6DA-372D0F7E1C24}" ShortID="1065660901">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="FOL_Footsteps_Switch_R" ID="{33F3D81D-641A-47F4-BB5E-84BD24F5AFDD}" WorkUnitID="{86FE2FEF-52C2-4237-A56E-8F523A5859D5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="FOL_Footstep_L" ID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}">
+									<ChildrenList>
+										<Action Name="" ID="{39504E85-0984-493E-82EB-884CF76F4576}" ShortID="63945063">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="FOL_Footsteps_Switch_L" ID="{5EB2F366-85BF-4294-9694-7250720C196C}" WorkUnitID="{86FE2FEF-52C2-4237-A56E-8F523A5859D5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="FOL_Armor" ID="{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}">
+							<ChildrenList>
+								<Action Name="" ID="{BD00522C-0BF6-42FB-9381-D4FAA1B1DCE5}" ShortID="73610016">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FOL_Armor_Run" ID="{4025FEB5-F684-4665-BB3C-9616B9DF2B2F}" WorkUnitID="{86FE2FEF-52C2-4237-A56E-8F523A5859D5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="FOL_FallWhoosh" ID="{D351862C-9224-46EA-B214-195532B40959}">
+							<ChildrenList>
+								<Action Name="" ID="{8EBEE665-AD71-48B0-AFE5-E028946F24D2}" ShortID="948962722">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FOL_FallWhoosh_LP" ID="{CD57951A-E283-4863-AC18-D14587D41157}" WorkUnitID="{86FE2FEF-52C2-4237-A56E-8F523A5859D5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Props" ID="{9C6C28EC-B810-4AC6-833B-CC1E85297900}" ShortID="715449244">

@@ -27,8 +27,20 @@
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -255,7 +267,9 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -498,6 +512,17 @@
 								<ActorMixer Name="AMB_EnergyPillar" ID="{C93C64CC-DD0D-461E-9A50-09B3A56294AF}" ShortID="660723535">
 									<PropertyList>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-30</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -505,6 +530,9 @@
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Highrise_HoverCars" ID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -984,6 +1012,11 @@
 											</ValueList>
 										</Property>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1133,7 +1166,7 @@
 												</Property>
 												<Property Name="UserAuxSendVolume0" Type="Real64">
 													<ValueList>
-														<Value>-30</Value>
+														<Value>-35</Value>
 													</ValueList>
 												</Property>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -1200,7 +1233,7 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 														</Reference>
 														<Reference Name="Effect0" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
-															<ObjectRef Name="Tremolo_HoverCars_PS5" ID="{C2D44633-8367-4F1B-ABE3-8028C4D3B172}" WorkUnitID="{2B949421-4224-488B-A3C2-FF31E814EF2E}"/>
+															<ObjectRef Name="Tremolo_HoverCars_PS5" ID="{C2D44633-8367-4F1B-ABE3-8028C4D3B172}" WorkUnitID="{E6D1C65B-339C-41CE-B3A2-8158B5176884}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
@@ -1484,7 +1517,7 @@
 																</PropertyList>
 																<ReferenceList>
 																	<Reference Name="ControlInput">
-																		<ObjectRef Name="PAR_Doppler" ID="{D40C9741-1633-4046-A65F-904ED87051FE}" WorkUnitID="{45A6305D-DE92-45B5-93D4-976360EB2166}"/>
+																		<ObjectRef Name="PAR_Doppler" ID="{D40C9741-1633-4046-A65F-904ED87051FE}" WorkUnitID="{B45E1116-B562-4B65-A7C6-59A0E75B872D}"/>
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
@@ -1787,7 +1820,7 @@
 												</Property>
 												<Property Name="UserAuxSendVolume0" Type="Real64">
 													<ValueList>
-														<Value>-30</Value>
+														<Value>-35</Value>
 													</ValueList>
 												</Property>
 												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
@@ -1849,7 +1882,7 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 														</Reference>
 														<Reference Name="Effect0" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
-															<ObjectRef Name="Tremolo_HoverCars_PS7" ID="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}" WorkUnitID="{2B949421-4224-488B-A3C2-FF31E814EF2E}"/>
+															<ObjectRef Name="Tremolo_HoverCars_PS7" ID="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}" WorkUnitID="{E6D1C65B-339C-41CE-B3A2-8158B5176884}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
@@ -2155,7 +2188,7 @@
 																</PropertyList>
 																<ReferenceList>
 																	<Reference Name="ControlInput">
-																		<ObjectRef Name="PAR_Doppler" ID="{D40C9741-1633-4046-A65F-904ED87051FE}" WorkUnitID="{45A6305D-DE92-45B5-93D4-976360EB2166}"/>
+																		<ObjectRef Name="PAR_Doppler" ID="{D40C9741-1633-4046-A65F-904ED87051FE}" WorkUnitID="{B45E1116-B562-4B65-A7C6-59A0E75B872D}"/>
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
@@ -2198,8 +2231,6 @@
 												<Value>-9</Value>
 											</ValueList>
 										</Property>
-										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
-										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 										<Property Name="ReflectionsVolume" Type="Real64">
@@ -2207,7 +2238,6 @@
 												<Value>-6</Value>
 											</ValueList>
 										</Property>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -2285,6 +2315,13 @@
 								<ActorMixer Name="AMB_WindGusts" ID="{9A826456-7F3B-417B-AAC8-A7AFEEF96802}" ShortID="336050374">
 									<PropertyList>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2777,8 +2814,10 @@
 											</ValueList>
 										</Property>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>
@@ -3330,7 +3369,9 @@
 										</Property>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3604,6 +3645,7 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">

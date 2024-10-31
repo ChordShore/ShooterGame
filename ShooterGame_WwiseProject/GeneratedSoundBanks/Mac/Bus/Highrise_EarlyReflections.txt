@@ -1,3 +1,19 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	747849153	STA_LocationMix			\Default Work Unit\Highrise\STA_LocationMix	
+
+State	ID	Name	State Group			Notes
+	301467384	STA_Indoors_Spawn	STA_LocationMix			
+	748895195	None	STA_LocationMix			
+	877225536	STA_Outdoors_Atrium	STA_LocationMix			
+	949156522	STA_Outdoors_Balcony_Center	STA_LocationMix			
+	1657765358	STA_Indoors_Room	STA_LocationMix			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	10846493	STA_Outdoors_Atrium	STA_LocationMix	\Effects\Factory Effects\Delay\One_Tap_Quarter_Second		
+	310274053	STA_Outdoors_Balcony_Center	STA_LocationMix	\Effects\Factory Effects\Delay\One_Tap_Quarter_Second		
+	651584360	STA_Indoors_Room	STA_LocationMix	\Effects\Factory Effects\Delay\One_Tap_Quarter_Second		
+	794650321	STA_Indoors_Spawn	STA_LocationMix	\Effects\Factory Effects\Delay\One_Tap_Quarter_Second		
+
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	3348775760	Highrise_EarlyReflections			\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections	
 

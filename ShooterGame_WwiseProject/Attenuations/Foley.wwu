@@ -53,7 +53,25 @@
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 						</HighPassFilterUsage>
 						<SpreadUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+							<CurveUsageInfo Platform="Linked" CurveToUse="None">
+								<Curve Name="Spread" ID="{69C6BD99-2399-452D-86E8-74EB2021C013}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="1"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>100</YPos>
+											<Flags>5</Flags>
+										</Point>
+										<Point>
+											<XPos>500</XPos>
+											<YPos>0</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</CurveUsageInfo>
 						</SpreadUsage>
 						<FocusUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>

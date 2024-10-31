@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1257150314" Type="Bus" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}" Language="SFX" Hash="{F459CB92-EA66-104A-B526-B7EE7F666764}">
+		<SoundBank Id="1257150314" Type="Bus" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}" Language="SFX" Hash="{6D7F0CFA-47DA-AEF6-69C7-6EBA1AFDA872}">
 			<ObjectPath>Highrise_Spawn</ObjectPath>
 			<ShortName>Highrise_Spawn</ShortName>
 			<Path>Bus/Highrise_Spawn.bnk</Path>
 			<Plugins>
 				<ShareSets>
-					<Plugin Id="2995775460" Name="Room_Small" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Small" GUID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="2945072214" Name="My_Closet" ObjectPath="\Effects\Factory Effects\RoomVerb\Claustrophobia\My_Closet" GUID="{384A82A1-3C92-4AC5-AFC2-474F2080642C}" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
 			</Plugins>
 			<AuxBusses>
 				<AuxBus Id="1257150314" Name="Highrise_Spawn" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Spawn" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}">
 					<PluginRefs>
 						<ShareSets>
-							<PluginRef Id="2995775460"/>
+							<PluginRef Id="2945072214"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3C6752D5-2BE3-74A4-4843-CB2EDA66E759}</FileHash>
+	<FileHash>{61312CA8-83E1-3466-8D13-7EAC5CB30196}</FileHash>
 </SoundBanksInfo>

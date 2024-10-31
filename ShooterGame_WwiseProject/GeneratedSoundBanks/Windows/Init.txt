@@ -14,6 +14,12 @@ State	ID	Name	State Group			Notes
 	748895195	None	STA_Path5Cull			
 	3387596473	STA_Path5_Cull	STA_Path5Cull			
 
+Custom State	ID	Name	State Group	Owner		Notes
+	10846493	STA_Outdoors_Atrium	STA_LocationMix	\Effects\Factory Effects\Delay\One_Tap_Quarter_Second		
+	310274053	STA_Outdoors_Balcony_Center	STA_LocationMix	\Effects\Factory Effects\Delay\One_Tap_Quarter_Second		
+	651584360	STA_Indoors_Room	STA_LocationMix	\Effects\Factory Effects\Delay\One_Tap_Quarter_Second		
+	794650321	STA_Indoors_Spawn	STA_LocationMix	\Effects\Factory Effects\Delay\One_Tap_Quarter_Second		
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
 	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
@@ -57,11 +63,11 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	3814800052	Highrise_Room			\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Room	
 
 Effect plug-ins	ID	Name	Type				Notes
-	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
-	400317747	Hall_Large_TooBright	Wwise RoomVerb			
-	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
+	423108128	Reverb_HoverCars_(Hall_Large_TooBright_Custom)	Wwise RoomVerb			
+	602546716	Room_Large	Wwise RoomVerb			
+	1990128658	Room_Medium	Wwise RoomVerb			
 	2180422931	One_Tap_Quarter_Second	Wwise Delay			
-	2995775460	Room_Small	Wwise RoomVerb			
+	2945072214	My_Closet	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

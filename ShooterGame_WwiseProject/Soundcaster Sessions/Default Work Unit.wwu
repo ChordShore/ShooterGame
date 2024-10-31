@@ -20,8 +20,20 @@
 							<Value>-7.81564282923136</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="PAR_Velocity_Vertical" ID="{847E4FAC-FEC0-42D9-8F95-EB060A41AE44}"/>
+							<Value>1500</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}"/>
+							<Value>1132.47972190035</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="PAR_DopplerTest" ID="{0D9B0517-BBD5-43F7-B856-30943D58C338}"/>
 							<Value>1000</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PAR_Breaths" ID="{AD59135C-7832-4545-A14C-AA5DD622DAAC}"/>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="PAR_Distance_HoverCars_PS5" ID="{12811BF6-789D-4EFB-A3B6-2A817E909100}"/>
@@ -37,11 +49,13 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{BB4FD5EE-2E84-4BFE-B7E1-EF4CB10C6C67}"/>
-						<CurrentStateRef Name="STA_Outdoors_Balcony_Center" ID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
+						<CurrentStateRef Name="STA_Path5_Cull" ID="{AC8E4352-EFB9-46F5-86BA-3C6204E9B6B3}"/>
+						<CurrentStateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 						<CurrentStateRef Name="None" ID="{58E0E97C-6C8E-42CB-BD10-0B2B26B95058}"/>
 					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="M_Concrete" ID="{7793252A-8C3B-42B3-A5BE-5BD85E592AF5}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Wind Envelopes" ID="{AA35DB92-7EBB-464D-A276-7A0BFCCFB478}">
 					<ModuleList>

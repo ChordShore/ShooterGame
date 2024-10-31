@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
     "Language": "SFX",
-    "Hash": "{4533CF1C-5425-D944-A947-A2193E1BA5A6}",
+    "Hash": "{5F2B0D67-0C86-96B8-DBE3-D9DCB9357694}",
     "ObjectPath": "AMB_EnergyPillar_C",
     "ShortName": "AMB_EnergyPillar_C",
     "Path": "Event/AMB_EnergyPillar_C.bnk",
@@ -68,11 +68,19 @@
          "Id": "2258521792"
         }
        ]
-      }
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "1289661192",
+        "Name": "Highrise_HoverCars",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_HoverCars",
+        "GUID": "{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{9971DDDD-2BA2-93C4-02F7-CF63E36751C1}"
+  "FileHash": "{8820732B-40E9-3943-C8D6-CBD4AF935A98}"
  }
 }

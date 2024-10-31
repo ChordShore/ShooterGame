@@ -1,0 +1,54 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "849782850",
+    "Type": "Event",
+    "GUID": "{D351862C-9224-46EA-B214-195532B40959}",
+    "Language": "SFX",
+    "Hash": "{01351CC6-F746-F7A4-C284-0056BDFA2A9D}",
+    "ObjectPath": "FOL_FallWhoosh",
+    "ShortName": "FOL_FallWhoosh",
+    "Path": "Event/FOL_FallWhoosh.bnk",
+    "Media": [
+     {
+      "Id": "616719576",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FOL_FallWhoosh_LP.wav",
+      "Path": "Media/616719576.wem",
+      "CachePath": "SFX/FOL_FallWhoosh_LP_E91F277A.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "849782850",
+      "Name": "FOL_FallWhoosh",
+      "ObjectPath": "\\Events\\Foley\\Players\\FOL_FallWhoosh",
+      "GUID": "{D351862C-9224-46EA-B214-195532B40959}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "616719576"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3162343787",
+      "Name": "PAR_Velocity_Horizontal",
+      "ObjectPath": "\\Game Parameters\\Foley\\PAR_Velocity_Horizontal",
+      "GUID": "{4607A581-294C-433F-97F3-4F9FF9E1DE68}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{B44A742D-1235-52F2-B34A-D4443E8768EA}"
+ }
+}

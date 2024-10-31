@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B45E1116-B562-4B65-A7C6-59A0E75B872D}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="Ambience" ID="{B45E1116-B562-4B65-A7C6-59A0E75B872D}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<GameParameter Name="PAR_Distance_HoverCars_PS7" ID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="20500"/>
+						<Property Name="Max" Type="Real64" Value="20500"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="PAR_Distance_HoverCars_PS5" ID="{12811BF6-789D-4EFB-A3B6-2A817E909100}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="28000"/>
+						<Property Name="Max" Type="Real64" Value="28000"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="PAR_Doppler" ID="{D40C9741-1633-4046-A65F-904ED87051FE}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="10000"/>
+						<Property Name="Max" Type="Real64" Value="10000"/>
+						<Property Name="Min" Type="Real64" Value="-10000"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="PAR_Wind" ID="{5AA64F25-2B48-4F0C-8EF5-838EB08AB4B3}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
