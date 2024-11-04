@@ -1121,7 +1121,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="849782850" Type="Event" GUID="{D351862C-9224-46EA-B214-195532B40959}" Language="SFX" Hash="{01351CC6-F746-F7A4-C284-0056BDFA2A9D}">
+		<SoundBank Id="849782850" Type="Event" GUID="{D351862C-9224-46EA-B214-195532B40959}" Language="SFX" Hash="{EFB0281A-AFE8-26D8-992A-55A0A30B3C54}">
 			<ObjectPath>FOL_FallWhoosh</ObjectPath>
 			<ShortName>FOL_FallWhoosh</ShortName>
 			<Path>Event/FOL_FallWhoosh.bnk</Path>
@@ -1139,9 +1139,6 @@
 					</MediaRefs>
 				</Event>
 			</Events>
-			<GameParameters>
-				<GameParameter Id="3162343787" Name="PAR_Velocity_Horizontal" ObjectPath="\Game Parameters\Foley\PAR_Velocity_Horizontal" GUID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}"/>
-			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{543BCEDE-8D2C-33BC-BF56-F00E1DCA65D1}">
 			<ObjectPath>AMB_ScifiDrones</ObjectPath>
@@ -1645,26 +1642,25 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{1441CEC8-D933-A478-0EFD-11086CD55D24}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{AEF47399-68C8-C9DE-C342-14B0593A9828}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>Weapons.bnk</Path>
 			<Events>
-				<Event Id="1694533419" Name="AR_Dryfire_OS" ObjectPath="\Events\Weapons\Dryfire\AR_Dryfire_OS" GUID="{1F162533-308D-4AB5-8A18-0D6E326EB1D8}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1260320770" Name="AR_Equip_OS" ObjectPath="\Events\Weapons\Equip\AR_Equip_OS" GUID="{66D3D001-9957-4751-8B24-0C0AAD610ED4}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1997498208" Name="AR_Projectile_Impact_OS" ObjectPath="\Events\Weapons\Impact\AR_Projectile_Impact_OS" GUID="{873F24AE-5010-4080-8DFB-1C765AEC4801}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="626126160" Name="AR_Projectile_Passby_LP" ObjectPath="\Events\Weapons\Passby\AR_Projectile_Passby_LP" GUID="{DF281450-0700-404B-9DFD-8DBDC054CD38}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="429698657" Name="AR_Reload_OS" ObjectPath="\Events\Weapons\Reload\AR_Reload_OS" GUID="{6E436856-4CBE-4BA5-B184-21225058CE02}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="767763506" Name="AR_Shoot_Fire_LP" ObjectPath="\Events\Weapons\Shoot\AR_Shoot_Fire_LP" GUID="{027202E3-540C-4144-873B-7DCDD76899B6}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2167454730" Name="AR_Shoot_Tail_OS" ObjectPath="\Events\Weapons\Shoot\AR_Shoot_Tail_OS" GUID="{C84ED690-D24D-4016-BF07-03673BF558D4}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2758834436" Name="FOL_Aim_AR" ObjectPath="\Events\Weapons\Aim\FOL_Aim_AR" GUID="{59353546-680F-45BB-AFE9-59C7938042FE}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2792389872" Name="FOL_Aim_GL" ObjectPath="\Events\Weapons\Aim\FOL_Aim_GL" GUID="{D4723596-57DC-4383-9871-DB9982C8E7A7}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1764852559" Name="GL_Dryfire_OS" ObjectPath="\Events\Weapons\Dryfire\GL_Dryfire_OS" GUID="{EA2CD592-0394-4A84-919F-75A9F11F65BC}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3314806526" Name="GL_Equip_OS" ObjectPath="\Events\Weapons\Equip\GL_Equip_OS" GUID="{15EF0405-429D-40BE-8769-103D030DBF08}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="417218604" Name="GL_Projectile_Impact_OS" ObjectPath="\Events\Weapons\Impact\GL_Projectile_Impact_OS" GUID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="803741676" Name="GL_Projectile_Passby_LP" ObjectPath="\Events\Weapons\Passby\GL_Projectile_Passby_LP" GUID="{566534D1-0C06-45CC-8878-334A29476347}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="464045509" Name="GL_Reload_OS" ObjectPath="\Events\Weapons\Reload\GL_Reload_OS" GUID="{778E484F-B81F-4DFB-8587-4CEA07B594B0}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="4165048480" Name="GL_Shoot_Fire_OS" ObjectPath="\Events\Weapons\Shoot\GL_Shoot_Fire_OS" GUID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="983921471" Name="AR_Aim_OS" ObjectPath="\Events\Weapons\Handling\Aim\AR_Aim_OS" GUID="{59353546-680F-45BB-AFE9-59C7938042FE}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1694533419" Name="AR_Dryfire_OS" ObjectPath="\Events\Weapons\Handling\Dryfire\AR_Dryfire_OS" GUID="{1F162533-308D-4AB5-8A18-0D6E326EB1D8}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1260320770" Name="AR_Equip_OS" ObjectPath="\Events\Weapons\Handling\Equip\AR_Equip_OS" GUID="{66D3D001-9957-4751-8B24-0C0AAD610ED4}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="4263945094" Name="AR_Impact_OS" ObjectPath="\Events\Weapons\Firing\Impact\AR_Impact_OS" GUID="{873F24AE-5010-4080-8DFB-1C765AEC4801}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="429698657" Name="AR_Reload_OS" ObjectPath="\Events\Weapons\Handling\Reload\AR_Reload_OS" GUID="{6E436856-4CBE-4BA5-B184-21225058CE02}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="875370928" Name="AR_Shoot" ObjectPath="\Events\Weapons\Firing\Shoot\AR_Shoot" GUID="{027202E3-540C-4144-873B-7DCDD76899B6}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1883352941" Name="AR_WhizzBy_OS" ObjectPath="\Events\Weapons\Firing\Travel\AR_WhizzBy_OS" GUID="{DF281450-0700-404B-9DFD-8DBDC054CD38}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3395474067" Name="GL_Aim_OS" ObjectPath="\Events\Weapons\Handling\Aim\GL_Aim_OS" GUID="{D4723596-57DC-4383-9871-DB9982C8E7A7}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1764852559" Name="GL_Dryfire_OS" ObjectPath="\Events\Weapons\Handling\Dryfire\GL_Dryfire_OS" GUID="{EA2CD592-0394-4A84-919F-75A9F11F65BC}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3314806526" Name="GL_Equip_OS" ObjectPath="\Events\Weapons\Handling\Equip\GL_Equip_OS" GUID="{15EF0405-429D-40BE-8769-103D030DBF08}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="477299258" Name="GL_Impact_OS" ObjectPath="\Events\Weapons\Firing\Impact\GL_Impact_OS" GUID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2238434314" Name="GL_PassBy_LP" ObjectPath="\Events\Weapons\Firing\Travel\GL_PassBy_LP" GUID="{566534D1-0C06-45CC-8878-334A29476347}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="464045509" Name="GL_Reload_OS" ObjectPath="\Events\Weapons\Handling\Reload\GL_Reload_OS" GUID="{778E484F-B81F-4DFB-8587-4CEA07B594B0}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3079155500" Name="GL_Shoot" ObjectPath="\Events\Weapons\Firing\Shoot\GL_Shoot" GUID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 		<SoundBank Id="1478305162" Type="Event" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" Language="SFX" Hash="{98F8219C-1DB5-853F-D593-45BD073C7E96}">
@@ -2743,5 +2739,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4FBFB922-D9F9-D0AD-4DD4-B21CBAB6DA45}</FileHash>
+	<FileHash>{6C117B13-E252-41D9-AE64-EEA5187206DB}</FileHash>
 </SoundBanksInfo>

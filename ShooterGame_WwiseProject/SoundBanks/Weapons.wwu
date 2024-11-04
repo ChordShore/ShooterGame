@@ -13,19 +13,18 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ObjectInclusionList>
-						<ObjectRef Name="AR_Shoot_Tail_OS" ID="{C84ED690-D24D-4016-BF07-03673BF558D4}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="AR_Projectile_Passby_LP" ID="{DF281450-0700-404B-9DFD-8DBDC054CD38}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="AR_Projectile_Impact_OS" ID="{873F24AE-5010-4080-8DFB-1C765AEC4801}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AR_WhizzBy_OS" ID="{DF281450-0700-404B-9DFD-8DBDC054CD38}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AR_Impact_OS" ID="{873F24AE-5010-4080-8DFB-1C765AEC4801}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="GL_Equip_OS" ID="{15EF0405-429D-40BE-8769-103D030DBF08}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="GL_Projectile_Impact_OS" ID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="AR_Shoot_Fire_LP" ID="{027202E3-540C-4144-873B-7DCDD76899B6}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="FOL_Aim_GL" ID="{D4723596-57DC-4383-9871-DB9982C8E7A7}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="FOL_Aim_AR" ID="{59353546-680F-45BB-AFE9-59C7938042FE}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="GL_Projectile_Passby_LP" ID="{566534D1-0C06-45CC-8878-334A29476347}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GL_Impact_OS" ID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AR_Shoot" ID="{027202E3-540C-4144-873B-7DCDD76899B6}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GL_Aim_OS" ID="{D4723596-57DC-4383-9871-DB9982C8E7A7}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AR_Aim_OS" ID="{59353546-680F-45BB-AFE9-59C7938042FE}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GL_PassBy_LP" ID="{566534D1-0C06-45CC-8878-334A29476347}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AR_Equip_OS" ID="{66D3D001-9957-4751-8B24-0C0AAD610ED4}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="GL_Dryfire_OS" ID="{EA2CD592-0394-4A84-919F-75A9F11F65BC}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AR_Dryfire_OS" ID="{1F162533-308D-4AB5-8A18-0D6E326EB1D8}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="GL_Shoot_Fire_OS" ID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GL_Shoot" ID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AR_Reload_OS" ID="{6E436856-4CBE-4BA5-B184-21225058CE02}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="GL_Reload_OS" ID="{778E484F-B81F-4DFB-8587-4CEA07B594B0}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

@@ -9813,51 +9813,6 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="RTPC">
-											<Reference>
-												<Local>
-													<RTPC Name="" ID="{E019A3EA-1795-4AA0-A389-96A76D7AADCC}" ShortID="407512588">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="Volume"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<ObjectRef Name="PAR_Velocity_Horizontal" ID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}" WorkUnitID="{6A726BC9-E679-4BD8-94F8-CD2950B1EDAC}"/>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{08D4C9AB-B726-4442-81B9-4285C0009D6B}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>900.34764</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>Log2</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>1500</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
 								</ActorMixer>
 								<ActorMixer Name="FOL_Armor" ID="{62F8AE5D-75FA-423F-BEF8-979974688BC4}" ShortID="311480243">
 									<PropertyList>
