@@ -38,6 +38,30 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AR_Equip" ID="{F0E741E6-AD4E-42E3-8017-503B6B42AA00}" ShortID="70422509">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AR_Equip" ID="{1E3EECFB-DFDE-4CDB-966E-EECD80CD1D86}">
+															<Language>SFX</Language>
+															<AudioFile>AR_Equip.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="869087166"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AR_Equip" ID="{1E3EECFB-DFDE-4CDB-966E-EECD80CD1D86}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</ActorMixer>
 										<ActorMixer Name="GL_Equip" ID="{0FBE867F-1C97-4C4F-B656-86583E59BC54}" ShortID="216051161">
 											<ReferenceList>
@@ -48,6 +72,30 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="GL_Equip" ID="{794332F4-A558-435A-8DAD-41326CA51985}" ShortID="165838739">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GL_Equip" ID="{B1AA30BC-BA71-4E10-B32C-9AFF48599F64}">
+															<Language>SFX</Language>
+															<AudioFile>GL_Equip.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="669510815"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="GL_Equip" ID="{B1AA30BC-BA71-4E10-B32C-9AFF48599F64}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>
 								</ActorMixer>
@@ -70,6 +118,30 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AR_Dryfire" ID="{33D41071-02A8-4DF5-8DFB-CD4E34FB8E76}" ShortID="466573765">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AR_Dryfire" ID="{B160B828-D791-4D50-A98C-0DB404ED024A}">
+															<Language>SFX</Language>
+															<AudioFile>AR_Dryfire.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="304041726"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AR_Dryfire" ID="{B160B828-D791-4D50-A98C-0DB404ED024A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</ActorMixer>
 										<ActorMixer Name="GL_Dryfire" ID="{1C3A1291-880B-4084-89BF-2BB99DC7F7FF}" ShortID="974250807">
 											<ReferenceList>
@@ -80,6 +152,30 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="GL_Dryfire" ID="{C0EF7F80-16F5-4B69-AC75-E06F2B4A47E1}" ShortID="732092081">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GL_Dryfire" ID="{BB26E5F2-D0F2-4713-8331-C82100B930BB}">
+															<Language>SFX</Language>
+															<AudioFile>GL_Dryfire.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="811684578"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="GL_Dryfire" ID="{BB26E5F2-D0F2-4713-8331-C82100B930BB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>
 								</ActorMixer>
@@ -134,6 +230,30 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AR_Aim" ID="{AFA21F26-18B4-4430-B75E-CDA32C8FB93F}" ShortID="644008487">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AR_Aim" ID="{C46A0EEB-335D-4BF0-B066-ECBBB8E7D116}">
+															<Language>SFX</Language>
+															<AudioFile>AR_Aim.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="432981530"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AR_Aim" ID="{C46A0EEB-335D-4BF0-B066-ECBBB8E7D116}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</ActorMixer>
 										<ActorMixer Name="GL_Aim" ID="{F092AADD-92DB-4CD0-8C7C-2B4DC6532A67}" ShortID="525911186">
 											<ReferenceList>
@@ -144,6 +264,110 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="GL_Aim" ID="{66A1C17A-9E49-4562-B1CD-B366697859E5}" ShortID="399295990">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GL_Aim" ID="{308DDD6B-8496-42ED-B565-198D310F6F63}">
+															<Language>SFX</Language>
+															<AudioFile>GL_Aim.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="687525484"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="GL_Aim" ID="{308DDD6B-8496-42ED-B565-198D310F6F63}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</ActorMixer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="WEP_Disengage" ID="{0D54E5D0-CEB4-4352-91B7-DD064BE62F67}" ShortID="899785270">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<ActorMixer Name="AR_Disengage" ID="{65EC1816-DC07-42E4-9C91-2BE937CC10DE}" ShortID="536787560">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AR_Disengage" ID="{7FB98CF6-2BBE-495E-A83F-220A1CCC2B85}" ShortID="371589311">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AR_Disengage" ID="{9519DDB4-6561-44BB-A2D6-BCBA17B2B2D0}">
+															<Language>SFX</Language>
+															<AudioFile>AR_Disengage.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="17261675"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AR_Disengage" ID="{9519DDB4-6561-44BB-A2D6-BCBA17B2B2D0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</ActorMixer>
+										<ActorMixer Name="GL_Disengage" ID="{CCDFF869-7469-428D-9804-E9BB84777B33}" ShortID="709993216">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="GL_Disengage" ID="{D51EF795-5235-47F9-81B2-D7E804CA5D07}" ShortID="925659294">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GL_Disengage" ID="{5959B4F6-727A-46D7-9A7A-1658BE9374B6}">
+															<Language>SFX</Language>
+															<AudioFile>GL_Disengage.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="648468658"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="GL_Disengage" ID="{5959B4F6-727A-46D7-9A7A-1658BE9374B6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>
 								</ActorMixer>

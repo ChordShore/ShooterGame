@@ -226,6 +226,25 @@
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="120146245" Type="Event" GUID="{C2FA5486-54F6-4B7D-8D70-48754E1772B1}" Language="SFX" Hash="{7827C5EE-2227-3885-BDA3-B8EF737E45F3}">
+			<ObjectPath>GL_Disengage_OS</ObjectPath>
+			<ShortName>GL_Disengage_OS</ShortName>
+			<Path>Event/GL_Disengage_OS.bnk</Path>
+			<Media>
+				<File Id="648468658" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>GL_Disengage.wav</ShortName>
+					<Path>Media/648468658.wem</Path>
+					<CachePath>SFX/GL_Disengage_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="120146245" Name="GL_Disengage_OS" ObjectPath="\Events\Weapons\Handling\Disengage\GL_Disengage_OS" GUID="{C2FA5486-54F6-4B7D-8D70-48754E1772B1}" DurationType="OneShot" DurationMin="0.3125" DurationMax="0.3125">
+					<MediaRefs>
+						<MediaRef Id="648468658"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{E6E1CB49-857D-1551-E3A9-5B34596AD0AB}">
 			<ObjectPath>\SoundBanks\Foley\Foley</ObjectPath>
 			<ShortName>Foley</ShortName>
@@ -1642,21 +1661,71 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{AEF47399-68C8-C9DE-C342-14B0593A9828}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{F9A94D7F-7A6B-E44F-E609-C46D4CE88233}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>Weapons.bnk</Path>
+			<Media>
+				<File Id="304041726" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Dryfire.wav</ShortName>
+					<CachePath>SFX/AR_Dryfire_10C4C929.wem</CachePath>
+				</File>
+				<File Id="432981530" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Aim.wav</ShortName>
+					<CachePath>SFX/AR_Aim_10C4C929.wem</CachePath>
+				</File>
+				<File Id="669510815" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GL_Equip.wav</ShortName>
+					<CachePath>SFX/GL_Equip_10C4C929.wem</CachePath>
+				</File>
+				<File Id="687525484" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GL_Aim.wav</ShortName>
+					<CachePath>SFX/GL_Aim_10C4C929.wem</CachePath>
+				</File>
+				<File Id="811684578" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GL_Dryfire.wav</ShortName>
+					<CachePath>SFX/GL_Dryfire_10C4C929.wem</CachePath>
+				</File>
+				<File Id="869087166" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Equip.wav</ShortName>
+					<CachePath>SFX/AR_Equip_10C4C929.wem</CachePath>
+				</File>
+			</Media>
 			<Events>
-				<Event Id="983921471" Name="AR_Aim_OS" ObjectPath="\Events\Weapons\Handling\Aim\AR_Aim_OS" GUID="{59353546-680F-45BB-AFE9-59C7938042FE}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1694533419" Name="AR_Dryfire_OS" ObjectPath="\Events\Weapons\Handling\Dryfire\AR_Dryfire_OS" GUID="{1F162533-308D-4AB5-8A18-0D6E326EB1D8}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1260320770" Name="AR_Equip_OS" ObjectPath="\Events\Weapons\Handling\Equip\AR_Equip_OS" GUID="{66D3D001-9957-4751-8B24-0C0AAD610ED4}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="983921471" Name="AR_Aim_OS" ObjectPath="\Events\Weapons\Handling\Aim\AR_Aim_OS" GUID="{59353546-680F-45BB-AFE9-59C7938042FE}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="432981530"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1694533419" Name="AR_Dryfire_OS" ObjectPath="\Events\Weapons\Handling\Dryfire\AR_Dryfire_OS" GUID="{1F162533-308D-4AB5-8A18-0D6E326EB1D8}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="304041726"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1260320770" Name="AR_Equip_OS" ObjectPath="\Events\Weapons\Handling\Equip\AR_Equip_OS" GUID="{66D3D001-9957-4751-8B24-0C0AAD610ED4}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="869087166"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4263945094" Name="AR_Impact_OS" ObjectPath="\Events\Weapons\Firing\Impact\AR_Impact_OS" GUID="{873F24AE-5010-4080-8DFB-1C765AEC4801}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="429698657" Name="AR_Reload_OS" ObjectPath="\Events\Weapons\Handling\Reload\AR_Reload_OS" GUID="{6E436856-4CBE-4BA5-B184-21225058CE02}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="875370928" Name="AR_Shoot" ObjectPath="\Events\Weapons\Firing\Shoot\AR_Shoot" GUID="{027202E3-540C-4144-873B-7DCDD76899B6}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1883352941" Name="AR_WhizzBy_OS" ObjectPath="\Events\Weapons\Firing\Travel\AR_WhizzBy_OS" GUID="{DF281450-0700-404B-9DFD-8DBDC054CD38}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3395474067" Name="GL_Aim_OS" ObjectPath="\Events\Weapons\Handling\Aim\GL_Aim_OS" GUID="{D4723596-57DC-4383-9871-DB9982C8E7A7}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1764852559" Name="GL_Dryfire_OS" ObjectPath="\Events\Weapons\Handling\Dryfire\GL_Dryfire_OS" GUID="{EA2CD592-0394-4A84-919F-75A9F11F65BC}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3314806526" Name="GL_Equip_OS" ObjectPath="\Events\Weapons\Handling\Equip\GL_Equip_OS" GUID="{15EF0405-429D-40BE-8769-103D030DBF08}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3395474067" Name="GL_Aim_OS" ObjectPath="\Events\Weapons\Handling\Aim\GL_Aim_OS" GUID="{D4723596-57DC-4383-9871-DB9982C8E7A7}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="687525484"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1764852559" Name="GL_Dryfire_OS" ObjectPath="\Events\Weapons\Handling\Dryfire\GL_Dryfire_OS" GUID="{EA2CD592-0394-4A84-919F-75A9F11F65BC}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="811684578"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3314806526" Name="GL_Equip_OS" ObjectPath="\Events\Weapons\Handling\Equip\GL_Equip_OS" GUID="{15EF0405-429D-40BE-8769-103D030DBF08}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="669510815"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="477299258" Name="GL_Impact_OS" ObjectPath="\Events\Weapons\Firing\Impact\GL_Impact_OS" GUID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2238434314" Name="GL_PassBy_LP" ObjectPath="\Events\Weapons\Firing\Travel\GL_PassBy_LP" GUID="{566534D1-0C06-45CC-8878-334A29476347}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="464045509" Name="GL_Reload_OS" ObjectPath="\Events\Weapons\Handling\Reload\GL_Reload_OS" GUID="{778E484F-B81F-4DFB-8587-4CEA07B594B0}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -2647,6 +2716,25 @@
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="3222525833" Type="Event" GUID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}" Language="SFX" Hash="{F54BB437-8DCE-5D5F-F808-9283E9A3FB9E}">
+			<ObjectPath>AR_Disengage_OS</ObjectPath>
+			<ShortName>AR_Disengage_OS</ShortName>
+			<Path>Event/AR_Disengage_OS.bnk</Path>
+			<Media>
+				<File Id="17261675" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AR_Disengage.wav</ShortName>
+					<Path>Media/17261675.wem</Path>
+					<CachePath>SFX/AR_Disengage_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3222525833" Name="AR_Disengage_OS" ObjectPath="\Events\Weapons\Handling\Disengage\AR_Disengage_OS" GUID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="17261675"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="3348775760" Type="Bus" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" Language="SFX" Hash="{A6B203F1-6014-976C-F37E-65AB6CC64ECB}">
 			<ObjectPath>Highrise_EarlyReflections</ObjectPath>
 			<ShortName>Highrise_EarlyReflections</ShortName>
@@ -2739,5 +2827,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{ED30C921-DA45-107F-C30E-65291B0C4689}</FileHash>
+	<FileHash>{807B2382-D1F8-FB04-AACC-66789C93C4F2}</FileHash>
 </SoundBanksInfo>

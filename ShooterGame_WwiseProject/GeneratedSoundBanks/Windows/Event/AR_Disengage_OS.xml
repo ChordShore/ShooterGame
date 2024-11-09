@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3222525833" Type="Event" GUID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}" Language="SFX" Hash="{F54BB437-8DCE-5D5F-F808-9283E9A3FB9E}">
+			<ObjectPath>AR_Disengage_OS</ObjectPath>
+			<ShortName>AR_Disengage_OS</ShortName>
+			<Path>Event/AR_Disengage_OS.bnk</Path>
+			<Media>
+				<File Id="17261675" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AR_Disengage.wav</ShortName>
+					<Path>Media/17261675.wem</Path>
+					<CachePath>SFX/AR_Disengage_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3222525833" Name="AR_Disengage_OS" ObjectPath="\Events\Weapons\Handling\Disengage\AR_Disengage_OS" GUID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="17261675"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{E4D68F3D-AB95-38C4-3BBD-6A9B488A2431}</FileHash>
+</SoundBanksInfo>

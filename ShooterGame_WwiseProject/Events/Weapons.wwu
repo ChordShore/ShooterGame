@@ -17,20 +17,106 @@
 						</Folder>
 						<Folder Name="Aim" ID="{96593D20-720A-46D0-9DDF-300531A5A06B}" ShortID="842878821">
 							<ChildrenList>
-								<Event Name="AR_Aim_OS" ID="{59353546-680F-45BB-AFE9-59C7938042FE}"/>
-								<Event Name="GL_Aim_OS" ID="{D4723596-57DC-4383-9871-DB9982C8E7A7}"/>
+								<Event Name="AR_Aim_OS" ID="{59353546-680F-45BB-AFE9-59C7938042FE}">
+									<ChildrenList>
+										<Action Name="" ID="{4ABB8D84-CF4C-490E-AF7C-C0258FB621EE}" ShortID="836851278">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AR_Aim" ID="{AFA21F26-18B4-4430-B75E-CDA32C8FB93F}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="GL_Aim_OS" ID="{D4723596-57DC-4383-9871-DB9982C8E7A7}">
+									<ChildrenList>
+										<Action Name="" ID="{3BE701E2-14BD-4A7D-821C-93BB8E3D5BF6}" ShortID="122256826">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="GL_Aim" ID="{66A1C17A-9E49-4562-B1CD-B366697859E5}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Equip" ID="{CFDA3348-BA55-4740-9EB8-DCAEA16B3E58}" ShortID="63979681">
 							<ChildrenList>
-								<Event Name="GL_Equip_OS" ID="{15EF0405-429D-40BE-8769-103D030DBF08}"/>
-								<Event Name="AR_Equip_OS" ID="{66D3D001-9957-4751-8B24-0C0AAD610ED4}"/>
+								<Event Name="GL_Equip_OS" ID="{15EF0405-429D-40BE-8769-103D030DBF08}">
+									<ChildrenList>
+										<Action Name="" ID="{642A7BB8-CBA3-4989-988A-B2175109B90C}" ShortID="519588976">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="GL_Equip" ID="{794332F4-A558-435A-8DAD-41326CA51985}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="AR_Equip_OS" ID="{66D3D001-9957-4751-8B24-0C0AAD610ED4}">
+									<ChildrenList>
+										<Action Name="" ID="{1A927A3A-AAB2-4AA9-B71B-1A71A249932D}" ShortID="983971571">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AR_Equip" ID="{F0E741E6-AD4E-42E3-8017-503B6B42AA00}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Dryfire" ID="{BF46B6AC-A959-4B31-A454-A0C8D52A3D5E}" ShortID="321101203">
 							<ChildrenList>
-								<Event Name="AR_Dryfire_OS" ID="{1F162533-308D-4AB5-8A18-0D6E326EB1D8}"/>
-								<Event Name="GL_Dryfire_OS" ID="{EA2CD592-0394-4A84-919F-75A9F11F65BC}"/>
+								<Event Name="AR_Dryfire_OS" ID="{1F162533-308D-4AB5-8A18-0D6E326EB1D8}">
+									<ChildrenList>
+										<Action Name="" ID="{54128026-9301-4536-B40F-5488741CFDC5}" ShortID="852157730">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AR_Dryfire" ID="{33D41071-02A8-4DF5-8DFB-CD4E34FB8E76}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="GL_Dryfire_OS" ID="{EA2CD592-0394-4A84-919F-75A9F11F65BC}">
+									<ChildrenList>
+										<Action Name="" ID="{E8D8ACCB-48AF-4A12-83CF-300DE9A7ABE9}" ShortID="946544944">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="GL_Dryfire" ID="{C0EF7F80-16F5-4B69-AC75-E06F2B4A47E1}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Disengage" ID="{FF3AFEAD-0676-4124-9741-9BBB8AD79BCE}" ShortID="272853024">
+							<ChildrenList>
+								<Event Name="GL_Disengage_OS" ID="{C2FA5486-54F6-4B7D-8D70-48754E1772B1}">
+									<ChildrenList>
+										<Action Name="" ID="{3B3616F3-8D8E-4DAF-A2FA-860D158FA752}" ShortID="721629723">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="GL_Disengage" ID="{D51EF795-5235-47F9-81B2-D7E804CA5D07}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="AR_Disengage_OS" ID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}">
+									<ChildrenList>
+										<Action Name="" ID="{789AD460-B622-439E-BD46-E931C4F975C8}" ShortID="387145255">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AR_Disengage" ID="{7FB98CF6-2BBE-495E-A83F-220A1CCC2B85}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

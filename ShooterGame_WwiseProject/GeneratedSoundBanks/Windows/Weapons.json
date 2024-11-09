@@ -10,40 +10,102 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "SFX",
-    "Hash": "{AEF47399-68C8-C9DE-C342-14B0593A9828}",
+    "Hash": "{F9A94D7F-7A6B-E44F-E609-C46D4CE88233}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "Weapons.bnk",
+    "Media": [
+     {
+      "Id": "304041726",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AR_Dryfire.wav",
+      "CachePath": "SFX/AR_Dryfire_10C4C929.wem"
+     },
+     {
+      "Id": "432981530",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AR_Aim.wav",
+      "CachePath": "SFX/AR_Aim_10C4C929.wem"
+     },
+     {
+      "Id": "669510815",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GL_Equip.wav",
+      "CachePath": "SFX/GL_Equip_10C4C929.wem"
+     },
+     {
+      "Id": "687525484",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GL_Aim.wav",
+      "CachePath": "SFX/GL_Aim_10C4C929.wem"
+     },
+     {
+      "Id": "811684578",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GL_Dryfire.wav",
+      "CachePath": "SFX/GL_Dryfire_10C4C929.wem"
+     },
+     {
+      "Id": "869087166",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AR_Equip.wav",
+      "CachePath": "SFX/AR_Equip_10C4C929.wem"
+     }
+    ],
     "Events": [
      {
       "Id": "983921471",
       "Name": "AR_Aim_OS",
       "ObjectPath": "\\Events\\Weapons\\Handling\\Aim\\AR_Aim_OS",
       "GUID": "{59353546-680F-45BB-AFE9-59C7938042FE}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "MediaRefs": [
+       {
+        "Id": "432981530"
+       }
+      ]
      },
      {
       "Id": "1694533419",
       "Name": "AR_Dryfire_OS",
       "ObjectPath": "\\Events\\Weapons\\Handling\\Dryfire\\AR_Dryfire_OS",
       "GUID": "{1F162533-308D-4AB5-8A18-0D6E326EB1D8}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "MediaRefs": [
+       {
+        "Id": "304041726"
+       }
+      ]
      },
      {
       "Id": "1260320770",
       "Name": "AR_Equip_OS",
       "ObjectPath": "\\Events\\Weapons\\Handling\\Equip\\AR_Equip_OS",
       "GUID": "{66D3D001-9957-4751-8B24-0C0AAD610ED4}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "MediaRefs": [
+       {
+        "Id": "869087166"
+       }
+      ]
      },
      {
       "Id": "4263945094",
@@ -90,30 +152,42 @@
       "Name": "GL_Aim_OS",
       "ObjectPath": "\\Events\\Weapons\\Handling\\Aim\\GL_Aim_OS",
       "GUID": "{D4723596-57DC-4383-9871-DB9982C8E7A7}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "MediaRefs": [
+       {
+        "Id": "687525484"
+       }
+      ]
      },
      {
       "Id": "1764852559",
       "Name": "GL_Dryfire_OS",
       "ObjectPath": "\\Events\\Weapons\\Handling\\Dryfire\\GL_Dryfire_OS",
       "GUID": "{EA2CD592-0394-4A84-919F-75A9F11F65BC}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "MediaRefs": [
+       {
+        "Id": "811684578"
+       }
+      ]
      },
      {
       "Id": "3314806526",
       "Name": "GL_Equip_OS",
       "ObjectPath": "\\Events\\Weapons\\Handling\\Equip\\GL_Equip_OS",
       "GUID": "{15EF0405-429D-40BE-8769-103D030DBF08}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "MediaRefs": [
+       {
+        "Id": "669510815"
+       }
+      ]
      },
      {
       "Id": "477299258",
@@ -158,6 +232,6 @@
     ]
    }
   ],
-  "FileHash": "{40EFC2EC-7363-E107-C285-6B53E1C47E55}"
+  "FileHash": "{D70EF0C0-5D79-8672-67D1-543CFB3A6648}"
  }
 }
