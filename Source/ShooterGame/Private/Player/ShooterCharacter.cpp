@@ -9,6 +9,7 @@
 #include "Animation/AnimInstance.h"
 #include "Sound/SoundNodeLocalPlayer.h"
 #include "AudioThread.h"
+#include "../Plugins/Wwise/Source/AkAudio/Classes/AkGameplayStatics.h"
 
 static int32 NetVisualizeRelevancyTestPoints = 0;
 FAutoConsoleVariableRef CVarNetVisualizeRelevancyTestPoints(
@@ -737,6 +738,10 @@ void AShooterCharacter::SetTargeting(bool bNewTargeting)
 
 	if (TargetingSound)
 	{
+		//Call Wwise Event
+		PlayAimEvent();
+
+		//Call SoundCue
 		UGameplayStatics::SpawnSoundAttached(TargetingSound, GetRootComponent());
 	}
 
@@ -779,6 +784,29 @@ void AShooterCharacter::ServerSetRunning_Implementation(bool bNewRunning, bool b
 {
 	SetRunning(bNewRunning, bToggle);
 }
+
+//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+// Wwise Event Calls
+
+void AShooterCharacter::PlayAimEvent()
+{
+	FOnAkPostEventCallback nullCallback;
+	UAkGameplayStatics::PostEvent(AimEvent, this, int32(0), nullCallback);
+}
+
+void AShooterCharacter::PlayRespawnEvent()
+{
+	FOnAkPostEventCallback nullCallback;
+	UAkGameplayStatics::PostEvent(RespawnEvent, this, int32(0), nullCallback);
+}
+
+void AShooterCharacter::PlayDeathEvent()
+{
+	FOnAkPostEventCallback nullCallback;
+	UAkGameplayStatics::PostEvent(DeathEvent, this, int32(0), nullCallback);
+}
+
+//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
 void AShooterCharacter::UpdateRunSounds()
 {

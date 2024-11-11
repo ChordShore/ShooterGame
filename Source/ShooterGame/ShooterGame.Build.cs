@@ -35,6 +35,7 @@ public class ShooterGame : ModuleRules
 				"AIModule",
 				"GameplayTasks",
 				"Gauntlet",
+				"AkAudio"
 			}
 		);
 
@@ -50,7 +51,8 @@ public class ShooterGame : ModuleRules
 				"PakFile",
 				"RHI",
 				"PhysicsCore",
-				"GameplayCameras"
+				"GameplayCameras",
+				"AkAudio"
 			}
 		);
 

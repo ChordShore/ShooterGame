@@ -3,6 +3,7 @@
 #pragma once
 
 #include "ShooterTypes.h"
+#include "../Plugins/Wwise/Source/AkAudio/Classes/AkGameplayStatics.h"
 #include "ShooterCharacter.generated.h"
 
 DECLARE_MULTICAST_DELEGATE_TwoParams(FOnShooterCharacterEquipWeapon, AShooterCharacter*, AShooterWeapon* /* new */);
@@ -341,6 +342,32 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category = Animation)
 	UAnimMontage* DeathAnim;
 
+	//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+	// Wwise Event Pickers
+
+	/**sound played on aim**/
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkAudioEvent* AimEvent;
+
+	void PlayAimEvent();
+
+	/**sound played on respawn**/
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkAudioEvent* RespawnEvent;
+
+	void PlayRespawnEvent();
+
+	/**sound played on death**/
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkAudioEvent* DeathEvent;
+
+	void PlayDeathEvent();
+
+	//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+	//////////////////////////////////////////////////////////////////////////
+	// SoundCue Pickers
+
 	/** sound played on death, local player only */
 	UPROPERTY(EditDefaultsOnly, Category = Pawn)
 	USoundCue* DeathSound;
@@ -379,6 +406,8 @@ protected:
 
 	/** handles sounds for running */
 	void UpdateRunSounds();
+
+	//////////////////////////////////////////////////////////////////////////
 
 	/** handle mesh visibility and updates */
 	void UpdatePawnMeshes();

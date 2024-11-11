@@ -4,6 +4,7 @@
 
 #include "GameFramework/Actor.h"
 #include "Engine/Canvas.h" // for FCanvasIcon
+#include "../Plugins/Wwise/Source/AkAudio/Classes/AkGameplayStatics.h"
 #include "ShooterWeapon.generated.h"
 
 class UAnimMontage;
@@ -329,6 +330,50 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category=Effects)
 	UForceFeedbackEffect *FireForceFeedback;
 
+	//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+	// Wwise Event Pickers
+
+	/**Fire OneShot Event**/
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkAudioEvent* FireOneShotEvent;
+
+	void PlayFireOneShotEvent();
+
+	/**Fire Looped Event**/
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkAudioEvent* FireLoopEvent;
+
+	void PlayFireLoopEvent();
+
+	/**Fire Finish Event**/
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkAudioEvent* FireFinishEvent;
+
+	void PlayFireFinishEvent();
+
+	/**Dry Fire Event**/
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkAudioEvent* DryfireEvent;
+
+	void PlayDryFireEvent();
+
+	/**Reload Weapon Event**/
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkAudioEvent* ReloadEvent;
+
+	void PlayReloadEvent();
+
+	/**Equip Weapon Event**/
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkAudioEvent* EquipEvent;
+
+	void PlayEquipEvent();
+
+	//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+	//////////////////////////////////////////////////////////////////////////
+	// SoundCue Pickers
+
 	/** single fire sound (bLoopedFireSound not set) */
 	UPROPERTY(EditDefaultsOnly, Category=Sound)
 	USoundCue* FireSound;
@@ -356,6 +401,8 @@ protected:
 	/** equip sound */
 	UPROPERTY(EditDefaultsOnly, Category=Sound)
 	USoundCue* EquipSound;
+
+	//////////////////////////////////////////////////////////////////////////
 
 	/** equip animations */
 	UPROPERTY(EditDefaultsOnly, Category=Animation)

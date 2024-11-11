@@ -8,6 +8,7 @@
 #include "Online/ShooterPlayerState.h"
 #include "UI/ShooterHUD.h"
 #include "MatineeCameraShake.h"
+#include "../Plugins/Wwise/Source/AkAudio/Classes/AkGameplayStatics.h"
 
 AShooterWeapon::AShooterWeapon(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {
@@ -104,6 +105,10 @@ void AShooterWeapon::OnEquip(const AShooterWeapon* LastWeapon)
 
 	if (MyPawn && MyPawn->IsLocallyControlled())
 	{
+		//Call Wwise Event
+		PlayEquipEvent();
+
+		//Call SoundCue
 		PlayWeaponSound(EquipSound);
 	}
 
@@ -456,6 +461,10 @@ void AShooterWeapon::HandleFiring()
 	{
 		if (GetCurrentAmmo() == 0 && !bRefiring)
 		{
+			//Call Wwise Event
+			PlayDryFireEvent();
+
+			//Call SoundCue
 			PlayWeaponSound(OutOfAmmoSound);
 			AShooterPlayerController* MyPC = Cast<AShooterPlayerController>(MyPawn->Controller);
 			AShooterHUD* MyHUD = MyPC ? Cast<AShooterHUD>(MyPC->GetHUD()) : NULL;
@@ -627,6 +636,49 @@ void AShooterWeapon::OnBurstFinished()
 //////////////////////////////////////////////////////////////////////////
 // Weapon usage helpers
 
+//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+// Wwise Event Calls
+
+void AShooterWeapon::PlayFireOneShotEvent()
+{
+	FOnAkPostEventCallback nullCallback;
+	UAkGameplayStatics::PostEvent(FireOneShotEvent, this, int32(0), nullCallback);
+}
+
+void AShooterWeapon::PlayFireLoopEvent()
+{
+	FOnAkPostEventCallback nullCallback;
+	UAkGameplayStatics::PostEvent(FireLoopEvent, this, int32(0), nullCallback);
+}
+
+void AShooterWeapon::PlayFireFinishEvent()
+{
+	FOnAkPostEventCallback nullCallback;
+	UAkGameplayStatics::PostEvent(FireFinishEvent, this, int32(0), nullCallback);
+}
+
+void AShooterWeapon::PlayDryFireEvent()
+{
+	FOnAkPostEventCallback nullCallback;
+	UAkGameplayStatics::PostEvent(DryfireEvent, this, int32(0), nullCallback);
+}
+
+void AShooterWeapon::PlayReloadEvent()
+{
+	FOnAkPostEventCallback nullCallback;
+	UAkGameplayStatics::PostEvent(ReloadEvent, this, int32(0), nullCallback);
+}
+
+void AShooterWeapon::PlayEquipEvent()
+{
+	FOnAkPostEventCallback nullCallback;
+	UAkGameplayStatics::PostEvent(EquipEvent, this, int32(0), nullCallback);
+}
+
+//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+//////////////////////////////////////////////////////////////////////////
+// Unreal Audio Implementation
 UAudioComponent* AShooterWeapon::PlayWeaponSound(USoundCue* Sound)
 {
 	UAudioComponent* AC = NULL;
