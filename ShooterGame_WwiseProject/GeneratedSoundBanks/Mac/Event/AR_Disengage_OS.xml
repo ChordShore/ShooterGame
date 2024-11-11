@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="3222525833" Type="Event" GUID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}" Language="SFX" Hash="{F54BB437-8DCE-5D5F-F808-9283E9A3FB9E}">
+		<SoundBank Id="3222525833" Type="Event" GUID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}" Language="SFX" Hash="{E36B57FB-87EA-5AD8-A54D-0119CA3D6773}">
 			<ObjectPath>AR_Disengage_OS</ObjectPath>
 			<ShortName>AR_Disengage_OS</ShortName>
 			<Path>Event/AR_Disengage_OS.bnk</Path>
@@ -17,9 +17,12 @@
 					<MediaRefs>
 						<MediaRef Id="17261675"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BCAFAFF3-664B-2131-1CD4-9A6DC3B1BD03}</FileHash>
+	<FileHash>{075A6F8A-D6A0-5F97-2F14-A3A4F8777638}</FileHash>
 </SoundBanksInfo>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="120146245" Type="Event" GUID="{C2FA5486-54F6-4B7D-8D70-48754E1772B1}" Language="SFX" Hash="{7827C5EE-2227-3885-BDA3-B8EF737E45F3}">
+		<SoundBank Id="120146245" Type="Event" GUID="{C2FA5486-54F6-4B7D-8D70-48754E1772B1}" Language="SFX" Hash="{772CA575-4D94-E311-5ED1-055B1F840572}">
 			<ObjectPath>GL_Disengage_OS</ObjectPath>
 			<ShortName>GL_Disengage_OS</ShortName>
 			<Path>Event/GL_Disengage_OS.bnk</Path>
@@ -17,9 +17,12 @@
 					<MediaRefs>
 						<MediaRef Id="648468658"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A87B79B6-4A3D-52F9-CDF8-4846CF05BD35}</FileHash>
+	<FileHash>{2BF80692-7D43-3D10-53C2-7157F856313B}</FileHash>
 </SoundBanksInfo>

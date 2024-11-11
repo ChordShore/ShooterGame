@@ -226,7 +226,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="120146245" Type="Event" GUID="{C2FA5486-54F6-4B7D-8D70-48754E1772B1}" Language="SFX" Hash="{7827C5EE-2227-3885-BDA3-B8EF737E45F3}">
+		<SoundBank Id="120146245" Type="Event" GUID="{C2FA5486-54F6-4B7D-8D70-48754E1772B1}" Language="SFX" Hash="{772CA575-4D94-E311-5ED1-055B1F840572}">
 			<ObjectPath>GL_Disengage_OS</ObjectPath>
 			<ShortName>GL_Disengage_OS</ShortName>
 			<Path>Event/GL_Disengage_OS.bnk</Path>
@@ -242,6 +242,9 @@
 					<MediaRefs>
 						<MediaRef Id="648468658"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
@@ -1661,7 +1664,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{801D1BE6-7304-3A0C-ECD2-A568DD94627A}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{789ED3C4-9384-60F3-175F-F51C2947F733}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>Weapons.bnk</Path>
@@ -1696,16 +1699,25 @@
 					<MediaRefs>
 						<MediaRef Id="432981530"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1694533419" Name="AR_Dryfire_OS" ObjectPath="\Events\Weapons\Handling\Dryfire\AR_Dryfire_OS" GUID="{1F162533-308D-4AB5-8A18-0D6E326EB1D8}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<MediaRefs>
 						<MediaRef Id="304041726"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1260320770" Name="AR_Equip_OS" ObjectPath="\Events\Weapons\Handling\Equip\AR_Equip_OS" GUID="{66D3D001-9957-4751-8B24-0C0AAD610ED4}" DurationType="OneShot" DurationMin="0.47193712" DurationMax="0.5297316">
 					<MediaRefs>
 						<MediaRef Id="869087166"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="4263945094" Name="AR_Impact_OS" ObjectPath="\Events\Weapons\Firing\Impact\AR_Impact_OS" GUID="{873F24AE-5010-4080-8DFB-1C765AEC4801}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="429698657" Name="AR_Reload_OS" ObjectPath="\Events\Weapons\Handling\Reload\AR_Reload_OS" GUID="{6E436856-4CBE-4BA5-B184-21225058CE02}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -1715,16 +1727,25 @@
 					<MediaRefs>
 						<MediaRef Id="687525484"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1764852559" Name="GL_Dryfire_OS" ObjectPath="\Events\Weapons\Handling\Dryfire\GL_Dryfire_OS" GUID="{EA2CD592-0394-4A84-919F-75A9F11F65BC}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<MediaRefs>
 						<MediaRef Id="811684578"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
-				<Event Id="3314806526" Name="GL_Equip_OS" ObjectPath="\Events\Weapons\Handling\Equip\GL_Equip_OS" GUID="{15EF0405-429D-40BE-8769-103D030DBF08}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+				<Event Id="3314806526" Name="GL_Equip_OS" ObjectPath="\Events\Weapons\Handling\Equip\GL_Equip_OS" GUID="{15EF0405-429D-40BE-8769-103D030DBF08}" DurationType="OneShot" DurationMin="0.47193712" DurationMax="0.5297316">
 					<MediaRefs>
 						<MediaRef Id="669510815"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="477299258" Name="GL_Impact_OS" ObjectPath="\Events\Weapons\Firing\Impact\GL_Impact_OS" GUID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2238434314" Name="GL_PassBy_LP" ObjectPath="\Events\Weapons\Firing\Travel\GL_PassBy_LP" GUID="{566534D1-0C06-45CC-8878-334A29476347}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -1823,13 +1844,21 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2151963051" Type="User" GUID="{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}" Language="SFX" Hash="{7CAED8A1-2B85-8537-33D4-D92C5D17E8E4}">
+		<SoundBank Id="2151963051" Type="User" GUID="{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}" Language="SFX" Hash="{87C0173A-B9DE-D0EB-6B24-05D52DA4A69F}">
 			<ObjectPath>\SoundBanks\Items\Items</ObjectPath>
 			<ShortName>Items</ShortName>
 			<Path>Items.bnk</Path>
 			<Events>
-				<Event Id="2152172383" Name="ITM_Ammo_Pickup" ObjectPath="\Events\Items\ITM_Ammo_Pickup" GUID="{84FD3B5D-FFEB-4DA1-8126-1EC11F4895C5}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3787053379" Name="ITM_Health_Pickup" ObjectPath="\Events\Items\ITM_Health_Pickup" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2323462838" Name="ITM_Ammo_AR" ObjectPath="\Events\Items\ITM_Ammo_AR" GUID="{84FD3B5D-FFEB-4DA1-8126-1EC11F4895C5}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="4106715228" Name="ITM_Health" ObjectPath="\Events\Items\ITM_Health" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2289907698" Type="Event" GUID="{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}" Language="SFX" Hash="{79F24B4E-4EFB-4E4E-1DB6-702D533F11B8}">
+			<ObjectPath>ITM_Ammo_GL</ObjectPath>
+			<ShortName>ITM_Ammo_GL</ShortName>
+			<Path>Event/ITM_Ammo_GL.bnk</Path>
+			<Events>
+				<Event Id="2289907698" Name="ITM_Ammo_GL" ObjectPath="\Events\Items\ITM_Ammo_GL" GUID="{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 		<SoundBank Id="2333830951" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{1FD0A6A9-F0E1-38DF-7E82-71B412599E0B}">
@@ -2716,7 +2745,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3222525833" Type="Event" GUID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}" Language="SFX" Hash="{F54BB437-8DCE-5D5F-F808-9283E9A3FB9E}">
+		<SoundBank Id="3222525833" Type="Event" GUID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}" Language="SFX" Hash="{E36B57FB-87EA-5AD8-A54D-0119CA3D6773}">
 			<ObjectPath>AR_Disengage_OS</ObjectPath>
 			<ShortName>AR_Disengage_OS</ShortName>
 			<Path>Event/AR_Disengage_OS.bnk</Path>
@@ -2732,6 +2761,9 @@
 					<MediaRefs>
 						<MediaRef Id="17261675"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
@@ -2827,5 +2859,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FE41404A-09DF-2711-D8D9-404B5557028D}</FileHash>
+	<FileHash>{57E35B2E-0EC4-7525-BF46-EAD9FFCE9C5C}</FileHash>
 </SoundBanksInfo>

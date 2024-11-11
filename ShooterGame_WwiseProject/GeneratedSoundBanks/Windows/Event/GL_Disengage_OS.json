@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{C2FA5486-54F6-4B7D-8D70-48754E1772B1}",
     "Language": "SFX",
-    "Hash": "{7827C5EE-2227-3885-BDA3-B8EF737E45F3}",
+    "Hash": "{772CA575-4D94-E311-5ED1-055B1F840572}",
     "ObjectPath": "GL_Disengage_OS",
     "ShortName": "GL_Disengage_OS",
     "Path": "Event/GL_Disengage_OS.bnk",
@@ -38,11 +38,19 @@
        {
         "Id": "648468658"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{CE3B6040-3EC4-00A0-F928-7E398B8C62A4}"
+  "FileHash": "{56F2B89E-6D37-A34B-7A87-E5557E6279BD}"
  }
 }

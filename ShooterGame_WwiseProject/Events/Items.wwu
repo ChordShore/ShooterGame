@@ -7,8 +7,9 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Event Name="ITM_Health_Pickup" ID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}"/>
-				<Event Name="ITM_Ammo_Pickup" ID="{84FD3B5D-FFEB-4DA1-8126-1EC11F4895C5}"/>
+				<Event Name="ITM_Health" ID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}"/>
+				<Event Name="ITM_Ammo_AR" ID="{84FD3B5D-FFEB-4DA1-8126-1EC11F4895C5}"/>
+				<Event Name="ITM_Ammo_GL" ID="{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

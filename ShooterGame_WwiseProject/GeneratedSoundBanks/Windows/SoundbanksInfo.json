@@ -493,7 +493,7 @@
     "Type": "Event",
     "GUID": "{C2FA5486-54F6-4B7D-8D70-48754E1772B1}",
     "Language": "SFX",
-    "Hash": "{7827C5EE-2227-3885-BDA3-B8EF737E45F3}",
+    "Hash": "{772CA575-4D94-E311-5ED1-055B1F840572}",
     "ObjectPath": "GL_Disengage_OS",
     "ShortName": "GL_Disengage_OS",
     "Path": "Event/GL_Disengage_OS.bnk",
@@ -520,6 +520,14 @@
       "MediaRefs": [
        {
         "Id": "648468658"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
        }
       ]
      }
@@ -4105,7 +4113,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "SFX",
-    "Hash": "{801D1BE6-7304-3A0C-ECD2-A568DD94627A}",
+    "Hash": "{789ED3C4-9384-60F3-175F-F51C2947F733}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "Weapons.bnk",
@@ -4172,6 +4180,14 @@
        {
         "Id": "432981530"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
       ]
      },
      {
@@ -4186,6 +4202,14 @@
        {
         "Id": "304041726"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
       ]
      },
      {
@@ -4199,6 +4223,14 @@
       "MediaRefs": [
        {
         "Id": "869087166"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
        }
       ]
      },
@@ -4254,6 +4286,14 @@
        {
         "Id": "687525484"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
       ]
      },
      {
@@ -4268,6 +4308,14 @@
        {
         "Id": "811684578"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
       ]
      },
      {
@@ -4276,11 +4324,19 @@
       "ObjectPath": "\\Events\\Weapons\\Handling\\Equip\\GL_Equip_OS",
       "GUID": "{15EF0405-429D-40BE-8769-103D030DBF08}",
       "DurationType": "OneShot",
-      "DurationMin": "0.5",
-      "DurationMax": "0.5",
+      "DurationMin": "0.47193712",
+      "DurationMax": "0.5297316",
       "MediaRefs": [
        {
         "Id": "669510815"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
        }
       ]
      },
@@ -4513,15 +4569,15 @@
     "Type": "User",
     "GUID": "{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}",
     "Language": "SFX",
-    "Hash": "{7CAED8A1-2B85-8537-33D4-D92C5D17E8E4}",
+    "Hash": "{87C0173A-B9DE-D0EB-6B24-05D52DA4A69F}",
     "ObjectPath": "\\SoundBanks\\Items\\Items",
     "ShortName": "Items",
     "Path": "Items.bnk",
     "Events": [
      {
-      "Id": "2152172383",
-      "Name": "ITM_Ammo_Pickup",
-      "ObjectPath": "\\Events\\Items\\ITM_Ammo_Pickup",
+      "Id": "2323462838",
+      "Name": "ITM_Ammo_AR",
+      "ObjectPath": "\\Events\\Items\\ITM_Ammo_AR",
       "GUID": "{84FD3B5D-FFEB-4DA1-8126-1EC11F4895C5}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -4529,10 +4585,32 @@
       "DurationMax": "0"
      },
      {
-      "Id": "3787053379",
-      "Name": "ITM_Health_Pickup",
-      "ObjectPath": "\\Events\\Items\\ITM_Health_Pickup",
+      "Id": "4106715228",
+      "Name": "ITM_Health",
+      "ObjectPath": "\\Events\\Items\\ITM_Health",
       "GUID": "{15331CA7-0E4D-4141-A281-BABB2A8B29CA}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   },
+   {
+    "Id": "2289907698",
+    "Type": "Event",
+    "GUID": "{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}",
+    "Language": "SFX",
+    "Hash": "{79F24B4E-4EFB-4E4E-1DB6-702D533F11B8}",
+    "ObjectPath": "ITM_Ammo_GL",
+    "ShortName": "ITM_Ammo_GL",
+    "Path": "Event/ITM_Ammo_GL.bnk",
+    "Events": [
+     {
+      "Id": "2289907698",
+      "Name": "ITM_Ammo_GL",
+      "ObjectPath": "\\Events\\Items\\ITM_Ammo_GL",
+      "GUID": "{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
       "DurationMin": "0",
@@ -6487,7 +6565,7 @@
     "Type": "Event",
     "GUID": "{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}",
     "Language": "SFX",
-    "Hash": "{F54BB437-8DCE-5D5F-F808-9283E9A3FB9E}",
+    "Hash": "{E36B57FB-87EA-5AD8-A54D-0119CA3D6773}",
     "ObjectPath": "AR_Disengage_OS",
     "ShortName": "AR_Disengage_OS",
     "Path": "Event/AR_Disengage_OS.bnk",
@@ -6514,6 +6592,14 @@
       "MediaRefs": [
        {
         "Id": "17261675"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
        }
       ]
      }
@@ -6696,6 +6782,6 @@
     ]
    }
   ],
-  "FileHash": "{8B547AF0-A4AF-0E72-92F9-842F0290496D}"
+  "FileHash": "{FBCFE1FF-25E7-78E3-389E-3874A35A0423}"
  }
 }
