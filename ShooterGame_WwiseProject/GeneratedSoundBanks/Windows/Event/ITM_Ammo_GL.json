@@ -10,24 +10,39 @@
     "Type": "Event",
     "GUID": "{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}",
     "Language": "SFX",
-    "Hash": "{79F24B4E-4EFB-4E4E-1DB6-702D533F11B8}",
+    "Hash": "{ADC4B789-2EDA-4FB7-EBC7-681F73A94DF4}",
     "ObjectPath": "ITM_Ammo_GL",
     "ShortName": "ITM_Ammo_GL",
     "Path": "Event/ITM_Ammo_GL.bnk",
+    "Media": [
+     {
+      "Id": "26400503",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "ITM_Ammo_GL.wav",
+      "Path": "Media/26400503.wem",
+      "CachePath": "SFX/ITM_Ammo_GL_10C4C929.wem"
+     }
+    ],
     "Events": [
      {
       "Id": "2289907698",
       "Name": "ITM_Ammo_GL",
       "ObjectPath": "\\Events\\Items\\ITM_Ammo_GL",
       "GUID": "{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "0.84508336",
+      "DurationMax": "0.84508336",
+      "MediaRefs": [
+       {
+        "Id": "26400503"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{EC771C89-CCDC-7610-0F30-00F66D33C99C}"
+  "FileHash": "{9EE12952-3F74-4BA3-2126-E7311021241E}"
  }
 }

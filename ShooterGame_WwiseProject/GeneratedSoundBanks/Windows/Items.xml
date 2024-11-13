@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2151963051" Type="User" GUID="{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}" Language="SFX" Hash="{87C0173A-B9DE-D0EB-6B24-05D52DA4A69F}">
+		<SoundBank Id="2151963051" Type="User" GUID="{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}" Language="SFX" Hash="{49C99696-C254-B3CA-B2C8-FF3B2B9D7C56}">
 			<ObjectPath>\SoundBanks\Items\Items</ObjectPath>
 			<ShortName>Items</ShortName>
 			<Path>Items.bnk</Path>
+			<Media>
+				<File Id="470330457" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ITM_Ammo_AR.wav</ShortName>
+					<CachePath>SFX/ITM_Ammo_AR_10C4C929.wem</CachePath>
+				</File>
+				<File Id="661048761" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ITM_Health.wav</ShortName>
+					<CachePath>SFX/ITM_Health_10C4C929.wem</CachePath>
+				</File>
+			</Media>
 			<Events>
-				<Event Id="2323462838" Name="ITM_Ammo_AR" ObjectPath="\Events\Items\ITM_Ammo_AR" GUID="{84FD3B5D-FFEB-4DA1-8126-1EC11F4895C5}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="4106715228" Name="ITM_Health" ObjectPath="\Events\Items\ITM_Health" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2323462838" Name="ITM_Ammo_AR" ObjectPath="\Events\Items\ITM_Ammo_AR" GUID="{84FD3B5D-FFEB-4DA1-8126-1EC11F4895C5}" DurationType="OneShot" DurationMin="0.84508336" DurationMax="0.84508336">
+					<MediaRefs>
+						<MediaRef Id="470330457"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4106715228" Name="ITM_Health" ObjectPath="\Events\Items\ITM_Health" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" DurationType="OneShot" DurationMin="2.1126876" DurationMax="2.1126876">
+					<MediaRefs>
+						<MediaRef Id="661048761"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1403745C-8C64-384F-B5D0-89D1A5E1C300}</FileHash>
+	<FileHash>{00EF36BF-7CAD-4479-7410-FD76D7EBDCEA}</FileHash>
 </SoundBanksInfo>

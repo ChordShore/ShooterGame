@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2289907698" Type="Event" GUID="{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}" Language="SFX" Hash="{79F24B4E-4EFB-4E4E-1DB6-702D533F11B8}">
+		<SoundBank Id="2289907698" Type="Event" GUID="{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}" Language="SFX" Hash="{ADC4B789-2EDA-4FB7-EBC7-681F73A94DF4}">
 			<ObjectPath>ITM_Ammo_GL</ObjectPath>
 			<ShortName>ITM_Ammo_GL</ShortName>
 			<Path>Event/ITM_Ammo_GL.bnk</Path>
+			<Media>
+				<File Id="26400503" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>ITM_Ammo_GL.wav</ShortName>
+					<Path>Media/26400503.wem</Path>
+					<CachePath>SFX/ITM_Ammo_GL_10C4C929.wem</CachePath>
+				</File>
+			</Media>
 			<Events>
-				<Event Id="2289907698" Name="ITM_Ammo_GL" ObjectPath="\Events\Items\ITM_Ammo_GL" GUID="{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2289907698" Name="ITM_Ammo_GL" ObjectPath="\Events\Items\ITM_Ammo_GL" GUID="{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}" DurationType="OneShot" DurationMin="0.84508336" DurationMax="0.84508336">
+					<MediaRefs>
+						<MediaRef Id="26400503"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F9650DC8-23E9-F28A-EFC0-EC93C6202C9D}</FileHash>
+	<FileHash>{9F6022A3-6002-36A7-A987-C2A6E42B9108}</FileHash>
 </SoundBanksInfo>

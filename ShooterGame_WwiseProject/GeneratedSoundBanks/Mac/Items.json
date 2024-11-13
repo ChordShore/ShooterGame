@@ -10,34 +10,60 @@
     "Type": "User",
     "GUID": "{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}",
     "Language": "SFX",
-    "Hash": "{87C0173A-B9DE-D0EB-6B24-05D52DA4A69F}",
+    "Hash": "{49C99696-C254-B3CA-B2C8-FF3B2B9D7C56}",
     "ObjectPath": "\\SoundBanks\\Items\\Items",
     "ShortName": "Items",
     "Path": "Items.bnk",
+    "Media": [
+     {
+      "Id": "470330457",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ITM_Ammo_AR.wav",
+      "CachePath": "SFX/ITM_Ammo_AR_10C4C929.wem"
+     },
+     {
+      "Id": "661048761",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ITM_Health.wav",
+      "CachePath": "SFX/ITM_Health_10C4C929.wem"
+     }
+    ],
     "Events": [
      {
       "Id": "2323462838",
       "Name": "ITM_Ammo_AR",
       "ObjectPath": "\\Events\\Items\\ITM_Ammo_AR",
       "GUID": "{84FD3B5D-FFEB-4DA1-8126-1EC11F4895C5}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "0.84508336",
+      "DurationMax": "0.84508336",
+      "MediaRefs": [
+       {
+        "Id": "470330457"
+       }
+      ]
      },
      {
       "Id": "4106715228",
       "Name": "ITM_Health",
       "ObjectPath": "\\Events\\Items\\ITM_Health",
       "GUID": "{15331CA7-0E4D-4141-A281-BABB2A8B29CA}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "2.1126876",
+      "DurationMax": "2.1126876",
+      "MediaRefs": [
+       {
+        "Id": "661048761"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{CC23D6AD-93C9-7ACC-BF0A-45E320F2C28B}"
+  "FileHash": "{4C87C628-50A7-4D9E-6198-2BF7C2C3A01F}"
  }
 }

@@ -7,9 +7,39 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Event Name="ITM_Health" ID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}"/>
-				<Event Name="ITM_Ammo_AR" ID="{84FD3B5D-FFEB-4DA1-8126-1EC11F4895C5}"/>
-				<Event Name="ITM_Ammo_GL" ID="{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}"/>
+				<Event Name="ITM_Health" ID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}">
+					<ChildrenList>
+						<Action Name="" ID="{66ECA95A-FEB4-42B9-8E31-A6AEF14894F3}" ShortID="842229813">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ITM_Health" ID="{FED307BB-29F8-40F9-A3C0-D1AA126FA037}" WorkUnitID="{892B8FE9-5476-4084-8F40-32C9152B4BC3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ITM_Ammo_AR" ID="{84FD3B5D-FFEB-4DA1-8126-1EC11F4895C5}">
+					<ChildrenList>
+						<Action Name="" ID="{D2EF17B6-CC31-440D-AC4F-72C1A5C2AE85}" ShortID="844123352">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ITM_Ammo_AR" ID="{8B60B0F9-3649-4AA9-880E-1BAF3254F9A5}" WorkUnitID="{892B8FE9-5476-4084-8F40-32C9152B4BC3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ITM_Ammo_GL" ID="{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}">
+					<ChildrenList>
+						<Action Name="" ID="{4B03B9C6-55C2-41E0-BC36-6E54BA5B3A4E}" ShortID="1030265507">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ITM_Ammo_GL" ID="{3DB98299-9B20-4B2D-9975-447CC7825452}" WorkUnitID="{892B8FE9-5476-4084-8F40-32C9152B4BC3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
