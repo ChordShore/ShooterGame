@@ -23,6 +23,12 @@
 						<Switch Name="GL_Projectile" ID="{62FFEDFC-73B1-40A7-8C02-90731CB4F54B}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="SWT_Weapon_Types" ID="{ECBD5BFD-ACAD-4CAA-BBDC-95A58B4A93D2}">
+					<ChildrenList>
+						<Switch Name="AR_Equipped" ID="{6FE15811-998E-4E22-ACDE-9862762F2DA9}"/>
+						<Switch Name="GL_Equipped" ID="{CC7198FF-EACB-450D-AAFA-A7B04554F707}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

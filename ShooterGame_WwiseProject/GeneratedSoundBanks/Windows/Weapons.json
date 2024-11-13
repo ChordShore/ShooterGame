@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "SFX",
-    "Hash": "{789ED3C4-9384-60F3-175F-F51C2947F733}",
+    "Hash": "{442BE936-08FE-E1EE-22BA-F519A8B751C6}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "Weapons.bnk",
@@ -71,19 +71,43 @@
       "ObjectPath": "\\Events\\Weapons\\Handling\\Aim\\AR_Aim_OS",
       "GUID": "{59353546-680F-45BB-AFE9-59C7938042FE}",
       "DurationType": "OneShot",
-      "DurationMin": "0.5",
-      "DurationMax": "0.5",
-      "MediaRefs": [
-       {
-        "Id": "432981530"
-       }
-      ],
+      "DurationMin": "0.47193712",
+      "DurationMax": "0.5297316",
       "AuxBusRefs": [
        {
         "Id": "3348775760",
         "Name": "Highrise_EarlyReflections",
         "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
         "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2719266754",
+         "Id": "1891117424",
+         "GUID": "{6FE15811-998E-4E22-ACDE-9862762F2DA9}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "432981530"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2719266754",
+         "Id": "2886223932",
+         "GUID": "{CC7198FF-EACB-450D-AAFA-A7B04554F707}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "687525484"
+         }
+        ]
        }
       ]
      },
@@ -177,19 +201,43 @@
       "ObjectPath": "\\Events\\Weapons\\Handling\\Aim\\GL_Aim_OS",
       "GUID": "{D4723596-57DC-4383-9871-DB9982C8E7A7}",
       "DurationType": "OneShot",
-      "DurationMin": "0.5",
-      "DurationMax": "0.5",
-      "MediaRefs": [
-       {
-        "Id": "687525484"
-       }
-      ],
+      "DurationMin": "0.47193712",
+      "DurationMax": "0.5297316",
       "AuxBusRefs": [
        {
         "Id": "3348775760",
         "Name": "Highrise_EarlyReflections",
         "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
         "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2719266754",
+         "Id": "1891117424",
+         "GUID": "{6FE15811-998E-4E22-ACDE-9862762F2DA9}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "432981530"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2719266754",
+         "Id": "2886223932",
+         "GUID": "{CC7198FF-EACB-450D-AAFA-A7B04554F707}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "687525484"
+         }
+        ]
        }
       ]
      },
@@ -277,9 +325,31 @@
       "DurationMin": "0",
       "DurationMax": "0"
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2719266754",
+      "Name": "SWT_Weapon_Types",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SWT_Weapon_Types",
+      "GUID": "{ECBD5BFD-ACAD-4CAA-BBDC-95A58B4A93D2}",
+      "Switches": [
+       {
+        "Id": "1891117424",
+        "Name": "AR_Equipped",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SWT_Weapon_Types\\AR_Equipped",
+        "GUID": "{6FE15811-998E-4E22-ACDE-9862762F2DA9}"
+       },
+       {
+        "Id": "2886223932",
+        "Name": "GL_Equipped",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SWT_Weapon_Types\\GL_Equipped",
+        "GUID": "{CC7198FF-EACB-450D-AAFA-A7B04554F707}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{C3E834E0-14E2-010D-07DC-4EF220FDFD64}"
+  "FileHash": "{301F9E4C-47E6-50D0-6BB4-365CCC24E245}"
  }
 }

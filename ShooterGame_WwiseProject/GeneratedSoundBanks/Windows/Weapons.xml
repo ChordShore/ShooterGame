@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{789ED3C4-9384-60F3-175F-F51C2947F733}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{442BE936-08FE-E1EE-22BA-F519A8B751C6}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>Weapons.bnk</Path>
@@ -32,13 +32,24 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="983921471" Name="AR_Aim_OS" ObjectPath="\Events\Weapons\Handling\Aim\AR_Aim_OS" GUID="{59353546-680F-45BB-AFE9-59C7938042FE}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
-					<MediaRefs>
-						<MediaRef Id="432981530"/>
-					</MediaRefs>
+				<Event Id="983921471" Name="AR_Aim_OS" ObjectPath="\Events\Weapons\Handling\Aim\AR_Aim_OS" GUID="{59353546-680F-45BB-AFE9-59C7938042FE}" DurationType="OneShot" DurationMin="0.47193712" DurationMax="0.5297316">
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2719266754" Id="1891117424" GUID="{6FE15811-998E-4E22-ACDE-9862762F2DA9}" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="432981530"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2719266754" Id="2886223932" GUID="{CC7198FF-EACB-450D-AAFA-A7B04554F707}"/>
+							<MediaRefs>
+								<MediaRef Id="687525484"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="1694533419" Name="AR_Dryfire_OS" ObjectPath="\Events\Weapons\Handling\Dryfire\AR_Dryfire_OS" GUID="{1F162533-308D-4AB5-8A18-0D6E326EB1D8}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<MediaRefs>
@@ -60,13 +71,24 @@
 				<Event Id="429698657" Name="AR_Reload_OS" ObjectPath="\Events\Weapons\Handling\Reload\AR_Reload_OS" GUID="{6E436856-4CBE-4BA5-B184-21225058CE02}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="875370928" Name="AR_Shoot" ObjectPath="\Events\Weapons\Firing\Shoot\AR_Shoot" GUID="{027202E3-540C-4144-873B-7DCDD76899B6}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1883352941" Name="AR_WhizzBy_OS" ObjectPath="\Events\Weapons\Firing\Travel\AR_WhizzBy_OS" GUID="{DF281450-0700-404B-9DFD-8DBDC054CD38}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3395474067" Name="GL_Aim_OS" ObjectPath="\Events\Weapons\Handling\Aim\GL_Aim_OS" GUID="{D4723596-57DC-4383-9871-DB9982C8E7A7}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
-					<MediaRefs>
-						<MediaRef Id="687525484"/>
-					</MediaRefs>
+				<Event Id="3395474067" Name="GL_Aim_OS" ObjectPath="\Events\Weapons\Handling\Aim\GL_Aim_OS" GUID="{D4723596-57DC-4383-9871-DB9982C8E7A7}" DurationType="OneShot" DurationMin="0.47193712" DurationMax="0.5297316">
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2719266754" Id="1891117424" GUID="{6FE15811-998E-4E22-ACDE-9862762F2DA9}" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="432981530"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2719266754" Id="2886223932" GUID="{CC7198FF-EACB-450D-AAFA-A7B04554F707}"/>
+							<MediaRefs>
+								<MediaRef Id="687525484"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="1764852559" Name="GL_Dryfire_OS" ObjectPath="\Events\Weapons\Handling\Dryfire\GL_Dryfire_OS" GUID="{EA2CD592-0394-4A84-919F-75A9F11F65BC}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<MediaRefs>
@@ -89,7 +111,15 @@
 				<Event Id="464045509" Name="GL_Reload_OS" ObjectPath="\Events\Weapons\Handling\Reload\GL_Reload_OS" GUID="{778E484F-B81F-4DFB-8587-4CEA07B594B0}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3079155500" Name="GL_Shoot" ObjectPath="\Events\Weapons\Firing\Shoot\GL_Shoot" GUID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="2719266754" Name="SWT_Weapon_Types" ObjectPath="\Switches\Default Work Unit\SWT_Weapon_Types" GUID="{ECBD5BFD-ACAD-4CAA-BBDC-95A58B4A93D2}">
+					<Switches>
+						<Switch Id="1891117424" Name="AR_Equipped" ObjectPath="\Switches\Default Work Unit\SWT_Weapon_Types\AR_Equipped" GUID="{6FE15811-998E-4E22-ACDE-9862762F2DA9}"/>
+						<Switch Id="2886223932" Name="GL_Equipped" ObjectPath="\Switches\Default Work Unit\SWT_Weapon_Types\GL_Equipped" GUID="{CC7198FF-EACB-450D-AAFA-A7B04554F707}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F927280E-D3BC-DAB7-A791-3540CFD067F1}</FileHash>
+	<FileHash>{DEE4473C-05D0-4633-432B-B054F49644CF}</FileHash>
 </SoundBanksInfo>

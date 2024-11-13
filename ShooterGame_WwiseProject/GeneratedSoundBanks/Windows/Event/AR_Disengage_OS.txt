@@ -1,3 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	3222525833	AR_Disengage_OS			\Weapons\Handling\Disengage\AR_Disengage_OS	
 
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2719266754	SWT_Weapon_Types			\Default Work Unit\SWT_Weapon_Types	
+
+Switch	ID	Name	Switch Group			Notes
+	1891117424	AR_Equipped	SWT_Weapon_Types			
+	2886223932	GL_Equipped	SWT_Weapon_Types			
+

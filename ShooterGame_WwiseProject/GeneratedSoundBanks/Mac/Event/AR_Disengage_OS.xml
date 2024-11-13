@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="3222525833" Type="Event" GUID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}" Language="SFX" Hash="{E36B57FB-87EA-5AD8-A54D-0119CA3D6773}">
+		<SoundBank Id="3222525833" Type="Event" GUID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}" Language="SFX" Hash="{857F9B84-9E7F-60A0-5181-1510C044901B}">
 			<ObjectPath>AR_Disengage_OS</ObjectPath>
 			<ShortName>AR_Disengage_OS</ShortName>
 			<Path>Event/AR_Disengage_OS.bnk</Path>
@@ -11,18 +11,42 @@
 					<Path>Media/17261675.wem</Path>
 					<CachePath>SFX/AR_Disengage_10C4C929.wem</CachePath>
 				</File>
+				<File Id="648468658" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>GL_Disengage.wav</ShortName>
+					<Path>Media/648468658.wem</Path>
+					<CachePath>SFX/GL_Disengage_10C4C929.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
-				<Event Id="3222525833" Name="AR_Disengage_OS" ObjectPath="\Events\Weapons\Handling\Disengage\AR_Disengage_OS" GUID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
-					<MediaRefs>
-						<MediaRef Id="17261675"/>
-					</MediaRefs>
+				<Event Id="3222525833" Name="AR_Disengage_OS" ObjectPath="\Events\Weapons\Handling\Disengage\AR_Disengage_OS" GUID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}" DurationType="OneShot" DurationMin="0.3125" DurationMax="0.5">
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2719266754" Id="1891117424" GUID="{6FE15811-998E-4E22-ACDE-9862762F2DA9}" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="17261675"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2719266754" Id="2886223932" GUID="{CC7198FF-EACB-450D-AAFA-A7B04554F707}"/>
+							<MediaRefs>
+								<MediaRef Id="648468658"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="2719266754" Name="SWT_Weapon_Types" ObjectPath="\Switches\Default Work Unit\SWT_Weapon_Types" GUID="{ECBD5BFD-ACAD-4CAA-BBDC-95A58B4A93D2}">
+					<Switches>
+						<Switch Id="1891117424" Name="AR_Equipped" ObjectPath="\Switches\Default Work Unit\SWT_Weapon_Types\AR_Equipped" GUID="{6FE15811-998E-4E22-ACDE-9862762F2DA9}"/>
+						<Switch Id="2886223932" Name="GL_Equipped" ObjectPath="\Switches\Default Work Unit\SWT_Weapon_Types\GL_Equipped" GUID="{CC7198FF-EACB-450D-AAFA-A7B04554F707}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{075A6F8A-D6A0-5F97-2F14-A3A4F8777638}</FileHash>
+	<FileHash>{6186F018-05F2-C7AC-362F-9441367CB251}</FileHash>
 </SoundBanksInfo>

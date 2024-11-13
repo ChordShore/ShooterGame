@@ -118,6 +118,12 @@
 						<Switch Id="2757549986" Name="GL_Projectile" ObjectPath="\Switches\Default Work Unit\SWT_Damage_Types\GL_Projectile" GUID="{62FFEDFC-73B1-40A7-8C02-90731CB4F54B}"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="2719266754" Name="SWT_Weapon_Types" ObjectPath="\Switches\Default Work Unit\SWT_Weapon_Types" GUID="{ECBD5BFD-ACAD-4CAA-BBDC-95A58B4A93D2}">
+					<Switches>
+						<Switch Id="1891117424" Name="AR_Equipped" ObjectPath="\Switches\Default Work Unit\SWT_Weapon_Types\AR_Equipped" GUID="{6FE15811-998E-4E22-ACDE-9862762F2DA9}"/>
+						<Switch Id="2886223932" Name="GL_Equipped" ObjectPath="\Switches\Default Work Unit\SWT_Weapon_Types\GL_Equipped" GUID="{CC7198FF-EACB-450D-AAFA-A7B04554F707}"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="2775298153" Name="SWT_Physical_Material" ObjectPath="\Switches\Default Work Unit\SWT_Physical_Material" GUID="{E561EBF9-47C4-4F13-A827-CF892AA0C054}">
 					<Switches>
 						<Switch Id="132749061" Name="M_Tile" ObjectPath="\Switches\Default Work Unit\SWT_Physical_Material\M_Tile" GUID="{B4FDF75B-8B11-4F10-9CA5-B65DC3769474}"/>
@@ -249,5 +255,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DB39C1C1-869A-0A13-A2E8-AC294A5FD1C1}</FileHash>
+	<FileHash>{1687F7D9-41C8-E933-180D-A2DC1B68CACB}</FileHash>
 </SoundBanksInfo>

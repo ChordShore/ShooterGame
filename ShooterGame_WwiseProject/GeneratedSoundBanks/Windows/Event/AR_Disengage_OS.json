@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}",
     "Language": "SFX",
-    "Hash": "{E36B57FB-87EA-5AD8-A54D-0119CA3D6773}",
+    "Hash": "{857F9B84-9E7F-60A0-5181-1510C044901B}",
     "ObjectPath": "AR_Disengage_OS",
     "ShortName": "AR_Disengage_OS",
     "Path": "Event/AR_Disengage_OS.bnk",
@@ -23,6 +23,15 @@
       "ShortName": "AR_Disengage.wav",
       "Path": "Media/17261675.wem",
       "CachePath": "SFX/AR_Disengage_10C4C929.wem"
+     },
+     {
+      "Id": "648468658",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "GL_Disengage.wav",
+      "Path": "Media/648468658.wem",
+      "CachePath": "SFX/GL_Disengage_10C4C929.wem"
      }
     ],
     "Events": [
@@ -32,13 +41,8 @@
       "ObjectPath": "\\Events\\Weapons\\Handling\\Disengage\\AR_Disengage_OS",
       "GUID": "{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}",
       "DurationType": "OneShot",
-      "DurationMin": "0.5",
+      "DurationMin": "0.3125",
       "DurationMax": "0.5",
-      "MediaRefs": [
-       {
-        "Id": "17261675"
-       }
-      ],
       "AuxBusRefs": [
        {
         "Id": "3348775760",
@@ -46,11 +50,62 @@
         "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
         "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
        }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2719266754",
+         "Id": "1891117424",
+         "GUID": "{6FE15811-998E-4E22-ACDE-9862762F2DA9}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "17261675"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2719266754",
+         "Id": "2886223932",
+         "GUID": "{CC7198FF-EACB-450D-AAFA-A7B04554F707}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "648468658"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2719266754",
+      "Name": "SWT_Weapon_Types",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SWT_Weapon_Types",
+      "GUID": "{ECBD5BFD-ACAD-4CAA-BBDC-95A58B4A93D2}",
+      "Switches": [
+       {
+        "Id": "1891117424",
+        "Name": "AR_Equipped",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SWT_Weapon_Types\\AR_Equipped",
+        "GUID": "{6FE15811-998E-4E22-ACDE-9862762F2DA9}"
+       },
+       {
+        "Id": "2886223932",
+        "Name": "GL_Equipped",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SWT_Weapon_Types\\GL_Equipped",
+        "GUID": "{CC7198FF-EACB-450D-AAFA-A7B04554F707}"
+       }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{9D358F1D-0D98-41FE-D755-8AF65044E325}"
+  "FileHash": "{1A6615B4-98A1-7FE6-C89F-BE17E7313CE4}"
  }
 }
