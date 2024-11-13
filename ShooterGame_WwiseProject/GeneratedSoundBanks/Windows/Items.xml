@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2151963051" Type="User" GUID="{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}" Language="SFX" Hash="{49C99696-C254-B3CA-B2C8-FF3B2B9D7C56}">
+		<SoundBank Id="2151963051" Type="User" GUID="{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}" Language="SFX" Hash="{92B36705-3A08-E9AE-BB1E-AFBB82B15DB4}">
 			<ObjectPath>\SoundBanks\Items\Items</ObjectPath>
 			<ShortName>Items</ShortName>
 			<Path>Items.bnk</Path>
@@ -20,14 +20,20 @@
 					<MediaRefs>
 						<MediaRef Id="470330457"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="4106715228" Name="ITM_Health" ObjectPath="\Events\Items\ITM_Health" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" DurationType="OneShot" DurationMin="2.1126876" DurationMax="2.1126876">
 					<MediaRefs>
 						<MediaRef Id="661048761"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{00EF36BF-7CAD-4479-7410-FD76D7EBDCEA}</FileHash>
+	<FileHash>{A132D254-51F2-9912-E63D-6CDA8C1905C6}</FileHash>
 </SoundBanksInfo>

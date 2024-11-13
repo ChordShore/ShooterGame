@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}",
     "Language": "SFX",
-    "Hash": "{49C99696-C254-B3CA-B2C8-FF3B2B9D7C56}",
+    "Hash": "{92B36705-3A08-E9AE-BB1E-AFBB82B15DB4}",
     "ObjectPath": "\\SoundBanks\\Items\\Items",
     "ShortName": "Items",
     "Path": "Items.bnk",
@@ -45,6 +45,14 @@
        {
         "Id": "470330457"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
       ]
      },
      {
@@ -59,11 +67,19 @@
        {
         "Id": "661048761"
        }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{97218DCB-343A-5C57-296A-53A6EC18BFBB}"
+  "FileHash": "{AECE53C0-6C50-6816-430C-68F8B16A6167}"
  }
 }

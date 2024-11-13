@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2289907698" Type="Event" GUID="{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}" Language="SFX" Hash="{ADC4B789-2EDA-4FB7-EBC7-681F73A94DF4}">
+		<SoundBank Id="2289907698" Type="Event" GUID="{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}" Language="SFX" Hash="{7B49EA42-B276-9D21-57D5-5EAAB0D9C587}">
 			<ObjectPath>ITM_Ammo_GL</ObjectPath>
 			<ShortName>ITM_Ammo_GL</ShortName>
 			<Path>Event/ITM_Ammo_GL.bnk</Path>
@@ -17,9 +17,12 @@
 					<MediaRefs>
 						<MediaRef Id="26400503"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{412A5D0E-EB9F-0F8E-FA7F-1D837BDEFA8E}</FileHash>
+	<FileHash>{1A33FB6C-7505-F14E-2D12-290A4A518CB7}</FileHash>
 </SoundBanksInfo>
