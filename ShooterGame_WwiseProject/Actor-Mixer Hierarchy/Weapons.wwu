@@ -155,100 +155,6 @@
 										</ActorMixer>
 									</ChildrenList>
 								</ActorMixer>
-								<ActorMixer Name="WEP_Dryfire" ID="{B973D66A-A037-455B-9E7C-62719FD64C5A}" ShortID="301303151">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<ActorMixer Name="AR_Dryfire" ID="{31AFD45E-1C2C-4308-BE65-BEAEC92E50EF}" ShortID="21353200">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="AR_Dryfire" ID="{33D41071-02A8-4DF5-8DFB-CD4E34FB8E76}" ShortID="466573765">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-8</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AR_Dryfire" ID="{B160B828-D791-4D50-A98C-0DB404ED024A}">
-															<Language>SFX</Language>
-															<AudioFile>AR_Dryfire.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="304041726"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AR_Dryfire" ID="{B160B828-D791-4D50-A98C-0DB404ED024A}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</ActorMixer>
-										<ActorMixer Name="GL_Dryfire" ID="{1C3A1291-880B-4084-89BF-2BB99DC7F7FF}" ShortID="974250807">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="GL_Dryfire" ID="{C0EF7F80-16F5-4B69-AC75-E06F2B4A47E1}" ShortID="732092081">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-2</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="GL_Dryfire" ID="{BB26E5F2-D0F2-4713-8331-C82100B930BB}">
-															<Language>SFX</Language>
-															<AudioFile>GL_Dryfire.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="811684578"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="GL_Dryfire" ID="{BB26E5F2-D0F2-4713-8331-C82100B930BB}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</ActorMixer>
-									</ChildrenList>
-								</ActorMixer>
 								<ActorMixer Name="WEP_Reload" ID="{2F51449D-A043-4C6B-B2C1-097686E772CF}" ShortID="979582753">
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -279,312 +185,6 @@
 												</Reference>
 											</ReferenceList>
 										</ActorMixer>
-									</ChildrenList>
-								</ActorMixer>
-								<ActorMixer Name="WEP_Aim" ID="{1158F82F-172C-46CF-BB5E-3DFF4782538F}" ShortID="939910649">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<SwitchContainer Name="WEP_Aim_Switch" ID="{8C561696-9BB5-4EEF-93EE-D34F59452806}" ShortID="75662660">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-												</Reference>
-												<Reference Name="DefaultSwitchOrState">
-													<ObjectRef Name="AR_Equipped" ID="{6FE15811-998E-4E22-ACDE-9862762F2DA9}" WorkUnitID="{ECB4FF3E-F275-463C-9725-86A07FDE6049}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-												</Reference>
-												<Reference Name="SwitchGroupOrStateGroup">
-													<ObjectRef Name="SWT_Weapon_Types" ID="{ECBD5BFD-ACAD-4CAA-BBDC-95A58B4A93D2}" WorkUnitID="{ECB4FF3E-F275-463C-9725-86A07FDE6049}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="GL_Aim" ID="{66A1C17A-9E49-4562-B1CD-B366697859E5}" ShortID="399295990">
-													<PropertyList>
-														<Property Name="GameAuxSendVolume" Type="Real64">
-															<ValueList>
-																<Value>-12</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Pitch" Type="int32">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{FF4F1C38-FDB7-4994-BCE6-CDF27C48ECA2}">
-																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
-																			<Property Name="Max" Type="Real64" Value="100"/>
-																			<Property Name="Min" Type="Real64" Value="-100"/>
-																		</PropertyList>
-																	</Modifier>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-														<Property Name="ReflectionsVolume" Type="Real64">
-															<ValueList>
-																<Value>-10</Value>
-															</ValueList>
-														</Property>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-13</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-														<Reference Name="ReflectionsAuxSend">
-															<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="GL_Aim" ID="{308DDD6B-8496-42ED-B565-198D310F6F63}">
-															<Language>SFX</Language>
-															<AudioFile>GL_Aim.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="687525484"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="GL_Aim" ID="{308DDD6B-8496-42ED-B565-198D310F6F63}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AR_Aim" ID="{AFA21F26-18B4-4430-B75E-CDA32C8FB93F}" ShortID="644008487">
-													<PropertyList>
-														<Property Name="GameAuxSendVolume" Type="Real64">
-															<ValueList>
-																<Value>-12</Value>
-															</ValueList>
-														</Property>
-														<Property Name="Pitch" Type="int32">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{33D44A16-C81A-4E74-8A72-5F43A45DC5FE}">
-																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
-																			<Property Name="Max" Type="Real64" Value="100"/>
-																			<Property Name="Min" Type="Real64" Value="-100"/>
-																		</PropertyList>
-																	</Modifier>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-														<Property Name="ReflectionsVolume" Type="Real64">
-															<ValueList>
-																<Value>-10</Value>
-															</ValueList>
-														</Property>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-13</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-														<Reference Name="ReflectionsAuxSend">
-															<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AR_Aim" ID="{C46A0EEB-335D-4BF0-B066-ECBBB8E7D116}">
-															<Language>SFX</Language>
-															<AudioFile>AR_Aim.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="432981530"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AR_Aim" ID="{C46A0EEB-335D-4BF0-B066-ECBBB8E7D116}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-											<GroupingInfo>
-												<GroupingBehaviorList>
-													<GroupingBehavior>
-														<ItemRef Name="AR_Aim" ID="{AFA21F26-18B4-4430-B75E-CDA32C8FB93F}"/>
-													</GroupingBehavior>
-													<GroupingBehavior>
-														<ItemRef Name="GL_Aim" ID="{66A1C17A-9E49-4562-B1CD-B366697859E5}"/>
-													</GroupingBehavior>
-												</GroupingBehaviorList>
-												<GroupingList>
-													<Grouping>
-														<SwitchRef Name="AR_Equipped" ID="{6FE15811-998E-4E22-ACDE-9862762F2DA9}"/>
-														<ItemList>
-															<ItemRef Name="AR_Aim" ID="{AFA21F26-18B4-4430-B75E-CDA32C8FB93F}"/>
-														</ItemList>
-													</Grouping>
-													<Grouping>
-														<SwitchRef Name="GL_Equipped" ID="{CC7198FF-EACB-450D-AAFA-A7B04554F707}"/>
-														<ItemList>
-															<ItemRef Name="GL_Aim" ID="{66A1C17A-9E49-4562-B1CD-B366697859E5}"/>
-														</ItemList>
-													</Grouping>
-												</GroupingList>
-											</GroupingInfo>
-										</SwitchContainer>
-									</ChildrenList>
-								</ActorMixer>
-								<ActorMixer Name="WEP_Disengage" ID="{0D54E5D0-CEB4-4352-91B7-DD064BE62F67}" ShortID="899785270">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<SwitchContainer Name="WEP_Disengage_Switch" ID="{EF01A6E5-7DB7-40F5-AF7F-626B16562D49}" ShortID="238695654">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-												</Reference>
-												<Reference Name="DefaultSwitchOrState">
-													<ObjectRef Name="AR_Equipped" ID="{6FE15811-998E-4E22-ACDE-9862762F2DA9}" WorkUnitID="{ECB4FF3E-F275-463C-9725-86A07FDE6049}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-												</Reference>
-												<Reference Name="SwitchGroupOrStateGroup">
-													<ObjectRef Name="SWT_Weapon_Types" ID="{ECBD5BFD-ACAD-4CAA-BBDC-95A58B4A93D2}" WorkUnitID="{ECB4FF3E-F275-463C-9725-86A07FDE6049}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="AR_Disengage" ID="{7FB98CF6-2BBE-495E-A83F-220A1CCC2B85}" ShortID="371589311">
-													<PropertyList>
-														<Property Name="GameAuxSendVolume" Type="Real64">
-															<ValueList>
-																<Value>-12</Value>
-															</ValueList>
-														</Property>
-														<Property Name="ReflectionsVolume" Type="Real64">
-															<ValueList>
-																<Value>-10</Value>
-															</ValueList>
-														</Property>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-12</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-														<Reference Name="ReflectionsAuxSend">
-															<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AR_Disengage" ID="{9519DDB4-6561-44BB-A2D6-BCBA17B2B2D0}">
-															<Language>SFX</Language>
-															<AudioFile>AR_Disengage.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="17261675"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AR_Disengage" ID="{9519DDB4-6561-44BB-A2D6-BCBA17B2B2D0}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="GL_Disengage" ID="{D51EF795-5235-47F9-81B2-D7E804CA5D07}" ShortID="925659294">
-													<PropertyList>
-														<Property Name="GameAuxSendVolume" Type="Real64">
-															<ValueList>
-																<Value>-12</Value>
-															</ValueList>
-														</Property>
-														<Property Name="ReflectionsVolume" Type="Real64">
-															<ValueList>
-																<Value>-10</Value>
-															</ValueList>
-														</Property>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-12</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-														<Reference Name="ReflectionsAuxSend">
-															<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="GL_Disengage" ID="{5959B4F6-727A-46D7-9A7A-1658BE9374B6}">
-															<Language>SFX</Language>
-															<AudioFile>GL_Disengage.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="648468658"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="GL_Disengage" ID="{5959B4F6-727A-46D7-9A7A-1658BE9374B6}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-											<GroupingInfo>
-												<GroupingBehaviorList>
-													<GroupingBehavior>
-														<ItemRef Name="GL_Disengage" ID="{D51EF795-5235-47F9-81B2-D7E804CA5D07}"/>
-													</GroupingBehavior>
-													<GroupingBehavior>
-														<ItemRef Name="AR_Disengage" ID="{7FB98CF6-2BBE-495E-A83F-220A1CCC2B85}"/>
-													</GroupingBehavior>
-												</GroupingBehaviorList>
-												<GroupingList>
-													<Grouping>
-														<SwitchRef Name="AR_Equipped" ID="{6FE15811-998E-4E22-ACDE-9862762F2DA9}"/>
-														<ItemList>
-															<ItemRef Name="AR_Disengage" ID="{7FB98CF6-2BBE-495E-A83F-220A1CCC2B85}"/>
-														</ItemList>
-													</Grouping>
-													<Grouping>
-														<SwitchRef Name="GL_Equipped" ID="{CC7198FF-EACB-450D-AAFA-A7B04554F707}"/>
-														<ItemList>
-															<ItemRef Name="GL_Disengage" ID="{D51EF795-5235-47F9-81B2-D7E804CA5D07}"/>
-														</ItemList>
-													</Grouping>
-												</GroupingList>
-											</GroupingInfo>
-										</SwitchContainer>
 									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>
@@ -827,6 +427,484 @@
 												</Sound>
 											</ChildrenList>
 										</ActorMixer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="WEP_Dryfire" ID="{B973D66A-A037-455B-9E7C-62719FD64C5A}" ShortID="301303151">
+									<PropertyList>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ReflectionsVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<ActorMixer Name="AR_Dryfire" ID="{31AFD45E-1C2C-4308-BE65-BEAEC92E50EF}" ShortID="21353200">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AR_Dryfire" ID="{33D41071-02A8-4DF5-8DFB-CD4E34FB8E76}" ShortID="466573765">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-8</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AR_Dryfire" ID="{B160B828-D791-4D50-A98C-0DB404ED024A}">
+															<Language>SFX</Language>
+															<AudioFile>AR_Dryfire.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="304041726"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AR_Dryfire" ID="{B160B828-D791-4D50-A98C-0DB404ED024A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</ActorMixer>
+										<ActorMixer Name="GL_Dryfire" ID="{1C3A1291-880B-4084-89BF-2BB99DC7F7FF}" ShortID="974250807">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="GL_Dryfire" ID="{C0EF7F80-16F5-4B69-AC75-E06F2B4A47E1}" ShortID="732092081">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GL_Dryfire" ID="{BB26E5F2-D0F2-4713-8331-C82100B930BB}">
+															<Language>SFX</Language>
+															<AudioFile>GL_Dryfire.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="811684578"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="GL_Dryfire" ID="{BB26E5F2-D0F2-4713-8331-C82100B930BB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</ActorMixer>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Targeting" ID="{E368286F-D3B1-47E8-81F8-61E5A93434AE}" ShortID="535741018">
+							<ChildrenList>
+								<ActorMixer Name="WEP_Targeting_Disengage" ID="{0D54E5D0-CEB4-4352-91B7-DD064BE62F67}" ShortID="899785270">
+									<PropertyList>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ReflectionsVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SwitchContainer Name="WEP_Targeting_Disengage_Switch" ID="{EF01A6E5-7DB7-40F5-AF7F-626B16562D49}" ShortID="238695654">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="AR_Equipped" ID="{6FE15811-998E-4E22-ACDE-9862762F2DA9}" WorkUnitID="{ECB4FF3E-F275-463C-9725-86A07FDE6049}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="SWT_Weapon_Types" ID="{ECBD5BFD-ACAD-4CAA-BBDC-95A58B4A93D2}" WorkUnitID="{ECB4FF3E-F275-463C-9725-86A07FDE6049}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AR_Target_Disengage" ID="{7FB98CF6-2BBE-495E-A83F-220A1CCC2B85}" ShortID="371589311">
+													<PropertyList>
+														<Property Name="GameAuxSendVolume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{749D9019-B5AB-43A9-9241-17D30610A9EC}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="100"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="ReflectionsVolume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AR_Disengage" ID="{9519DDB4-6561-44BB-A2D6-BCBA17B2B2D0}">
+															<Language>SFX</Language>
+															<AudioFile>AR_Disengage.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="17261675"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AR_Disengage" ID="{9519DDB4-6561-44BB-A2D6-BCBA17B2B2D0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="GL_Target_Disengage" ID="{D51EF795-5235-47F9-81B2-D7E804CA5D07}" ShortID="925659294">
+													<PropertyList>
+														<Property Name="GameAuxSendVolume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{21387739-9834-4BC4-AF46-C25261A6E21E}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="100"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="ReflectionsVolume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-14</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GL_Disengage" ID="{5959B4F6-727A-46D7-9A7A-1658BE9374B6}">
+															<Language>SFX</Language>
+															<AudioFile>GL_Disengage.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="648468658"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="GL_Disengage" ID="{5959B4F6-727A-46D7-9A7A-1658BE9374B6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="GL_Target_Disengage" ID="{D51EF795-5235-47F9-81B2-D7E804CA5D07}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="AR_Target_Disengage" ID="{7FB98CF6-2BBE-495E-A83F-220A1CCC2B85}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="AR_Equipped" ID="{6FE15811-998E-4E22-ACDE-9862762F2DA9}"/>
+														<ItemList>
+															<ItemRef Name="AR_Target_Disengage" ID="{7FB98CF6-2BBE-495E-A83F-220A1CCC2B85}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="GL_Equipped" ID="{CC7198FF-EACB-450D-AAFA-A7B04554F707}"/>
+														<ItemList>
+															<ItemRef Name="GL_Target_Disengage" ID="{D51EF795-5235-47F9-81B2-D7E804CA5D07}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="WEP_Targeting_Engage" ID="{1158F82F-172C-46CF-BB5E-3DFF4782538F}" ShortID="939910649">
+									<PropertyList>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+										<Property Name="ReflectionsVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+										<Reference Name="ReflectionsAuxSend">
+											<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SwitchContainer Name="WEP_Targeting_Engage_Switch" ID="{8C561696-9BB5-4EEF-93EE-D34F59452806}" ShortID="75662660">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="AR_Equipped" ID="{6FE15811-998E-4E22-ACDE-9862762F2DA9}" WorkUnitID="{ECB4FF3E-F275-463C-9725-86A07FDE6049}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="SWT_Weapon_Types" ID="{ECBD5BFD-ACAD-4CAA-BBDC-95A58B4A93D2}" WorkUnitID="{ECB4FF3E-F275-463C-9725-86A07FDE6049}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="GL_Target_Engage" ID="{66A1C17A-9E49-4562-B1CD-B366697859E5}" ShortID="399295990">
+													<PropertyList>
+														<Property Name="GameAuxSendVolume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{FF4F1C38-FDB7-4994-BCE6-CDF27C48ECA2}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="100"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="ReflectionsVolume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-13</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GL_Aim" ID="{308DDD6B-8496-42ED-B565-198D310F6F63}">
+															<Language>SFX</Language>
+															<AudioFile>GL_Aim.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="687525484"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="GL_Aim" ID="{308DDD6B-8496-42ED-B565-198D310F6F63}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AR_Target_Engage" ID="{AFA21F26-18B4-4430-B75E-CDA32C8FB93F}" ShortID="644008487">
+													<PropertyList>
+														<Property Name="GameAuxSendVolume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{33D44A16-C81A-4E74-8A72-5F43A45DC5FE}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="100"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="ReflectionsVolume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-13</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AR_Aim" ID="{C46A0EEB-335D-4BF0-B066-ECBBB8E7D116}">
+															<Language>SFX</Language>
+															<AudioFile>AR_Aim.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="432981530"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AR_Aim" ID="{C46A0EEB-335D-4BF0-B066-ECBBB8E7D116}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="AR_Target_Engage" ID="{AFA21F26-18B4-4430-B75E-CDA32C8FB93F}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="GL_Target_Engage" ID="{66A1C17A-9E49-4562-B1CD-B366697859E5}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="AR_Equipped" ID="{6FE15811-998E-4E22-ACDE-9862762F2DA9}"/>
+														<ItemList>
+															<ItemRef Name="AR_Target_Engage" ID="{AFA21F26-18B4-4430-B75E-CDA32C8FB93F}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="GL_Equipped" ID="{CC7198FF-EACB-450D-AAFA-A7B04554F707}"/>
+														<ItemList>
+															<ItemRef Name="GL_Target_Engage" ID="{66A1C17A-9E49-4562-B1CD-B366697859E5}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
 									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>

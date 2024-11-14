@@ -345,11 +345,17 @@ protected:
 	//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 	// Wwise Event Pickers
 
-	/**sound played on aim**/
+	/**sound played on target engage**/
 	UPROPERTY(EditAnywhere, Category = "Wwise")
-		class UAkAudioEvent* AimEvent;
+		class UAkAudioEvent* TargetEngageEvent;
 
-	void PlayAimEvent();
+	void PlayTargetEngageEvent();
+
+	/**sound played on target disengage**/
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkAudioEvent* TargetDisengageEvent;
+
+	void PlayTargetDisengageEvent();
 
 	/**sound played on respawn**/
 	UPROPERTY(EditAnywhere, Category = "Wwise")

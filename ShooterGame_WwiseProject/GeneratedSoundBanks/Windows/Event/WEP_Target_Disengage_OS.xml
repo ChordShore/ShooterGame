@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="120146245" Type="Event" GUID="{C2FA5486-54F6-4B7D-8D70-48754E1772B1}" Language="SFX" Hash="{1706AC29-1DEA-0FB7-D244-D2BCDFABE2E1}">
-			<ObjectPath>GL_Disengage_OS</ObjectPath>
-			<ShortName>GL_Disengage_OS</ShortName>
-			<Path>Event/GL_Disengage_OS.bnk</Path>
+		<SoundBank Id="2223887322" Type="Event" GUID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}" Language="SFX" Hash="{79A24F8E-B5B3-481B-B85C-EF191CA6E8F2}">
+			<ObjectPath>WEP_Target_Disengage_OS</ObjectPath>
+			<ShortName>WEP_Target_Disengage_OS</ShortName>
+			<Path>Event/WEP_Target_Disengage_OS.bnk</Path>
 			<Media>
 				<File Id="17261675" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>AR_Disengage.wav</ShortName>
@@ -18,7 +18,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="120146245" Name="GL_Disengage_OS" ObjectPath="\Events\Weapons\Handling\Disengage\GL_Disengage_OS" GUID="{C2FA5486-54F6-4B7D-8D70-48754E1772B1}" DurationType="OneShot" DurationMin="0.3125" DurationMax="0.5">
+				<Event Id="2223887322" Name="WEP_Target_Disengage_OS" ObjectPath="\Events\Weapons\Targeting\WEP_Target_Disengage_OS" GUID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}" DurationType="OneShot" DurationMin="0.2949607" DurationMax="0.5297316">
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
@@ -48,5 +48,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{36083021-0D0B-D309-CFA5-04EBE7DC1C08}</FileHash>
+	<FileHash>{C5EC3C4B-57D5-641A-6F06-6D148EEC0622}</FileHash>
 </SoundBanksInfo>

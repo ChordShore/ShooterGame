@@ -738,8 +738,6 @@ void AShooterCharacter::SetTargeting(bool bNewTargeting)
 
 	if (TargetingSound)
 	{
-		//Call Wwise Event
-		PlayAimEvent();
 
 		//Call SoundCue
 		UGameplayStatics::SpawnSoundAttached(TargetingSound, GetRootComponent());
@@ -788,10 +786,16 @@ void AShooterCharacter::ServerSetRunning_Implementation(bool bNewRunning, bool b
 //<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 // Wwise Event Calls
 
-void AShooterCharacter::PlayAimEvent()
+void AShooterCharacter::PlayTargetEngageEvent()
 {
 	FOnAkPostEventCallback nullCallback;
-	UAkGameplayStatics::PostEvent(AimEvent, this, int32(0), nullCallback);
+	UAkGameplayStatics::PostEvent(TargetEngageEvent, this, int32(0), nullCallback);
+}
+
+void AShooterCharacter::PlayTargetDisengageEvent()
+{
+	FOnAkPostEventCallback nullCallback;
+	UAkGameplayStatics::PostEvent(TargetDisengageEvent, this, int32(0), nullCallback);
 }
 
 void AShooterCharacter::PlayRespawnEvent()
@@ -1004,12 +1008,19 @@ void AShooterCharacter::OnStartTargeting()
 			SetRunning(false, false);
 		}
 		SetTargeting(true);
+
+		//Call Wwise Event
+		PlayTargetEngageEvent();
 	}
+
 }
 
 void AShooterCharacter::OnStopTargeting()
 {
 	SetTargeting(false);
+
+	//call wwise event
+	PlayTargetDisengageEvent();
 }
 
 void AShooterCharacter::OnNextWeapon()

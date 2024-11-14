@@ -15,32 +15,6 @@
 								<Event Name="AR_Reload_OS" ID="{6E436856-4CBE-4BA5-B184-21225058CE02}"/>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Aim" ID="{96593D20-720A-46D0-9DDF-300531A5A06B}" ShortID="842878821">
-							<ChildrenList>
-								<Event Name="AR_Aim_OS" ID="{59353546-680F-45BB-AFE9-59C7938042FE}">
-									<ChildrenList>
-										<Action Name="" ID="{4ABB8D84-CF4C-490E-AF7C-C0258FB621EE}" ShortID="836851278">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="WEP_Aim_Switch" ID="{8C561696-9BB5-4EEF-93EE-D34F59452806}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="GL_Aim_OS" ID="{D4723596-57DC-4383-9871-DB9982C8E7A7}">
-									<ChildrenList>
-										<Action Name="" ID="{3BE701E2-14BD-4A7D-821C-93BB8E3D5BF6}" ShortID="122256826">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="WEP_Aim_Switch" ID="{8C561696-9BB5-4EEF-93EE-D34F59452806}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-							</ChildrenList>
-						</Folder>
 						<Folder Name="Equip" ID="{CFDA3348-BA55-4740-9EB8-DCAEA16B3E58}" ShortID="63979681">
 							<ChildrenList>
 								<Event Name="GL_Equip_OS" ID="{15EF0405-429D-40BE-8769-103D030DBF08}">
@@ -93,32 +67,6 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Disengage" ID="{FF3AFEAD-0676-4124-9741-9BBB8AD79BCE}" ShortID="272853024">
-							<ChildrenList>
-								<Event Name="GL_Disengage_OS" ID="{C2FA5486-54F6-4B7D-8D70-48754E1772B1}">
-									<ChildrenList>
-										<Action Name="" ID="{3B3616F3-8D8E-4DAF-A2FA-860D158FA752}" ShortID="721629723">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="WEP_Disengage_Switch" ID="{EF01A6E5-7DB7-40F5-AF7F-626B16562D49}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="AR_Disengage_OS" ID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}">
-									<ChildrenList>
-										<Action Name="" ID="{789AD460-B622-439E-BD46-E931C4F975C8}" ShortID="387145255">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="WEP_Disengage_Switch" ID="{EF01A6E5-7DB7-40F5-AF7F-626B16562D49}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-							</ChildrenList>
-						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Firing" ID="{E7100C7B-429A-4619-8507-BF6E1F7455A0}" ShortID="868395382">
@@ -141,6 +89,32 @@
 								<Event Name="GL_Shoot" ID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}"/>
 							</ChildrenList>
 						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Targeting" ID="{96593D20-720A-46D0-9DDF-300531A5A06B}" ShortID="842878821">
+					<ChildrenList>
+						<Event Name="WEP_Target_Engage_OS" ID="{59353546-680F-45BB-AFE9-59C7938042FE}">
+							<ChildrenList>
+								<Action Name="" ID="{4ABB8D84-CF4C-490E-AF7C-C0258FB621EE}" ShortID="836851278">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WEP_Targeting_Engage_Switch" ID="{8C561696-9BB5-4EEF-93EE-D34F59452806}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WEP_Target_Disengage_OS" ID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}">
+							<ChildrenList>
+								<Action Name="" ID="{789AD460-B622-439E-BD46-E931C4F975C8}" ShortID="387145255">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WEP_Targeting_Disengage_Switch" ID="{EF01A6E5-7DB7-40F5-AF7F-626B16562D49}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

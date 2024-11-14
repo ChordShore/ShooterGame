@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "SFX",
-    "Hash": "{442BE936-08FE-E1EE-22BA-F519A8B751C6}",
+    "Hash": "{BF6B9214-3E88-388F-CB7F-5A85C636C4B8}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "Weapons.bnk",
@@ -65,52 +65,6 @@
      }
     ],
     "Events": [
-     {
-      "Id": "983921471",
-      "Name": "AR_Aim_OS",
-      "ObjectPath": "\\Events\\Weapons\\Handling\\Aim\\AR_Aim_OS",
-      "GUID": "{59353546-680F-45BB-AFE9-59C7938042FE}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.47193712",
-      "DurationMax": "0.5297316",
-      "AuxBusRefs": [
-       {
-        "Id": "3348775760",
-        "Name": "Highrise_EarlyReflections",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
-        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
-       }
-      ],
-      "SwitchContainers": [
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "2719266754",
-         "Id": "1891117424",
-         "GUID": "{6FE15811-998E-4E22-ACDE-9862762F2DA9}",
-         "Default": "true"
-        },
-        "MediaRefs": [
-         {
-          "Id": "432981530"
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "2719266754",
-         "Id": "2886223932",
-         "GUID": "{CC7198FF-EACB-450D-AAFA-A7B04554F707}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "687525484"
-         }
-        ]
-       }
-      ]
-     },
      {
       "Id": "1694533419",
       "Name": "AR_Dryfire_OS",
@@ -196,52 +150,6 @@
       "DurationMax": "0"
      },
      {
-      "Id": "3395474067",
-      "Name": "GL_Aim_OS",
-      "ObjectPath": "\\Events\\Weapons\\Handling\\Aim\\GL_Aim_OS",
-      "GUID": "{D4723596-57DC-4383-9871-DB9982C8E7A7}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.47193712",
-      "DurationMax": "0.5297316",
-      "AuxBusRefs": [
-       {
-        "Id": "3348775760",
-        "Name": "Highrise_EarlyReflections",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
-        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
-       }
-      ],
-      "SwitchContainers": [
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "2719266754",
-         "Id": "1891117424",
-         "GUID": "{6FE15811-998E-4E22-ACDE-9862762F2DA9}",
-         "Default": "true"
-        },
-        "MediaRefs": [
-         {
-          "Id": "432981530"
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "2719266754",
-         "Id": "2886223932",
-         "GUID": "{CC7198FF-EACB-450D-AAFA-A7B04554F707}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "687525484"
-         }
-        ]
-       }
-      ]
-     },
-     {
       "Id": "1764852559",
       "Name": "GL_Dryfire_OS",
       "ObjectPath": "\\Events\\Weapons\\Handling\\Dryfire\\GL_Dryfire_OS",
@@ -324,6 +232,52 @@
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0"
+     },
+     {
+      "Id": "3084237102",
+      "Name": "WEP_Target_Engage_OS",
+      "ObjectPath": "\\Events\\Weapons\\Targeting\\WEP_Target_Engage_OS",
+      "GUID": "{59353546-680F-45BB-AFE9-59C7938042FE}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.47193712",
+      "DurationMax": "0.5297316",
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2719266754",
+         "Id": "1891117424",
+         "GUID": "{6FE15811-998E-4E22-ACDE-9862762F2DA9}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "432981530"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2719266754",
+         "Id": "2886223932",
+         "GUID": "{CC7198FF-EACB-450D-AAFA-A7B04554F707}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "687525484"
+         }
+        ]
+       }
+      ]
      }
     ],
     "SwitchGroups": [
@@ -350,6 +304,6 @@
     ]
    }
   ],
-  "FileHash": "{21B06261-E04A-6482-161D-7EFFB4FA0DB0}"
+  "FileHash": "{17108C1D-DE7D-7598-5E86-707C52693078}"
  }
 }
