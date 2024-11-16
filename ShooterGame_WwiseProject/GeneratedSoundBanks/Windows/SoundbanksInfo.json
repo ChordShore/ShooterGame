@@ -4088,7 +4088,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "SFX",
-    "Hash": "{BF6B9214-3E88-388F-CB7F-5A85C636C4B8}",
+    "Hash": "{0D6AA608-75B0-EBAF-D34F-37453BB130DF}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "Weapons.bnk",
@@ -4110,6 +4110,14 @@
       "CachePath": "SFX/AR_Aim_10C4C929.wem"
      },
      {
+      "Id": "624042849",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GL_Reload.wav",
+      "CachePath": "SFX/GL_Reload_10C4C929.wem"
+     },
+     {
       "Id": "669510815",
       "Language": "SFX",
       "Streaming": "false",
@@ -4124,6 +4132,14 @@
       "Location": "Memory",
       "ShortName": "GL_Aim.wav",
       "CachePath": "SFX/GL_Aim_10C4C929.wem"
+     },
+     {
+      "Id": "781212311",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AR_Reload.wav",
+      "CachePath": "SFX/AR_Reload_10C4C929.wem"
      },
      {
       "Id": "811684578",
@@ -4146,7 +4162,7 @@
      {
       "Id": "1694533419",
       "Name": "AR_Dryfire_OS",
-      "ObjectPath": "\\Events\\Weapons\\Handling\\Dryfire\\AR_Dryfire_OS",
+      "ObjectPath": "\\Events\\Weapons\\Shooting\\Dryfire\\AR_Dryfire_OS",
       "GUID": "{1F162533-308D-4AB5-8A18-0D6E326EB1D8}",
       "DurationType": "OneShot",
       "DurationMin": "0.5",
@@ -4190,7 +4206,7 @@
      {
       "Id": "4263945094",
       "Name": "AR_Impact_OS",
-      "ObjectPath": "\\Events\\Weapons\\Firing\\Impact\\AR_Impact_OS",
+      "ObjectPath": "\\Events\\Weapons\\Shooting\\Impact\\AR_Impact_OS",
       "GUID": "{873F24AE-5010-4080-8DFB-1C765AEC4801}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -4200,17 +4216,29 @@
      {
       "Id": "429698657",
       "Name": "AR_Reload_OS",
-      "ObjectPath": "\\Events\\Weapons\\Handling\\Reload\\AR_Reload_OS",
+      "ObjectPath": "\\Events\\Weapons\\Reloading\\AR_Reload_OS",
       "GUID": "{6E436856-4CBE-4BA5-B184-21225058CE02}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "1.6517799",
+      "DurationMax": "1.8540605",
+      "MediaRefs": [
+       {
+        "Id": "781212311"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
      },
      {
       "Id": "875370928",
       "Name": "AR_Shoot",
-      "ObjectPath": "\\Events\\Weapons\\Firing\\Shoot\\AR_Shoot",
+      "ObjectPath": "\\Events\\Weapons\\Shooting\\Shoot\\AR_Shoot",
       "GUID": "{027202E3-540C-4144-873B-7DCDD76899B6}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -4220,7 +4248,7 @@
      {
       "Id": "1883352941",
       "Name": "AR_WhizzBy_OS",
-      "ObjectPath": "\\Events\\Weapons\\Firing\\Travel\\AR_WhizzBy_OS",
+      "ObjectPath": "\\Events\\Weapons\\Shooting\\Travel\\AR_WhizzBy_OS",
       "GUID": "{DF281450-0700-404B-9DFD-8DBDC054CD38}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -4230,7 +4258,7 @@
      {
       "Id": "1764852559",
       "Name": "GL_Dryfire_OS",
-      "ObjectPath": "\\Events\\Weapons\\Handling\\Dryfire\\GL_Dryfire_OS",
+      "ObjectPath": "\\Events\\Weapons\\Shooting\\Dryfire\\GL_Dryfire_OS",
       "GUID": "{EA2CD592-0394-4A84-919F-75A9F11F65BC}",
       "DurationType": "OneShot",
       "DurationMin": "0.5",
@@ -4274,7 +4302,7 @@
      {
       "Id": "477299258",
       "Name": "GL_Impact_OS",
-      "ObjectPath": "\\Events\\Weapons\\Firing\\Impact\\GL_Impact_OS",
+      "ObjectPath": "\\Events\\Weapons\\Shooting\\Impact\\GL_Impact_OS",
       "GUID": "{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -4284,7 +4312,7 @@
      {
       "Id": "2238434314",
       "Name": "GL_PassBy_LP",
-      "ObjectPath": "\\Events\\Weapons\\Firing\\Travel\\GL_PassBy_LP",
+      "ObjectPath": "\\Events\\Weapons\\Shooting\\Travel\\GL_PassBy_LP",
       "GUID": "{566534D1-0C06-45CC-8878-334A29476347}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -4294,17 +4322,29 @@
      {
       "Id": "464045509",
       "Name": "GL_Reload_OS",
-      "ObjectPath": "\\Events\\Weapons\\Handling\\Reload\\GL_Reload_OS",
+      "ObjectPath": "\\Events\\Weapons\\Reloading\\GL_Reload_OS",
       "GUID": "{778E484F-B81F-4DFB-8587-4CEA07B594B0}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "2.7136385",
+      "DurationMax": "3.0459566",
+      "MediaRefs": [
+       {
+        "Id": "624042849"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
      },
      {
       "Id": "3079155500",
       "Name": "GL_Shoot",
-      "ObjectPath": "\\Events\\Weapons\\Firing\\Shoot\\GL_Shoot",
+      "ObjectPath": "\\Events\\Weapons\\Shooting\\Shoot\\GL_Shoot",
       "GUID": "{314DB4B5-5CD0-4B6E-8803-898906F3175F}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -4568,7 +4608,7 @@
     "Type": "User",
     "GUID": "{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}",
     "Language": "SFX",
-    "Hash": "{92B36705-3A08-E9AE-BB1E-AFBB82B15DB4}",
+    "Hash": "{78E1F8D0-8DA0-B7F1-CBF0-6CAA728E2CCC}",
     "ObjectPath": "\\SoundBanks\\Items\\Items",
     "ShortName": "Items",
     "Path": "Items.bnk",
@@ -4742,7 +4782,7 @@
     "Type": "Event",
     "GUID": "{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}",
     "Language": "SFX",
-    "Hash": "{7B49EA42-B276-9D21-57D5-5EAAB0D9C587}",
+    "Hash": "{F4375B65-326C-ED8F-D240-99E9CA15437D}",
     "ObjectPath": "ITM_Ammo_GL",
     "ShortName": "ITM_Ammo_GL",
     "Path": "Event/ITM_Ammo_GL.bnk",
@@ -6901,6 +6941,6 @@
     ]
    }
   ],
-  "FileHash": "{A27E6DF4-2180-2084-842D-FE3E60200CDC}"
+  "FileHash": "{DB11D9D6-3CD9-0CFC-6C04-E496374BA12A}"
  }
 }

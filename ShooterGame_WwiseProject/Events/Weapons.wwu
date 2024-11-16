@@ -9,12 +9,6 @@
 			<ChildrenList>
 				<Folder Name="Handling" ID="{CD8CA057-5968-4425-8106-E1E9B4143C22}" ShortID="351256261">
 					<ChildrenList>
-						<Folder Name="Reload" ID="{1823D21B-08E2-4204-A0C9-1359CEC93ABA}" ShortID="988796305">
-							<ChildrenList>
-								<Event Name="GL_Reload_OS" ID="{778E484F-B81F-4DFB-8587-4CEA07B594B0}"/>
-								<Event Name="AR_Reload_OS" ID="{6E436856-4CBE-4BA5-B184-21225058CE02}"/>
-							</ChildrenList>
-						</Folder>
 						<Folder Name="Equip" ID="{CFDA3348-BA55-4740-9EB8-DCAEA16B3E58}" ShortID="63979681">
 							<ChildrenList>
 								<Event Name="GL_Equip_OS" ID="{15EF0405-429D-40BE-8769-103D030DBF08}">
@@ -39,6 +33,28 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Shooting" ID="{E7100C7B-429A-4619-8507-BF6E1F7455A0}" ShortID="868395382">
+					<ChildrenList>
+						<Folder Name="Impact" ID="{0D7078B8-AB17-44FE-910C-C990EA663D3E}" ShortID="1014513988">
+							<ChildrenList>
+								<Event Name="AR_Impact_OS" ID="{873F24AE-5010-4080-8DFB-1C765AEC4801}"/>
+								<Event Name="GL_Impact_OS" ID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}"/>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Travel" ID="{4FE35F46-9F34-4BFF-9FC3-E4FC881E80B5}" ShortID="370377988">
+							<ChildrenList>
+								<Event Name="GL_PassBy_LP" ID="{566534D1-0C06-45CC-8878-334A29476347}"/>
+								<Event Name="AR_WhizzBy_OS" ID="{DF281450-0700-404B-9DFD-8DBDC054CD38}"/>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Shoot" ID="{7BBFB490-CAE0-4B15-AAE7-853265D511D4}" ShortID="842662391">
+							<ChildrenList>
+								<Event Name="AR_Shoot" ID="{027202E3-540C-4144-873B-7DCDD76899B6}"/>
+								<Event Name="GL_Shoot" ID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}"/>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Dryfire" ID="{BF46B6AC-A959-4B31-A454-A0C8D52A3D5E}" ShortID="321101203">
@@ -69,28 +85,6 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Firing" ID="{E7100C7B-429A-4619-8507-BF6E1F7455A0}" ShortID="868395382">
-					<ChildrenList>
-						<Folder Name="Impact" ID="{0D7078B8-AB17-44FE-910C-C990EA663D3E}" ShortID="1014513988">
-							<ChildrenList>
-								<Event Name="AR_Impact_OS" ID="{873F24AE-5010-4080-8DFB-1C765AEC4801}"/>
-								<Event Name="GL_Impact_OS" ID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}"/>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="Travel" ID="{4FE35F46-9F34-4BFF-9FC3-E4FC881E80B5}" ShortID="370377988">
-							<ChildrenList>
-								<Event Name="GL_PassBy_LP" ID="{566534D1-0C06-45CC-8878-334A29476347}"/>
-								<Event Name="AR_WhizzBy_OS" ID="{DF281450-0700-404B-9DFD-8DBDC054CD38}"/>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="Shoot" ID="{7BBFB490-CAE0-4B15-AAE7-853265D511D4}" ShortID="842662391">
-							<ChildrenList>
-								<Event Name="AR_Shoot" ID="{027202E3-540C-4144-873B-7DCDD76899B6}"/>
-								<Event Name="GL_Shoot" ID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}"/>
-							</ChildrenList>
-						</Folder>
-					</ChildrenList>
-				</Folder>
 				<Folder Name="Targeting" ID="{96593D20-720A-46D0-9DDF-300531A5A06B}" ShortID="842878821">
 					<ChildrenList>
 						<Event Name="WEP_Target_Engage_OS" ID="{59353546-680F-45BB-AFE9-59C7938042FE}">
@@ -110,6 +104,32 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="WEP_Targeting_Disengage_Switch" ID="{EF01A6E5-7DB7-40F5-AF7F-626B16562D49}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Reloading" ID="{1823D21B-08E2-4204-A0C9-1359CEC93ABA}" ShortID="988796305">
+					<ChildrenList>
+						<Event Name="GL_Reload_OS" ID="{778E484F-B81F-4DFB-8587-4CEA07B594B0}">
+							<ChildrenList>
+								<Action Name="" ID="{A0A0A195-7DF4-4898-9707-4556B82690AB}" ShortID="377461006">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GL_Reload" ID="{E7F96C33-E6FE-4DC1-9242-9C8F831CACD9}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AR_Reload_OS" ID="{6E436856-4CBE-4BA5-B184-21225058CE02}">
+							<ChildrenList>
+								<Action Name="" ID="{DCD98350-85A2-4612-9FFA-6E0277E2B754}" ShortID="952384469">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AR_Reload" ID="{B507E0A4-848D-4AEE-876D-AE47037C716A}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

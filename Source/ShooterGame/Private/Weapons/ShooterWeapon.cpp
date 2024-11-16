@@ -280,7 +280,13 @@ void AShooterWeapon::StartReload(bool bFromReplication)
 		
 		if (MyPawn && MyPawn->IsLocallyControlled())
 		{
+
+			//Call Wwise Event
+			PlayReloadEvent();
+
+			//Call SoundCue Event
 			PlayWeaponSound(ReloadSound);
+
 		}
 	}
 }

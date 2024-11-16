@@ -1,17 +1,17 @@
 Event	ID	Name			Wwise Object Path	Notes
-	429698657	AR_Reload_OS			\Weapons\Handling\Reload\AR_Reload_OS	
-	464045509	GL_Reload_OS			\Weapons\Handling\Reload\GL_Reload_OS	
-	477299258	GL_Impact_OS			\Weapons\Firing\Impact\GL_Impact_OS	
-	875370928	AR_Shoot			\Weapons\Firing\Shoot\AR_Shoot	
+	429698657	AR_Reload_OS			\Weapons\Reloading\AR_Reload_OS	
+	464045509	GL_Reload_OS			\Weapons\Reloading\GL_Reload_OS	
+	477299258	GL_Impact_OS			\Weapons\Shooting\Impact\GL_Impact_OS	
+	875370928	AR_Shoot			\Weapons\Shooting\Shoot\AR_Shoot	
 	1260320770	AR_Equip_OS			\Weapons\Handling\Equip\AR_Equip_OS	
-	1694533419	AR_Dryfire_OS			\Weapons\Handling\Dryfire\AR_Dryfire_OS	
-	1764852559	GL_Dryfire_OS			\Weapons\Handling\Dryfire\GL_Dryfire_OS	
-	1883352941	AR_WhizzBy_OS			\Weapons\Firing\Travel\AR_WhizzBy_OS	
-	2238434314	GL_PassBy_LP			\Weapons\Firing\Travel\GL_PassBy_LP	
-	3079155500	GL_Shoot			\Weapons\Firing\Shoot\GL_Shoot	
-	3084237102	WEP_Target_Engage_OS			\Weapons\Handling\Targeting\WEP_Target_Engage_OS	
+	1694533419	AR_Dryfire_OS			\Weapons\Shooting\Dryfire\AR_Dryfire_OS	
+	1764852559	GL_Dryfire_OS			\Weapons\Shooting\Dryfire\GL_Dryfire_OS	
+	1883352941	AR_WhizzBy_OS			\Weapons\Shooting\Travel\AR_WhizzBy_OS	
+	2238434314	GL_PassBy_LP			\Weapons\Shooting\Travel\GL_PassBy_LP	
+	3079155500	GL_Shoot			\Weapons\Shooting\Shoot\GL_Shoot	
+	3084237102	WEP_Target_Engage_OS			\Weapons\Targeting\WEP_Target_Engage_OS	
 	3314806526	GL_Equip_OS			\Weapons\Handling\Equip\GL_Equip_OS	
-	4263945094	AR_Impact_OS			\Weapons\Firing\Impact\AR_Impact_OS	
+	4263945094	AR_Impact_OS			\Weapons\Shooting\Impact\AR_Impact_OS	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	2719266754	SWT_Weapon_Types			\Default Work Unit\SWT_Weapon_Types	
@@ -21,10 +21,12 @@ Switch	ID	Name	Switch Group			Notes
 	2886223932	GL_Equipped	SWT_Weapon_Types			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	304041726	AR_Dryfire	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Dryfire_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Firing\WEP_Dryfire\AR_Dryfire\AR_Dryfire		96096
+	304041726	AR_Dryfire	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Dryfire_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Dryfire\AR_Dryfire\AR_Dryfire		96096
 	432981530	AR_Target_Engage	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Aim_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Targeting\WEP_Targeting_Engage\WEP_Targeting_Engage_Switch\AR_Target_Engage		96096
+	624042849	GL_Reload	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\GL_Reload_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Reloading\WEP_Reload\GL_Reload\GL_Reload		552096
 	669510815	GL_Equip	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\GL_Equip_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Handling\WEP_Equip\GL_Equip\GL_Equip		96096
 	687525484	GL_Target_Engage	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\GL_Aim_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Targeting\WEP_Targeting_Engage\WEP_Targeting_Engage_Switch\GL_Target_Engage		96096
-	811684578	GL_Dryfire	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\GL_Dryfire_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Firing\WEP_Dryfire\GL_Dryfire\GL_Dryfire		96096
+	781212311	AR_Reload	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Reload_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Reloading\WEP_Reload\AR_Reload\AR_Reload		336096
+	811684578	GL_Dryfire	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\GL_Dryfire_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Dryfire\GL_Dryfire\GL_Dryfire		96096
 	869087166	AR_Equip	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Equip_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Handling\WEP_Equip\AR_Equip\AR_Equip		96096
 
