@@ -50,7 +50,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{BB4FD5EE-2E84-4BFE-B7E1-EF4CB10C6C67}"/>
-						<CurrentStateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
+						<CurrentStateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 						<CurrentStateRef Name="None" ID="{58E0E97C-6C8E-42CB-BD10-0B2B26B95058}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
@@ -89,6 +89,29 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Weapon Fire" ID="{0FAA0B55-522B-49AC-B66E-B2948EF9C0F2}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="AR_Shoot_LP" ID="{027202E3-540C-4144-873B-7DCDD76899B6}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AR_Shoot_Stop" ID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="GL_Shoot" ID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{BB4FD5EE-2E84-4BFE-B7E1-EF4CB10C6C67}"/>
+						<CurrentStateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+						<CurrentStateRef Name="None" ID="{58E0E97C-6C8E-42CB-BD10-0B2B26B95058}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 			</ChildrenList>

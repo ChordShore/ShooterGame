@@ -917,6 +917,9 @@ void AShooterWeapon::SimulateWeaponFire()
 		if (FireAC == NULL)
 		{
 			FireAC = PlayWeaponSound(FireLoopSound);
+
+			//Call Gunfire Loop Event
+			PlayFireLoopEvent();
 		}
 	}
 	else
@@ -964,6 +967,9 @@ void AShooterWeapon::StopSimulatingWeaponFire()
 
 	if (FireAC)
 	{
+		//Call Gunfire End Event
+		PlayFireFinishEvent();
+
 		FireAC->FadeOut(0.1f, 0.0f);
 		FireAC = NULL;
 

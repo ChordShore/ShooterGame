@@ -53,8 +53,43 @@
 						</Folder>
 						<Folder Name="Shoot" ID="{7BBFB490-CAE0-4B15-AAE7-853265D511D4}" ShortID="842662391">
 							<ChildrenList>
-								<Event Name="AR_Shoot" ID="{027202E3-540C-4144-873B-7DCDD76899B6}"/>
+								<Event Name="AR_Shoot_LP" ID="{027202E3-540C-4144-873B-7DCDD76899B6}">
+									<ChildrenList>
+										<Action Name="" ID="{F7157336-769B-46CA-B6D8-BBA0DB846FC6}" ShortID="142140225">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AR_Shot_Loop" ID="{DB80C218-3699-4CF6-B6C6-971C407F9D56}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{4CFE8E90-EC24-4C39-81ED-9E9B3DE19AD1}" ShortID="991851323">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AR_Shot_Loop" ID="{DB80C218-3699-4CF6-B6C6-971C407F9D56}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 								<Event Name="GL_Shoot" ID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}"/>
+								<Event Name="AR_Shoot_Stop" ID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}">
+									<ChildrenList>
+										<Action Name="" ID="{17324EA3-D482-4A5C-BA32-CD83A4C215A0}" ShortID="717127282">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AR_Shot_Loop" ID="{DB80C218-3699-4CF6-B6C6-971C407F9D56}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Dryfire" ID="{BF46B6AC-A959-4B31-A454-A0C8D52A3D5E}" ShortID="321101203">

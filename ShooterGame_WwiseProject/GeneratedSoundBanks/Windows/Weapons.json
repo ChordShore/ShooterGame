@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "SFX",
-    "Hash": "{0D6AA608-75B0-EBAF-D34F-37453BB130DF}",
+    "Hash": "{811F4FD9-3775-7CE3-1F51-9822A4DE58F9}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "Weapons.bnk",
@@ -80,6 +80,18 @@
       "CachePath": "SFX/AR_Equip_10C4C929.wem"
      }
     ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "252295918",
+       "Name": "Tone Generator",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Weapons\\WEP_1P\\Shooting\\WEP_Shoot\\AR_Shoot\\AR_Shot_Loop\\Sine Pip_02\\Tone Generator",
+       "GUID": "{C11429A9-4A3F-4D17-8D20-90668E942F12}",
+       "LibName": "Wwise Tone Generator",
+       "LibId": "6684674"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "1694533419",
@@ -158,14 +170,26 @@
       ]
      },
      {
-      "Id": "875370928",
-      "Name": "AR_Shoot",
-      "ObjectPath": "\\Events\\Weapons\\Shooting\\Shoot\\AR_Shoot",
+      "Id": "3035132243",
+      "Name": "AR_Shoot_LP",
+      "ObjectPath": "\\Events\\Weapons\\Shooting\\Shoot\\AR_Shoot_LP",
       "GUID": "{027202E3-540C-4144-873B-7DCDD76899B6}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationType": "Infinite",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "252295918"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
      },
      {
       "Id": "1883352941",
@@ -344,6 +368,6 @@
     ]
    }
   ],
-  "FileHash": "{AFAA4664-BB9E-79F2-2436-048A0353C0A6}"
+  "FileHash": "{7EAF0BA9-3E91-1D56-359C-F0A7A103E225}"
  }
 }

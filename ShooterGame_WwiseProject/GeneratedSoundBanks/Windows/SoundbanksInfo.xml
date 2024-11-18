@@ -1016,6 +1016,14 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
+		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{D7F35659-1F15-A708-751F-183F8C908030}">
+			<ObjectPath>AR_Shoot_Stop</ObjectPath>
+			<ShortName>AR_Shoot_Stop</ShortName>
+			<Path>Event/AR_Shoot_Stop.bnk</Path>
+			<Events>
+				<Event Id="588697279" Name="AR_Shoot_Stop" ObjectPath="\Events\Weapons\Shooting\Shoot\AR_Shoot_Stop" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="636673922" Type="Event" GUID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}" Language="SFX" Hash="{2C863D92-9EF8-4693-E851-7877EAE5D65D}">
 			<ObjectPath>AMB_RoomGusts_SmallEntrance_Interior</ObjectPath>
 			<ShortName>AMB_RoomGusts_SmallEntrance_Interior</ShortName>
@@ -1648,7 +1656,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{0D6AA608-75B0-EBAF-D34F-37453BB130DF}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{811F4FD9-3775-7CE3-1F51-9822A4DE58F9}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>Weapons.bnk</Path>
@@ -1686,6 +1694,11 @@
 					<CachePath>SFX/AR_Equip_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="252295918" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\AR_Shot_Loop\Sine Pip_02\Tone Generator" GUID="{C11429A9-4A3F-4D17-8D20-90668E942F12}" LibName="Wwise Tone Generator" LibId="6684674"/>
+				</Custom>
+			</Plugins>
 			<Events>
 				<Event Id="1694533419" Name="AR_Dryfire_OS" ObjectPath="\Events\Weapons\Shooting\Dryfire\AR_Dryfire_OS" GUID="{1F162533-308D-4AB5-8A18-0D6E326EB1D8}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<MediaRefs>
@@ -1712,7 +1725,16 @@
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="875370928" Name="AR_Shoot" ObjectPath="\Events\Weapons\Shooting\Shoot\AR_Shoot" GUID="{027202E3-540C-4144-873B-7DCDD76899B6}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3035132243" Name="AR_Shoot_LP" ObjectPath="\Events\Weapons\Shooting\Shoot\AR_Shoot_LP" GUID="{027202E3-540C-4144-873B-7DCDD76899B6}" DurationType="Infinite">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="252295918"/>
+						</Custom>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
+				</Event>
 				<Event Id="1883352941" Name="AR_WhizzBy_OS" ObjectPath="\Events\Weapons\Shooting\Travel\AR_WhizzBy_OS" GUID="{DF281450-0700-404B-9DFD-8DBDC054CD38}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1764852559" Name="GL_Dryfire_OS" ObjectPath="\Events\Weapons\Shooting\Dryfire\GL_Dryfire_OS" GUID="{EA2CD592-0394-4A84-919F-75A9F11F65BC}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<MediaRefs>
@@ -2783,7 +2805,7 @@
 				<GameParameter Id="2940353651" Name="PAR_Distance_HoverCars_PS5" ObjectPath="\Game Parameters\Ambience\PAR_Distance_HoverCars_PS5" GUID="{12811BF6-789D-4EFB-A3B6-2A817E909100}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{56580432-10AD-4BDE-53B4-C32078FF56D7}">
+		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{43A190C0-A50E-2FD1-8BE7-322ECEF7EACA}">
 			<ObjectPath>\SoundBanks\Default Work Unit\EventProbe</ObjectPath>
 			<ShortName>EventProbe</ShortName>
 			<Path>EventProbe.bnk</Path>
@@ -2794,7 +2816,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" MaxAttenuation="9000" DurationType="OneShot" DurationMin="1" DurationMax="1">
+				<Event Id="4055779807" Name="Play_Sine_Pip" ObjectPath="\Events\Default Work Unit\Event Probe\Play_Sine_Pip" GUID="{79D376DC-67FF-49D5-8EFA-4F594DD02674}" DurationType="OneShot" DurationMin="1" DurationMax="1">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="1041093470"/>
@@ -2938,5 +2960,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9DADBA38-6263-B698-9591-5B80D5E19331}</FileHash>
+	<FileHash>{11CFA2EB-8A37-84B2-CF0C-17DCC1B72782}</FileHash>
 </SoundBanksInfo>

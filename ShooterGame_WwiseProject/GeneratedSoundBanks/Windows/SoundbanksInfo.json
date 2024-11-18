@@ -2353,6 +2353,28 @@
     ]
    },
    {
+    "Id": "588697279",
+    "Type": "Event",
+    "GUID": "{BD84793E-1D49-48EB-ACC4-F1DA575556CD}",
+    "Language": "SFX",
+    "Hash": "{D7F35659-1F15-A708-751F-183F8C908030}",
+    "ObjectPath": "AR_Shoot_Stop",
+    "ShortName": "AR_Shoot_Stop",
+    "Path": "Event/AR_Shoot_Stop.bnk",
+    "Events": [
+     {
+      "Id": "588697279",
+      "Name": "AR_Shoot_Stop",
+      "ObjectPath": "\\Events\\Weapons\\Shooting\\Shoot\\AR_Shoot_Stop",
+      "GUID": "{BD84793E-1D49-48EB-ACC4-F1DA575556CD}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   },
+   {
     "Id": "636673922",
     "Type": "Event",
     "GUID": "{7228D143-91CD-48AB-B419-E16DEE2BF95F}",
@@ -4088,7 +4110,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "SFX",
-    "Hash": "{0D6AA608-75B0-EBAF-D34F-37453BB130DF}",
+    "Hash": "{811F4FD9-3775-7CE3-1F51-9822A4DE58F9}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "Weapons.bnk",
@@ -4158,6 +4180,18 @@
       "CachePath": "SFX/AR_Equip_10C4C929.wem"
      }
     ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "252295918",
+       "Name": "Tone Generator",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Weapons\\WEP_1P\\Shooting\\WEP_Shoot\\AR_Shoot\\AR_Shot_Loop\\Sine Pip_02\\Tone Generator",
+       "GUID": "{C11429A9-4A3F-4D17-8D20-90668E942F12}",
+       "LibName": "Wwise Tone Generator",
+       "LibId": "6684674"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "1694533419",
@@ -4236,14 +4270,26 @@
       ]
      },
      {
-      "Id": "875370928",
-      "Name": "AR_Shoot",
-      "ObjectPath": "\\Events\\Weapons\\Shooting\\Shoot\\AR_Shoot",
+      "Id": "3035132243",
+      "Name": "AR_Shoot_LP",
+      "ObjectPath": "\\Events\\Weapons\\Shooting\\Shoot\\AR_Shoot_LP",
       "GUID": "{027202E3-540C-4144-873B-7DCDD76899B6}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationType": "Infinite",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "252295918"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
      },
      {
       "Id": "1883352941",
@@ -6614,7 +6660,7 @@
     "Type": "User",
     "GUID": "{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}",
     "Language": "SFX",
-    "Hash": "{56580432-10AD-4BDE-53B4-C32078FF56D7}",
+    "Hash": "{43A190C0-A50E-2FD1-8BE7-322ECEF7EACA}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\EventProbe",
     "ShortName": "EventProbe",
     "Path": "EventProbe.bnk",
@@ -6644,7 +6690,6 @@
       "Name": "Play_Sine_Pip",
       "ObjectPath": "\\Events\\Default Work Unit\\Event Probe\\Play_Sine_Pip",
       "GUID": "{79D376DC-67FF-49D5-8EFA-4F594DD02674}",
-      "MaxAttenuation": "9000",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "1",
@@ -6941,6 +6986,6 @@
     ]
    }
   ],
-  "FileHash": "{DB11D9D6-3CD9-0CFC-6C04-E496374BA12A}"
+  "FileHash": "{0E3B74ED-0C0C-6FD7-3EB9-2634F31019EE}"
  }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{0D6AA608-75B0-EBAF-D34F-37453BB130DF}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{811F4FD9-3775-7CE3-1F51-9822A4DE58F9}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>Weapons.bnk</Path>
@@ -39,6 +39,11 @@
 					<CachePath>SFX/AR_Equip_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="252295918" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\AR_Shot_Loop\Sine Pip_02\Tone Generator" GUID="{C11429A9-4A3F-4D17-8D20-90668E942F12}" LibName="Wwise Tone Generator" LibId="6684674"/>
+				</Custom>
+			</Plugins>
 			<Events>
 				<Event Id="1694533419" Name="AR_Dryfire_OS" ObjectPath="\Events\Weapons\Shooting\Dryfire\AR_Dryfire_OS" GUID="{1F162533-308D-4AB5-8A18-0D6E326EB1D8}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<MediaRefs>
@@ -65,7 +70,16 @@
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="875370928" Name="AR_Shoot" ObjectPath="\Events\Weapons\Shooting\Shoot\AR_Shoot" GUID="{027202E3-540C-4144-873B-7DCDD76899B6}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3035132243" Name="AR_Shoot_LP" ObjectPath="\Events\Weapons\Shooting\Shoot\AR_Shoot_LP" GUID="{027202E3-540C-4144-873B-7DCDD76899B6}" DurationType="Infinite">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="252295918"/>
+						</Custom>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
+				</Event>
 				<Event Id="1883352941" Name="AR_WhizzBy_OS" ObjectPath="\Events\Weapons\Shooting\Travel\AR_WhizzBy_OS" GUID="{DF281450-0700-404B-9DFD-8DBDC054CD38}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1764852559" Name="GL_Dryfire_OS" ObjectPath="\Events\Weapons\Shooting\Dryfire\GL_Dryfire_OS" GUID="{EA2CD592-0394-4A84-919F-75A9F11F65BC}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<MediaRefs>
@@ -124,5 +138,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{10348E12-5C37-B6A1-0587-86F3C0C3CC37}</FileHash>
+	<FileHash>{A68B4B48-6548-5E10-F282-69B6FFEB8EA4}</FileHash>
 </SoundBanksInfo>
