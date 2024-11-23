@@ -1,0 +1,56 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "34535531",
+    "Type": "Event",
+    "GUID": "{698F3492-0906-40D0-90BD-FD8AB68AC5B9}",
+    "Language": "SFX",
+    "Hash": "{12959A81-9F7E-0857-9F46-559F2C9B6144}",
+    "ObjectPath": "AR_Selectfire",
+    "ShortName": "AR_Selectfire",
+    "Path": "Event/AR_Selectfire.bnk",
+    "Media": [
+     {
+      "Id": "350887940",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AR_Selectfire.wav",
+      "Path": "Media/350887940.wem",
+      "CachePath": "SFX/AR_Selectfire_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "34535531",
+      "Name": "AR_Selectfire",
+      "ObjectPath": "\\Events\\Weapons\\Shooting\\Selectfire\\AR_Selectfire",
+      "GUID": "{698F3492-0906-40D0-90BD-FD8AB68AC5B9}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "MediaRefs": [
+       {
+        "Id": "350887940"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{D98AD517-EA6E-697E-A196-C66F8B66D766}"
+ }
+}

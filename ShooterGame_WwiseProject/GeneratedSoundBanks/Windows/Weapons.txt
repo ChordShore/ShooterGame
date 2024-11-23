@@ -20,13 +20,31 @@ Switch	ID	Name	Switch Group			Notes
 	1891117424	AR_Equipped	SWT_Weapon_Types			
 	2886223932	GL_Equipped	SWT_Weapon_Types			
 
-Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	252295918	Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\AR_Shot_Loop\Sine Pip_02\Tone Generator	
+State Group	ID	Name			Wwise Object Path	Notes
+	747849153	STA_LocationMix			\Default Work Unit\Highrise\STA_LocationMix	
+
+State	ID	Name	State Group			Notes
+	301467384	STA_Indoors_Spawn	STA_LocationMix			
+	748895195	None	STA_LocationMix			
+	877225536	STA_Outdoors_Atrium	STA_LocationMix			
+	949156522	STA_Outdoors_Balcony_Center	STA_LocationMix			
+	1657765358	STA_Indoors_Room	STA_LocationMix			
+
+Effect plug-ins	ID	Name	Type				Notes
+	2080872166	Brick_Wall_Minus_6dB_Peak_Fast_Release	Wwise Peak Limiter			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	14501665	AR_Shot_Tail_Room	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Shot_Tail_Room_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\AR_Shot_LP\AR_Shot_Constructor\AR_Tail_Room\AR_Shot_Tail_Room		768096
+	166846503	AR_Shot_Pulse	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Shot_Pulse_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\AR_Shot_LP\AR_Shot_Constructor\AR_Pulse\AR_Shot_Pulse		192096
+	175929226	AR_Shot_Tail_Atrium	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Shot_Tail_Atrium_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\AR_Shot_LP\AR_Shot_Constructor\AR_Tail_Atrium\AR_Shot_Tail_Atrium		1536096
+	228004887	AR_Shot_Transient	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Shot_Transient_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\AR_Shot_LP\AR_Shot_Constructor\AR_Transient\AR_Shot_Transient		192096
 	304041726	AR_Dryfire	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Dryfire_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Dryfire\AR_Dryfire\AR_Dryfire		96096
+	345176474	AR_Shot_LFE	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Shot_LFE_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\AR_Shot_LP\AR_Shot_Constructor\AR_LFE\AR_Shot_LFE		192096
+	373309000	AR_Shot_Mech	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Shot_Mech_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\AR_Shot_LP\AR_Shot_Constructor\AR_Mech\AR_Shot_Mech		192096
 	432981530	AR_Target_Engage	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Aim_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Targeting\WEP_Targeting_Engage\WEP_Targeting_Engage_Switch\AR_Target_Engage		96096
+	470590754	AR_Shot_Tail_Spawn	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Shot_Tail_Spawn_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\AR_Shot_LP\AR_Shot_Constructor\AR_Tail_Spawn\AR_Shot_Tail_Spawn		768096
 	624042849	GL_Reload	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\GL_Reload_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Reloading\WEP_Reload\GL_Reload\GL_Reload		552096
+	635329318	AR_Shot_InitialTransient	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Shot_InitialTransient_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\AR_Shot_InitialTransient		288096
 	669510815	GL_Equip	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\GL_Equip_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Handling\WEP_Equip\GL_Equip\GL_Equip		96096
 	687525484	GL_Target_Engage	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\GL_Aim_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Targeting\WEP_Targeting_Engage\WEP_Targeting_Engage_Switch\GL_Target_Engage		96096
 	781212311	AR_Reload	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Reload_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Reloading\WEP_Reload\AR_Reload\AR_Reload		336096

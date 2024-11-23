@@ -61,14 +61,21 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="AR_Shot_Loop" ID="{DB80C218-3699-4CF6-B6C6-971C407F9D56}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+													<ObjectRef Name="AR_Shot_LP" ID="{DB80C218-3699-4CF6-B6C6-971C407F9D56}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
 										<Action Name="" ID="{4CFE8E90-EC24-4C39-81ED-9E9B3DE19AD1}" ShortID="991851323">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="AR_Shot_Loop" ID="{DB80C218-3699-4CF6-B6C6-971C407F9D56}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+													<ObjectRef Name="AR_Shot_LP" ID="{DB80C218-3699-4CF6-B6C6-971C407F9D56}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{122225C3-5E49-44E4-962C-00245419F4B8}" ShortID="27717363">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AR_Shot_InitialTransient" ID="{06775C8C-2FE6-4776-870C-ADA4934F9B77}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -80,11 +87,25 @@
 										<Action Name="" ID="{17324EA3-D482-4A5C-BA32-CD83A4C215A0}" ShortID="717127282">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="FadeTime" Type="Real64" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="10"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="AR_Shot_Loop" ID="{DB80C218-3699-4CF6-B6C6-971C407F9D56}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+													<ObjectRef Name="AR_Shot_LP" ID="{DB80C218-3699-4CF6-B6C6-971C407F9D56}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{72C4C8BC-D808-4137-8AF7-CF57F5ABD84D}" ShortID="218952285">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AR_Tail_OS" ID="{0EBE41E5-4A4B-4693-B129-B1BE36733928}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -111,6 +132,21 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="GL_Dryfire" ID="{C0EF7F80-16F5-4B69-AC75-E06F2B4A47E1}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Selectfire" ID="{85E6AD94-EC1B-446E-B366-7AF990E97658}" ShortID="698504021">
+							<ChildrenList>
+								<Event Name="AR_Selectfire" ID="{698F3492-0906-40D0-90BD-FD8AB68AC5B9}">
+									<ChildrenList>
+										<Action Name="" ID="{70421FC3-94AE-43B7-8F44-4F3C4D800E00}" ShortID="672926131">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AR_Selectfire" ID="{596473E7-1F6A-43F3-8321-6AC7AF0AABF1}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

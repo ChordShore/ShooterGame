@@ -1,22 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{811F4FD9-3775-7CE3-1F51-9822A4DE58F9}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{3C01DBAE-75C4-F292-E828-199F3FB7FE3C}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>Weapons.bnk</Path>
 			<Media>
+				<File Id="14501665" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_Tail_Room.wav</ShortName>
+					<CachePath>SFX/AR_Shot_Tail_Room_10C4C929.wem</CachePath>
+				</File>
+				<File Id="166846503" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_Pulse.wav</ShortName>
+					<CachePath>SFX/AR_Shot_Pulse_10C4C929.wem</CachePath>
+				</File>
+				<File Id="175929226" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_Tail_Atrium.wav</ShortName>
+					<CachePath>SFX/AR_Shot_Tail_Atrium_10C4C929.wem</CachePath>
+				</File>
+				<File Id="228004887" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_Transient.wav</ShortName>
+					<CachePath>SFX/AR_Shot_Transient_10C4C929.wem</CachePath>
+				</File>
 				<File Id="304041726" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AR_Dryfire.wav</ShortName>
 					<CachePath>SFX/AR_Dryfire_10C4C929.wem</CachePath>
+				</File>
+				<File Id="345176474" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_LFE.wav</ShortName>
+					<CachePath>SFX/AR_Shot_LFE_10C4C929.wem</CachePath>
+				</File>
+				<File Id="373309000" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_Mech.wav</ShortName>
+					<CachePath>SFX/AR_Shot_Mech_10C4C929.wem</CachePath>
 				</File>
 				<File Id="432981530" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AR_Aim.wav</ShortName>
 					<CachePath>SFX/AR_Aim_10C4C929.wem</CachePath>
 				</File>
+				<File Id="470590754" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_Tail_Spawn.wav</ShortName>
+					<CachePath>SFX/AR_Shot_Tail_Spawn_10C4C929.wem</CachePath>
+				</File>
 				<File Id="624042849" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Reload.wav</ShortName>
 					<CachePath>SFX/GL_Reload_10C4C929.wem</CachePath>
+				</File>
+				<File Id="635329318" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_InitialTransient.wav</ShortName>
+					<CachePath>SFX/AR_Shot_InitialTransient_10C4C929.wem</CachePath>
 				</File>
 				<File Id="669510815" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Equip.wav</ShortName>
@@ -40,9 +72,9 @@
 				</File>
 			</Media>
 			<Plugins>
-				<Custom>
-					<Plugin Id="252295918" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\AR_Shot_Loop\Sine Pip_02\Tone Generator" GUID="{C11429A9-4A3F-4D17-8D20-90668E942F12}" LibName="Wwise Tone Generator" LibId="6684674"/>
-				</Custom>
+				<ShareSets>
+					<Plugin Id="2080872166" Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Fast_Release" GUID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
 			</Plugins>
 			<Events>
 				<Event Id="1694533419" Name="AR_Dryfire_OS" ObjectPath="\Events\Weapons\Shooting\Dryfire\AR_Dryfire_OS" GUID="{1F162533-308D-4AB5-8A18-0D6E326EB1D8}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
@@ -71,14 +103,89 @@
 					</AuxBusRefs>
 				</Event>
 				<Event Id="3035132243" Name="AR_Shoot_LP" ObjectPath="\Events\Weapons\Shooting\Shoot\AR_Shoot_LP" GUID="{027202E3-540C-4144-873B-7DCDD76899B6}" DurationType="Infinite">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="252295918"/>
-						</Custom>
-					</PluginRefs>
+					<MediaRefs>
+						<MediaRef Id="635329318"/>
+					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="747849153" Id="301467384" GUID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="166846503"/>
+								<MediaRef Id="228004887"/>
+								<MediaRef Id="345176474"/>
+								<MediaRef Id="373309000"/>
+								<MediaRef Id="470590754"/>
+							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="747849153" Id="877225536" GUID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+							<MediaRefs>
+								<MediaRef Id="166846503"/>
+								<MediaRef Id="175929226"/>
+								<MediaRef Id="228004887"/>
+								<MediaRef Id="345176474"/>
+								<MediaRef Id="373309000"/>
+							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="747849153" Id="748895195" GUID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
+							<MediaRefs>
+								<MediaRef Id="166846503"/>
+								<MediaRef Id="175929226"/>
+								<MediaRef Id="228004887"/>
+								<MediaRef Id="345176474"/>
+								<MediaRef Id="373309000"/>
+							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="747849153" Id="1657765358" GUID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
+							<MediaRefs>
+								<MediaRef Id="14501665"/>
+								<MediaRef Id="166846503"/>
+								<MediaRef Id="228004887"/>
+								<MediaRef Id="345176474"/>
+								<MediaRef Id="373309000"/>
+							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="747849153" Id="949156522" GUID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
+							<MediaRefs>
+								<MediaRef Id="166846503"/>
+								<MediaRef Id="175929226"/>
+								<MediaRef Id="228004887"/>
+								<MediaRef Id="345176474"/>
+								<MediaRef Id="373309000"/>
+							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="1883352941" Name="AR_WhizzBy_OS" ObjectPath="\Events\Weapons\Shooting\Travel\AR_WhizzBy_OS" GUID="{DF281450-0700-404B-9DFD-8DBDC054CD38}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1764852559" Name="GL_Dryfire_OS" ObjectPath="\Events\Weapons\Shooting\Dryfire\GL_Dryfire_OS" GUID="{EA2CD592-0394-4A84-919F-75A9F11F65BC}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
@@ -128,6 +235,17 @@
 					</SwitchContainers>
 				</Event>
 			</Events>
+			<StateGroups>
+				<StateGroup Id="747849153" Name="STA_LocationMix" ObjectPath="\States\Default Work Unit\Highrise\STA_LocationMix" GUID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}">
+					<States>
+						<State Id="301467384" Name="STA_Indoors_Spawn" ObjectPath="\States\Default Work Unit\Highrise\STA_LocationMix\STA_Indoors_Spawn" GUID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Highrise\STA_LocationMix\None" GUID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
+						<State Id="877225536" Name="STA_Outdoors_Atrium" ObjectPath="\States\Default Work Unit\Highrise\STA_LocationMix\STA_Outdoors_Atrium" GUID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+						<State Id="949156522" Name="STA_Outdoors_Balcony_Center" ObjectPath="\States\Default Work Unit\Highrise\STA_LocationMix\STA_Outdoors_Balcony_Center" GUID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
+						<State Id="1657765358" Name="STA_Indoors_Room" ObjectPath="\States\Default Work Unit\Highrise\STA_LocationMix\STA_Indoors_Room" GUID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="2719266754" Name="SWT_Weapon_Types" ObjectPath="\Switches\Default Work Unit\SWT_Weapon_Types" GUID="{ECBD5BFD-ACAD-4CAA-BBDC-95A58B4A93D2}">
 					<Switches>
@@ -138,5 +256,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A68B4B48-6548-5E10-F282-69B6FFEB8EA4}</FileHash>
+	<FileHash>{3B9A2196-8B2E-9096-7777-B3A453554345}</FileHash>
 </SoundBanksInfo>

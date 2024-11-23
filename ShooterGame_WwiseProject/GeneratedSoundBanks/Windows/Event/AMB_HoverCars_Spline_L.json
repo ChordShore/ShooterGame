@@ -10,33 +10,10 @@
     "Type": "Event",
     "GUID": "{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}",
     "Language": "SFX",
-    "Hash": "{6975CC18-D352-08B5-B594-3D7141D33B90}",
+    "Hash": "{0ACA3DE2-77B6-DF59-CBC1-C5EBB3142C44}",
     "ObjectPath": "AMB_HoverCars_Spline_L",
     "ShortName": "AMB_HoverCars_Spline_L",
     "Path": "Event/AMB_HoverCars_Spline_L.bnk",
-    "Media": [
-     {
-      "Id": "359998175",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_Passbys_Sum.wav",
-      "Path": "Media/359998175.wem",
-      "CachePath": "SFX/AMB_HoverCars_Passbys_Sum_0E9E093B.wem"
-     }
-    ],
-    "Plugins": {
-     "ShareSets": [
-      {
-       "Id": "2258521792",
-       "Name": "Brick_Wall_Minus_1dB_Peak_Slow_Release",
-       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Slow_Release",
-       "GUID": "{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}",
-       "LibName": "Wwise Peak Limiter",
-       "LibId": "7208963"
-      }
-     ]
-    },
     "Events": [
      {
       "Id": "67622910",
@@ -44,16 +21,11 @@
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\HoverCars\\AMB_HoverCars_Spline_L",
       "GUID": "{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}",
       "MaxAttenuation": "4500",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "359998175"
-       }
-      ]
+      "DurationType": "Infinite"
      }
     ]
    }
   ],
-  "FileHash": "{CA1653F7-D97C-9CB0-D06B-A58369AAA2AD}"
+  "FileHash": "{25DA79FA-4F57-0B1C-9BD6-748F42D3C164}"
  }
 }

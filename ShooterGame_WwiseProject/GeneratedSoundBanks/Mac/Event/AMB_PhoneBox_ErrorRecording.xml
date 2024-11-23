@@ -1,31 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1322180291" Type="Event" GUID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}" Language="SFX" Hash="{89FBF0EC-C6F7-32F7-66F4-C8DCA9EE1A26}">
+		<SoundBank Id="1322180291" Type="Event" GUID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}" Language="SFX" Hash="{3BD6D5F6-98F7-1167-8294-67D7D2CB5416}">
 			<ObjectPath>AMB_PhoneBox_ErrorRecording</ObjectPath>
 			<ShortName>AMB_PhoneBox_ErrorRecording</ShortName>
 			<Path>Event/AMB_PhoneBox_ErrorRecording.bnk</Path>
-			<Media>
-				<File Id="539953251" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_PhoneBox_ErrorRecording_OS.wav</ShortName>
-					<Path>Media/539953251.wem</Path>
-					<CachePath>SFX/AMB_PhoneBox_ErrorRecording_OS_C35F038A.wem</CachePath>
-				</File>
-				<File Id="992552206" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_PhoneBox_ErrorRecording_OS.wav</ShortName>
-					<Path>Media/992552206.wem</Path>
-					<CachePath>SFX/AMB_PhoneBox_ErrorRecording_OS_4F030B8A.wem</CachePath>
-				</File>
-			</Media>
 			<Events>
-				<Event Id="1322180291" Name="AMB_PhoneBox_ErrorRecording" ObjectPath="\Events\Ambience\Emitters\Highrise\PhoneBox\AMB_PhoneBox_ErrorRecording" GUID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}" MaxAttenuation="1800" DurationType="OneShot" DurationMin="10.017575" DurationMax="10.017575">
-					<MediaRefs>
-						<MediaRef Id="539953251"/>
-						<MediaRef Id="992552206"/>
-					</MediaRefs>
-				</Event>
+				<Event Id="1322180291" Name="AMB_PhoneBox_ErrorRecording" ObjectPath="\Events\Ambience\Emitters\Highrise\PhoneBox\AMB_PhoneBox_ErrorRecording" GUID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}" MaxAttenuation="1800" DurationType="OneShot" DurationMin="10.017575" DurationMax="10.017575"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F8BF89F7-647F-7E94-6B69-4069DD5D5032}</FileHash>
+	<FileHash>{5BD77F22-F3CD-28FA-40C9-048808EB69B2}</FileHash>
 </SoundBanksInfo>

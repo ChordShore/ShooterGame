@@ -1,44 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{5F2B0D67-0C86-96B8-DBE3-D9DCB9357694}">
+		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{A4AD1C11-3A26-8CDC-2FE2-13DBB0C4BB4F}">
 			<ObjectPath>AMB_EnergyPillar_C</ObjectPath>
 			<ShortName>AMB_EnergyPillar_C</ShortName>
 			<Path>Event/AMB_EnergyPillar_C.bnk</Path>
-			<Media>
-				<File Id="55940149" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>Emitters_EnergyPillar_Sum.wav</ShortName>
-					<Path>Media/55940149.wem</Path>
-					<CachePath>SFX/Emitters_EnergyPillar_Sum_AD4483C9.wem</CachePath>
-				</File>
-				<File Id="359998175" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Passbys_Sum.wav</ShortName>
-					<Path>Media/359998175.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Passbys_Sum_0E9E093B.wem</CachePath>
-				</File>
-			</Media>
-			<Plugins>
-				<ShareSets>
-					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
-				</ShareSets>
-			</Plugins>
 			<Events>
-				<Event Id="2333830952" Name="AMB_EnergyPillar_C" ObjectPath="\Events\Ambience\Emitters\Highrise\EnergyPillar\AMB_EnergyPillar_C" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" MaxAttenuation="4500" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="55940149"/>
-						<MediaRef Id="359998175"/>
-					</MediaRefs>
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="2258521792"/>
-						</ShareSets>
-					</PluginRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="1289661192" Name="Highrise_HoverCars" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_HoverCars" GUID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}"/>
-					</AuxBusRefs>
-				</Event>
+				<Event Id="2333830952" Name="AMB_EnergyPillar_C" ObjectPath="\Events\Ambience\Emitters\Highrise\EnergyPillar\AMB_EnergyPillar_C" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" MaxAttenuation="4500" DurationType="Infinite"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3821C6DB-D49B-A30D-1248-640DC9FC7516}</FileHash>
+	<FileHash>{1882FCEA-D59A-FACD-20DD-97D42F242C7D}</FileHash>
 </SoundBanksInfo>

@@ -1,30 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="67622910" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{6975CC18-D352-08B5-B594-3D7141D33B90}">
+		<SoundBank Id="67622910" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{0ACA3DE2-77B6-DF59-CBC1-C5EBB3142C44}">
 			<ObjectPath>AMB_HoverCars_Spline_L</ObjectPath>
 			<ShortName>AMB_HoverCars_Spline_L</ShortName>
 			<Path>Event/AMB_HoverCars_Spline_L.bnk</Path>
-			<Media>
-				<File Id="359998175" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_HoverCars_Passbys_Sum.wav</ShortName>
-					<Path>Media/359998175.wem</Path>
-					<CachePath>SFX/AMB_HoverCars_Passbys_Sum_0E9E093B.wem</CachePath>
-				</File>
-			</Media>
-			<Plugins>
-				<ShareSets>
-					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
-				</ShareSets>
-			</Plugins>
 			<Events>
-				<Event Id="67622910" Name="AMB_HoverCars_Spline_L" ObjectPath="\Events\Ambience\Emitters\Highrise\HoverCars\AMB_HoverCars_Spline_L" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" MaxAttenuation="4500" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="359998175"/>
-					</MediaRefs>
-				</Event>
+				<Event Id="67622910" Name="AMB_HoverCars_Spline_L" ObjectPath="\Events\Ambience\Emitters\Highrise\HoverCars\AMB_HoverCars_Spline_L" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" MaxAttenuation="4500" DurationType="Infinite"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9219D595-F817-117E-2662-165467C905A7}</FileHash>
+	<FileHash>{9DF4F187-B0FF-0476-D52F-7DC98BD5E1BC}</FileHash>
 </SoundBanksInfo>

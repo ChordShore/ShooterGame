@@ -1,97 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1478305162" Type="Event" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" Language="SFX" Hash="{98F8219C-1DB5-853F-D593-45BD073C7E96}">
+		<SoundBank Id="1478305162" Type="Event" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" Language="SFX" Hash="{187A3B27-6F33-3EB8-2830-8CEDB13C5557}">
 			<ObjectPath>AMB_WindGusts_Static_Play</ObjectPath>
 			<ShortName>AMB_WindGusts_Static_Play</ShortName>
 			<Path>Event/AMB_WindGusts_Static_Play.bnk</Path>
-			<Media>
-				<File Id="10487233" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_WindGusts_Static_Strong_05.wav</ShortName>
-					<Path>Media/10487233.wem</Path>
-					<CachePath>SFX/AMB_WindGusts_Static_Strong_05_10C4C929.wem</CachePath>
-				</File>
-				<File Id="126209229" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_WindGusts_Static_Strong_06.wav</ShortName>
-					<Path>Media/126209229.wem</Path>
-					<CachePath>SFX/AMB_WindGusts_Static_Strong_06_10C4C929.wem</CachePath>
-				</File>
-				<File Id="132531388" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_WindGusts_Static_Gentle_03.wav</ShortName>
-					<Path>Media/132531388.wem</Path>
-					<CachePath>SFX/AMB_WindGusts_Static_Gentle_03_10C4C929.wem</CachePath>
-				</File>
-				<File Id="277956054" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_WindGusts_Static_Gentle_04.wav</ShortName>
-					<Path>Media/277956054.wem</Path>
-					<CachePath>SFX/AMB_WindGusts_Static_Gentle_04_10C4C929.wem</CachePath>
-				</File>
-				<File Id="350800724" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_WindGusts_Static_Gentle_06.wav</ShortName>
-					<Path>Media/350800724.wem</Path>
-					<CachePath>SFX/AMB_WindGusts_Static_Gentle_06_10C4C929.wem</CachePath>
-				</File>
-				<File Id="384598031" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_WindGusts_Static_Gentle_02.wav</ShortName>
-					<Path>Media/384598031.wem</Path>
-					<CachePath>SFX/AMB_WindGusts_Static_Gentle_02_10C4C929.wem</CachePath>
-				</File>
-				<File Id="452990868" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_WindGusts_Static_Gentle_01.wav</ShortName>
-					<Path>Media/452990868.wem</Path>
-					<CachePath>SFX/AMB_WindGusts_Static_Gentle_01_10C4C929.wem</CachePath>
-				</File>
-				<File Id="483299353" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_WindGusts_Static_Gentle_05.wav</ShortName>
-					<Path>Media/483299353.wem</Path>
-					<CachePath>SFX/AMB_WindGusts_Static_Gentle_05_10C4C929.wem</CachePath>
-				</File>
-				<File Id="595736396" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_WindGusts_Static_Strong_03.wav</ShortName>
-					<Path>Media/595736396.wem</Path>
-					<CachePath>SFX/AMB_WindGusts_Static_Strong_03_10C4C929.wem</CachePath>
-				</File>
-				<File Id="787630258" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_WindGusts_Static_Strong_02.wav</ShortName>
-					<Path>Media/787630258.wem</Path>
-					<CachePath>SFX/AMB_WindGusts_Static_Strong_02_10C4C929.wem</CachePath>
-				</File>
-				<File Id="793632791" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_WindGusts_Static_Strong_07.wav</ShortName>
-					<Path>Media/793632791.wem</Path>
-					<CachePath>SFX/AMB_WindGusts_Static_Strong_07_10C4C929.wem</CachePath>
-				</File>
-				<File Id="819851560" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_WindGusts_Static_Strong_04.wav</ShortName>
-					<Path>Media/819851560.wem</Path>
-					<CachePath>SFX/AMB_WindGusts_Static_Strong_04_10C4C929.wem</CachePath>
-				</File>
-				<File Id="845898520" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_WindGusts_Static_Strong_01.wav</ShortName>
-					<Path>Media/845898520.wem</Path>
-					<CachePath>SFX/AMB_WindGusts_Static_Strong_01_10C4C929.wem</CachePath>
-				</File>
-			</Media>
 			<Events>
-				<Event Id="1478305162" Name="AMB_WindGusts_Static_Play" ObjectPath="\Events\Ambience\Emitters\Highrise\WindGusts\AMB_WindGusts_Static_Play" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" MaxAttenuation="3000" DurationType="OneShot" DurationMin="11.010875" DurationMax="38.453106">
-					<MediaRefs>
-						<MediaRef Id="10487233"/>
-						<MediaRef Id="126209229"/>
-						<MediaRef Id="132531388"/>
-						<MediaRef Id="277956054"/>
-						<MediaRef Id="350800724"/>
-						<MediaRef Id="384598031"/>
-						<MediaRef Id="452990868"/>
-						<MediaRef Id="483299353"/>
-						<MediaRef Id="595736396"/>
-						<MediaRef Id="787630258"/>
-						<MediaRef Id="793632791"/>
-						<MediaRef Id="819851560"/>
-						<MediaRef Id="845898520"/>
-					</MediaRefs>
-				</Event>
+				<Event Id="1478305162" Name="AMB_WindGusts_Static_Play" ObjectPath="\Events\Ambience\Emitters\Highrise\WindGusts\AMB_WindGusts_Static_Play" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" MaxAttenuation="3000" DurationType="OneShot" DurationMin="11.010875" DurationMax="38.453106"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{633270A2-F55F-0ACC-8A03-C288B51EF1D2}</FileHash>
+	<FileHash>{5F446462-01C1-5FFF-4729-6F0FD94F0FCB}</FileHash>
 </SoundBanksInfo>

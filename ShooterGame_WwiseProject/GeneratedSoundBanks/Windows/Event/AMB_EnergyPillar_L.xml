@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2333830951" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{1FD0A6A9-F0E1-38DF-7E82-71B412599E0B}">
+		<SoundBank Id="2333830951" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{3F50967A-30AE-95D2-A566-B276834859DE}">
 			<ObjectPath>AMB_EnergyPillar_L</ObjectPath>
 			<ShortName>AMB_EnergyPillar_L</ShortName>
 			<Path>Event/AMB_EnergyPillar_L.bnk</Path>
-			<Media>
-				<File Id="1027930209" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>Emitters_EnergyPillar_Sum.wav</ShortName>
-					<Path>Media/1027930209.wem</Path>
-					<CachePath>SFX/Emitters_EnergyPillar_Sum_58CA2812.wem</CachePath>
-				</File>
-			</Media>
 			<Events>
-				<Event Id="2333830951" Name="AMB_EnergyPillar_L" ObjectPath="\Events\Ambience\Emitters\Highrise\EnergyPillar\AMB_EnergyPillar_L" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" MaxAttenuation="2200" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="1027930209"/>
-					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="1289661192" Name="Highrise_HoverCars" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_HoverCars" GUID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}"/>
-					</AuxBusRefs>
-				</Event>
+				<Event Id="2333830951" Name="AMB_EnergyPillar_L" ObjectPath="\Events\Ambience\Emitters\Highrise\EnergyPillar\AMB_EnergyPillar_L" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" MaxAttenuation="2200" DurationType="Infinite"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{89AF43F8-C46D-A08E-FFBD-84D96F388971}</FileHash>
+	<FileHash>{5568BB39-2547-4436-251D-18660BC42939}</FileHash>
 </SoundBanksInfo>

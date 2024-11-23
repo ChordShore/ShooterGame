@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2992962930" Type="Event" GUID="{3C0DA367-FE08-40AC-B96C-0BCFE38BE080}" Language="SFX" Hash="{19D3545F-3643-0D48-E9F1-7E27B5596A7A}">
+		<SoundBank Id="2992962930" Type="Event" GUID="{3C0DA367-FE08-40AC-B96C-0BCFE38BE080}" Language="SFX" Hash="{62DDAE4C-B27E-1551-4FF0-7A01DCC76524}">
 			<ObjectPath>AMB_BarrierFence</ObjectPath>
 			<ShortName>AMB_BarrierFence</ShortName>
 			<Path>Event/AMB_BarrierFence.bnk</Path>
-			<Media>
-				<File Id="1041432378" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AMB_BarrierFence_LP.wav</ShortName>
-					<Path>Media/1041432378.wem</Path>
-					<CachePath>SFX/AMB_BarrierFence_LP_3860FEB7.wem</CachePath>
-				</File>
-			</Media>
 			<Events>
-				<Event Id="2992962930" Name="AMB_BarrierFence" ObjectPath="\Events\Ambience\Emitters\Highrise\BarrierFence\AMB_BarrierFence" GUID="{3C0DA367-FE08-40AC-B96C-0BCFE38BE080}" MaxAttenuation="2000" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="1041432378"/>
-					</MediaRefs>
-				</Event>
+				<Event Id="2992962930" Name="AMB_BarrierFence" ObjectPath="\Events\Ambience\Emitters\Highrise\BarrierFence\AMB_BarrierFence" GUID="{3C0DA367-FE08-40AC-B96C-0BCFE38BE080}" MaxAttenuation="2000" DurationType="Infinite"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2E345B39-AA24-7B9A-A937-306C091FC946}</FileHash>
+	<FileHash>{511FC012-5D7C-D9A6-0811-FC26AD5FEBE9}</FileHash>
 </SoundBanksInfo>

@@ -10,42 +10,10 @@
     "Type": "Event",
     "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
     "Language": "SFX",
-    "Hash": "{5F2B0D67-0C86-96B8-DBE3-D9DCB9357694}",
+    "Hash": "{A4AD1C11-3A26-8CDC-2FE2-13DBB0C4BB4F}",
     "ObjectPath": "AMB_EnergyPillar_C",
     "ShortName": "AMB_EnergyPillar_C",
     "Path": "Event/AMB_EnergyPillar_C.bnk",
-    "Media": [
-     {
-      "Id": "55940149",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "Emitters_EnergyPillar_Sum.wav",
-      "Path": "Media/55940149.wem",
-      "CachePath": "SFX/Emitters_EnergyPillar_Sum_AD4483C9.wem"
-     },
-     {
-      "Id": "359998175",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "AMB_HoverCars_Passbys_Sum.wav",
-      "Path": "Media/359998175.wem",
-      "CachePath": "SFX/AMB_HoverCars_Passbys_Sum_0E9E093B.wem"
-     }
-    ],
-    "Plugins": {
-     "ShareSets": [
-      {
-       "Id": "2258521792",
-       "Name": "Brick_Wall_Minus_1dB_Peak_Slow_Release",
-       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Slow_Release",
-       "GUID": "{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}",
-       "LibName": "Wwise Peak Limiter",
-       "LibId": "7208963"
-      }
-     ]
-    },
     "Events": [
      {
       "Id": "2333830952",
@@ -53,34 +21,11 @@
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\EnergyPillar\\AMB_EnergyPillar_C",
       "GUID": "{59B52E0A-A590-4C41-B895-B6222DEA8792}",
       "MaxAttenuation": "4500",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "55940149"
-       },
-       {
-        "Id": "359998175"
-       }
-      ],
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "2258521792"
-        }
-       ]
-      },
-      "AuxBusRefs": [
-       {
-        "Id": "1289661192",
-        "Name": "Highrise_HoverCars",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_HoverCars",
-        "GUID": "{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}"
-       }
-      ]
+      "DurationType": "Infinite"
      }
     ]
    }
   ],
-  "FileHash": "{B62F7286-949D-9E63-9D85-0106205D2913}"
+  "FileHash": "{CF844EE2-DD1E-A9F4-2DD7-C121103F17FD}"
  }
 }
