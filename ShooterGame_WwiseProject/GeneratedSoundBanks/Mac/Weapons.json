@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "SFX",
-    "Hash": "{3C01DBAE-75C4-F292-E828-199F3FB7FE3C}",
+    "Hash": "{73EADF4C-F95E-A8FF-D5A1-7A544DDFDB8B}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "Weapons.bnk",
@@ -86,6 +86,14 @@
       "Location": "Memory",
       "ShortName": "AR_Shot_Tail_Spawn.wav",
       "CachePath": "SFX/AR_Shot_Tail_Spawn_10C4C929.wem"
+     },
+     {
+      "Id": "548026506",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AR_Empty_Rattle.wav",
+      "CachePath": "SFX/AR_Empty_Rattle_10C4C929.wem"
      },
      {
       "Id": "624042849",
@@ -276,6 +284,9 @@
          },
          {
           "Id": "470590754"
+         },
+         {
+          "Id": "548026506"
          }
         ],
         "PluginRefs": {
@@ -308,6 +319,9 @@
          },
          {
           "Id": "373309000"
+         },
+         {
+          "Id": "548026506"
          }
         ],
         "PluginRefs": {
@@ -340,6 +354,9 @@
          },
          {
           "Id": "373309000"
+         },
+         {
+          "Id": "548026506"
          }
         ],
         "PluginRefs": {
@@ -372,6 +389,9 @@
          },
          {
           "Id": "373309000"
+         },
+         {
+          "Id": "548026506"
          }
         ],
         "PluginRefs": {
@@ -404,6 +424,9 @@
          },
          {
           "Id": "373309000"
+         },
+         {
+          "Id": "548026506"
          }
         ],
         "PluginRefs": {
@@ -569,6 +592,14 @@
       ]
      }
     ],
+    "GameParameters": [
+     {
+      "Id": "2583655610",
+      "Name": "PAR_AR_AmmoCount",
+      "ObjectPath": "\\Game Parameters\\Weapons\\PAR_AR_AmmoCount",
+      "GUID": "{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}"
+     }
+    ],
     "StateGroups": [
      {
       "Id": "747849153",
@@ -633,6 +664,6 @@
     ]
    }
   ],
-  "FileHash": "{FDFE2126-F050-B853-CD1D-D21786AABF09}"
+  "FileHash": "{AB417533-DB6B-EECD-C2C7-45024442AFBA}"
  }
 }

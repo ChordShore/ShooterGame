@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{3C01DBAE-75C4-F292-E828-199F3FB7FE3C}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{73EADF4C-F95E-A8FF-D5A1-7A544DDFDB8B}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>Weapons.bnk</Path>
@@ -41,6 +41,10 @@
 				<File Id="470590754" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AR_Shot_Tail_Spawn.wav</ShortName>
 					<CachePath>SFX/AR_Shot_Tail_Spawn_10C4C929.wem</CachePath>
+				</File>
+				<File Id="548026506" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Empty_Rattle.wav</ShortName>
+					<CachePath>SFX/AR_Empty_Rattle_10C4C929.wem</CachePath>
 				</File>
 				<File Id="624042849" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Reload.wav</ShortName>
@@ -118,6 +122,7 @@
 								<MediaRef Id="345176474"/>
 								<MediaRef Id="373309000"/>
 								<MediaRef Id="470590754"/>
+								<MediaRef Id="548026506"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -133,6 +138,7 @@
 								<MediaRef Id="228004887"/>
 								<MediaRef Id="345176474"/>
 								<MediaRef Id="373309000"/>
+								<MediaRef Id="548026506"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -148,6 +154,7 @@
 								<MediaRef Id="228004887"/>
 								<MediaRef Id="345176474"/>
 								<MediaRef Id="373309000"/>
+								<MediaRef Id="548026506"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -163,6 +170,7 @@
 								<MediaRef Id="228004887"/>
 								<MediaRef Id="345176474"/>
 								<MediaRef Id="373309000"/>
+								<MediaRef Id="548026506"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -178,6 +186,7 @@
 								<MediaRef Id="228004887"/>
 								<MediaRef Id="345176474"/>
 								<MediaRef Id="373309000"/>
+								<MediaRef Id="548026506"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -235,6 +244,9 @@
 					</SwitchContainers>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="2583655610" Name="PAR_AR_AmmoCount" ObjectPath="\Game Parameters\Weapons\PAR_AR_AmmoCount" GUID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="747849153" Name="STA_LocationMix" ObjectPath="\States\Default Work Unit\Highrise\STA_LocationMix" GUID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}">
 					<States>
@@ -256,5 +268,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2C63B275-B2AB-E8B7-91E6-EA1BEAE48AEF}</FileHash>
+	<FileHash>{8F23027F-2C1E-CEA7-4C99-8B15E1623351}</FileHash>
 </SoundBanksInfo>

@@ -369,6 +369,9 @@ protected:
 
 	void PlayEquipEvent();
 
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkRtpc* AmmoCount;
+
 	//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
 	//////////////////////////////////////////////////////////////////////////

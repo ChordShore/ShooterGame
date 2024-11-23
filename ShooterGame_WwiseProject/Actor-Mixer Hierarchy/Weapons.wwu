@@ -226,36 +226,6 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="Sine Pip_02" ID="{5AB67577-BBE0-443D-B8DF-999D262D9DBA}" ShortID="825750187">
-															<PropertyList>
-																<Property Name="Inclusion" Type="bool">
-																	<ValueList>
-																		<Value>False</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<SourcePlugin Name="Tone Generator" ID="{C11429A9-4A3F-4D17-8D20-90668E942F12}" ShortID="252295918" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
-																	<PropertyList>
-																		<Property Name="FixDur" Type="Real32" Value="0.1"/>
-																		<Property Name="StartFreq" Type="Real32" Value="700"/>
-																		<Property Name="WaveGain" Type="Real32" Value="-20"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																</SourcePlugin>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Tone Generator" ID="{C11429A9-4A3F-4D17-8D20-90668E942F12}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
 														<SwitchContainer Name="AR_Shot_Constructor" ID="{2EE9AAF2-43C7-4F77-B33A-F974882F3097}" ShortID="562757331">
 															<PropertyList>
 																<Property Name="GameAuxSendVolume" Type="Real64">
@@ -701,9 +671,117 @@
 																		</Sound>
 																	</ChildrenList>
 																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="AR_Empty_Rattle" ID="{BCBD4A0A-9A54-46DA-B0CF-CD9C2EDBDFF0}" ShortID="1061463292">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-2</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="AR_Empty_Rattle" ID="{96F5BB32-5064-4A79-AD71-E5F40E8A50C0}" ShortID="840372857">
+																			<PropertyList>
+																				<Property Name="GameAuxSendVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-6</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="ReflectionsVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-2</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+																					<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																				<Reference Name="ReflectionsAuxSend">
+																					<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="AR_Empty_Rattle" ID="{4CFA14E2-F5FE-44DC-BF92-72659C0918D6}">
+																					<Language>SFX</Language>
+																					<AudioFile>AR_Empty_Rattle.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="548026506"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="AR_Empty_Rattle" ID="{4CFA14E2-F5FE-44DC-BF92-72659C0918D6}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																	<ObjectLists>
+																		<ObjectList Name="RTPC">
+																			<Reference>
+																				<Local>
+																					<RTPC Name="" ID="{BDC6582C-096C-4642-9796-8C367C1DE183}" ShortID="184939335">
+																						<PropertyList>
+																							<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
+																						</PropertyList>
+																						<ReferenceList>
+																							<Reference Name="ControlInput">
+																								<ObjectRef Name="PAR_AR_AmmoCount" ID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																							</Reference>
+																							<Reference Name="Curve">
+																								<Custom>
+																									<Curve Name="" ID="{D4606F43-2BA8-4927-839F-5315768157F8}">
+																										<PropertyList>
+																											<Property Name="Flags" Type="int32" Value="3"/>
+																										</PropertyList>
+																										<PointList>
+																											<Point>
+																												<XPos>0</XPos>
+																												<YPos>0</YPos>
+																												<Flags>5</Flags>
+																												<SegmentShape>Exp2</SegmentShape>
+																											</Point>
+																											<Point>
+																												<XPos>15</XPos>
+																												<YPos>-192</YPos>
+																												<Flags>0</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>30</XPos>
+																												<YPos>-192</YPos>
+																												<Flags>37</Flags>
+																											</Point>
+																										</PointList>
+																									</Curve>
+																								</Custom>
+																							</Reference>
+																						</ReferenceList>
+																					</RTPC>
+																				</Local>
+																			</Reference>
+																		</ObjectList>
+																	</ObjectLists>
+																</RandomSequenceContainer>
 															</ChildrenList>
 															<GroupingInfo>
 																<GroupingBehaviorList>
+																	<GroupingBehavior>
+																		<ItemRef Name="AR_Empty_Rattle" ID="{BCBD4A0A-9A54-46DA-B0CF-CD9C2EDBDFF0}"/>
+																	</GroupingBehavior>
 																	<GroupingBehavior>
 																		<ItemRef Name="AR_Pulse" ID="{90D5D50E-2867-40FA-83E7-2173313A4871}"/>
 																	</GroupingBehavior>
@@ -735,6 +813,7 @@
 																			<ItemRef Name="AR_Pulse" ID="{90D5D50E-2867-40FA-83E7-2173313A4871}"/>
 																			<ItemRef Name="AR_Transient" ID="{7F03C511-DD00-46AB-96B4-C609226B82A5}"/>
 																			<ItemRef Name="AR_Tail_Spawn" ID="{FE55A18E-A2A2-4961-BC3D-8495FA84D956}"/>
+																			<ItemRef Name="AR_Empty_Rattle" ID="{BCBD4A0A-9A54-46DA-B0CF-CD9C2EDBDFF0}"/>
 																		</ItemList>
 																	</Grouping>
 																	<Grouping>
@@ -745,6 +824,7 @@
 																			<ItemRef Name="AR_Pulse" ID="{90D5D50E-2867-40FA-83E7-2173313A4871}"/>
 																			<ItemRef Name="AR_Transient" ID="{7F03C511-DD00-46AB-96B4-C609226B82A5}"/>
 																			<ItemRef Name="AR_Tail_Atrium" ID="{AB4A6077-9AEB-421E-BD89-3E445BF897BE}"/>
+																			<ItemRef Name="AR_Empty_Rattle" ID="{BCBD4A0A-9A54-46DA-B0CF-CD9C2EDBDFF0}"/>
 																		</ItemList>
 																	</Grouping>
 																	<Grouping>
@@ -755,6 +835,7 @@
 																			<ItemRef Name="AR_Pulse" ID="{90D5D50E-2867-40FA-83E7-2173313A4871}"/>
 																			<ItemRef Name="AR_Transient" ID="{7F03C511-DD00-46AB-96B4-C609226B82A5}"/>
 																			<ItemRef Name="AR_Tail_Atrium" ID="{AB4A6077-9AEB-421E-BD89-3E445BF897BE}"/>
+																			<ItemRef Name="AR_Empty_Rattle" ID="{BCBD4A0A-9A54-46DA-B0CF-CD9C2EDBDFF0}"/>
 																		</ItemList>
 																	</Grouping>
 																	<Grouping>
@@ -765,6 +846,7 @@
 																			<ItemRef Name="AR_Pulse" ID="{90D5D50E-2867-40FA-83E7-2173313A4871}"/>
 																			<ItemRef Name="AR_Transient" ID="{7F03C511-DD00-46AB-96B4-C609226B82A5}"/>
 																			<ItemRef Name="AR_Tail_Room" ID="{B338CAA1-C9EB-4FDE-BBE9-AB75B6E12D0A}"/>
+																			<ItemRef Name="AR_Empty_Rattle" ID="{BCBD4A0A-9A54-46DA-B0CF-CD9C2EDBDFF0}"/>
 																		</ItemList>
 																	</Grouping>
 																	<Grouping>
@@ -775,6 +857,7 @@
 																			<ItemRef Name="AR_Pulse" ID="{90D5D50E-2867-40FA-83E7-2173313A4871}"/>
 																			<ItemRef Name="AR_Transient" ID="{7F03C511-DD00-46AB-96B4-C609226B82A5}"/>
 																			<ItemRef Name="AR_Tail_Atrium" ID="{AB4A6077-9AEB-421E-BD89-3E445BF897BE}"/>
+																			<ItemRef Name="AR_Empty_Rattle" ID="{BCBD4A0A-9A54-46DA-B0CF-CD9C2EDBDFF0}"/>
 																		</ItemList>
 																	</Grouping>
 																</GroupingList>

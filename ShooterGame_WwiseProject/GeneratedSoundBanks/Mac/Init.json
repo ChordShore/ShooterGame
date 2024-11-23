@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{EBD1872A-8020-9ED6-4E71-11BC112F4D23}",
+    "Hash": "{2C5826D9-ECF9-2796-54C6-39C112F3D431}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -251,6 +251,12 @@
     ],
     "GameParameters": [
      {
+      "Id": "77780854",
+      "Name": "PAR_GL_AmmoCount",
+      "ObjectPath": "\\Game Parameters\\Weapons\\PAR_GL_AmmoCount",
+      "GUID": "{009857E8-11A8-4C0B-8F4B-67B3B3ABD96D}"
+     },
+     {
       "Id": "492872062",
       "Name": "PAR_Heartbeats",
       "ObjectPath": "\\Game Parameters\\Foley\\PAR_Heartbeats",
@@ -285,6 +291,12 @@
       "Name": "PAR_DopplerTest",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\PAR_DopplerTest",
       "GUID": "{0D9B0517-BBD5-43F7-B856-30943D58C338}"
+     },
+     {
+      "Id": "2583655610",
+      "Name": "PAR_AR_AmmoCount",
+      "ObjectPath": "\\Game Parameters\\Weapons\\PAR_AR_AmmoCount",
+      "GUID": "{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}"
      },
      {
       "Id": "2813573230",
@@ -897,6 +909,6 @@
     ]
    }
   ],
-  "FileHash": "{AEB8210D-4810-77DE-3B1E-7C313308B790}"
+  "FileHash": "{755FBA10-F142-E00C-4A10-423938FD5E0B}"
  }
 }

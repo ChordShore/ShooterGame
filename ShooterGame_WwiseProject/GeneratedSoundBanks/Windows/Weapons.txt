@@ -30,6 +30,9 @@ State	ID	Name	State Group			Notes
 	949156522	STA_Outdoors_Balcony_Center	STA_LocationMix			
 	1657765358	STA_Indoors_Room	STA_LocationMix			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2583655610	PAR_AR_AmmoCount			\Weapons\PAR_AR_AmmoCount	
+
 Effect plug-ins	ID	Name	Type				Notes
 	2080872166	Brick_Wall_Minus_6dB_Peak_Fast_Release	Wwise Peak Limiter			
 
@@ -43,6 +46,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	373309000	AR_Shot_Mech	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Shot_Mech_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\AR_Shot_LP\AR_Shot_Constructor\AR_Mech\AR_Shot_Mech		192096
 	432981530	AR_Target_Engage	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Aim_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Targeting\WEP_Targeting_Engage\WEP_Targeting_Engage_Switch\AR_Target_Engage		96096
 	470590754	AR_Shot_Tail_Spawn	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Shot_Tail_Spawn_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\AR_Shot_LP\AR_Shot_Constructor\AR_Tail_Spawn\AR_Shot_Tail_Spawn		768096
+	548026506	AR_Empty_Rattle	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Empty_Rattle_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\AR_Shot_LP\AR_Shot_Constructor\AR_Empty_Rattle\AR_Empty_Rattle		96096
 	624042849	GL_Reload	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\GL_Reload_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Reloading\WEP_Reload\GL_Reload\GL_Reload		552096
 	635329318	AR_Shot_InitialTransient	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Shot_InitialTransient_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\AR_Shot_InitialTransient		288096
 	669510815	GL_Equip	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\GL_Equip_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Handling\WEP_Equip\GL_Equip\GL_Equip		96096

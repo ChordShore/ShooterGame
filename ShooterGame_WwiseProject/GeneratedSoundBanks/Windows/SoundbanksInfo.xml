@@ -1063,7 +1063,7 @@
 				<Event Id="1322180291" Name="AMB_PhoneBox_ErrorRecording" ObjectPath="\Events\Ambience\Emitters\Highrise\PhoneBox\AMB_PhoneBox_ErrorRecording" GUID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}" MaxAttenuation="1800" DurationType="OneShot" DurationMin="10.017575" DurationMax="10.017575"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{B8C5043F-4D42-6E21-4646-C2BFD5E7599F}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{94036FA9-9244-AF88-8CF4-8A9BFF9AC269}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -1139,12 +1139,14 @@
 				</AuxBus>
 			</AuxBusses>
 			<GameParameters>
+				<GameParameter Id="77780854" Name="PAR_GL_AmmoCount" ObjectPath="\Game Parameters\Weapons\PAR_GL_AmmoCount" GUID="{009857E8-11A8-4C0B-8F4B-67B3B3ABD96D}"/>
 				<GameParameter Id="492872062" Name="PAR_Heartbeats" ObjectPath="\Game Parameters\Foley\PAR_Heartbeats" GUID="{1A7627A7-5A7D-470D-B1E0-2B091B679836}"/>
 				<GameParameter Id="866022863" Name="PAR_Doppler" ObjectPath="\Game Parameters\Ambience\PAR_Doppler" GUID="{D40C9741-1633-4046-A65F-904ED87051FE}"/>
 				<GameParameter Id="1139858337" Name="PAR_Velocity_Vertical" ObjectPath="\Game Parameters\Foley\PAR_Velocity_Vertical" GUID="{847E4FAC-FEC0-42D9-8F95-EB060A41AE44}"/>
 				<GameParameter Id="1714946050" Name="PAR_Breaths" ObjectPath="\Game Parameters\Foley\PAR_Breaths" GUID="{AD59135C-7832-4545-A14C-AA5DD622DAAC}"/>
 				<GameParameter Id="1791116251" Name="PAR_Wind" ObjectPath="\Game Parameters\Ambience\PAR_Wind" GUID="{5AA64F25-2B48-4F0C-8EF5-838EB08AB4B3}"/>
 				<GameParameter Id="1999698287" Name="PAR_DopplerTest" ObjectPath="\Game Parameters\Default Work Unit\PAR_DopplerTest" GUID="{0D9B0517-BBD5-43F7-B856-30943D58C338}"/>
+				<GameParameter Id="2583655610" Name="PAR_AR_AmmoCount" ObjectPath="\Game Parameters\Weapons\PAR_AR_AmmoCount" GUID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}"/>
 				<GameParameter Id="2813573230" Name="PAR_Velocity_Rotational" ObjectPath="\Game Parameters\Foley\PAR_Velocity_Rotational" GUID="{122AD508-BFE4-4689-9B19-CEE8F8B7A09D}"/>
 				<GameParameter Id="2940353649" Name="PAR_Distance_HoverCars_PS7" ObjectPath="\Game Parameters\Ambience\PAR_Distance_HoverCars_PS7" GUID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"/>
 				<GameParameter Id="2940353651" Name="PAR_Distance_HoverCars_PS5" ObjectPath="\Game Parameters\Ambience\PAR_Distance_HoverCars_PS5" GUID="{12811BF6-789D-4EFB-A3B6-2A817E909100}"/>
@@ -1316,7 +1318,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{3C01DBAE-75C4-F292-E828-199F3FB7FE3C}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="SFX" Hash="{73EADF4C-F95E-A8FF-D5A1-7A544DDFDB8B}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>Weapons.bnk</Path>
@@ -1356,6 +1358,10 @@
 				<File Id="470590754" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AR_Shot_Tail_Spawn.wav</ShortName>
 					<CachePath>SFX/AR_Shot_Tail_Spawn_10C4C929.wem</CachePath>
+				</File>
+				<File Id="548026506" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Empty_Rattle.wav</ShortName>
+					<CachePath>SFX/AR_Empty_Rattle_10C4C929.wem</CachePath>
 				</File>
 				<File Id="624042849" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Reload.wav</ShortName>
@@ -1433,6 +1439,7 @@
 								<MediaRef Id="345176474"/>
 								<MediaRef Id="373309000"/>
 								<MediaRef Id="470590754"/>
+								<MediaRef Id="548026506"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -1448,6 +1455,7 @@
 								<MediaRef Id="228004887"/>
 								<MediaRef Id="345176474"/>
 								<MediaRef Id="373309000"/>
+								<MediaRef Id="548026506"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -1463,6 +1471,7 @@
 								<MediaRef Id="228004887"/>
 								<MediaRef Id="345176474"/>
 								<MediaRef Id="373309000"/>
+								<MediaRef Id="548026506"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -1478,6 +1487,7 @@
 								<MediaRef Id="228004887"/>
 								<MediaRef Id="345176474"/>
 								<MediaRef Id="373309000"/>
+								<MediaRef Id="548026506"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -1493,6 +1503,7 @@
 								<MediaRef Id="228004887"/>
 								<MediaRef Id="345176474"/>
 								<MediaRef Id="373309000"/>
+								<MediaRef Id="548026506"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -1550,6 +1561,9 @@
 					</SwitchContainers>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="2583655610" Name="PAR_AR_AmmoCount" ObjectPath="\Game Parameters\Weapons\PAR_AR_AmmoCount" GUID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="747849153" Name="STA_LocationMix" ObjectPath="\States\Default Work Unit\Highrise\STA_LocationMix" GUID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}">
 					<States>
@@ -2485,5 +2499,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{76B42853-98FF-1C12-8C2A-D05D4B9A2233}</FileHash>
+	<FileHash>{DB8ABABF-E911-3B61-6CEF-885D58A0F593}</FileHash>
 </SoundBanksInfo>

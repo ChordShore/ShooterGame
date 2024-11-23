@@ -419,6 +419,10 @@ void AShooterWeapon::UseAmmo()
 			case EAmmoType::EBullet:
 			default:
 				PlayerState->AddBulletsFired(1);
+				//if (GEngine)
+					//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Ammo Used!"));
+					//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::FromInt(CurrentAmmoInClip));
+				UAkGameplayStatics::SetRTPCValue(AmmoCount, CurrentAmmoInClip, 0.0f, this, "PAR_AR_AmmoCount");
 				break;
 			}
 		}
