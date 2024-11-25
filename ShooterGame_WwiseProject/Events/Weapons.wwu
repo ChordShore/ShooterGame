@@ -81,7 +81,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="GL_Shoot" ID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}"/>
+								<Event Name="GL_Shoot_OS" ID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}"/>
 								<Event Name="AR_Shoot_Stop" ID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}">
 									<ChildrenList>
 										<Action Name="" ID="{17324EA3-D482-4A5C-BA32-CD83A4C215A0}" ShortID="717127282">
@@ -95,17 +95,21 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{72C4C8BC-D808-4137-8AF7-CF57F5ABD84D}" ShortID="218952285">
-											<PropertyList>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
+										<Action Name="" ID="{CA2EB287-AACD-4EB5-A7A4-E1C4469EC94A}" ShortID="563424572">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="AR_Tail_OS" ID="{0EBE41E5-4A4B-4693-B129-B1BE36733928}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+													<ObjectRef Name="AR_Empty_Constructor" ID="{235436DF-81EC-4E13-A145-0ECFA9463E4C}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="AR_Shoot_Empty" ID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}">
+									<ChildrenList>
+										<Action Name="" ID="{B7BF1219-F309-4423-A2F8-A8F8A8886E5F}" ShortID="479052453">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AR_Empty_BoltMech" ID="{7B20875A-B9FD-400A-BCD8-FD46A5EE24DD}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
