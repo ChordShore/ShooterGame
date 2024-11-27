@@ -145,6 +145,9 @@ protected:
 	/** get FX for material type */
 	UParticleSystem* GetImpactFX(TEnumAsByte<EPhysicalSurface> SurfaceType) const;
 
+	/** get switch for material type */
+	UAkSwitchValue* GetImpactSwitch(TEnumAsByte<EPhysicalSurface> SurfaceType) const;
+
 	/** get sound for material type */
 	USoundCue* GetImpactSound(TEnumAsByte<EPhysicalSurface> SurfaceType) const;
 };

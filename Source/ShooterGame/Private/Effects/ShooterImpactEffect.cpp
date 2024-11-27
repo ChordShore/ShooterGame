@@ -34,11 +34,18 @@ void AShooterImpactEffect::PostInitializeComponents()
 		UGameplayStatics::SpawnEmitterAtLocation(this, ImpactFX, GetActorLocation(), GetActorRotation());
 	}
 
+	//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+	// Wwise Switch & Event Calls
+
+	UAkGameplayStatics::SetSwitch(GetImpactSwitch(HitSurfaceType), this, "", "");
+	PlayBulletImpactEvent();
+
+	//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
 	// play sound
 	USoundCue* ImpactSound = GetImpactSound(HitSurfaceType);
 	if (ImpactSound)
 	{
-		PlayBulletImpactEvent();
 		UGameplayStatics::PlaySoundAtLocation(this, ImpactSound, GetActorLocation());
 	}
 
@@ -58,71 +65,82 @@ UParticleSystem* AShooterImpactEffect::GetImpactFX(TEnumAsByte<EPhysicalSurface>
 {
 	UParticleSystem* ImpactFX = NULL;
 
-	//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-	// Wwise Switch Calls
-
 	switch (SurfaceType)
 	{		
-		case SHOOTER_SURFACE_Concrete:
-			ImpactFX = ConcreteFX; 
-			UAkGameplayStatics::SetSwitch(Concrete, GetOwner(), "", "");
-			if (GEngine)
-				GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Concrete Switch!"));
-			break;
-		case SHOOTER_SURFACE_Dirt:		
-			ImpactFX = DirtFX; 
-			UAkGameplayStatics::SetSwitch(Dirt, GetOwner(), "", "");
-			if (GEngine)
-				GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Dirt Switch!"));
-			break;
-		case SHOOTER_SURFACE_Water:		
-			ImpactFX = WaterFX; 
-			UAkGameplayStatics::SetSwitch(Water, GetOwner(), "", "");
-			if (GEngine)
-				GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Water Switch!"));
-			break;
-		case SHOOTER_SURFACE_Metal:		
-			ImpactFX = MetalFX; 
-			UAkGameplayStatics::SetSwitch(Metal, GetOwner(), "", "");
-			if (GEngine)
-				GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Metal Switch!"));
-			break;
-		case SHOOTER_SURFACE_Wood:		
-			ImpactFX = WoodFX; 
-			UAkGameplayStatics::SetSwitch(Wood, GetOwner(), "", "");
-			if (GEngine)
-				GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Wood Switch!"));
-			break;
-		case SHOOTER_SURFACE_Grass:		
-			ImpactFX = GrassFX; 
-			UAkGameplayStatics::SetSwitch(Grass, GetOwner(), "", "");
-			if (GEngine)
-				GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Grass Switch!"));
-			break;
-		case SHOOTER_SURFACE_Glass:		
-			ImpactFX = GlassFX; 
-			UAkGameplayStatics::SetSwitch(Glass, GetOwner(), "", "");
-			if (GEngine)
-				GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Glass Switch!"));
-			break;
-		case SHOOTER_SURFACE_Flesh:		
-			ImpactFX = FleshFX; 
-			UAkGameplayStatics::SetSwitch(Flesh, GetOwner(), "", "");
-			if (GEngine)
-				GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Flesh Switch!"));
-			break;
-		default:						
-			ImpactFX = DefaultFX; 
-			UAkGameplayStatics::SetSwitch(Tile, GetOwner(), "", "");
-			if (GEngine)
-				GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Default Switch!"));
-			break;
+		case SHOOTER_SURFACE_Concrete:	ImpactFX = ConcreteFX; break;
+		case SHOOTER_SURFACE_Dirt:		ImpactFX = DirtFX; break;
+		case SHOOTER_SURFACE_Water:		ImpactFX = WaterFX; break;
+		case SHOOTER_SURFACE_Metal:		ImpactFX = MetalFX; break;
+		case SHOOTER_SURFACE_Wood:		ImpactFX = WoodFX; break;
+		case SHOOTER_SURFACE_Grass:		ImpactFX = GrassFX; break;
+		case SHOOTER_SURFACE_Glass:		ImpactFX = GlassFX; break;
+		case SHOOTER_SURFACE_Flesh:		ImpactFX = FleshFX; break;
+		default:						ImpactFX = DefaultFX; break;
 	}
-
-	//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 	
 	return ImpactFX;
 }
+
+//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+// Wwise Switch Calls
+
+UAkSwitchValue* AShooterImpactEffect::GetImpactSwitch(TEnumAsByte<EPhysicalSurface> SurfaceType) const
+{
+	UAkSwitchValue* CurrentMaterial = NULL;
+
+	switch (SurfaceType)
+	{
+		case SHOOTER_SURFACE_Concrete:	
+			//if (GEngine)
+				//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Concrete Switch!"));
+			CurrentMaterial = Concrete; 
+			break;
+		case SHOOTER_SURFACE_Dirt:		
+			//if (GEngine)
+				//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Water Switch!"));
+			CurrentMaterial = Dirt; 
+			break;
+		case SHOOTER_SURFACE_Water:		
+			//if (GEngine)
+				//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Water Switch!"));
+			CurrentMaterial = Water; 
+			break;
+		case SHOOTER_SURFACE_Metal:		
+			//if (GEngine)
+				//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Metal Switch!"));
+			CurrentMaterial = Metal; 
+			break;
+		case SHOOTER_SURFACE_Wood:		
+			//if (GEngine)
+				//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Wood Switch!"));
+			CurrentMaterial = Wood; 
+			break;
+		case SHOOTER_SURFACE_Grass:		
+			//if (GEngine)
+				//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Grass Switch!"));
+			CurrentMaterial = Grass; 
+			break;
+		case SHOOTER_SURFACE_Glass:		
+			//if (GEngine)
+				//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Glass Switch!"));
+			CurrentMaterial = Glass; 
+			break;
+		case SHOOTER_SURFACE_Flesh:		
+			//if (GEngine)
+				//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Flesh Switch!"));
+			CurrentMaterial = Flesh; 
+			break;
+		default:						
+			//if (GEngine)
+				//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Set Default Switch!"));
+			CurrentMaterial = Tile; 
+			break;
+	}
+
+	return CurrentMaterial;
+}
+
+//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
 USoundCue* AShooterImpactEffect::GetImpactSound(TEnumAsByte<EPhysicalSurface> SurfaceType) const
 {
