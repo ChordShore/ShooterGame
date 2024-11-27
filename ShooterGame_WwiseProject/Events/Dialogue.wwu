@@ -4,6 +4,11 @@
 		<WorkUnit Name="Dialogue" ID="{50D00CD0-5352-4FBE-AC85-F57EB1BEA333}" PersistMode="Standalone">
 			<PropertyList>
 				<Property Name="Color" Type="int16" Value="11"/>
+				<Property Name="Inclusion" Type="bool">
+					<ValueList>
+						<Value>False</Value>
+					</ValueList>
+				</Property>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 		</WorkUnit>

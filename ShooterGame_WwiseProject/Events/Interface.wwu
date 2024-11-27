@@ -4,6 +4,11 @@
 		<WorkUnit Name="Interface" ID="{D4B16DE2-449B-4661-9FB3-3FC222FD4A9F}" PersistMode="Standalone">
 			<PropertyList>
 				<Property Name="Color" Type="int16" Value="13"/>
+				<Property Name="Inclusion" Type="bool">
+					<ValueList>
+						<Value>False</Value>
+					</ValueList>
+				</Property>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>

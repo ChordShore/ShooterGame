@@ -4,6 +4,13 @@
   "BasePlatform": "Mac",
   "PluginLibs": [
    {
+    "LibName": "Wwise Silence",
+    "LibId": "6619138",
+    "Type": "Source",
+    "DLL": "AkSilenceGenerator",
+    "StaticLib": "AkSilenceSource"
+   },
+   {
     "LibName": "Wwise Tone Generator",
     "LibId": "6684674",
     "Type": "Source",
@@ -42,6 +49,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{CAC17B02-0E30-FE17-FF45-92001B94AC4F}"
+  "FileHash": "{0572B30C-3DCD-9580-456B-1585744579D2}"
  }
 }

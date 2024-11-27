@@ -41,7 +41,17 @@
 					<ChildrenList>
 						<Folder Name="Impact" ID="{0D7078B8-AB17-44FE-910C-C990EA663D3E}" ShortID="1014513988">
 							<ChildrenList>
-								<Event Name="AR_Impact_OS" ID="{873F24AE-5010-4080-8DFB-1C765AEC4801}"/>
+								<Event Name="AR_Impact_OS" ID="{873F24AE-5010-4080-8DFB-1C765AEC4801}">
+									<ChildrenList>
+										<Action Name="" ID="{CFA20DA7-4E23-41F2-9A9A-7CC1F4F760E7}" ShortID="344565040">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AR_Impact_Materials" ID="{EFDC6472-EAA5-4784-BA50-B490A906FCFA}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 								<Event Name="GL_Impact_OS" ID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}"/>
 							</ChildrenList>
 						</Folder>

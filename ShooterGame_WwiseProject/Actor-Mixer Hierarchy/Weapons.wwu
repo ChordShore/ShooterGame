@@ -160,6 +160,13 @@
 						<Folder Name="Shooting" ID="{FA0BFD2F-71CF-4C74-8B54-DF095950816E}" ShortID="336719472">
 							<ChildrenList>
 								<ActorMixer Name="WEP_Shoot" ID="{4AF50236-552A-474D-8A81-21368185C6BD}" ShortID="205194726">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -395,12 +402,12 @@
 																										<PointList>
 																											<Point>
 																												<XPos>0</XPos>
-																												<YPos>-0</YPos>
+																												<YPos>0</YPos>
 																												<Flags>5</Flags>
 																											</Point>
 																											<Point>
 																												<XPos>1</XPos>
-																												<YPos>-0</YPos>
+																												<YPos>0</YPos>
 																												<Flags>0</Flags>
 																											</Point>
 																											<Point>
@@ -1233,7 +1240,15 @@
 									</ReferenceList>
 									<ChildrenList>
 										<ActorMixer Name="AR_Impact" ID="{AA5FF3F7-944D-45AA-846C-E2DE9640F6A3}" ShortID="656534589">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATN_AR_Projectile_Impact" ID="{A6F138D4-4DF0-42FB-BA90-11E5F2E1F8C7}" WorkUnitID="{20BE0795-7455-4CA3-828E-F9A931FD597B}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 												</Reference>
@@ -1243,9 +1258,19 @@
 											</ReferenceList>
 											<ChildrenList>
 												<SwitchContainer Name="AR_Impact_Materials" ID="{EFDC6472-EAA5-4784-BA50-B490A906FCFA}" ShortID="534724478">
+													<PropertyList>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="M_Tile" ID="{B4FDF75B-8B11-4F10-9CA5-B65DC3769474}" WorkUnitID="{ECB4FF3E-F275-463C-9725-86A07FDE6049}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
@@ -1256,6 +1281,21 @@
 													</ReferenceList>
 													<ChildrenList>
 														<RandomSequenceContainer Name="AR_Impact_Glass" ID="{362796CF-7A0E-4DCE-B0F4-687C282BA2E2}" ShortID="952311101">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{96ECF0A1-02B1-4D7C-9CF9-78A75B1F70BF}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="100"/>
+																					<Property Name="Min" Type="Real64" Value="-100"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -1264,8 +1304,359 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																</Reference>
 															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="WEP_AR_Impact_Glass_01" ID="{96ED7C3A-50FF-4ECB-8D65-79EE844DA420}" ShortID="619224116">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Glass" ID="{D1042E36-2CA9-47E3-B331-0BCBBD4B229B}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25873062452972"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.25873062452972"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Glass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="1050382712"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Glass" ID="{D1042E36-2CA9-47E3-B331-0BCBBD4B229B}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Glass_02" ID="{14051559-D403-406E-9270-77690636E34D}" ShortID="389146398">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Glass" ID="{A653F954-AE14-49AA-9EF0-676CB7DF4C54}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25873062452972"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.23798231753198"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.51054514672686"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Glass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="125279518"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Glass" ID="{A653F954-AE14-49AA-9EF0-676CB7DF4C54}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Glass_03" ID="{7CA54CC8-5E03-4DE8-B605-4DA36B3E6F5F}" ShortID="488201587">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Glass" ID="{000E6E89-B0AE-4597-B0F0-E3FDD1005935}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25873062452972"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.4967129420617"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.80385628291949"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Glass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="49084382"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Glass" ID="{000E6E89-B0AE-4597-B0F0-E3FDD1005935}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Glass_04" ID="{B0797DE6-A003-46F8-9191-75719A80590A}" ShortID="965563442">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Glass" ID="{2B8E55D5-1512-46BE-A280-4C062842FABE}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25873062452972"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.80385628291949"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="5.0695030097818"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Glass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="772788603"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Glass" ID="{2B8E55D5-1512-46BE-A280-4C062842FABE}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Glass_05" ID="{09A37D59-FD9E-4376-B3C3-066B692FF1BB}" ShortID="598787968">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Glass" ID="{3CF3128C-A595-440D-A559-EB2CDB37A6B3}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25873062452972"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="5.04183860045147"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="6.35589804364184"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Glass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="578759834"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Glass" ID="{3CF3128C-A595-440D-A559-EB2CDB37A6B3}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Glass_06" ID="{EF349F79-5ACF-4D89-8809-FD14F299807E}" ShortID="973247686">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Glass" ID="{E865A5CC-5003-4873-8573-5F762F41840F}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25873062452972"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="6.34898194130926"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="7.63537697516931"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Glass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="502368110"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Glass" ID="{E865A5CC-5003-4873-8573-5F762F41840F}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Glass_07" ID="{095D74DE-E9FC-4F38-BD33-D2E65FB0F4EB}" ShortID="652700229">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Glass" ID="{9F3B9E2F-312E-48DB-AE9D-3EF306837812}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25873062452972"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="7.60771256583898"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="8.91485590669678"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Glass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="502639675"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Glass" ID="{9F3B9E2F-312E-48DB-AE9D-3EF306837812}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Glass_08" ID="{7D818F02-7E9D-4CE6-BA52-F538DBBF4E59}" ShortID="355254776">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Glass" ID="{6219FC5B-05FA-4EF7-8E18-F1EEB503D94B}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25873062452973"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="8.9010237020316"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="10.1805026335591"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Glass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="891167383"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Glass" ID="{6219FC5B-05FA-4EF7-8E18-F1EEB503D94B}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Glass_09" ID="{2950F931-401D-4789-BEA6-F41B12925166}" ShortID="1035389699">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Glass" ID="{5792D57C-0E11-4C72-A749-10095880CB6E}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25873062452973"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="10.1874187358916"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="11.4599815650865"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Glass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="435584254"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Glass" ID="{5792D57C-0E11-4C72-A749-10095880CB6E}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Glass_10" ID="{0A2EA97E-4076-49C2-ADD5-262279A82152}" ShortID="254431384">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Glass" ID="{A2B64A5D-EFF1-4885-9A23-3396252EA5FE}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25873062452973"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="11.4461493604214"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="12.7325443942814"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Glass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="713162547"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Glass" ID="{A2B64A5D-EFF1-4885-9A23-3396252EA5FE}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Glass_11" ID="{796CAD0F-5C62-4D65-84C7-9E8DE76D69CD}" ShortID="491564808">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Glass" ID="{0148062A-74EE-4012-8850-7BEA08CB3FB1}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25873062452973"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="12.7325443942814"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="14.0189394281415"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Glass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="954200902"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Glass" ID="{0148062A-74EE-4012-8850-7BEA08CB3FB1}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Glass_12" ID="{F0B90D62-3BE7-4086-A895-5FF96419B899}" ShortID="863811715">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Glass" ID="{378CEF3F-1B83-4CCA-8B7A-4046116D0A05}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25873062452973"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="13.9981911211437"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Glass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="519715684"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Glass" ID="{378CEF3F-1B83-4CCA-8B7A-4046116D0A05}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="AR_Impact_Grass" ID="{2D4D0B06-5E9C-41E5-822B-699745F145C8}" ShortID="1026593347">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{21F36B1C-DD8C-4276-9239-E4DD823173B2}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="100"/>
+																					<Property Name="Min" Type="Real64" Value="-100"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -1274,8 +1665,359 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																</Reference>
 															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="WEP_AR_Impact_Grass_01" ID="{7D7072C2-5F35-4CDD-8CF1-A71A022E7998}" ShortID="1029052204">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Grass" ID="{E7BB3FAA-4993-490E-B710-880797A257D1}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.24489841986456"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.24489841986456"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Grass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="826746919"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Grass" ID="{E7BB3FAA-4993-490E-B710-880797A257D1}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Grass_02" ID="{0973FCAF-027D-48B7-9F52-49039D09CC40}" ShortID="549353147">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Grass" ID="{2286D3E2-0DD5-43E5-A3CC-41BCC6ED339B}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.24489841986456"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.24489841986456"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.51746124905945"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Grass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="745025731"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Grass" ID="{2286D3E2-0DD5-43E5-A3CC-41BCC6ED339B}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Grass_03" ID="{772FDE1D-8155-4447-B984-4F9FA371A2F0}" ShortID="207054801">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Grass" ID="{D35BD4C7-FC1E-4AE7-B431-DB44276C3AA2}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.24489841986456"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.51054514672686"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.79694018058691"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Grass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="491179187"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Grass" ID="{D35BD4C7-FC1E-4AE7-B431-DB44276C3AA2}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Grass_04" ID="{54CE2A8B-631B-4C27-A58B-706ECA0EAA42}" ShortID="1029786811">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Grass" ID="{668B7555-C625-4853-9CCD-549F92534B4C}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.24489841986456"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.79002407825433"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="5.07641911211437"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Grass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="650928932"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Grass" ID="{668B7555-C625-4853-9CCD-549F92534B4C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Grass_05" ID="{893D0C16-1A82-4A69-8C35-885137CAA972}" ShortID="1049869632">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Grass" ID="{1563F2AA-3567-473C-93B9-804D4222AB79}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.24489841986456"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="5.06950300978179"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="6.35589804364184"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Grass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="993604397"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Grass" ID="{1563F2AA-3567-473C-93B9-804D4222AB79}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Grass_06" ID="{87ABBB88-C632-4247-9C6A-624B91D381A8}" ShortID="478712300">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Grass" ID="{A402D26C-9692-4FE8-A8B8-E800D1D32203}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.24489841986456"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="6.34206583897668"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="7.61462866817156"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Grass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="286257198"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Grass" ID="{A402D26C-9692-4FE8-A8B8-E800D1D32203}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Grass_07" ID="{091F9119-5BE1-46CB-9CE2-5332CA78D2C5}" ShortID="347743887">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Grass" ID="{6843DF72-662E-4B1A-B014-C7A5B4B5BDD8}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.24489841986456"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="7.61462866817156"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="8.90793980436418"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Grass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="173902783"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Grass" ID="{6843DF72-662E-4B1A-B014-C7A5B4B5BDD8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Grass_08" ID="{91AD297E-590E-40DD-9E79-FFC236065D71}" ShortID="677042204">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Grass" ID="{E26397A9-C7C1-4005-A9C2-6A8C7E80FB9E}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.24489841986456"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="8.9010237020316"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="10.1735865312265"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Grass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="448085293"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Grass" ID="{E26397A9-C7C1-4005-A9C2-6A8C7E80FB9E}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Grass_09" ID="{3ED79186-7EB5-424D-BC76-1FBD5A196B37}" ShortID="902455308">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Grass" ID="{7CF72EC7-B2DE-4596-8744-8BD5F5A9E3A4}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.24489841986456"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="10.1805026335591"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="11.4668976674191"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Grass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="718995715"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Grass" ID="{7CF72EC7-B2DE-4596-8744-8BD5F5A9E3A4}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Grass_10" ID="{E7A1A4D8-9BB2-4A4B-AB8D-4FE970FC705F}" ShortID="141036113">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Grass" ID="{6ED3E38D-67F4-457A-98DC-395576F27DA5}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.24489841986456"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="11.4461493604214"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="12.7325443942814"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Grass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="94164344"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Grass" ID="{6ED3E38D-67F4-457A-98DC-395576F27DA5}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Grass_11" ID="{A6F1CEA0-3188-4425-88E1-BD3257AA703A}" ShortID="174500465">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Grass" ID="{31746DCF-018A-4061-B050-A42791234DCC}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.24489841986456"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="12.7256282919488"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="14.0189394281415"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Grass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="643117582"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Grass" ID="{31746DCF-018A-4061-B050-A42791234DCC}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Grass_12" ID="{FEF83B49-8773-45E2-A1FA-A1D3478737CD}" ShortID="562054962">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Grass" ID="{61E437CB-558F-47CD-A4F3-41DF7C1917F8}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.24489841986456"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="13.977442814146"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Grass.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="88459464"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Grass" ID="{61E437CB-558F-47CD-A4F3-41DF7C1917F8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="AR_Impact_Metal" ID="{7FEA44F1-55CE-4E59-9BF0-D87EFC65C7CF}" ShortID="965112881">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{2DAEFF7E-45C3-4F76-956B-13FEB68090F6}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="100"/>
+																					<Property Name="Min" Type="Real64" Value="-100"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -1284,8 +2026,359 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																</Reference>
 															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="WEP_AR_Impact_Metal_01" ID="{C316C292-BE64-46CD-B8C4-8B5455E26CF1}" ShortID="985364287">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Metal" ID="{A774FAE5-0678-485F-89BD-B09861D84DC3}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.23798231753198"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.23798231753198"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Metal.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="253415750"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Metal" ID="{A774FAE5-0678-485F-89BD-B09861D84DC3}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Metal_02" ID="{3E9379A4-FC59-415E-ADF3-39E9758D047B}" ShortID="403485429">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Metal" ID="{5410E6DF-8BAA-48BF-959F-BC3F12FA3FB9}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.23798231753198"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.22415011286682"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.53820955605719"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Metal.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="601057526"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Metal" ID="{5410E6DF-8BAA-48BF-959F-BC3F12FA3FB9}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Metal_03" ID="{9BDA2E49-E24F-4FAA-8D0A-3168CFAD39DD}" ShortID="601901471">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Metal" ID="{5B4E49FB-30BF-44EC-AB70-E61FCCF68A7C}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.23798231753198"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.50362904439428"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.79002407825433"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Metal.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="1020111277"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Metal" ID="{5B4E49FB-30BF-44EC-AB70-E61FCCF68A7C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Metal_04" ID="{E125D975-2BCC-4534-A8A2-00F11C381034}" ShortID="209441159">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Metal" ID="{F3C54CC8-8982-46BF-9EC7-D876C87AF584}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.23798231753198"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.79002407825433"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="5.07641911211437"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Metal.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="340692458"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Metal" ID="{F3C54CC8-8982-46BF-9EC7-D876C87AF584}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Metal_05" ID="{907F2836-6A72-4FCC-BBC1-DCEA0B865F39}" ShortID="574257454">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Metal" ID="{C1BBC99C-8E64-4B6B-9531-8C4C3E2E5ABE}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.23798231753198"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="5.06258690744921"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="6.35589804364184"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Metal.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="45099652"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Metal" ID="{C1BBC99C-8E64-4B6B-9531-8C4C3E2E5ABE}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Metal_06" ID="{33CB8200-A171-4110-8651-7950F1F65A1B}" ShortID="550965056">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Metal" ID="{46AD0AF1-1C2D-43DA-B840-16F485BEA431}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.23798231753198"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="6.3351497366441"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="7.6353769751693"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Metal.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="565627633"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Metal" ID="{46AD0AF1-1C2D-43DA-B840-16F485BEA431}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Metal_07" ID="{DACA898A-AD8B-4B16-8BCE-6663538A8843}" ShortID="674234714">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Metal" ID="{AA0365D0-E8F4-4F51-AB57-1CC4E3D91CF0}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.23798231753198"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="7.62154477050414"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="8.90793980436418"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Metal.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="375528492"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Metal" ID="{AA0365D0-E8F4-4F51-AB57-1CC4E3D91CF0}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Metal_08" ID="{212991F2-CF0D-4577-A445-A3B12016BB3D}" ShortID="594045166">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Metal" ID="{39EAF28E-6284-406B-A99B-8A104BE43E91}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.23798231753198"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="8.89410759969903"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="10.1805026335591"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Metal.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="508430474"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Metal" ID="{39EAF28E-6284-406B-A99B-8A104BE43E91}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Metal_09" ID="{4A62152D-2612-45E7-B66C-DA223BC4488E}" ShortID="908491786">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Metal" ID="{FB8282E2-A5C8-48DF-9F0C-74BDD7ABBBA7}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.23798231753198"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="10.1735865312265"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="11.4599815650865"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Metal.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="45919945"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Metal" ID="{FB8282E2-A5C8-48DF-9F0C-74BDD7ABBBA7}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Metal_10" ID="{CCA1EC25-73B2-4D0A-9D10-89E224FB84F6}" ShortID="609568784">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Metal" ID="{1CFC646C-2E00-4B86-A4C1-7486AA8A2E3A}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.23798231753198"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="11.4254010534236"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="12.7256282919488"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Metal.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="723972485"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Metal" ID="{1CFC646C-2E00-4B86-A4C1-7486AA8A2E3A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Metal_11" ID="{2A683C14-1A68-4B14-9206-F29EF826C51C}" ShortID="945301527">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Metal" ID="{D397D38F-D7F6-44E3-992E-D7C63BFDE19D}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.23798231753198"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="12.7117960872837"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="14.0120233258089"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Metal.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="1013597634"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Metal" ID="{D397D38F-D7F6-44E3-992E-D7C63BFDE19D}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Metal_12" ID="{99B7D66B-75E7-4E6F-B0D2-B450A0728174}" ShortID="708709045">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Metal" ID="{74CD1315-F29D-4D5D-9DAD-694CDEB38A78}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.23798231753198"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="13.977442814146"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Metal.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="392185353"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Metal" ID="{74CD1315-F29D-4D5D-9DAD-694CDEB38A78}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="AR_Impact_Tile" ID="{331CCE1C-8648-44F4-A514-19E40E89E67A}" ShortID="8039580">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{EAC51FAF-DBE9-43A8-BD62-53AE59B63684}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="100"/>
+																					<Property Name="Min" Type="Real64" Value="-100"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -1294,8 +2387,359 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																</Reference>
 															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="WEP_AR_Impact_Tile_01" ID="{181C42DD-FE35-4997-A7D1-BB694B21D310}" ShortID="349968409">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Tile" ID="{CE1FCFFC-A767-464C-B64A-50E3EA872696}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.2310662151994"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.2310662151994"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Tile.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="104580085"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Tile" ID="{CE1FCFFC-A767-464C-B64A-50E3EA872696}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Tile_02" ID="{01ABC86C-FBD2-4F11-ADB3-65F77D8A91BB}" ShortID="1040844011">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Tile" ID="{C9781D52-86E3-487A-8717-D99AEC175EEA}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.2310662151994"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.2310662151994"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.52437735139203"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Tile.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="137651490"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Tile" ID="{C9781D52-86E3-487A-8717-D99AEC175EEA}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Tile_03" ID="{7E5EB180-9A74-47FC-8F6A-9B704643EF83}" ShortID="11885057">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Tile" ID="{E41E12FA-984C-4D1E-AF1F-38D8DE747F54}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.2310662151994"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.47596463506396"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.79002407825433"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Tile.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="583749861"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Tile" ID="{E41E12FA-984C-4D1E-AF1F-38D8DE747F54}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Tile_04" ID="{479DF457-E006-435C-AE3C-32A020D2C9F8}" ShortID="658492386">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Tile" ID="{10452C73-3D8B-46AD-830B-F063F131F02F}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.2310662151994"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.79002407825433"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="5.05567080511663"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Tile.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="434620812"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Tile" ID="{10452C73-3D8B-46AD-830B-F063F131F02F}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Tile_05" ID="{C3F1E2ED-6799-41AA-93E8-E5F6D6EFA256}" ShortID="258640887">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Tile" ID="{4492F7FF-B228-4E8E-82DB-08FC9A87CAD5}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.2310662151994"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="5.04875470278405"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="6.34898194130926"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Tile.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="776609040"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Tile" ID="{4492F7FF-B228-4E8E-82DB-08FC9A87CAD5}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Tile_06" ID="{FF2533F1-2A8D-4EAA-9901-4FE5DDF34043}" ShortID="327064218">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Tile" ID="{AB3CF474-11CB-4BED-BEB0-730718D34B24}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.2310662151994"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="6.30748532731377"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="7.6007964635064"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Tile.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="315119022"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Tile" ID="{AB3CF474-11CB-4BED-BEB0-730718D34B24}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Tile_07" ID="{69A449EA-631A-4F3A-8522-2ACD975A81B2}" ShortID="629461311">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Tile" ID="{9BBB3D51-201E-4482-BA6A-ED34A975A447}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.2310662151994"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="7.6007964635064"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="8.89410759969902"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Tile.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="125544455"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Tile" ID="{9BBB3D51-201E-4482-BA6A-ED34A975A447}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Tile_08" ID="{976F3BDE-E9A5-435F-AD07-A19CFB15F5B9}" ShortID="880845926">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Tile" ID="{DE2D5CD4-8483-4308-9C35-7F0202EC8B74}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.2310662151994"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="8.90102370203161"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="10.1943348382242"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Tile.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="1046176772"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Tile" ID="{DE2D5CD4-8483-4308-9C35-7F0202EC8B74}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Tile_09" ID="{F051E153-BC86-4F1E-A10F-96DC1A3C45A9}" ShortID="219881861">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Tile" ID="{BC23A337-C77C-4126-BB4B-B2F34D0037E8}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.2310662151994"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="10.1666704288939"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="11.4599815650865"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Tile.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="555455356"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Tile" ID="{BC23A337-C77C-4126-BB4B-B2F34D0037E8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Tile_10" ID="{9FA5EE2A-8AAE-495F-9520-8012CD08FA0C}" ShortID="678719853">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Tile" ID="{2FC407D1-20DB-4C3A-AC49-BDBB401E1EFF}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.2310662151994"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="11.4392332580888"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="12.7325443942814"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Tile.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="157149023"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Tile" ID="{2FC407D1-20DB-4C3A-AC49-BDBB401E1EFF}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Tile_11" ID="{04CB70AA-A61D-4C85-89AF-48467E0BF7E4}" ShortID="537441604">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Tile" ID="{3A9FAD94-B93E-42F3-A02B-96EBAFEE66A8}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.2310662151994"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="12.7187121896163"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="14.0120233258089"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Tile.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="256862727"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Tile" ID="{3A9FAD94-B93E-42F3-A02B-96EBAFEE66A8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Tile_12" ID="{01EE6EA4-0F67-4C5D-9801-AF8DE9AB5878}" ShortID="531243933">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Tile" ID="{80ED1B51-F0B7-413E-A634-FC32F4BE3B9C}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.2310662151994"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="14.0051072234763"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Tile.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="175573853"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Tile" ID="{80ED1B51-F0B7-413E-A634-FC32F4BE3B9C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="AR_Impact_Flesh" ID="{1DF4F8DB-E431-4BF6-B1C4-A854DD7285A5}" ShortID="756857855">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{F403F0F8-00E5-40DA-9D56-69FDDD7436A6}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="100"/>
+																					<Property Name="Min" Type="Real64" Value="-100"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -1304,12 +2748,1300 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																</Reference>
 															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="WEP_AR_Impact_Flesh_01" ID="{82EC2D31-E531-4738-B053-01011EFEAB07}" ShortID="360104227">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Flesh" ID="{AA38ED28-9E2C-44A6-993B-FDF7F0E82765}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25181452219714"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.25181452219714"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Flesh.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="300548913"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Flesh" ID="{AA38ED28-9E2C-44A6-993B-FDF7F0E82765}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Flesh_02" ID="{3F738182-D7D3-4C81-9AF2-C77CBCA96D60}" ShortID="686480204">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Flesh" ID="{CE3AD4BB-8116-41FC-8944-B24D5D404188}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25181452219714"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.24489841986456"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.53820955605719"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Flesh.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="970865366"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Flesh" ID="{CE3AD4BB-8116-41FC-8944-B24D5D404188}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Flesh_03" ID="{168CC06E-A91C-4592-8F01-7B86AEBD6377}" ShortID="1029508369">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Flesh" ID="{46A644C7-E214-42F0-ADBF-C133B085117C}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25181452219714"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.53129345372461"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.79002407825433"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Flesh.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="363327242"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Flesh" ID="{46A644C7-E214-42F0-ADBF-C133B085117C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Flesh_04" ID="{88C48FB4-27F4-4435-9087-74761D4E3C32}" ShortID="900440255">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Flesh" ID="{F3A066B9-E366-4E03-8183-EFE8F1BD5A94}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25181452219714"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.79694018058691"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="5.09025131677954"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Flesh.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="424618199"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Flesh" ID="{F3A066B9-E366-4E03-8183-EFE8F1BD5A94}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Flesh_05" ID="{062E36F1-B4C7-4F26-83B3-E30368C5DBDE}" ShortID="99912135">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Flesh" ID="{6E89108C-8F7C-4DAB-8254-DA4434CE23AD}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25181452219714"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="5.07641911211438"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="6.35589804364184"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Flesh.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="87576484"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Flesh" ID="{6E89108C-8F7C-4DAB-8254-DA4434CE23AD}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Flesh_06" ID="{BDF38D51-D4B6-4C51-9CCE-F4D799D12CD1}" ShortID="752175459">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Flesh" ID="{198700A6-5632-418C-AB15-08944F1E0661}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25181452219714"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="6.34206583897668"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="7.62154477050414"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Flesh.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="1043739804"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Flesh" ID="{198700A6-5632-418C-AB15-08944F1E0661}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Flesh_07" ID="{D7C6B7B5-3B5E-4FF5-92BE-0C8603EA4AAE}" ShortID="675111845">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Flesh" ID="{207355CF-A0DA-439E-BCC9-C04A636A82C8}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25181452219714"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="7.61462866817156"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="8.92177200902935"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Flesh.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="1059409407"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Flesh" ID="{207355CF-A0DA-439E-BCC9-C04A636A82C8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Flesh_08" ID="{968B3156-0BF7-45D8-9A34-DE3A7D350112}" ShortID="161658447">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Flesh" ID="{AA89FDE5-448A-46CA-BF53-576A58544138}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25181452219714"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="8.92868811136193"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="10.1943348382242"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Flesh.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="1054821943"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Flesh" ID="{AA89FDE5-448A-46CA-BF53-576A58544138}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Flesh_09" ID="{3D71D996-7C36-4A42-B463-FA59975C7AFC}" ShortID="787580319">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Flesh" ID="{0322591D-3716-44BA-A4A7-807C02304998}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25181452219714"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="10.1666704288939"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="11.4599815650865"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Flesh.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="931298175"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Flesh" ID="{0322591D-3716-44BA-A4A7-807C02304998}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Flesh_10" ID="{70100DC9-6446-4DEF-B455-6B3A642A999A}" ShortID="625728887">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Flesh" ID="{7DA0F595-7248-4AE1-AF52-52A14F7A8A69}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25181452219714"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="11.4461493604214"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="12.7463765989466"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Flesh.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="424697877"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Flesh" ID="{7DA0F595-7248-4AE1-AF52-52A14F7A8A69}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Flesh_11" ID="{3F3D515D-11E6-4E8E-BE1A-E8047091403B}" ShortID="176294842">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Flesh" ID="{852A9EF8-71BE-403F-9662-9536CFC2CB44}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25181452219714"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="12.7117960872837"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="13.9981911211437"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Flesh.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="885452196"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Flesh" ID="{852A9EF8-71BE-403F-9662-9536CFC2CB44}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Flesh_12" ID="{1BA6E133-3FE3-4130-BDD4-075A392EF173}" ShortID="867606432">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Flesh" ID="{74483F81-F8A2-4126-89B6-F5DC0BD1D068}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.25181452219714"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="14.0120233258089"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Flesh.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="212130178"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Flesh" ID="{74483F81-F8A2-4126-89B6-F5DC0BD1D068}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="AR_Impact_Ricochet" ID="{86404414-7466-4D08-AD8A-988D8A387A48}" ShortID="844477741">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="InitialDelay" Type="Real64">
+																	<ValueList>
+																		<Value>0.3</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MakeUpGain" Type="Real64">
+																	<ValueList>
+																		<Value>2</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{B4698E5E-DD49-4266-9461-270369982FE7}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="100"/>
+																					<Property Name="Min" Type="Real64" Value="-100"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="WEP_AR_Impact_Ricochet_01" ID="{2FA9EC03-A470-43E8-80F2-4BCC340B3347}" ShortID="360273984">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Ricochet" ID="{C05A05F7-3984-4738-ADB9-F8B72555645E}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.21723401053424"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.21723401053424"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Ricochet.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="646450526"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Ricochet" ID="{C05A05F7-3984-4738-ADB9-F8B72555645E}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Ricochet_02" ID="{0DAA23EC-AE9E-4BAB-A0AD-E93669B402D3}" ShortID="1024613052">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Ricochet" ID="{65ADB347-33AB-4B9F-9E56-D16ED9995BD9}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.21723401053424"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.22415011286682"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.51054514672686"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Ricochet.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="797639163"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Ricochet" ID="{65ADB347-33AB-4B9F-9E56-D16ED9995BD9}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Ricochet_03" ID="{A2E667F9-32F9-4A41-BC35-F7C80B78828E}" ShortID="434324993">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Ricochet" ID="{E6E022ED-E7DE-4A7B-9369-79F95CD1889D}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.21723401053424"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.48288073739654"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.77619187358916"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Ricochet.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="25023274"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Ricochet" ID="{E6E022ED-E7DE-4A7B-9369-79F95CD1889D}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Ricochet_04" ID="{50706C81-A08B-4F0E-88F5-A75D75B52D6C}" ShortID="269295893">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Ricochet" ID="{3B48BED8-E555-45A0-B661-9E9C6BEF29BB}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.21723401053424"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.75544356659142"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="5.05567080511663"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Ricochet.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="144733127"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Ricochet" ID="{3B48BED8-E555-45A0-B661-9E9C6BEF29BB}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Ricochet_05" ID="{E3AE6591-6DBB-4235-A039-13393D392405}" ShortID="48007783">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Ricochet" ID="{A6031E4C-B0F6-40A8-A915-E08083EEA132}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.21723401053424"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="5.03492249811888"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="6.32823363431151"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Ricochet.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="387089385"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Ricochet" ID="{A6031E4C-B0F6-40A8-A915-E08083EEA132}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Ricochet_06" ID="{71C78057-6A31-4F3E-BBDD-3FC4ECA5ABE8}" ShortID="772457114">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Ricochet" ID="{807442EC-D072-439E-857C-1B81788D8D97}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.21723401053424"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="6.30748532731377"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="7.60079646350639"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Ricochet.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="22665926"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Ricochet" ID="{807442EC-D072-439E-857C-1B81788D8D97}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Ricochet_07" ID="{92C6160F-FBD3-485A-91C3-D4F8E34A68CA}" ShortID="839054146">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Ricochet" ID="{9C929151-DAE1-4E71-ABDE-4C4D9A5C373A}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.21723401053424"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="7.59388036117381"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="8.9010237020316"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Ricochet.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="1027071831"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Ricochet" ID="{9C929151-DAE1-4E71-ABDE-4C4D9A5C373A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Ricochet_08" ID="{A961CAD5-670B-4CD7-90AE-56AEA72B7803}" ShortID="402529915">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Ricochet" ID="{6626DE13-4059-4EC6-BA7B-FD498AE70E76}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.21723401053424"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="8.85261098570354"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="10.1597543265613"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Ricochet.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="224555482"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Ricochet" ID="{6626DE13-4059-4EC6-BA7B-FD498AE70E76}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Ricochet_09" ID="{19F4960F-0E87-4901-9EDA-609BE060D72B}" ShortID="729524907">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Ricochet" ID="{6F7372C8-640B-4BC3-B2A6-CC81574762D8}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.21723401053424"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="10.1459221218962"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="11.4323171557562"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Ricochet.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="310418379"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Ricochet" ID="{6F7372C8-640B-4BC3-B2A6-CC81574762D8}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Ricochet_10" ID="{09DE2690-6B50-4889-B6CE-FCB8E8F10192}" ShortID="1033069785">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Ricochet" ID="{A77063B2-01B7-4047-B8CA-22BF9FAA44D4}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.21723401053424"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="11.4046527464259"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="12.7187121896163"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Ricochet.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="809278308"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Ricochet" ID="{A77063B2-01B7-4047-B8CA-22BF9FAA44D4}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Ricochet_11" ID="{CF3DB4BA-E57B-4F77-85B4-A6BFB19B8157}" ShortID="193221345">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Ricochet" ID="{6A585F78-1B17-4191-91D3-F66BEBD40D50}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.21723401053424"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="12.6841316779533"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="13.977442814146"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Ricochet.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="237600041"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Ricochet" ID="{6A585F78-1B17-4191-91D3-F66BEBD40D50}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Impact_Ricochet_12" ID="{C3273812-54F5-46F5-B5E9-0A92DCD31D05}" ShortID="564814872">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Impact_Ricochet" ID="{CAFDABB2-DA6F-4FF0-983A-36FCB561A51F}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.21723401053424"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="13.9636106094808"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Impact_Ricochet.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="313857663"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Impact_Ricochet" ID="{CAFDABB2-DA6F-4FF0-983A-36FCB561A51F}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_01" ID="{98678AE0-CA68-415A-A241-384455E1834C}" ShortID="173242683">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{4C8C34B6-5626-4F64-913D-CDCACC242C16}" ShortID="934461864" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{4C8C34B6-5626-4F64-913D-CDCACC242C16}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_02" ID="{AADF088F-BF40-4477-A13D-0B9865958F15}" ShortID="483328626">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{2801EEF6-E93F-4BB3-8A0F-1690A5CA0D58}" ShortID="862122751" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{2801EEF6-E93F-4BB3-8A0F-1690A5CA0D58}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_03" ID="{94A3C24E-67B6-4931-A083-8FCE3ABF096C}" ShortID="58105898">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{F4233598-43A6-4FD6-9B18-37DFA5C72D1C}" ShortID="504685997" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{F4233598-43A6-4FD6-9B18-37DFA5C72D1C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_04" ID="{8AB0294E-BB86-42B7-A23C-3A52660A64F4}" ShortID="732015576">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{192C2A6F-A48E-4EFB-9BF7-5767A1667A70}" ShortID="490987904" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{192C2A6F-A48E-4EFB-9BF7-5767A1667A70}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_05" ID="{B891265A-C567-4501-9B6C-C63D95429B7F}" ShortID="660729814">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{BDE7AA81-EE1D-417E-8A9E-4FCE8DAACD38}" ShortID="642390327" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{BDE7AA81-EE1D-417E-8A9E-4FCE8DAACD38}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_06" ID="{533B0384-6EB0-4694-B988-FC11DCDDE91F}" ShortID="662936169">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{EB9BD79F-AB12-4D32-92D2-FE44C23073DA}" ShortID="418202071" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{EB9BD79F-AB12-4D32-92D2-FE44C23073DA}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_07" ID="{78DA0BAE-2D2C-48CA-ADEF-83646149498C}" ShortID="661731109">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{B3375FDE-6608-4FE5-ABD3-353B9871081B}" ShortID="369132060" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{B3375FDE-6608-4FE5-ABD3-353B9871081B}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_08" ID="{BBEF1580-0A8E-4704-BC44-6399019A96D2}" ShortID="567306354">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{1ECD4E7C-4CE8-4173-8077-4975E7404DF9}" ShortID="313120099" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{1ECD4E7C-4CE8-4173-8077-4975E7404DF9}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_09" ID="{50DFAE43-1319-4DC3-8CCB-0E7098703B3C}" ShortID="522541998">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{920BD289-2149-4079-A275-ED16EB2691E5}" ShortID="234761888" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{920BD289-2149-4079-A275-ED16EB2691E5}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_10" ID="{4EAD729C-54C9-4996-80FB-92A378E233AA}" ShortID="458663129">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{E761AC3B-6B9F-4B79-ACB1-8A70D1C0B507}" ShortID="244607585" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{E761AC3B-6B9F-4B79-ACB1-8A70D1C0B507}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_11" ID="{AFCF6F82-C1D9-48DE-8629-5969BA718C3C}" ShortID="1073662018">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{2DD58B39-CFE1-42B6-8F56-F6F18E6D9678}" ShortID="80733955" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{2DD58B39-CFE1-42B6-8F56-F6F18E6D9678}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_12" ID="{25751D2E-3E7F-4384-98EB-1C90342A9999}" ShortID="964165395">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{C31C7BC0-10A1-40C4-9BC5-9FF1E292D551}" ShortID="155800367" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{C31C7BC0-10A1-40C4-9BC5-9FF1E292D551}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_13" ID="{F58AA720-575C-4123-8B59-29ECB2B82781}" ShortID="261603193">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{1543A0C9-384D-4D95-B4A3-EEE8B6C0908D}" ShortID="737563750" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{1543A0C9-384D-4D95-B4A3-EEE8B6C0908D}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_14" ID="{B0B4F3AF-D05A-414D-ABFA-1B4B459793E4}" ShortID="539978606">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{16C87DA6-21D4-4A30-BBBA-4C1E0ACA6444}" ShortID="98828101" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{16C87DA6-21D4-4A30-BBBA-4C1E0ACA6444}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_15" ID="{A76008C5-8AD0-4C9B-9350-3A34B47067D3}" ShortID="864698241">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{5DA5F965-D2A2-42EE-A331-0195DF3922CD}" ShortID="243453820" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{5DA5F965-D2A2-42EE-A331-0195DF3922CD}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_16" ID="{EEB602C2-92AC-463B-B29E-0EBED543F709}" ShortID="137502934">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{44ACFA9E-E8AB-4E62-B74F-8FD1B1E24050}" ShortID="102475396" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{44ACFA9E-E8AB-4E62-B74F-8FD1B1E24050}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_17" ID="{88391F42-4812-4B0B-8F09-40079DD003DB}" ShortID="821792341">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{03B191CD-9387-4765-B742-C50CED4300BC}" ShortID="932739902" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{03B191CD-9387-4765-B742-C50CED4300BC}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_18" ID="{37F78F52-DC36-4389-90C0-A3A70224F344}" ShortID="366081414">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{3BFB35DC-35CD-4B17-B1E8-D3A827278C51}" ShortID="779331365" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{3BFB35DC-35CD-4B17-B1E8-D3A827278C51}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_19" ID="{7E373DAB-3B49-40B9-9940-1AFBA967CD95}" ShortID="440882103">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{D39C15D8-B14F-4309-A3C8-888E2DBA36DA}" ShortID="766715695" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{D39C15D8-B14F-4309-A3C8-888E2DBA36DA}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_20" ID="{01D0F1CA-2C82-4114-A844-E1C0ABC545EE}" ShortID="189715666">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{E1B11188-FD33-4782-A590-2CE7ABAF513E}" ShortID="900087465" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{E1B11188-FD33-4782-A590-2CE7ABAF513E}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_21" ID="{174F74D9-AB17-4E7A-B571-1B720A4EB464}" ShortID="632730427">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{7DA5E6A7-F363-4309-8F7D-3E1A6454D813}" ShortID="110368995" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{7DA5E6A7-F363-4309-8F7D-3E1A6454D813}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_22" ID="{5CFF52B6-E0EA-445D-A429-893EB47244C4}" ShortID="877426476">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{0AA505E8-3B4B-4635-9812-5D935857514B}" ShortID="691415351" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{0AA505E8-3B4B-4635-9812-5D935857514B}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_23" ID="{AB5FB3C5-B322-4EB1-82E0-8B7622D35403}" ShortID="343566981">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{497615A7-BB06-482D-AA67-4965A6067ADB}" ShortID="282608671" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{497615A7-BB06-482D-AA67-4965A6067ADB}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Silence_24" ID="{B5D0400C-DFD1-42E3-969E-FC37BA547B69}" ShortID="663673597">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<SourcePlugin Name="Silence" ID="{D4E1A877-E989-4DB7-88E6-99D628C2141C}" ShortID="770586436" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																			<PropertyList>
+																				<Property Name="Length" Type="Real32" Value="0.001"/>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																		</SourcePlugin>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Silence" ID="{D4E1A877-E989-4DB7-88E6-99D628C2141C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
 														</RandomSequenceContainer>
 													</ChildrenList>
 													<GroupingInfo>
 														<GroupingBehaviorList>
 															<GroupingBehavior>
 																<ItemRef Name="AR_Impact_Grass" ID="{2D4D0B06-5E9C-41E5-822B-699745F145C8}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="AR_Impact_Ricochet" ID="{86404414-7466-4D08-AD8A-988D8A387A48}"/>
 															</GroupingBehavior>
 															<GroupingBehavior>
 																<ItemRef Name="AR_Impact_Tile" ID="{331CCE1C-8648-44F4-A514-19E40E89E67A}"/>
@@ -1324,6 +4056,59 @@
 																<ItemRef Name="AR_Impact_Metal" ID="{7FEA44F1-55CE-4E59-9BF0-D87EFC65C7CF}"/>
 															</GroupingBehavior>
 														</GroupingBehaviorList>
+														<GroupingList>
+															<Grouping>
+																<SwitchRef Name="M_Flesh" ID="{72A6A11D-4F6E-4C8C-8BBE-4F013F5716DA}"/>
+																<ItemList>
+																	<ItemRef Name="AR_Impact_Flesh" ID="{1DF4F8DB-E431-4BF6-B1C4-A854DD7285A5}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="M_Dirt" ID="{02773C27-1839-4638-A2AF-91E103D925E3}"/>
+																<ItemList>
+																	<ItemRef Name="AR_Impact_Grass" ID="{2D4D0B06-5E9C-41E5-822B-699745F145C8}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="M_Concrete" ID="{7793252A-8C3B-42B3-A5BE-5BD85E592AF5}"/>
+																<ItemList>
+																	<ItemRef Name="AR_Impact_Tile" ID="{331CCE1C-8648-44F4-A514-19E40E89E67A}"/>
+																	<ItemRef Name="AR_Impact_Ricochet" ID="{86404414-7466-4D08-AD8A-988D8A387A48}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="M_Default" ID="{C99CD84A-F66C-47CB-9F08-8948FA3CD2DA}"/>
+																<ItemList>
+																	<ItemRef Name="AR_Impact_Tile" ID="{331CCE1C-8648-44F4-A514-19E40E89E67A}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="M_Tile" ID="{B4FDF75B-8B11-4F10-9CA5-B65DC3769474}"/>
+																<ItemList>
+																	<ItemRef Name="AR_Impact_Tile" ID="{331CCE1C-8648-44F4-A514-19E40E89E67A}"/>
+																	<ItemRef Name="AR_Impact_Ricochet" ID="{86404414-7466-4D08-AD8A-988D8A387A48}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="M_Glass" ID="{467993A2-3942-43B0-9602-E4FADF206889}"/>
+																<ItemList>
+																	<ItemRef Name="AR_Impact_Glass" ID="{362796CF-7A0E-4DCE-B0F4-687C282BA2E2}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="M_Grass" ID="{63A5F2DE-9D45-455C-A02A-A165A88A6A74}"/>
+																<ItemList>
+																	<ItemRef Name="AR_Impact_Grass" ID="{2D4D0B06-5E9C-41E5-822B-699745F145C8}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="M_Metal" ID="{73EE52DF-CCB9-4B60-A98D-A85FE8F582CA}"/>
+																<ItemList>
+																	<ItemRef Name="AR_Impact_Metal" ID="{7FEA44F1-55CE-4E59-9BF0-D87EFC65C7CF}"/>
+																	<ItemRef Name="AR_Impact_Ricochet" ID="{86404414-7466-4D08-AD8A-988D8A387A48}"/>
+																</ItemList>
+															</Grouping>
+														</GroupingList>
 													</GroupingInfo>
 												</SwitchContainer>
 											</ChildrenList>

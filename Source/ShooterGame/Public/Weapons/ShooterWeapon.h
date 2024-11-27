@@ -369,6 +369,7 @@ protected:
 
 	void PlayEquipEvent();
 
+	/**Ammo Count RTPC**/
 	UPROPERTY(EditAnywhere, Category = "Wwise")
 		class UAkRtpc* AmmoCount;
 

@@ -3,6 +3,7 @@
 #pragma once
 
 #include "ShooterTypes.h"
+#include "../Plugins/Wwise/Source/AkAudio/Classes/AkGameplayStatics.h"
 #include "ShooterImpactEffect.generated.h"
 
 //
@@ -49,6 +50,48 @@ class AShooterImpactEffect : public AActor
 	/** impact FX on flesh */
 	UPROPERTY(EditDefaultsOnly, Category=Visual)
 	UParticleSystem* FleshFX;
+
+	//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+	// Wwise Event Pickers
+
+	/**Bullet Impact Event**/
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkAudioEvent* BulletImpactEvent;
+
+	void PlayBulletImpactEvent();
+
+	/**Material Type Switches**/
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkSwitchValue* Concrete;
+
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkSwitchValue* Default;
+
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkSwitchValue* Dirt;
+
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkSwitchValue* Flesh;
+
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkSwitchValue* Glass;
+
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkSwitchValue* Grass;
+
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkSwitchValue* Metal;
+
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkSwitchValue* Tile;
+
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkSwitchValue* Water;
+
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkSwitchValue* Wood;
+
+	//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
 	/** default impact sound used when material specific override doesn't exist */
 	UPROPERTY(EditDefaultsOnly, Category=Defaults)

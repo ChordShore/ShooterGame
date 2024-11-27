@@ -26,7 +26,7 @@
 										</Point>
 										<Point>
 											<XPos>1000</XPos>
-											<YPos>-0</YPos>
+											<YPos>0</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
@@ -96,7 +96,7 @@
 				</Attenuation>
 				<Attenuation Name="ATN_AR_Projectile_Impact" ID="{A6F138D4-4DF0-42FB-BA90-11E5F2E1F8C7}" ShortID="609723430">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="1000"/>
+						<Property Name="RadiusMax" Type="Real64" Value="3000"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -110,14 +110,10 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
+											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>500</XPos>
-											<YPos>-0</YPos>
-											<Flags>0</Flags>
-										</Point>
-										<Point>
-											<XPos>1000</XPos>
+											<XPos>3000</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>

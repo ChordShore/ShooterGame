@@ -4,6 +4,13 @@
   "BasePlatform": "Windows",
   "PluginLibs": [
    {
+    "LibName": "Wwise Silence",
+    "LibId": "6619138",
+    "Type": "Source",
+    "DLL": "AkSilenceGenerator",
+    "StaticLib": "AkSilenceSource"
+   },
+   {
     "LibName": "Wwise Tone Generator",
     "LibId": "6684674",
     "Type": "Source",
@@ -42,6 +49,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{5BAC6E85-A71C-B5AA-72F6-4BF622A8E5AB}"
+  "FileHash": "{2BE5B109-7E1A-1EB9-001B-DEF23398C5BB}"
  }
 }

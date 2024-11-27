@@ -10,76 +10,12 @@
     "Type": "User",
     "GUID": "{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}",
     "Language": "SFX",
-    "Hash": "{78E1F8D0-8DA0-B7F1-CBF0-6CAA728E2CCC}",
+    "Hash": "{0ED75ABA-77C8-81FC-B3F7-4ECEFAEEEAC1}",
     "ObjectPath": "\\SoundBanks\\Items\\Items",
     "ShortName": "Items",
-    "Path": "Items.bnk",
-    "Media": [
-     {
-      "Id": "470330457",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "ITM_Ammo_AR.wav",
-      "CachePath": "SFX/ITM_Ammo_AR_10C4C929.wem"
-     },
-     {
-      "Id": "661048761",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "ITM_Health.wav",
-      "CachePath": "SFX/ITM_Health_10C4C929.wem"
-     }
-    ],
-    "Events": [
-     {
-      "Id": "2323462838",
-      "Name": "ITM_Ammo_AR",
-      "ObjectPath": "\\Events\\Items\\ITM_Ammo_AR",
-      "GUID": "{84FD3B5D-FFEB-4DA1-8126-1EC11F4895C5}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.84508336",
-      "DurationMax": "0.84508336",
-      "MediaRefs": [
-       {
-        "Id": "470330457"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "3348775760",
-        "Name": "Highrise_EarlyReflections",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
-        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
-       }
-      ]
-     },
-     {
-      "Id": "4106715228",
-      "Name": "ITM_Health",
-      "ObjectPath": "\\Events\\Items\\ITM_Health",
-      "GUID": "{15331CA7-0E4D-4141-A281-BABB2A8B29CA}",
-      "DurationType": "OneShot",
-      "DurationMin": "2.1126876",
-      "DurationMax": "2.1126876",
-      "MediaRefs": [
-       {
-        "Id": "661048761"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "3348775760",
-        "Name": "Highrise_EarlyReflections",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
-        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
-       }
-      ]
-     }
-    ]
+    "Path": "Items.bnk"
    }
   ],
-  "FileHash": "{0471D684-B674-5538-BF29-6390DE9807E3}"
+  "FileHash": "{A5168C12-CA24-C18C-D397-637AEEB81EB1}"
  }
 }

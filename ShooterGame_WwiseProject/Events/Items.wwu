@@ -4,6 +4,11 @@
 		<WorkUnit Name="Items" ID="{0E5622DA-6C29-4E4C-BC89-DC295860A9A7}" PersistMode="Standalone">
 			<PropertyList>
 				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="Inclusion" Type="bool">
+					<ValueList>
+						<Value>False</Value>
+					</ValueList>
+				</Property>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
