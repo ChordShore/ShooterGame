@@ -14,6 +14,11 @@
 								<Value>-9</Value>
 							</ValueList>
 						</Property>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -10760,6 +10765,11 @@
 				</ActorMixer>
 				<ActorMixer Name="3P" ID="{79EB5111-6E3C-40EB-A880-2DEF0FC0B4DC}" ShortID="517456537">
 					<PropertyList>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>

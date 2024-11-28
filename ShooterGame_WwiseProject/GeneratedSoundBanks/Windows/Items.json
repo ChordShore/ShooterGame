@@ -10,12 +10,55 @@
     "Type": "User",
     "GUID": "{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}",
     "Language": "SFX",
-    "Hash": "{0ED75ABA-77C8-81FC-B3F7-4ECEFAEEEAC1}",
+    "Hash": "{55AEF39D-6634-5CE0-EB07-93A37C5BA60A}",
     "ObjectPath": "\\SoundBanks\\Items\\Items",
     "ShortName": "Items",
-    "Path": "Items.bnk"
+    "Path": "Items.bnk",
+    "Media": [
+     {
+      "Id": "470330457",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ITM_Ammo_AR.wav",
+      "CachePath": "SFX/ITM_Ammo_AR_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2323462838",
+      "Name": "ITM_Ammo_AR",
+      "ObjectPath": "\\Events\\Items\\ITM_Ammo_AR",
+      "GUID": "{84FD3B5D-FFEB-4DA1-8126-1EC11F4895C5}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.84508336",
+      "DurationMax": "0.84508336",
+      "MediaRefs": [
+       {
+        "Id": "470330457"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
+     },
+     {
+      "Id": "4106715228",
+      "Name": "ITM_Health",
+      "ObjectPath": "\\Events\\Items\\ITM_Health",
+      "GUID": "{15331CA7-0E4D-4141-A281-BABB2A8B29CA}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.1126876",
+      "DurationMax": "2.1126876"
+     }
+    ]
    }
   ],
-  "FileHash": "{7D3D3C26-4E37-EA87-D041-6528DDE406B7}"
+  "FileHash": "{AA03A452-30E4-C690-DD3F-C0364AAED71D}"
  }
 }

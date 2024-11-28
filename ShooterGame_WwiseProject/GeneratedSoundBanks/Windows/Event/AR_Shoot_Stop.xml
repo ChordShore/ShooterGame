@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{3F84C2B0-6751-DA4D-08D6-F0902EBFDC88}">
+		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{6E00DC24-062D-C90E-97C1-B5B2D336C1D4}">
 			<ObjectPath>AR_Shoot_Stop</ObjectPath>
 			<ShortName>AR_Shoot_Stop</ShortName>
 			<Path>Event/AR_Shoot_Stop.bnk</Path>
 			<Media>
+				<File Id="25638055" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/25638055.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_38C4F579.wem</CachePath>
+				</File>
+				<File Id="92565130" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/92565130.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_EA052728.wem</CachePath>
+				</File>
+				<File Id="312448983" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/312448983.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_588B8605.wem</CachePath>
+				</File>
 				<File Id="344300635" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>AR_Empty_PowerDown.wav</ShortName>
 					<Path>Media/344300635.wem</Path>
@@ -16,6 +31,41 @@
 					<Path>Media/375493363.wem</Path>
 					<CachePath>SFX/AR_Empty_BoltLock_D623D8F6.wem</CachePath>
 				</File>
+				<File Id="560147879" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/560147879.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_FF9BC760.wem</CachePath>
+				</File>
+				<File Id="630130873" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/630130873.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_E2A4CCA9.wem</CachePath>
+				</File>
+				<File Id="666983815" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/666983815.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_4EF113D5.wem</CachePath>
+				</File>
+				<File Id="676321132" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/676321132.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_61A5FBBC.wem</CachePath>
+				</File>
+				<File Id="736273374" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/736273374.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_0B0E2C1D.wem</CachePath>
+				</File>
+				<File Id="832229830" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/832229830.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_48416BF8.wem</CachePath>
+				</File>
+				<File Id="1033448803" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/1033448803.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_3D86A260.wem</CachePath>
+				</File>
 			</Media>
 			<Plugins>
 				<ShareSets>
@@ -25,8 +75,18 @@
 			<Events>
 				<Event Id="588697279" Name="AR_Shoot_Stop" ObjectPath="\Events\Weapons\Shooting\Shoot\AR_Shoot_Stop" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" DurationType="OneShot" DurationMin="1.6754444" DurationMax="1.6754444">
 					<MediaRefs>
+						<MediaRef Id="25638055"/>
+						<MediaRef Id="92565130"/>
+						<MediaRef Id="312448983"/>
 						<MediaRef Id="344300635"/>
 						<MediaRef Id="375493363"/>
+						<MediaRef Id="560147879"/>
+						<MediaRef Id="630130873"/>
+						<MediaRef Id="666983815"/>
+						<MediaRef Id="676321132"/>
+						<MediaRef Id="736273374"/>
+						<MediaRef Id="832229830"/>
+						<MediaRef Id="1033448803"/>
 					</MediaRefs>
 					<PluginRefs>
 						<ShareSets>
@@ -43,5 +103,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{863FF8A3-DE70-A11D-A069-032333176ED7}</FileHash>
+	<FileHash>{634FB1F2-AA48-77C9-A5D8-B2E369703499}</FileHash>
 </SoundBanksInfo>

@@ -1,0 +1,56 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "2289907698",
+    "Type": "Event",
+    "GUID": "{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}",
+    "Language": "SFX",
+    "Hash": "{F4375B65-326C-ED8F-D240-99E9CA15437D}",
+    "ObjectPath": "ITM_Ammo_GL",
+    "ShortName": "ITM_Ammo_GL",
+    "Path": "Event/ITM_Ammo_GL.bnk",
+    "Media": [
+     {
+      "Id": "26400503",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "ITM_Ammo_GL.wav",
+      "Path": "Media/26400503.wem",
+      "CachePath": "SFX/ITM_Ammo_GL_10C4C929.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2289907698",
+      "Name": "ITM_Ammo_GL",
+      "ObjectPath": "\\Events\\Items\\ITM_Ammo_GL",
+      "GUID": "{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.84508336",
+      "DurationMax": "0.84508336",
+      "MediaRefs": [
+       {
+        "Id": "26400503"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9615E7F0-BCAF-CF53-1F6A-888BD3E248AB}"
+ }
+}
