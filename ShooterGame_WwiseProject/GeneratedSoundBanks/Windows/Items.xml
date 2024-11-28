@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2151963051" Type="User" GUID="{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}" Language="SFX" Hash="{55AEF39D-6634-5CE0-EB07-93A37C5BA60A}">
+		<SoundBank Id="2151963051" Type="User" GUID="{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}" Language="SFX" Hash="{5FC7BFF7-14FF-23E5-704A-F5697E2ECE27}">
 			<ObjectPath>\SoundBanks\Items\Items</ObjectPath>
 			<ShortName>Items</ShortName>
 			<Path>Items.bnk</Path>
@@ -9,6 +9,10 @@
 				<File Id="470330457" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ITM_Ammo_AR.wav</ShortName>
 					<CachePath>SFX/ITM_Ammo_AR_10C4C929.wem</CachePath>
+				</File>
+				<File Id="661048761" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ITM_Health.wav</ShortName>
+					<CachePath>SFX/ITM_Health_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -20,9 +24,16 @@
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="4106715228" Name="ITM_Health" ObjectPath="\Events\Items\ITM_Health" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" DurationType="OneShot" DurationMin="2.1126876" DurationMax="2.1126876"/>
+				<Event Id="4106715228" Name="ITM_Health" ObjectPath="\Events\Items\ITM_Health" GUID="{15331CA7-0E4D-4141-A281-BABB2A8B29CA}" DurationType="OneShot" DurationMin="2.1126876" DurationMax="2.1126876">
+					<MediaRefs>
+						<MediaRef Id="661048761"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E24F2944-84D5-E4CE-30C8-BB6BF154B9BE}</FileHash>
+	<FileHash>{66F90D6F-747B-14E5-0D0C-09472D100078}</FileHash>
 </SoundBanksInfo>

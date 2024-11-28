@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="4134637028" Type="Event" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" Language="SFX" Hash="{BC2F2BE3-7602-748A-59D6-95DFD35F0BD5}">
+		<SoundBank Id="4134637028" Type="Event" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" Language="SFX" Hash="{98001DF2-9EF9-ACDC-0F29-2F3193529289}">
 			<ObjectPath>AMB_RoomGusts_SmallEntrance_Exterior</ObjectPath>
 			<ShortName>AMB_RoomGusts_SmallEntrance_Exterior</ShortName>
 			<Path>Event/AMB_RoomGusts_SmallEntrance_Exterior.bnk</Path>
+			<Media>
+				<File Id="928573754" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AMB_Emitter_WindGusts.wav</ShortName>
+					<Path>Media/928573754.wem</Path>
+					<CachePath>SFX/AMB_Emitter_WindGusts_DEC75B5C.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2781261543" Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Slow_Release" GUID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
-				<Event Id="4134637028" Name="AMB_RoomGusts_SmallEntrance_Exterior" ObjectPath="\Events\Ambience\Emitters\Highrise\RoomGusts\AMB_RoomGusts_SmallEntrance_Exterior" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" MaxAttenuation="1500" DurationType="Infinite"/>
+				<Event Id="4134637028" Name="AMB_RoomGusts_SmallEntrance_Exterior" ObjectPath="\Events\Ambience\Emitters\Highrise\RoomGusts\AMB_RoomGusts_SmallEntrance_Exterior" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" MaxAttenuation="1500" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="928573754"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2781261543"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D72A581D-7C89-F6F2-5C43-083954099F5A}</FileHash>
+	<FileHash>{45E5FAFD-EAC0-9C83-FAF7-25593FCDA8E0}</FileHash>
 </SoundBanksInfo>

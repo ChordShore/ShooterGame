@@ -10,10 +10,21 @@
     "Type": "Event",
     "GUID": "{3C0DA367-FE08-40AC-B96C-0BCFE38BE080}",
     "Language": "SFX",
-    "Hash": "{62DDAE4C-B27E-1551-4FF0-7A01DCC76524}",
+    "Hash": "{BC9A7B51-5E98-5769-3075-6560432D43BD}",
     "ObjectPath": "AMB_BarrierFence",
     "ShortName": "AMB_BarrierFence",
     "Path": "Event/AMB_BarrierFence.bnk",
+    "Media": [
+     {
+      "Id": "1041432378",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_BarrierFence_LP.wav",
+      "Path": "Media/1041432378.wem",
+      "CachePath": "SFX/AMB_BarrierFence_LP_3860FEB7.wem"
+     }
+    ],
     "Events": [
      {
       "Id": "2992962930",
@@ -21,11 +32,16 @@
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\BarrierFence\\AMB_BarrierFence",
       "GUID": "{3C0DA367-FE08-40AC-B96C-0BCFE38BE080}",
       "MaxAttenuation": "2000",
-      "DurationType": "Infinite"
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "1041432378"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{C11E5A76-42A1-ECD0-2EDA-20ED0C38FE6C}"
+  "FileHash": "{D5B5620E-9B56-D8ED-F4F2-321C3449E48E}"
  }
 }

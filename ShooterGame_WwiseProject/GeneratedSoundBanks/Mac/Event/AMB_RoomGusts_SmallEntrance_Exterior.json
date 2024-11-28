@@ -10,10 +10,33 @@
     "Type": "Event",
     "GUID": "{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}",
     "Language": "SFX",
-    "Hash": "{BC2F2BE3-7602-748A-59D6-95DFD35F0BD5}",
+    "Hash": "{98001DF2-9EF9-ACDC-0F29-2F3193529289}",
     "ObjectPath": "AMB_RoomGusts_SmallEntrance_Exterior",
     "ShortName": "AMB_RoomGusts_SmallEntrance_Exterior",
     "Path": "Event/AMB_RoomGusts_SmallEntrance_Exterior.bnk",
+    "Media": [
+     {
+      "Id": "928573754",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_Emitter_WindGusts.wav",
+      "Path": "Media/928573754.wem",
+      "CachePath": "SFX/AMB_Emitter_WindGusts_DEC75B5C.wem"
+     }
+    ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2781261543",
+       "Name": "Brick_Wall_Minus_6dB_Peak_Slow_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Slow_Release",
+       "GUID": "{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "4134637028",
@@ -21,11 +44,23 @@
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\RoomGusts\\AMB_RoomGusts_SmallEntrance_Exterior",
       "GUID": "{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}",
       "MaxAttenuation": "1500",
-      "DurationType": "Infinite"
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "928573754"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2781261543"
+        }
+       ]
+      }
      }
     ]
    }
   ],
-  "FileHash": "{5FABB54C-977B-1670-B993-6E6FDA7605F7}"
+  "FileHash": "{0897CD03-BF3D-F82E-E75A-3A17A6D9909F}"
  }
 }

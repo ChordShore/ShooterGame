@@ -10,10 +10,68 @@
     "Type": "Event",
     "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
     "Language": "SFX",
-    "Hash": "{91EEC87A-4E49-523D-6746-8CB49802D58D}",
+    "Hash": "{D15D83B0-53C7-2C80-48FC-70C2B9F5029A}",
     "ObjectPath": "AMB_HoverCars_ParticleStream_5",
     "ShortName": "AMB_HoverCars_ParticleStream_5",
     "Path": "Event/AMB_HoverCars_ParticleStream_5.bnk",
+    "Media": [
+     {
+      "Id": "705314639",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Sum_2.wav",
+      "Path": "Media/705314639.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_2_5BFA3172.wem"
+     },
+     {
+      "Id": "752046821",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Sum_4.wav",
+      "Path": "Media/752046821.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_4_956690D4.wem"
+     },
+     {
+      "Id": "776674335",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Sum_3.wav",
+      "Path": "Media/776674335.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_3_7C5D7EAC.wem"
+     },
+     {
+      "Id": "920069920",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AMB_HoverCars_Engine_Sum_1.wav",
+      "Path": "Media/920069920.wem",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_1_34B5CAC0.wem"
+     }
+    ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "529418188",
+       "Name": "Tremolo_HoverCars_PS5",
+       "ObjectPath": "\\Effects\\Ambience\\HoverCars\\Tremolo_HoverCars_PS5",
+       "GUID": "{C2D44633-8367-4F1B-ABE3-8028C4D3B172}",
+       "LibName": "Wwise Tremolo",
+       "LibId": "8585219"
+      },
+      {
+       "Id": "2258521792",
+       "Name": "Brick_Wall_Minus_1dB_Peak_Slow_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Slow_Release",
+       "GUID": "{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "2496008986",
@@ -21,11 +79,54 @@
       "ObjectPath": "\\Events\\Ambience\\Emitters\\Highrise\\HoverCars\\AMB_HoverCars_ParticleStream_5",
       "GUID": "{1D314042-7C11-4C0F-BDEF-CFB03382CA47}",
       "MaxAttenuation": "32500",
-      "DurationType": "Infinite"
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "705314639"
+       },
+       {
+        "Id": "752046821"
+       },
+       {
+        "Id": "776674335"
+       },
+       {
+        "Id": "920069920"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "529418188"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "1289661192",
+        "Name": "Highrise_HoverCars",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_HoverCars",
+        "GUID": "{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "866022863",
+      "Name": "PAR_Doppler",
+      "ObjectPath": "\\Game Parameters\\Ambience\\PAR_Doppler",
+      "GUID": "{D40C9741-1633-4046-A65F-904ED87051FE}"
+     },
+     {
+      "Id": "2940353651",
+      "Name": "PAR_Distance_HoverCars_PS5",
+      "ObjectPath": "\\Game Parameters\\Ambience\\PAR_Distance_HoverCars_PS5",
+      "GUID": "{12811BF6-789D-4EFB-A3B6-2A817E909100}"
      }
     ]
    }
   ],
-  "FileHash": "{E6081089-5FD1-A39F-6A1F-6578A9A4EFD5}"
+  "FileHash": "{A8DD87AA-E959-0051-9EA5-1C7D0D90B0FA}"
  }
 }

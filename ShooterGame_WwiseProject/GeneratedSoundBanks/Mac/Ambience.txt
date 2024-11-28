@@ -12,8 +12,42 @@ Event	ID	Name			Wwise Object Path	Notes
 	3641000233	AMB_UnrealHolograph			\Ambience\Emitters\Highrise\UnrealHolograph\AMB_UnrealHolograph	
 	3686232698	AMB_UnrealHolograph_FadeOut			\Ambience\Emitters\Highrise\UnrealHolograph\AMB_UnrealHolograph_FadeOut	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	747849153	STA_LocationMix			\Default Work Unit\Highrise\STA_LocationMix	
+
+State	ID	Name	State Group			Notes
+	301467384	STA_Indoors_Spawn	STA_LocationMix			
+	748895195	None	STA_LocationMix			
+	877225536	STA_Outdoors_Atrium	STA_LocationMix			
+	949156522	STA_Outdoors_Balcony_Center	STA_LocationMix			
+	1657765358	STA_Indoors_Room	STA_LocationMix			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	445458544	STA_Outdoors_Balcony_Center	STA_LocationMix	\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_UnrealHolograph		
+	970695117	STA_Indoors_Room	STA_LocationMix	\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_UnrealHolograph		
+	994824208	STA_Indoors_Spawn	STA_LocationMix	\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_UnrealHolograph		
+
+Effect plug-ins	ID	Name	Type				Notes
+	2781261543	Brick_Wall_Minus_6dB_Peak_Slow_Release	Wwise Peak Limiter			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	16287048	AMB_Highrise_Atrium_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Rooms_Atrium_25FFC62C.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\Highrise\AMB_Atrium\AMB_Highrise_Atrium_LP		4992144
+	88913986	AMB_StreetLamp_Buzz_OS_2	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_StreetLamp_Buzz_OS_2_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_StreetLamp\AMB_StreetLamp_Buzz_OS\AMB_StreetLamp_Buzz_OS_2		264096
+	91730085	AMB_StreetLamp_Buzz_OS_4	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_StreetLamp_Buzz_OS_4_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_StreetLamp\AMB_StreetLamp_Buzz_OS\AMB_StreetLamp_Buzz_OS_4		168096
+	175461088	AMB_StreetLamp_Hum_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_StreetLamp_Hum_LP_F2673BE7.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_StreetLamp\AMB_StreetLamp_Hum_LP		1899764
+	202292048	AMB_StreetLamp_Buzz_OS_5	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_StreetLamp_Buzz_OS_5_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_StreetLamp\AMB_StreetLamp_Buzz_OS\AMB_StreetLamp_Buzz_OS_5		192096
+	218188666	AMB_UnrealSign_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\Emitters_UnrealSign_1B9F70D9.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_UnrealSign\AMB_UnrealSign_LP		1504896
 	229272092	AMB_Rooms_Spawn_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Rooms_Spawn_25FFC62C.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\Highrise\AMB_Spawn\AMB_Rooms_Spawn_LP		4992144
+	247336745	AMB_StreetLamp_Buzz_OS_1	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_StreetLamp_Buzz_OS_1_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_StreetLamp\AMB_StreetLamp_Buzz_OS\AMB_StreetLamp_Buzz_OS_1		165856
 	288927093	AMB_Highrise_Room_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Rooms_Room_25FFC62C.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Rooms\Highrise\AMB_Room\AMB_Highrise_Room_LP		4992144
+	321294528	AMB_StreetLamp_Buzz_OS_3	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_StreetLamp_Buzz_OS_3_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_StreetLamp\AMB_StreetLamp_Buzz_OS\AMB_StreetLamp_Buzz_OS_3		240096
+	364330538	AMB_RoomGusts_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Emitter_RoomGusts_577AE79D.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_RoomGusts\MainEntrance\AMB_RoomGusts_MainEntrance_Int\AMB_RoomGusts_LP		24389668
+	425050702	AMB_UnrealHolograph_FadeOut_OS	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\Emitters_UnrealHolograph_FadeOut_OS_667C34B8.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_UnrealHolograph\AMB_UnrealHolograph_FadeOut_OS		1140096
+	429780900	AMB_StreetLamp_Buzz_OS_6	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_StreetLamp_Buzz_OS_6_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_StreetLamp\AMB_StreetLamp_Buzz_OS\AMB_StreetLamp_Buzz_OS_6		240096
+	456057735	AMB_UnrealHolograph_Main_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\Emitters_UnrealHolograph_Main_LP_1EF12818.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_UnrealHolograph\AMB_UnrealHolograph_Main_LP		6299124
+	515725994	AMB_StreetLamp_Buzz_OS_7	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_StreetLamp_Buzz_OS_7_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_StreetLamp\AMB_StreetLamp_Buzz_OS\AMB_StreetLamp_Buzz_OS_7		144096
+	537312981	AMB_PhoneBox_DialTone_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_PhoneBox_DialTone_LP_730BDA3F.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_PhoneBox\AMB_PhoneBox_DialTone_LP		1891612
+	619272686	AMB_UnrealHolograph_FadeIn_OS	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\Emitters_UnrealHolograph_FadeIn_OS_CD200B86.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_UnrealHolograph\AMB_UnrealHolograph_FadeIn_OS		1929764
+	864735500	AMB_UnrealHolograph_Swirl_OS	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\Emitters_UnrealHolograph_Swirl_OS_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_UnrealHolograph\AMB_UnrealHolograph_Swirl_OS		2088096
+	928573754	AMB_WindGusts_LP	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_Emitter_WindGusts_DEC75B5C.wem		\Actor-Mixer Hierarchy\Ambience\AMB_Emitters\Highrise\AMB_RoomGusts\MainEntrance\AMB_RoomGusts_MainEntrance_Ext\AMB_WindGusts_LP		5060956
 
