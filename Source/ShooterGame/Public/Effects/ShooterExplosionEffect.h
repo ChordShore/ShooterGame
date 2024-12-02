@@ -3,6 +3,7 @@
 #pragma once
 
 #include "ShooterTypes.h"
+#include "../Plugins/Wwise/Source/AkAudio/Classes/AkGameplayStatics.h"
 #include "ShooterExplosionEffect.generated.h"
 
 //
@@ -31,7 +32,18 @@ public:
 	/** explosion sound */
 	UPROPERTY(EditDefaultsOnly, Category=Effect)
 	USoundCue* ExplosionSound;
-	
+
+	//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+	// Wwise Event Pickers
+
+	/**Explosion Event**/
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkAudioEvent* ExplosionEvent;
+
+	void PlayExplosionEvent();
+
+	//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
 	/** explosion decals */
 	UPROPERTY(EditDefaultsOnly, Category=Effect)
 	struct FDecalData Decal;

@@ -2,6 +2,7 @@
 
 #include "ShooterGame.h"
 #include "ShooterExplosionEffect.h"
+#include "../Plugins/Wwise/Source/AkAudio/Classes/AkGameplayStatics.h"
 
 AShooterExplosionEffect::AShooterExplosionEffect(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {
@@ -32,6 +33,7 @@ void AShooterExplosionEffect::BeginPlay()
 
 	if (ExplosionSound)
 	{
+		PlayExplosionEvent();
 		UGameplayStatics::PlaySoundAtLocation(this, ExplosionSound, GetActorLocation());
 	}
 
@@ -46,6 +48,17 @@ void AShooterExplosionEffect::BeginPlay()
 			Decal.LifeSpan);
 	}
 }
+
+//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+// Wwise Event Calls
+
+void AShooterExplosionEffect::PlayExplosionEvent()
+{
+	FOnAkPostEventCallback nullCallback;
+	UAkGameplayStatics::PostEvent(ExplosionEvent, this, int32(0), nullCallback);
+}
+
+//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
 void AShooterExplosionEffect::Tick(float DeltaSeconds)
 {
