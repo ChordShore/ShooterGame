@@ -928,6 +928,8 @@ void AShooterWeapon::SimulateWeaponFire()
 	}
 	else
 	{
+		//Call Gunfire OneShot Event
+		PlayFireOneShotEvent();
 		PlayWeaponSound(FireSound);
 	}
 

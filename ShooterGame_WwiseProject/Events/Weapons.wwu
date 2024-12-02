@@ -52,7 +52,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="GL_Impact_OS" ID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}"/>
+								<Event Name="GL_Impact_OS" ID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}">
+									<ChildrenList>
+										<Action Name="" ID="{F76278D6-04AB-4739-A7A1-6A758078A6AD}" ShortID="505181953">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sine Pip" ID="{FBF17A70-6EE1-4173-A416-C2DAB8D7D716}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Travel" ID="{4FE35F46-9F34-4BFF-9FC3-E4FC881E80B5}" ShortID="370377988">
@@ -91,7 +101,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="GL_Shoot_OS" ID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}"/>
+								<Event Name="GL_Shoot_OS" ID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}">
+									<ChildrenList>
+										<Action Name="" ID="{2154E46E-F5C2-460D-96E5-E72E396E20EF}" ShortID="602720412">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Sine Pip" ID="{7BCCAACD-DAEE-4076-8867-4323FBC42FE3}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 								<Event Name="AR_Shoot_Stop" ID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}">
 									<ChildrenList>
 										<Action Name="" ID="{17324EA3-D482-4A5C-BA32-CD83A4C215A0}" ShortID="717127282">

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{CBA184FD-7BAF-0279-6937-DC811B53A62D}",
+    "Hash": "{2CF34ABC-14E2-1383-0838-C752980F5905}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -963,6 +963,14 @@
        "LibId": "6619138"
       },
       {
+       "Id": "777800824",
+       "Name": "Tone Generator",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Weapons\\WEP_1P\\Shooting\\WEP_Impact\\GL_Impact\\Sine Pip\\Tone Generator",
+       "GUID": "{D14A84D3-22C9-4755-85D4-3A1E58EA58A1}",
+       "LibName": "Wwise Tone Generator",
+       "LibId": "6684674"
+      },
+      {
        "Id": "779331365",
        "Name": "Silence",
        "ObjectPath": "\\Actor-Mixer Hierarchy\\Weapons\\WEP_1P\\Shooting\\WEP_Impact\\AR_Impact\\AR_Impact_Materials\\AR_Impact_Ricochet\\Silence_18\\Silence",
@@ -985,6 +993,14 @@
        "GUID": "{E1B11188-FD33-4782-A590-2CE7ABAF513E}",
        "LibName": "Wwise Silence",
        "LibId": "6619138"
+      },
+      {
+       "Id": "904439576",
+       "Name": "Tone Generator",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Weapons\\WEP_1P\\Shooting\\WEP_Shoot\\GL_Shoot\\Shot\\Sine Pip\\Tone Generator",
+       "GUID": "{0210A5EC-7DEA-4F6E-8268-E1A93D7FBEBF}",
+       "LibName": "Wwise Tone Generator",
+       "LibId": "6684674"
       },
       {
        "Id": "932739902",
@@ -2213,10 +2229,24 @@
       "Name": "GL_Impact_OS",
       "ObjectPath": "\\Events\\Weapons\\Shooting\\Impact\\GL_Impact_OS",
       "GUID": "{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "777800824"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
      },
      {
       "Id": "2238434314",
@@ -2255,10 +2285,24 @@
       "Name": "GL_Shoot_OS",
       "ObjectPath": "\\Events\\Weapons\\Shooting\\Shoot\\GL_Shoot_OS",
       "GUID": "{314DB4B5-5CD0-4B6E-8803-898906F3175F}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "904439576"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
      },
      {
       "Id": "3084237102",
@@ -2447,6 +2491,6 @@
     ]
    }
   ],
-  "FileHash": "{278E2D99-BB61-AFDE-0DB7-6DCE7F5B217F}"
+  "FileHash": "{FD4D9467-36DF-BCB7-5256-32BE15FE59FC}"
  }
 }

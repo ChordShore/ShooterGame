@@ -2080,6 +2080,50 @@
 													</ReferenceList>
 													<GroupingInfo/>
 												</SwitchContainer>
+												<Folder Name="Shot" ID="{236FDBBB-5267-4413-BC59-7A08AA22E02F}" ShortID="453988458">
+													<ChildrenList>
+														<SwitchContainer Name="GL_Shot_Constructor" ID="{16763F25-83D8-4A91-80CF-F89194947606}" ShortID="760310450">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<GroupingInfo/>
+														</SwitchContainer>
+														<Sound Name="Sine Pip" ID="{7BCCAACD-DAEE-4076-8867-4323FBC42FE3}" ShortID="832985939">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="ATN_UnrealHolograph" ID="{044D3425-A485-4809-96BA-ED930F9C1310}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<SourcePlugin Name="Tone Generator" ID="{0210A5EC-7DEA-4F6E-8268-E1A93D7FBEBF}" ShortID="904439576" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+																	<PropertyList>
+																		<Property Name="FixDur" Type="Real32" Value="0.5"/>
+																		<Property Name="StartFreq" Type="Real32" Value="500"/>
+																		<Property Name="WaveGain" Type="Real32" Value="-20"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																</SourcePlugin>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Tone Generator" ID="{0210A5EC-7DEA-4F6E-8268-E1A93D7FBEBF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</Folder>
 											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>
@@ -4977,6 +5021,37 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Sine Pip" ID="{FBF17A70-6EE1-4173-A416-C2DAB8D7D716}" ShortID="406918114">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATN_UnrealHolograph" ID="{044D3425-A485-4809-96BA-ED930F9C1310}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Tone Generator" ID="{D14A84D3-22C9-4755-85D4-3A1E58EA58A1}" ShortID="777800824" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+															<PropertyList>
+																<Property Name="FixDur" Type="Real32" Value="0.5"/>
+																<Property Name="StartFreq" Type="Real32" Value="500"/>
+																<Property Name="WaveGain" Type="Real32" Value="-20"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tone Generator" ID="{D14A84D3-22C9-4755-85D4-3A1E58EA58A1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>
 								</ActorMixer>

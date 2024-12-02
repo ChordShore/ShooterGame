@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{CBA184FD-7BAF-0279-6937-DC811B53A62D}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{2CF34ABC-14E2-1383-0838-C752980F5905}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -424,9 +424,11 @@
 					<Plugin Id="737563750" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_13\Silence" GUID="{1543A0C9-384D-4D95-B4A3-EEE8B6C0908D}" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="766715695" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_19\Silence" GUID="{D39C15D8-B14F-4309-A3C8-888E2DBA36DA}" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="770586436" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_24\Silence" GUID="{D4E1A877-E989-4DB7-88E6-99D628C2141C}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="777800824" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\GL_Impact\Sine Pip\Tone Generator" GUID="{D14A84D3-22C9-4755-85D4-3A1E58EA58A1}" LibName="Wwise Tone Generator" LibId="6684674"/>
 					<Plugin Id="779331365" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_18\Silence" GUID="{3BFB35DC-35CD-4B17-B1E8-D3A827278C51}" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="862122751" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_02\Silence" GUID="{2801EEF6-E93F-4BB3-8A0F-1690A5CA0D58}" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="900087465" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_20\Silence" GUID="{E1B11188-FD33-4782-A590-2CE7ABAF513E}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="904439576" Name="Tone Generator" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\GL_Shoot\Shot\Sine Pip\Tone Generator" GUID="{0210A5EC-7DEA-4F6E-8268-E1A93D7FBEBF}" LibName="Wwise Tone Generator" LibId="6684674"/>
 					<Plugin Id="932739902" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_17\Silence" GUID="{03B191CD-9387-4765-B742-C50CED4300BC}" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="934461864" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_01\Silence" GUID="{4C8C34B6-5626-4F64-913D-CDCACC242C16}" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
@@ -879,7 +881,16 @@
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="477299258" Name="GL_Impact_OS" ObjectPath="\Events\Weapons\Shooting\Impact\GL_Impact_OS" GUID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="477299258" Name="GL_Impact_OS" ObjectPath="\Events\Weapons\Shooting\Impact\GL_Impact_OS" GUID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="777800824"/>
+						</Custom>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
+				</Event>
 				<Event Id="2238434314" Name="GL_PassBy_LP" ObjectPath="\Events\Weapons\Shooting\Travel\GL_PassBy_LP" GUID="{566534D1-0C06-45CC-8878-334A29476347}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="464045509" Name="GL_Reload_OS" ObjectPath="\Events\Weapons\Reloading\GL_Reload_OS" GUID="{778E484F-B81F-4DFB-8587-4CEA07B594B0}" DurationType="OneShot" DurationMin="2.7136385" DurationMax="3.0459566">
 					<MediaRefs>
@@ -889,7 +900,16 @@
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1577363161" Name="GL_Shoot_OS" ObjectPath="\Events\Weapons\Shooting\Shoot\GL_Shoot_OS" GUID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1577363161" Name="GL_Shoot_OS" ObjectPath="\Events\Weapons\Shooting\Shoot\GL_Shoot_OS" GUID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="904439576"/>
+						</Custom>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
+				</Event>
 				<Event Id="3084237102" Name="WEP_Target_Engage_OS" ObjectPath="\Events\Weapons\Targeting\WEP_Target_Engage_OS" GUID="{59353546-680F-45BB-AFE9-59C7938042FE}" DurationType="OneShot" DurationMin="0.47193712" DurationMax="0.5297316">
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
@@ -948,5 +968,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EE06B863-1872-54B7-6842-ADA32AEEABA2}</FileHash>
+	<FileHash>{3E032FF5-C320-2E5C-DDB9-5ABCF5D61F15}</FileHash>
 </SoundBanksInfo>
