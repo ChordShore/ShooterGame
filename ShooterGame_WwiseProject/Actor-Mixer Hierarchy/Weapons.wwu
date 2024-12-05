@@ -2087,11 +2087,453 @@
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 																</Reference>
+																<Reference Name="DefaultSwitchOrState">
+																	<ObjectRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}" WorkUnitID="{5DA9743F-24CB-48C8-8072-C39EB4F5CC2B}"/>
+																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																</Reference>
+																<Reference Name="SwitchGroupOrStateGroup">
+																	<ObjectRef Name="STA_LocationMix" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}" WorkUnitID="{5DA9743F-24CB-48C8-8072-C39EB4F5CC2B}"/>
+																</Reference>
 															</ReferenceList>
-															<GroupingInfo/>
+															<ChildrenList>
+																<RandomSequenceContainer Name="GL_Transient" ID="{BA056449-8A69-4298-B4E1-0CC230815C77}" ShortID="941934972">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="GL_Transient" ID="{8293D012-37A2-40C6-ADDD-D74965567A88}" ShortID="1030055283">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Transient" ID="{013E40D6-2321-4844-875F-00C1AD96CD56}">
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Transient.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="978521279"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Transient" ID="{013E40D6-2321-4844-875F-00C1AD96CD56}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="GL_Tail_Atrium" ID="{252EBAD8-48DA-4836-BC03-7DA8F29ABE38}" ShortID="119528351">
+																	<PropertyList>
+																		<Property Name="InitialDelay" Type="Real64">
+																			<ValueList>
+																				<Value>0.03</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="GL_Tail_Atrium" ID="{A328DA51-8BE4-47E5-93F1-6A5DD070821D}" ShortID="64984889">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Tail_Atrium" ID="{282C1B05-6C63-4983-8CFF-504D44791414}">
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Tail_Atrium.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="705838031"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Tail_Atrium" ID="{282C1B05-6C63-4983-8CFF-504D44791414}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="GL_Tail_Spawn" ID="{9AEF82AF-E1CD-4FD5-9C65-3CEDF12527F8}" ShortID="907953297">
+																	<PropertyList>
+																		<Property Name="InitialDelay" Type="Real64">
+																			<ValueList>
+																				<Value>0.03</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="GL_Tail_Spawn" ID="{DE875DFC-C40C-4CD4-8E10-0EBC21F46479}" ShortID="1015715480">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Tail_Spawn" ID="{BA7D2A14-A97D-4BDA-AF78-D9DC8652A7D8}">
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Tail_Spawn.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="807012812"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Tail_Spawn" ID="{BA7D2A14-A97D-4BDA-AF78-D9DC8652A7D8}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="GL_Tail_Room" ID="{FC6E5D6B-66F7-4928-BFE0-2395AB743240}" ShortID="1054611161">
+																	<PropertyList>
+																		<Property Name="GameAuxSendVolume" Type="Real64">
+																			<ValueList>
+																				<Value>-12</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="InitialDelay" Type="Real64">
+																			<ValueList>
+																				<Value>0.03</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="ReflectionsVolume" Type="Real64">
+																			<ValueList>
+																				<Value>-10</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																		<Reference Name="ReflectionsAuxSend">
+																			<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="GL_Tail_Room" ID="{7722CA02-5502-49C8-9DA7-031B96898DD9}" ShortID="289926757">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Tail_Room" ID="{C6528C54-DBFC-4296-83A0-2B186F41567E}">
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Tail_Room.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="820552392"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Tail_Room" ID="{C6528C54-DBFC-4296-83A0-2B186F41567E}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="GL_Pulse" ID="{CED56A75-961A-47F5-86DB-58D8F8CE9127}" ShortID="404012086">
+																	<PropertyList>
+																		<Property Name="InitialDelay" Type="Real64">
+																			<ValueList>
+																				<Value>0.11</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-3</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="GL_Pulse" ID="{A26D0677-39C4-4389-AC82-8EC558DCC9B6}" ShortID="874955836">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Pulse" ID="{646CFA9B-9766-4EF6-A9CA-3E1761CE393F}">
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Pulse.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="928118353"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Pulse" ID="{646CFA9B-9766-4EF6-A9CA-3E1761CE393F}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="GL_LFE" ID="{8C58A97D-E3C2-4F10-A8E6-5248EE14CF21}" ShortID="929806899">
+																	<PropertyList>
+																		<Property Name="InitialDelay" Type="Real64">
+																			<ValueList>
+																				<Value>0.03</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-2</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="GL_LFE" ID="{9D74BD3A-18A1-4AB6-AE33-1B7F6E01B1AB}" ShortID="442564945">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_LFE" ID="{A52C3929-4851-43A5-9631-4B1EB9A23F17}">
+																					<Language>SFX</Language>
+																					<AudioFile>GL_LFE.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="370818997"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_LFE" ID="{A52C3929-4851-43A5-9631-4B1EB9A23F17}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="GL_Mech" ID="{86539DFA-D97D-42D3-845C-06D49451E547}" ShortID="232324542">
+																	<PropertyList>
+																		<Property Name="InitialDelay" Type="Real64">
+																			<ValueList>
+																				<Value>0.03</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="MakeUpGain" Type="Real64">
+																			<ValueList>
+																				<Value>4</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="GL_Mech_1" ID="{FE4E6E11-D68A-400A-81F6-CCB32F8CCC3D}" ShortID="904157978">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Mech_1" ID="{D0BD1713-69D7-4618-9AEC-8D10347AD1B4}">
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Mech_1.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="431394652"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Mech_1" ID="{D0BD1713-69D7-4618-9AEC-8D10347AD1B4}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="GL_Mech_2" ID="{8EBA2C0D-CF12-46C5-8664-86F1D9425C8E}" ShortID="203898236">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Mech_2" ID="{1AC300A6-4B3A-4151-8C49-CE4619F92125}">
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Mech_2.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="1036012855"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Mech_2" ID="{1AC300A6-4B3A-4151-8C49-CE4619F92125}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="GL_Mech_3" ID="{2D5244FF-D8CD-4EF2-812D-AEBFBE599B07}" ShortID="626840899">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Mech_3" ID="{B5784288-F859-473F-86D9-926CE9E6D1BC}">
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Mech_3.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="554984534"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Mech_3" ID="{B5784288-F859-473F-86D9-926CE9E6D1BC}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																	<Playlist>
+																		<ItemRef Name="GL_Mech_1" ID="{FE4E6E11-D68A-400A-81F6-CCB32F8CCC3D}"/>
+																		<ItemRef Name="GL_Mech_2" ID="{8EBA2C0D-CF12-46C5-8664-86F1D9425C8E}"/>
+																		<ItemRef Name="GL_Mech_3" ID="{2D5244FF-D8CD-4EF2-812D-AEBFBE599B07}"/>
+																	</Playlist>
+																</RandomSequenceContainer>
+															</ChildrenList>
+															<GroupingInfo>
+																<GroupingBehaviorList>
+																	<GroupingBehavior>
+																		<ItemRef Name="GL_Transient" ID="{BA056449-8A69-4298-B4E1-0CC230815C77}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="GL_Tail_Room" ID="{FC6E5D6B-66F7-4928-BFE0-2395AB743240}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="GL_Pulse" ID="{CED56A75-961A-47F5-86DB-58D8F8CE9127}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="GL_LFE" ID="{8C58A97D-E3C2-4F10-A8E6-5248EE14CF21}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="GL_Tail_Spawn" ID="{9AEF82AF-E1CD-4FD5-9C65-3CEDF12527F8}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="GL_Tail_Atrium" ID="{252EBAD8-48DA-4836-BC03-7DA8F29ABE38}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="GL_Mech" ID="{86539DFA-D97D-42D3-845C-06D49451E547}"/>
+																	</GroupingBehavior>
+																</GroupingBehaviorList>
+																<GroupingList>
+																	<Grouping>
+																		<SwitchRef Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
+																		<ItemList>
+																			<ItemRef Name="GL_Transient" ID="{BA056449-8A69-4298-B4E1-0CC230815C77}"/>
+																			<ItemRef Name="GL_Tail_Spawn" ID="{9AEF82AF-E1CD-4FD5-9C65-3CEDF12527F8}"/>
+																			<ItemRef Name="GL_Pulse" ID="{CED56A75-961A-47F5-86DB-58D8F8CE9127}"/>
+																			<ItemRef Name="GL_Mech" ID="{86539DFA-D97D-42D3-845C-06D49451E547}"/>
+																			<ItemRef Name="GL_LFE" ID="{8C58A97D-E3C2-4F10-A8E6-5248EE14CF21}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+																		<ItemList>
+																			<ItemRef Name="GL_Transient" ID="{BA056449-8A69-4298-B4E1-0CC230815C77}"/>
+																			<ItemRef Name="GL_Tail_Atrium" ID="{252EBAD8-48DA-4836-BC03-7DA8F29ABE38}"/>
+																			<ItemRef Name="GL_Pulse" ID="{CED56A75-961A-47F5-86DB-58D8F8CE9127}"/>
+																			<ItemRef Name="GL_Mech" ID="{86539DFA-D97D-42D3-845C-06D49451E547}"/>
+																			<ItemRef Name="GL_LFE" ID="{8C58A97D-E3C2-4F10-A8E6-5248EE14CF21}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="None" ID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
+																		<ItemList>
+																			<ItemRef Name="GL_Transient" ID="{BA056449-8A69-4298-B4E1-0CC230815C77}"/>
+																			<ItemRef Name="GL_Pulse" ID="{CED56A75-961A-47F5-86DB-58D8F8CE9127}"/>
+																			<ItemRef Name="GL_Tail_Atrium" ID="{252EBAD8-48DA-4836-BC03-7DA8F29ABE38}"/>
+																			<ItemRef Name="GL_Mech" ID="{86539DFA-D97D-42D3-845C-06D49451E547}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
+																		<ItemList>
+																			<ItemRef Name="GL_Transient" ID="{BA056449-8A69-4298-B4E1-0CC230815C77}"/>
+																			<ItemRef Name="GL_Tail_Room" ID="{FC6E5D6B-66F7-4928-BFE0-2395AB743240}"/>
+																			<ItemRef Name="GL_Pulse" ID="{CED56A75-961A-47F5-86DB-58D8F8CE9127}"/>
+																			<ItemRef Name="GL_Mech" ID="{86539DFA-D97D-42D3-845C-06D49451E547}"/>
+																			<ItemRef Name="GL_LFE" ID="{8C58A97D-E3C2-4F10-A8E6-5248EE14CF21}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="STA_Outdoors_Balcony_Center" ID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
+																		<ItemList>
+																			<ItemRef Name="GL_Transient" ID="{BA056449-8A69-4298-B4E1-0CC230815C77}"/>
+																			<ItemRef Name="GL_Pulse" ID="{CED56A75-961A-47F5-86DB-58D8F8CE9127}"/>
+																			<ItemRef Name="GL_Tail_Atrium" ID="{252EBAD8-48DA-4836-BC03-7DA8F29ABE38}"/>
+																			<ItemRef Name="GL_Mech" ID="{86539DFA-D97D-42D3-845C-06D49451E547}"/>
+																			<ItemRef Name="GL_LFE" ID="{8C58A97D-E3C2-4F10-A8E6-5248EE14CF21}"/>
+																		</ItemList>
+																	</Grouping>
+																</GroupingList>
+															</GroupingInfo>
 														</SwitchContainer>
 														<Sound Name="Sine Pip" ID="{7BCCAACD-DAEE-4076-8867-4323FBC42FE3}" ShortID="832985939">
 															<PropertyList>
@@ -5022,35 +5464,2030 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="Sine Pip" ID="{FBF17A70-6EE1-4173-A416-C2DAB8D7D716}" ShortID="406918114">
-													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="2"/>
-													</PropertyList>
+												<SwitchContainer Name="GL_Impact_Location" ID="{A06ABEFC-8975-4A9C-A39A-748C781694E2}" ShortID="992728472">
 													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="ATN_UnrealHolograph" ID="{044D3425-A485-4809-96BA-ED930F9C1310}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+														</Reference>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}" WorkUnitID="{5DA9743F-24CB-48C8-8072-C39EB4F5CC2B}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="STA_LocationMix" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}" WorkUnitID="{5DA9743F-24CB-48C8-8072-C39EB4F5CC2B}"/>
+														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Tone Generator" ID="{D14A84D3-22C9-4755-85D4-3A1E58EA58A1}" ShortID="777800824" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+														<BlendContainer Name="GL_Impact_Atrium_Distance" ID="{E4F834B7-F829-45EF-B664-2480CE62EC9B}" ShortID="430095403">
 															<PropertyList>
-																<Property Name="FixDur" Type="Real32" Value="0.5"/>
-																<Property Name="StartFreq" Type="Real32" Value="500"/>
-																<Property Name="WaveGain" Type="Real32" Value="-20"/>
+																<Property Name="GameAuxSendVolume" Type="Real64">
+																	<ValueList>
+																		<Value>-12</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="ReflectionsVolume" Type="Real64">
+																	<ValueList>
+																		<Value>-10</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 															</PropertyList>
-															<Language>SFX</Language>
-														</SourcePlugin>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+																<Reference Name="ReflectionsAuxSend">
+																	<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="GL_Impact_Far_Atrium" ID="{B813928A-AE5A-43AA-BFC2-31F4805FB1B7}" ShortID="73837875">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="GL_Impact_Far_Atrium_01" ID="{95E7229A-8504-4D4A-8076-2CFFFF54DE8E}" ShortID="978218006">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Impact_Far_Atrium" ID="{49732C05-5226-47D1-A215-AAF1487F5F1C}">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.725132665537998"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="4.71762781226486"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Impact_Far_Atrium.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="1032557313"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Impact_Far_Atrium" ID="{49732C05-5226-47D1-A215-AAF1487F5F1C}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="GL_Impact_Far_Atrium_02" ID="{747B593A-3A53-49B3-8A03-FD05D77B3489}" ShortID="804152999">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Impact_Far_Atrium" ID="{0BD0F76F-CC0B-47F2-AA37-5651555320E7}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.0511858352144472"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.725132665537998"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="4.67497294958616"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="9.34994589917231"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Impact_Far_Atrium.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="514770190"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Impact_Far_Atrium" ID="{0BD0F76F-CC0B-47F2-AA37-5651555320E7}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="GL_Impact_Near_Atrium" ID="{9E9F668E-A893-4F39-96D3-8A474913B655}" ShortID="95820808">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="GL_Impact_Close_Atrium" ID="{3A541C41-8E36-455F-A18D-33FECFF5F117}" ShortID="842110259">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Impact_Close_Atrium" ID="{384E1B67-03BB-4395-BBA2-1AA849F542A1}">
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Impact_Close_Atrium.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="68927910"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Impact_Close_Atrium" ID="{384E1B67-03BB-4395-BBA2-1AA849F542A1}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<BlendContainer Name="GL_Impact_Close_Atrium" ID="{8511C2A0-C01A-447D-B1B1-86B54DEC532D}" ShortID="882106730">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<RandomSequenceContainer Name="GL_Impact_Close_Explosion" ID="{975215A9-9589-4BAE-A2A1-A5369895DE82}" ShortID="483159611">
+																			<PropertyList>
+																				<Property Name="GameAuxSendVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-12</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="ReflectionsVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-10</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																				<Reference Name="ReflectionsAuxSend">
+																					<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="GL_Impact_Explosion_01" ID="{A80C6188-80F8-445F-ACB6-A687AEF1FCED}" ShortID="347013939">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{69BD8DF1-A361-48B9-9C24-85264F7E6523}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="3.03667584650113"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="826207383"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{69BD8DF1-A361-48B9-9C24-85264F7E6523}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_02" ID="{4917B12C-48FE-4BA5-A62B-BE202B883248}" ShortID="7778284">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{A14C9A99-8A2D-4E9A-ACAC-14630D3A62E9}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="3.03667584650113"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="6.40262979683973"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="310455440"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{A14C9A99-8A2D-4E9A-ACAC-14630D3A62E9}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_03" ID="{6E4A0F39-E286-4F89-A379-0802C9EEF838}" ShortID="69102008">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{121E3024-F40A-4372-8884-2C4CA7C35A77}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="6.31116365688488"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="9.27466659142212"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="848710380"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{121E3024-F40A-4372-8884-2C4CA7C35A77}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_04" ID="{42CBF462-1085-4D7F-85A1-662B1EDCA9DC}" ShortID="1019472699">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{BFD280BF-B282-47DF-9C66-07BF9BE6ED08}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="9.23808013544019"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="12.3845153498871"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="298571565"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{BFD280BF-B282-47DF-9C66-07BF9BE6ED08}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_05" ID="{77428009-88AB-4A17-A8EB-CA845C5F8792}" ShortID="251486509">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{565A4384-D76A-493E-9BED-CC03BA686BFB}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="12.3296356659142"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="15.5309505643341"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="530330132"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{565A4384-D76A-493E-9BED-CC03BA686BFB}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_06" ID="{F7CBA258-9F1C-4A3A-A569-913720F13F31}" ShortID="788667016">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{7C3ED914-BD17-4275-A5ED-F291C254FA63}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="15.4760708803612"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="18.6042128668172"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="483668572"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{7C3ED914-BD17-4275-A5ED-F291C254FA63}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_07" ID="{BB12F493-7811-4D39-B75D-52FDFE9FF936}" ShortID="578468552">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{576235FC-2412-4E5A-8966-096600992FFE}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="18.5859196388262"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="21.787234537246"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="545835261"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{576235FC-2412-4E5A-8966-096600992FFE}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_08" ID="{36451645-E40D-432D-9CD5-2F22872293E9}" ShortID="81706743">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{DD22EFD6-F12D-4297-92ED-C503086CB51D}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="21.7140616252822"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="24.8422036117381"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="421270597"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{DD22EFD6-F12D-4297-92ED-C503086CB51D}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_09" ID="{E0020730-9DB6-4BCB-8CF3-EEF7982A29B3}" ShortID="955483281">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{1060BD97-3E68-4D57-95B6-29E24CD366E1}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="24.8056171557562"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="27.9703455981941"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="1029793749"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{1060BD97-3E68-4D57-95B6-29E24CD366E1}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_10" ID="{180D95D5-6871-435C-83E6-64DA719D7F48}" ShortID="142631960">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{1EFC2EB8-E5C6-42AC-8707-26D3E0595FF8}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="27.9154659142212"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="31.2814198645598"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="132631597"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{1EFC2EB8-E5C6-42AC-8707-26D3E0595FF8}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_11" ID="{40D4ABFA-CB15-4E3C-930E-ECB110534400}" ShortID="970991653">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{C3EDD309-8C7B-4370-876E-384209F6208E}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="31.2448334085779"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="34.1900431151241"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="122584535"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{C3EDD309-8C7B-4370-876E-384209F6208E}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_12" ID="{0648E18B-2BC6-46B7-8F87-473B19E2AFA1}" ShortID="707798707">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{CDA06821-4ED6-4328-872B-D4C762C57E3C}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="34.1351634311512"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="37.3181851015801"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="364992105"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{CDA06821-4ED6-4328-872B-D4C762C57E3C}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_13" ID="{0A5C4BEA-DBEF-4907-BE10-30BF873D3FA9}" ShortID="314961109">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{DC0EE9D8-8E09-4020-BB7F-E03B59DA994B}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="37.2633054176072"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="469990783"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{DC0EE9D8-8E09-4020-BB7F-E03B59DA994B}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																		<RandomSequenceContainer Name="GL_Impact_Close_Tail_Atrium" ID="{4A8AAB63-535E-4BC6-B0ED-0361AC07B99A}" ShortID="707977022">
+																			<PropertyList>
+																				<Property Name="GameAuxSendVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-12</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="InitialDelay" Type="Real64">
+																					<ValueList>
+																						<Value>0.04</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="ReflectionsVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-10</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																				<Reference Name="ReflectionsAuxSend">
+																					<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="GL_Impact_Tail_Atrium" ID="{00690D5B-E50B-46B6-B0E3-BC93DA468319}" ShortID="593162930">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Tail_Atrium" ID="{1C2DC2D4-6AE1-416C-8C9D-E77C700A2B2A}">
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Tail_Atrium.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="402662610"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Tail_Atrium" ID="{1C2DC2D4-6AE1-416C-8C9D-E77C700A2B2A}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																	</ChildrenList>
+																</BlendContainer>
+															</ChildrenList>
+															<BlendTrackList>
+																<BlendTrack Name="Distance" ID="{16D7E116-C260-4205-998A-1A0DEE93A55C}" ShortID="572092294">
+																	<PropertyList>
+																		<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="LayerCrossFadeControlInput">
+																			<ObjectRef Name="PAR_GL_Impact_Distance" ID="{BA395E67-E6A3-4067-9942-34C856290AFF}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<BlendTrackAssocList>
+																		<BlendTrackAssoc>
+																			<ItemRef Name="GL_Impact_Close_Atrium" ID="{8511C2A0-C01A-447D-B1B1-86B54DEC532D}"/>
+																			<CrossfadingInfo>
+																				<LeftEdgePos>0</LeftEdgePos>
+																				<LeftFadingMode>Automatic</LeftFadingMode>
+																				<RightEdgePos>5000</RightEdgePos>
+																				<RightFadingMode>Automatic</RightFadingMode>
+																			</CrossfadingInfo>
+																		</BlendTrackAssoc>
+																		<BlendTrackAssoc>
+																			<ItemRef Name="GL_Impact_Near_Atrium" ID="{9E9F668E-A893-4F39-96D3-8A474913B655}"/>
+																			<CrossfadingInfo>
+																				<LeftEdgePos>3000</LeftEdgePos>
+																				<LeftFadingMode>Automatic</LeftFadingMode>
+																				<RightEdgePos>9000</RightEdgePos>
+																				<RightFadingMode>Automatic</RightFadingMode>
+																			</CrossfadingInfo>
+																		</BlendTrackAssoc>
+																		<BlendTrackAssoc>
+																			<ItemRef Name="GL_Impact_Far_Atrium" ID="{B813928A-AE5A-43AA-BFC2-31F4805FB1B7}"/>
+																			<CrossfadingInfo>
+																				<LeftEdgePos>7000</LeftEdgePos>
+																				<LeftFadingMode>Automatic</LeftFadingMode>
+																				<RightEdgePos>11934.1645885287</RightEdgePos>
+																				<RightFadingMode>Automatic</RightFadingMode>
+																			</CrossfadingInfo>
+																		</BlendTrackAssoc>
+																	</BlendTrackAssocList>
+																</BlendTrack>
+															</BlendTrackList>
+														</BlendContainer>
+														<BlendContainer Name="GL_Impact_Room_Distance" ID="{05E51F5E-8C04-4DCF-9463-D3B206FAA67F}" ShortID="855266209">
+															<PropertyList>
+																<Property Name="GameAuxSendVolume" Type="Real64">
+																	<ValueList>
+																		<Value>-12</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="ReflectionsVolume" Type="Real64">
+																	<ValueList>
+																		<Value>-10</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+																<Reference Name="ReflectionsAuxSend">
+																	<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="GL_Impact_Far_Room" ID="{335B887D-B6EC-4655-9A79-443D28AA7162}" ShortID="856226046">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="GL_Impact_Far_Room_01" ID="{8FC1BEFC-105A-46F5-9644-20064AE8EAFA}" ShortID="699734823">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Impact_Far_Room" ID="{761555BF-7844-44BE-83AF-C36FCFB2FEAF}">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.886517607223476"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="3.90489898419865"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Impact_Far_Room.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="912217750"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Impact_Far_Room" ID="{761555BF-7844-44BE-83AF-C36FCFB2FEAF}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="GL_Impact_Far_Room_02" ID="{163CB590-D05F-4E42-8BEC-25B1FAFCA851}" ShortID="740122830">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Impact_Far_Room" ID="{C6C2FC72-C7FD-4071-AEB6-E0BFD101A111}">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.886517607223476"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="3.89786313017306"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="7.79572626034612"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Impact_Far_Room.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="790486722"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Impact_Far_Room" ID="{C6C2FC72-C7FD-4071-AEB6-E0BFD101A111}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="GL_Impact_Far_Room_03" ID="{41B7BEB5-DF5D-44DB-986D-1B3B18B2AC4F}" ShortID="185540687">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Impact_Far_Room" ID="{ECC10F7A-BA39-471C-8D05-79570FE73E14}">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.886517607223476"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="7.79572626034613"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="11.6724818284424"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Impact_Far_Room.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="249724546"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Impact_Far_Room" ID="{ECC10F7A-BA39-471C-8D05-79570FE73E14}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="GL_Impact_Far_Room_04" ID="{8CAF39FB-941F-452E-B624-72A942F619FF}" ShortID="849012751">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Impact_Far_Room" ID="{9FBA647A-983B-4543-9E11-C8009F060FFD}">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.886517607223476"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="11.6865535364936"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Impact_Far_Room.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="473819520"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Impact_Far_Room" ID="{9FBA647A-983B-4543-9E11-C8009F060FFD}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<BlendContainer Name="GL_Impact_Close_Room" ID="{2D988359-9808-43F1-8F12-47CAE4324D22}" ShortID="231252791">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<RandomSequenceContainer Name="GL_Impact_Close_Tail_Room" ID="{11DE7B44-2370-4308-BFD9-222B0CE55822}" ShortID="322190981">
+																			<PropertyList>
+																				<Property Name="GameAuxSendVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-12</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="InitialDelay" Type="Real64">
+																					<ValueList>
+																						<Value>0.04</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="ReflectionsVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-10</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																				<Reference Name="ReflectionsAuxSend">
+																					<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="GL_Impact_Tail_Room" ID="{365B698D-419F-41AE-B473-BDE88DB476A9}" ShortID="716618330">
+																					<PropertyList>
+																						<Property Name="GameAuxSendVolume" Type="Real64">
+																							<ValueList>
+																								<Value>-12</Value>
+																							</ValueList>
+																						</Property>
+																						<Property Name="ReflectionsVolume" Type="Real64">
+																							<ValueList>
+																								<Value>-10</Value>
+																							</ValueList>
+																						</Property>
+																						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																						<Reference Name="ReflectionsAuxSend">
+																							<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Tail_Room" ID="{DF54C3E4-0417-45F0-B994-5532BBD6A6CF}">
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Tail_Room.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="208798616"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Tail_Room" ID="{DF54C3E4-0417-45F0-B994-5532BBD6A6CF}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																		<RandomSequenceContainer Name="GL_Impact_Close_Explosion" ID="{F8368249-1EC6-4933-B640-33FFC8365CA8}" ShortID="258235916">
+																			<PropertyList>
+																				<Property Name="GameAuxSendVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-12</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="ReflectionsVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-10</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																				<Reference Name="ReflectionsAuxSend">
+																					<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="GL_Impact_Explosion_01" ID="{2941D1BD-71C8-41F0-87BB-0BF1F1844214}" ShortID="730289370">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{84BA1A0D-DFF9-49ED-8F4C-A9DF5676499C}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="3.03667584650113"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="826207383"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{84BA1A0D-DFF9-49ED-8F4C-A9DF5676499C}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_02" ID="{5EE5E09B-5BCB-42C8-822E-880330FBFA90}" ShortID="826607203">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{93F62826-DF79-4B10-9F93-63469C624059}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="3.03667584650113"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="6.40262979683973"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="310455440"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{93F62826-DF79-4B10-9F93-63469C624059}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_03" ID="{5622B878-6DAF-4376-82D1-A8578F6E8FD1}" ShortID="450635389">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{F9854412-C981-4B1E-86B2-6DB1A499286E}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="6.31116365688488"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="9.27466659142212"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="848710380"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{F9854412-C981-4B1E-86B2-6DB1A499286E}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_04" ID="{3509FF8C-151F-45E5-92CB-31602DCD4FD8}" ShortID="125850763">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{516F62FA-CACE-4EFD-A8A0-CE99DD650976}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="9.23808013544019"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="12.3845153498871"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="298571565"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{516F62FA-CACE-4EFD-A8A0-CE99DD650976}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_05" ID="{F03DA22C-CFF5-4EF6-9380-2F49DE4147BB}" ShortID="916648058">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{997C7319-525E-47CE-9D99-98497C949159}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="12.3296356659142"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="15.5309505643341"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="530330132"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{997C7319-525E-47CE-9D99-98497C949159}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_06" ID="{61DCA439-7276-4372-8E4F-D1FA7CFCB9BE}" ShortID="529354267">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{12F304C7-BE96-4D08-B42E-928A840A7064}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="15.4760708803612"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="18.6042128668172"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="483668572"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{12F304C7-BE96-4D08-B42E-928A840A7064}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_07" ID="{3DD548C8-AD02-4688-85D3-F423C5D92DEB}" ShortID="1010249379">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{33052ADD-7A9B-4540-B830-263BBE0BDBE9}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="18.5859196388262"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="21.787234537246"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="545835261"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{33052ADD-7A9B-4540-B830-263BBE0BDBE9}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_08" ID="{A3ECCA1C-7C6B-4EE3-80AF-C0519768F2DB}" ShortID="211975615">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{2830FA77-DB66-4473-A7FA-B0E11A4AB801}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="21.7140616252822"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="24.8422036117381"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="421270597"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{2830FA77-DB66-4473-A7FA-B0E11A4AB801}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_09" ID="{55C6DC64-3730-4C29-8890-552BECD53785}" ShortID="69243773">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{AF27298D-4319-49F8-B65E-748B35596C5E}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="24.8056171557562"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="27.9703455981941"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="1029793749"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{AF27298D-4319-49F8-B65E-748B35596C5E}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_10" ID="{69AD2677-E77F-4D62-BD74-34938A70613C}" ShortID="925784130">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{F55FDF3D-8DB6-4188-A34C-3795702E0D8B}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="27.9154659142212"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="31.2814198645598"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="132631597"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{F55FDF3D-8DB6-4188-A34C-3795702E0D8B}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_11" ID="{5E00E42F-9A85-4D95-BE90-2CFE8170025A}" ShortID="852753548">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{AF11987C-1600-4281-9A13-66F40CA56F8D}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="31.2448334085779"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="34.1900431151241"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="122584535"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{AF11987C-1600-4281-9A13-66F40CA56F8D}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_12" ID="{9BFA42EB-9610-49F4-A189-51F5C40BB4E0}" ShortID="497429201">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{2E0B4E31-3776-4508-A22F-214382AAD734}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="34.1351634311512"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="37.3181851015801"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="364992105"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{2E0B4E31-3776-4508-A22F-214382AAD734}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_13" ID="{18291837-8F69-452D-85E0-827E2EE8193D}" ShortID="686003480">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{E5B84D4C-8554-4C2E-8DEC-63B138947131}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="37.2633054176072"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="469990783"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{E5B84D4C-8554-4C2E-8DEC-63B138947131}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																	</ChildrenList>
+																</BlendContainer>
+																<RandomSequenceContainer Name="GL_Impact_Near_Room" ID="{F9BCCF9C-6A6D-46B6-97BB-70917C2D77D3}" ShortID="126229591">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="GL_Impact_Near_Room" ID="{CBE7178D-422A-4A77-AF78-3F700C4A0E34}" ShortID="334593701">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Impact_Close_Room" ID="{E5926C0A-501A-423A-BACB-FB7F10087E27}">
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Impact_Close_Room.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="649546232"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Impact_Close_Room" ID="{E5926C0A-501A-423A-BACB-FB7F10087E27}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+															</ChildrenList>
+															<BlendTrackList>
+																<BlendTrack Name="New Blend Track" ID="{A39DAA76-2CDB-41CC-81FE-9E5194F070E6}" ShortID="1051304176">
+																	<PropertyList>
+																		<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="LayerCrossFadeControlInput">
+																			<ObjectRef Name="PAR_GL_Impact_Distance" ID="{BA395E67-E6A3-4067-9942-34C856290AFF}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<BlendTrackAssocList>
+																		<BlendTrackAssoc>
+																			<ItemRef Name="GL_Impact_Close_Room" ID="{2D988359-9808-43F1-8F12-47CAE4324D22}"/>
+																			<CrossfadingInfo>
+																				<LeftEdgePos>0</LeftEdgePos>
+																				<LeftFadingMode>Automatic</LeftFadingMode>
+																				<RightEdgePos>5000</RightEdgePos>
+																				<RightFadingMode>Automatic</RightFadingMode>
+																			</CrossfadingInfo>
+																		</BlendTrackAssoc>
+																		<BlendTrackAssoc>
+																			<ItemRef Name="GL_Impact_Near_Room" ID="{F9BCCF9C-6A6D-46B6-97BB-70917C2D77D3}"/>
+																			<CrossfadingInfo>
+																				<LeftEdgePos>3000</LeftEdgePos>
+																				<LeftFadingMode>Automatic</LeftFadingMode>
+																				<RightEdgePos>9000</RightEdgePos>
+																				<RightFadingMode>Automatic</RightFadingMode>
+																			</CrossfadingInfo>
+																		</BlendTrackAssoc>
+																		<BlendTrackAssoc>
+																			<ItemRef Name="GL_Impact_Far_Room" ID="{335B887D-B6EC-4655-9A79-443D28AA7162}"/>
+																			<CrossfadingInfo>
+																				<LeftEdgePos>7000</LeftEdgePos>
+																				<LeftFadingMode>Automatic</LeftFadingMode>
+																				<RightEdgePos>12000</RightEdgePos>
+																				<RightFadingMode>Automatic</RightFadingMode>
+																			</CrossfadingInfo>
+																		</BlendTrackAssoc>
+																	</BlendTrackAssocList>
+																</BlendTrack>
+															</BlendTrackList>
+														</BlendContainer>
+														<BlendContainer Name="GL_Impact_Spawn_Distance" ID="{90AD766D-2E98-4862-99C7-63B81DD8A52F}" ShortID="171623567">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<BlendContainer Name="GL_Impact_Close_Spawn" ID="{D30A6C35-0C56-4D46-80C6-AD19AAD7CD9A}" ShortID="1051825042">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<RandomSequenceContainer Name="GL_Impact_Explosion_Spawn" ID="{852E27A7-05D4-4757-BAA5-4C0C7485412F}" ShortID="378896794">
+																			<PropertyList>
+																				<Property Name="GameAuxSendVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-12</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="ReflectionsVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-10</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																				<Reference Name="ReflectionsAuxSend">
+																					<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="GL_Impact_Explosion_01" ID="{164F460F-42A7-40EC-9EDF-F80EC0862819}" ShortID="414139151">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{B163CBF7-E08F-4B74-B823-982D83C2D6B8}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="3.03667584650113"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="826207383"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{B163CBF7-E08F-4B74-B823-982D83C2D6B8}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_02" ID="{6259BFBB-5D6F-4697-AB02-FC987D0E00C3}" ShortID="465574698">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{6CDA339A-FC44-478B-93AA-7B3B4F2258B9}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="3.03667584650113"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="6.40262979683973"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="310455440"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{6CDA339A-FC44-478B-93AA-7B3B4F2258B9}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_03" ID="{95394959-1253-4939-91B4-E1EF421EF173}" ShortID="155949558">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{042461CC-EE71-4181-BFF0-389E27ED22E0}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="6.31116365688488"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="9.27466659142212"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="848710380"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{042461CC-EE71-4181-BFF0-389E27ED22E0}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_04" ID="{6CA3AA18-2ACD-431E-90B4-E4DF4EE854B2}" ShortID="611667014">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{D4731E73-0B7A-4AD9-AFC7-8A99BC7A225E}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="9.23808013544019"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="12.3845153498871"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="298571565"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{D4731E73-0B7A-4AD9-AFC7-8A99BC7A225E}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_05" ID="{9E29A9E9-1332-4BD8-B217-9AE71FF9C63B}" ShortID="605858058">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{9D46C861-5FCD-435D-A4C1-A958A7B35CC1}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="12.3296356659142"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="15.5309505643341"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="530330132"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{9D46C861-5FCD-435D-A4C1-A958A7B35CC1}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_06" ID="{B75A3591-31E3-4B3D-9E9D-426193AE1E74}" ShortID="177031282">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{EDF5E726-C47C-43FB-A2BE-7102658D6454}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="15.4760708803612"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="18.6042128668172"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="483668572"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{EDF5E726-C47C-43FB-A2BE-7102658D6454}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_07" ID="{49BED421-19EE-49B3-BC21-59DF4AF35DE8}" ShortID="807048917">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{DD2FB5E6-61B8-46C5-A092-9F3465AF6B6E}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="18.5859196388262"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="21.787234537246"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="545835261"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{DD2FB5E6-61B8-46C5-A092-9F3465AF6B6E}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_08" ID="{64730060-F169-4AA7-B156-2ABBEF633490}" ShortID="11781758">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{2A9C6520-97ED-425B-B84E-0A9D6B53D7B4}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="21.7140616252822"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="24.8422036117381"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="421270597"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{2A9C6520-97ED-425B-B84E-0A9D6B53D7B4}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_09" ID="{4FE8DB4B-E8A3-44D4-A0E4-F0EFBF467219}" ShortID="882135846">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{25E77A53-00C3-4FF7-9EBE-155573192B8F}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="24.8056171557562"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="27.9703455981941"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="1029793749"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{25E77A53-00C3-4FF7-9EBE-155573192B8F}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_10" ID="{CEBC4519-445A-4576-830F-720A9A9678A1}" ShortID="1044609059">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{EAEDF137-047C-42A6-BAF8-30CF0BABA9F3}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="27.9154659142212"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="31.2814198645598"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="132631597"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{EAEDF137-047C-42A6-BAF8-30CF0BABA9F3}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_11" ID="{FC0AA218-8600-4B4C-B74A-DB8313AC9A53}" ShortID="913057874">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{FE6DE6DB-E5E4-429C-9BCD-AC579DE8D876}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="31.2448334085779"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="34.1900431151241"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="122584535"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{FE6DE6DB-E5E4-429C-9BCD-AC579DE8D876}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_12" ID="{04B21230-04A1-4A5E-9B0A-8D82D8F49131}" ShortID="728067897">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{6AA6A26F-CA87-4706-88C3-6DA0411810C7}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="34.1351634311512"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="37.3181851015801"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="364992105"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{6AA6A26F-CA87-4706-88C3-6DA0411810C7}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="GL_Impact_Explosion_13" ID="{1FD150EA-43EB-4E45-8989-B0CC877D3A73}" ShortID="1018871749">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Explosion_Stem" ID="{2436D392-F3C6-4AA1-9507-7B2EF2B408BC}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="37.2633054176072"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Explosion_Stem.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="469990783"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Explosion_Stem" ID="{2436D392-F3C6-4AA1-9507-7B2EF2B408BC}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																		<RandomSequenceContainer Name="GL_Impact_Tail_Spawn" ID="{6EB95D1B-FA8C-4B0E-B3BB-CB5F4D5CFF0B}" ShortID="210799354">
+																			<PropertyList>
+																				<Property Name="GameAuxSendVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-12</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="InitialDelay" Type="Real64">
+																					<ValueList>
+																						<Value>0.04</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="ReflectionsVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-10</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-3</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																				<Reference Name="ReflectionsAuxSend">
+																					<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="GL_Impact_Tail_Spawn" ID="{8E3C36E4-C4F1-485D-86C3-7C3175DA4D41}" ShortID="776258912">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="GL_Impact_Tail_Spawn" ID="{C29E80B3-5F92-4EE8-87BD-D2892CE70A77}">
+																							<Language>SFX</Language>
+																							<AudioFile>GL_Impact_Tail_Spawn.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="763314345"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="GL_Impact_Tail_Spawn" ID="{C29E80B3-5F92-4EE8-87BD-D2892CE70A77}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																	</ChildrenList>
+																</BlendContainer>
+																<RandomSequenceContainer Name="GL_Impact_Near_Spawn" ID="{69300621-8B02-452C-9FA1-731F9F43D7D2}" ShortID="279639328">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="GL_Impact_Close_Spawn" ID="{FDA56076-C7A5-4E89-A63F-D84BD38492F5}" ShortID="478966878">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Impact_Close_Spawn" ID="{67F4DD6A-698E-4162-BBA8-58B042FAF9C8}">
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Impact_Close_Spawn.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="939444335"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Impact_Close_Spawn" ID="{67F4DD6A-698E-4162-BBA8-58B042FAF9C8}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="GL_Impact_Far_Spawn" ID="{F0770058-6B78-4021-8A95-E8684B64283E}" ShortID="693237252">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="GL_Impact_Far_Spawn_01" ID="{2702AE31-900B-49BC-98B5-BE4B2B46C689}" ShortID="319152336">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Impact_Far_Spawn" ID="{A021DECA-BB44-4525-8D62-F268FEB2FE21}">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.965320278404816"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="2.94521186982694"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Impact_Far_Spawn.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="350098340"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Impact_Far_Spawn" ID="{A021DECA-BB44-4525-8D62-F268FEB2FE21}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="GL_Impact_Far_Spawn_02" ID="{00383854-B0EF-48C9-A361-25C9BA39F9E8}" ShortID="488954234">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Impact_Far_Spawn" ID="{EB8943F8-246A-477A-B83C-B3215C345CDD}">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.965320278404816"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="2.92058635252069"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="5.65401877351392"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Impact_Far_Spawn.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="758183093"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Impact_Far_Spawn" ID="{EB8943F8-246A-477A-B83C-B3215C345CDD}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="GL_Impact_Far_Spawn_03" ID="{97E13D16-309B-4848-BB28-D1620658711D}" ShortID="442063965">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Impact_Far_Spawn" ID="{31FE145E-D725-4FC2-B324-821F3229EFF9}">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.965320278404816"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="5.64416856659142"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="8.0919449868322"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Impact_Far_Spawn.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="576977623"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Impact_Far_Spawn" ID="{31FE145E-D725-4FC2-B324-821F3229EFF9}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="GL_Impact_Far_Spawn_04" ID="{FD266BD7-D700-4545-8FA8-46A6179648D9}" ShortID="388467286">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="GL_Impact_Far_Spawn" ID="{27D9933B-07F2-41A2-ACBE-5C9523AB5901}">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.965320278404816"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="8.08701988337096"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Impact_Far_Spawn.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="801983389"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Impact_Far_Spawn" ID="{27D9933B-07F2-41A2-ACBE-5C9523AB5901}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+															</ChildrenList>
+															<BlendTrackList>
+																<BlendTrack Name="New Blend Track" ID="{9167B554-309F-411B-85F9-8B62CA3C16F7}" ShortID="341589901">
+																	<PropertyList>
+																		<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="LayerCrossFadeControlInput">
+																			<ObjectRef Name="PAR_GL_Impact_Distance" ID="{BA395E67-E6A3-4067-9942-34C856290AFF}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<BlendTrackAssocList>
+																		<BlendTrackAssoc>
+																			<ItemRef Name="GL_Impact_Close_Spawn" ID="{D30A6C35-0C56-4D46-80C6-AD19AAD7CD9A}"/>
+																			<CrossfadingInfo>
+																				<LeftEdgePos>0</LeftEdgePos>
+																				<LeftFadingMode>Automatic</LeftFadingMode>
+																				<RightEdgePos>5000</RightEdgePos>
+																				<RightFadingMode>Automatic</RightFadingMode>
+																			</CrossfadingInfo>
+																		</BlendTrackAssoc>
+																		<BlendTrackAssoc>
+																			<ItemRef Name="GL_Impact_Near_Spawn" ID="{69300621-8B02-452C-9FA1-731F9F43D7D2}"/>
+																			<CrossfadingInfo>
+																				<LeftEdgePos>3000</LeftEdgePos>
+																				<LeftFadingMode>Automatic</LeftFadingMode>
+																				<RightEdgePos>9000</RightEdgePos>
+																				<RightFadingMode>Automatic</RightFadingMode>
+																			</CrossfadingInfo>
+																		</BlendTrackAssoc>
+																		<BlendTrackAssoc>
+																			<ItemRef Name="GL_Impact_Far_Spawn" ID="{F0770058-6B78-4021-8A95-E8684B64283E}"/>
+																			<CrossfadingInfo>
+																				<LeftEdgePos>7000</LeftEdgePos>
+																				<LeftFadingMode>Automatic</LeftFadingMode>
+																				<RightEdgePos>12000</RightEdgePos>
+																				<RightFadingMode>Automatic</RightFadingMode>
+																			</CrossfadingInfo>
+																		</BlendTrackAssoc>
+																	</BlendTrackAssocList>
+																</BlendTrack>
+															</BlendTrackList>
+														</BlendContainer>
 													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Tone Generator" ID="{D14A84D3-22C9-4755-85D4-3A1E58EA58A1}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+													<GroupingInfo>
+														<GroupingBehaviorList>
+															<GroupingBehavior>
+																<ItemRef Name="GL_Impact_Room_Distance" ID="{05E51F5E-8C04-4DCF-9463-D3B206FAA67F}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="GL_Impact_Spawn_Distance" ID="{90AD766D-2E98-4862-99C7-63B81DD8A52F}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="GL_Impact_Atrium_Distance" ID="{E4F834B7-F829-45EF-B664-2480CE62EC9B}"/>
+															</GroupingBehavior>
+														</GroupingBehaviorList>
+														<GroupingList>
+															<Grouping>
+																<SwitchRef Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
+																<ItemList>
+																	<ItemRef Name="GL_Impact_Spawn_Distance" ID="{90AD766D-2E98-4862-99C7-63B81DD8A52F}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+																<ItemList>
+																	<ItemRef Name="GL_Impact_Atrium_Distance" ID="{E4F834B7-F829-45EF-B664-2480CE62EC9B}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="None" ID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
+																<ItemList>
+																	<ItemRef Name="GL_Impact_Atrium_Distance" ID="{E4F834B7-F829-45EF-B664-2480CE62EC9B}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
+																<ItemList>
+																	<ItemRef Name="GL_Impact_Room_Distance" ID="{05E51F5E-8C04-4DCF-9463-D3B206FAA67F}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="STA_Outdoors_Balcony_Center" ID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
+																<ItemList>
+																	<ItemRef Name="GL_Impact_Atrium_Distance" ID="{E4F834B7-F829-45EF-B664-2480CE62EC9B}"/>
+																</ItemList>
+															</Grouping>
+														</GroupingList>
+													</GroupingInfo>
+												</SwitchContainer>
 											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>

@@ -19,6 +19,13 @@
 						<Property Name="Max" Type="Real64" Value="3"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="PAR_GL_Impact_Distance" ID="{BA395E67-E6A3-4067-9942-34C856290AFF}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="12000"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
