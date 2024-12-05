@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{16BB5519-A541-32B9-4A7E-A154198FAB5E}",
+    "Hash": "{0E07DD24-7DC3-F36E-D982-B1E9E42D7860}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -893,7 +893,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Tail_Room.wav",
-      "CachePath": "SFX/GL_Tail_Room_DF4D14E7.wem"
+      "CachePath": "SFX/GL_Tail_Room_782689B6.wem"
      },
      {
       "Id": "826207383",
@@ -1305,6 +1305,14 @@
        "GUID": "{4C8C34B6-5626-4F64-913D-CDCACC242C16}",
        "LibName": "Wwise Silence",
        "LibId": "6619138"
+      },
+      {
+       "Id": "989138636",
+       "Name": "Sine",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Weapons\\WEP_1P\\Shooting\\WEP_Travel\\GL_PassBy\\GL_PassBy_LP\\Sine",
+       "GUID": "{DCB5BD1B-6EED-43B3-86EB-DB1C55586592}",
+       "LibName": "Wwise Sine",
+       "LibId": "6553602"
       }
      ],
      "ShareSets": [
@@ -2851,14 +2859,29 @@
       ]
      },
      {
-      "Id": "2238434314",
-      "Name": "GL_PassBy_LP",
-      "ObjectPath": "\\Events\\Weapons\\Shooting\\Travel\\GL_PassBy_LP",
+      "Id": "3350841939",
+      "Name": "GL_PassBy_LP_Play",
+      "ObjectPath": "\\Events\\Weapons\\Shooting\\Travel\\GL_PassBy_LP_Play",
       "GUID": "{566534D1-0C06-45CC-8878-334A29476347}",
-      "MaxAttenuation": "0",
+      "MaxAttenuation": "3000",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "8",
+      "DurationMax": "8",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "989138636"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
      },
      {
       "Id": "464045509",
@@ -3247,6 +3270,6 @@
     ]
    }
   ],
-  "FileHash": "{AA5BAEAC-5898-6AC0-F217-139366B02BD3}"
+  "FileHash": "{6622CBEC-9A81-B6D9-3D6A-BFAAC6A8D059}"
  }
 }

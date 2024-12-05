@@ -248,7 +248,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{5E9CAEC6-8844-9693-E9A3-2200FB6B7E4C}">
+		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{72F9AD04-0045-7E70-6728-EEE35D0570EC}">
 			<ObjectPath>\SoundBanks\Foley\Foley</ObjectPath>
 			<ShortName>Foley</ShortName>
 			<Path>Foley.bnk</Path>
@@ -1168,7 +1168,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="677842196" Type="Event" GUID="{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}" Language="SFX" Hash="{E660F4B2-8FBC-DFDA-2EEB-D79000FF7807}">
+		<SoundBank Id="677842196" Type="Event" GUID="{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}" Language="SFX" Hash="{D06E2319-36B9-33A4-F3B4-967514A9F4BB}">
 			<ObjectPath>FOL_Armor</ObjectPath>
 			<ShortName>FOL_Armor</ShortName>
 			<Path>Event/FOL_Armor.bnk</Path>
@@ -1244,7 +1244,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="849782850" Type="Event" GUID="{D351862C-9224-46EA-B214-195532B40959}" Language="SFX" Hash="{474E21F4-8C52-F4BD-10E0-4DE168E336B6}">
+		<SoundBank Id="849782850" Type="Event" GUID="{D351862C-9224-46EA-B214-195532B40959}" Language="SFX" Hash="{34DDB357-D100-826C-7A05-8E4BFB233DD3}">
 			<ObjectPath>FOL_FallWhoosh</ObjectPath>
 			<ShortName>FOL_FallWhoosh</ShortName>
 			<Path>Event/FOL_FallWhoosh.bnk</Path>
@@ -1518,7 +1518,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{E61A3551-45E2-A0E2-BF44-3BCF27070DF8}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{17275045-69D6-4330-FF1A-6D3FBF15B504}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -1774,7 +1774,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{16BB5519-A541-32B9-4A7E-A154198FAB5E}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{0E07DD24-7DC3-F36E-D982-B1E9E42D7860}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -2217,7 +2217,7 @@
 				</File>
 				<File Id="820552392" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Tail_Room.wav</ShortName>
-					<CachePath>SFX/GL_Tail_Room_DF4D14E7.wem</CachePath>
+					<CachePath>SFX/GL_Tail_Room_782689B6.wem</CachePath>
 				</File>
 				<File Id="826207383" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
@@ -2354,6 +2354,7 @@
 					<Plugin Id="900087465" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_20\Silence" GUID="{E1B11188-FD33-4782-A590-2CE7ABAF513E}" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="932739902" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_17\Silence" GUID="{03B191CD-9387-4765-B742-C50CED4300BC}" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="934461864" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_01\Silence" GUID="{4C8C34B6-5626-4F64-913D-CDCACC242C16}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="989138636" Name="Sine" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Travel\GL_PassBy\GL_PassBy_LP\Sine" GUID="{DCB5BD1B-6EED-43B3-86EB-DB1C55586592}" LibName="Wwise Sine" LibId="6553602"/>
 				</Custom>
 				<ShareSets>
 					<Plugin Id="2080872166" Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Fast_Release" GUID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" LibName="Wwise Peak Limiter" LibId="7208963"/>
@@ -2925,7 +2926,16 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2238434314" Name="GL_PassBy_LP" ObjectPath="\Events\Weapons\Shooting\Travel\GL_PassBy_LP" GUID="{566534D1-0C06-45CC-8878-334A29476347}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3350841939" Name="GL_PassBy_LP_Play" ObjectPath="\Events\Weapons\Shooting\Travel\GL_PassBy_LP_Play" GUID="{566534D1-0C06-45CC-8878-334A29476347}" MaxAttenuation="3000" DurationType="OneShot" DurationMin="8" DurationMax="8">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="989138636"/>
+						</Custom>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
+				</Event>
 				<Event Id="464045509" Name="GL_Reload_OS" ObjectPath="\Events\Weapons\Reloading\GL_Reload_OS" GUID="{778E484F-B81F-4DFB-8587-4CEA07B594B0}" DurationType="OneShot" DurationMin="2.7136385" DurationMax="3.0459566">
 					<MediaRefs>
 						<MediaRef Id="624042849"/>
@@ -3310,7 +3320,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{C63E23E8-A53C-3CD7-B689-9B82C25787C7}">
+		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{44B44B56-7B42-9D40-6809-97FE9A01EFD0}">
 			<ObjectPath>FOL_Footstep_L</ObjectPath>
 			<ShortName>FOL_Footstep_L</ShortName>
 			<Path>Event/FOL_Footstep_L.bnk</Path>
@@ -3961,6 +3971,14 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
+		<SoundBank Id="2480860729" Type="Event" GUID="{4ABC7647-EB94-46FC-82E0-92911FB3B773}" Language="SFX" Hash="{3B4A1196-09A6-0E7C-B3BE-268A0D3C6D47}">
+			<ObjectPath>GL_PassBy_LP_Stop</ObjectPath>
+			<ShortName>GL_PassBy_LP_Stop</ShortName>
+			<Path>Event/GL_PassBy_LP_Stop.bnk</Path>
+			<Events>
+				<Event Id="2480860729" Name="GL_PassBy_LP_Stop" ObjectPath="\Events\Weapons\Shooting\Travel\GL_PassBy_LP_Stop" GUID="{4ABC7647-EB94-46FC-82E0-92911FB3B773}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="2496008984" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{CEE3F5E0-9808-4817-12FF-3CC94EBA3192}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_7</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_7</ShortName>
@@ -4261,5 +4279,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C8DDB550-CA1E-0C8B-4E98-F27E0255F88A}</FileHash>
+	<FileHash>{5580E319-7B8A-CAA1-D32D-A767A83C5BD0}</FileHash>
 </SoundBanksInfo>

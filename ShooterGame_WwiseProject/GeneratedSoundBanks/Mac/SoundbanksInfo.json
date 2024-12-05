@@ -538,7 +538,7 @@
     "Type": "User",
     "GUID": "{E4E1B551-3907-4673-8D70-D72000D8EB19}",
     "Language": "SFX",
-    "Hash": "{5E9CAEC6-8844-9693-E9A3-2200FB6B7E4C}",
+    "Hash": "{72F9AD04-0045-7E70-6728-EEE35D0570EC}",
     "ObjectPath": "\\SoundBanks\\Foley\\Foley",
     "ShortName": "Foley",
     "Path": "Foley.bnk",
@@ -2661,7 +2661,7 @@
     "Type": "Event",
     "GUID": "{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}",
     "Language": "SFX",
-    "Hash": "{E660F4B2-8FBC-DFDA-2EEB-D79000FF7807}",
+    "Hash": "{D06E2319-36B9-33A4-F3B4-967514A9F4BB}",
     "ObjectPath": "FOL_Armor",
     "ShortName": "FOL_Armor",
     "Path": "Event/FOL_Armor.bnk",
@@ -2814,7 +2814,7 @@
     "Type": "Event",
     "GUID": "{D351862C-9224-46EA-B214-195532B40959}",
     "Language": "SFX",
-    "Hash": "{474E21F4-8C52-F4BD-10E0-4DE168E336B6}",
+    "Hash": "{34DDB357-D100-826C-7A05-8E4BFB233DD3}",
     "ObjectPath": "FOL_FallWhoosh",
     "ShortName": "FOL_FallWhoosh",
     "Path": "Event/FOL_FallWhoosh.bnk",
@@ -3446,7 +3446,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{0CAB1710-91D6-D02D-32EA-17389EB31E9B}",
+    "Hash": "{19427EE9-BF5D-445F-2691-4CF29AF7330A}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -4355,7 +4355,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{16BB5519-A541-32B9-4A7E-A154198FAB5E}",
+    "Hash": "{0E07DD24-7DC3-F36E-D982-B1E9E42D7860}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -5238,7 +5238,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Tail_Room.wav",
-      "CachePath": "SFX/GL_Tail_Room_DF4D14E7.wem"
+      "CachePath": "SFX/GL_Tail_Room_782689B6.wem"
      },
      {
       "Id": "826207383",
@@ -5650,6 +5650,14 @@
        "GUID": "{4C8C34B6-5626-4F64-913D-CDCACC242C16}",
        "LibName": "Wwise Silence",
        "LibId": "6619138"
+      },
+      {
+       "Id": "989138636",
+       "Name": "Sine",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Weapons\\WEP_1P\\Shooting\\WEP_Travel\\GL_PassBy\\GL_PassBy_LP\\Sine",
+       "GUID": "{DCB5BD1B-6EED-43B3-86EB-DB1C55586592}",
+       "LibName": "Wwise Sine",
+       "LibId": "6553602"
       }
      ],
      "ShareSets": [
@@ -7196,14 +7204,29 @@
       ]
      },
      {
-      "Id": "2238434314",
-      "Name": "GL_PassBy_LP",
-      "ObjectPath": "\\Events\\Weapons\\Shooting\\Travel\\GL_PassBy_LP",
+      "Id": "3350841939",
+      "Name": "GL_PassBy_LP_Play",
+      "ObjectPath": "\\Events\\Weapons\\Shooting\\Travel\\GL_PassBy_LP_Play",
       "GUID": "{566534D1-0C06-45CC-8878-334A29476347}",
-      "MaxAttenuation": "0",
+      "MaxAttenuation": "3000",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "8",
+      "DurationMax": "8",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "989138636"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
      },
      {
       "Id": "464045509",
@@ -8116,7 +8139,7 @@
     "Type": "Event",
     "GUID": "{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}",
     "Language": "SFX",
-    "Hash": "{C63E23E8-A53C-3CD7-B689-9B82C25787C7}",
+    "Hash": "{44B44B56-7B42-9D40-6809-97FE9A01EFD0}",
     "ObjectPath": "FOL_Footstep_L",
     "ShortName": "FOL_Footstep_L",
     "Path": "Event/FOL_Footstep_L.bnk",
@@ -9538,6 +9561,28 @@
     ]
    },
    {
+    "Id": "2480860729",
+    "Type": "Event",
+    "GUID": "{4ABC7647-EB94-46FC-82E0-92911FB3B773}",
+    "Language": "SFX",
+    "Hash": "{3B4A1196-09A6-0E7C-B3BE-268A0D3C6D47}",
+    "ObjectPath": "GL_PassBy_LP_Stop",
+    "ShortName": "GL_PassBy_LP_Stop",
+    "Path": "Event/GL_PassBy_LP_Stop.bnk",
+    "Events": [
+     {
+      "Id": "2480860729",
+      "Name": "GL_PassBy_LP_Stop",
+      "ObjectPath": "\\Events\\Weapons\\Shooting\\Travel\\GL_PassBy_LP_Stop",
+      "GUID": "{4ABC7647-EB94-46FC-82E0-92911FB3B773}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   },
+   {
     "Id": "2496008984",
     "Type": "Event",
     "GUID": "{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}",
@@ -10182,6 +10227,6 @@
     ]
    }
   ],
-  "FileHash": "{0C0D8534-61BF-9A9D-C14B-3821B21A111F}"
+  "FileHash": "{B47F08F4-4FAE-80A0-0888-B770ECA1882B}"
  }
 }

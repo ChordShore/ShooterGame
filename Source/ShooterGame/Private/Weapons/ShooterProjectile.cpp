@@ -4,6 +4,7 @@
 #include "Weapons/ShooterProjectile.h"
 #include "Particles/ParticleSystemComponent.h"
 #include "Effects/ShooterExplosionEffect.h"
+#include "../Plugins/Wwise/Source/AkAudio/Classes/AkGameplayStatics.h"
 
 AShooterProjectile::AShooterProjectile(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {
@@ -53,6 +54,8 @@ void AShooterProjectile::PostInitializeComponents()
 
 	SetLifeSpan( WeaponConfig.ProjectileLife );
 	MyController = GetInstigatorController();
+	if (GEngine)
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("On Initialize!"));
 }
 
 void AShooterProjectile::InitVelocity(FVector& ShootDirection)
@@ -63,11 +66,27 @@ void AShooterProjectile::InitVelocity(FVector& ShootDirection)
 	}
 }
 
+//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+// Wwise Event Calls
+
+void AShooterProjectile::StopPassByLoop()
+{
+	FOnAkPostEventCallback nullCallback;
+	UAkGameplayStatics::PostEvent(PassByLoopStopEvent, this, int32(0), nullCallback);
+}
+
+//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
 void AShooterProjectile::OnImpact(const FHitResult& HitResult)
 {
 	if (GetLocalRole() == ROLE_Authority && !bExploded)
 	{
 		Explode(HitResult);
+		
+		//Call Wwise Stop Event
+		StopPassByLoop();
+		//if (GEngine)
+		//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("On Impact!"));
 		DisableAndDestroy();
 	}
 }

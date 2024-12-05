@@ -7,10 +7,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	1694533419	AR_Dryfire_OS			\Weapons\Shooting\Dryfire\AR_Dryfire_OS	
 	1764852559	GL_Dryfire_OS			\Weapons\Shooting\Dryfire\GL_Dryfire_OS	
 	1883352941	AR_WhizzBy_OS			\Weapons\Shooting\Travel\AR_WhizzBy_OS	
-	2238434314	GL_PassBy_LP			\Weapons\Shooting\Travel\GL_PassBy_LP	
 	3035132243	AR_Shoot_LP			\Weapons\Shooting\Shoot\AR_Shoot_LP	
 	3084237102	WEP_Target_Engage_OS			\Weapons\Targeting\WEP_Target_Engage_OS	
 	3314806526	GL_Equip_OS			\Weapons\Handling\Equip\GL_Equip_OS	
+	3350841939	GL_PassBy_LP_Play			\Weapons\Shooting\Travel\GL_PassBy_LP_Play	
 	4263945094	AR_Impact_OS			\Weapons\Shooting\Impact\AR_Impact_OS	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -73,6 +73,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	900087465	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_20\Silence	
 	932739902	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_17\Silence	
 	934461864	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_01\Silence	
+	989138636	Sine	Wwise Sine		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Travel\GL_PassBy\GL_PassBy_LP\Sine	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	14501665	AR_Shot_Tail_Room	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\AR_Shot_Tail_Room_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\Shot\AR_Shot_LP\AR_Shot_Constructor\AR_Tail_Room\AR_Shot_Tail_Room		768096
@@ -184,7 +185,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	807012812	GL_Tail_Spawn	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\GL_Tail_Spawn_69D3AF34.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\GL_Shoot\Shot\GL_Shot_Constructor\GL_Tail_Spawn\GL_Tail_Spawn		675876
 	809278308	WEP_AR_Impact_Ricochet_10	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\WEP_AR_Impact_Ricochet_01D5A3B4.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\WEP_AR_Impact_Ricochet_10		252396
 	811684578	GL_Dryfire	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\GL_Dryfire_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Dryfire\GL_Dryfire\GL_Dryfire		96096
-	820552392	GL_Tail_Room	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\GL_Tail_Room_DF4D14E7.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\GL_Shoot\Shot\GL_Shot_Constructor\GL_Tail_Room\GL_Tail_Room		404688
+	820552392	GL_Tail_Room	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\GL_Tail_Room_782689B6.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\GL_Shoot\Shot\GL_Shot_Constructor\GL_Tail_Room\GL_Tail_Room		404688
 	826207383	GL_Impact_Explosion_01	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\GL_Impact_Explosion_Stem_5F723851.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\GL_Impact\GL_Impact_Location\GL_Impact_Spawn_Distance\GL_Impact_Close_Spawn\GL_Impact_Explosion_Spawn\GL_Impact_Explosion_01		583136
 	826746919	WEP_AR_Impact_Grass_01	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\WEP_AR_Impact_Grass_9BF08E9B.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Grass\WEP_AR_Impact_Grass_01		239116
 	832229830	WEP_AR_Casings_02	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Windows\SFX\WEP_AR_Casings_E12ABD20.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\Shot\AR_Shot_LP\AR_Shot_Constructor\AR_Casings\WEP_AR_Casings_02		251288

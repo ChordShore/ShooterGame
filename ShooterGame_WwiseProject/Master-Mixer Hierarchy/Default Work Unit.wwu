@@ -90,6 +90,11 @@
 								</Bus>
 								<Bus Name="Foley" ID="{AFADED97-9376-47EE-8E61-63C3E2539C84}">
 									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Color" Type="int16" Value="2"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>
@@ -114,6 +119,11 @@
 								</Bus>
 								<Bus Name="Ambience" ID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}">
 									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Color" Type="int16" Value="4"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>

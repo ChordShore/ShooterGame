@@ -4,6 +4,7 @@
 
 #include "GameFramework/Actor.h"
 #include "ShooterWeapon_Projectile.h"
+#include "../Plugins/Wwise/Source/AkAudio/Classes/AkGameplayStatics.h"
 #include "ShooterProjectile.generated.h"
 
 class UProjectileMovementComponent;
@@ -25,6 +26,19 @@ class AShooterProjectile : public AActor
 	UFUNCTION()
 	void OnImpact(const FHitResult& HitResult);
 
+public:
+
+	//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+	// Wwise Event Pickers
+
+	/**Explosion Event**/
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkAudioEvent* PassByLoopStopEvent;
+
+	void StopPassByLoop();
+
+	//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
 private:
 	/** movement component */
 	UPROPERTY(VisibleDefaultsOnly, Category=Projectile)
@@ -36,6 +50,7 @@ private:
 
 	UPROPERTY(VisibleDefaultsOnly, Category=Projectile)
 	UParticleSystemComponent* ParticleComp;
+
 protected:
 
 	/** effects for explosion */

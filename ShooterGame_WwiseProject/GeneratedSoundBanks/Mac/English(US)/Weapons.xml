@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{16BB5519-A541-32B9-4A7E-A154198FAB5E}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{0E07DD24-7DC3-F36E-D982-B1E9E42D7860}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -444,7 +444,7 @@
 				</File>
 				<File Id="820552392" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Tail_Room.wav</ShortName>
-					<CachePath>SFX/GL_Tail_Room_DF4D14E7.wem</CachePath>
+					<CachePath>SFX/GL_Tail_Room_782689B6.wem</CachePath>
 				</File>
 				<File Id="826207383" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
@@ -581,6 +581,7 @@
 					<Plugin Id="900087465" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_20\Silence" GUID="{E1B11188-FD33-4782-A590-2CE7ABAF513E}" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="932739902" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_17\Silence" GUID="{03B191CD-9387-4765-B742-C50CED4300BC}" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="934461864" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_01\Silence" GUID="{4C8C34B6-5626-4F64-913D-CDCACC242C16}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="989138636" Name="Sine" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Travel\GL_PassBy\GL_PassBy_LP\Sine" GUID="{DCB5BD1B-6EED-43B3-86EB-DB1C55586592}" LibName="Wwise Sine" LibId="6553602"/>
 				</Custom>
 				<ShareSets>
 					<Plugin Id="2080872166" Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Fast_Release" GUID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" LibName="Wwise Peak Limiter" LibId="7208963"/>
@@ -1152,7 +1153,16 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2238434314" Name="GL_PassBy_LP" ObjectPath="\Events\Weapons\Shooting\Travel\GL_PassBy_LP" GUID="{566534D1-0C06-45CC-8878-334A29476347}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3350841939" Name="GL_PassBy_LP_Play" ObjectPath="\Events\Weapons\Shooting\Travel\GL_PassBy_LP_Play" GUID="{566534D1-0C06-45CC-8878-334A29476347}" MaxAttenuation="3000" DurationType="OneShot" DurationMin="8" DurationMax="8">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="989138636"/>
+						</Custom>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
+				</Event>
 				<Event Id="464045509" Name="GL_Reload_OS" ObjectPath="\Events\Weapons\Reloading\GL_Reload_OS" GUID="{778E484F-B81F-4DFB-8587-4CEA07B594B0}" DurationType="OneShot" DurationMin="2.7136385" DurationMax="3.0459566">
 					<MediaRefs>
 						<MediaRef Id="624042849"/>
@@ -1286,5 +1296,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{81DDEF6C-4435-FEC2-68CA-4F12F43BDF93}</FileHash>
+	<FileHash>{6BE76E28-17D8-A072-F243-3ADB23FBF663}</FileHash>
 </SoundBanksInfo>

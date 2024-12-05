@@ -4,6 +4,13 @@
   "BasePlatform": "Mac",
   "PluginLibs": [
    {
+    "LibName": "Wwise Sine",
+    "LibId": "6553602",
+    "Type": "Source",
+    "DLL": "AkSineTone",
+    "StaticLib": "AkSineSource"
+   },
+   {
     "LibName": "Wwise Silence",
     "LibId": "6619138",
     "Type": "Source",
@@ -56,6 +63,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{8458E252-C6D7-AAB9-84DB-903F76710EF8}"
+  "FileHash": "{0F4F6E2C-75AB-0166-7EF4-52FCF4179C78}"
  }
 }

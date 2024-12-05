@@ -251,7 +251,7 @@
 				</Attenuation>
 				<Attenuation Name="ATN_GL_Projectile_Passby" ID="{CA3441E2-7543-4DA2-9926-A4784F1B2467}" ShortID="816942174">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="9000"/>
+						<Property Name="RadiusMax" Type="Real64" Value="3000"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -268,13 +268,13 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>450</XPos>
+											<XPos>150</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>9000</XPos>
+											<XPos>3000</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>

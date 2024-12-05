@@ -67,8 +67,32 @@
 						</Folder>
 						<Folder Name="Travel" ID="{4FE35F46-9F34-4BFF-9FC3-E4FC881E80B5}" ShortID="370377988">
 							<ChildrenList>
-								<Event Name="GL_PassBy_LP" ID="{566534D1-0C06-45CC-8878-334A29476347}"/>
+								<Event Name="GL_PassBy_LP_Play" ID="{566534D1-0C06-45CC-8878-334A29476347}">
+									<ChildrenList>
+										<Action Name="" ID="{60C3CA6E-AD96-48CA-9236-DA33AF15B6AE}" ShortID="439316733">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="GL_PassBy_LP" ID="{B16300A5-57F7-4474-AA10-9822D7666387}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 								<Event Name="AR_WhizzBy_OS" ID="{DF281450-0700-404B-9DFD-8DBDC054CD38}"/>
+								<Event Name="GL_PassBy_LP_Stop" ID="{4ABC7647-EB94-46FC-82E0-92911FB3B773}">
+									<ChildrenList>
+										<Action Name="" ID="{DC0D22C1-F72D-4820-AEFB-9F63CF74F4D4}" ShortID="516246127">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="GL_PassBy_LP" ID="{B16300A5-57F7-4474-AA10-9822D7666387}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Shoot" ID="{7BBFB490-CAE0-4B15-AAE7-853265D511D4}" ShortID="842662391">
