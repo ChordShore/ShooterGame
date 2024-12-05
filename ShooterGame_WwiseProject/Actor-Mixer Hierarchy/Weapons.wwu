@@ -36,6 +36,13 @@
 						<Folder Name="Handling" ID="{BB1377C0-3B20-461F-BB83-D37F58A3D5A1}" ShortID="89065396">
 							<ChildrenList>
 								<ActorMixer Name="WEP_Equip" ID="{6D3D949B-610E-410A-9FB6-8B7F7DC40AB5}" ShortID="875575050">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -185,6 +192,11 @@
 													</ValueList>
 												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -293,7 +305,7 @@
 																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>-6</Value>
+																				<Value>-4</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -892,7 +904,7 @@
 																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-9</Value>
+																		<Value>-7</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -2054,6 +2066,13 @@
 											</ChildrenList>
 										</ActorMixer>
 										<ActorMixer Name="GL_Shoot" ID="{467DBE75-FEBB-47A4-87CB-113EA5C974FA}" ShortID="72693242">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -2063,26 +2082,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<SwitchContainer Name="GL_Tails" ID="{0A29920B-D741-4A89-B10F-C34F3D803657}" ShortID="383953441">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-														</Reference>
-														<Reference Name="DefaultSwitchOrState">
-															<ObjectRef Name="None" ID="{C7162D63-5030-4C71-878E-49C2A4492744}" WorkUnitID="{5DA9743F-24CB-48C8-8072-C39EB4F5CC2B}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-														</Reference>
-														<Reference Name="SwitchGroupOrStateGroup">
-															<ObjectRef Name="STA_LocationMix" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}" WorkUnitID="{5DA9743F-24CB-48C8-8072-C39EB4F5CC2B}"/>
-														</Reference>
-													</ReferenceList>
-													<GroupingInfo/>
-												</SwitchContainer>
 												<Folder Name="Shot" ID="{236FDBBB-5267-4413-BC59-7A08AA22E02F}" ShortID="453988458">
 													<ChildrenList>
 														<SwitchContainer Name="GL_Shot_Constructor" ID="{16763F25-83D8-4A91-80CF-F89194947606}" ShortID="760310450">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-4</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -2099,6 +2108,18 @@
 															</ReferenceList>
 															<ChildrenList>
 																<RandomSequenceContainer Name="GL_Transient" ID="{BA056449-8A69-4298-B4E1-0CC230815C77}" ShortID="941934972">
+																	<PropertyList>
+																		<Property Name="MakeUpGain" Type="Real64">
+																			<ValueList>
+																				<Value>4</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-3</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -2139,6 +2160,19 @@
 																				<Value>0.03</Value>
 																			</ValueList>
 																		</Property>
+																		<Property Name="Pitch" Type="int32">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{91BCB4F5-6235-4BA6-9544-DC47B36CCFE5}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="100"/>
+																							<Property Name="Min" Type="Real64" Value="-100"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
@@ -2175,56 +2209,35 @@
 																</RandomSequenceContainer>
 																<RandomSequenceContainer Name="GL_Tail_Spawn" ID="{9AEF82AF-E1CD-4FD5-9C65-3CEDF12527F8}" ShortID="907953297">
 																	<PropertyList>
-																		<Property Name="InitialDelay" Type="Real64">
-																			<ValueList>
-																				<Value>0.03</Value>
-																			</ValueList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<Sound Name="GL_Tail_Spawn" ID="{DE875DFC-C40C-4CD4-8E10-0EBC21F46479}" ShortID="1015715480">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="GL_Tail_Spawn" ID="{BA7D2A14-A97D-4BDA-AF78-D9DC8652A7D8}">
-																					<Language>SFX</Language>
-																					<AudioFile>GL_Tail_Spawn.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="807012812"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="GL_Tail_Spawn" ID="{BA7D2A14-A97D-4BDA-AF78-D9DC8652A7D8}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																	</ChildrenList>
-																</RandomSequenceContainer>
-																<RandomSequenceContainer Name="GL_Tail_Room" ID="{FC6E5D6B-66F7-4928-BFE0-2395AB743240}" ShortID="1054611161">
-																	<PropertyList>
 																		<Property Name="GameAuxSendVolume" Type="Real64">
 																			<ValueList>
-																				<Value>-12</Value>
+																				<Value>-8</Value>
 																			</ValueList>
 																		</Property>
 																		<Property Name="InitialDelay" Type="Real64">
 																			<ValueList>
 																				<Value>0.03</Value>
 																			</ValueList>
+																		</Property>
+																		<Property Name="MakeUpGain" Type="Real64">
+																			<ValueList>
+																				<Value>1</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+																		<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Pitch" Type="int32">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{9C06D99D-BE75-4FFC-B1EF-BE49DD412C36}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="100"/>
+																							<Property Name="Min" Type="Real64" Value="-100"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
 																		</Property>
 																		<Property Name="ReflectionsVolume" Type="Real64">
 																			<ValueList>
@@ -2245,7 +2258,14 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<Sound Name="GL_Tail_Room" ID="{7722CA02-5502-49C8-9DA7-031B96898DD9}" ShortID="289926757">
+																		<Sound Name="GL_Tail_Spawn" ID="{DE875DFC-C40C-4CD4-8E10-0EBC21F46479}" ShortID="1015715480">
+																			<PropertyList>
+																				<Property Name="InitialDelay" Type="Real64">
+																					<ValueList>
+																						<Value>0.03</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -2255,7 +2275,115 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
+																				<AudioFileSource Name="GL_Tail_Spawn" ID="{BA7D2A14-A97D-4BDA-AF78-D9DC8652A7D8}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.0228665255831452"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.376418190368699"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>GL_Tail_Spawn.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="807012812"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="GL_Tail_Spawn" ID="{BA7D2A14-A97D-4BDA-AF78-D9DC8652A7D8}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="GL_Tail_Room" ID="{FC6E5D6B-66F7-4928-BFE0-2395AB743240}" ShortID="1054611161">
+																	<PropertyList>
+																		<Property Name="GameAuxSendVolume" Type="Real64">
+																			<ValueList>
+																				<Value>-6</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="InitialDelay" Type="Real64">
+																			<ValueList>
+																				<Value>0.03</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Pitch" Type="int32">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{743813E3-2F9E-4C28-A7D5-4D4415A56A2C}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="100"/>
+																							<Property Name="Min" Type="Real64" Value="-100"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="ReflectionsVolume" Type="Real64">
+																			<ValueList>
+																				<Value>-3</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-5</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																		<Reference Name="ReflectionsAuxSend">
+																			<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="GL_Tail_Room" ID="{7722CA02-5502-49C8-9DA7-031B96898DD9}" ShortID="289926757">
+																			<PropertyList>
+																				<Property Name="GameAuxSendVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-8</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+																				<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+																				<Property Name="Pitch" Type="int32">
+																					<ValueList>
+																						<Value>-450</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="ReflectionsVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-10</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																				<Reference Name="ReflectionsAuxSend">
+																					<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
 																				<AudioFileSource Name="GL_Tail_Room" ID="{C6528C54-DBFC-4296-83A0-2B186F41567E}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.00703585402558315"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="1.84867064522197"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.0633226862302483"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="2.1705609668924"/>
+																					</PropertyList>
 																					<Language>SFX</Language>
 																					<AudioFile>GL_Tail_Room.wav</AudioFile>
 																					<MediaIDList>
@@ -2273,12 +2401,12 @@
 																	<PropertyList>
 																		<Property Name="InitialDelay" Type="Real64">
 																			<ValueList>
-																				<Value>0.11</Value>
+																				<Value>0.12</Value>
 																			</ValueList>
 																		</Property>
-																		<Property Name="Volume" Type="Real64">
+																		<Property Name="MakeUpGain" Type="Real64">
 																			<ValueList>
-																				<Value>-3</Value>
+																				<Value>3</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -2292,6 +2420,13 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<Sound Name="GL_Pulse" ID="{A26D0677-39C4-4389-AC82-8EC558DCC9B6}" ShortID="874955836">
+																			<PropertyList>
+																				<Property Name="MakeUpGain" Type="Real64">
+																					<ValueList>
+																						<Value>2</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -2324,7 +2459,7 @@
 																		</Property>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>-2</Value>
+																				<Value>-3</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -2370,10 +2505,15 @@
 																		</Property>
 																		<Property Name="MakeUpGain" Type="Real64">
 																			<ValueList>
-																				<Value>4</Value>
+																				<Value>7</Value>
 																			</ValueList>
 																		</Property>
 																		<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-2</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
@@ -2385,6 +2525,13 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<Sound Name="GL_Mech_1" ID="{FE4E6E11-D68A-400A-81F6-CCB32F8CCC3D}" ShortID="904157978">
+																			<PropertyList>
+																				<Property Name="MakeUpGain" Type="Real64">
+																					<ValueList>
+																						<Value>3</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -2407,6 +2554,13 @@
 																			</ActiveSourceList>
 																		</Sound>
 																		<Sound Name="GL_Mech_2" ID="{8EBA2C0D-CF12-46C5-8664-86F1D9425C8E}" ShortID="203898236">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ValueList>
+																						<Value>-150</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -2429,6 +2583,13 @@
 																			</ActiveSourceList>
 																		</Sound>
 																		<Sound Name="GL_Mech_3" ID="{2D5244FF-D8CD-4EF2-812D-AEBFBE599B07}" ShortID="626840899">
+																			<PropertyList>
+																				<Property Name="MakeUpGain" Type="Real64">
+																					<ValueList>
+																						<Value>3</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -2535,35 +2696,6 @@
 																</GroupingList>
 															</GroupingInfo>
 														</SwitchContainer>
-														<Sound Name="Sine Pip" ID="{7BCCAACD-DAEE-4076-8867-4323FBC42FE3}" ShortID="832985939">
-															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="2"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="ATN_UnrealHolograph" ID="{044D3425-A485-4809-96BA-ED930F9C1310}" WorkUnitID="{C7F8FF2F-2302-4BB4-82BA-BB7BC85424CF}"/>
-																</Reference>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<SourcePlugin Name="Tone Generator" ID="{0210A5EC-7DEA-4F6E-8268-E1A93D7FBEBF}" ShortID="904439576" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
-																	<PropertyList>
-																		<Property Name="FixDur" Type="Real32" Value="0.5"/>
-																		<Property Name="StartFreq" Type="Real32" Value="500"/>
-																		<Property Name="WaveGain" Type="Real32" Value="-20"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																</SourcePlugin>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Tone Generator" ID="{0210A5EC-7DEA-4F6E-8268-E1A93D7FBEBF}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
 													</ChildrenList>
 												</Folder>
 											</ChildrenList>
@@ -2603,6 +2735,11 @@
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
 																<Value>2</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -2984,6 +3121,11 @@
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="AR_Impact_Grass" ID="{2D4D0B06-5E9C-41E5-822B-699745F145C8}" ShortID="1026593347">
 															<PropertyList>
+																<Property Name="MakeUpGain" Type="Real64">
+																	<ValueList>
+																		<Value>2</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="Pitch" Type="int32">
 																	<ModifierList>
 																		<ModifierInfo>
@@ -3357,6 +3499,11 @@
 																			</Modifier>
 																		</ModifierInfo>
 																	</ModifierList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
 																</Property>
 															</PropertyList>
 															<ReferenceList>
@@ -4436,7 +4583,7 @@
 																</Property>
 																<Property Name="MakeUpGain" Type="Real64">
 																	<ValueList>
-																		<Value>2</Value>
+																		<Value>4</Value>
 																	</ValueList>
 																</Property>
 																<Property Name="Pitch" Type="int32">
@@ -5455,7 +5602,15 @@
 											</ChildrenList>
 										</ActorMixer>
 										<ActorMixer Name="GL_Impact" ID="{D7196C42-F7EB-4F4F-8BE6-243F23955B13}" ShortID="962572682">
+											<PropertyList>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATN_GL_Projectile_Impact" ID="{AF13FE37-9168-4E64-8078-F2969D5E100C}" WorkUnitID="{20BE0795-7455-4CA3-828E-F9A931FD597B}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 												</Reference>
@@ -5465,6 +5620,26 @@
 											</ReferenceList>
 											<ChildrenList>
 												<SwitchContainer Name="GL_Impact_Location" ID="{A06ABEFC-8975-4A9C-A39A-748C781694E2}" ShortID="992728472">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{B9FA0F06-B742-4E77-8BF3-9096D9A2E046}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="100"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-7</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -5486,6 +5661,18 @@
 																	<ValueList>
 																		<Value>-12</Value>
 																	</ValueList>
+																</Property>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{3A5F9F6F-EA17-4A84-B428-8393CC3B9978}">
+																				<PropertyList>
+																					<Property Name="Max" Type="Real64" Value="100"/>
+																					<Property Name="Min" Type="Real64" Value="-100"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
 																</Property>
 																<Property Name="ReflectionsVolume" Type="Real64">
 																	<ValueList>
@@ -6003,17 +6190,17 @@
 																						<Value>-12</Value>
 																					</ValueList>
 																				</Property>
-																				<Property Name="InitialDelay" Type="Real64">
-																					<ValueList>
-																						<Value>0.04</Value>
-																					</ValueList>
-																				</Property>
 																				<Property Name="ReflectionsVolume" Type="Real64">
 																					<ValueList>
 																						<Value>-10</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-3</Value>
+																					</ValueList>
+																				</Property>
 																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
@@ -6088,7 +6275,7 @@
 																			<CrossfadingInfo>
 																				<LeftEdgePos>7000</LeftEdgePos>
 																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>11934.1645885287</RightEdgePos>
+																				<RightEdgePos>12000</RightEdgePos>
 																				<RightFadingMode>Automatic</RightFadingMode>
 																			</CrossfadingInfo>
 																		</BlendTrackAssoc>
@@ -6102,6 +6289,13 @@
 																	<ValueList>
 																		<Value>-12</Value>
 																	</ValueList>
+																</Property>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{5D6D2B0B-E4FA-4F78-BF64-214A4303053E}"/>
+																		</ModifierInfo>
+																	</ModifierList>
 																</Property>
 																<Property Name="ReflectionsVolume" Type="Real64">
 																	<ValueList>
@@ -6272,6 +6466,11 @@
 																					</ValueList>
 																				</Property>
 																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-3</Value>
+																					</ValueList>
+																				</Property>
 																			</PropertyList>
 																			<ReferenceList>
 																				<Reference Name="Conversion">
@@ -7561,6 +7760,11 @@
 											</ValueList>
 										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -8103,6 +8307,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<ActorMixer Name="AR_Reload" ID="{E9FA3DE1-6C36-4622-ADA4-288D3199227F}" ShortID="878440571">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -8152,6 +8363,13 @@
 											</ChildrenList>
 										</ActorMixer>
 										<ActorMixer Name="GL_Reload" ID="{5A6AB2C8-59DC-4AAA-A121-C61748DCA56B}" ShortID="25256883">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>

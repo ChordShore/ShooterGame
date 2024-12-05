@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{2C5E5140-7276-D97F-0B36-1906EBC14FE7}">
+		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{5E9CAEC6-8844-9693-E9A3-2200FB6B7E4C}">
 			<ObjectPath>\SoundBanks\Foley\Foley</ObjectPath>
 			<ShortName>Foley</ShortName>
 			<Path>Foley.bnk</Path>
@@ -469,7 +469,7 @@
 			</Media>
 			<Events>
 				<Event Id="1891391704" Name="FOL_Bodyfall" ObjectPath="\Events\Foley\Players\FOL_Bodyfall" GUID="{8C389BC0-A8E4-4172-B60A-4329D5567561}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2395369630" Name="FOL_Footstep_R" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_R" GUID="{C7AF60A9-905E-4C25-94DB-228933B96D51}" DurationType="OneShot" DurationMin="0.3707094" DurationMax="0.5742082">
+				<Event Id="2395369630" Name="FOL_Footstep_R" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_R" GUID="{C7AF60A9-905E-4C25-94DB-228933B96D51}" DurationType="OneShot" DurationMin="0.3707094" DurationMax="0.60835236">
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
@@ -792,5 +792,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EE19C1B0-08FA-0A29-DCB9-BC368E78EEB2}</FileHash>
+	<FileHash>{E93D5870-3061-1B65-C0EE-38F7A3B98C63}</FileHash>
 </SoundBanksInfo>

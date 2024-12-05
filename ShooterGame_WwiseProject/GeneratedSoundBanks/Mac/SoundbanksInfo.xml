@@ -31,7 +31,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="67622880" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{83C15ADD-3922-A693-7C3A-4C5205809454}">
+		<SoundBank Id="67622880" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{73896BE5-F3AB-31F5-FAD5-08D94CEB7C34}">
 			<ObjectPath>AMB_HoverCars_Spline_R</ObjectPath>
 			<ShortName>AMB_HoverCars_Spline_R</ShortName>
 			<Path>Event/AMB_HoverCars_Spline_R.bnk</Path>
@@ -55,7 +55,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="67622910" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{39A2FB57-116C-2F6A-AA17-EE69575AFA16}">
+		<SoundBank Id="67622910" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{77D1F563-82C9-2DEB-EAA3-B5289320FE4E}">
 			<ObjectPath>AMB_HoverCars_Spline_L</ObjectPath>
 			<ShortName>AMB_HoverCars_Spline_L</ShortName>
 			<Path>Event/AMB_HoverCars_Spline_L.bnk</Path>
@@ -79,7 +79,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{A44B0191-3F11-F6D4-6C7E-8AB61C729928}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{46B224B7-36D8-1273-1D0C-A12993705F7D}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -219,18 +219,18 @@
 						<MediaRef Id="515725994"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="9000" DurationType="Infinite">
+				<Event Id="3641000233" Name="AMB_UnrealHolograph" ObjectPath="\Events\Ambience\Emitters\Highrise\UnrealHolograph\AMB_UnrealHolograph" GUID="{D0DB41ED-1893-4607-9DF7-E73B0F6BDA45}" MaxAttenuation="8000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="456057735"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\Highrise\UnrealHolograph\AMB_UnrealHolograph_FadeIn" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="9000" DurationType="OneShot" DurationMin="11.875" DurationMax="11.875">
+				<Event Id="652591751" Name="AMB_UnrealHolograph_FadeIn" ObjectPath="\Events\Ambience\Emitters\Highrise\UnrealHolograph\AMB_UnrealHolograph_FadeIn" GUID="{4EB32937-10C0-4BF9-8927-C5BC30E52ED9}" MaxAttenuation="8000" DurationType="OneShot" DurationMin="11.875" DurationMax="11.875">
 					<MediaRefs>
 						<MediaRef Id="619272686"/>
 						<MediaRef Id="864735500"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\Highrise\UnrealHolograph\AMB_UnrealHolograph_FadeOut" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="9000" DurationType="OneShot" DurationMin="11.375" DurationMax="11.375">
+				<Event Id="3686232698" Name="AMB_UnrealHolograph_FadeOut" ObjectPath="\Events\Ambience\Emitters\Highrise\UnrealHolograph\AMB_UnrealHolograph_FadeOut" GUID="{E3EEEB5D-9B58-43DF-8E87-C18F76699081}" MaxAttenuation="8000" DurationType="OneShot" DurationMin="11.375" DurationMax="11.375">
 					<MediaRefs>
 						<MediaRef Id="425050702"/>
 						<MediaRef Id="864735500"/>
@@ -248,7 +248,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{2C5E5140-7276-D97F-0B36-1906EBC14FE7}">
+		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{5E9CAEC6-8844-9693-E9A3-2200FB6B7E4C}">
 			<ObjectPath>\SoundBanks\Foley\Foley</ObjectPath>
 			<ShortName>Foley</ShortName>
 			<Path>Foley.bnk</Path>
@@ -716,7 +716,7 @@
 			</Media>
 			<Events>
 				<Event Id="1891391704" Name="FOL_Bodyfall" ObjectPath="\Events\Foley\Players\FOL_Bodyfall" GUID="{8C389BC0-A8E4-4172-B60A-4329D5567561}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2395369630" Name="FOL_Footstep_R" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_R" GUID="{C7AF60A9-905E-4C25-94DB-228933B96D51}" DurationType="OneShot" DurationMin="0.3707094" DurationMax="0.5742082">
+				<Event Id="2395369630" Name="FOL_Footstep_R" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_R" GUID="{C7AF60A9-905E-4C25-94DB-228933B96D51}" DurationType="OneShot" DurationMin="0.3707094" DurationMax="0.60835236">
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
@@ -1038,7 +1038,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{7C9CF280-45AE-6BA0-A51A-07BC2FE07EAF}">
+		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{621AFCF9-E675-BE81-7ECB-B6433C48671E}">
 			<ObjectPath>AR_Shoot_Stop</ObjectPath>
 			<ShortName>AR_Shoot_Stop</ShortName>
 			<Path>Event/AR_Shoot_Stop.bnk</Path>
@@ -1139,7 +1139,7 @@
 				<GameParameter Id="2583655610" Name="PAR_AR_AmmoCount" ObjectPath="\Game Parameters\Weapons\PAR_AR_AmmoCount" GUID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="636673922" Type="Event" GUID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}" Language="SFX" Hash="{BC52AFC3-BE32-2412-61E0-9979FFC34218}">
+		<SoundBank Id="636673922" Type="Event" GUID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}" Language="SFX" Hash="{4E3524DF-37F1-7F04-DB1C-23D0CD0FF370}">
 			<ObjectPath>AMB_RoomGusts_SmallEntrance_Interior</ObjectPath>
 			<ShortName>AMB_RoomGusts_SmallEntrance_Interior</ShortName>
 			<Path>Event/AMB_RoomGusts_SmallEntrance_Interior.bnk</Path>
@@ -1168,7 +1168,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="677842196" Type="Event" GUID="{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}" Language="SFX" Hash="{3A7BC0C9-8DEB-906F-7599-6C315DF3F4C2}">
+		<SoundBank Id="677842196" Type="Event" GUID="{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}" Language="SFX" Hash="{E660F4B2-8FBC-DFDA-2EEB-D79000FF7807}">
 			<ObjectPath>FOL_Armor</ObjectPath>
 			<ShortName>FOL_Armor</ShortName>
 			<Path>Event/FOL_Armor.bnk</Path>
@@ -1244,7 +1244,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="849782850" Type="Event" GUID="{D351862C-9224-46EA-B214-195532B40959}" Language="SFX" Hash="{88F23015-9344-D440-BC98-B308F95BE003}">
+		<SoundBank Id="849782850" Type="Event" GUID="{D351862C-9224-46EA-B214-195532B40959}" Language="SFX" Hash="{474E21F4-8C52-F4BD-10E0-4DE168E336B6}">
 			<ObjectPath>FOL_FallWhoosh</ObjectPath>
 			<ShortName>FOL_FallWhoosh</ShortName>
 			<Path>Event/FOL_FallWhoosh.bnk</Path>
@@ -1263,7 +1263,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{BBD14E15-E5EE-9EA4-4404-8C4277B64A8F}">
+		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{5261E9E9-6FDC-5D90-0546-D347CF59D8F1}">
 			<ObjectPath>AMB_ScifiDrones</ObjectPath>
 			<ShortName>AMB_ScifiDrones</ShortName>
 			<Path>Event/AMB_ScifiDrones.bnk</Path>
@@ -1493,7 +1493,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="1322180291" Type="Event" GUID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}" Language="SFX" Hash="{52B6B8B2-45BC-000B-7E58-78E0FC6572D0}">
+		<SoundBank Id="1322180291" Type="Event" GUID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}" Language="SFX" Hash="{A1D4EE53-A0FA-0FFD-4424-3380C2DD0E90}">
 			<ObjectPath>AMB_PhoneBox_ErrorRecording</ObjectPath>
 			<ShortName>AMB_PhoneBox_ErrorRecording</ShortName>
 			<Path>Event/AMB_PhoneBox_ErrorRecording.bnk</Path>
@@ -1774,7 +1774,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{33152010-C376-913C-0EAE-A61104762FEA}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{16BB5519-A541-32B9-4A7E-A154198FAB5E}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -1897,7 +1897,7 @@
 				</File>
 				<File Id="249724546" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Room.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Room_8473DA9A.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Room_DFDEA82A.wem</CachePath>
 				</File>
 				<File Id="253415750" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
@@ -1953,7 +1953,7 @@
 				</File>
 				<File Id="350098340" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Spawn.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Spawn_74099AC4.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Spawn_EBAD2E6B.wem</CachePath>
 				</File>
 				<File Id="363327242" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
@@ -2029,7 +2029,7 @@
 				</File>
 				<File Id="473819520" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Room.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Room_B9D9D4BE.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Room_E7B9D431.wem</CachePath>
 				</File>
 				<File Id="483668572" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
@@ -2053,7 +2053,7 @@
 				</File>
 				<File Id="514770190" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Atrium.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Atrium_31416939.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Atrium_EAF25B13.wem</CachePath>
 				</File>
 				<File Id="519715684" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
@@ -2089,7 +2089,7 @@
 				</File>
 				<File Id="576977623" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Spawn.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Spawn_6A41F095.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Spawn_70C4C0E9.wem</CachePath>
 				</File>
 				<File Id="578759834" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
@@ -2173,7 +2173,7 @@
 				</File>
 				<File Id="758183093" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Spawn.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Spawn_BFE7B9AF.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Spawn_8D0BB8DD.wem</CachePath>
 				</File>
 				<File Id="763314345" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Tail_Spawn.wav</ShortName>
@@ -2193,7 +2193,7 @@
 				</File>
 				<File Id="790486722" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Room.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Room_EDA576C5.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Room_A0DEA9E4.wem</CachePath>
 				</File>
 				<File Id="797639163" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
@@ -2201,11 +2201,11 @@
 				</File>
 				<File Id="801983389" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Spawn.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Spawn_6D9E0FFF.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Spawn_A678304F.wem</CachePath>
 				</File>
 				<File Id="807012812" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Tail_Spawn.wav</ShortName>
-					<CachePath>SFX/GL_Tail_Spawn_10C4C929.wem</CachePath>
+					<CachePath>SFX/GL_Tail_Spawn_69D3AF34.wem</CachePath>
 				</File>
 				<File Id="809278308" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
@@ -2217,7 +2217,7 @@
 				</File>
 				<File Id="820552392" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Tail_Room.wav</ShortName>
-					<CachePath>SFX/GL_Tail_Room_10C4C929.wem</CachePath>
+					<CachePath>SFX/GL_Tail_Room_DF4D14E7.wem</CachePath>
 				</File>
 				<File Id="826207383" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
@@ -2249,7 +2249,7 @@
 				</File>
 				<File Id="912217750" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Room.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Room_A75B41E4.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Room_DCB6B542.wem</CachePath>
 				</File>
 				<File Id="928118353" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Pulse.wav</ShortName>
@@ -2297,7 +2297,7 @@
 				</File>
 				<File Id="1032557313" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Atrium.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Atrium_A36CDEA6.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Atrium_F200C557.wem</CachePath>
 				</File>
 				<File Id="1033448803" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
@@ -2804,7 +2804,7 @@
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="477299258" Name="GL_Impact_OS" ObjectPath="\Events\Weapons\Shooting\Impact\GL_Impact_OS" GUID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}" DurationType="OneShot" DurationMin="4.9101458" DurationMax="4.9101458">
+				<Event Id="477299258" Name="GL_Impact_OS" ObjectPath="\Events\Weapons\Shooting\Impact\GL_Impact_OS" GUID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}" MaxAttenuation="12000" DurationType="OneShot" DurationMin="4.596805" DurationMax="5.19974">
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
@@ -2934,7 +2934,7 @@
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1577363161" Name="GL_Shoot_OS" ObjectPath="\Events\Weapons\Shooting\Shoot\GL_Shoot_OS" GUID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}" DurationType="OneShot" DurationMin="0.80922914" DurationMax="3.926104">
+				<Event Id="1577363161" Name="GL_Shoot_OS" ObjectPath="\Events\Weapons\Shooting\Shoot\GL_Shoot_OS" GUID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}" DurationType="OneShot" DurationMin="0.80922914" DurationMax="4.1577787">
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
@@ -3058,7 +3058,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1478305162" Type="Event" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" Language="SFX" Hash="{892D944E-C0A6-0CDC-DB9C-B8A6FE2D2A83}">
+		<SoundBank Id="1478305162" Type="Event" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" Language="SFX" Hash="{B50B849A-2F89-0BCA-6348-5AED229EF310}">
 			<ObjectPath>AMB_WindGusts_Static_Play</ObjectPath>
 			<ShortName>AMB_WindGusts_Static_Play</ShortName>
 			<Path>Event/AMB_WindGusts_Static_Play.bnk</Path>
@@ -3149,7 +3149,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2151963051" Type="User" GUID="{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}" Language="SFX" Hash="{5FC7BFF7-14FF-23E5-704A-F5697E2ECE27}">
+		<SoundBank Id="2151963051" Type="User" GUID="{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}" Language="SFX" Hash="{EDEF061E-97F8-6FE7-FE64-669C04F6BF05}">
 			<ObjectPath>\SoundBanks\Items\Items</ObjectPath>
 			<ShortName>Items</ShortName>
 			<Path>Items.bnk</Path>
@@ -3228,7 +3228,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2289907698" Type="Event" GUID="{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}" Language="SFX" Hash="{7F862382-B79F-8F14-D349-97097B8CADFC}">
+		<SoundBank Id="2289907698" Type="Event" GUID="{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}" Language="SFX" Hash="{ED78B6B8-F835-BFBD-A255-985F1F6B516A}">
 			<ObjectPath>ITM_Ammo_GL</ObjectPath>
 			<ShortName>ITM_Ammo_GL</ShortName>
 			<Path>Event/ITM_Ammo_GL.bnk</Path>
@@ -3250,7 +3250,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2333830951" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{CE964402-6708-B43D-7040-BA5E9401122D}">
+		<SoundBank Id="2333830951" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{99CF9EF9-9A3F-CE5D-39F1-5CACB485986E}">
 			<ObjectPath>AMB_EnergyPillar_L</ObjectPath>
 			<ShortName>AMB_EnergyPillar_L</ShortName>
 			<Path>Event/AMB_EnergyPillar_L.bnk</Path>
@@ -3272,7 +3272,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{D6B24DFD-6C10-D8D9-CB6B-A9D203808469}">
+		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{DAD91B6E-323E-4351-425D-C8011B29AC4A}">
 			<ObjectPath>AMB_EnergyPillar_C</ObjectPath>
 			<ShortName>AMB_EnergyPillar_C</ShortName>
 			<Path>Event/AMB_EnergyPillar_C.bnk</Path>
@@ -3310,7 +3310,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{2BC9995E-695E-6FF3-1961-6397C18B7F8E}">
+		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{C63E23E8-A53C-3CD7-B689-9B82C25787C7}">
 			<ObjectPath>FOL_Footstep_L</ObjectPath>
 			<ShortName>FOL_Footstep_L</ShortName>
 			<Path>Event/FOL_Footstep_L.bnk</Path>
@@ -3737,7 +3737,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2395369600" Name="FOL_Footstep_L" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_L" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" DurationType="OneShot" DurationMin="0.3707094" DurationMax="0.5742082">
+				<Event Id="2395369600" Name="FOL_Footstep_L" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_L" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" DurationType="OneShot" DurationMin="0.3707094" DurationMax="0.60835236">
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
@@ -3961,7 +3961,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2496008984" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{20D56905-2207-6A39-E57A-C7DCB132D194}">
+		<SoundBank Id="2496008984" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{CEE3F5E0-9808-4817-12FF-3CC94EBA3192}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_7</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_7</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_7.bnk</Path>
@@ -4016,7 +4016,7 @@
 				<GameParameter Id="2940353649" Name="PAR_Distance_HoverCars_PS7" ObjectPath="\Game Parameters\Ambience\PAR_Distance_HoverCars_PS7" GUID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{D15D83B0-53C7-2C80-48FC-70C2B9F5029A}">
+		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{96DB76A9-0F47-4EBD-193E-D8523F1CD536}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_5</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_5</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_5.bnk</Path>
@@ -4071,7 +4071,7 @@
 				<GameParameter Id="2940353651" Name="PAR_Distance_HoverCars_PS5" ObjectPath="\Game Parameters\Ambience\PAR_Distance_HoverCars_PS5" GUID="{12811BF6-789D-4EFB-A3B6-2A817E909100}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{940459E1-0426-D8AB-7D87-FA40D083C9EF}">
+		<SoundBank Id="2856640531" Type="User" GUID="{9CE43DB6-E9B0-4CC2-9608-CC825A26678C}" Language="SFX" Hash="{11F062EF-D550-7188-63D9-0FFFF346FF0F}">
 			<ObjectPath>\SoundBanks\Default Work Unit\EventProbe</ObjectPath>
 			<ShortName>EventProbe</ShortName>
 			<Path>EventProbe.bnk</Path>
@@ -4115,7 +4115,7 @@
 				<Event Id="1107702071" Name="STN_Respawn" ObjectPath="\Events\Stingers\STN_Respawn" GUID="{BBB29E50-6BB3-4588-B482-6A65A05E69A3}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2992962930" Type="Event" GUID="{3C0DA367-FE08-40AC-B96C-0BCFE38BE080}" Language="SFX" Hash="{BC9A7B51-5E98-5769-3075-6560432D43BD}">
+		<SoundBank Id="2992962930" Type="Event" GUID="{3C0DA367-FE08-40AC-B96C-0BCFE38BE080}" Language="SFX" Hash="{9C750C7C-7D93-95AC-AB15-C2AC1E040D5F}">
 			<ObjectPath>AMB_BarrierFence</ObjectPath>
 			<ShortName>AMB_BarrierFence</ShortName>
 			<Path>Event/AMB_BarrierFence.bnk</Path>
@@ -4191,7 +4191,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3838114450" Type="Event" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" Language="SFX" Hash="{ACA4DB8E-A3FB-052A-7C95-A1093D55B73C}">
+		<SoundBank Id="3838114450" Type="Event" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" Language="SFX" Hash="{87E2A869-7A7F-4B81-7306-C4236BAF045C}">
 			<ObjectPath>AR_Shoot_Empty</ObjectPath>
 			<ShortName>AR_Shoot_Empty</ShortName>
 			<Path>Event/AR_Shoot_Empty.bnk</Path>
@@ -4231,7 +4231,7 @@
 			<ShortName>Dialogue</ShortName>
 			<Path>Dialogue.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4134637028" Type="Event" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" Language="SFX" Hash="{98001DF2-9EF9-ACDC-0F29-2F3193529289}">
+		<SoundBank Id="4134637028" Type="Event" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" Language="SFX" Hash="{0CA808F1-D37A-1795-3A9E-CA7C6E49D3D8}">
 			<ObjectPath>AMB_RoomGusts_SmallEntrance_Exterior</ObjectPath>
 			<ShortName>AMB_RoomGusts_SmallEntrance_Exterior</ShortName>
 			<Path>Event/AMB_RoomGusts_SmallEntrance_Exterior.bnk</Path>
@@ -4261,5 +4261,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A11FF08F-8480-67EC-1D7B-8196060E5E60}</FileHash>
+	<FileHash>{B1B42737-0546-6ACE-578D-8BE5FFF34343}</FileHash>
 </SoundBanksInfo>

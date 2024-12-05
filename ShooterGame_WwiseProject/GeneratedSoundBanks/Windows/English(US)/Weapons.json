@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{33152010-C376-913C-0EAE-A61104762FEA}",
+    "Hash": "{16BB5519-A541-32B9-4A7E-A154198FAB5E}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -253,7 +253,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Impact_Far_Room.wav",
-      "CachePath": "SFX/GL_Impact_Far_Room_8473DA9A.wem"
+      "CachePath": "SFX/GL_Impact_Far_Room_DFDEA82A.wem"
      },
      {
       "Id": "253415750",
@@ -365,7 +365,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Impact_Far_Spawn.wav",
-      "CachePath": "SFX/GL_Impact_Far_Spawn_74099AC4.wem"
+      "CachePath": "SFX/GL_Impact_Far_Spawn_EBAD2E6B.wem"
      },
      {
       "Id": "363327242",
@@ -517,7 +517,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Impact_Far_Room.wav",
-      "CachePath": "SFX/GL_Impact_Far_Room_B9D9D4BE.wem"
+      "CachePath": "SFX/GL_Impact_Far_Room_E7B9D431.wem"
      },
      {
       "Id": "483668572",
@@ -565,7 +565,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Impact_Far_Atrium.wav",
-      "CachePath": "SFX/GL_Impact_Far_Atrium_31416939.wem"
+      "CachePath": "SFX/GL_Impact_Far_Atrium_EAF25B13.wem"
      },
      {
       "Id": "519715684",
@@ -637,7 +637,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Impact_Far_Spawn.wav",
-      "CachePath": "SFX/GL_Impact_Far_Spawn_6A41F095.wem"
+      "CachePath": "SFX/GL_Impact_Far_Spawn_70C4C0E9.wem"
      },
      {
       "Id": "578759834",
@@ -805,7 +805,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Impact_Far_Spawn.wav",
-      "CachePath": "SFX/GL_Impact_Far_Spawn_BFE7B9AF.wem"
+      "CachePath": "SFX/GL_Impact_Far_Spawn_8D0BB8DD.wem"
      },
      {
       "Id": "763314345",
@@ -845,7 +845,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Impact_Far_Room.wav",
-      "CachePath": "SFX/GL_Impact_Far_Room_EDA576C5.wem"
+      "CachePath": "SFX/GL_Impact_Far_Room_A0DEA9E4.wem"
      },
      {
       "Id": "797639163",
@@ -861,7 +861,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Impact_Far_Spawn.wav",
-      "CachePath": "SFX/GL_Impact_Far_Spawn_6D9E0FFF.wem"
+      "CachePath": "SFX/GL_Impact_Far_Spawn_A678304F.wem"
      },
      {
       "Id": "807012812",
@@ -869,7 +869,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Tail_Spawn.wav",
-      "CachePath": "SFX/GL_Tail_Spawn_10C4C929.wem"
+      "CachePath": "SFX/GL_Tail_Spawn_69D3AF34.wem"
      },
      {
       "Id": "809278308",
@@ -893,7 +893,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Tail_Room.wav",
-      "CachePath": "SFX/GL_Tail_Room_10C4C929.wem"
+      "CachePath": "SFX/GL_Tail_Room_DF4D14E7.wem"
      },
      {
       "Id": "826207383",
@@ -957,7 +957,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Impact_Far_Room.wav",
-      "CachePath": "SFX/GL_Impact_Far_Room_A75B41E4.wem"
+      "CachePath": "SFX/GL_Impact_Far_Room_DCB6B542.wem"
      },
      {
       "Id": "928118353",
@@ -1053,7 +1053,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Impact_Far_Atrium.wav",
-      "CachePath": "SFX/GL_Impact_Far_Atrium_A36CDEA6.wem"
+      "CachePath": "SFX/GL_Impact_Far_Atrium_F200C557.wem"
      },
      {
       "Id": "1033448803",
@@ -2517,9 +2517,10 @@
       "Name": "GL_Impact_OS",
       "ObjectPath": "\\Events\\Weapons\\Shooting\\Impact\\GL_Impact_OS",
       "GUID": "{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}",
+      "MaxAttenuation": "12000",
       "DurationType": "OneShot",
-      "DurationMin": "4.9101458",
-      "DurationMax": "4.9101458",
+      "DurationMin": "4.596805",
+      "DurationMax": "5.19974",
       "AuxBusRefs": [
        {
         "Id": "3348775760",
@@ -2888,7 +2889,7 @@
       "GUID": "{314DB4B5-5CD0-4B6E-8803-898906F3175F}",
       "DurationType": "OneShot",
       "DurationMin": "0.80922914",
-      "DurationMax": "3.926104",
+      "DurationMax": "4.1577787",
       "AuxBusRefs": [
        {
         "Id": "3348775760",
@@ -3246,6 +3247,6 @@
     ]
    }
   ],
-  "FileHash": "{4AA2A209-3EF4-5B28-4C21-EB6C8D6E0E39}"
+  "FileHash": "{030A1FB2-2E4E-1528-8127-B00682D2E424}"
  }
 }
