@@ -40,6 +40,10 @@
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="PAR_GL_Projectile_Doppler" ID="{6407D76F-94D5-47B8-BEBE-71AF185724C0}"/>
+							<Value>1.35028544325266E-311</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="PAR_GL_AmmoCount" ID="{009857E8-11A8-4C0B-8F4B-67B3B3ABD96D}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -61,8 +65,8 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{BB4FD5EE-2E84-4BFE-B7E1-EF4CB10C6C67}"/>
-						<CurrentStateRef Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
+						<CurrentStateRef Name="STA_Path5_Cull" ID="{AC8E4352-EFB9-46F5-86BA-3C6204E9B6B3}"/>
+						<CurrentStateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 						<CurrentStateRef Name="None" ID="{58E0E97C-6C8E-42CB-BD10-0B2B26B95058}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
@@ -132,6 +136,10 @@
 							<Value>10808.9775561097</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="PAR_GL_Projectile_Doppler" ID="{6407D76F-94D5-47B8-BEBE-71AF185724C0}"/>
+							<Value>1.35028544325266E-311</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="PAR_GL_AmmoCount" ID="{009857E8-11A8-4C0B-8F4B-67B3B3ABD96D}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -141,8 +149,8 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{BB4FD5EE-2E84-4BFE-B7E1-EF4CB10C6C67}"/>
-						<CurrentStateRef Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
+						<CurrentStateRef Name="STA_Path5_Cull" ID="{AC8E4352-EFB9-46F5-86BA-3C6204E9B6B3}"/>
+						<CurrentStateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 						<CurrentStateRef Name="None" ID="{58E0E97C-6C8E-42CB-BD10-0B2B26B95058}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

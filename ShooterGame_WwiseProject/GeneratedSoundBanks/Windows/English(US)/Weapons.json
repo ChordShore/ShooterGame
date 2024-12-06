@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{0E07DD24-7DC3-F36E-D982-B1E9E42D7860}",
+    "Hash": "{51B08C09-2E41-EAE6-45F9-ADE7EC179B3B}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -960,6 +960,14 @@
       "CachePath": "SFX/GL_Impact_Far_Room_DCB6B542.wem"
      },
      {
+      "Id": "920069920",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB_HoverCars_Engine_Sum_1.wav",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_1_34B5CAC0.wem"
+     },
+     {
       "Id": "928118353",
       "Language": "SFX",
       "Streaming": "false",
@@ -1305,14 +1313,6 @@
        "GUID": "{4C8C34B6-5626-4F64-913D-CDCACC242C16}",
        "LibName": "Wwise Silence",
        "LibId": "6619138"
-      },
-      {
-       "Id": "989138636",
-       "Name": "Sine",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Weapons\\WEP_1P\\Shooting\\WEP_Travel\\GL_PassBy\\GL_PassBy_LP\\Sine",
-       "GUID": "{DCB5BD1B-6EED-43B3-86EB-DB1C55586592}",
-       "LibName": "Wwise Sine",
-       "LibId": "6553602"
       }
      ],
      "ShareSets": [
@@ -2863,17 +2863,13 @@
       "Name": "GL_PassBy_LP_Play",
       "ObjectPath": "\\Events\\Weapons\\Shooting\\Travel\\GL_PassBy_LP_Play",
       "GUID": "{566534D1-0C06-45CC-8878-334A29476347}",
-      "MaxAttenuation": "3000",
-      "DurationType": "OneShot",
-      "DurationMin": "8",
-      "DurationMax": "8",
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "989138636"
-        }
-       ]
-      },
+      "MaxAttenuation": "10000",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "920069920"
+       }
+      ],
       "AuxBusRefs": [
        {
         "Id": "3348775760",
@@ -3136,6 +3132,12 @@
       "Name": "PAR_GL_Impact_Distance",
       "ObjectPath": "\\Game Parameters\\Weapons\\PAR_GL_Impact_Distance",
       "GUID": "{BA395E67-E6A3-4067-9942-34C856290AFF}"
+     },
+     {
+      "Id": "2811464683",
+      "Name": "PAR_GL_Projectile_Doppler",
+      "ObjectPath": "\\Game Parameters\\Weapons\\PAR_GL_Projectile_Doppler",
+      "GUID": "{6407D76F-94D5-47B8-BEBE-71AF185724C0}"
      }
     ],
     "StateGroups": [
@@ -3270,6 +3272,6 @@
     ]
    }
   ],
-  "FileHash": "{69BC3319-42A3-EFE6-0CDA-C403F21FD3D9}"
+  "FileHash": "{D4C244F0-53B0-8C1B-9208-DD117C89185D}"
  }
 }

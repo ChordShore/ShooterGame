@@ -3446,7 +3446,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{19427EE9-BF5D-445F-2691-4CF29AF7330A}",
+    "Hash": "{579EC255-4E26-CB15-DFAB-B3C397690ED5}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -3739,6 +3739,12 @@
       "Name": "PAR_GL_Impact_Distance",
       "ObjectPath": "\\Game Parameters\\Weapons\\PAR_GL_Impact_Distance",
       "GUID": "{BA395E67-E6A3-4067-9942-34C856290AFF}"
+     },
+     {
+      "Id": "2811464683",
+      "Name": "PAR_GL_Projectile_Doppler",
+      "ObjectPath": "\\Game Parameters\\Weapons\\PAR_GL_Projectile_Doppler",
+      "GUID": "{6407D76F-94D5-47B8-BEBE-71AF185724C0}"
      },
      {
       "Id": "2813573230",
@@ -4355,7 +4361,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{0E07DD24-7DC3-F36E-D982-B1E9E42D7860}",
+    "Hash": "{51B08C09-2E41-EAE6-45F9-ADE7EC179B3B}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -5305,6 +5311,14 @@
       "CachePath": "SFX/GL_Impact_Far_Room_DCB6B542.wem"
      },
      {
+      "Id": "920069920",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB_HoverCars_Engine_Sum_1.wav",
+      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_1_34B5CAC0.wem"
+     },
+     {
       "Id": "928118353",
       "Language": "SFX",
       "Streaming": "false",
@@ -5650,14 +5664,6 @@
        "GUID": "{4C8C34B6-5626-4F64-913D-CDCACC242C16}",
        "LibName": "Wwise Silence",
        "LibId": "6619138"
-      },
-      {
-       "Id": "989138636",
-       "Name": "Sine",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Weapons\\WEP_1P\\Shooting\\WEP_Travel\\GL_PassBy\\GL_PassBy_LP\\Sine",
-       "GUID": "{DCB5BD1B-6EED-43B3-86EB-DB1C55586592}",
-       "LibName": "Wwise Sine",
-       "LibId": "6553602"
       }
      ],
      "ShareSets": [
@@ -7208,17 +7214,13 @@
       "Name": "GL_PassBy_LP_Play",
       "ObjectPath": "\\Events\\Weapons\\Shooting\\Travel\\GL_PassBy_LP_Play",
       "GUID": "{566534D1-0C06-45CC-8878-334A29476347}",
-      "MaxAttenuation": "3000",
-      "DurationType": "OneShot",
-      "DurationMin": "8",
-      "DurationMax": "8",
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "989138636"
-        }
-       ]
-      },
+      "MaxAttenuation": "10000",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "920069920"
+       }
+      ],
       "AuxBusRefs": [
        {
         "Id": "3348775760",
@@ -7481,6 +7483,12 @@
       "Name": "PAR_GL_Impact_Distance",
       "ObjectPath": "\\Game Parameters\\Weapons\\PAR_GL_Impact_Distance",
       "GUID": "{BA395E67-E6A3-4067-9942-34C856290AFF}"
+     },
+     {
+      "Id": "2811464683",
+      "Name": "PAR_GL_Projectile_Doppler",
+      "ObjectPath": "\\Game Parameters\\Weapons\\PAR_GL_Projectile_Doppler",
+      "GUID": "{6407D76F-94D5-47B8-BEBE-71AF185724C0}"
      }
     ],
     "StateGroups": [
@@ -9565,7 +9573,7 @@
     "Type": "Event",
     "GUID": "{4ABC7647-EB94-46FC-82E0-92911FB3B773}",
     "Language": "SFX",
-    "Hash": "{3B4A1196-09A6-0E7C-B3BE-268A0D3C6D47}",
+    "Hash": "{DE6AE893-4CDB-B7E4-E2D7-604354A7A3A7}",
     "ObjectPath": "GL_PassBy_LP_Stop",
     "ShortName": "GL_PassBy_LP_Stop",
     "Path": "Event/GL_PassBy_LP_Stop.bnk",
@@ -10227,6 +10235,6 @@
     ]
    }
   ],
-  "FileHash": "{B47F08F4-4FAE-80A0-0888-B770ECA1882B}"
+  "FileHash": "{2B303F05-E75C-2311-AC2E-7D61CE7E1675}"
  }
 }

@@ -26,6 +26,13 @@
 						<Property Name="Max" Type="Real64" Value="12000"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="PAR_GL_Projectile_Doppler" ID="{6407D76F-94D5-47B8-BEBE-71AF185724C0}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="100000"/>
+						<Property Name="Min" Type="Real64" Value="-20000"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

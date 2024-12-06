@@ -44,6 +44,7 @@ State	ID	Name	State Group			Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2583655610	PAR_AR_AmmoCount			\Weapons\PAR_AR_AmmoCount	
 	2732031637	PAR_GL_Impact_Distance			\Weapons\PAR_GL_Impact_Distance	
+	2811464683	PAR_GL_Projectile_Doppler			\Weapons\PAR_GL_Projectile_Doppler	
 
 Effect plug-ins	ID	Name	Type				Notes
 	2080872166	Brick_Wall_Minus_6dB_Peak_Fast_Release	Wwise Peak Limiter			
@@ -73,7 +74,6 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	900087465	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_20\Silence	
 	932739902	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_17\Silence	
 	934461864	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_01\Silence	
-	989138636	Sine	Wwise Sine		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Travel\GL_PassBy\GL_PassBy_LP\Sine	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	14501665	AR_Shot_Tail_Room	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AR_Shot_Tail_Room_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\AR_Shoot\Shot\AR_Shot_LP\AR_Shot_Constructor\AR_Tail_Room\AR_Shot_Tail_Room		768096
@@ -194,6 +194,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	885452196	WEP_AR_Impact_Flesh_11	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\WEP_AR_Impact_Flesh_2359DC23.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Flesh\WEP_AR_Impact_Flesh_11		247084
 	891167383	WEP_AR_Impact_Glass_08	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\WEP_AR_Impact_Glass_686B01A0.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Glass\WEP_AR_Impact_Glass_08		245756
 	912217750	GL_Impact_Far_Room_01	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\GL_Impact_Far_Room_DCB6B542.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\GL_Impact\GL_Impact_Location\GL_Impact_Room_Distance\GL_Impact_Far_Room\GL_Impact_Far_Room_01		749836
+	920069920	AMB_HoverCars_Engine_Sum_01	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\AMB_HoverCars_Engine_Sum_1_34B5CAC0.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Travel\GL_PassBy\GL_PassBy_LP\AMB_HoverCars_Engine_Sum_01		1920144
 	928118353	GL_Pulse	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\GL_Pulse_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Shoot\GL_Shoot\Shot\GL_Shot_Constructor\GL_Pulse\GL_Pulse		299320
 	931298175	WEP_AR_Impact_Flesh_09	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\WEP_AR_Impact_Flesh_D4DCD82F.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Flesh\WEP_AR_Impact_Flesh_09		248412
 	939444335	GL_Impact_Close_Spawn	C:\Users\Chord Shore\Documents\Unreal Projects\ShooterGame\ShooterGame_WwiseProject\.cache\Mac\SFX\GL_Impact_Close_Spawn_10C4C929.wem		\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\GL_Impact\GL_Impact_Location\GL_Impact_Spawn_Distance\GL_Impact_Near_Spawn\GL_Impact_Close_Spawn		935164

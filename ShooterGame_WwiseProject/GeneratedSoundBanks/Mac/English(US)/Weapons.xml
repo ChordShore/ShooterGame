@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{0E07DD24-7DC3-F36E-D982-B1E9E42D7860}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{51B08C09-2E41-EAE6-45F9-ADE7EC179B3B}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -478,6 +478,10 @@
 					<ShortName>GL_Impact_Far_Room.wav</ShortName>
 					<CachePath>SFX/GL_Impact_Far_Room_DCB6B542.wem</CachePath>
 				</File>
+				<File Id="920069920" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_HoverCars_Engine_Sum_1.wav</ShortName>
+					<CachePath>SFX/AMB_HoverCars_Engine_Sum_1_34B5CAC0.wem</CachePath>
+				</File>
 				<File Id="928118353" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Pulse.wav</ShortName>
 					<CachePath>SFX/GL_Pulse_10C4C929.wem</CachePath>
@@ -581,7 +585,6 @@
 					<Plugin Id="900087465" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_20\Silence" GUID="{E1B11188-FD33-4782-A590-2CE7ABAF513E}" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="932739902" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_17\Silence" GUID="{03B191CD-9387-4765-B742-C50CED4300BC}" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="934461864" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_01\Silence" GUID="{4C8C34B6-5626-4F64-913D-CDCACC242C16}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="989138636" Name="Sine" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Travel\GL_PassBy\GL_PassBy_LP\Sine" GUID="{DCB5BD1B-6EED-43B3-86EB-DB1C55586592}" LibName="Wwise Sine" LibId="6553602"/>
 				</Custom>
 				<ShareSets>
 					<Plugin Id="2080872166" Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Fast_Release" GUID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" LibName="Wwise Peak Limiter" LibId="7208963"/>
@@ -1153,12 +1156,10 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3350841939" Name="GL_PassBy_LP_Play" ObjectPath="\Events\Weapons\Shooting\Travel\GL_PassBy_LP_Play" GUID="{566534D1-0C06-45CC-8878-334A29476347}" MaxAttenuation="3000" DurationType="OneShot" DurationMin="8" DurationMax="8">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="989138636"/>
-						</Custom>
-					</PluginRefs>
+				<Event Id="3350841939" Name="GL_PassBy_LP_Play" ObjectPath="\Events\Weapons\Shooting\Travel\GL_PassBy_LP_Play" GUID="{566534D1-0C06-45CC-8878-334A29476347}" MaxAttenuation="10000" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="920069920"/>
+					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
@@ -1260,6 +1261,7 @@
 			<GameParameters>
 				<GameParameter Id="2583655610" Name="PAR_AR_AmmoCount" ObjectPath="\Game Parameters\Weapons\PAR_AR_AmmoCount" GUID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}"/>
 				<GameParameter Id="2732031637" Name="PAR_GL_Impact_Distance" ObjectPath="\Game Parameters\Weapons\PAR_GL_Impact_Distance" GUID="{BA395E67-E6A3-4067-9942-34C856290AFF}"/>
+				<GameParameter Id="2811464683" Name="PAR_GL_Projectile_Doppler" ObjectPath="\Game Parameters\Weapons\PAR_GL_Projectile_Doppler" GUID="{6407D76F-94D5-47B8-BEBE-71AF185724C0}"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="747849153" Name="STA_LocationMix" ObjectPath="\States\Default Work Unit\Highrise\STA_LocationMix" GUID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}">
@@ -1296,5 +1298,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6BE76E28-17D8-A072-F243-3ADB23FBF663}</FileHash>
+	<FileHash>{D7C7CB1E-CDF9-EC5C-30AA-36C80DFC2325}</FileHash>
 </SoundBanksInfo>
