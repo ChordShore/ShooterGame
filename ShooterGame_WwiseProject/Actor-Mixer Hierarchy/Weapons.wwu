@@ -167,13 +167,6 @@
 						<Folder Name="Shooting" ID="{FA0BFD2F-71CF-4C74-8B54-DF095950816E}" ShortID="336719472">
 							<ChildrenList>
 								<ActorMixer Name="WEP_Shoot" ID="{4AF50236-552A-474D-8A81-21368185C6BD}" ShortID="205194726">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-96</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -201,7 +194,7 @@
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-10</Value>
+														<Value>-12</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -903,6 +896,11 @@
 																		<Value>-6</Value>
 																	</ValueList>
 																</Property>
+																<Property Name="MakeUpGain" Type="Real64">
+																	<ValueList>
+																		<Value>-1</Value>
+																	</ValueList>
+																</Property>
 																<Property Name="ReflectionsVolume" Type="Real64">
 																	<ValueList>
 																		<Value>-2</Value>
@@ -911,7 +909,7 @@
 																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-7</Value>
+																		<Value>-2</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -960,11 +958,6 @@
 																	</ValueList>
 																</Property>
 																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>-2</Value>
-																	</ValueList>
-																</Property>
 															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
@@ -5611,7 +5604,6 @@
 										<ActorMixer Name="GL_Impact" ID="{D7196C42-F7EB-4F4F-8BE6-243F23955B13}" ShortID="962572682">
 											<PropertyList>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-												<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -7758,9 +7750,6 @@
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
-												<Reference Name="ReflectionsAuxSend">
-													<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="GL_PassBy_LP" ID="{B1477A73-88ED-477D-AF9C-8A451EA053B0}" ShortID="378821078">
@@ -7781,6 +7770,11 @@
 															</ModifierList>
 														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-200</Value>
+															</ValueList>
+														</Property>
 														<Property Name="ReflectionsVolume" Type="Real64">
 															<ValueList>
 																<Value>-7</Value>
@@ -7885,11 +7879,6 @@
 											</ValueList>
 										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -7904,6 +7893,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<ActorMixer Name="AR_Dryfire" ID="{31AFD45E-1C2C-4308-BE65-BEAEC92E50EF}" ShortID="21353200">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -7945,6 +7941,13 @@
 											</ChildrenList>
 										</ActorMixer>
 										<ActorMixer Name="GL_Dryfire" ID="{1C3A1291-880B-4084-89BF-2BB99DC7F7FF}" ShortID="974250807">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>

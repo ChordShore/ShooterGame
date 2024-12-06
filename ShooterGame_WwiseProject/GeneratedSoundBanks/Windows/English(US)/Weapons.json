@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{07926D96-DF97-C643-C127-0B5930BE276B}",
+    "Hash": "{6BC1F28F-C9FF-E1FE-36A4-A5DCCF61B183}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -189,7 +189,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_PassBy_LP.wav",
-      "CachePath": "SFX/GL_PassBy_LP_B6B8FA67.wem"
+      "CachePath": "SFX/GL_PassBy_LP_92DEDBF2.wem"
      },
      {
       "Id": "173902783",
@@ -2525,7 +2525,7 @@
       "Name": "GL_Impact_OS",
       "ObjectPath": "\\Events\\Weapons\\Shooting\\Impact\\GL_Impact_OS",
       "GUID": "{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}",
-      "MaxAttenuation": "12000",
+      "MaxAttenuation": "15000",
       "DurationType": "OneShot",
       "DurationMin": "4.596805",
       "DurationMax": "5.19974",
@@ -2863,19 +2863,11 @@
       "Name": "GL_PassBy_LP_Play",
       "ObjectPath": "\\Events\\Weapons\\Shooting\\Travel\\GL_PassBy_LP_Play",
       "GUID": "{566534D1-0C06-45CC-8878-334A29476347}",
-      "MaxAttenuation": "9000",
+      "MaxAttenuation": "11000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "167120583"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "3348775760",
-        "Name": "Highrise_EarlyReflections",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
-        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
        }
       ]
      },
@@ -3272,6 +3264,6 @@
     ]
    }
   ],
-  "FileHash": "{CC153946-055C-DBB9-A47E-783F4AE8DD7B}"
+  "FileHash": "{17BBB6AA-AC5C-74D5-B579-AADAF9F4DCC8}"
  }
 }

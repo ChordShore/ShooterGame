@@ -1038,7 +1038,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{E19E91BC-88F2-6BD2-5ADD-4C3D6D002FAE}">
+		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{48EF77E6-E099-D132-D53E-9573786E7243}">
 			<ObjectPath>AR_Shoot_Stop</ObjectPath>
 			<ShortName>AR_Shoot_Stop</ShortName>
 			<Path>Event/AR_Shoot_Stop.bnk</Path>
@@ -1518,7 +1518,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{579EC255-4E26-CB15-DFAB-B3C397690ED5}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{D92C2018-4D44-4583-2162-93D9D3ADB21B}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -1775,7 +1775,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{07926D96-DF97-C643-C127-0B5930BE276B}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{6BC1F28F-C9FF-E1FE-36A4-A5DCCF61B183}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -1866,7 +1866,7 @@
 				</File>
 				<File Id="167120583" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_PassBy_LP.wav</ShortName>
-					<CachePath>SFX/GL_PassBy_LP_B6B8FA67.wem</CachePath>
+					<CachePath>SFX/GL_PassBy_LP_92DEDBF2.wem</CachePath>
 				</File>
 				<File Id="173902783" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
@@ -2809,7 +2809,7 @@
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="477299258" Name="GL_Impact_OS" ObjectPath="\Events\Weapons\Shooting\Impact\GL_Impact_OS" GUID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}" MaxAttenuation="12000" DurationType="OneShot" DurationMin="4.596805" DurationMax="5.19974">
+				<Event Id="477299258" Name="GL_Impact_OS" ObjectPath="\Events\Weapons\Shooting\Impact\GL_Impact_OS" GUID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}" MaxAttenuation="15000" DurationType="OneShot" DurationMin="4.596805" DurationMax="5.19974">
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
@@ -2930,13 +2930,10 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3350841939" Name="GL_PassBy_LP_Play" ObjectPath="\Events\Weapons\Shooting\Travel\GL_PassBy_LP_Play" GUID="{566534D1-0C06-45CC-8878-334A29476347}" MaxAttenuation="9000" DurationType="Infinite">
+				<Event Id="3350841939" Name="GL_PassBy_LP_Play" ObjectPath="\Events\Weapons\Shooting\Travel\GL_PassBy_LP_Play" GUID="{566534D1-0C06-45CC-8878-334A29476347}" MaxAttenuation="11000" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="167120583"/>
 					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
-					</AuxBusRefs>
 				</Event>
 				<Event Id="464045509" Name="GL_Reload_OS" ObjectPath="\Events\Weapons\Reloading\GL_Reload_OS" GUID="{778E484F-B81F-4DFB-8587-4CEA07B594B0}" DurationType="OneShot" DurationMin="2.7136385" DurationMax="3.0459566">
 					<MediaRefs>
@@ -4212,7 +4209,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3838114450" Type="Event" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" Language="SFX" Hash="{A0F97682-A868-9190-DA9C-70635D56DB78}">
+		<SoundBank Id="3838114450" Type="Event" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" Language="SFX" Hash="{CF41DA7B-CBB7-1747-C843-DA1ABA72848E}">
 			<ObjectPath>AR_Shoot_Empty</ObjectPath>
 			<ShortName>AR_Shoot_Empty</ShortName>
 			<Path>Event/AR_Shoot_Empty.bnk</Path>
@@ -4282,5 +4279,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5D960204-7AB4-883A-348B-116F35DDFD2A}</FileHash>
+	<FileHash>{B7E4C709-C6B5-726B-53D4-821CF9161D28}</FileHash>
 </SoundBanksInfo>

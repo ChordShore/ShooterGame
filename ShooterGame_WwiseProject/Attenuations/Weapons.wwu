@@ -9,7 +9,7 @@
 			<ChildrenList>
 				<Attenuation Name="ATN_GL_Projectile_Impact" ID="{AF13FE37-9168-4E64-8078-F2969D5E100C}" ShortID="156239110">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="12000"/>
+						<Property Name="RadiusMax" Type="Real64" Value="15000"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -26,7 +26,7 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>12000</XPos>
+											<XPos>15000</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -54,7 +54,7 @@
 											<SegmentShape>Exp3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>12000</XPos>
+											<XPos>15000</XPos>
 											<YPos>20</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -76,7 +76,7 @@
 											<SegmentShape>Exp3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>12000</XPos>
+											<XPos>15000</XPos>
 											<YPos>20</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -98,7 +98,7 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>12000</XPos>
+											<XPos>15000</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -120,7 +120,7 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>12000</XPos>
+											<XPos>15000</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -251,7 +251,7 @@
 				</Attenuation>
 				<Attenuation Name="ATN_GL_Projectile_Passby" ID="{CA3441E2-7543-4DA2-9926-A4784F1B2467}" ShortID="816942174">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="9000"/>
+						<Property Name="RadiusMax" Type="Real64" Value="11000"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -268,7 +268,7 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>9000</XPos>
+											<XPos>11000</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -291,12 +291,12 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>100</YPos>
+											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Exp2</SegmentShape>
+											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>9000</XPos>
+											<XPos>11000</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -313,13 +313,19 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>100</YPos>
+											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Exp1</SegmentShape>
+											<SegmentShape>Exp3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>9000</XPos>
-											<YPos>100</YPos>
+											<XPos>2444.44444444444</XPos>
+											<YPos>0</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Exp3</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>11000</XPos>
+											<YPos>50</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
@@ -327,7 +333,7 @@
 							</CurveUsageInfo>
 						</HighPassFilterUsage>
 						<SpreadUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="None">
+							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
 								<Curve Name="Spread" ID="{675866C4-3E6A-4C41-8405-5E6B7A655959}">
 									<PropertyList>
 										<Property Name="Flags" Type="int32" Value="1"/>
@@ -337,10 +343,10 @@
 											<XPos>0</XPos>
 											<YPos>100</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Log3</SegmentShape>
+											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>9000</XPos>
+											<XPos>11000</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -349,7 +355,7 @@
 							</CurveUsageInfo>
 						</SpreadUsage>
 						<FocusUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="None">
+							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
 								<Curve Name="Focus" ID="{FF9BA3A5-73F4-4117-A54B-5CB7302F9CE3}">
 									<PropertyList>
 										<Property Name="Flags" Type="int32" Value="1"/>
@@ -362,7 +368,7 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>9000</XPos>
+											<XPos>11000</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -397,7 +403,7 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>0</YPos>
+											<YPos>-0</YPos>
 											<Flags>5</Flags>
 										</Point>
 										<Point>
@@ -460,7 +466,7 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>0</YPos>
+											<YPos>-0</YPos>
 											<Flags>5</Flags>
 										</Point>
 										<Point>

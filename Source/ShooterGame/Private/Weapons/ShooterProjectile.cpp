@@ -124,8 +124,8 @@ void AShooterProjectile::Explode(const FHitResult& Impact)
 		}
 	}
 
-	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Exploded!"));
+	//if (GEngine)
+	//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Exploded!"));
 	bExploded = true;
 }
 
@@ -137,9 +137,10 @@ void AShooterProjectile::DisableAndDestroy()
 		ProjAudioComp->FadeOut(0.1f, 0.f);
 	}
 
+	//Call Wwise Stop Event
 	StopPassByLoop();
-	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Disable & Destroy!"));
+	//if (GEngine)
+	//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Disable & Destroy!"));
 
 	MovementComp->StopMovementImmediately();
 
