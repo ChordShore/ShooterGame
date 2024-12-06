@@ -31,7 +31,13 @@ public:
 	//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 	// Wwise Event Pickers
 
-	/**Explosion Event**/
+	/**Explosion Play Event**/
+	UPROPERTY(EditAnywhere, Category = "Wwise")
+		class UAkAudioEvent* PassByLoopPlayEvent;
+
+	void PlayPassByLoop();
+
+	/**Explosion Stop Event**/
 	UPROPERTY(EditAnywhere, Category = "Wwise")
 		class UAkAudioEvent* PassByLoopStopEvent;
 

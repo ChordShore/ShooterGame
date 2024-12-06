@@ -18,7 +18,7 @@
     "Type": "Event",
     "GUID": "{698F3492-0906-40D0-90BD-FD8AB68AC5B9}",
     "Language": "SFX",
-    "Hash": "{FBF926BF-7DBE-D99A-F318-F55F4F2F54D5}",
+    "Hash": "{EBD62822-9442-4095-162D-71C0886252E9}",
     "ObjectPath": "AR_Selectfire",
     "ShortName": "AR_Selectfire",
     "Path": "Event/AR_Selectfire.bnk",
@@ -2402,7 +2402,7 @@
     "Type": "Event",
     "GUID": "{BD84793E-1D49-48EB-ACC4-F1DA575556CD}",
     "Language": "SFX",
-    "Hash": "{621AFCF9-E675-BE81-7ECB-B6433C48671E}",
+    "Hash": "{E19E91BC-88F2-6BD2-5ADD-4C3D6D002FAE}",
     "ObjectPath": "AR_Shoot_Stop",
     "ShortName": "AR_Shoot_Stop",
     "Path": "Event/AR_Shoot_Stop.bnk",
@@ -4361,7 +4361,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{51B08C09-2E41-EAE6-45F9-ADE7EC179B3B}",
+    "Hash": "{07926D96-DF97-C643-C127-0B5930BE276B}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -4533,6 +4533,14 @@
       "Location": "Memory",
       "ShortName": "AR_Shot_Pulse.wav",
       "CachePath": "SFX/AR_Shot_Pulse_10C4C929.wem"
+     },
+     {
+      "Id": "167120583",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GL_PassBy_LP.wav",
+      "CachePath": "SFX/GL_PassBy_LP_B6B8FA67.wem"
      },
      {
       "Id": "173902783",
@@ -5309,14 +5317,6 @@
       "Location": "Memory",
       "ShortName": "GL_Impact_Far_Room.wav",
       "CachePath": "SFX/GL_Impact_Far_Room_DCB6B542.wem"
-     },
-     {
-      "Id": "920069920",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_HoverCars_Engine_Sum_1.wav",
-      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_1_34B5CAC0.wem"
      },
      {
       "Id": "928118353",
@@ -7214,11 +7214,11 @@
       "Name": "GL_PassBy_LP_Play",
       "ObjectPath": "\\Events\\Weapons\\Shooting\\Travel\\GL_PassBy_LP_Play",
       "GUID": "{566534D1-0C06-45CC-8878-334A29476347}",
-      "MaxAttenuation": "10000",
+      "MaxAttenuation": "9000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "920069920"
+        "Id": "167120583"
        }
       ],
       "AuxBusRefs": [
@@ -7883,7 +7883,7 @@
     "Type": "Event",
     "GUID": "{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}",
     "Language": "SFX",
-    "Hash": "{5485327A-DFCE-2BCF-21D5-8C4D1167E83E}",
+    "Hash": "{1AC3AC98-0A49-75F7-A0BE-D7139F5AF7CF}",
     "ObjectPath": "WEP_Target_Disengage_OS",
     "ShortName": "WEP_Target_Disengage_OS",
     "Path": "Event/WEP_Target_Disengage_OS.bnk",
@@ -9573,7 +9573,7 @@
     "Type": "Event",
     "GUID": "{4ABC7647-EB94-46FC-82E0-92911FB3B773}",
     "Language": "SFX",
-    "Hash": "{DE6AE893-4CDB-B7E4-E2D7-604354A7A3A7}",
+    "Hash": "{95D75B94-2095-F76B-037D-5F90DE5F80C1}",
     "ObjectPath": "GL_PassBy_LP_Stop",
     "ShortName": "GL_PassBy_LP_Stop",
     "Path": "Event/GL_PassBy_LP_Stop.bnk",
@@ -10102,7 +10102,7 @@
     "Type": "Event",
     "GUID": "{1635F222-A233-45E5-B0C4-8A8C46A88E68}",
     "Language": "SFX",
-    "Hash": "{87E2A869-7A7F-4B81-7306-C4236BAF045C}",
+    "Hash": "{A0F97682-A868-9190-DA9C-70635D56DB78}",
     "ObjectPath": "AR_Shoot_Empty",
     "ShortName": "AR_Shoot_Empty",
     "Path": "Event/AR_Shoot_Empty.bnk",
@@ -10235,6 +10235,6 @@
     ]
    }
   ],
-  "FileHash": "{5B86B5FA-BC6D-4976-E972-348F88198843}"
+  "FileHash": "{CFAC3E5D-15CD-E21A-15E8-F6D35CE31D9F}"
  }
 }

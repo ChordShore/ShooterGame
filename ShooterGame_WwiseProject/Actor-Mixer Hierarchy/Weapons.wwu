@@ -167,6 +167,13 @@
 						<Folder Name="Shooting" ID="{FA0BFD2F-71CF-4C74-8B54-DF095950816E}" ShortID="336719472">
 							<ChildrenList>
 								<ActorMixer Name="WEP_Shoot" ID="{4AF50236-552A-474D-8A81-21368185C6BD}" ShortID="205194726">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -7734,7 +7741,6 @@
 												</Property>
 												<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
 												<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="ReflectionsVolume" Type="Real64">
 													<ValueList>
 														<Value>-7</Value>
@@ -7757,118 +7763,111 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="GL_PassBy_LP" ID="{7262D187-BF37-43F6-BC63-81AB8C223CA7}" ShortID="865985507">
+												<Sound Name="GL_PassBy_LP" ID="{B1477A73-88ED-477D-AF9C-8A451EA053B0}" ShortID="378821078">
 													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+														<Property Name="GameAuxSendVolume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Lowpass" Type="int16">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{6A832271-0EEE-4C74-A96E-5C2F1985B872}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="ReflectionsVolume" Type="Real64">
+															<ValueList>
+																<Value>-7</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-12</Value>
+																<Value>-7</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATN_GL_Projectile_Passby" ID="{CA3441E2-7543-4DA2-9926-A4784F1B2467}" WorkUnitID="{20BE0795-7455-4CA3-828E-F9A931FD597B}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+															<ObjectRef Name="Weapons" ID="{1BC77837-C5B2-4563-B3F7-CF715B366F0C}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+														</Reference>
+														<Reference Name="ReflectionsAuxSend">
+															<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="AMB_HoverCars_Engine_Sum_01" ID="{A9BBD35A-9BE7-480E-B9D0-848D52A308B2}" ShortID="748906775">
+														<AudioFileSource Name="GL_PassBy_LP" ID="{D6C8A339-B9D1-47EE-A636-AB270BFE5B63}">
 															<PropertyList>
-																<Property Name="GameAuxSendVolume" Type="Real64">
-																	<ValueList>
-																		<Value>-12</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																<Property Name="ReflectionsVolume" Type="Real64">
-																	<ValueList>
-																		<Value>-10</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="1525.635"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.143531677953348"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.130867118133935"/>
+																<Property Name="LoopBegin" Type="Real64" Value="2.10231693002257"/>
+																<Property Name="LoopEnd" Type="Real64" Value="7.0583813393529"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="ATN_GL_Projectile_Passby" ID="{CA3441E2-7543-4DA2-9926-A4784F1B2467}" WorkUnitID="{20BE0795-7455-4CA3-828E-F9A931FD597B}"/>
-																</Reference>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-																<Reference Name="ReflectionsAuxSend">
-																	<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-																<Reference Name="UserAuxSend0">
-																	<ObjectRef Name="Highrise_HoverCars" ID="{3C61D1C9-1B9B-4BFE-A840-A85C50D32C82}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_HoverCars_Engine_Sum_1" ID="{C465C639-FB03-452E-8664-E1764BCA56AB}">
-																	<PropertyList>
-																		<Property Name="CrossfadeDuration" Type="Real64" Value="1000"/>
-																		<Property Name="FadeInDuration" Type="Real64" Value="0.2"/>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="0.2"/>
-																		<Property Name="LoopBegin" Type="Real64" Value="1"/>
-																		<Property Name="LoopEnd" Type="Real64" Value="8.58810068649886"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_HoverCars_Engine_Sum_1.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="920069920"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ObjectLists>
-																<ObjectList Name="RTPC">
-																	<Reference>
-																		<Local>
-																			<RTPC Name="" ID="{802C1961-5496-4AD8-9C83-88A63D7E829D}" ShortID="917204375">
-																				<PropertyList>
-																					<Property Name="PropertyName" Type="string" Value="Pitch"/>
-																				</PropertyList>
-																				<ReferenceList>
-																					<Reference Name="ControlInput">
-																						<ObjectRef Name="PAR_GL_Projectile_Doppler" ID="{6407D76F-94D5-47B8-BEBE-71AF185724C0}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
-																					</Reference>
-																					<Reference Name="Curve">
-																						<Custom>
-																							<Curve Name="" ID="{5C073C06-F910-488A-BBDC-22B82B83805C}">
-																								<PropertyList>
-																									<Property Name="Flags" Type="int32" Value="65537"/>
-																								</PropertyList>
-																								<PointList>
-																									<Point>
-																										<XPos>-20000</XPos>
-																										<YPos>1765</YPos>
-																										<Flags>5</Flags>
-																										<SegmentShape>Log2</SegmentShape>
-																									</Point>
-																									<Point>
-																										<XPos>100000</XPos>
-																										<YPos>26</YPos>
-																										<Flags>37</Flags>
-																									</Point>
-																								</PointList>
-																							</Curve>
-																						</Custom>
-																					</Reference>
-																				</ReferenceList>
-																			</RTPC>
-																		</Local>
-																	</Reference>
-																</ObjectList>
-															</ObjectLists>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_HoverCars_Engine_Sum_1" ID="{C465C639-FB03-452E-8664-E1764BCA56AB}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
+															<Language>SFX</Language>
+															<AudioFile>GL_PassBy_LP.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="167120583"/>
+															</MediaIDList>
+														</AudioFileSource>
 													</ChildrenList>
-												</RandomSequenceContainer>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{E0E077EB-94D2-483F-8EFE-A51C88DA7D38}" ShortID="968019388">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Pitch"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="PAR_GL_Projectile_Doppler" ID="{6407D76F-94D5-47B8-BEBE-71AF185724C0}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{B51B4DA0-3A9D-416B-8E98-B1779B256C6D}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="65537"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>-20000</XPos>
+																								<YPos>100</YPos>
+																								<Flags>5</Flags>
+																								<SegmentShape>SCurve</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>100000</XPos>
+																								<YPos>-600</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+													<ActiveSourceList>
+														<ActiveSource Name="GL_PassBy_LP" ID="{D6C8A339-B9D1-47EE-A636-AB270BFE5B63}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>

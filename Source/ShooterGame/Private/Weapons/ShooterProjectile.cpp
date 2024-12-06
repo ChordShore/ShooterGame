@@ -54,8 +54,9 @@ void AShooterProjectile::PostInitializeComponents()
 
 	SetLifeSpan( WeaponConfig.ProjectileLife );
 	MyController = GetInstigatorController();
-	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("On Initialize!"));
+	//PlayPassByLoop();
+	//if (GEngine)
+	//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("On Initialize!"));
 }
 
 void AShooterProjectile::InitVelocity(FVector& ShootDirection)
@@ -75,6 +76,12 @@ void AShooterProjectile::StopPassByLoop()
 	UAkGameplayStatics::PostEvent(PassByLoopStopEvent, this, int32(0), nullCallback);
 }
 
+void AShooterProjectile::PlayPassByLoop()
+{
+	FOnAkPostEventCallback nullCallback;
+	UAkGameplayStatics::PostEvent(PassByLoopPlayEvent, this, int32(0), nullCallback);
+}
+
 //<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
 void AShooterProjectile::OnImpact(const FHitResult& HitResult)
@@ -84,7 +91,7 @@ void AShooterProjectile::OnImpact(const FHitResult& HitResult)
 		Explode(HitResult);
 		
 		//Call Wwise Stop Event
-		StopPassByLoop();
+		//StopPassByLoop();
 		//if (GEngine)
 		//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("On Impact!"));
 		DisableAndDestroy();
@@ -117,6 +124,8 @@ void AShooterProjectile::Explode(const FHitResult& Impact)
 		}
 	}
 
+	if (GEngine)
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Exploded!"));
 	bExploded = true;
 }
 
@@ -127,6 +136,10 @@ void AShooterProjectile::DisableAndDestroy()
 	{
 		ProjAudioComp->FadeOut(0.1f, 0.f);
 	}
+
+	StopPassByLoop();
+	if (GEngine)
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Disable & Destroy!"));
 
 	MovementComp->StopMovementImmediately();
 

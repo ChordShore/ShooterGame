@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{51B08C09-2E41-EAE6-45F9-ADE7EC179B3B}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{07926D96-DF97-C643-C127-0B5930BE276B}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -89,6 +89,10 @@
 				<File Id="166846503" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AR_Shot_Pulse.wav</ShortName>
 					<CachePath>SFX/AR_Shot_Pulse_10C4C929.wem</CachePath>
+				</File>
+				<File Id="167120583" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GL_PassBy_LP.wav</ShortName>
+					<CachePath>SFX/GL_PassBy_LP_B6B8FA67.wem</CachePath>
 				</File>
 				<File Id="173902783" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
@@ -477,10 +481,6 @@
 				<File Id="912217750" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Room.wav</ShortName>
 					<CachePath>SFX/GL_Impact_Far_Room_DCB6B542.wem</CachePath>
-				</File>
-				<File Id="920069920" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_HoverCars_Engine_Sum_1.wav</ShortName>
-					<CachePath>SFX/AMB_HoverCars_Engine_Sum_1_34B5CAC0.wem</CachePath>
 				</File>
 				<File Id="928118353" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Pulse.wav</ShortName>
@@ -1156,9 +1156,9 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3350841939" Name="GL_PassBy_LP_Play" ObjectPath="\Events\Weapons\Shooting\Travel\GL_PassBy_LP_Play" GUID="{566534D1-0C06-45CC-8878-334A29476347}" MaxAttenuation="10000" DurationType="Infinite">
+				<Event Id="3350841939" Name="GL_PassBy_LP_Play" ObjectPath="\Events\Weapons\Shooting\Travel\GL_PassBy_LP_Play" GUID="{566534D1-0C06-45CC-8878-334A29476347}" MaxAttenuation="9000" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="920069920"/>
+						<MediaRef Id="167120583"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
@@ -1298,5 +1298,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{348461B8-ADC4-04AF-1187-EB88141B89D7}</FileHash>
+	<FileHash>{DCA8F8E1-BBE6-F432-FED3-F87E86EB2BEB}</FileHash>
 </SoundBanksInfo>

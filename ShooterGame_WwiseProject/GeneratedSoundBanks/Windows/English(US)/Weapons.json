@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{51B08C09-2E41-EAE6-45F9-ADE7EC179B3B}",
+    "Hash": "{07926D96-DF97-C643-C127-0B5930BE276B}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -182,6 +182,14 @@
       "Location": "Memory",
       "ShortName": "AR_Shot_Pulse.wav",
       "CachePath": "SFX/AR_Shot_Pulse_10C4C929.wem"
+     },
+     {
+      "Id": "167120583",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GL_PassBy_LP.wav",
+      "CachePath": "SFX/GL_PassBy_LP_B6B8FA67.wem"
      },
      {
       "Id": "173902783",
@@ -958,14 +966,6 @@
       "Location": "Memory",
       "ShortName": "GL_Impact_Far_Room.wav",
       "CachePath": "SFX/GL_Impact_Far_Room_DCB6B542.wem"
-     },
-     {
-      "Id": "920069920",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_HoverCars_Engine_Sum_1.wav",
-      "CachePath": "SFX/AMB_HoverCars_Engine_Sum_1_34B5CAC0.wem"
      },
      {
       "Id": "928118353",
@@ -2863,11 +2863,11 @@
       "Name": "GL_PassBy_LP_Play",
       "ObjectPath": "\\Events\\Weapons\\Shooting\\Travel\\GL_PassBy_LP_Play",
       "GUID": "{566534D1-0C06-45CC-8878-334A29476347}",
-      "MaxAttenuation": "10000",
+      "MaxAttenuation": "9000",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "920069920"
+        "Id": "167120583"
        }
       ],
       "AuxBusRefs": [
@@ -3272,6 +3272,6 @@
     ]
    }
   ],
-  "FileHash": "{D4C244F0-53B0-8C1B-9208-DD117C89185D}"
+  "FileHash": "{CC153946-055C-DBB9-A47E-783F4AE8DD7B}"
  }
 }
