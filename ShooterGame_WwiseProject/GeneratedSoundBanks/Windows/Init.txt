@@ -21,18 +21,21 @@ Custom State	ID	Name	State Group	Owner		Notes
 	794650321	STA_Indoors_Spawn	STA_LocationMix	\Effects\Factory Effects\Delay\One_Tap_Quarter_Second		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	424293794	PAR_AR_Shot_Sidechain			\Weapons\Mixing\PAR_AR_Shot_Sidechain	
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
 	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
 	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
 	1755085759	Wood_Deep			\Factory Acoustic Textures\Textures\Wood_Deep	
 	1873957695	Anechoic			\Factory Acoustic Textures\Textures\Anechoic	
 	1970351858	Fabric			\Factory Acoustic Textures\Textures\Fabric	
+	1997683070	PAR_GL_Shot_Sidechain			\Weapons\Mixing\PAR_GL_Shot_Sidechain	
 	2058049674	Wood			\Factory Acoustic Textures\Textures\Wood	
 	2412606308	Carpet			\Factory Acoustic Textures\Textures\Carpet	
 	2637588553	Tile			\Factory Acoustic Textures\Textures\Tile	
 	2928161104	Curtains			\Factory Acoustic Textures\Textures\Curtains	
 	3195498748	Cork_Tiles			\Factory Acoustic Textures\Textures\Cork_Tiles	
 	3670307564	Drywall			\Factory Acoustic Textures\Textures\Drywall	
+	3767380492	PAR_GL_Impact_Sidechain			\Weapons\Mixing\PAR_GL_Impact_Sidechain	
 	4168643977	Acoustic_Banner			\Factory Acoustic Textures\Textures\Acoustic_Banner	
 	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
 
@@ -43,9 +46,9 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	432164595	Auxiliaries			\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries	
 	505457527	AR_Ricochets			\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Impacts\AR_Ricochets	
 	836873062	AMB_Rooms			\Default Work Unit\Master Audio Bus\Diegetic\Ambience\AMB_Rooms	
+	875370928	AR_Shoot			\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Shots\AR_Shoot	
 	877642339	Cinematics			\Default Work Unit\Master Audio Bus\Non-Diegetic\Cinematics	
 	928742199	GL_Explosions			\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Impacts\GL_Explosions	
-	1059924838	AR_Shots			\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Shots\AR_Shots	
 	1088520938	Interface			\Default Work Unit\Master Audio Bus\Non-Diegetic\Interface	
 	1316532907	Diegetic			\Default Work Unit\Master Audio Bus\Diegetic	
 	1467963052	Weapons			\Default Work Unit\Master Audio Bus\Diegetic\Weapons	
@@ -53,8 +56,8 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2420281969	Non-Diegetic			\Default Work Unit\Master Audio Bus\Non-Diegetic	
 	2940432316	Stingers			\Default Work Unit\Master Audio Bus\Non-Diegetic\Stingers	
 	3074349213	Sanctuary			\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Sanctuary	
+	3079155500	GL_Shoot			\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Shots\GL_Shoot	
 	3240358146	Highrise			\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise	
-	3263709402	GL_Shots			\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Shots\GL_Shots	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3930136735	Dialogue			\Default Work Unit\Master Audio Bus\Diegetic\Dialogue	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Non-Diegetic\Music	
@@ -72,7 +75,10 @@ Effect plug-ins	ID	Name	Type				Notes
 	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
 	1990128658	Room_Medium	Wwise RoomVerb			
 	2180422931	One_Tap_Quarter_Second	Wwise Delay			
+	2739178461	GL_Explosion_Sidechain	Wwise Meter			
 	2945072214	My_Closet	Wwise RoomVerb			
+	3011716523	GL_Sidechain_Meter	Wwise Meter			
+	3239115655	AR_Sidechain_Meter	Wwise Meter			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

@@ -186,6 +186,7 @@
 												<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="ReflectionsVolume" Type="Real64">
 													<ValueList>
 														<Value>-2</Value>
@@ -206,7 +207,7 @@
 													<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+													<ObjectRef Name="AR_Shoot" ID="{3D3B38C5-3BC0-4447-86DE-206228E9859C}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 												<Reference Name="ReflectionsAuxSend">
 													<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
@@ -2093,7 +2094,7 @@
 													<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="GL_Shots" ID="{D9143790-A231-44C7-BDD1-B6585167F525}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+													<ObjectRef Name="GL_Shoot" ID="{D9143790-A231-44C7-BDD1-B6585167F525}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -5826,7 +5827,7 @@
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 																		</Reference>
 																		<Reference Name="OutputBus">
-																			<ObjectRef Name="GL_Shots" ID="{D9143790-A231-44C7-BDD1-B6585167F525}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																			<ObjectRef Name="GL_Shoot" ID="{D9143790-A231-44C7-BDD1-B6585167F525}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -6477,7 +6478,7 @@
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 																		</Reference>
 																		<Reference Name="OutputBus">
-																			<ObjectRef Name="GL_Shots" ID="{D9143790-A231-44C7-BDD1-B6585167F525}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																			<ObjectRef Name="GL_Shoot" ID="{D9143790-A231-44C7-BDD1-B6585167F525}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -7038,7 +7039,7 @@
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 																		</Reference>
 																		<Reference Name="OutputBus">
-																			<ObjectRef Name="GL_Shots" ID="{D9143790-A231-44C7-BDD1-B6585167F525}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																			<ObjectRef Name="GL_Shoot" ID="{D9143790-A231-44C7-BDD1-B6585167F525}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>

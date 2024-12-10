@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DD8AF2D7-3149-4FFB-B240-24C414679308}" SchemaVersion="110" RootDocumentID="{2ECF7F23-FD0B-4286-8E8D-FEF9004B90B9}" ParentDocumentID="{2ECF7F23-FD0B-4286-8E8D-FEF9004B90B9}">
+	<Effects>
+		<WorkUnit Name="Weapons" ID="{DD8AF2D7-3149-4FFB-B240-24C414679308}" OwnerID="{2ECF7F23-FD0B-4286-8E8D-FEF9004B90B9}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Sidechain Meters" ID="{B2ECE220-B6E4-420A-BE89-C07FA3709BA8}" ShortID="562709520">
+					<ChildrenList>
+						<Effect Name="AR_Sidechain_Meter" ID="{557D5F32-1BEC-48F0-A2A5-D92470412338}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">							<PluginData>
+	<GameParameter Name="PAR_AR_Shot_Sidechain" ID="{26D6E922-A41C-49EB-B29E-E7BD825BEDE4}"/>
+</PluginData>
+						</Effect>
+						<Effect Name="GL_Sidechain_Meter" ID="{D4D2183E-9EEB-4520-AE0E-4712F99301A3}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">							<PluginData>
+	<GameParameter Name="PAR_GL_Shot_Sidechain" ID="{BA6CD66D-A540-47CA-BC6C-212B99F74386}"/>
+</PluginData>
+						</Effect>
+						<Effect Name="GL_Explosion_Sidechain" ID="{E09D5956-E6A7-4688-939C-2D8D4B6CB57D}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">							<PluginData>
+	<GameParameter Name="PAR_GL_Impact_Sidechain" ID="{BA05859C-93B0-481D-AD84-EC4556214253}"/>
+</PluginData>
+						</Effect>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

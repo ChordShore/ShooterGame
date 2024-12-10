@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{CF31C062-C765-0C34-CA44-DC30BE8E32C8}",
+    "Hash": "{68D538BC-56DD-7CA7-FEDA-7EFEB7CD442D}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -59,12 +59,36 @@
        "LibId": "6946819"
       },
       {
+       "Id": "2739178461",
+       "Name": "GL_Explosion_Sidechain",
+       "ObjectPath": "\\Effects\\User Effects\\Weapons\\Sidechain Meters\\GL_Explosion_Sidechain",
+       "GUID": "{E09D5956-E6A7-4688-939C-2D8D4B6CB57D}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      },
+      {
        "Id": "2945072214",
        "Name": "My_Closet",
        "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Claustrophobia\\My_Closet",
        "GUID": "{384A82A1-3C92-4AC5-AFC2-474F2080642C}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
+      },
+      {
+       "Id": "3011716523",
+       "Name": "GL_Sidechain_Meter",
+       "ObjectPath": "\\Effects\\User Effects\\Weapons\\Sidechain Meters\\GL_Sidechain_Meter",
+       "GUID": "{D4D2183E-9EEB-4520-AE0E-4712F99301A3}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      },
+      {
+       "Id": "3239115655",
+       "Name": "AR_Sidechain_Meter",
+       "ObjectPath": "\\Effects\\User Effects\\Weapons\\Sidechain Meters\\AR_Sidechain_Meter",
+       "GUID": "{557D5F32-1BEC-48F0-A2A5-D92470412338}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
       }
      ],
      "AudioDevices": [
@@ -124,6 +148,19 @@
       "GUID": "{07982599-3460-4AB7-8018-8A8B6A4BEF5E}"
      },
      {
+      "Id": "875370928",
+      "Name": "AR_Shoot",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Weapons\\Shots\\AR_Shoot",
+      "GUID": "{3D3B38C5-3BC0-4447-86DE-206228E9859C}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3239115655"
+        }
+       ]
+      }
+     },
+     {
       "Id": "877642339",
       "Name": "Cinematics",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Non-Diegetic\\Cinematics",
@@ -133,13 +170,14 @@
       "Id": "928742199",
       "Name": "GL_Explosions",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Weapons\\Impacts\\GL_Explosions",
-      "GUID": "{2DC28776-7AC7-4483-9384-9D8ADED87C44}"
-     },
-     {
-      "Id": "1059924838",
-      "Name": "AR_Shots",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Weapons\\Shots\\AR_Shots",
-      "GUID": "{3D3B38C5-3BC0-4447-86DE-206228E9859C}"
+      "GUID": "{2DC28776-7AC7-4483-9384-9D8ADED87C44}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2739178461"
+        }
+       ]
+      }
      },
      {
       "Id": "1088520938",
@@ -184,16 +222,23 @@
       "GUID": "{5BA6AF2C-2325-4C30-8363-C8F3B4D195B0}"
      },
      {
+      "Id": "3079155500",
+      "Name": "GL_Shoot",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Weapons\\Shots\\GL_Shoot",
+      "GUID": "{D9143790-A231-44C7-BDD1-B6585167F525}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3011716523"
+        }
+       ]
+      }
+     },
+     {
       "Id": "3240358146",
       "Name": "Highrise",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise",
       "GUID": "{596C5B51-663F-4CD9-9F06-6A282DAF1573}"
-     },
-     {
-      "Id": "3263709402",
-      "Name": "GL_Shots",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Weapons\\Shots\\GL_Shots",
-      "GUID": "{D9143790-A231-44C7-BDD1-B6585167F525}"
      },
      {
       "Id": "3803692087",
@@ -296,6 +341,12 @@
       "GUID": "{009857E8-11A8-4C0B-8F4B-67B3B3ABD96D}"
      },
      {
+      "Id": "424293794",
+      "Name": "PAR_AR_Shot_Sidechain",
+      "ObjectPath": "\\Game Parameters\\Weapons\\Mixing\\PAR_AR_Shot_Sidechain",
+      "GUID": "{26D6E922-A41C-49EB-B29E-E7BD825BEDE4}"
+     },
+     {
       "Id": "492872062",
       "Name": "PAR_Heartbeats",
       "ObjectPath": "\\Game Parameters\\Foley\\PAR_Heartbeats",
@@ -324,6 +375,12 @@
       "Name": "PAR_Wind",
       "ObjectPath": "\\Game Parameters\\Ambience\\PAR_Wind",
       "GUID": "{5AA64F25-2B48-4F0C-8EF5-838EB08AB4B3}"
+     },
+     {
+      "Id": "1997683070",
+      "Name": "PAR_GL_Shot_Sidechain",
+      "ObjectPath": "\\Game Parameters\\Weapons\\Mixing\\PAR_GL_Shot_Sidechain",
+      "GUID": "{BA6CD66D-A540-47CA-BC6C-212B99F74386}"
      },
      {
       "Id": "1999698287",
@@ -372,6 +429,12 @@
       "Name": "PAR_Velocity_Horizontal",
       "ObjectPath": "\\Game Parameters\\Foley\\PAR_Velocity_Horizontal",
       "GUID": "{4607A581-294C-433F-97F3-4F9FF9E1DE68}"
+     },
+     {
+      "Id": "3767380492",
+      "Name": "PAR_GL_Impact_Sidechain",
+      "ObjectPath": "\\Game Parameters\\Weapons\\Mixing\\PAR_GL_Impact_Sidechain",
+      "GUID": "{BA05859C-93B0-481D-AD84-EC4556214253}"
      }
     ],
     "StateGroups": [
@@ -960,6 +1023,6 @@
     ]
    }
   ],
-  "FileHash": "{F7E3DC1F-F1AD-7AF1-CDAC-BD14085B535E}"
+  "FileHash": "{A6E556FC-357C-9157-44FB-FE51419AB437}"
  }
 }

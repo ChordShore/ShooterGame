@@ -90,12 +90,296 @@
 										</Bus>
 										<Bus Name="Sanctuary" ID="{5BA6AF2C-2325-4C30-8363-C8F3B4D195B0}"/>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{6A98FB73-6060-427A-BCCB-2AE254A6442A}" ShortID="148768128">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PAR_AR_Shot_Sidechain" ID="{26D6E922-A41C-49EB-B29E-E7BD825BEDE4}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{0C878F51-7BE2-489C-8C3C-6453EEB4ACA8}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-48</XPos>
+																				<YPos>0.11256</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>-24</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>SCurve</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>-0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>48</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{469E7C87-4471-4C07-90D9-3BBFB3151D16}" ShortID="780549883">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PAR_GL_Shot_Sidechain" ID="{BA6CD66D-A540-47CA-BC6C-212B99F74386}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{019346B8-3054-4C71-A055-54B2E20D8BE0}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-48</XPos>
+																				<YPos>0.11256</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>-24</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>SCurve</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>-0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>48</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{05F24417-B2AA-4A11-B84D-D28D7C116584}" ShortID="433904823">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PAR_GL_Impact_Sidechain" ID="{BA05859C-93B0-481D-AD84-EC4556214253}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{434B0DF5-99B6-485E-909D-C39C6AD7A9FB}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-48</XPos>
+																				<YPos>0.11256</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>-24</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>SCurve</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>-0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>48</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</Bus>
 								<Bus Name="Foley" ID="{AFADED97-9376-47EE-8E61-63C3E2539C84}">
 									<PropertyList>
 										<Property Name="Color" Type="int16" Value="2"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{623AAE7C-DCDC-4123-A5F0-1D65B9032247}" ShortID="264062016">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PAR_AR_Shot_Sidechain" ID="{26D6E922-A41C-49EB-B29E-E7BD825BEDE4}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{EB51817D-E593-4803-9996-0EB274113B99}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-48</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>-24</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>SCurve</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>-0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>48</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{C7D20D46-C3CF-40CE-8F10-03F36A6AF553}" ShortID="252440311">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PAR_GL_Shot_Sidechain" ID="{BA6CD66D-A540-47CA-BC6C-212B99F74386}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{17E26D74-0E45-4E92-9119-E5DE818BB2F9}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-48</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>-24</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>SCurve</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>48</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{0F30E813-A212-4AEA-9D04-F750FB93894D}" ShortID="49946331">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PAR_GL_Impact_Sidechain" ID="{BA05859C-93B0-481D-AD84-EC4556214253}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{95DCBB13-D48E-4D5A-BA9A-3ADFC4050ABC}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-48</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>-24</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>SCurve</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>48</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</Bus>
 								<Bus Name="Weapons" ID="{1BC77837-C5B2-4563-B3F7-CF715B366F0C}">
 									<PropertyList>
@@ -109,11 +393,16 @@
 													<PropertyList>
 														<Property Name="RecoveryTime" Type="Real64" Value="0"/>
 													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+															<ObjectRef Name="GL_Explosion_Sidechain" ID="{E09D5956-E6A7-4688-939C-2D8D4B6CB57D}" WorkUnitID="{DD8AF2D7-3149-4FFB-B240-24C414679308}"/>
+														</Reference>
+													</ReferenceList>
 													<DuckingList>
 														<DuckItem>
 															<BusRef Name="Foley" ID="{AFADED97-9376-47EE-8E61-63C3E2539C84}"/>
 															<DuckingParam>
-																<Volume>-6</Volume>
+																<Volume>0</Volume>
 																<FadeInTime>1</FadeInTime>
 																<FadeOutTime>1</FadeOutTime>
 																<FadeCurve>FadeLinear</FadeCurve>
@@ -122,7 +411,7 @@
 														<DuckItem>
 															<BusRef Name="Auxiliaries" ID="{639A62DF-CA02-438D-9BA0-A89D32368F6D}"/>
 															<DuckingParam>
-																<Volume>-6</Volume>
+																<Volume>0</Volume>
 																<FadeInTime>1</FadeInTime>
 																<FadeOutTime>1</FadeOutTime>
 																<FadeCurve>FadeLinear</FadeCurve>
@@ -131,7 +420,7 @@
 														<DuckItem>
 															<BusRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}"/>
 															<DuckingParam>
-																<Volume>-6</Volume>
+																<Volume>0</Volume>
 																<FadeInTime>0.5</FadeInTime>
 																<FadeOutTime>0.5</FadeOutTime>
 																<FadeCurve>FadeLog2</FadeCurve>
@@ -140,19 +429,20 @@
 														<DuckItem>
 															<BusRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}"/>
 															<DuckingParam>
-																<Volume>-6</Volume>
+																<Volume>0</Volume>
 																<FadeInTime>0.5</FadeInTime>
 																<FadeOutTime>0.100000001490116</FadeOutTime>
 																<FadeCurve>FadeLog1</FadeCurve>
 															</DuckingParam>
 														</DuckItem>
 														<DuckItem>
-															<BusRef Name="GL_Shots" ID="{D9143790-A231-44C7-BDD1-B6585167F525}"/>
+															<BusRef Name="GL_Shoot" ID="{D9143790-A231-44C7-BDD1-B6585167F525}"/>
 															<DuckingParam>
-																<Volume>-6</Volume>
+																<Volume>0</Volume>
 																<FadeInTime>1</FadeInTime>
 																<FadeOutTime>1</FadeOutTime>
 																<FadeCurve>FadeExp3</FadeCurve>
+																<TargetProp>BusVolume</TargetProp>
 															</DuckingParam>
 														</DuckItem>
 													</DuckingList>
@@ -162,12 +452,23 @@
 										</Folder>
 										<Folder Name="Shots" ID="{20524B44-F904-4FFA-A84F-D9F342D5C7F4}" ShortID="642442661">
 											<ChildrenList>
-												<Bus Name="GL_Shots" ID="{D9143790-A231-44C7-BDD1-B6585167F525}">
+												<Bus Name="GL_Shoot" ID="{D9143790-A231-44C7-BDD1-B6585167F525}">
 													<PropertyList>
 														<Property Name="RecoveryTime" Type="Real64" Value="0"/>
 													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+															<ObjectRef Name="GL_Sidechain_Meter" ID="{D4D2183E-9EEB-4520-AE0E-4712F99301A3}" WorkUnitID="{DD8AF2D7-3149-4FFB-B240-24C414679308}"/>
+														</Reference>
+													</ReferenceList>
 												</Bus>
-												<Bus Name="AR_Shots" ID="{3D3B38C5-3BC0-4447-86DE-206228E9859C}"/>
+												<Bus Name="AR_Shoot" ID="{3D3B38C5-3BC0-4447-86DE-206228E9859C}">
+													<ReferenceList>
+														<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+															<ObjectRef Name="AR_Sidechain_Meter" ID="{557D5F32-1BEC-48F0-A2A5-D92470412338}" WorkUnitID="{DD8AF2D7-3149-4FFB-B240-24C414679308}"/>
+														</Reference>
+													</ReferenceList>
+												</Bus>
 											</ChildrenList>
 										</Folder>
 									</ChildrenList>
@@ -190,8 +491,248 @@
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>
 									<ChildrenList>
-										<Bus Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}"/>
-										<Bus Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}"/>
+										<Bus Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}">
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{FAB7AA37-CE2E-4112-9226-1FEE9A71E544}" ShortID="146022131">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="PAR_AR_Shot_Sidechain" ID="{26D6E922-A41C-49EB-B29E-E7BD825BEDE4}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{AA55BEAA-C5BA-44F0-B9DE-C620C91C5ED4}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>-48</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>-24</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>SCurve</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>-0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>48</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{4618A196-9A75-486D-8CAB-F419EB2D83AC}" ShortID="426473507">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="PAR_GL_Shot_Sidechain" ID="{BA6CD66D-A540-47CA-BC6C-212B99F74386}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{2FF7F00F-0CA0-46D3-9A39-481BB87006C2}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>-48</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>-12</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>SCurve</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>48</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{C49A3428-0FA5-4ABA-B1F2-C17F513DC90E}" ShortID="762015177">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="PAR_GL_Impact_Sidechain" ID="{BA05859C-93B0-481D-AD84-EC4556214253}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{F5613692-8AB4-4D4C-8260-EF5A2B7ECB71}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>-48</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>-24.96</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>SCurve</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>48</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</Bus>
+										<Bus Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}">
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{4BB16CD7-F117-48FF-9259-AB23BF6A0ABE}" ShortID="507795128">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="PAR_AR_Shot_Sidechain" ID="{26D6E922-A41C-49EB-B29E-E7BD825BEDE4}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{D02A95E3-02A4-4275-B83F-CED41BD71672}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>-48</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>-24</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>SCurve</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>48</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{84C4EB16-2E4F-4B47-BCF6-D715E4257B7D}" ShortID="925753613">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="PAR_GL_Shot_Sidechain" ID="{BA6CD66D-A540-47CA-BC6C-212B99F74386}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{A23FF9FA-1534-4B2A-B900-4A2B0A20867B}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>-48</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>-24</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>SCurve</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>-0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>48</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</Bus>
 									</ChildrenList>
 								</Bus>
 							</ChildrenList>

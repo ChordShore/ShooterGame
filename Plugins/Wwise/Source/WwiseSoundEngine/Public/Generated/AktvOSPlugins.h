@@ -21,5 +21,6 @@ Copyright (c) 2024 Audiokinetic Inc.
 #include <AK/Plugin/AkDelayFXFactory.h>
 #include <AK/Plugin/AkPeakLimiterFXFactory.h>
 #include <AK/Plugin/AkRoomVerbFXFactory.h>
+#include <AK/Plugin/AkMeterFXFactory.h>
 #include <AK/Plugin/AkTremoloFXFactory.h>
 #endif

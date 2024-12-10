@@ -33,6 +33,31 @@
 						<Property Name="Min" Type="Real64" Value="-20000"/>
 					</PropertyList>
 				</GameParameter>
+				<Folder Name="Mixing" ID="{C3F9B5AD-9AEE-4B11-8361-3F4D136E0C4E}" ShortID="740796708">
+					<ChildrenList>
+						<GameParameter Name="PAR_AR_Shot_Sidechain" ID="{26D6E922-A41C-49EB-B29E-E7BD825BEDE4}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="-48"/>
+								<Property Name="Max" Type="Real64" Value="48"/>
+								<Property Name="Min" Type="Real64" Value="-48"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="PAR_GL_Shot_Sidechain" ID="{BA6CD66D-A540-47CA-BC6C-212B99F74386}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="-48"/>
+								<Property Name="Max" Type="Real64" Value="48"/>
+								<Property Name="Min" Type="Real64" Value="-48"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="PAR_GL_Impact_Sidechain" ID="{BA05859C-93B0-481D-AD84-EC4556214253}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="-48"/>
+								<Property Name="Max" Type="Real64" Value="48"/>
+								<Property Name="Min" Type="Real64" Value="-48"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

@@ -44,6 +44,18 @@
 							<Value>41263</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="PAR_GL_Shot_Sidechain" ID="{BA6CD66D-A540-47CA-BC6C-212B99F74386}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PAR_GL_Impact_Sidechain" ID="{BA05859C-93B0-481D-AD84-EC4556214253}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PAR_AR_Shot_Sidechain" ID="{26D6E922-A41C-49EB-B29E-E7BD825BEDE4}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="PAR_GL_AmmoCount" ID="{009857E8-11A8-4C0B-8F4B-67B3B3ABD96D}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -65,8 +77,8 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="STA_Path5_Cull" ID="{AC8E4352-EFB9-46F5-86BA-3C6204E9B6B3}"/>
-						<CurrentStateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+						<CurrentStateRef Name="None" ID="{BB4FD5EE-2E84-4BFE-B7E1-EF4CB10C6C67}"/>
+						<CurrentStateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 						<CurrentStateRef Name="None" ID="{58E0E97C-6C8E-42CB-BD10-0B2B26B95058}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
@@ -187,7 +199,7 @@
 						</Module>
 						<Module>
 							<ObjectRef Name="AMB_Highrise_Atrium" ID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}"/>
-							<Position X="5" Y="0"/>
+							<Position X="4" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -200,6 +212,18 @@
 							<Value>41263</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="PAR_GL_Shot_Sidechain" ID="{BA6CD66D-A540-47CA-BC6C-212B99F74386}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PAR_GL_Impact_Sidechain" ID="{BA05859C-93B0-481D-AD84-EC4556214253}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PAR_AR_Shot_Sidechain" ID="{26D6E922-A41C-49EB-B29E-E7BD825BEDE4}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="PAR_GL_AmmoCount" ID="{009857E8-11A8-4C0B-8F4B-67B3B3ABD96D}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -209,8 +233,8 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="STA_Path5_Cull" ID="{AC8E4352-EFB9-46F5-86BA-3C6204E9B6B3}"/>
-						<CurrentStateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+						<CurrentStateRef Name="None" ID="{BB4FD5EE-2E84-4BFE-B7E1-EF4CB10C6C67}"/>
+						<CurrentStateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 						<CurrentStateRef Name="None" ID="{58E0E97C-6C8E-42CB-BD10-0B2B26B95058}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

@@ -1108,7 +1108,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{B6D6BD5F-914C-50E9-7F7A-3629B4B6AA60}">
+		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{EA24336A-72A3-E59B-54BC-DDE35E39D57F}">
 			<ObjectPath>AR_Shoot_Stop</ObjectPath>
 			<ShortName>AR_Shoot_Stop</ShortName>
 			<Path>Event/AR_Shoot_Stop.bnk</Path>
@@ -1608,7 +1608,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{CF31C062-C765-0C34-CA44-DC30BE8E32C8}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{68D538BC-56DD-7CA7-FEDA-7EFEB7CD442D}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -1621,7 +1621,10 @@
 					<Plugin Id="1459522457" Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Fast_Release" GUID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" LibName="Wwise Peak Limiter" LibId="7208963"/>
 					<Plugin Id="1990128658" Name="Room_Medium" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Medium" GUID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="2180422931" Name="One_Tap_Quarter_Second" ObjectPath="\Effects\Factory Effects\Delay\One_Tap_Quarter_Second" GUID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" LibName="Wwise Delay" LibId="6946819"/>
+					<Plugin Id="2739178461" Name="GL_Explosion_Sidechain" ObjectPath="\Effects\User Effects\Weapons\Sidechain Meters\GL_Explosion_Sidechain" GUID="{E09D5956-E6A7-4688-939C-2D8D4B6CB57D}" LibName="Wwise Meter" LibId="8454147"/>
 					<Plugin Id="2945072214" Name="My_Closet" ObjectPath="\Effects\Factory Effects\RoomVerb\Claustrophobia\My_Closet" GUID="{384A82A1-3C92-4AC5-AFC2-474F2080642C}" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="3011716523" Name="GL_Sidechain_Meter" ObjectPath="\Effects\User Effects\Weapons\Sidechain Meters\GL_Sidechain_Meter" GUID="{D4D2183E-9EEB-4520-AE0E-4712F99301A3}" LibName="Wwise Meter" LibId="8454147"/>
+					<Plugin Id="3239115655" Name="AR_Sidechain_Meter" ObjectPath="\Effects\User Effects\Weapons\Sidechain Meters\AR_Sidechain_Meter" GUID="{557D5F32-1BEC-48F0-A2A5-D92470412338}" LibName="Wwise Meter" LibId="8454147"/>
 				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" ObjectPath="\Audio Devices\Default Work Unit\No_Output" GUID="{F61791D9-22A4-4E2F-9309-529F94FD0850}" LibName="No Output" LibId="11862023"/>
@@ -1635,9 +1638,21 @@
 				<Bus Id="432164595" Name="Auxiliaries" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries" GUID="{639A62DF-CA02-438D-9BA0-A89D32368F6D}"/>
 				<Bus Id="505457527" Name="AR_Ricochets" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Impacts\AR_Ricochets" GUID="{81ACA39A-04D0-4D44-A2A9-6D1524CDD79B}"/>
 				<Bus Id="836873062" Name="AMB_Rooms" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Ambience\AMB_Rooms" GUID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}"/>
+				<Bus Id="875370928" Name="AR_Shoot" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Shots\AR_Shoot" GUID="{3D3B38C5-3BC0-4447-86DE-206228E9859C}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3239115655"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="877642339" Name="Cinematics" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic\Cinematics" GUID="{D835C362-5C93-4B82-95CE-611B70A5112A}"/>
-				<Bus Id="928742199" Name="GL_Explosions" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Impacts\GL_Explosions" GUID="{2DC28776-7AC7-4483-9384-9D8ADED87C44}"/>
-				<Bus Id="1059924838" Name="AR_Shots" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Shots\AR_Shots" GUID="{3D3B38C5-3BC0-4447-86DE-206228E9859C}"/>
+				<Bus Id="928742199" Name="GL_Explosions" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Impacts\GL_Explosions" GUID="{2DC28776-7AC7-4483-9384-9D8ADED87C44}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2739178461"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="1088520938" Name="Interface" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic\Interface" GUID="{42B4D428-17C2-4C3C-AA6E-6AB8C22C5805}"/>
 				<Bus Id="1316532907" Name="Diegetic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic" GUID="{0B750C85-EB1C-448A-9D15-8D1F0D4C6BD6}"/>
 				<Bus Id="1467963052" Name="Weapons" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons" GUID="{1BC77837-C5B2-4563-B3F7-CF715B366F0C}"/>
@@ -1645,8 +1660,14 @@
 				<Bus Id="2420281969" Name="Non-Diegetic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic" GUID="{23395B5E-B13C-48B4-AFA0-9A3158AD2C61}"/>
 				<Bus Id="2940432316" Name="Stingers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic\Stingers" GUID="{14F313A7-2F5E-4100-BC04-AAE99EC1A71C}"/>
 				<Bus Id="3074349213" Name="Sanctuary" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Sanctuary" GUID="{5BA6AF2C-2325-4C30-8363-C8F3B4D195B0}"/>
+				<Bus Id="3079155500" Name="GL_Shoot" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Shots\GL_Shoot" GUID="{D9143790-A231-44C7-BDD1-B6585167F525}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3011716523"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="3240358146" Name="Highrise" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise" GUID="{596C5B51-663F-4CD9-9F06-6A282DAF1573}"/>
-				<Bus Id="3263709402" Name="GL_Shots" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Shots\GL_Shots" GUID="{D9143790-A231-44C7-BDD1-B6585167F525}"/>
 				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<PluginRefs>
 						<ShareSets>
@@ -1696,11 +1717,13 @@
 			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="77780854" Name="PAR_GL_AmmoCount" ObjectPath="\Game Parameters\Weapons\PAR_GL_AmmoCount" GUID="{009857E8-11A8-4C0B-8F4B-67B3B3ABD96D}"/>
+				<GameParameter Id="424293794" Name="PAR_AR_Shot_Sidechain" ObjectPath="\Game Parameters\Weapons\Mixing\PAR_AR_Shot_Sidechain" GUID="{26D6E922-A41C-49EB-B29E-E7BD825BEDE4}"/>
 				<GameParameter Id="492872062" Name="PAR_Heartbeats" ObjectPath="\Game Parameters\Foley\PAR_Heartbeats" GUID="{1A7627A7-5A7D-470D-B1E0-2B091B679836}"/>
 				<GameParameter Id="866022863" Name="PAR_Doppler" ObjectPath="\Game Parameters\Ambience\PAR_Doppler" GUID="{D40C9741-1633-4046-A65F-904ED87051FE}"/>
 				<GameParameter Id="1139858337" Name="PAR_Velocity_Vertical" ObjectPath="\Game Parameters\Foley\PAR_Velocity_Vertical" GUID="{847E4FAC-FEC0-42D9-8F95-EB060A41AE44}"/>
 				<GameParameter Id="1714946050" Name="PAR_Breaths" ObjectPath="\Game Parameters\Foley\PAR_Breaths" GUID="{AD59135C-7832-4545-A14C-AA5DD622DAAC}"/>
 				<GameParameter Id="1791116251" Name="PAR_Wind" ObjectPath="\Game Parameters\Ambience\PAR_Wind" GUID="{5AA64F25-2B48-4F0C-8EF5-838EB08AB4B3}"/>
+				<GameParameter Id="1997683070" Name="PAR_GL_Shot_Sidechain" ObjectPath="\Game Parameters\Weapons\Mixing\PAR_GL_Shot_Sidechain" GUID="{BA6CD66D-A540-47CA-BC6C-212B99F74386}"/>
 				<GameParameter Id="1999698287" Name="PAR_DopplerTest" ObjectPath="\Game Parameters\Default Work Unit\PAR_DopplerTest" GUID="{0D9B0517-BBD5-43F7-B856-30943D58C338}"/>
 				<GameParameter Id="2583655610" Name="PAR_AR_AmmoCount" ObjectPath="\Game Parameters\Weapons\PAR_AR_AmmoCount" GUID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}"/>
 				<GameParameter Id="2732031637" Name="PAR_GL_Impact_Distance" ObjectPath="\Game Parameters\Weapons\PAR_GL_Impact_Distance" GUID="{BA395E67-E6A3-4067-9942-34C856290AFF}"/>
@@ -1709,6 +1732,7 @@
 				<GameParameter Id="2940353649" Name="PAR_Distance_HoverCars_PS7" ObjectPath="\Game Parameters\Ambience\PAR_Distance_HoverCars_PS7" GUID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"/>
 				<GameParameter Id="2940353651" Name="PAR_Distance_HoverCars_PS5" ObjectPath="\Game Parameters\Ambience\PAR_Distance_HoverCars_PS5" GUID="{12811BF6-789D-4EFB-A3B6-2A817E909100}"/>
 				<GameParameter Id="3162343787" Name="PAR_Velocity_Horizontal" ObjectPath="\Game Parameters\Foley\PAR_Velocity_Horizontal" GUID="{4607A581-294C-433F-97F3-4F9FF9E1DE68}"/>
+				<GameParameter Id="3767380492" Name="PAR_GL_Impact_Sidechain" ObjectPath="\Game Parameters\Weapons\Mixing\PAR_GL_Impact_Sidechain" GUID="{BA05859C-93B0-481D-AD84-EC4556214253}"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="747849153" Name="STA_LocationMix" ObjectPath="\States\Default Work Unit\Highrise\STA_LocationMix" GUID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}">
@@ -1876,7 +1900,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{43C353D2-0C24-C7FB-0A12-B9A9FECD17B0}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{6E12213B-86A4-1AD5-76EF-E1CB88C82E38}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -4169,7 +4193,7 @@
 			</Media>
 			<Plugins>
 				<ShareSets>
-					<Plugin Id="529418190" Name="Tremolo_HoverCars_PS7" ObjectPath="\Effects\Ambience\HoverCars\Tremolo_HoverCars_PS7" GUID="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}" LibName="Wwise Tremolo" LibId="8585219"/>
+					<Plugin Id="529418190" Name="Tremolo_HoverCars_PS7" ObjectPath="\Effects\User Effects\Ambience\HoverCars\Tremolo_HoverCars_PS7" GUID="{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}" LibName="Wwise Tremolo" LibId="8585219"/>
 					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
 				</ShareSets>
 			</Plugins>
@@ -4224,7 +4248,7 @@
 			</Media>
 			<Plugins>
 				<ShareSets>
-					<Plugin Id="529418188" Name="Tremolo_HoverCars_PS5" ObjectPath="\Effects\Ambience\HoverCars\Tremolo_HoverCars_PS5" GUID="{C2D44633-8367-4F1B-ABE3-8028C4D3B172}" LibName="Wwise Tremolo" LibId="8585219"/>
+					<Plugin Id="529418188" Name="Tremolo_HoverCars_PS5" ObjectPath="\Effects\User Effects\Ambience\HoverCars\Tremolo_HoverCars_PS5" GUID="{C2D44633-8367-4F1B-ABE3-8028C4D3B172}" LibName="Wwise Tremolo" LibId="8585219"/>
 					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
 				</ShareSets>
 			</Plugins>
@@ -4371,7 +4395,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3838114450" Type="Event" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" Language="SFX" Hash="{6BEB0095-AB0F-E0BC-D374-F8EC6046C687}">
+		<SoundBank Id="3838114450" Type="Event" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" Language="SFX" Hash="{5FE22D97-2B3A-E5AA-7DE2-D99891F3AD30}">
 			<ObjectPath>AR_Shoot_Empty</ObjectPath>
 			<ShortName>AR_Shoot_Empty</ShortName>
 			<Path>Event/AR_Shoot_Empty.bnk</Path>
@@ -4441,5 +4465,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{08219D19-2F22-7857-B728-72D52DB659FE}</FileHash>
+	<FileHash>{99306733-3F71-DCFA-D438-4A690440E249}</FileHash>
 </SoundBanksInfo>

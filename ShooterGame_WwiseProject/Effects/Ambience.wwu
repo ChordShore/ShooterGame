@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{E6D1C65B-339C-41CE-B3A2-8158B5176884}" SchemaVersion="110">
+<WwiseDocument Type="WorkUnit" ID="{E6D1C65B-339C-41CE-B3A2-8158B5176884}" SchemaVersion="110" RootDocumentID="{2ECF7F23-FD0B-4286-8E8D-FEF9004B90B9}" ParentDocumentID="{2ECF7F23-FD0B-4286-8E8D-FEF9004B90B9}">
 	<Effects>
-		<WorkUnit Name="Ambience" ID="{E6D1C65B-339C-41CE-B3A2-8158B5176884}" PersistMode="Standalone">
+		<WorkUnit Name="Ambience" ID="{E6D1C65B-339C-41CE-B3A2-8158B5176884}" OwnerID="{2ECF7F23-FD0B-4286-8E8D-FEF9004B90B9}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<Folder Name="HoverCars" ID="{6132C009-2247-458A-BEB8-B1EDB1762B2E}" ShortID="511086103">
 					<ChildrenList>

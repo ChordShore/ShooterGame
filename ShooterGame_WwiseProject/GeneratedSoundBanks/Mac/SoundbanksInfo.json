@@ -2505,7 +2505,7 @@
     "Type": "Event",
     "GUID": "{BD84793E-1D49-48EB-ACC4-F1DA575556CD}",
     "Language": "SFX",
-    "Hash": "{B6D6BD5F-914C-50E9-7F7A-3629B4B6AA60}",
+    "Hash": "{EA24336A-72A3-E59B-54BC-DDE35E39D57F}",
     "ObjectPath": "AR_Shoot_Stop",
     "ShortName": "AR_Shoot_Stop",
     "Path": "Event/AR_Shoot_Stop.bnk",
@@ -3587,7 +3587,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{A4FFDE2C-B5A2-FBBA-B775-4796B5F72773}",
+    "Hash": "{2AC9029A-30BB-5DEE-B1CE-F84021D40A74}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -3636,12 +3636,36 @@
        "LibId": "6946819"
       },
       {
+       "Id": "2739178461",
+       "Name": "GL_Explosion_Sidechain",
+       "ObjectPath": "\\Effects\\User Effects\\Weapons\\Sidechain Meters\\GL_Explosion_Sidechain",
+       "GUID": "{E09D5956-E6A7-4688-939C-2D8D4B6CB57D}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      },
+      {
        "Id": "2945072214",
        "Name": "My_Closet",
        "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Claustrophobia\\My_Closet",
        "GUID": "{384A82A1-3C92-4AC5-AFC2-474F2080642C}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
+      },
+      {
+       "Id": "3011716523",
+       "Name": "GL_Sidechain_Meter",
+       "ObjectPath": "\\Effects\\User Effects\\Weapons\\Sidechain Meters\\GL_Sidechain_Meter",
+       "GUID": "{D4D2183E-9EEB-4520-AE0E-4712F99301A3}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      },
+      {
+       "Id": "3239115655",
+       "Name": "AR_Sidechain_Meter",
+       "ObjectPath": "\\Effects\\User Effects\\Weapons\\Sidechain Meters\\AR_Sidechain_Meter",
+       "GUID": "{557D5F32-1BEC-48F0-A2A5-D92470412338}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
       }
      ],
      "AudioDevices": [
@@ -3701,6 +3725,19 @@
       "GUID": "{07982599-3460-4AB7-8018-8A8B6A4BEF5E}"
      },
      {
+      "Id": "875370928",
+      "Name": "AR_Shoot",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Weapons\\Shots\\AR_Shoot",
+      "GUID": "{3D3B38C5-3BC0-4447-86DE-206228E9859C}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3239115655"
+        }
+       ]
+      }
+     },
+     {
       "Id": "877642339",
       "Name": "Cinematics",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Non-Diegetic\\Cinematics",
@@ -3710,13 +3747,14 @@
       "Id": "928742199",
       "Name": "GL_Explosions",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Weapons\\Impacts\\GL_Explosions",
-      "GUID": "{2DC28776-7AC7-4483-9384-9D8ADED87C44}"
-     },
-     {
-      "Id": "1059924838",
-      "Name": "AR_Shots",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Weapons\\Shots\\AR_Shots",
-      "GUID": "{3D3B38C5-3BC0-4447-86DE-206228E9859C}"
+      "GUID": "{2DC28776-7AC7-4483-9384-9D8ADED87C44}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2739178461"
+        }
+       ]
+      }
      },
      {
       "Id": "1088520938",
@@ -3761,16 +3799,23 @@
       "GUID": "{5BA6AF2C-2325-4C30-8363-C8F3B4D195B0}"
      },
      {
+      "Id": "3079155500",
+      "Name": "GL_Shoot",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Weapons\\Shots\\GL_Shoot",
+      "GUID": "{D9143790-A231-44C7-BDD1-B6585167F525}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3011716523"
+        }
+       ]
+      }
+     },
+     {
       "Id": "3240358146",
       "Name": "Highrise",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise",
       "GUID": "{596C5B51-663F-4CD9-9F06-6A282DAF1573}"
-     },
-     {
-      "Id": "3263709402",
-      "Name": "GL_Shots",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Weapons\\Shots\\GL_Shots",
-      "GUID": "{D9143790-A231-44C7-BDD1-B6585167F525}"
      },
      {
       "Id": "3803692087",
@@ -3873,6 +3918,12 @@
       "GUID": "{009857E8-11A8-4C0B-8F4B-67B3B3ABD96D}"
      },
      {
+      "Id": "424293794",
+      "Name": "PAR_AR_Shot_Sidechain",
+      "ObjectPath": "\\Game Parameters\\Weapons\\Mixing\\PAR_AR_Shot_Sidechain",
+      "GUID": "{26D6E922-A41C-49EB-B29E-E7BD825BEDE4}"
+     },
+     {
       "Id": "492872062",
       "Name": "PAR_Heartbeats",
       "ObjectPath": "\\Game Parameters\\Foley\\PAR_Heartbeats",
@@ -3901,6 +3952,12 @@
       "Name": "PAR_Wind",
       "ObjectPath": "\\Game Parameters\\Ambience\\PAR_Wind",
       "GUID": "{5AA64F25-2B48-4F0C-8EF5-838EB08AB4B3}"
+     },
+     {
+      "Id": "1997683070",
+      "Name": "PAR_GL_Shot_Sidechain",
+      "ObjectPath": "\\Game Parameters\\Weapons\\Mixing\\PAR_GL_Shot_Sidechain",
+      "GUID": "{BA6CD66D-A540-47CA-BC6C-212B99F74386}"
      },
      {
       "Id": "1999698287",
@@ -3949,6 +4006,12 @@
       "Name": "PAR_Velocity_Horizontal",
       "ObjectPath": "\\Game Parameters\\Foley\\PAR_Velocity_Horizontal",
       "GUID": "{4607A581-294C-433F-97F3-4F9FF9E1DE68}"
+     },
+     {
+      "Id": "3767380492",
+      "Name": "PAR_GL_Impact_Sidechain",
+      "ObjectPath": "\\Game Parameters\\Weapons\\Mixing\\PAR_GL_Impact_Sidechain",
+      "GUID": "{BA05859C-93B0-481D-AD84-EC4556214253}"
      }
     ],
     "StateGroups": [
@@ -4541,7 +4604,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{43C353D2-0C24-C7FB-0A12-B9A9FECD17B0}",
+    "Hash": "{6E12213B-86A4-1AD5-76EF-E1CB88C82E38}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -9911,7 +9974,7 @@
       {
        "Id": "529418190",
        "Name": "Tremolo_HoverCars_PS7",
-       "ObjectPath": "\\Effects\\Ambience\\HoverCars\\Tremolo_HoverCars_PS7",
+       "ObjectPath": "\\Effects\\User Effects\\Ambience\\HoverCars\\Tremolo_HoverCars_PS7",
        "GUID": "{ABE01F91-C3D4-46CA-B747-5F50FA2E1C85}",
        "LibName": "Wwise Tremolo",
        "LibId": "8585219"
@@ -10032,7 +10095,7 @@
       {
        "Id": "529418188",
        "Name": "Tremolo_HoverCars_PS5",
-       "ObjectPath": "\\Effects\\Ambience\\HoverCars\\Tremolo_HoverCars_PS5",
+       "ObjectPath": "\\Effects\\User Effects\\Ambience\\HoverCars\\Tremolo_HoverCars_PS5",
        "GUID": "{C2D44633-8367-4F1B-ABE3-8028C4D3B172}",
        "LibName": "Wwise Tremolo",
        "LibId": "8585219"
@@ -10371,7 +10434,7 @@
     "Type": "Event",
     "GUID": "{1635F222-A233-45E5-B0C4-8A8C46A88E68}",
     "Language": "SFX",
-    "Hash": "{6BEB0095-AB0F-E0BC-D374-F8EC6046C687}",
+    "Hash": "{5FE22D97-2B3A-E5AA-7DE2-D99891F3AD30}",
     "ObjectPath": "AR_Shoot_Empty",
     "ShortName": "AR_Shoot_Empty",
     "Path": "Event/AR_Shoot_Empty.bnk",
@@ -10504,6 +10567,6 @@
     ]
    }
   ],
-  "FileHash": "{9E40B0A7-E3E8-3029-D92D-3F48DE1CA67D}"
+  "FileHash": "{B725C20F-5FCF-8601-E796-50F8186376B8}"
  }
 }
