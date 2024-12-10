@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{6BC1F28F-C9FF-E1FE-36A4-A5DCCF61B183}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{43C353D2-0C24-C7FB-0A12-B9A9FECD17B0}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -587,7 +587,8 @@
 					<Plugin Id="934461864" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_01\Silence" GUID="{4C8C34B6-5626-4F64-913D-CDCACC242C16}" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
 				<ShareSets>
-					<Plugin Id="2080872166" Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Fast_Release" GUID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+					<Plugin Id="2781261543" Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Slow_Release" GUID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" LibName="Wwise Peak Limiter" LibId="7208963"/>
 				</ShareSets>
 			</Plugins>
 			<Events>
@@ -908,7 +909,7 @@
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
-									<PluginRef Id="2080872166"/>
+									<PluginRef Id="2781261543"/>
 								</ShareSets>
 							</PluginRefs>
 						</SwitchContainer>
@@ -934,7 +935,7 @@
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
-									<PluginRef Id="2080872166"/>
+									<PluginRef Id="2781261543"/>
 								</ShareSets>
 							</PluginRefs>
 						</SwitchContainer>
@@ -960,7 +961,7 @@
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
-									<PluginRef Id="2080872166"/>
+									<PluginRef Id="2781261543"/>
 								</ShareSets>
 							</PluginRefs>
 						</SwitchContainer>
@@ -986,7 +987,7 @@
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
-									<PluginRef Id="2080872166"/>
+									<PluginRef Id="2781261543"/>
 								</ShareSets>
 							</PluginRefs>
 						</SwitchContainer>
@@ -1012,7 +1013,7 @@
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
-									<PluginRef Id="2080872166"/>
+									<PluginRef Id="2781261543"/>
 								</ShareSets>
 							</PluginRefs>
 						</SwitchContainer>
@@ -1063,6 +1064,11 @@
 								<MediaRef Id="939444335"/>
 								<MediaRef Id="1029793749"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2258521792"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="877225536" GUID="{E9597652-781B-4852-95B1-CADA7D874365}" Default="true"/>
@@ -1085,6 +1091,11 @@
 								<MediaRef Id="1029793749"/>
 								<MediaRef Id="1032557313"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2258521792"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="748895195" GUID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
@@ -1107,6 +1118,11 @@
 								<MediaRef Id="1029793749"/>
 								<MediaRef Id="1032557313"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2258521792"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="1657765358" GUID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
@@ -1131,6 +1147,11 @@
 								<MediaRef Id="912217750"/>
 								<MediaRef Id="1029793749"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2258521792"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="949156522" GUID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
@@ -1153,6 +1174,11 @@
 								<MediaRef Id="1029793749"/>
 								<MediaRef Id="1032557313"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2258521792"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -1295,5 +1321,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8214D1BB-E3C4-E5DA-DAE7-760F2044D0A1}</FileHash>
+	<FileHash>{2144985B-B2C7-3025-CCAF-8A09B95984FC}</FileHash>
 </SoundBanksInfo>

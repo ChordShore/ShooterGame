@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="677842196" Type="Event" GUID="{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}" Language="SFX" Hash="{D06E2319-36B9-33A4-F3B4-967514A9F4BB}">
+		<SoundBank Id="677842196" Type="Event" GUID="{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}" Language="SFX" Hash="{D0E59361-2634-CD20-94C2-475BA0C8E91E}">
 			<ObjectPath>FOL_Armor</ObjectPath>
 			<ShortName>FOL_Armor</ShortName>
 			<Path>Event/FOL_Armor.bnk</Path>
@@ -57,6 +57,11 @@
 					<CachePath>SFX/FOL_Armor_Rattle_Stem_EB98B55F.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2080872166" Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Fast_Release" GUID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="677842196" Name="FOL_Armor" ObjectPath="\Events\Foley\Players\FOL_Armor" GUID="{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}" DurationType="OneShot" DurationMin="0.6078924" DurationMax="0.7130319">
 					<MediaRefs>
@@ -71,6 +76,11 @@
 						<MediaRef Id="1035538733"/>
 						<MediaRef Id="1067502798"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2080872166"/>
+						</ShareSets>
+					</PluginRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
@@ -78,5 +88,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{22F50B94-1C2D-DCCF-1B61-425DDA6842D9}</FileHash>
+	<FileHash>{440CBD8A-8D19-D2B0-DD54-FC445634B636}</FileHash>
 </SoundBanksInfo>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{44B44B56-7B42-9D40-6809-97FE9A01EFD0}">
+		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{2564F359-B3FE-689A-7544-102F6A6F57B6}">
 			<ObjectPath>FOL_Footstep_L</ObjectPath>
 			<ShortName>FOL_Footstep_L</ShortName>
 			<Path>Event/FOL_Footstep_L.bnk</Path>
@@ -427,6 +427,11 @@
 					<CachePath>SFX/FOL_Footsteps_Tile_Toe_Stem_941085EC.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2080872166" Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Fast_Release" GUID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="2395369600" Name="FOL_Footstep_L" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_L" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" DurationType="OneShot" DurationMin="0.3707094" DurationMax="0.60835236">
 					<AuxBusRefs>
@@ -479,6 +484,11 @@
 								<MediaRef Id="966435357"/>
 								<MediaRef Id="990966566"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="2238306104" GUID="{7793252A-8C3B-42B3-A5BE-5BD85E592AF5}"/>
@@ -502,6 +512,11 @@
 								<MediaRef Id="1035261983"/>
 								<MediaRef Id="1058194484"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="132749061" GUID="{B4FDF75B-8B11-4F10-9CA5-B65DC3769474}" Default="true"/>
@@ -525,6 +540,11 @@
 								<MediaRef Id="1035261983"/>
 								<MediaRef Id="1058194484"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="4226644939" GUID="{467993A2-3942-43B0-9602-E4FADF206889}"/>
@@ -554,6 +574,11 @@
 								<MediaRef Id="961126353"/>
 								<MediaRef Id="983346073"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="4025267629" GUID="{63A5F2DE-9D45-455C-A02A-A165A88A6A74}"/>
@@ -601,6 +626,11 @@
 								<MediaRef Id="966435357"/>
 								<MediaRef Id="990966566"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="217513402" GUID="{73EE52DF-CCB9-4B60-A98D-A85FE8F582CA}"/>
@@ -628,6 +658,11 @@
 								<MediaRef Id="941562592"/>
 								<MediaRef Id="990966566"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -653,5 +688,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D6F29E7F-0A82-4774-32EC-85261310016C}</FileHash>
+	<FileHash>{DD21562F-44AA-BB97-2F14-1C09723F2E93}</FileHash>
 </SoundBanksInfo>

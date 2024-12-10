@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{E4E1B551-3907-4673-8D70-D72000D8EB19}",
     "Language": "SFX",
-    "Hash": "{72F9AD04-0045-7E70-6728-EEE35D0570EC}",
+    "Hash": "{2880C763-A55E-BB29-0CD4-6520F86CA5E3}",
     "ObjectPath": "\\SoundBanks\\Foley\\Foley",
     "ShortName": "Foley",
     "Path": "Foley.bnk",
@@ -936,6 +936,18 @@
       "CachePath": "SFX/FOL_Footsteps_Tile_Toe_Stem_941085EC.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2080872166",
+       "Name": "Brick_Wall_Minus_6dB_Peak_Fast_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Fast_Release",
+       "GUID": "{3FF9AD86-E377-40F8-970F-3D4EE73288B5}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "1891391704",
@@ -1098,7 +1110,14 @@
          {
           "Id": "990966566"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1162,7 +1181,14 @@
          {
           "Id": "1058194484"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1227,7 +1253,14 @@
          {
           "Id": "1058194484"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1309,7 +1342,14 @@
          {
           "Id": "983346073"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1445,7 +1485,14 @@
          {
           "Id": "990966566"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1521,7 +1568,14 @@
          {
           "Id": "990966566"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        }
       ]
      },
@@ -1547,6 +1601,13 @@
         "Id": "889588474"
        }
       ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2080872166"
+        }
+       ]
+      },
       "AuxBusRefs": [
        {
         "Id": "3348775760",
@@ -1634,7 +1695,14 @@
          {
           "Id": "1042565849"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1659,7 +1727,14 @@
          {
           "Id": "890360612"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1685,7 +1760,14 @@
          {
           "Id": "890360612"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1710,7 +1792,14 @@
          {
           "Id": "1015318436"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1750,7 +1839,14 @@
          {
           "Id": "1042565849"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1775,7 +1871,14 @@
          {
           "Id": "1042565849"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        }
       ]
      },
@@ -1870,6 +1973,6 @@
     ]
    }
   ],
-  "FileHash": "{28689CBE-D3D3-3D76-1879-30EAED99E7C9}"
+  "FileHash": "{BE9EB8A3-AAAF-A9C3-2627-A6C776EBB19C}"
  }
 }

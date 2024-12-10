@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="849782850" Type="Event" GUID="{D351862C-9224-46EA-B214-195532B40959}" Language="SFX" Hash="{34DDB357-D100-826C-7A05-8E4BFB233DD3}">
+		<SoundBank Id="849782850" Type="Event" GUID="{D351862C-9224-46EA-B214-195532B40959}" Language="SFX" Hash="{B7D33CD4-BF41-AF22-65E6-3B173CC7B782}">
 			<ObjectPath>FOL_FallWhoosh</ObjectPath>
 			<ShortName>FOL_FallWhoosh</ShortName>
 			<Path>Event/FOL_FallWhoosh.bnk</Path>
@@ -12,14 +12,24 @@
 					<CachePath>SFX/FOL_FallWhoosh_LP_E91F277A.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2080872166" Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Fast_Release" GUID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="849782850" Name="FOL_FallWhoosh" ObjectPath="\Events\Foley\Players\FOL_FallWhoosh" GUID="{D351862C-9224-46EA-B214-195532B40959}" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="616719576"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2080872166"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2717A679-969F-DE74-9490-B84F2AAB9929}</FileHash>
+	<FileHash>{7B131F8B-61E5-F5C8-8583-D0D5F8932BAE}</FileHash>
 </SoundBanksInfo>

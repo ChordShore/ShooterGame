@@ -248,7 +248,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{72F9AD04-0045-7E70-6728-EEE35D0570EC}">
+		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{2880C763-A55E-BB29-0CD4-6520F86CA5E3}">
 			<ObjectPath>\SoundBanks\Foley\Foley</ObjectPath>
 			<ShortName>Foley</ShortName>
 			<Path>Foley.bnk</Path>
@@ -714,6 +714,11 @@
 					<CachePath>SFX/FOL_Footsteps_Tile_Toe_Stem_941085EC.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2080872166" Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Fast_Release" GUID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="1891391704" Name="FOL_Bodyfall" ObjectPath="\Events\Foley\Players\FOL_Bodyfall" GUID="{8C389BC0-A8E4-4172-B60A-4329D5567561}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2395369630" Name="FOL_Footstep_R" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_R" GUID="{C7AF60A9-905E-4C25-94DB-228933B96D51}" DurationType="OneShot" DurationMin="0.3707094" DurationMax="0.60835236">
@@ -767,6 +772,11 @@
 								<MediaRef Id="966435357"/>
 								<MediaRef Id="990966566"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="2238306104" GUID="{7793252A-8C3B-42B3-A5BE-5BD85E592AF5}"/>
@@ -790,6 +800,11 @@
 								<MediaRef Id="1035261983"/>
 								<MediaRef Id="1058194484"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="132749061" GUID="{B4FDF75B-8B11-4F10-9CA5-B65DC3769474}" Default="true"/>
@@ -813,6 +828,11 @@
 								<MediaRef Id="1035261983"/>
 								<MediaRef Id="1058194484"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="4226644939" GUID="{467993A2-3942-43B0-9602-E4FADF206889}"/>
@@ -842,6 +862,11 @@
 								<MediaRef Id="961126353"/>
 								<MediaRef Id="983346073"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="4025267629" GUID="{63A5F2DE-9D45-455C-A02A-A165A88A6A74}"/>
@@ -889,6 +914,11 @@
 								<MediaRef Id="966435357"/>
 								<MediaRef Id="990966566"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="217513402" GUID="{73EE52DF-CCB9-4B60-A98D-A85FE8F582CA}"/>
@@ -916,6 +946,11 @@
 								<MediaRef Id="941562592"/>
 								<MediaRef Id="990966566"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -926,6 +961,11 @@
 						<MediaRef Id="868186493"/>
 						<MediaRef Id="889588474"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2080872166"/>
+						</ShareSets>
+					</PluginRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
@@ -958,6 +998,11 @@
 								<MediaRef Id="905491949"/>
 								<MediaRef Id="1042565849"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="2238306104" GUID="{7793252A-8C3B-42B3-A5BE-5BD85E592AF5}"/>
@@ -968,6 +1013,11 @@
 								<MediaRef Id="877535658"/>
 								<MediaRef Id="890360612"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="132749061" GUID="{B4FDF75B-8B11-4F10-9CA5-B65DC3769474}" Default="true"/>
@@ -978,6 +1028,11 @@
 								<MediaRef Id="877535658"/>
 								<MediaRef Id="890360612"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="4226644939" GUID="{467993A2-3942-43B0-9602-E4FADF206889}"/>
@@ -988,6 +1043,11 @@
 								<MediaRef Id="880776369"/>
 								<MediaRef Id="1015318436"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="4025267629" GUID="{63A5F2DE-9D45-455C-A02A-A165A88A6A74}"/>
@@ -1003,6 +1063,11 @@
 								<MediaRef Id="905491949"/>
 								<MediaRef Id="1042565849"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="217513402" GUID="{73EE52DF-CCB9-4B60-A98D-A85FE8F582CA}"/>
@@ -1013,6 +1078,11 @@
 								<MediaRef Id="905491949"/>
 								<MediaRef Id="1042565849"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -1038,7 +1108,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{48EF77E6-E099-D132-D53E-9573786E7243}">
+		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{B6D6BD5F-914C-50E9-7F7A-3629B4B6AA60}">
 			<ObjectPath>AR_Shoot_Stop</ObjectPath>
 			<ShortName>AR_Shoot_Stop</ShortName>
 			<Path>Event/AR_Shoot_Stop.bnk</Path>
@@ -1106,7 +1176,7 @@
 			</Media>
 			<Plugins>
 				<ShareSets>
-					<Plugin Id="2080872166" Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Fast_Release" GUID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+					<Plugin Id="2781261543" Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Slow_Release" GUID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" LibName="Wwise Peak Limiter" LibId="7208963"/>
 				</ShareSets>
 			</Plugins>
 			<Events>
@@ -1127,7 +1197,7 @@
 					</MediaRefs>
 					<PluginRefs>
 						<ShareSets>
-							<PluginRef Id="2080872166"/>
+							<PluginRef Id="2781261543"/>
 						</ShareSets>
 					</PluginRefs>
 					<AuxBusRefs>
@@ -1168,7 +1238,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="677842196" Type="Event" GUID="{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}" Language="SFX" Hash="{D06E2319-36B9-33A4-F3B4-967514A9F4BB}">
+		<SoundBank Id="677842196" Type="Event" GUID="{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}" Language="SFX" Hash="{D0E59361-2634-CD20-94C2-475BA0C8E91E}">
 			<ObjectPath>FOL_Armor</ObjectPath>
 			<ShortName>FOL_Armor</ShortName>
 			<Path>Event/FOL_Armor.bnk</Path>
@@ -1224,6 +1294,11 @@
 					<CachePath>SFX/FOL_Armor_Rattle_Stem_EB98B55F.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2080872166" Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Fast_Release" GUID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="677842196" Name="FOL_Armor" ObjectPath="\Events\Foley\Players\FOL_Armor" GUID="{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}" DurationType="OneShot" DurationMin="0.6078924" DurationMax="0.7130319">
 					<MediaRefs>
@@ -1238,13 +1313,18 @@
 						<MediaRef Id="1035538733"/>
 						<MediaRef Id="1067502798"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2080872166"/>
+						</ShareSets>
+					</PluginRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="849782850" Type="Event" GUID="{D351862C-9224-46EA-B214-195532B40959}" Language="SFX" Hash="{34DDB357-D100-826C-7A05-8E4BFB233DD3}">
+		<SoundBank Id="849782850" Type="Event" GUID="{D351862C-9224-46EA-B214-195532B40959}" Language="SFX" Hash="{B7D33CD4-BF41-AF22-65E6-3B173CC7B782}">
 			<ObjectPath>FOL_FallWhoosh</ObjectPath>
 			<ShortName>FOL_FallWhoosh</ShortName>
 			<Path>Event/FOL_FallWhoosh.bnk</Path>
@@ -1255,11 +1335,21 @@
 					<CachePath>SFX/FOL_FallWhoosh_LP_E91F277A.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2080872166" Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Fast_Release" GUID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="849782850" Name="FOL_FallWhoosh" ObjectPath="\Events\Foley\Players\FOL_FallWhoosh" GUID="{D351862C-9224-46EA-B214-195532B40959}" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="616719576"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2080872166"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 			</Events>
 		</SoundBank>
@@ -1518,7 +1608,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{D92C2018-4D44-4583-2162-93D9D3ADB21B}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{A4FFDE2C-B5A2-FBBA-B775-4796B5F72773}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -1528,6 +1618,7 @@
 				</Custom>
 				<ShareSets>
 					<Plugin Id="602546716" Name="Room_Large" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Large" GUID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="1459522457" Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Fast_Release" GUID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" LibName="Wwise Peak Limiter" LibId="7208963"/>
 					<Plugin Id="1990128658" Name="Room_Medium" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Medium" GUID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="2180422931" Name="One_Tap_Quarter_Second" ObjectPath="\Effects\Factory Effects\Delay\One_Tap_Quarter_Second" GUID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" LibName="Wwise Delay" LibId="6946819"/>
 					<Plugin Id="2945072214" Name="My_Closet" ObjectPath="\Effects\Factory Effects\RoomVerb\Claustrophobia\My_Closet" GUID="{384A82A1-3C92-4AC5-AFC2-474F2080642C}" LibName="Wwise RoomVerb" LibId="7733251"/>
@@ -1542,8 +1633,11 @@
 				<Bus Id="247557814" Name="Foley" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Foley" GUID="{AFADED97-9376-47EE-8E61-63C3E2539C84}"/>
 				<Bus Id="316118591" Name="AMB_Emitters" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Ambience\AMB_Emitters" GUID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}"/>
 				<Bus Id="432164595" Name="Auxiliaries" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries" GUID="{639A62DF-CA02-438D-9BA0-A89D32368F6D}"/>
+				<Bus Id="505457527" Name="AR_Ricochets" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Impacts\AR_Ricochets" GUID="{81ACA39A-04D0-4D44-A2A9-6D1524CDD79B}"/>
 				<Bus Id="836873062" Name="AMB_Rooms" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Ambience\AMB_Rooms" GUID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}"/>
 				<Bus Id="877642339" Name="Cinematics" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic\Cinematics" GUID="{D835C362-5C93-4B82-95CE-611B70A5112A}"/>
+				<Bus Id="928742199" Name="GL_Explosions" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Impacts\GL_Explosions" GUID="{2DC28776-7AC7-4483-9384-9D8ADED87C44}"/>
+				<Bus Id="1059924838" Name="AR_Shots" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Shots\AR_Shots" GUID="{3D3B38C5-3BC0-4447-86DE-206228E9859C}"/>
 				<Bus Id="1088520938" Name="Interface" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic\Interface" GUID="{42B4D428-17C2-4C3C-AA6E-6AB8C22C5805}"/>
 				<Bus Id="1316532907" Name="Diegetic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic" GUID="{0B750C85-EB1C-448A-9D15-8D1F0D4C6BD6}"/>
 				<Bus Id="1467963052" Name="Weapons" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons" GUID="{1BC77837-C5B2-4563-B3F7-CF715B366F0C}"/>
@@ -1552,7 +1646,14 @@
 				<Bus Id="2940432316" Name="Stingers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic\Stingers" GUID="{14F313A7-2F5E-4100-BC04-AAE99EC1A71C}"/>
 				<Bus Id="3074349213" Name="Sanctuary" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Sanctuary" GUID="{5BA6AF2C-2325-4C30-8363-C8F3B4D195B0}"/>
 				<Bus Id="3240358146" Name="Highrise" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise" GUID="{596C5B51-663F-4CD9-9F06-6A282DAF1573}"/>
-				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+				<Bus Id="3263709402" Name="GL_Shots" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Shots\GL_Shots" GUID="{D9143790-A231-44C7-BDD1-B6585167F525}"/>
+				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1459522457"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="3930136735" Name="Dialogue" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Dialogue" GUID="{80C87677-6DFA-46DD-8E4C-337CF0B1357D}"/>
 				<Bus Id="3991942870" Name="Music" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic\Music" GUID="{94CBEB29-D115-40FC-911D-11DA90BC78FA}"/>
 			</Busses>
@@ -1775,7 +1876,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{6BC1F28F-C9FF-E1FE-36A4-A5DCCF61B183}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{43C353D2-0C24-C7FB-0A12-B9A9FECD17B0}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -2361,7 +2462,8 @@
 					<Plugin Id="934461864" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_01\Silence" GUID="{4C8C34B6-5626-4F64-913D-CDCACC242C16}" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
 				<ShareSets>
-					<Plugin Id="2080872166" Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Fast_Release" GUID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+					<Plugin Id="2781261543" Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Slow_Release" GUID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" LibName="Wwise Peak Limiter" LibId="7208963"/>
 				</ShareSets>
 			</Plugins>
 			<Events>
@@ -2682,7 +2784,7 @@
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
-									<PluginRef Id="2080872166"/>
+									<PluginRef Id="2781261543"/>
 								</ShareSets>
 							</PluginRefs>
 						</SwitchContainer>
@@ -2708,7 +2810,7 @@
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
-									<PluginRef Id="2080872166"/>
+									<PluginRef Id="2781261543"/>
 								</ShareSets>
 							</PluginRefs>
 						</SwitchContainer>
@@ -2734,7 +2836,7 @@
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
-									<PluginRef Id="2080872166"/>
+									<PluginRef Id="2781261543"/>
 								</ShareSets>
 							</PluginRefs>
 						</SwitchContainer>
@@ -2760,7 +2862,7 @@
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
-									<PluginRef Id="2080872166"/>
+									<PluginRef Id="2781261543"/>
 								</ShareSets>
 							</PluginRefs>
 						</SwitchContainer>
@@ -2786,7 +2888,7 @@
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
-									<PluginRef Id="2080872166"/>
+									<PluginRef Id="2781261543"/>
 								</ShareSets>
 							</PluginRefs>
 						</SwitchContainer>
@@ -2837,6 +2939,11 @@
 								<MediaRef Id="939444335"/>
 								<MediaRef Id="1029793749"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2258521792"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="877225536" GUID="{E9597652-781B-4852-95B1-CADA7D874365}" Default="true"/>
@@ -2859,6 +2966,11 @@
 								<MediaRef Id="1029793749"/>
 								<MediaRef Id="1032557313"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2258521792"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="748895195" GUID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
@@ -2881,6 +2993,11 @@
 								<MediaRef Id="1029793749"/>
 								<MediaRef Id="1032557313"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2258521792"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="1657765358" GUID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
@@ -2905,6 +3022,11 @@
 								<MediaRef Id="912217750"/>
 								<MediaRef Id="1029793749"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2258521792"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="949156522" GUID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
@@ -2927,6 +3049,11 @@
 								<MediaRef Id="1029793749"/>
 								<MediaRef Id="1032557313"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2258521792"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -3320,7 +3447,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{44B44B56-7B42-9D40-6809-97FE9A01EFD0}">
+		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{2564F359-B3FE-689A-7544-102F6A6F57B6}">
 			<ObjectPath>FOL_Footstep_L</ObjectPath>
 			<ShortName>FOL_Footstep_L</ShortName>
 			<Path>Event/FOL_Footstep_L.bnk</Path>
@@ -3746,6 +3873,11 @@
 					<CachePath>SFX/FOL_Footsteps_Tile_Toe_Stem_941085EC.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2080872166" Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Fast_Release" GUID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="2395369600" Name="FOL_Footstep_L" ObjectPath="\Events\Foley\Players\FOL_Footsteps\FOL_Footstep_L" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" DurationType="OneShot" DurationMin="0.3707094" DurationMax="0.60835236">
 					<AuxBusRefs>
@@ -3798,6 +3930,11 @@
 								<MediaRef Id="966435357"/>
 								<MediaRef Id="990966566"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="2238306104" GUID="{7793252A-8C3B-42B3-A5BE-5BD85E592AF5}"/>
@@ -3821,6 +3958,11 @@
 								<MediaRef Id="1035261983"/>
 								<MediaRef Id="1058194484"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="132749061" GUID="{B4FDF75B-8B11-4F10-9CA5-B65DC3769474}" Default="true"/>
@@ -3844,6 +3986,11 @@
 								<MediaRef Id="1035261983"/>
 								<MediaRef Id="1058194484"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="4226644939" GUID="{467993A2-3942-43B0-9602-E4FADF206889}"/>
@@ -3873,6 +4020,11 @@
 								<MediaRef Id="961126353"/>
 								<MediaRef Id="983346073"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="4025267629" GUID="{63A5F2DE-9D45-455C-A02A-A165A88A6A74}"/>
@@ -3920,6 +4072,11 @@
 								<MediaRef Id="966435357"/>
 								<MediaRef Id="990966566"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="217513402" GUID="{73EE52DF-CCB9-4B60-A98D-A85FE8F582CA}"/>
@@ -3947,6 +4104,11 @@
 								<MediaRef Id="941562592"/>
 								<MediaRef Id="990966566"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2080872166"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -4209,7 +4371,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3838114450" Type="Event" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" Language="SFX" Hash="{CF41DA7B-CBB7-1747-C843-DA1ABA72848E}">
+		<SoundBank Id="3838114450" Type="Event" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" Language="SFX" Hash="{6BEB0095-AB0F-E0BC-D374-F8EC6046C687}">
 			<ObjectPath>AR_Shoot_Empty</ObjectPath>
 			<ShortName>AR_Shoot_Empty</ShortName>
 			<Path>Event/AR_Shoot_Empty.bnk</Path>
@@ -4222,7 +4384,7 @@
 			</Media>
 			<Plugins>
 				<ShareSets>
-					<Plugin Id="2080872166" Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Fast_Release" GUID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+					<Plugin Id="2781261543" Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Slow_Release" GUID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" LibName="Wwise Peak Limiter" LibId="7208963"/>
 				</ShareSets>
 			</Plugins>
 			<Events>
@@ -4232,7 +4394,7 @@
 					</MediaRefs>
 					<PluginRefs>
 						<ShareSets>
-							<PluginRef Id="2080872166"/>
+							<PluginRef Id="2781261543"/>
 						</ShareSets>
 					</PluginRefs>
 					<AuxBusRefs>
@@ -4279,5 +4441,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B7E4C709-C6B5-726B-53D4-821CF9161D28}</FileHash>
+	<FileHash>{26FD5A6E-7CBB-63B4-834A-2F935EC1757E}</FileHash>
 </SoundBanksInfo>

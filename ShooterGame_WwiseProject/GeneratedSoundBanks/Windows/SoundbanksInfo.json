@@ -538,7 +538,7 @@
     "Type": "User",
     "GUID": "{E4E1B551-3907-4673-8D70-D72000D8EB19}",
     "Language": "SFX",
-    "Hash": "{72F9AD04-0045-7E70-6728-EEE35D0570EC}",
+    "Hash": "{2880C763-A55E-BB29-0CD4-6520F86CA5E3}",
     "ObjectPath": "\\SoundBanks\\Foley\\Foley",
     "ShortName": "Foley",
     "Path": "Foley.bnk",
@@ -1464,6 +1464,18 @@
       "CachePath": "SFX/FOL_Footsteps_Tile_Toe_Stem_941085EC.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2080872166",
+       "Name": "Brick_Wall_Minus_6dB_Peak_Fast_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Fast_Release",
+       "GUID": "{3FF9AD86-E377-40F8-970F-3D4EE73288B5}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "1891391704",
@@ -1626,7 +1638,14 @@
          {
           "Id": "990966566"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1690,7 +1709,14 @@
          {
           "Id": "1058194484"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1755,7 +1781,14 @@
          {
           "Id": "1058194484"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1837,7 +1870,14 @@
          {
           "Id": "983346073"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1973,7 +2013,14 @@
          {
           "Id": "990966566"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -2049,7 +2096,14 @@
          {
           "Id": "990966566"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        }
       ]
      },
@@ -2075,6 +2129,13 @@
         "Id": "889588474"
        }
       ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2080872166"
+        }
+       ]
+      },
       "AuxBusRefs": [
        {
         "Id": "3348775760",
@@ -2162,7 +2223,14 @@
          {
           "Id": "1042565849"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -2187,7 +2255,14 @@
          {
           "Id": "890360612"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -2213,7 +2288,14 @@
          {
           "Id": "890360612"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -2238,7 +2320,14 @@
          {
           "Id": "1015318436"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -2278,7 +2367,14 @@
          {
           "Id": "1042565849"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -2303,7 +2399,14 @@
          {
           "Id": "1042565849"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        }
       ]
      },
@@ -2402,7 +2505,7 @@
     "Type": "Event",
     "GUID": "{BD84793E-1D49-48EB-ACC4-F1DA575556CD}",
     "Language": "SFX",
-    "Hash": "{48EF77E6-E099-D132-D53E-9573786E7243}",
+    "Hash": "{B6D6BD5F-914C-50E9-7F7A-3629B4B6AA60}",
     "ObjectPath": "AR_Shoot_Stop",
     "ShortName": "AR_Shoot_Stop",
     "Path": "Event/AR_Shoot_Stop.bnk",
@@ -2519,10 +2622,10 @@
     "Plugins": {
      "ShareSets": [
       {
-       "Id": "2080872166",
-       "Name": "Brick_Wall_Minus_6dB_Peak_Fast_Release",
-       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Fast_Release",
-       "GUID": "{3FF9AD86-E377-40F8-970F-3D4EE73288B5}",
+       "Id": "2781261543",
+       "Name": "Brick_Wall_Minus_6dB_Peak_Slow_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Slow_Release",
+       "GUID": "{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}",
        "LibName": "Wwise Peak Limiter",
        "LibId": "7208963"
       }
@@ -2578,7 +2681,7 @@
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "2080872166"
+         "Id": "2781261543"
         }
        ]
       },
@@ -2661,7 +2764,7 @@
     "Type": "Event",
     "GUID": "{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}",
     "Language": "SFX",
-    "Hash": "{D06E2319-36B9-33A4-F3B4-967514A9F4BB}",
+    "Hash": "{D0E59361-2634-CD20-94C2-475BA0C8E91E}",
     "ObjectPath": "FOL_Armor",
     "ShortName": "FOL_Armor",
     "Path": "Event/FOL_Armor.bnk",
@@ -2757,6 +2860,18 @@
       "CachePath": "SFX/FOL_Armor_Rattle_Stem_EB98B55F.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2080872166",
+       "Name": "Brick_Wall_Minus_6dB_Peak_Fast_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Fast_Release",
+       "GUID": "{3FF9AD86-E377-40F8-970F-3D4EE73288B5}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "677842196",
@@ -2798,6 +2913,13 @@
         "Id": "1067502798"
        }
       ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2080872166"
+        }
+       ]
+      },
       "AuxBusRefs": [
        {
         "Id": "3348775760",
@@ -2814,7 +2936,7 @@
     "Type": "Event",
     "GUID": "{D351862C-9224-46EA-B214-195532B40959}",
     "Language": "SFX",
-    "Hash": "{34DDB357-D100-826C-7A05-8E4BFB233DD3}",
+    "Hash": "{B7D33CD4-BF41-AF22-65E6-3B173CC7B782}",
     "ObjectPath": "FOL_FallWhoosh",
     "ShortName": "FOL_FallWhoosh",
     "Path": "Event/FOL_FallWhoosh.bnk",
@@ -2829,6 +2951,18 @@
       "CachePath": "SFX/FOL_FallWhoosh_LP_E91F277A.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2080872166",
+       "Name": "Brick_Wall_Minus_6dB_Peak_Fast_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Fast_Release",
+       "GUID": "{3FF9AD86-E377-40F8-970F-3D4EE73288B5}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "849782850",
@@ -2840,7 +2974,14 @@
        {
         "Id": "616719576"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2080872166"
+        }
+       ]
+      }
      }
     ]
    },
@@ -3446,7 +3587,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{B2AAC674-7090-0843-C307-0343CB958AD5}",
+    "Hash": "{CF31C062-C765-0C34-CA44-DC30BE8E32C8}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -3469,6 +3610,14 @@
        "GUID": "{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
+      },
+      {
+       "Id": "1459522457",
+       "Name": "Brick_Wall_Minus_1dB_Peak_Fast_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Fast_Release",
+       "GUID": "{2144284E-7ADD-4341-86A4-4E468BEC9A2D}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
       },
       {
        "Id": "1990128658",
@@ -3540,6 +3689,12 @@
       "GUID": "{639A62DF-CA02-438D-9BA0-A89D32368F6D}"
      },
      {
+      "Id": "505457527",
+      "Name": "AR_Ricochets",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Weapons\\Impacts\\AR_Ricochets",
+      "GUID": "{81ACA39A-04D0-4D44-A2A9-6D1524CDD79B}"
+     },
+     {
       "Id": "836873062",
       "Name": "AMB_Rooms",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Ambience\\AMB_Rooms",
@@ -3550,6 +3705,18 @@
       "Name": "Cinematics",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Non-Diegetic\\Cinematics",
       "GUID": "{D835C362-5C93-4B82-95CE-611B70A5112A}"
+     },
+     {
+      "Id": "928742199",
+      "Name": "GL_Explosions",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Weapons\\Impacts\\GL_Explosions",
+      "GUID": "{2DC28776-7AC7-4483-9384-9D8ADED87C44}"
+     },
+     {
+      "Id": "1059924838",
+      "Name": "AR_Shots",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Weapons\\Shots\\AR_Shots",
+      "GUID": "{3D3B38C5-3BC0-4447-86DE-206228E9859C}"
      },
      {
       "Id": "1088520938",
@@ -3600,10 +3767,23 @@
       "GUID": "{596C5B51-663F-4CD9-9F06-6A282DAF1573}"
      },
      {
+      "Id": "3263709402",
+      "Name": "GL_Shots",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Weapons\\Shots\\GL_Shots",
+      "GUID": "{D9143790-A231-44C7-BDD1-B6585167F525}"
+     },
+     {
       "Id": "3803692087",
       "Name": "Master Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
-      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1459522457"
+        }
+       ]
+      }
      },
      {
       "Id": "3930136735",
@@ -4361,7 +4541,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{6BC1F28F-C9FF-E1FE-36A4-A5DCCF61B183}",
+    "Hash": "{43C353D2-0C24-C7FB-0A12-B9A9FECD17B0}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -5668,10 +5848,18 @@
      ],
      "ShareSets": [
       {
-       "Id": "2080872166",
-       "Name": "Brick_Wall_Minus_6dB_Peak_Fast_Release",
-       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Fast_Release",
-       "GUID": "{3FF9AD86-E377-40F8-970F-3D4EE73288B5}",
+       "Id": "2258521792",
+       "Name": "Brick_Wall_Minus_1dB_Peak_Slow_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Slow_Release",
+       "GUID": "{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      },
+      {
+       "Id": "2781261543",
+       "Name": "Brick_Wall_Minus_6dB_Peak_Slow_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Slow_Release",
+       "GUID": "{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}",
        "LibName": "Wwise Peak Limiter",
        "LibId": "7208963"
       }
@@ -6550,7 +6738,7 @@
         "PluginRefs": {
          "ShareSets": [
           {
-           "Id": "2080872166"
+           "Id": "2781261543"
           }
          ]
         }
@@ -6615,7 +6803,7 @@
         "PluginRefs": {
          "ShareSets": [
           {
-           "Id": "2080872166"
+           "Id": "2781261543"
           }
          ]
         }
@@ -6680,7 +6868,7 @@
         "PluginRefs": {
          "ShareSets": [
           {
-           "Id": "2080872166"
+           "Id": "2781261543"
           }
          ]
         }
@@ -6745,7 +6933,7 @@
         "PluginRefs": {
          "ShareSets": [
           {
-           "Id": "2080872166"
+           "Id": "2781261543"
           }
          ]
         }
@@ -6810,7 +6998,7 @@
         "PluginRefs": {
          "ShareSets": [
           {
-           "Id": "2080872166"
+           "Id": "2781261543"
           }
          ]
         }
@@ -6954,7 +7142,14 @@
          {
           "Id": "1029793749"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2258521792"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -7016,7 +7211,14 @@
          {
           "Id": "1032557313"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2258521792"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -7077,7 +7279,14 @@
          {
           "Id": "1032557313"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2258521792"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -7144,7 +7353,14 @@
          {
           "Id": "1029793749"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2258521792"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -7205,7 +7421,14 @@
          {
           "Id": "1032557313"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2258521792"
+          }
+         ]
+        }
        }
       ]
      },
@@ -8139,7 +8362,7 @@
     "Type": "Event",
     "GUID": "{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}",
     "Language": "SFX",
-    "Hash": "{44B44B56-7B42-9D40-6809-97FE9A01EFD0}",
+    "Hash": "{2564F359-B3FE-689A-7544-102F6A6F57B6}",
     "ObjectPath": "FOL_Footstep_L",
     "ShortName": "FOL_Footstep_L",
     "Path": "Event/FOL_Footstep_L.bnk",
@@ -8901,6 +9124,18 @@
       "CachePath": "SFX/FOL_Footsteps_Tile_Toe_Stem_941085EC.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2080872166",
+       "Name": "Brick_Wall_Minus_6dB_Peak_Fast_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Fast_Release",
+       "GUID": "{3FF9AD86-E377-40F8-970F-3D4EE73288B5}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "2395369600",
@@ -9053,7 +9288,14 @@
          {
           "Id": "990966566"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -9117,7 +9359,14 @@
          {
           "Id": "1058194484"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -9182,7 +9431,14 @@
          {
           "Id": "1058194484"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -9264,7 +9520,14 @@
          {
           "Id": "983346073"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -9400,7 +9663,14 @@
          {
           "Id": "990966566"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -9476,7 +9746,14 @@
          {
           "Id": "990966566"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        }
       ]
      }
@@ -10094,7 +10371,7 @@
     "Type": "Event",
     "GUID": "{1635F222-A233-45E5-B0C4-8A8C46A88E68}",
     "Language": "SFX",
-    "Hash": "{CF41DA7B-CBB7-1747-C843-DA1ABA72848E}",
+    "Hash": "{6BEB0095-AB0F-E0BC-D374-F8EC6046C687}",
     "ObjectPath": "AR_Shoot_Empty",
     "ShortName": "AR_Shoot_Empty",
     "Path": "Event/AR_Shoot_Empty.bnk",
@@ -10112,10 +10389,10 @@
     "Plugins": {
      "ShareSets": [
       {
-       "Id": "2080872166",
-       "Name": "Brick_Wall_Minus_6dB_Peak_Fast_Release",
-       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Fast_Release",
-       "GUID": "{3FF9AD86-E377-40F8-970F-3D4EE73288B5}",
+       "Id": "2781261543",
+       "Name": "Brick_Wall_Minus_6dB_Peak_Slow_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Slow_Release",
+       "GUID": "{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}",
        "LibName": "Wwise Peak Limiter",
        "LibId": "7208963"
       }
@@ -10138,7 +10415,7 @@
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "2080872166"
+         "Id": "2781261543"
         }
        ]
       },
@@ -10227,6 +10504,6 @@
     ]
    }
   ],
-  "FileHash": "{27F3314B-2AC7-1375-824E-9D84275F5065}"
+  "FileHash": "{23B51990-CAF1-CA84-78D0-D459A4814924}"
  }
 }

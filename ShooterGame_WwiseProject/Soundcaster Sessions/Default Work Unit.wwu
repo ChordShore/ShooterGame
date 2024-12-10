@@ -21,7 +21,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="PAR_GL_Impact_Distance" ID="{BA395E67-E6A3-4067-9942-34C856290AFF}"/>
-							<Value>10808.9775561097</Value>
+							<Value>9411</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="PAR_Velocity_Vertical" ID="{847E4FAC-FEC0-42D9-8F95-EB060A41AE44}"/>
@@ -65,8 +65,8 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{BB4FD5EE-2E84-4BFE-B7E1-EF4CB10C6C67}"/>
-						<CurrentStateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
+						<CurrentStateRef Name="STA_Path5_Cull" ID="{AC8E4352-EFB9-46F5-86BA-3C6204E9B6B3}"/>
+						<CurrentStateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 						<CurrentStateRef Name="None" ID="{58E0E97C-6C8E-42CB-BD10-0B2B26B95058}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
@@ -151,6 +151,66 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{BB4FD5EE-2E84-4BFE-B7E1-EF4CB10C6C67}"/>
 						<CurrentStateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
+						<CurrentStateRef Name="None" ID="{58E0E97C-6C8E-42CB-BD10-0B2B26B95058}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="AR_Projectile" ID="{E5B4CAA3-B1D9-4232-BC84-C9A3CB791E4D}"/>
+						<CurrentSwitchRef Name="AR_Equipped" ID="{6FE15811-998E-4E22-ACDE-9862762F2DA9}"/>
+						<CurrentSwitchRef Name="M_Concrete" ID="{7793252A-8C3B-42B3-A5BE-5BD85E592AF5}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Weapon Ducking" ID="{0757925E-A6D2-4336-9BB6-D25203073C39}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="AR_Shoot_LP" ID="{027202E3-540C-4144-873B-7DCDD76899B6}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AR_Shoot_Stop" ID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="GL_Shoot_OS" ID="{314DB4B5-5CD0-4B6E-8803-898906F3175F}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="GL_PassBy_LP_Play" ID="{566534D1-0C06-45CC-8878-334A29476347}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="GL_PassBy_LP_Stop" ID="{4ABC7647-EB94-46FC-82E0-92911FB3B773}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="GL_Impact_OS" ID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}" WorkUnitID="{873D6A45-2921-49D2-B9FA-7CB08A0F9C51}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMB_Highrise_Atrium" ID="{5BF4C622-376D-4B51-BFB8-F19F66A2B4AF}" WorkUnitID="{EE6788E3-ED3A-4863-8372-A416E4E3D1C6}"/>
+							<Position X="5" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="PAR_GL_Impact_Distance" ID="{BA395E67-E6A3-4067-9942-34C856290AFF}"/>
+							<Value>9411</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PAR_GL_Projectile_Doppler" ID="{6407D76F-94D5-47B8-BEBE-71AF185724C0}"/>
+							<Value>41263</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PAR_GL_AmmoCount" ID="{009857E8-11A8-4C0B-8F4B-67B3B3ABD96D}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PAR_AR_AmmoCount" ID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}"/>
+							<Value>30</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="STA_Path5_Cull" ID="{AC8E4352-EFB9-46F5-86BA-3C6204E9B6B3}"/>
+						<CurrentStateRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 						<CurrentStateRef Name="None" ID="{58E0E97C-6C8E-42CB-BD10-0B2B26B95058}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

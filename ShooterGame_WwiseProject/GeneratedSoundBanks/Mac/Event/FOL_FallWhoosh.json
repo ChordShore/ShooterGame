@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{D351862C-9224-46EA-B214-195532B40959}",
     "Language": "SFX",
-    "Hash": "{34DDB357-D100-826C-7A05-8E4BFB233DD3}",
+    "Hash": "{B7D33CD4-BF41-AF22-65E6-3B173CC7B782}",
     "ObjectPath": "FOL_FallWhoosh",
     "ShortName": "FOL_FallWhoosh",
     "Path": "Event/FOL_FallWhoosh.bnk",
@@ -25,6 +25,18 @@
       "CachePath": "SFX/FOL_FallWhoosh_LP_E91F277A.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2080872166",
+       "Name": "Brick_Wall_Minus_6dB_Peak_Fast_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Fast_Release",
+       "GUID": "{3FF9AD86-E377-40F8-970F-3D4EE73288B5}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "849782850",
@@ -36,11 +48,18 @@
        {
         "Id": "616719576"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2080872166"
+        }
+       ]
+      }
      }
     ]
    }
   ],
-  "FileHash": "{7308698F-137E-F522-F34A-E283C11724F7}"
+  "FileHash": "{E327F479-33B2-662F-DC36-B4876BCDAB9C}"
  }
 }

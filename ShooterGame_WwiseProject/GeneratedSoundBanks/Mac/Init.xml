@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{D92C2018-4D44-4583-2162-93D9D3ADB21B}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{A4FFDE2C-B5A2-FBBA-B775-4796B5F72773}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -11,6 +11,7 @@
 				</Custom>
 				<ShareSets>
 					<Plugin Id="602546716" Name="Room_Large" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Large" GUID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="1459522457" Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Fast_Release" GUID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" LibName="Wwise Peak Limiter" LibId="7208963"/>
 					<Plugin Id="1990128658" Name="Room_Medium" ObjectPath="\Effects\Factory Effects\RoomVerb\Rooms\Room_Medium" GUID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="2180422931" Name="One_Tap_Quarter_Second" ObjectPath="\Effects\Factory Effects\Delay\One_Tap_Quarter_Second" GUID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" LibName="Wwise Delay" LibId="6946819"/>
 					<Plugin Id="2945072214" Name="My_Closet" ObjectPath="\Effects\Factory Effects\RoomVerb\Claustrophobia\My_Closet" GUID="{384A82A1-3C92-4AC5-AFC2-474F2080642C}" LibName="Wwise RoomVerb" LibId="7733251"/>
@@ -25,8 +26,11 @@
 				<Bus Id="247557814" Name="Foley" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Foley" GUID="{AFADED97-9376-47EE-8E61-63C3E2539C84}"/>
 				<Bus Id="316118591" Name="AMB_Emitters" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Ambience\AMB_Emitters" GUID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}"/>
 				<Bus Id="432164595" Name="Auxiliaries" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries" GUID="{639A62DF-CA02-438D-9BA0-A89D32368F6D}"/>
+				<Bus Id="505457527" Name="AR_Ricochets" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Impacts\AR_Ricochets" GUID="{81ACA39A-04D0-4D44-A2A9-6D1524CDD79B}"/>
 				<Bus Id="836873062" Name="AMB_Rooms" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Ambience\AMB_Rooms" GUID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}"/>
 				<Bus Id="877642339" Name="Cinematics" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic\Cinematics" GUID="{D835C362-5C93-4B82-95CE-611B70A5112A}"/>
+				<Bus Id="928742199" Name="GL_Explosions" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Impacts\GL_Explosions" GUID="{2DC28776-7AC7-4483-9384-9D8ADED87C44}"/>
+				<Bus Id="1059924838" Name="AR_Shots" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Shots\AR_Shots" GUID="{3D3B38C5-3BC0-4447-86DE-206228E9859C}"/>
 				<Bus Id="1088520938" Name="Interface" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic\Interface" GUID="{42B4D428-17C2-4C3C-AA6E-6AB8C22C5805}"/>
 				<Bus Id="1316532907" Name="Diegetic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic" GUID="{0B750C85-EB1C-448A-9D15-8D1F0D4C6BD6}"/>
 				<Bus Id="1467963052" Name="Weapons" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons" GUID="{1BC77837-C5B2-4563-B3F7-CF715B366F0C}"/>
@@ -35,7 +39,14 @@
 				<Bus Id="2940432316" Name="Stingers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic\Stingers" GUID="{14F313A7-2F5E-4100-BC04-AAE99EC1A71C}"/>
 				<Bus Id="3074349213" Name="Sanctuary" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Sanctuary" GUID="{5BA6AF2C-2325-4C30-8363-C8F3B4D195B0}"/>
 				<Bus Id="3240358146" Name="Highrise" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise" GUID="{596C5B51-663F-4CD9-9F06-6A282DAF1573}"/>
-				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+				<Bus Id="3263709402" Name="GL_Shots" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Shots\GL_Shots" GUID="{D9143790-A231-44C7-BDD1-B6585167F525}"/>
+				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1459522457"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="3930136735" Name="Dialogue" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Dialogue" GUID="{80C87677-6DFA-46DD-8E4C-337CF0B1357D}"/>
 				<Bus Id="3991942870" Name="Music" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic\Music" GUID="{94CBEB29-D115-40FC-911D-11DA90BC78FA}"/>
 			</Busses>
@@ -259,5 +270,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{631C09E2-7E55-A6D1-7C94-3D70759771EC}</FileHash>
+	<FileHash>{42489285-E7E3-D621-DB4A-24CF3675CBE0}</FileHash>
 </SoundBanksInfo>

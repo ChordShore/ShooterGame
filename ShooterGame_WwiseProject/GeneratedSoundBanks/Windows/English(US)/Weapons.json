@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{6BC1F28F-C9FF-E1FE-36A4-A5DCCF61B183}",
+    "Hash": "{43C353D2-0C24-C7FB-0A12-B9A9FECD17B0}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -1317,10 +1317,18 @@
      ],
      "ShareSets": [
       {
-       "Id": "2080872166",
-       "Name": "Brick_Wall_Minus_6dB_Peak_Fast_Release",
-       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Fast_Release",
-       "GUID": "{3FF9AD86-E377-40F8-970F-3D4EE73288B5}",
+       "Id": "2258521792",
+       "Name": "Brick_Wall_Minus_1dB_Peak_Slow_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Slow_Release",
+       "GUID": "{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      },
+      {
+       "Id": "2781261543",
+       "Name": "Brick_Wall_Minus_6dB_Peak_Slow_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Slow_Release",
+       "GUID": "{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}",
        "LibName": "Wwise Peak Limiter",
        "LibId": "7208963"
       }
@@ -2199,7 +2207,7 @@
         "PluginRefs": {
          "ShareSets": [
           {
-           "Id": "2080872166"
+           "Id": "2781261543"
           }
          ]
         }
@@ -2264,7 +2272,7 @@
         "PluginRefs": {
          "ShareSets": [
           {
-           "Id": "2080872166"
+           "Id": "2781261543"
           }
          ]
         }
@@ -2329,7 +2337,7 @@
         "PluginRefs": {
          "ShareSets": [
           {
-           "Id": "2080872166"
+           "Id": "2781261543"
           }
          ]
         }
@@ -2394,7 +2402,7 @@
         "PluginRefs": {
          "ShareSets": [
           {
-           "Id": "2080872166"
+           "Id": "2781261543"
           }
          ]
         }
@@ -2459,7 +2467,7 @@
         "PluginRefs": {
          "ShareSets": [
           {
-           "Id": "2080872166"
+           "Id": "2781261543"
           }
          ]
         }
@@ -2603,7 +2611,14 @@
          {
           "Id": "1029793749"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2258521792"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -2665,7 +2680,14 @@
          {
           "Id": "1032557313"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2258521792"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -2726,7 +2748,14 @@
          {
           "Id": "1032557313"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2258521792"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -2793,7 +2822,14 @@
          {
           "Id": "1029793749"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2258521792"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -2854,7 +2890,14 @@
          {
           "Id": "1032557313"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2258521792"
+          }
+         ]
+        }
        }
       ]
      },
@@ -3264,6 +3307,6 @@
     ]
    }
   ],
-  "FileHash": "{17BBB6AA-AC5C-74D5-B579-AADAF9F4DCC8}"
+  "FileHash": "{1FB48FBB-32F3-9BC1-6813-9CB23EE2DDE9}"
  }
 }

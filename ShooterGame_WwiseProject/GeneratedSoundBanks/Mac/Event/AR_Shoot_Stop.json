@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{BD84793E-1D49-48EB-ACC4-F1DA575556CD}",
     "Language": "SFX",
-    "Hash": "{48EF77E6-E099-D132-D53E-9573786E7243}",
+    "Hash": "{B6D6BD5F-914C-50E9-7F7A-3629B4B6AA60}",
     "ObjectPath": "AR_Shoot_Stop",
     "ShortName": "AR_Shoot_Stop",
     "Path": "Event/AR_Shoot_Stop.bnk",
@@ -127,10 +127,10 @@
     "Plugins": {
      "ShareSets": [
       {
-       "Id": "2080872166",
-       "Name": "Brick_Wall_Minus_6dB_Peak_Fast_Release",
-       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Fast_Release",
-       "GUID": "{3FF9AD86-E377-40F8-970F-3D4EE73288B5}",
+       "Id": "2781261543",
+       "Name": "Brick_Wall_Minus_6dB_Peak_Slow_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Slow_Release",
+       "GUID": "{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}",
        "LibName": "Wwise Peak Limiter",
        "LibId": "7208963"
       }
@@ -186,7 +186,7 @@
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "2080872166"
+         "Id": "2781261543"
         }
        ]
       },
@@ -210,6 +210,6 @@
     ]
    }
   ],
-  "FileHash": "{5712E47F-88C4-C94F-E7B7-71BF41DA43F1}"
+  "FileHash": "{46825C3B-90D7-0AA0-A4C6-6903F0B68AE3}"
  }
 }

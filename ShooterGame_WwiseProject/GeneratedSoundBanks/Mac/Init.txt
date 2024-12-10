@@ -41,8 +41,11 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	247557814	Foley			\Default Work Unit\Master Audio Bus\Diegetic\Foley	
 	316118591	AMB_Emitters			\Default Work Unit\Master Audio Bus\Diegetic\Ambience\AMB_Emitters	
 	432164595	Auxiliaries			\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries	
+	505457527	AR_Ricochets			\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Impacts\AR_Ricochets	
 	836873062	AMB_Rooms			\Default Work Unit\Master Audio Bus\Diegetic\Ambience\AMB_Rooms	
 	877642339	Cinematics			\Default Work Unit\Master Audio Bus\Non-Diegetic\Cinematics	
+	928742199	GL_Explosions			\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Impacts\GL_Explosions	
+	1059924838	AR_Shots			\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Shots\AR_Shots	
 	1088520938	Interface			\Default Work Unit\Master Audio Bus\Non-Diegetic\Interface	
 	1316532907	Diegetic			\Default Work Unit\Master Audio Bus\Diegetic	
 	1467963052	Weapons			\Default Work Unit\Master Audio Bus\Diegetic\Weapons	
@@ -51,6 +54,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2940432316	Stingers			\Default Work Unit\Master Audio Bus\Non-Diegetic\Stingers	
 	3074349213	Sanctuary			\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Sanctuary	
 	3240358146	Highrise			\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise	
+	3263709402	GL_Shots			\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Shots\GL_Shots	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3930136735	Dialogue			\Default Work Unit\Master Audio Bus\Diegetic\Dialogue	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Non-Diegetic\Music	
@@ -65,6 +69,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 Effect plug-ins	ID	Name	Type				Notes
 	423108128	Reverb_HoverCars_(Hall_Large_TooBright_Custom)	Wwise RoomVerb			
 	602546716	Room_Large	Wwise RoomVerb			
+	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
 	1990128658	Room_Medium	Wwise RoomVerb			
 	2180422931	One_Tap_Quarter_Second	Wwise Delay			
 	2945072214	My_Closet	Wwise RoomVerb			

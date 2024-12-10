@@ -8,6 +8,9 @@
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
 							<ObjectRef Name="System" ID="{DDAEEB21-4CAC-4E5A-AE98-EA7AEA6809A1}" WorkUnitID="{DD8991F0-D99B-4EAF-BEF2-5E473AAC3745}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+							<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Diegetic" ID="{0B750C85-EB1C-448A-9D15-8D1F0D4C6BD6}">
@@ -99,6 +102,75 @@
 										<Property Name="Color" Type="int16" Value="10"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>
+									<ChildrenList>
+										<Folder Name="Impacts" ID="{E3E60A0D-5A15-49AF-9C71-54A33A15148A}" ShortID="348850173">
+											<ChildrenList>
+												<Bus Name="GL_Explosions" ID="{2DC28776-7AC7-4483-9384-9D8ADED87C44}">
+													<PropertyList>
+														<Property Name="RecoveryTime" Type="Real64" Value="0"/>
+													</PropertyList>
+													<DuckingList>
+														<DuckItem>
+															<BusRef Name="Foley" ID="{AFADED97-9376-47EE-8E61-63C3E2539C84}"/>
+															<DuckingParam>
+																<Volume>-6</Volume>
+																<FadeInTime>1</FadeInTime>
+																<FadeOutTime>1</FadeOutTime>
+																<FadeCurve>FadeLinear</FadeCurve>
+															</DuckingParam>
+														</DuckItem>
+														<DuckItem>
+															<BusRef Name="Auxiliaries" ID="{639A62DF-CA02-438D-9BA0-A89D32368F6D}"/>
+															<DuckingParam>
+																<Volume>-6</Volume>
+																<FadeInTime>1</FadeInTime>
+																<FadeOutTime>1</FadeOutTime>
+																<FadeCurve>FadeLinear</FadeCurve>
+															</DuckingParam>
+														</DuckItem>
+														<DuckItem>
+															<BusRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}"/>
+															<DuckingParam>
+																<Volume>-6</Volume>
+																<FadeInTime>0.5</FadeInTime>
+																<FadeOutTime>0.5</FadeOutTime>
+																<FadeCurve>FadeLog2</FadeCurve>
+															</DuckingParam>
+														</DuckItem>
+														<DuckItem>
+															<BusRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}"/>
+															<DuckingParam>
+																<Volume>-6</Volume>
+																<FadeInTime>0.5</FadeInTime>
+																<FadeOutTime>0.100000001490116</FadeOutTime>
+																<FadeCurve>FadeLog1</FadeCurve>
+															</DuckingParam>
+														</DuckItem>
+														<DuckItem>
+															<BusRef Name="GL_Shots" ID="{D9143790-A231-44C7-BDD1-B6585167F525}"/>
+															<DuckingParam>
+																<Volume>-6</Volume>
+																<FadeInTime>1</FadeInTime>
+																<FadeOutTime>1</FadeOutTime>
+																<FadeCurve>FadeExp3</FadeCurve>
+															</DuckingParam>
+														</DuckItem>
+													</DuckingList>
+												</Bus>
+												<Bus Name="AR_Ricochets" ID="{81ACA39A-04D0-4D44-A2A9-6D1524CDD79B}"/>
+											</ChildrenList>
+										</Folder>
+										<Folder Name="Shots" ID="{20524B44-F904-4FFA-A84F-D9F342D5C7F4}" ShortID="642442661">
+											<ChildrenList>
+												<Bus Name="GL_Shots" ID="{D9143790-A231-44C7-BDD1-B6585167F525}">
+													<PropertyList>
+														<Property Name="RecoveryTime" Type="Real64" Value="0"/>
+													</PropertyList>
+												</Bus>
+												<Bus Name="AR_Shots" ID="{3D3B38C5-3BC0-4447-86DE-206228E9859C}"/>
+											</ChildrenList>
+										</Folder>
+									</ChildrenList>
 								</Bus>
 								<Bus Name="Items" ID="{37718E87-198C-4650-BC59-3AC05063F1D4}">
 									<PropertyList>

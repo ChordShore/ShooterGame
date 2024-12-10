@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="3838114450" Type="Event" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" Language="SFX" Hash="{CF41DA7B-CBB7-1747-C843-DA1ABA72848E}">
+		<SoundBank Id="3838114450" Type="Event" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" Language="SFX" Hash="{6BEB0095-AB0F-E0BC-D374-F8EC6046C687}">
 			<ObjectPath>AR_Shoot_Empty</ObjectPath>
 			<ShortName>AR_Shoot_Empty</ShortName>
 			<Path>Event/AR_Shoot_Empty.bnk</Path>
@@ -14,7 +14,7 @@
 			</Media>
 			<Plugins>
 				<ShareSets>
-					<Plugin Id="2080872166" Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Fast_Release" GUID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+					<Plugin Id="2781261543" Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Slow_Release" GUID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" LibName="Wwise Peak Limiter" LibId="7208963"/>
 				</ShareSets>
 			</Plugins>
 			<Events>
@@ -24,7 +24,7 @@
 					</MediaRefs>
 					<PluginRefs>
 						<ShareSets>
-							<PluginRef Id="2080872166"/>
+							<PluginRef Id="2781261543"/>
 						</ShareSets>
 					</PluginRefs>
 					<AuxBusRefs>
@@ -37,5 +37,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C2ED690D-445D-6891-C113-8AC600EBEC3D}</FileHash>
+	<FileHash>{6D72F4F9-BD09-09CC-23FE-7D0305757B07}</FileHash>
 </SoundBanksInfo>

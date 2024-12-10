@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}",
     "Language": "SFX",
-    "Hash": "{44B44B56-7B42-9D40-6809-97FE9A01EFD0}",
+    "Hash": "{2564F359-B3FE-689A-7544-102F6A6F57B6}",
     "ObjectPath": "FOL_Footstep_L",
     "ShortName": "FOL_Footstep_L",
     "Path": "Event/FOL_Footstep_L.bnk",
@@ -772,6 +772,18 @@
       "CachePath": "SFX/FOL_Footsteps_Tile_Toe_Stem_941085EC.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2080872166",
+       "Name": "Brick_Wall_Minus_6dB_Peak_Fast_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Fast_Release",
+       "GUID": "{3FF9AD86-E377-40F8-970F-3D4EE73288B5}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "2395369600",
@@ -924,7 +936,14 @@
          {
           "Id": "990966566"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -988,7 +1007,14 @@
          {
           "Id": "1058194484"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1053,7 +1079,14 @@
          {
           "Id": "1058194484"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1135,7 +1168,14 @@
          {
           "Id": "983346073"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1271,7 +1311,14 @@
          {
           "Id": "990966566"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1347,7 +1394,14 @@
          {
           "Id": "990966566"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2080872166"
+          }
+         ]
+        }
        }
       ]
      }
@@ -1432,6 +1486,6 @@
     ]
    }
   ],
-  "FileHash": "{F4C0FCE6-5C0A-7E94-1E0F-901D381A95F6}"
+  "FileHash": "{967F1DCD-C4F3-B87E-37B4-C1DFB2E64901}"
  }
 }

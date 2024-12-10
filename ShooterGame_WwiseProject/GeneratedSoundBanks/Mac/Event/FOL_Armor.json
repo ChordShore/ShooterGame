@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}",
     "Language": "SFX",
-    "Hash": "{D06E2319-36B9-33A4-F3B4-967514A9F4BB}",
+    "Hash": "{D0E59361-2634-CD20-94C2-475BA0C8E91E}",
     "ObjectPath": "FOL_Armor",
     "ShortName": "FOL_Armor",
     "Path": "Event/FOL_Armor.bnk",
@@ -106,6 +106,18 @@
       "CachePath": "SFX/FOL_Armor_Rattle_Stem_EB98B55F.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2080872166",
+       "Name": "Brick_Wall_Minus_6dB_Peak_Fast_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Fast_Release",
+       "GUID": "{3FF9AD86-E377-40F8-970F-3D4EE73288B5}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "677842196",
@@ -147,6 +159,13 @@
         "Id": "1067502798"
        }
       ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2080872166"
+        }
+       ]
+      },
       "AuxBusRefs": [
        {
         "Id": "3348775760",
@@ -159,6 +178,6 @@
     ]
    }
   ],
-  "FileHash": "{FF674F2B-BADE-2BD8-1C4F-7BBABD3B3091}"
+  "FileHash": "{6E29817F-41C5-F76D-94CB-6E82BE2D387C}"
  }
 }

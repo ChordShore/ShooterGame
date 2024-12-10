@@ -194,7 +194,7 @@
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-12</Value>
+														<Value>-6</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -203,7 +203,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 												</Reference>
 												<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
-													<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
@@ -2067,6 +2067,18 @@
 										</ActorMixer>
 										<ActorMixer Name="GL_Shoot" ID="{467DBE75-FEBB-47A4-87CB-113EA5C974FA}" ShortID="72693242">
 											<PropertyList>
+												<Property Name="BypassEffect0" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="RenderEffect0" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-10</Value>
@@ -2077,8 +2089,11 @@
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+													<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+													<ObjectRef Name="GL_Shots" ID="{D9143790-A231-44C7-BDD1-B6585167F525}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -5604,6 +5619,7 @@
 										<ActorMixer Name="GL_Impact" ID="{D7196C42-F7EB-4F4F-8BE6-243F23955B13}" ShortID="962572682">
 											<PropertyList>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -5612,6 +5628,9 @@
 												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+													<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
@@ -5795,12 +5814,19 @@
 																	</ChildrenList>
 																</RandomSequenceContainer>
 																<BlendContainer Name="GL_Impact_Close_Atrium" ID="{8511C2A0-C01A-447D-B1B1-86B54DEC532D}" ShortID="882106730">
+																	<PropertyList>
+																		<Property Name="MakeUpGain" Type="Real64">
+																			<ValueList>
+																				<Value>3</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 																		</Reference>
 																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																			<ObjectRef Name="GL_Shots" ID="{D9143790-A231-44C7-BDD1-B6585167F525}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -5811,6 +5837,7 @@
 																						<Value>-12</Value>
 																					</ValueList>
 																				</Property>
+																				<Property Name="OverrideOutput" Type="bool" Value="True"/>
 																				<Property Name="ReflectionsVolume" Type="Real64">
 																					<ValueList>
 																						<Value>-10</Value>
@@ -5823,7 +5850,7 @@
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 																				</Reference>
 																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																					<ObjectRef Name="GL_Explosions" ID="{2DC28776-7AC7-4483-9384-9D8ADED87C44}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																				</Reference>
 																				<Reference Name="ReflectionsAuxSend">
 																					<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
@@ -6256,14 +6283,14 @@
 																			<CrossfadingInfo>
 																				<LeftEdgePos>0</LeftEdgePos>
 																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>5000</RightEdgePos>
+																				<RightEdgePos>4000</RightEdgePos>
 																				<RightFadingMode>Automatic</RightFadingMode>
 																			</CrossfadingInfo>
 																		</BlendTrackAssoc>
 																		<BlendTrackAssoc>
 																			<ItemRef Name="GL_Impact_Near_Atrium" ID="{9E9F668E-A893-4F39-96D3-8A474913B655}"/>
 																			<CrossfadingInfo>
-																				<LeftEdgePos>3000</LeftEdgePos>
+																				<LeftEdgePos>2000</LeftEdgePos>
 																				<LeftFadingMode>Automatic</LeftFadingMode>
 																				<RightEdgePos>9000</RightEdgePos>
 																				<RightFadingMode>Automatic</RightFadingMode>
@@ -6438,12 +6465,19 @@
 																	</ChildrenList>
 																</RandomSequenceContainer>
 																<BlendContainer Name="GL_Impact_Close_Room" ID="{2D988359-9808-43F1-8F12-47CAE4324D22}" ShortID="231252791">
+																	<PropertyList>
+																		<Property Name="MakeUpGain" Type="Real64">
+																			<ValueList>
+																				<Value>3</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 																		</Reference>
 																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																			<ObjectRef Name="GL_Shots" ID="{D9143790-A231-44C7-BDD1-B6585167F525}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -6530,6 +6564,7 @@
 																						<Value>-12</Value>
 																					</ValueList>
 																				</Property>
+																				<Property Name="OverrideOutput" Type="bool" Value="True"/>
 																				<Property Name="ReflectionsVolume" Type="Real64">
 																					<ValueList>
 																						<Value>-10</Value>
@@ -6542,7 +6577,7 @@
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 																				</Reference>
 																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																					<ObjectRef Name="GL_Explosions" ID="{2DC28776-7AC7-4483-9384-9D8ADED87C44}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																				</Reference>
 																				<Reference Name="ReflectionsAuxSend">
 																					<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
@@ -6954,14 +6989,14 @@
 																			<CrossfadingInfo>
 																				<LeftEdgePos>0</LeftEdgePos>
 																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>5000</RightEdgePos>
+																				<RightEdgePos>4000</RightEdgePos>
 																				<RightFadingMode>Automatic</RightFadingMode>
 																			</CrossfadingInfo>
 																		</BlendTrackAssoc>
 																		<BlendTrackAssoc>
 																			<ItemRef Name="GL_Impact_Near_Room" ID="{F9BCCF9C-6A6D-46B6-97BB-70917C2D77D3}"/>
 																			<CrossfadingInfo>
-																				<LeftEdgePos>3000</LeftEdgePos>
+																				<LeftEdgePos>2000</LeftEdgePos>
 																				<LeftFadingMode>Automatic</LeftFadingMode>
 																				<RightEdgePos>9000</RightEdgePos>
 																				<RightFadingMode>Automatic</RightFadingMode>
@@ -6991,12 +7026,19 @@
 															</ReferenceList>
 															<ChildrenList>
 																<BlendContainer Name="GL_Impact_Close_Spawn" ID="{D30A6C35-0C56-4D46-80C6-AD19AAD7CD9A}" ShortID="1051825042">
+																	<PropertyList>
+																		<Property Name="MakeUpGain" Type="Real64">
+																			<ValueList>
+																				<Value>3</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 																		</Reference>
 																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																			<ObjectRef Name="GL_Shots" ID="{D9143790-A231-44C7-BDD1-B6585167F525}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -7007,6 +7049,7 @@
 																						<Value>-12</Value>
 																					</ValueList>
 																				</Property>
+																				<Property Name="OverrideOutput" Type="bool" Value="True"/>
 																				<Property Name="ReflectionsVolume" Type="Real64">
 																					<ValueList>
 																						<Value>-10</Value>
@@ -7019,7 +7062,7 @@
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 																				</Reference>
 																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																					<ObjectRef Name="GL_Explosions" ID="{2DC28776-7AC7-4483-9384-9D8ADED87C44}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																				</Reference>
 																				<Reference Name="ReflectionsAuxSend">
 																					<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
@@ -7613,14 +7656,14 @@
 																			<CrossfadingInfo>
 																				<LeftEdgePos>0</LeftEdgePos>
 																				<LeftFadingMode>Automatic</LeftFadingMode>
-																				<RightEdgePos>5000</RightEdgePos>
+																				<RightEdgePos>4000</RightEdgePos>
 																				<RightFadingMode>Automatic</RightFadingMode>
 																			</CrossfadingInfo>
 																		</BlendTrackAssoc>
 																		<BlendTrackAssoc>
 																			<ItemRef Name="GL_Impact_Near_Spawn" ID="{69300621-8B02-452C-9FA1-731F9F43D7D2}"/>
 																			<CrossfadingInfo>
-																				<LeftEdgePos>3000</LeftEdgePos>
+																				<LeftEdgePos>2000</LeftEdgePos>
 																				<LeftFadingMode>Automatic</LeftFadingMode>
 																				<RightEdgePos>9000</RightEdgePos>
 																				<RightFadingMode>Automatic</RightFadingMode>
@@ -8438,7 +8481,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-6</Value>
+														<Value>-4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
