@@ -2505,7 +2505,7 @@
     "Type": "Event",
     "GUID": "{BD84793E-1D49-48EB-ACC4-F1DA575556CD}",
     "Language": "SFX",
-    "Hash": "{B142AF29-F3DC-6F83-B944-D9F551220782}",
+    "Hash": "{77B2FB27-DBEA-868E-77BB-2E4A5D43D120}",
     "ObjectPath": "AR_Shoot_Stop",
     "ShortName": "AR_Shoot_Stop",
     "Path": "Event/AR_Shoot_Stop.bnk",
@@ -4604,7 +4604,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{84A87FEE-F88C-4334-CD31-5CA7C8BAE3C9}",
+    "Hash": "{590B0DA7-0126-FE7B-2DED-103B0609976A}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -10434,7 +10434,7 @@
     "Type": "Event",
     "GUID": "{1635F222-A233-45E5-B0C4-8A8C46A88E68}",
     "Language": "SFX",
-    "Hash": "{006D13C7-520E-6907-021E-3DEF98A2EAFF}",
+    "Hash": "{26990BC9-4C41-66A0-5613-B93F81B74A66}",
     "ObjectPath": "AR_Shoot_Empty",
     "ShortName": "AR_Shoot_Empty",
     "Path": "Event/AR_Shoot_Empty.bnk",
@@ -10467,6 +10467,7 @@
       "Name": "AR_Shoot_Empty",
       "ObjectPath": "\\Events\\Weapons\\Shooting\\Shoot\\AR_Shoot_Empty",
       "GUID": "{1635F222-A233-45E5-B0C4-8A8C46A88E68}",
+      "MaxAttenuation": "13000",
       "DurationType": "OneShot",
       "DurationMin": "0.7914786",
       "DurationMax": "0.7914786",
@@ -10567,6 +10568,6 @@
     ]
    }
   ],
-  "FileHash": "{09F33BDB-D40C-B788-8FBD-993567234D27}"
+  "FileHash": "{4EF8CE60-7455-B976-E7F5-05FB32082D1C}"
  }
 }

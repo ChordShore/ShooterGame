@@ -190,6 +190,7 @@
 									<ChildrenList>
 										<ActorMixer Name="AR_Shoot" ID="{043EFF4C-D912-4D2D-9631-1F7832F46B7A}" ShortID="1063384167">
 											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="GameAuxSendVolume" Type="Real64">
 													<ValueList>
 														<Value>-6</Value>
@@ -202,6 +203,7 @@
 												<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="OverrideHdrEnvelope" Type="bool" Value="True"/>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="ReflectionsVolume" Type="Real64">
 													<ValueList>
 														<Value>-2</Value>
@@ -220,6 +222,9 @@
 												</Property>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATN_AR_Shoot_1P" ID="{A1EC7FA6-367C-4689-86CA-E2B661D44267}" WorkUnitID="{20BE0795-7455-4CA3-828E-F9A931FD597B}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 												</Reference>
@@ -8806,6 +8811,1999 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Folder Name="Shooting" ID="{0D42F21C-2901-4782-81B3-5AAC8FCF2CD7}" ShortID="742673411">
+							<ChildrenList>
+								<ActorMixer Name="WEP_Shoot_3P" ID="{D1B42028-720C-43EA-8656-9D2A59C766A6}" ShortID="377505515">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<ActorMixer Name="AR_Shoot" ID="{531461A2-65D2-4E77-B890-E84C6F16AB07}" ShortID="984478917">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="GameAuxSendVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="10"/>
+												<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="OverrideHdrEnvelope" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="ReflectionsVolume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{21023599-EE99-44E0-8A02-B8339DFF68AB}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATN_AR_Shoot_3P" ID="{87AAA0BA-0ECB-4711-8868-93417109F07B}" WorkUnitID="{20BE0795-7455-4CA3-828E-F9A931FD597B}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+													<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AR_Shoot" ID="{3D3B38C5-3BC0-4447-86DE-206228E9859C}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+												<Reference Name="ReflectionsAuxSend">
+													<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Folder Name="Empty" ID="{5BE3FEBB-96C0-4C2C-94B6-CE5EF1788B22}" ShortID="410770962">
+													<ChildrenList>
+														<BlendContainer Name="AR_Empty_Constructor" ID="{148E6ECE-9590-4393-B493-B6E0C258E6F5}" ShortID="942082126">
+															<PropertyList>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>10</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{2C21ADA2-513A-485B-A7B3-B258C67337B5}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="AR_Empty_BoltMech" ID="{474ED525-7CA3-45E4-8107-700A53E510DB}" ShortID="927621958">
+																	<PropertyList>
+																		<Property Name="GameAuxSendVolume" Type="Real64">
+																			<ValueList>
+																				<Value>-6</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="ReflectionsVolume" Type="Real64">
+																			<ValueList>
+																				<Value>-2</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-4</Value>
+																			</ValueList>
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{0E93A788-3CCA-4E50-89F0-89737533F5CC}"/>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+																			<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																		<Reference Name="ReflectionsAuxSend">
+																			<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="AR_Empty_BoltLock" ID="{8E843072-4241-4150-A5C0-3B4C4AB0F5E7}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.00299802483069977"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.492275677200903"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.00779486455981942"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.79927341986456"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>AR_Empty_BoltLock.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="375493363"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="AR_Empty_BoltLock" ID="{8E843072-4241-4150-A5C0-3B4C4AB0F5E7}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<RandomSequenceContainer Name="AR_Empty_PowerDown" ID="{AD5F6BED-3504-487E-997D-A1D2DA327215}" ShortID="898844122">
+																	<PropertyList>
+																		<Property Name="GameAuxSendVolume" Type="Real64">
+																			<ValueList>
+																				<Value>-6</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Highpass" Type="int16">
+																			<ValueList>
+																				<Value>25</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="ReflectionsVolume" Type="Real64">
+																			<ValueList>
+																				<Value>-2</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-4</Value>
+																			</ValueList>
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{7C5D1012-0EA1-46BF-AC53-815BA3F2C205}"/>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+																			<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																		<Reference Name="ReflectionsAuxSend">
+																			<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="AR_Empty_PowerDown_01" ID="{C4336284-8799-4614-A7A4-D1AEF65A19E9}" ShortID="693348387">
+																			<PropertyList>
+																				<Property Name="GameAuxSendVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-6</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="ReflectionsVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-2</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-6</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+																					<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																				<Reference Name="ReflectionsAuxSend">
+																					<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="AR_Empty_PowerDown" ID="{16CB7E63-100A-4B0E-8977-BAD18C2CBE14}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.00768905191873589"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="1.64699492099323"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.0276805869074492"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>AR_Empty_PowerDown.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="344300635"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="AR_Empty_PowerDown" ID="{16CB7E63-100A-4B0E-8977-BAD18C2CBE14}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+															</ChildrenList>
+															<BlendTrackList>
+																<BlendTrack Name="BoltLock" ID="{7DD7ACA6-09DD-484B-A479-85CDDFF71E38}" ShortID="1013527703">
+																	<ReferenceList>
+																		<Reference Name="LayerCrossFadeControlInput">
+																			<ObjectRef Name="PAR_AR_AmmoCount" ID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ObjectLists>
+																		<ObjectList Name="RTPC">
+																			<Reference>
+																				<Local>
+																					<RTPC Name="" ID="{1241F74E-EE2D-4988-8555-59DB008B7D05}" ShortID="592214854">
+																						<PropertyList>
+																							<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
+																						</PropertyList>
+																						<ReferenceList>
+																							<Reference Name="ControlInput">
+																								<ObjectRef Name="PAR_AR_AmmoCount" ID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																							</Reference>
+																							<Reference Name="Curve">
+																								<Custom>
+																									<Curve Name="" ID="{E2A2BDA9-48FF-4E6A-9F90-B973DFB23067}">
+																										<PropertyList>
+																											<Property Name="Flags" Type="int32" Value="3"/>
+																										</PropertyList>
+																										<PointList>
+																											<Point>
+																												<XPos>0</XPos>
+																												<YPos>0</YPos>
+																												<Flags>5</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>0.49</XPos>
+																												<YPos>0</YPos>
+																												<Flags>0</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>0.5</XPos>
+																												<YPos>-399.99996</YPos>
+																												<Flags>0</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>30</XPos>
+																												<YPos>-400</YPos>
+																												<Flags>37</Flags>
+																											</Point>
+																										</PointList>
+																									</Curve>
+																								</Custom>
+																							</Reference>
+																						</ReferenceList>
+																					</RTPC>
+																				</Local>
+																			</Reference>
+																		</ObjectList>
+																	</ObjectLists>
+																	<BlendTrackAssocList>
+																		<BlendTrackAssoc>
+																			<ItemRef Name="AR_Empty_BoltMech" ID="{474ED525-7CA3-45E4-8107-700A53E510DB}"/>
+																			<CrossfadingInfo>
+																				<LeftEdgePos>0</LeftEdgePos>
+																				<LeftFadingMode>Automatic</LeftFadingMode>
+																				<RightEdgePos>0.336658354114713</RightEdgePos>
+																				<RightFadingMode>Automatic</RightFadingMode>
+																			</CrossfadingInfo>
+																		</BlendTrackAssoc>
+																		<BlendTrackAssoc>
+																			<ItemRef Name="AR_Empty_PowerDown" ID="{AD5F6BED-3504-487E-997D-A1D2DA327215}"/>
+																			<CrossfadingInfo>
+																				<LeftEdgePos>12.00025</LeftEdgePos>
+																				<LeftFadingMode>Automatic</LeftFadingMode>
+																				<RightEdgePos>18.00025</RightEdgePos>
+																				<RightFadingMode>Automatic</RightFadingMode>
+																			</CrossfadingInfo>
+																		</BlendTrackAssoc>
+																	</BlendTrackAssocList>
+																</BlendTrack>
+															</BlendTrackList>
+														</BlendContainer>
+														<RandomSequenceContainer Name="AR_Casings_OS" ID="{93BECFB6-7691-44EA-B9C8-2CAA65ADAB16}" ShortID="553482321">
+															<PropertyList>
+																<Property Name="3DPosition" Type="int16" Value="2"/>
+																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="GameAuxSendVolume" Type="Real64">
+																	<ValueList>
+																		<Value>-6</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
+																<Property Name="InitialDelay" Type="Real64">
+																	<ValueList>
+																		<Value>0.25</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{BC912782-17AC-4903-9A93-1E6A0D167051}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="100"/>
+																					<Property Name="Min" Type="Real64" Value="-100"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="ReflectionsVolume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-16</Value>
+																	</ValueList>
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{F3F26854-221F-4FE1-B70B-59CF73AA97E6}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+																	<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+																<Reference Name="ReflectionsAuxSend">
+																	<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="WEP_AR_Casings_01" ID="{D79B6561-5D32-4929-BB78-C1E191586FD9}" ShortID="674120572">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Casings" ID="{B8FBF6FA-E09E-48B8-84F2-962F57EE9459}">
+																			<PropertyList>
+																				<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="1.25642183972912"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="25638055"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Casings" ID="{B8FBF6FA-E09E-48B8-84F2-962F57EE9459}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Casings_02" ID="{E3D1283C-4088-4388-BE14-8F6A8E00BA02}" ShortID="89530346">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Casings" ID="{BC785844-3DA5-49BD-BBAA-7B42FD14E3A0}">
+																			<PropertyList>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="1.24489503386005"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="2.5531875"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="832229830"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Casings" ID="{BC785844-3DA5-49BD-BBAA-7B42FD14E3A0}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Casings_03" ID="{B09CCD47-3FEB-490A-9CCE-FEEBC8C06F43}" ShortID="444278325">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Casings" ID="{8F9C46FE-B290-49D4-BF2C-CFCFECF395A5}">
+																			<PropertyList>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="2.52437048532731"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.80384593679458"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="676321132"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Casings" ID="{8F9C46FE-B290-49D4-BF2C-CFCFECF395A5}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Casings_04" ID="{7A683855-2741-4F97-AEAF-D32DAD6FA51A}" ShortID="585179880">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Casings" ID="{A5103055-9A6C-4384-9EAE-3996204C28C3}">
+																			<PropertyList>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="3.79231913092551"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="5.08908479119639"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="560147879"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Casings" ID="{A5103055-9A6C-4384-9EAE-3996204C28C3}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Casings_05" ID="{08FFA624-30AC-44C9-BBE0-F65104B88734}" ShortID="63033363">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Casings" ID="{2688AC00-4B10-496D-85B8-00F32D897442}">
+																			<PropertyList>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="5.06603117945824"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="6.35703343679458"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="92565130"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Casings" ID="{2688AC00-4B10-496D-85B8-00F32D897442}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Casings_06" ID="{9A041897-FB84-4E3B-B19D-4D13AD41FF09}" ShortID="1055111735">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Casings" ID="{A91B9214-4B6B-43AA-A39F-047A35EBAED4}">
+																			<PropertyList>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="6.35127003386005"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="7.64227229119639"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="736273374"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Casings" ID="{A91B9214-4B6B-43AA-A39F-047A35EBAED4}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Casings_07" ID="{6360F443-3A48-43D0-B184-0373FAE995F9}" ShortID="877083845">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Casings" ID="{E0560CAE-8B53-4E4F-BB45-64F2E87B30CF}">
+																			<PropertyList>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="7.62498208239278"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="8.90445753386005"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="630130873"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Casings" ID="{E0560CAE-8B53-4E4F-BB45-64F2E87B30CF}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Casings_08" ID="{4DA07EDB-F60E-469E-AA19-14736EA886ED}" ShortID="361666556">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Casings" ID="{8A9C78F5-DFE0-4A52-8FCC-314E79D63318}">
+																			<PropertyList>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="8.89293072799097"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="10.1839329853273"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="1033448803"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Casings" ID="{8A9C78F5-DFE0-4A52-8FCC-314E79D63318}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Casings_09" ID="{01B86104-814A-4555-ABD8-EC95B2E398EE}" ShortID="1034637214">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Casings" ID="{E2DBAACE-85BB-4A09-8C4E-D7771983D2EC}">
+																			<PropertyList>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="10.1839329853273"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="11.4634084367946"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="666983815"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Casings" ID="{E2DBAACE-85BB-4A09-8C4E-D7771983D2EC}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="WEP_AR_Casings_10" ID="{67BFA657-A6A9-443C-8DDC-178D51BBFF4C}" ShortID="177275231">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="WEP_AR_Casings" ID="{FAD1061B-5566-4820-9522-6B4E90D48D5A}">
+																			<PropertyList>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="11.4518816309255"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="312448983"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="WEP_AR_Casings" ID="{FAD1061B-5566-4820-9522-6B4E90D48D5A}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<PositioningInfo>
+																<Panner Name="" ID="{A57E0408-88E6-4DCC-9BDB-4A3C1A4392B0}">
+																	<PropertyList>
+																		<Property Name="PanX" Type="Real64" Value="42.2712933753943"/>
+																		<Property Name="PanY" Type="Real64" Value="27.8338945005612"/>
+																	</PropertyList>
+																</Panner>
+																<Position Name="" ID="{E6B59029-9494-4BB1-9C1A-9B59D0FC21C0}">
+																	<PropertyList>
+																		<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<ChildrenList>
+																		<Path2D Name="AR_Casings_Path_01" ID="{EDD61850-A0A4-4843-91AB-DB1F1B9E4C39}">
+																			<PointList>
+																				<Point>
+																					<XPos>25.96491</XPos>
+																					<YPos>40.31525</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>43.50877</XPos>
+																					<YPos>42.90719</YPos>
+																					<Flags>0</Flags>
+																					<Time>1666</Time>
+																				</Point>
+																				<Point>
+																					<XPos>65.61402</XPos>
+																					<YPos>51.3135</YPos>
+																					<Flags>0</Flags>
+																					<Time>3333</Time>
+																				</Point>
+																				<Point>
+																					<XPos>85.61404</XPos>
+																					<YPos>68.82663</YPos>
+																					<Flags>0</Flags>
+																					<Time>5000</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																		<Path2D Name="AR_Casings_Path_02" ID="{3BFC9CD2-E872-49DE-8CA8-C80B0F3E9A7F}">
+																			<PointList>
+																				<Point>
+																					<XPos>24.91228</XPos>
+																					<YPos>40.89317</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>48.77194</XPos>
+																					<YPos>42.55692</YPos>
+																					<Flags>0</Flags>
+																					<Time>1666</Time>
+																				</Point>
+																				<Point>
+																					<XPos>78.24562</XPos>
+																					<YPos>48.86165</YPos>
+																					<Flags>0</Flags>
+																					<Time>3333</Time>
+																				</Point>
+																				<Point>
+																					<XPos>92.28071</XPos>
+																					<YPos>67.07531</YPos>
+																					<Flags>0</Flags>
+																					<Time>5000</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																		<Path2D Name="AR_Casings_Path_03" ID="{A1BF3E66-A024-4650-A175-9A4AF1E48577}">
+																			<PointList>
+																				<Point>
+																					<XPos>32.2807</XPos>
+																					<YPos>41.94396</YPos>
+																					<Flags>12</Flags>
+																					<Time>0</Time>
+																				</Point>
+																				<Point>
+																					<XPos>52.98246</XPos>
+																					<YPos>52.36428</YPos>
+																					<Flags>0</Flags>
+																					<Time>1666</Time>
+																				</Point>
+																				<Point>
+																					<XPos>75.08772</XPos>
+																					<YPos>72.32925</YPos>
+																					<Flags>0</Flags>
+																					<Time>3333</Time>
+																				</Point>
+																				<Point>
+																					<XPos>85.61404</XPos>
+																					<YPos>92.99475</YPos>
+																					<Flags>0</Flags>
+																					<Time>5000</Time>
+																				</Point>
+																			</PointList>
+																		</Path2D>
+																	</ChildrenList>
+																</Position>
+															</PositioningInfo>
+														</RandomSequenceContainer>
+													</ChildrenList>
+												</Folder>
+												<Folder Name="Shot" ID="{3EB12681-4AFC-4DE5-8B7D-A40D91138B59}" ShortID="894650617">
+													<ChildrenList>
+														<Sound Name="AR_Shot_InitialTransient" ID="{5FD74276-1449-4E91-893A-5C9A500C69C4}" ShortID="902614503">
+															<PropertyList>
+																<Property Name="GameAuxSendVolume" Type="Real64">
+																	<ValueList>
+																		<Value>-6</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="MakeUpGain" Type="Real64">
+																	<ValueList>
+																		<Value>-1</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="ReflectionsVolume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+																	<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+																<Reference Name="ReflectionsAuxSend">
+																	<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AR_Shot_InitialTransient" ID="{0C4B4623-EC13-4930-965B-B9820BE3AB12}">
+																	<Language>SFX</Language>
+																	<AudioFile>AR_Shot_InitialTransient.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="635329318"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AR_Shot_InitialTransient" ID="{0C4B4623-EC13-4930-965B-B9820BE3AB12}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<RandomSequenceContainer Name="AR_Shot_LP" ID="{2C62BDEB-D7E7-4E8A-811E-864014FDC2DE}" ShortID="982142657">
+															<PropertyList>
+																<Property Name="GameAuxSendVolume" Type="Real64">
+																	<ValueList>
+																		<Value>-6</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.08"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="ReflectionsVolume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+																	<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+																<Reference Name="ReflectionsAuxSend">
+																	<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Highrise_Atrium" ID="{452ECF50-CE27-4E43-BF81-B393DD3BEE9B}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<SwitchContainer Name="AR_Shot_Constructor" ID="{D7AAC223-F0D7-4699-AFF4-57BB1167F9A9}" ShortID="133858206">
+																	<PropertyList>
+																		<Property Name="GameAuxSendVolume" Type="Real64">
+																			<ValueList>
+																				<Value>-12</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="ReflectionsVolume" Type="Real64">
+																			<ValueList>
+																				<Value>-10</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{EC3FD771-9A65-4689-A9B5-962863637073}"/>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="DefaultSwitchOrState">
+																			<ObjectRef Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}" WorkUnitID="{5DA9743F-24CB-48C8-8072-C39EB4F5CC2B}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																		<Reference Name="ReflectionsAuxSend">
+																			<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																		<Reference Name="SwitchGroupOrStateGroup">
+																			<ObjectRef Name="STA_LocationMix" ID="{A0EBFE8C-DF3E-4501-9EA4-0DC220E20E4D}" WorkUnitID="{5DA9743F-24CB-48C8-8072-C39EB4F5CC2B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<RandomSequenceContainer Name="AR_Transient" ID="{A4AE993D-49CF-4576-B0CC-3E9A338B842E}" ShortID="432333824">
+																			<PropertyList>
+																				<Property Name="MaxSoundPerInstance" Type="int16">
+																					<ValueList>
+																						<Value>2</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{F3EAD779-83EA-4B09-83AF-5B2FA78B6C12}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="50"/>
+																									<Property Name="Min" Type="Real64" Value="-50"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="UseMaxSoundPerInstance" Type="bool">
+																					<ValueList>
+																						<Value>True</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-6</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="AR_Shot_Transient" ID="{DBD8094E-EBFA-4745-ACAF-1870D62792FD}" ShortID="138196627">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AR_Shot_Transient" ID="{068D675C-D6BD-4B38-80DA-6FF6533AD965}">
+																							<Language>SFX</Language>
+																							<AudioFile>AR_Shot_Transient.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="228004887"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AR_Shot_Transient" ID="{068D675C-D6BD-4B38-80DA-6FF6533AD965}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																		<RandomSequenceContainer Name="AR_Pulse" ID="{A2338562-BD94-4241-B21B-1E29539A2A93}" ShortID="1021103110">
+																			<PropertyList>
+																				<Property Name="InitialDelay" Type="Real64">
+																					<ValueList>
+																						<Value>0.02</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{857A77B3-FD37-4126-8013-5E76C2B0E138}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="50"/>
+																									<Property Name="Min" Type="Real64" Value="-50"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-4</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="AR_Shot_Pulse" ID="{371D9D83-A106-4358-BE8E-1A6BC0CCAF3B}" ShortID="493204161">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AR_Shot_Pulse" ID="{C827F02F-99D9-49F6-B110-42F650807607}">
+																							<Language>SFX</Language>
+																							<AudioFile>AR_Shot_Pulse.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="166846503"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AR_Shot_Pulse" ID="{C827F02F-99D9-49F6-B110-42F650807607}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																		<RandomSequenceContainer Name="AR_Mech" ID="{E9E51751-817E-41F0-A880-27DE117F5D47}" ShortID="434009925">
+																			<PropertyList>
+																				<Property Name="InitialDelay" Type="Real64">
+																					<ValueList>
+																						<Value>0.01</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{A0BFA1AE-DC12-4508-ABA8-14946106D0CF}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="50"/>
+																									<Property Name="Min" Type="Real64" Value="-50"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-2</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="AR_Shot_Mech" ID="{A38D9B5C-F418-4E85-B476-74C6BDA5EA10}" ShortID="983988963">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AR_Shot_Mech" ID="{3E67DF29-9963-4C7F-82B0-1BAACC539B41}">
+																							<Language>SFX</Language>
+																							<AudioFile>AR_Shot_Mech.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="373309000"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AR_Shot_Mech" ID="{3E67DF29-9963-4C7F-82B0-1BAACC539B41}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																		<RandomSequenceContainer Name="AR_LFE" ID="{56C30FA1-1310-4959-A5EA-3EF80F2CE35E}" ShortID="184423125">
+																			<PropertyList>
+																				<Property Name="InitialDelay" Type="Real64">
+																					<ValueList>
+																						<Value>0.045</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{C6C86947-18CC-44D5-8E37-7996D92A1444}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="50"/>
+																									<Property Name="Min" Type="Real64" Value="-50"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="AR_Shot_LFE" ID="{9AD275DE-6160-4959-AB45-D442F6A6D273}" ShortID="119834818">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AR_Shot_LFE" ID="{163F28C8-F5D5-485D-B736-128579FA9F29}">
+																							<Language>SFX</Language>
+																							<AudioFile>AR_Shot_LFE.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="345176474"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AR_Shot_LFE" ID="{163F28C8-F5D5-485D-B736-128579FA9F29}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																		<RandomSequenceContainer Name="AR_Tail_Spawn" ID="{8F1F5543-CD41-4BCA-A0A2-0E60F777D196}" ShortID="425567540">
+																			<PropertyList>
+																				<Property Name="InitialDelay" Type="Real64">
+																					<ValueList>
+																						<Value>0.03</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{195D0BBD-5BC1-425D-BBA0-D50397916903}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="50"/>
+																									<Property Name="Min" Type="Real64" Value="-50"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-12</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="AR_Shot_Tail_Spawn" ID="{D8C7670C-5898-46C0-9DC8-0E9B914BBF43}" ShortID="255054171">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AR_Shot_Tail_Spawn" ID="{ED7DE5B4-F45C-4734-9317-A6687AE50C8A}">
+																							<Language>SFX</Language>
+																							<AudioFile>AR_Shot_Tail_Spawn.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="470590754"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AR_Shot_Tail_Spawn" ID="{ED7DE5B4-F45C-4734-9317-A6687AE50C8A}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																		<RandomSequenceContainer Name="AR_Tail_Atrium" ID="{B10D1A45-79F7-4DDA-8FC6-7213CD0BADD4}" ShortID="775587778">
+																			<PropertyList>
+																				<Property Name="InitialDelay" Type="Real64">
+																					<ValueList>
+																						<Value>0.03</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="MaxSoundPerInstance" Type="int16">
+																					<ValueList>
+																						<Value>2</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{99E9B8BA-D100-4DC1-9217-8DF2E6FC4135}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="50"/>
+																									<Property Name="Min" Type="Real64" Value="-50"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="UseMaxSoundPerInstance" Type="bool">
+																					<ValueList>
+																						<Value>True</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-16</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="AR_Shot_Tail_Atrium" ID="{5378F555-D5CF-443E-88E9-5DC80554207A}" ShortID="268250226">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AR_Shot_Tail_Atrium" ID="{59096B52-BDA2-4CBC-A5E4-885A2A78D7A7}">
+																							<Language>SFX</Language>
+																							<AudioFile>AR_Shot_Tail_Atrium.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="175929226"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AR_Shot_Tail_Atrium" ID="{59096B52-BDA2-4CBC-A5E4-885A2A78D7A7}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																		<RandomSequenceContainer Name="AR_Tail_Room" ID="{7946E3B9-D5DB-4F83-A01B-CC870BC274A7}" ShortID="459019367">
+																			<PropertyList>
+																				<Property Name="InitialDelay" Type="Real64">
+																					<ValueList>
+																						<Value>0.03</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{4B245A58-7B88-409C-A9B0-19AD5B24CF16}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="50"/>
+																									<Property Name="Min" Type="Real64" Value="-50"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-14</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="AR_Shot_Tail_Room" ID="{DAFB49F1-436C-4D99-8269-D12CB8890E41}" ShortID="95875654">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AR_Shot_Tail_Room" ID="{60558EAE-A62D-4070-BE92-D28D39F7C2DD}">
+																							<Language>SFX</Language>
+																							<AudioFile>AR_Shot_Tail_Room.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="14501665"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AR_Shot_Tail_Room" ID="{60558EAE-A62D-4070-BE92-D28D39F7C2DD}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																		<RandomSequenceContainer Name="AR_Empty_Rattle" ID="{9D98A792-8B07-405D-B904-7D5F83EDF9D8}" ShortID="874969577">
+																			<PropertyList>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-2</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="AR_Empty_Rattle" ID="{7AD575AD-55E3-4F00-9918-0D6364426285}" ShortID="1017255512">
+																					<PropertyList>
+																						<Property Name="GameAuxSendVolume" Type="Real64">
+																							<ValueList>
+																								<Value>-6</Value>
+																							</ValueList>
+																						</Property>
+																						<Property Name="ReflectionsVolume" Type="Real64">
+																							<ValueList>
+																								<Value>-2</Value>
+																							</ValueList>
+																						</Property>
+																						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+																							<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																						<Reference Name="ReflectionsAuxSend">
+																							<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="AR_Empty_Rattle" ID="{19966EF9-ED66-4953-883A-4B8D3E7DB2E9}">
+																							<Language>SFX</Language>
+																							<AudioFile>AR_Empty_Rattle.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="548026506"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="AR_Empty_Rattle" ID="{19966EF9-ED66-4953-883A-4B8D3E7DB2E9}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																			<ObjectLists>
+																				<ObjectList Name="RTPC">
+																					<Reference>
+																						<Local>
+																							<RTPC Name="" ID="{32A75124-137D-49D6-B491-438BBC4A19D8}" ShortID="196423554">
+																								<PropertyList>
+																									<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
+																								</PropertyList>
+																								<ReferenceList>
+																									<Reference Name="ControlInput">
+																										<ObjectRef Name="PAR_AR_AmmoCount" ID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																									</Reference>
+																									<Reference Name="Curve">
+																										<Custom>
+																											<Curve Name="" ID="{11CAA31D-5826-4F61-A485-E8786CBEF78F}">
+																												<PropertyList>
+																													<Property Name="Flags" Type="int32" Value="3"/>
+																												</PropertyList>
+																												<PointList>
+																													<Point>
+																														<XPos>0</XPos>
+																														<YPos>0</YPos>
+																														<Flags>5</Flags>
+																														<SegmentShape>Exp2</SegmentShape>
+																													</Point>
+																													<Point>
+																														<XPos>15</XPos>
+																														<YPos>-192</YPos>
+																														<Flags>0</Flags>
+																													</Point>
+																													<Point>
+																														<XPos>30</XPos>
+																														<YPos>-192</YPos>
+																														<Flags>37</Flags>
+																													</Point>
+																												</PointList>
+																											</Curve>
+																										</Custom>
+																									</Reference>
+																								</ReferenceList>
+																							</RTPC>
+																						</Local>
+																					</Reference>
+																				</ObjectList>
+																			</ObjectLists>
+																		</RandomSequenceContainer>
+																		<RandomSequenceContainer Name="AR_Casings" ID="{C1D132F0-1259-40A1-A3D8-A79E15EB0019}" ShortID="1017834795">
+																			<PropertyList>
+																				<Property Name="3DPosition" Type="int16" Value="2"/>
+																				<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																				<Property Name="GameAuxSendVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-6</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
+																				<Property Name="InitialDelay" Type="Real64">
+																					<ValueList>
+																						<Value>0.25</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{00909F82-7B4E-458F-9D51-61B997145983}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="100"/>
+																									<Property Name="Min" Type="Real64" Value="-100"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="ReflectionsVolume" Type="Real64">
+																					<ValueList>
+																						<Value>-2</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-15</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																				</Reference>
+																				<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+																					<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																				<Reference Name="ReflectionsAuxSend">
+																					<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="WEP_AR_Casings_01" ID="{3F2D4086-8DF5-4FED-895D-680A748A3BBC}" ShortID="277952131">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="WEP_AR_Casings" ID="{A05063FB-2C75-4DF8-B1D2-6D3C66B1C704}">
+																							<PropertyList>
+																								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="1.25642183972912"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="25638055"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="WEP_AR_Casings" ID="{A05063FB-2C75-4DF8-B1D2-6D3C66B1C704}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="WEP_AR_Casings_02" ID="{C8848F5F-BC7B-4997-B1B2-65BB462F6648}" ShortID="454654017">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="WEP_AR_Casings" ID="{DE5905E2-C24C-4A8D-ACE7-9F288CAC1E02}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="1.24489503386005"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="2.5531875"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="832229830"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="WEP_AR_Casings" ID="{DE5905E2-C24C-4A8D-ACE7-9F288CAC1E02}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="WEP_AR_Casings_03" ID="{27552DB8-7EE8-47A3-9DED-66E13C4441F2}" ShortID="1038904113">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="WEP_AR_Casings" ID="{F09C90C5-EE8B-48FD-8B44-F46E0EC03A4E}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="2.52437048532731"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="3.80384593679458"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="676321132"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="WEP_AR_Casings" ID="{F09C90C5-EE8B-48FD-8B44-F46E0EC03A4E}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="WEP_AR_Casings_04" ID="{916078EF-24F2-46B7-8C97-82E01E7B0DCF}" ShortID="165527071">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="WEP_AR_Casings" ID="{6CAD291F-D7B4-4B3D-BCD1-8E8B702F95BA}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="3.79231913092551"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="5.08908479119639"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="560147879"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="WEP_AR_Casings" ID="{6CAD291F-D7B4-4B3D-BCD1-8E8B702F95BA}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="WEP_AR_Casings_05" ID="{A96A7FE5-88AE-4EF5-BE4C-1F6F4975D667}" ShortID="831649247">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="WEP_AR_Casings" ID="{1C72D919-2CE8-4E4A-96AA-D008C29B6A67}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="5.06603117945824"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="6.35703343679458"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="92565130"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="WEP_AR_Casings" ID="{1C72D919-2CE8-4E4A-96AA-D008C29B6A67}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="WEP_AR_Casings_06" ID="{2C88E71F-35D0-4B8E-BCD2-A4E6E2297855}" ShortID="688634406">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="WEP_AR_Casings" ID="{5C78283A-AB18-4DE4-9B14-991C6037814F}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="6.35127003386005"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="7.64227229119639"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="736273374"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="WEP_AR_Casings" ID="{5C78283A-AB18-4DE4-9B14-991C6037814F}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="WEP_AR_Casings_07" ID="{2CFC8E06-76DA-490F-B176-FEEDD6924279}" ShortID="975115719">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="WEP_AR_Casings" ID="{8527E991-DFCB-4998-A7BC-5B2CA2821E31}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="7.62498208239278"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="8.90445753386005"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="630130873"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="WEP_AR_Casings" ID="{8527E991-DFCB-4998-A7BC-5B2CA2821E31}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="WEP_AR_Casings_08" ID="{08DAB908-6A9B-491F-88FB-EC4C5D5EC96A}" ShortID="160037165">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="WEP_AR_Casings" ID="{7723B148-D09A-44AD-B5E1-D7601E9D32E2}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="8.89293072799097"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="10.1839329853273"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="1033448803"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="WEP_AR_Casings" ID="{7723B148-D09A-44AD-B5E1-D7601E9D32E2}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="WEP_AR_Casings_09" ID="{6E2C3896-3D6A-46F8-8115-A41A4B7EF9EF}" ShortID="195020083">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="WEP_AR_Casings" ID="{BE65A50B-337E-472E-9A0F-500C6DEEE07E}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="10.1839329853273"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="11.4634084367946"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="666983815"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="WEP_AR_Casings" ID="{BE65A50B-337E-472E-9A0F-500C6DEEE07E}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="WEP_AR_Casings_10" ID="{5CAC9270-A597-45EE-98AE-02E02D93419E}" ShortID="48255136">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="WEP_AR_Casings" ID="{56BFFE6F-FEB8-48F9-A4FD-A34803FC8714}">
+																							<PropertyList>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimBegin" Type="Real64" Value="11.4518816309255"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>WEP_AR_Casings.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="312448983"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="WEP_AR_Casings" ID="{56BFFE6F-FEB8-48F9-A4FD-A34803FC8714}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																			<PositioningInfo>
+																				<Panner Name="" ID="{CED33B34-59FF-4DA3-B330-1064147263F5}">
+																					<PropertyList>
+																						<Property Name="PanX" Type="Real64" Value="41.850683491062"/>
+																						<Property Name="PanY" Type="Real64" Value="44.668911335578"/>
+																					</PropertyList>
+																				</Panner>
+																				<Position Name="" ID="{7975FF76-4117-4AB0-9C1D-7083B4CE7B26}">
+																					<PropertyList>
+																						<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																						<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																					</PropertyList>
+																					<ChildrenList>
+																						<Path2D Name="AR_Casings_Path_01" ID="{B588F1F2-98B6-4198-9D1F-955793EAC061}">
+																							<PointList>
+																								<Point>
+																									<XPos>10.8772</XPos>
+																									<YPos>31.20842</YPos>
+																									<Flags>12</Flags>
+																									<Time>0</Time>
+																								</Point>
+																								<Point>
+																									<XPos>28.42106</XPos>
+																									<YPos>33.80036</YPos>
+																									<Flags>0</Flags>
+																									<Time>1666</Time>
+																								</Point>
+																								<Point>
+																									<XPos>50.52631</XPos>
+																									<YPos>42.20667</YPos>
+																									<Flags>0</Flags>
+																									<Time>3333</Time>
+																								</Point>
+																								<Point>
+																									<XPos>70.52633</XPos>
+																									<YPos>59.7198</YPos>
+																									<Flags>0</Flags>
+																									<Time>5000</Time>
+																								</Point>
+																							</PointList>
+																						</Path2D>
+																						<Path2D Name="AR_Casings_Path_02" ID="{713C0A8D-43E8-4EC3-829C-7DCCCFD4498B}">
+																							<PointList>
+																								<Point>
+																									<XPos>11.22807</XPos>
+																									<YPos>31.43607</YPos>
+																									<Flags>12</Flags>
+																									<Time>0</Time>
+																								</Point>
+																								<Point>
+																									<XPos>35.08772</XPos>
+																									<YPos>33.09982</YPos>
+																									<Flags>0</Flags>
+																									<Time>1666</Time>
+																								</Point>
+																								<Point>
+																									<XPos>64.5614</XPos>
+																									<YPos>39.40455</YPos>
+																									<Flags>0</Flags>
+																									<Time>3333</Time>
+																								</Point>
+																								<Point>
+																									<XPos>78.59649</XPos>
+																									<YPos>57.61821</YPos>
+																									<Flags>0</Flags>
+																									<Time>5000</Time>
+																								</Point>
+																							</PointList>
+																						</Path2D>
+																						<Path2D Name="AR_Casings_Path_03" ID="{82AFBA10-0A96-4146-AB25-179E79167E0D}">
+																							<PointList>
+																								<Point>
+																									<XPos>11.22808</XPos>
+																									<YPos>26.88265</YPos>
+																									<Flags>12</Flags>
+																									<Time>0</Time>
+																								</Point>
+																								<Point>
+																									<XPos>31.92983</XPos>
+																									<YPos>37.30297</YPos>
+																									<Flags>0</Flags>
+																									<Time>1666</Time>
+																								</Point>
+																								<Point>
+																									<XPos>54.03509</XPos>
+																									<YPos>57.26794</YPos>
+																									<Flags>0</Flags>
+																									<Time>3333</Time>
+																								</Point>
+																								<Point>
+																									<XPos>64.56141</XPos>
+																									<YPos>77.93344</YPos>
+																									<Flags>0</Flags>
+																									<Time>5000</Time>
+																								</Point>
+																							</PointList>
+																						</Path2D>
+																					</ChildrenList>
+																				</Position>
+																			</PositioningInfo>
+																		</RandomSequenceContainer>
+																	</ChildrenList>
+																	<ObjectLists>
+																		<ObjectList Name="RTPC">
+																			<Reference>
+																				<Local>
+																					<RTPC Name="" ID="{EBACC228-42AF-4780-BF95-BC23E2D0E669}" ShortID="341079305">
+																						<PropertyList>
+																							<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
+																						</PropertyList>
+																						<ReferenceList>
+																							<Reference Name="ControlInput">
+																								<ObjectRef Name="PAR_AR_AmmoCount" ID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																							</Reference>
+																							<Reference Name="Curve">
+																								<Custom>
+																									<Curve Name="" ID="{18C52F77-3948-41A6-A394-DA5385136DFE}">
+																										<PropertyList>
+																											<Property Name="Flags" Type="int32" Value="3"/>
+																										</PropertyList>
+																										<PointList>
+																											<Point>
+																												<XPos>0</XPos>
+																												<YPos>-4</YPos>
+																												<Flags>5</Flags>
+																												<SegmentShape>Log2</SegmentShape>
+																											</Point>
+																											<Point>
+																												<XPos>30</XPos>
+																												<YPos>0</YPos>
+																												<Flags>37</Flags>
+																											</Point>
+																										</PointList>
+																									</Curve>
+																								</Custom>
+																							</Reference>
+																						</ReferenceList>
+																					</RTPC>
+																				</Local>
+																			</Reference>
+																		</ObjectList>
+																	</ObjectLists>
+																	<GroupingInfo>
+																		<GroupingBehaviorList>
+																			<GroupingBehavior>
+																				<ItemRef Name="AR_Transient" ID="{A4AE993D-49CF-4576-B0CC-3E9A338B842E}"/>
+																			</GroupingBehavior>
+																			<GroupingBehavior>
+																				<ItemRef Name="AR_Tail_Spawn" ID="{8F1F5543-CD41-4BCA-A0A2-0E60F777D196}"/>
+																			</GroupingBehavior>
+																			<GroupingBehavior>
+																				<ItemRef Name="AR_Tail_Atrium" ID="{B10D1A45-79F7-4DDA-8FC6-7213CD0BADD4}"/>
+																			</GroupingBehavior>
+																			<GroupingBehavior>
+																				<ItemRef Name="AR_Mech" ID="{E9E51751-817E-41F0-A880-27DE117F5D47}"/>
+																			</GroupingBehavior>
+																			<GroupingBehavior>
+																				<ItemRef Name="AR_Pulse" ID="{A2338562-BD94-4241-B21B-1E29539A2A93}"/>
+																			</GroupingBehavior>
+																			<GroupingBehavior>
+																				<ItemRef Name="AR_Empty_Rattle" ID="{9D98A792-8B07-405D-B904-7D5F83EDF9D8}"/>
+																			</GroupingBehavior>
+																			<GroupingBehavior>
+																				<ItemRef Name="AR_LFE" ID="{56C30FA1-1310-4959-A5EA-3EF80F2CE35E}"/>
+																			</GroupingBehavior>
+																			<GroupingBehavior>
+																				<ItemRef Name="AR_Tail_Room" ID="{7946E3B9-D5DB-4F83-A01B-CC870BC274A7}"/>
+																			</GroupingBehavior>
+																			<GroupingBehavior>
+																				<ItemRef Name="AR_Casings" ID="{C1D132F0-1259-40A1-A3D8-A79E15EB0019}"/>
+																			</GroupingBehavior>
+																		</GroupingBehaviorList>
+																		<GroupingList>
+																			<Grouping>
+																				<SwitchRef Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
+																				<ItemList>
+																					<ItemRef Name="AR_LFE" ID="{56C30FA1-1310-4959-A5EA-3EF80F2CE35E}"/>
+																					<ItemRef Name="AR_Mech" ID="{E9E51751-817E-41F0-A880-27DE117F5D47}"/>
+																					<ItemRef Name="AR_Pulse" ID="{A2338562-BD94-4241-B21B-1E29539A2A93}"/>
+																					<ItemRef Name="AR_Transient" ID="{A4AE993D-49CF-4576-B0CC-3E9A338B842E}"/>
+																					<ItemRef Name="AR_Tail_Spawn" ID="{8F1F5543-CD41-4BCA-A0A2-0E60F777D196}"/>
+																					<ItemRef Name="AR_Empty_Rattle" ID="{9D98A792-8B07-405D-B904-7D5F83EDF9D8}"/>
+																					<ItemRef Name="AR_Casings" ID="{C1D132F0-1259-40A1-A3D8-A79E15EB0019}"/>
+																				</ItemList>
+																			</Grouping>
+																			<Grouping>
+																				<SwitchRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
+																				<ItemList>
+																					<ItemRef Name="AR_LFE" ID="{56C30FA1-1310-4959-A5EA-3EF80F2CE35E}"/>
+																					<ItemRef Name="AR_Mech" ID="{E9E51751-817E-41F0-A880-27DE117F5D47}"/>
+																					<ItemRef Name="AR_Pulse" ID="{A2338562-BD94-4241-B21B-1E29539A2A93}"/>
+																					<ItemRef Name="AR_Transient" ID="{A4AE993D-49CF-4576-B0CC-3E9A338B842E}"/>
+																					<ItemRef Name="AR_Tail_Atrium" ID="{B10D1A45-79F7-4DDA-8FC6-7213CD0BADD4}"/>
+																					<ItemRef Name="AR_Empty_Rattle" ID="{9D98A792-8B07-405D-B904-7D5F83EDF9D8}"/>
+																					<ItemRef Name="AR_Casings" ID="{C1D132F0-1259-40A1-A3D8-A79E15EB0019}"/>
+																				</ItemList>
+																			</Grouping>
+																			<Grouping>
+																				<SwitchRef Name="None" ID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
+																				<ItemList>
+																					<ItemRef Name="AR_Casings" ID="{C1D132F0-1259-40A1-A3D8-A79E15EB0019}"/>
+																					<ItemRef Name="AR_LFE" ID="{56C30FA1-1310-4959-A5EA-3EF80F2CE35E}"/>
+																					<ItemRef Name="AR_Mech" ID="{E9E51751-817E-41F0-A880-27DE117F5D47}"/>
+																					<ItemRef Name="AR_Pulse" ID="{A2338562-BD94-4241-B21B-1E29539A2A93}"/>
+																					<ItemRef Name="AR_Transient" ID="{A4AE993D-49CF-4576-B0CC-3E9A338B842E}"/>
+																					<ItemRef Name="AR_Tail_Atrium" ID="{B10D1A45-79F7-4DDA-8FC6-7213CD0BADD4}"/>
+																					<ItemRef Name="AR_Empty_Rattle" ID="{9D98A792-8B07-405D-B904-7D5F83EDF9D8}"/>
+																				</ItemList>
+																			</Grouping>
+																			<Grouping>
+																				<SwitchRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
+																				<ItemList>
+																					<ItemRef Name="AR_Casings" ID="{C1D132F0-1259-40A1-A3D8-A79E15EB0019}"/>
+																					<ItemRef Name="AR_LFE" ID="{56C30FA1-1310-4959-A5EA-3EF80F2CE35E}"/>
+																					<ItemRef Name="AR_Mech" ID="{E9E51751-817E-41F0-A880-27DE117F5D47}"/>
+																					<ItemRef Name="AR_Pulse" ID="{A2338562-BD94-4241-B21B-1E29539A2A93}"/>
+																					<ItemRef Name="AR_Transient" ID="{A4AE993D-49CF-4576-B0CC-3E9A338B842E}"/>
+																					<ItemRef Name="AR_Tail_Room" ID="{7946E3B9-D5DB-4F83-A01B-CC870BC274A7}"/>
+																					<ItemRef Name="AR_Empty_Rattle" ID="{9D98A792-8B07-405D-B904-7D5F83EDF9D8}"/>
+																				</ItemList>
+																			</Grouping>
+																			<Grouping>
+																				<SwitchRef Name="STA_Outdoors_Balcony_Center" ID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
+																				<ItemList>
+																					<ItemRef Name="AR_LFE" ID="{56C30FA1-1310-4959-A5EA-3EF80F2CE35E}"/>
+																					<ItemRef Name="AR_Mech" ID="{E9E51751-817E-41F0-A880-27DE117F5D47}"/>
+																					<ItemRef Name="AR_Pulse" ID="{A2338562-BD94-4241-B21B-1E29539A2A93}"/>
+																					<ItemRef Name="AR_Transient" ID="{A4AE993D-49CF-4576-B0CC-3E9A338B842E}"/>
+																					<ItemRef Name="AR_Tail_Atrium" ID="{B10D1A45-79F7-4DDA-8FC6-7213CD0BADD4}"/>
+																					<ItemRef Name="AR_Empty_Rattle" ID="{9D98A792-8B07-405D-B904-7D5F83EDF9D8}"/>
+																					<ItemRef Name="AR_Casings" ID="{C1D132F0-1259-40A1-A3D8-A79E15EB0019}"/>
+																				</ItemList>
+																			</Grouping>
+																		</GroupingList>
+																	</GroupingInfo>
+																</SwitchContainer>
+															</ChildrenList>
+														</RandomSequenceContainer>
+													</ChildrenList>
+												</Folder>
+											</ChildrenList>
+										</ActorMixer>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Handling" ID="{E05449F8-9A9F-48CC-AF58-AAFE814A6E52}" ShortID="50149993"/>
+						<Folder Name="Reloading" ID="{F6A13C33-3DB2-4ABF-B320-6A2DC5B82C34}" ShortID="1025804543"/>
+						<Folder Name="Targeting" ID="{EB6B92E0-FB40-48DA-9D50-8CBD2808EE92}" ShortID="28010617"/>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

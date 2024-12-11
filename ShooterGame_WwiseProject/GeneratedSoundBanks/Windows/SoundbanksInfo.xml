@@ -1108,7 +1108,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{B142AF29-F3DC-6F83-B944-D9F551220782}">
+		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{77B2FB27-DBEA-868E-77BB-2E4A5D43D120}">
 			<ObjectPath>AR_Shoot_Stop</ObjectPath>
 			<ShortName>AR_Shoot_Stop</ShortName>
 			<Path>Event/AR_Shoot_Stop.bnk</Path>
@@ -1900,7 +1900,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{84A87FEE-F88C-4334-CD31-5CA7C8BAE3C9}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{590B0DA7-0126-FE7B-2DED-103B0609976A}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -4395,7 +4395,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3838114450" Type="Event" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" Language="SFX" Hash="{006D13C7-520E-6907-021E-3DEF98A2EAFF}">
+		<SoundBank Id="3838114450" Type="Event" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" Language="SFX" Hash="{26990BC9-4C41-66A0-5613-B93F81B74A66}">
 			<ObjectPath>AR_Shoot_Empty</ObjectPath>
 			<ShortName>AR_Shoot_Empty</ShortName>
 			<Path>Event/AR_Shoot_Empty.bnk</Path>
@@ -4412,7 +4412,7 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
-				<Event Id="3838114450" Name="AR_Shoot_Empty" ObjectPath="\Events\Weapons\Shooting\Shoot\AR_Shoot_Empty" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" DurationType="OneShot" DurationMin="0.7914786" DurationMax="0.7914786">
+				<Event Id="3838114450" Name="AR_Shoot_Empty" ObjectPath="\Events\Weapons\Shooting\Shoot\AR_Shoot_Empty" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" MaxAttenuation="13000" DurationType="OneShot" DurationMin="0.7914786" DurationMax="0.7914786">
 					<MediaRefs>
 						<MediaRef Id="375493363"/>
 					</MediaRefs>
@@ -4465,5 +4465,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BD36999D-F0EA-3DF9-A15C-B2E8A4DEB091}</FileHash>
+	<FileHash>{2BFD4665-61DF-96B9-BD9B-324D9418EAAA}</FileHash>
 </SoundBanksInfo>
