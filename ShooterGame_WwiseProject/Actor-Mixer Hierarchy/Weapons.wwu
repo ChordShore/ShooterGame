@@ -39,7 +39,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-24</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -79,7 +79,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-9</Value>
+																<Value>-14</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -133,7 +133,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-9</Value>
+																<Value>-11</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -167,6 +167,18 @@
 						<Folder Name="Shooting" ID="{FA0BFD2F-71CF-4C74-8B54-DF095950816E}" ShortID="336719472">
 							<ChildrenList>
 								<ActorMixer Name="WEP_Shoot" ID="{4AF50236-552A-474D-8A81-21368185C6BD}" ShortID="205194726">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0F1D3D44-2BFF-4E82-8060-883D445E9C8D}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -183,9 +195,12 @@
 														<Value>-6</Value>
 													</ValueList>
 												</Property>
+												<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="10"/>
 												<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="OverrideHdrEnvelope" Type="bool" Value="True"/>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="ReflectionsVolume" Type="Real64">
 													<ValueList>
@@ -197,6 +212,11 @@
 													<ValueList>
 														<Value>-6</Value>
 													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8F1FAB64-F7C6-4E0F-BF0D-5C800BA6B25B}"/>
+														</ModifierInfo>
+													</ModifierList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -222,6 +242,13 @@
 																	<ValueList>
 																		<Value>10</Value>
 																	</ValueList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{BDD51759-DFDC-499B-A304-E40DCBE37496}"/>
+																		</ModifierInfo>
+																	</ModifierList>
 																</Property>
 															</PropertyList>
 															<ReferenceList>
@@ -250,6 +277,11 @@
 																			<ValueList>
 																				<Value>-4</Value>
 																			</ValueList>
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{7A5863C3-DD6F-47D2-A4E7-C68EEAB9E122}"/>
+																				</ModifierInfo>
+																			</ModifierList>
 																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
@@ -308,6 +340,11 @@
 																			<ValueList>
 																				<Value>-4</Value>
 																			</ValueList>
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{EC349F1B-25B3-4E8C-8EDE-5E8B35EF5258}"/>
+																				</ModifierInfo>
+																			</ModifierList>
 																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
@@ -412,12 +449,12 @@
 																												<Flags>5</Flags>
 																											</Point>
 																											<Point>
-																												<XPos>1</XPos>
+																												<XPos>0.49</XPos>
 																												<YPos>0</YPos>
 																												<Flags>0</Flags>
 																											</Point>
 																											<Point>
-																												<XPos>1.001</XPos>
+																												<XPos>0.5</XPos>
 																												<YPos>-399.99996</YPos>
 																												<Flags>0</Flags>
 																											</Point>
@@ -496,8 +533,13 @@
 																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-17</Value>
+																		<Value>-16</Value>
 																	</ValueList>
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{1B475484-5ACC-4DC6-94B1-E74493287229}"/>
+																		</ModifierInfo>
+																	</ModifierList>
 																</Property>
 															</PropertyList>
 															<ReferenceList>
@@ -991,6 +1033,13 @@
 																			</ValueList>
 																		</Property>
 																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{C2EB5BF3-3D10-45E1-8C07-89D3470A6F06}"/>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
@@ -1966,6 +2015,46 @@
 																			</PositioningInfo>
 																		</RandomSequenceContainer>
 																	</ChildrenList>
+																	<ObjectLists>
+																		<ObjectList Name="RTPC">
+																			<Reference>
+																				<Local>
+																					<RTPC Name="" ID="{8281382A-64E9-4282-87FE-3AA1AFB9010C}" ShortID="567569311">
+																						<PropertyList>
+																							<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
+																						</PropertyList>
+																						<ReferenceList>
+																							<Reference Name="ControlInput">
+																								<ObjectRef Name="PAR_AR_AmmoCount" ID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																							</Reference>
+																							<Reference Name="Curve">
+																								<Custom>
+																									<Curve Name="" ID="{763D06DE-A893-4551-B297-FFA87244DA83}">
+																										<PropertyList>
+																											<Property Name="Flags" Type="int32" Value="3"/>
+																										</PropertyList>
+																										<PointList>
+																											<Point>
+																												<XPos>0</XPos>
+																												<YPos>-4</YPos>
+																												<Flags>5</Flags>
+																												<SegmentShape>Log2</SegmentShape>
+																											</Point>
+																											<Point>
+																												<XPos>30</XPos>
+																												<YPos>0</YPos>
+																												<Flags>37</Flags>
+																											</Point>
+																										</PointList>
+																									</Curve>
+																								</Custom>
+																							</Reference>
+																						</ReferenceList>
+																					</RTPC>
+																				</Local>
+																			</Reference>
+																		</ObjectList>
+																	</ObjectLists>
 																	<GroupingInfo>
 																		<GroupingBehaviorList>
 																			<GroupingBehavior>
@@ -2073,7 +2162,10 @@
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="10"/>
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="OverrideHdrEnvelope" Type="bool" Value="True"/>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="RenderEffect0" Type="bool">
 													<ValueList>
@@ -2082,8 +2174,13 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-10</Value>
+														<Value>-6</Value>
 													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F065FE0A-EBBA-4CD4-9F5B-A9FDF96829CD}"/>
+														</ModifierInfo>
+													</ModifierList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -2719,6 +2816,18 @@
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="WEP_Impact" ID="{A81ED751-A1F2-49C2-9484-0F58734BB54B}" ShortID="520471511">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7879BC21-6262-41F5-8FF4-8C4EF409ABA3}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -2733,6 +2842,13 @@
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9084C0E9-03BB-4E83-ABF2-6F0FAF4F7958}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -5620,8 +5736,18 @@
 										<ActorMixer Name="GL_Impact" ID="{D7196C42-F7EB-4F4F-8BE6-243F23955B13}" ShortID="962572682">
 											<PropertyList>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
+												<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="10"/>
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="OverrideHdrEnvelope" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{91290DAD-3F01-4681-A917-C3B7BBCA826D}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -5655,7 +5781,7 @@
 														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-7</Value>
+																<Value>-4</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -7735,6 +7861,13 @@
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="WEP_Travel" ID="{72D684F5-FE0D-4338-A74C-7A4C74E79242}" ShortID="27252172">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -7827,7 +7960,7 @@
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-7</Value>
+																<Value>-9</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -7923,6 +8056,16 @@
 											</ValueList>
 										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{65437885-5DFA-4722-9CEC-490DC99A3B71}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -7942,6 +8085,11 @@
 													<ValueList>
 														<Value>-3</Value>
 													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{DA3848FC-C171-42C1-963E-E16B957E2DF2}"/>
+														</ModifierInfo>
+													</ModifierList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -7988,8 +8136,13 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>-6</Value>
 													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{6527C0AC-2676-455A-B1A5-A9379E51C898}"/>
+														</ModifierInfo>
+													</ModifierList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -8035,6 +8188,13 @@
 									</ChildrenList>
 								</ActorMixer>
 								<ActorMixer Name="WEP_Selectfire" ID="{914C3C2F-44BC-4794-A590-9E52738C485F}" ShortID="63080836">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -8097,6 +8257,11 @@
 											</ValueList>
 										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -8111,6 +8276,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<SwitchContainer Name="WEP_Targeting_Disengage_Switch" ID="{EF01A6E5-7DB7-40F5-AF7F-626B16562D49}" ShortID="238695654">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -8210,7 +8382,7 @@
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-14</Value>
+																<Value>-12</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -8279,6 +8451,11 @@
 											</ValueList>
 										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -8293,6 +8470,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<SwitchContainer Name="WEP_Targeting_Engage_Switch" ID="{8C561696-9BB5-4EEF-93EE-D34F59452806}" ShortID="75662660">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -8336,7 +8520,7 @@
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-13</Value>
+																<Value>-11</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -8392,7 +8576,7 @@
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-13</Value>
+																<Value>-12</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -8465,6 +8649,11 @@
 											</ValueList>
 										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -8538,7 +8727,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-6</Value>
+														<Value>-4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -8602,6 +8791,13 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="WEP_3P" ID="{AB093C68-B6AD-49BB-B488-0CB74984897C}" ShortID="454301462">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-96</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>

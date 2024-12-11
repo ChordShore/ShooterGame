@@ -14,6 +14,23 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Diegetic" ID="{0B750C85-EB1C-448A-9D15-8D1F0D4C6BD6}">
+							<PropertyList>
+								<Property Name="HdrEnable" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="HdrReleaseTime" Type="Real64">
+									<ValueList>
+										<Value>0.5</Value>
+									</ValueList>
+								</Property>
+								<Property Name="HdrThreshold" Type="Real64">
+									<ValueList>
+										<Value>-24</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ChildrenList>
 								<Bus Name="Auxiliaries" ID="{639A62DF-CA02-438D-9BA0-A89D32368F6D}">
 									<ChildrenList>
@@ -111,7 +128,7 @@
 																		<PointList>
 																			<Point>
 																				<XPos>-48</XPos>
-																				<YPos>0.11256</YPos>
+																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
@@ -121,7 +138,7 @@
 																				<SegmentShape>SCurve</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>-0</XPos>
+																				<XPos>0</XPos>
 																				<YPos>-200</YPos>
 																				<Flags>0</Flags>
 																			</Point>
@@ -167,7 +184,7 @@
 																				<SegmentShape>SCurve</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>-0</XPos>
+																				<XPos>0</XPos>
 																				<YPos>-200</YPos>
 																				<Flags>0</Flags>
 																			</Point>
@@ -213,7 +230,7 @@
 																				<SegmentShape>SCurve</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>-0</XPos>
+																				<XPos>0</XPos>
 																				<YPos>-200</YPos>
 																				<Flags>0</Flags>
 																			</Point>
@@ -269,7 +286,7 @@
 																				<SegmentShape>SCurve</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>-0</XPos>
+																				<XPos>0</XPos>
 																				<YPos>-200</YPos>
 																				<Flags>0</Flags>
 																			</Point>
@@ -523,7 +540,7 @@
 																						<SegmentShape>SCurve</SegmentShape>
 																					</Point>
 																					<Point>
-																						<XPos>-0</XPos>
+																						<XPos>0</XPos>
 																						<YPos>-200</YPos>
 																						<Flags>0</Flags>
 																					</Point>
@@ -559,7 +576,7 @@
 																				<PointList>
 																					<Point>
 																						<XPos>-48</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>5</Flags>
 																					</Point>
 																					<Point>
@@ -662,7 +679,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>-24</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																						<SegmentShape>SCurve</SegmentShape>
 																					</Point>
@@ -713,7 +730,7 @@
 																						<SegmentShape>SCurve</SegmentShape>
 																					</Point>
 																					<Point>
-																						<XPos>-0</XPos>
+																						<XPos>0</XPos>
 																						<YPos>-200</YPos>
 																						<Flags>0</Flags>
 																					</Point>
