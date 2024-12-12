@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{27041F66-F029-E16B-302C-C2A25C13F022}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{33B39875-6373-BCC1-99F7-C37532CDE719}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -26,7 +26,7 @@
 			</Plugins>
 			<Busses>
 				<Bus Id="85412153" Name="Ambience" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Ambience" GUID="{50E91ED7-30B7-46DB-9728-3124B4D7FD49}"/>
-				<Bus Id="247557814" Name="Foley" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Foley" GUID="{AFADED97-9376-47EE-8E61-63C3E2539C84}"/>
+				<Bus Id="247557814" Name="Foley" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Foley" GUID="{686337CC-9F96-4AB3-9330-70E747D77E14}"/>
 				<Bus Id="316118591" Name="AMB_Emitters" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Ambience\AMB_Emitters" GUID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}"/>
 				<Bus Id="432164595" Name="Auxiliaries" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries" GUID="{639A62DF-CA02-438D-9BA0-A89D32368F6D}"/>
 				<Bus Id="505457527" Name="AR_Ricochets" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Impacts\AR_Ricochets" GUID="{81ACA39A-04D0-4D44-A2A9-6D1524CDD79B}"/>
@@ -52,6 +52,8 @@
 				<Bus Id="2151963051" Name="Items" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Items" GUID="{37718E87-198C-4650-BC59-3AC05063F1D4}"/>
 				<Bus Id="2420281969" Name="Non-Diegetic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic" GUID="{23395B5E-B13C-48B4-AFA0-9A3158AD2C61}"/>
 				<Bus Id="2940432316" Name="Stingers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic\Stingers" GUID="{14F313A7-2F5E-4100-BC04-AAE99EC1A71C}"/>
+				<Bus Id="3032584468" Name="FOL_1P" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Foley\FOL_1P" GUID="{AFADED97-9376-47EE-8E61-63C3E2539C84}"/>
+				<Bus Id="3066139898" Name="FOL_3P" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Foley\FOL_3P" GUID="{E07A439C-BFA4-474D-B113-54EFECAF78BF}"/>
 				<Bus Id="3074349213" Name="Sanctuary" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Sanctuary" GUID="{5BA6AF2C-2325-4C30-8363-C8F3B4D195B0}"/>
 				<Bus Id="3079155500" Name="GL_Shoot" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Shots\GL_Shoot" GUID="{D9143790-A231-44C7-BDD1-B6585167F525}">
 					<PluginRefs>
@@ -70,6 +72,13 @@
 				</Bus>
 				<Bus Id="3930136735" Name="Dialogue" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Dialogue" GUID="{80C87677-6DFA-46DD-8E4C-337CF0B1357D}"/>
 				<Bus Id="3991942870" Name="Music" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Non-Diegetic\Music" GUID="{94CBEB29-D115-40FC-911D-11DA90BC78FA}"/>
+				<Bus Id="4058567002" Name="AR_Shoot_3P" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Weapons\Shots\AR_Shoot_3P" GUID="{65387E38-0E98-4897-A763-5932FEFA1468}">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3239115655"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 			</Busses>
 			<AuxBusses>
 				<AuxBus Id="1257150314" Name="Highrise_Spawn" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_Spawn" GUID="{55F14D17-2EFA-4F39-8772-765885B7CB75}">
@@ -294,5 +303,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4061BF74-3D54-2C1F-ABF8-361B8810E416}</FileHash>
+	<FileHash>{EA9EEBF3-AFD1-84FE-4518-8C798903F71D}</FileHash>
 </SoundBanksInfo>

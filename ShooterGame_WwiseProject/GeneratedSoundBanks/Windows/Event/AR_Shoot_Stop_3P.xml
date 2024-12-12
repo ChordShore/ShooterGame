@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="1233309807" Type="Event" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" Language="SFX" Hash="{0AE1A73C-33F4-59AA-13C8-78480F1F23A3}">
+			<ObjectPath>AR_Shoot_Stop_3P</ObjectPath>
+			<ShortName>AR_Shoot_Stop_3P</ShortName>
+			<Path>Event/AR_Shoot_Stop_3P.bnk</Path>
+			<Media>
+				<File Id="25638055" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/25638055.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_99DF46A2.wem</CachePath>
+				</File>
+				<File Id="92565130" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/92565130.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_449FFE22.wem</CachePath>
+				</File>
+				<File Id="312448983" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/312448983.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_45427A39.wem</CachePath>
+				</File>
+				<File Id="344300635" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AR_Empty_PowerDown.wav</ShortName>
+					<Path>Media/344300635.wem</Path>
+					<CachePath>SFX/AR_Empty_PowerDown_89FF1070.wem</CachePath>
+				</File>
+				<File Id="375493363" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AR_Empty_BoltLock.wav</ShortName>
+					<Path>Media/375493363.wem</Path>
+					<CachePath>SFX/AR_Empty_BoltLock_B424AAB3.wem</CachePath>
+				</File>
+				<File Id="560147879" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/560147879.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_FA689FA7.wem</CachePath>
+				</File>
+				<File Id="630130873" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/630130873.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_9A9B8D0D.wem</CachePath>
+				</File>
+				<File Id="666983815" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/666983815.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_747995F8.wem</CachePath>
+				</File>
+				<File Id="676321132" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/676321132.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_66DD9C72.wem</CachePath>
+				</File>
+				<File Id="736273374" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/736273374.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_F8802C62.wem</CachePath>
+				</File>
+				<File Id="832229830" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/832229830.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_83F6225D.wem</CachePath>
+				</File>
+				<File Id="1033448803" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>WEP_AR_Casings.wav</ShortName>
+					<Path>Media/1033448803.wem</Path>
+					<CachePath>SFX/WEP_AR_Casings_1AD09543.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2781261543" Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_6dB_Peak_Slow_Release" GUID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
+			</Plugins>
+			<Events>
+				<Event Id="1233309807" Name="AR_Shoot_Stop_3P" ObjectPath="\Events\Weapons\3P\Shooting\Shoot\AR_Shoot_Stop_3P" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" DurationType="OneShot" DurationMin="1.6754444" DurationMax="1.6754444">
+					<MediaRefs>
+						<MediaRef Id="25638055"/>
+						<MediaRef Id="92565130"/>
+						<MediaRef Id="312448983"/>
+						<MediaRef Id="344300635"/>
+						<MediaRef Id="375493363"/>
+						<MediaRef Id="560147879"/>
+						<MediaRef Id="630130873"/>
+						<MediaRef Id="666983815"/>
+						<MediaRef Id="676321132"/>
+						<MediaRef Id="736273374"/>
+						<MediaRef Id="832229830"/>
+						<MediaRef Id="1033448803"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2781261543"/>
+						</ShareSets>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="2583655610" Name="PAR_AR_AmmoCount" ObjectPath="\Game Parameters\Weapons\PAR_AR_AmmoCount" GUID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{B102DDF2-A92B-EE57-A670-40A75B824F25}</FileHash>
+</SoundBanksInfo>

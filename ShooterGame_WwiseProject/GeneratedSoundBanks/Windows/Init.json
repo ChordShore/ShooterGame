@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{27041F66-F029-E16B-302C-C2A25C13F022}",
+    "Hash": "{33B39875-6373-BCC1-99F7-C37532CDE719}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -121,7 +121,7 @@
       "Id": "247557814",
       "Name": "Foley",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Foley",
-      "GUID": "{AFADED97-9376-47EE-8E61-63C3E2539C84}"
+      "GUID": "{686337CC-9F96-4AB3-9330-70E747D77E14}"
      },
      {
       "Id": "316118591",
@@ -216,6 +216,18 @@
       "GUID": "{14F313A7-2F5E-4100-BC04-AAE99EC1A71C}"
      },
      {
+      "Id": "3032584468",
+      "Name": "FOL_1P",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Foley\\FOL_1P",
+      "GUID": "{AFADED97-9376-47EE-8E61-63C3E2539C84}"
+     },
+     {
+      "Id": "3066139898",
+      "Name": "FOL_3P",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Foley\\FOL_3P",
+      "GUID": "{E07A439C-BFA4-474D-B113-54EFECAF78BF}"
+     },
+     {
       "Id": "3074349213",
       "Name": "Sanctuary",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Sanctuary",
@@ -264,6 +276,19 @@
       "Name": "Music",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Non-Diegetic\\Music",
       "GUID": "{94CBEB29-D115-40FC-911D-11DA90BC78FA}"
+     },
+     {
+      "Id": "4058567002",
+      "Name": "AR_Shoot_3P",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Weapons\\Shots\\AR_Shoot_3P",
+      "GUID": "{65387E38-0E98-4897-A763-5932FEFA1468}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3239115655"
+        }
+       ]
+      }
      }
     ],
     "AuxBusses": [
@@ -1023,6 +1048,6 @@
     ]
    }
   ],
-  "FileHash": "{4B670443-2AE5-3895-6410-8BE600279A0E}"
+  "FileHash": "{C40C6849-15EF-CF29-6D27-0C6F62D9165A}"
  }
 }

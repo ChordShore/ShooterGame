@@ -274,6 +274,75 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="1P" ID="{837F2706-CCE4-4569-9B03-438078F31592}" ShortID="824191809"/>
+				<Folder Name="3P" ID="{2810BD6A-F6A6-45CF-8564-5DC9CAE8BC38}" ShortID="522271275">
+					<ChildrenList>
+						<Folder Name="Shooting" ID="{D01EE4B3-D148-4846-85E9-6106AE13DADD}" ShortID="797769173">
+							<ChildrenList>
+								<Folder Name="Shoot" ID="{5EC4623B-926E-491D-9A95-67E3C6957126}" ShortID="390814776">
+									<ChildrenList>
+										<Event Name="AR_Shoot_LP_3P" ID="{0DA8BBE2-35ED-455A-AC53-823AD682E725}">
+											<ChildrenList>
+												<Action Name="" ID="{821D0BED-EFAB-4029-86CA-F6D3F67DF146}" ShortID="737751103">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AR_Shot_LP_3P" ID="{2C62BDEB-D7E7-4E8A-811E-864014FDC2DE}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{F18FCA95-FDBD-49EF-8535-995D01332798}" ShortID="713357886">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AR_Shot_LP_3P" ID="{2C62BDEB-D7E7-4E8A-811E-864014FDC2DE}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{10F3189A-CA03-44C0-A8BE-A29ADCDB0BE4}" ShortID="827230014">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AR_Shot_InitialTransient_3P" ID="{5FD74276-1449-4E91-893A-5C9A500C69C4}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="AR_Shoot_Stop_3P" ID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}">
+											<ChildrenList>
+												<Action Name="" ID="{4691D884-2C79-4404-AC9E-EE6B1D3A6636}" ShortID="543174774">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AR_Shot_LP_3P" ID="{2C62BDEB-D7E7-4E8A-811E-864014FDC2DE}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{AF391CCC-064E-4ECF-8568-E4D64B860B73}" ShortID="791439719">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AR_Empty_Constructor_3P" ID="{148E6ECE-9590-4393-B493-B6E0C258E6F5}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+												<Action Name="" ID="{D7B7B4C0-F323-45F9-B932-C5505C3C49D7}" ShortID="871454782">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AR_Casings_OS_3P" ID="{93BECFB6-7691-44EA-B9C8-2CAA65ADAB16}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

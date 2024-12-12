@@ -190,7 +190,7 @@
 									<ChildrenList>
 										<ActorMixer Name="AR_Shoot" ID="{043EFF4C-D912-4D2D-9631-1F7832F46B7A}" ShortID="1063384167">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="GameAuxSendVolume" Type="Real64">
 													<ValueList>
 														<Value>-6</Value>
@@ -203,7 +203,6 @@
 												<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="OverrideHdrEnvelope" Type="bool" Value="True"/>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="ReflectionsVolume" Type="Real64">
 													<ValueList>
 														<Value>-2</Value>
@@ -8796,13 +8795,6 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="WEP_3P" ID="{AB093C68-B6AD-49BB-B488-0CB74984897C}" ShortID="454301462">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-96</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -8815,6 +8807,13 @@
 						<Folder Name="Shooting" ID="{0D42F21C-2901-4782-81B3-5AAC8FCF2CD7}" ShortID="742673411">
 							<ChildrenList>
 								<ActorMixer Name="WEP_Shoot_3P" ID="{D1B42028-720C-43EA-8656-9D2A59C766A6}" ShortID="377505515">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -8826,7 +8825,7 @@
 									<ChildrenList>
 										<ActorMixer Name="AR_Shoot" ID="{531461A2-65D2-4E77-B890-E84C6F16AB07}" ShortID="984478917">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="GameAuxSendVolume" Type="Real64">
 													<ValueList>
 														<Value>-6</Value>
@@ -8868,7 +8867,7 @@
 													<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="AR_Shoot" ID="{3D3B38C5-3BC0-4447-86DE-206228E9859C}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+													<ObjectRef Name="AR_Shoot_3P" ID="{65387E38-0E98-4897-A763-5932FEFA1468}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 												</Reference>
 												<Reference Name="ReflectionsAuxSend">
 													<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
@@ -8877,7 +8876,7 @@
 											<ChildrenList>
 												<Folder Name="Empty" ID="{5BE3FEBB-96C0-4C2C-94B6-CE5EF1788B22}" ShortID="410770962">
 													<ChildrenList>
-														<BlendContainer Name="AR_Empty_Constructor" ID="{148E6ECE-9590-4393-B493-B6E0C258E6F5}" ShortID="942082126">
+														<BlendContainer Name="AR_Empty_Constructor_3P" ID="{148E6ECE-9590-4393-B493-B6E0C258E6F5}" ShortID="942082126">
 															<PropertyList>
 																<Property Name="Highpass" Type="int16">
 																	<ValueList>
@@ -9137,7 +9136,7 @@
 																</BlendTrack>
 															</BlendTrackList>
 														</BlendContainer>
-														<RandomSequenceContainer Name="AR_Casings_OS" ID="{93BECFB6-7691-44EA-B9C8-2CAA65ADAB16}" ShortID="553482321">
+														<RandomSequenceContainer Name="AR_Casings_OS_3P" ID="{93BECFB6-7691-44EA-B9C8-2CAA65ADAB16}" ShortID="553482321">
 															<PropertyList>
 																<Property Name="3DPosition" Type="int16" Value="2"/>
 																<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -9152,6 +9151,7 @@
 																		<Value>0.25</Value>
 																	</ValueList>
 																</Property>
+																<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
 																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																<Property Name="Pitch" Type="int32">
 																	<ModifierList>
@@ -9192,9 +9192,6 @@
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-																<Reference Name="ReflectionsAuxSend">
-																	<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -9573,7 +9570,7 @@
 												</Folder>
 												<Folder Name="Shot" ID="{3EB12681-4AFC-4DE5-8B7D-A40D91138B59}" ShortID="894650617">
 													<ChildrenList>
-														<Sound Name="AR_Shot_InitialTransient" ID="{5FD74276-1449-4E91-893A-5C9A500C69C4}" ShortID="902614503">
+														<Sound Name="AR_Shot_InitialTransient_3P" ID="{5FD74276-1449-4E91-893A-5C9A500C69C4}" ShortID="902614503">
 															<PropertyList>
 																<Property Name="GameAuxSendVolume" Type="Real64">
 																	<ValueList>
@@ -9624,7 +9621,7 @@
 																<ActiveSource Name="AR_Shot_InitialTransient" ID="{0C4B4623-EC13-4930-965B-B9820BE3AB12}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
-														<RandomSequenceContainer Name="AR_Shot_LP" ID="{2C62BDEB-D7E7-4E8A-811E-864014FDC2DE}" ShortID="982142657">
+														<RandomSequenceContainer Name="AR_Shot_LP_3P" ID="{2C62BDEB-D7E7-4E8A-811E-864014FDC2DE}" ShortID="982142657">
 															<PropertyList>
 																<Property Name="GameAuxSendVolume" Type="Real64">
 																	<ValueList>

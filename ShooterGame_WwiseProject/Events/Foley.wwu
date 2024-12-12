@@ -94,6 +94,25 @@
 						<Event Name="FOL_Trashcan_Collision" ID="{83AF3510-8046-4206-B4B6-E1A12D72AC55}"/>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="3P" ID="{DAFE4E6D-E26A-48C0-B6ED-D3E2232BBDD6}" ShortID="545076235">
+					<ChildrenList>
+						<Folder Name="FOL_Footsteps_3P" ID="{59A61E3D-67FB-4DE1-B090-60194DD467BF}" ShortID="173253590">
+							<ChildrenList>
+								<Event Name="FOL_Footsteps_3P" ID="{1D12CBC8-581A-4CFB-8BB3-EDC75ED09C05}">
+									<ChildrenList>
+										<Action Name="" ID="{2D7D5E53-3FFC-49C1-9F47-F90E39EF202C}" ShortID="138016958">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="FOL_Footstep_Sequence_3P" ID="{67A04CD5-EF65-4741-A4A1-1A2401E64DEA}" WorkUnitID="{86FE2FEF-52C2-4237-A56E-8F523A5859D5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

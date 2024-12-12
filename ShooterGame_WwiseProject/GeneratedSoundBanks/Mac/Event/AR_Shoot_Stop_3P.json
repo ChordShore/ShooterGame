@@ -1,0 +1,215 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "1233309807",
+    "Type": "Event",
+    "GUID": "{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}",
+    "Language": "SFX",
+    "Hash": "{0AE1A73C-33F4-59AA-13C8-78480F1F23A3}",
+    "ObjectPath": "AR_Shoot_Stop_3P",
+    "ShortName": "AR_Shoot_Stop_3P",
+    "Path": "Event/AR_Shoot_Stop_3P.bnk",
+    "Media": [
+     {
+      "Id": "25638055",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "WEP_AR_Casings.wav",
+      "Path": "Media/25638055.wem",
+      "CachePath": "SFX/WEP_AR_Casings_99DF46A2.wem"
+     },
+     {
+      "Id": "92565130",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "WEP_AR_Casings.wav",
+      "Path": "Media/92565130.wem",
+      "CachePath": "SFX/WEP_AR_Casings_449FFE22.wem"
+     },
+     {
+      "Id": "312448983",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "WEP_AR_Casings.wav",
+      "Path": "Media/312448983.wem",
+      "CachePath": "SFX/WEP_AR_Casings_45427A39.wem"
+     },
+     {
+      "Id": "344300635",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AR_Empty_PowerDown.wav",
+      "Path": "Media/344300635.wem",
+      "CachePath": "SFX/AR_Empty_PowerDown_89FF1070.wem"
+     },
+     {
+      "Id": "375493363",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AR_Empty_BoltLock.wav",
+      "Path": "Media/375493363.wem",
+      "CachePath": "SFX/AR_Empty_BoltLock_B424AAB3.wem"
+     },
+     {
+      "Id": "560147879",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "WEP_AR_Casings.wav",
+      "Path": "Media/560147879.wem",
+      "CachePath": "SFX/WEP_AR_Casings_FA689FA7.wem"
+     },
+     {
+      "Id": "630130873",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "WEP_AR_Casings.wav",
+      "Path": "Media/630130873.wem",
+      "CachePath": "SFX/WEP_AR_Casings_9A9B8D0D.wem"
+     },
+     {
+      "Id": "666983815",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "WEP_AR_Casings.wav",
+      "Path": "Media/666983815.wem",
+      "CachePath": "SFX/WEP_AR_Casings_747995F8.wem"
+     },
+     {
+      "Id": "676321132",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "WEP_AR_Casings.wav",
+      "Path": "Media/676321132.wem",
+      "CachePath": "SFX/WEP_AR_Casings_66DD9C72.wem"
+     },
+     {
+      "Id": "736273374",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "WEP_AR_Casings.wav",
+      "Path": "Media/736273374.wem",
+      "CachePath": "SFX/WEP_AR_Casings_F8802C62.wem"
+     },
+     {
+      "Id": "832229830",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "WEP_AR_Casings.wav",
+      "Path": "Media/832229830.wem",
+      "CachePath": "SFX/WEP_AR_Casings_83F6225D.wem"
+     },
+     {
+      "Id": "1033448803",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "WEP_AR_Casings.wav",
+      "Path": "Media/1033448803.wem",
+      "CachePath": "SFX/WEP_AR_Casings_1AD09543.wem"
+     }
+    ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2781261543",
+       "Name": "Brick_Wall_Minus_6dB_Peak_Slow_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_6dB_Peak_Slow_Release",
+       "GUID": "{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "1233309807",
+      "Name": "AR_Shoot_Stop_3P",
+      "ObjectPath": "\\Events\\Weapons\\3P\\Shooting\\Shoot\\AR_Shoot_Stop_3P",
+      "GUID": "{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.6754444",
+      "DurationMax": "1.6754444",
+      "MediaRefs": [
+       {
+        "Id": "25638055"
+       },
+       {
+        "Id": "92565130"
+       },
+       {
+        "Id": "312448983"
+       },
+       {
+        "Id": "344300635"
+       },
+       {
+        "Id": "375493363"
+       },
+       {
+        "Id": "560147879"
+       },
+       {
+        "Id": "630130873"
+       },
+       {
+        "Id": "666983815"
+       },
+       {
+        "Id": "676321132"
+       },
+       {
+        "Id": "736273374"
+       },
+       {
+        "Id": "832229830"
+       },
+       {
+        "Id": "1033448803"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2781261543"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2583655610",
+      "Name": "PAR_AR_AmmoCount",
+      "ObjectPath": "\\Game Parameters\\Weapons\\PAR_AR_AmmoCount",
+      "GUID": "{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{04493455-7645-27F8-94FB-116EBAD5EBB0}"
+ }
+}

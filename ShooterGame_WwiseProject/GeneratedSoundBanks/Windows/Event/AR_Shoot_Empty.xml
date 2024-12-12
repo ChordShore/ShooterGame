@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="3838114450" Type="Event" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" Language="SFX" Hash="{26990BC9-4C41-66A0-5613-B93F81B74A66}">
+		<SoundBank Id="3838114450" Type="Event" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" Language="SFX" Hash="{A7FD1894-8DC7-7EFA-D64C-BDDFAB3AA070}">
 			<ObjectPath>AR_Shoot_Empty</ObjectPath>
 			<ShortName>AR_Shoot_Empty</ShortName>
 			<Path>Event/AR_Shoot_Empty.bnk</Path>
@@ -18,7 +18,7 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
-				<Event Id="3838114450" Name="AR_Shoot_Empty" ObjectPath="\Events\Weapons\Shooting\Shoot\AR_Shoot_Empty" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" MaxAttenuation="13000" DurationType="OneShot" DurationMin="0.7914786" DurationMax="0.7914786">
+				<Event Id="3838114450" Name="AR_Shoot_Empty" ObjectPath="\Events\Weapons\Shooting\Shoot\AR_Shoot_Empty" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" DurationType="OneShot" DurationMin="0.7914786" DurationMax="0.7914786">
 					<MediaRefs>
 						<MediaRef Id="375493363"/>
 					</MediaRefs>
@@ -37,5 +37,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3BE92AE3-6FCB-9E2B-59C3-8FA79C64AB86}</FileHash>
+	<FileHash>{D1B8F927-ADDD-038D-9CB1-5F8CF3FFB844}</FileHash>
 </SoundBanksInfo>
