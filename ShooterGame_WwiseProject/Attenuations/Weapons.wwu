@@ -675,7 +675,7 @@
 				</Attenuation>
 				<Attenuation Name="ATN_AR_Shoot_3P" ID="{87AAA0BA-0ECB-4711-8868-93417109F07B}" ShortID="257248108">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="8000"/>
+						<Property Name="RadiusMax" Type="Real64" Value="6000"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -691,13 +691,13 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>160</XPos>
+											<XPos>120</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>8000</XPos>
+											<XPos>6000</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -722,16 +722,10 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Exp2</SegmentShape>
+											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>6000</XPos>
-											<YPos>100</YPos>
-											<Flags>0</Flags>
-											<SegmentShape>Log2</SegmentShape>
-										</Point>
-										<Point>
-											<XPos>8000</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -750,16 +744,10 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Exp2</SegmentShape>
+											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>6000</XPos>
-											<YPos>100</YPos>
-											<Flags>0</Flags>
-											<SegmentShape>Log2</SegmentShape>
-										</Point>
-										<Point>
-											<XPos>8000</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -778,16 +766,16 @@
 											<XPos>0</XPos>
 											<YPos>100</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Log2</SegmentShape>
+											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>123.07692</XPos>
-											<YPos>100</YPos>
+											<XPos>500</XPos>
+											<YPos>20</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>8000</XPos>
+											<XPos>6000</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -806,9 +794,16 @@
 											<XPos>0</XPos>
 											<YPos>100</YPos>
 											<Flags>5</Flags>
+											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>8000</XPos>
+											<XPos>500</XPos>
+											<YPos>17.42191</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Exp2</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>6000</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>

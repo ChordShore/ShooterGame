@@ -248,7 +248,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{85F2D108-FCB9-8503-8C4E-B6DBB46639F4}">
+		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{EA32FEE5-CE93-A0E8-71AE-BF304B1158E8}">
 			<ObjectPath>\SoundBanks\Foley\Foley</ObjectPath>
 			<ShortName>Foley</ShortName>
 			<Path>Foley.bnk</Path>
@@ -1108,7 +1108,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="262625171" Type="Event" GUID="{0DA8BBE2-35ED-455A-AC53-823AD682E725}" Language="SFX" Hash="{F3E6F976-8505-AE29-0CEB-78CCD7BF7F40}">
+		<SoundBank Id="262625171" Type="Event" GUID="{0DA8BBE2-35ED-455A-AC53-823AD682E725}" Language="SFX" Hash="{A3D0BFE1-2D2E-7FE4-13D3-68A5DBE10C59}">
 			<ObjectPath>AR_Shoot_LP_3P</ObjectPath>
 			<ShortName>AR_Shoot_LP_3P</ShortName>
 			<Path>Event/AR_Shoot_LP_3P.bnk</Path>
@@ -1808,7 +1808,7 @@
 				<Event Id="3006080354" Name="UI_Toggle" ObjectPath="\Events\Interface\UI_Toggle" GUID="{797C0C31-AE30-4A12-9686-6408980D163E}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1233309807" Type="Event" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" Language="SFX" Hash="{6D96D70D-D2EA-CBCC-CEB8-F0236452BF4D}">
+		<SoundBank Id="1233309807" Type="Event" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" Language="SFX" Hash="{603A5308-1D4D-1988-B891-D4AB1F83AC02}">
 			<ObjectPath>AR_Shoot_Stop_3P</ObjectPath>
 			<ShortName>AR_Shoot_Stop_3P</ShortName>
 			<Path>Event/AR_Shoot_Stop_3P.bnk</Path>
@@ -1880,7 +1880,7 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
-				<Event Id="1233309807" Name="AR_Shoot_Stop_3P" ObjectPath="\Events\Weapons\3P\Shooting\Shoot\AR_Shoot_Stop_3P" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" MaxAttenuation="8000" DurationType="OneShot" DurationMin="1.4926512" DurationMax="1.4926512">
+				<Event Id="1233309807" Name="AR_Shoot_Stop_3P" ObjectPath="\Events\Weapons\3P\Shooting\Shoot\AR_Shoot_Stop_3P" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" MaxAttenuation="6000" DurationType="OneShot" DurationMin="1.4926512" DurationMax="1.4926512">
 					<MediaRefs>
 						<MediaRef Id="25638055"/>
 						<MediaRef Id="92565130"/>
@@ -1972,7 +1972,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{ADD56C24-5FCF-B29B-2DC4-53E6239E6E1E}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{AD3220EB-6613-73A0-F899-7A72A784A92B}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -2273,7 +2273,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1409859314" Type="Event" GUID="{1D12CBC8-581A-4CFB-8BB3-EDC75ED09C05}" Language="SFX" Hash="{3911E52A-445C-0E51-5857-AB2B9805B72F}">
+		<SoundBank Id="1409859314" Type="Event" GUID="{1D12CBC8-581A-4CFB-8BB3-EDC75ED09C05}" Language="SFX" Hash="{BB7C20DC-4C5A-2938-E06D-3F92CD3DA9F0}">
 			<ObjectPath>FOL_Footsteps_3P</ObjectPath>
 			<ShortName>FOL_Footsteps_3P</ShortName>
 			<Path>Event/FOL_Footsteps_3P.bnk</Path>
@@ -4688,7 +4688,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{A5DCADE1-9C76-0B81-5B39-5ACA68D5BA16}">
+		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{741BDF62-1FC0-CA2A-0D00-6A916191AD66}">
 			<ObjectPath>FOL_Footstep_L</ObjectPath>
 			<ShortName>FOL_Footstep_L</ShortName>
 			<Path>Event/FOL_Footstep_L.bnk</Path>
@@ -5682,5 +5682,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6BF5B068-ACF0-AC0C-B58A-B2046E4DD7CE}</FileHash>
+	<FileHash>{2C38398F-BC33-CBB7-C1C3-4B480561550C}</FileHash>
 </SoundBanksInfo>
