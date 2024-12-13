@@ -538,7 +538,7 @@
     "Type": "User",
     "GUID": "{E4E1B551-3907-4673-8D70-D72000D8EB19}",
     "Language": "SFX",
-    "Hash": "{18B7F9C9-2ED6-C4D7-457C-4C26C868F0CE}",
+    "Hash": "{85F2D108-FCB9-8503-8C4E-B6DBB46639F4}",
     "ObjectPath": "\\SoundBanks\\Foley\\Foley",
     "ShortName": "Foley",
     "Path": "Foley.bnk",
@@ -2505,7 +2505,7 @@
     "Type": "Event",
     "GUID": "{0DA8BBE2-35ED-455A-AC53-823AD682E725}",
     "Language": "SFX",
-    "Hash": "{3DC7C765-296A-9916-BE52-34697BCD3FF7}",
+    "Hash": "{F3E6F976-8505-AE29-0CEB-78CCD7BF7F40}",
     "ObjectPath": "AR_Shoot_LP_3P",
     "ShortName": "AR_Shoot_LP_3P",
     "Path": "Event/AR_Shoot_LP_3P.bnk",
@@ -4056,7 +4056,7 @@
     "Type": "Event",
     "GUID": "{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}",
     "Language": "SFX",
-    "Hash": "{0AE1A73C-33F4-59AA-13C8-78480F1F23A3}",
+    "Hash": "{6D96D70D-D2EA-CBCC-CEB8-F0236452BF4D}",
     "ObjectPath": "AR_Shoot_Stop_3P",
     "ShortName": "AR_Shoot_Stop_3P",
     "Path": "Event/AR_Shoot_Stop_3P.bnk",
@@ -4188,9 +4188,10 @@
       "Name": "AR_Shoot_Stop_3P",
       "ObjectPath": "\\Events\\Weapons\\3P\\Shooting\\Shoot\\AR_Shoot_Stop_3P",
       "GUID": "{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}",
+      "MaxAttenuation": "8000",
       "DurationType": "OneShot",
-      "DurationMin": "1.6754444",
-      "DurationMax": "1.6754444",
+      "DurationMin": "1.4926512",
+      "DurationMax": "1.4926512",
       "MediaRefs": [
        {
         "Id": "25638055"
@@ -4384,7 +4385,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{80CE7DB0-313E-6234-FDF4-FA975B3A3D2D}",
+    "Hash": "{54147A2B-5F10-81DF-AC8C-11A88CE03875}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -5426,7 +5427,7 @@
     "Type": "Event",
     "GUID": "{1D12CBC8-581A-4CFB-8BB3-EDC75ED09C05}",
     "Language": "SFX",
-    "Hash": "{768984B0-7951-C685-9343-68F18C725679}",
+    "Hash": "{3911E52A-445C-0E51-5857-AB2B9805B72F}",
     "ObjectPath": "FOL_Footsteps_3P",
     "ShortName": "FOL_Footsteps_3P",
     "Path": "Event/FOL_Footsteps_3P.bnk",
@@ -6194,9 +6195,10 @@
       "Name": "FOL_Footsteps_3P",
       "ObjectPath": "\\Events\\Foley\\3P\\FOL_Footsteps_3P\\FOL_Footsteps_3P",
       "GUID": "{1D12CBC8-581A-4CFB-8BB3-EDC75ED09C05}",
+      "MaxAttenuation": "5000",
       "DurationType": "OneShot",
-      "DurationMin": "0.3707094",
-      "DurationMax": "0.60835236",
+      "DurationMin": "0.39275295",
+      "DurationMax": "0.6445269",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -11224,7 +11226,7 @@
     "Type": "Event",
     "GUID": "{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}",
     "Language": "SFX",
-    "Hash": "{6B5C9379-E0A8-08FB-CF89-4D0ADA85CFFB}",
+    "Hash": "{A5DCADE1-9C76-0B81-5B39-5ACA68D5BA16}",
     "ObjectPath": "FOL_Footstep_L",
     "ShortName": "FOL_Footstep_L",
     "Path": "Event/FOL_Footstep_L.bnk",
@@ -13366,6 +13368,6 @@
     ]
    }
   ],
-  "FileHash": "{64B1F361-7270-5D38-3EEF-F3C1FA28BD41}"
+  "FileHash": "{3C74B5B4-15C7-B79C-66C7-1282B235870C}"
  }
 }

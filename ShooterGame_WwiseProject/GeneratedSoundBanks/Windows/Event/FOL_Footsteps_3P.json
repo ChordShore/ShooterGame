@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{1D12CBC8-581A-4CFB-8BB3-EDC75ED09C05}",
     "Language": "SFX",
-    "Hash": "{768984B0-7951-C685-9343-68F18C725679}",
+    "Hash": "{3911E52A-445C-0E51-5857-AB2B9805B72F}",
     "ObjectPath": "FOL_Footsteps_3P",
     "ShortName": "FOL_Footsteps_3P",
     "Path": "Event/FOL_Footsteps_3P.bnk",
@@ -778,9 +778,10 @@
       "Name": "FOL_Footsteps_3P",
       "ObjectPath": "\\Events\\Foley\\3P\\FOL_Footsteps_3P\\FOL_Footsteps_3P",
       "GUID": "{1D12CBC8-581A-4CFB-8BB3-EDC75ED09C05}",
+      "MaxAttenuation": "5000",
       "DurationType": "OneShot",
-      "DurationMin": "0.3707094",
-      "DurationMax": "0.60835236",
+      "DurationMin": "0.39275295",
+      "DurationMax": "0.6445269",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -1983,6 +1984,6 @@
     ]
    }
   ],
-  "FileHash": "{81088122-0BC1-5D5A-BA59-3E68F35830BA}"
+  "FileHash": "{D8519B86-BA78-83B6-3FFF-EF61E3C3555A}"
  }
 }
