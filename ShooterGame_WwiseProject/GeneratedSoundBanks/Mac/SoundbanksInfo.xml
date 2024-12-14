@@ -1108,7 +1108,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="262625171" Type="Event" GUID="{0DA8BBE2-35ED-455A-AC53-823AD682E725}" Language="SFX" Hash="{A3D0BFE1-2D2E-7FE4-13D3-68A5DBE10C59}">
+		<SoundBank Id="262625171" Type="Event" GUID="{0DA8BBE2-35ED-455A-AC53-823AD682E725}" Language="SFX" Hash="{273044DF-EEE8-5A8B-E516-7DEA924AA4FF}">
 			<ObjectPath>AR_Shoot_LP_3P</ObjectPath>
 			<ShortName>AR_Shoot_LP_3P</ShortName>
 			<Path>Event/AR_Shoot_LP_3P.bnk</Path>
@@ -1808,7 +1808,7 @@
 				<Event Id="3006080354" Name="UI_Toggle" ObjectPath="\Events\Interface\UI_Toggle" GUID="{797C0C31-AE30-4A12-9686-6408980D163E}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1233309807" Type="Event" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" Language="SFX" Hash="{603A5308-1D4D-1988-B891-D4AB1F83AC02}">
+		<SoundBank Id="1233309807" Type="Event" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" Language="SFX" Hash="{BF89206C-BBFE-A9F2-7F73-A77089BA1ED5}">
 			<ObjectPath>AR_Shoot_Stop_3P</ObjectPath>
 			<ShortName>AR_Shoot_Stop_3P</ShortName>
 			<Path>Event/AR_Shoot_Stop_3P.bnk</Path>
@@ -1880,7 +1880,7 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
-				<Event Id="1233309807" Name="AR_Shoot_Stop_3P" ObjectPath="\Events\Weapons\3P\Shooting\Shoot\AR_Shoot_Stop_3P" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" MaxAttenuation="6000" DurationType="OneShot" DurationMin="1.4926512" DurationMax="1.4926512">
+				<Event Id="1233309807" Name="AR_Shoot_Stop_3P" ObjectPath="\Events\Weapons\3P\Shooting\Shoot\AR_Shoot_Stop_3P" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" MaxAttenuation="8000" DurationType="OneShot" DurationMin="1.4926512" DurationMax="1.4926512">
 					<MediaRefs>
 						<MediaRef Id="25638055"/>
 						<MediaRef Id="92565130"/>
@@ -1972,7 +1972,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{5D4EC69D-EF22-C3CC-F0FB-19CF3F46D0E2}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{80CDE6A2-8CF5-A457-99EE-006A57B794E1}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -3117,7 +3117,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{A2F7DC27-6F61-39DE-F410-31672E47900C}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{2724A046-80AD-C6CD-765C-D86DBC4A06B9}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -3312,7 +3312,7 @@
 				</File>
 				<File Id="370818997" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_LFE.wav</ShortName>
-					<CachePath>SFX/GL_LFE_C0D1FB18.wem</CachePath>
+					<CachePath>SFX/GL_LFE_2066F9EC.wem</CachePath>
 				</File>
 				<File Id="373309000" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AR_Shot_Mech.wav</ShortName>
@@ -3348,7 +3348,7 @@
 				</File>
 				<File Id="431394652" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Mech_1.wav</ShortName>
-					<CachePath>SFX/GL_Mech_1_C0D1FB18.wem</CachePath>
+					<CachePath>SFX/GL_Mech_1_2066F9EC.wem</CachePath>
 				</File>
 				<File Id="432981530" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AR_Aim.wav</ShortName>
@@ -3420,7 +3420,7 @@
 				</File>
 				<File Id="554984534" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Mech_3.wav</ShortName>
-					<CachePath>SFX/GL_Mech_3_C0D1FB18.wem</CachePath>
+					<CachePath>SFX/GL_Mech_3_2066F9EC.wem</CachePath>
 				</File>
 				<File Id="555455356" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
@@ -3496,7 +3496,7 @@
 				</File>
 				<File Id="705838031" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Tail_Atrium.wav</ShortName>
-					<CachePath>SFX/GL_Tail_Atrium_C0D1FB18.wem</CachePath>
+					<CachePath>SFX/GL_Tail_Atrium_2066F9EC.wem</CachePath>
 				</File>
 				<File Id="713162547" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
@@ -3552,7 +3552,7 @@
 				</File>
 				<File Id="807012812" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Tail_Spawn.wav</ShortName>
-					<CachePath>SFX/GL_Tail_Spawn_33FBD11D.wem</CachePath>
+					<CachePath>SFX/GL_Tail_Spawn_FAF56659.wem</CachePath>
 				</File>
 				<File Id="809278308" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
@@ -3564,7 +3564,7 @@
 				</File>
 				<File Id="820552392" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Tail_Room.wav</ShortName>
-					<CachePath>SFX/GL_Tail_Room_CE081D4F.wem</CachePath>
+					<CachePath>SFX/GL_Tail_Room_3553D263.wem</CachePath>
 				</File>
 				<File Id="826207383" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
@@ -3600,7 +3600,7 @@
 				</File>
 				<File Id="928118353" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Pulse.wav</ShortName>
-					<CachePath>SFX/GL_Pulse_C0D1FB18.wem</CachePath>
+					<CachePath>SFX/GL_Pulse_2066F9EC.wem</CachePath>
 				</File>
 				<File Id="931298175" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
@@ -3620,7 +3620,7 @@
 				</File>
 				<File Id="978521279" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Transient.wav</ShortName>
-					<CachePath>SFX/GL_Transient_C0D1FB18.wem</CachePath>
+					<CachePath>SFX/GL_Transient_2066F9EC.wem</CachePath>
 				</File>
 				<File Id="993604397" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
@@ -3652,7 +3652,7 @@
 				</File>
 				<File Id="1036012855" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Mech_2.wav</ShortName>
-					<CachePath>SFX/GL_Mech_2_C0D1FB18.wem</CachePath>
+					<CachePath>SFX/GL_Mech_2_2066F9EC.wem</CachePath>
 				</File>
 				<File Id="1043739804" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
@@ -4527,7 +4527,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2151963051" Type="User" GUID="{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}" Language="SFX" Hash="{D3281FEC-F840-4F06-631E-55921E2CEA28}">
+		<SoundBank Id="2151963051" Type="User" GUID="{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}" Language="SFX" Hash="{FFFEF585-DD3A-24B0-1B7F-7352D3BFFEBF}">
 			<ObjectPath>\SoundBanks\Items\Items</ObjectPath>
 			<ShortName>Items</ShortName>
 			<Path>Items.bnk</Path>
@@ -4606,7 +4606,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2289907698" Type="Event" GUID="{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}" Language="SFX" Hash="{ED78B6B8-F835-BFBD-A255-985F1F6B516A}">
+		<SoundBank Id="2289907698" Type="Event" GUID="{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}" Language="SFX" Hash="{792FF909-4740-D5E5-03D7-DEEE90055D3D}">
 			<ObjectPath>ITM_Ammo_GL</ObjectPath>
 			<ShortName>ITM_Ammo_GL</ShortName>
 			<Path>Event/ITM_Ammo_GL.bnk</Path>
@@ -5682,5 +5682,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{466F6FA5-75AD-3DB8-AA57-4C21F6E08F4D}</FileHash>
+	<FileHash>{9C899BA9-A7AE-EE51-3947-0A7770E095FF}</FileHash>
 </SoundBanksInfo>

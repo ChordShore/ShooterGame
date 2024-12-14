@@ -356,7 +356,37 @@
 									<PropertyList>
 										<Property Name="Color" Type="int16" Value="8"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="RecoveryTime" Type="Real64" Value="0"/>
 									</PropertyList>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}"/>
+											<DuckingParam>
+												<Volume>-3</Volume>
+												<FadeInTime>0.100000001490116</FadeInTime>
+												<FadeOutTime>0</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+										<DuckItem>
+											<BusRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}"/>
+											<DuckingParam>
+												<Volume>-3</Volume>
+												<FadeInTime>0.100000001490116</FadeInTime>
+												<FadeOutTime>0</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+										<DuckItem>
+											<BusRef Name="Foley" ID="{686337CC-9F96-4AB3-9330-70E747D77E14}"/>
+											<DuckingParam>
+												<Volume>-3</Volume>
+												<FadeInTime>0.100000001490116</FadeInTime>
+												<FadeOutTime>0</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
 								</Bus>
 								<Bus Name="Dialogue" ID="{80C87677-6DFA-46DD-8E4C-337CF0B1357D}">
 									<PropertyList>
@@ -442,7 +472,7 @@
 																						<Flags>5</Flags>
 																					</Point>
 																					<Point>
-																						<XPos>-12</XPos>
+																						<XPos>-21</XPos>
 																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																						<SegmentShape>SCurve</SegmentShape>
@@ -488,7 +518,7 @@
 																						<Flags>5</Flags>
 																					</Point>
 																					<Point>
-																						<XPos>-24.96</XPos>
+																						<XPos>-24</XPos>
 																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																						<SegmentShape>SCurve</SegmentShape>
@@ -593,6 +623,53 @@
 																					</Point>
 																					<Point>
 																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>48</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{EF11BCAE-A7D7-477E-90C6-4CEFB68EE173}" ShortID="405218630">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="PAR_GL_Impact_Sidechain" ID="{BA05859C-93B0-481D-AD84-EC4556214253}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{ABF292A4-3502-4B3E-8FAA-E5FA57AA5CE8}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>-48</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																						<SegmentShape>SCurve</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>-24</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>SCurve</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>-0</XPos>
 																						<YPos>-200</YPos>
 																						<Flags>0</Flags>
 																					</Point>
