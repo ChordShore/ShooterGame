@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{8C000239-D23F-FF0A-569D-331DEE9DFF3D}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{2ABF8492-5DCC-3A52-A3A3-AA258A9A0D81}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -609,9 +609,6 @@
 					</AuxBusRefs>
 				</Event>
 				<Event Id="4263945094" Name="AR_Impact_OS" ObjectPath="\Events\Weapons\Shooting\Impact\AR_Impact_OS" GUID="{873F24AE-5010-4080-8DFB-1C765AEC4801}" MaxAttenuation="3000" DurationType="OneShot" DurationMin="0.30094388" DurationMax="1.7361617">
-					<AuxBusRefs>
-						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
-					</AuxBusRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="3189697285" GUID="{72A6A11D-4F6E-4C8C-8BBE-4F013F5716DA}"/>
@@ -1037,9 +1034,6 @@
 					</AuxBusRefs>
 				</Event>
 				<Event Id="477299258" Name="GL_Impact_OS" ObjectPath="\Events\Weapons\Shooting\Impact\GL_Impact_OS" GUID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}" MaxAttenuation="15000" DurationType="OneShot" DurationMin="4.596805" DurationMax="5.19974">
-					<AuxBusRefs>
-						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
-					</AuxBusRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="301467384" GUID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
@@ -1321,5 +1315,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4BEAED15-D981-D00F-D271-D3B54103E65D}</FileHash>
+	<FileHash>{EC247C68-BF27-CC49-39E6-0FBA53632774}</FileHash>
 </SoundBanksInfo>

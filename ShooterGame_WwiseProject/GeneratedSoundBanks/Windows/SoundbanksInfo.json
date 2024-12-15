@@ -538,7 +538,7 @@
     "Type": "User",
     "GUID": "{E4E1B551-3907-4673-8D70-D72000D8EB19}",
     "Language": "SFX",
-    "Hash": "{1543C0E4-518F-4123-8162-659FC32183D7}",
+    "Hash": "{2C13379F-E3AB-E3D7-1B93-C8EED6487409}",
     "ObjectPath": "\\SoundBanks\\Foley\\Foley",
     "ShortName": "Foley",
     "Path": "Foley.bnk",
@@ -5411,7 +5411,7 @@
     "Type": "Event",
     "GUID": "{1D12CBC8-581A-4CFB-8BB3-EDC75ED09C05}",
     "Language": "SFX",
-    "Hash": "{EA24FF80-7654-B575-7CEC-97AF4DF2B996}",
+    "Hash": "{56A68503-706D-0384-0C66-96ECDE6C4363}",
     "ObjectPath": "FOL_Footsteps_3P",
     "ShortName": "FOL_Footsteps_3P",
     "Path": "Event/FOL_Footsteps_3P.bnk",
@@ -6179,7 +6179,7 @@
       "Name": "FOL_Footsteps_3P",
       "ObjectPath": "\\Events\\Foley\\3P\\FOL_Footsteps_3P\\FOL_Footsteps_3P",
       "GUID": "{1D12CBC8-581A-4CFB-8BB3-EDC75ED09C05}",
-      "MaxAttenuation": "8000",
+      "MaxAttenuation": "6000",
       "DurationType": "OneShot",
       "DurationMin": "0.39275295",
       "DurationMax": "0.6445269",
@@ -7389,7 +7389,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{8C000239-D23F-FF0A-569D-331DEE9DFF3D}",
+    "Hash": "{2ABF8492-5DCC-3A52-A3A3-AA258A9A0D81}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -8767,14 +8767,6 @@
       "DurationType": "OneShot",
       "DurationMin": "0.30094388",
       "DurationMax": "1.7361617",
-      "AuxBusRefs": [
-       {
-        "Id": "3348775760",
-        "Name": "Highrise_EarlyReflections",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
-        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
-       }
-      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -9916,14 +9908,6 @@
       "DurationType": "OneShot",
       "DurationMin": "4.596805",
       "DurationMax": "5.19974",
-      "AuxBusRefs": [
-       {
-        "Id": "3348775760",
-        "Name": "Highrise_EarlyReflections",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
-        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
-       }
-      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -11046,7 +11030,7 @@
     "Type": "Event",
     "GUID": "{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}",
     "Language": "SFX",
-    "Hash": "{C5124574-1818-55B9-3BCD-4C460A313EBA}",
+    "Hash": "{8963B4E8-AEDE-9B6D-E9BF-B7B022424180}",
     "ObjectPath": "ITM_Ammo_GL",
     "ShortName": "ITM_Ammo_GL",
     "Path": "Event/ITM_Ammo_GL.bnk",
@@ -11210,7 +11194,7 @@
     "Type": "Event",
     "GUID": "{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}",
     "Language": "SFX",
-    "Hash": "{0E388DFD-42BD-0F03-1E87-FFF4282DCCB9}",
+    "Hash": "{4CB875D6-3C7E-57CB-5508-6EFA2435D756}",
     "ObjectPath": "FOL_Footstep_L",
     "ShortName": "FOL_Footstep_L",
     "Path": "Event/FOL_Footstep_L.bnk",
@@ -13390,6 +13374,6 @@
     ]
    }
   ],
-  "FileHash": "{56CA2E86-004E-22EA-B945-E6FFB9C872A6}"
+  "FileHash": "{42262793-20DA-F3A8-B682-FC293D1ED842}"
  }
 }

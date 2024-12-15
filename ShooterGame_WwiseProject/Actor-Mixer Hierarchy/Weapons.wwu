@@ -3466,7 +3466,7 @@
 							<ChildrenList>
 								<ActorMixer Name="WEP_AR_Impact" ID="{AA5FF3F7-944D-45AA-846C-E2DE9640F6A3}" ShortID="656534589">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="GameAuxSendVolume" Type="Real64">
 											<ValueList>
@@ -3479,6 +3479,8 @@
 												<Value>-6</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverrideHdrEnvelope" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="ReflectionsVolume" Type="Real64">
@@ -3486,7 +3488,6 @@
 												<Value>-10</Value>
 											</ValueList>
 										</Property>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ModifierList>
 												<ModifierInfo>
@@ -3504,9 +3505,6 @@
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Weapons" ID="{1BC77837-C5B2-4563-B3F7-CF715B366F0C}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-										</Reference>
-										<Reference Name="ReflectionsAuxSend">
-											<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -6371,6 +6369,7 @@
 								</ActorMixer>
 								<ActorMixer Name="WEP_GL_Impact" ID="{D7196C42-F7EB-4F4F-8BE6-243F23955B13}" ShortID="962572682">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="GameAuxSendVolume" Type="Real64">
 											<ValueList>
@@ -6390,7 +6389,9 @@
 												<Value>2</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverrideHdrEnvelope" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="ReflectionsVolume" Type="Real64">
@@ -6398,7 +6399,6 @@
 												<Value>-10</Value>
 											</ValueList>
 										</Property>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ModifierList>
 												<ModifierInfo>
@@ -6419,9 +6419,6 @@
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Weapons" ID="{1BC77837-C5B2-4563-B3F7-CF715B366F0C}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-										</Reference>
-										<Reference Name="ReflectionsAuxSend">
-											<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -8516,6 +8513,7 @@
 								</ActorMixer>
 								<ActorMixer Name="WEP_GL_PassBy" ID="{B4887830-0B77-4E26-8124-14E1A21953D7}" ShortID="785780269">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="GameAuxSendVolume" Type="Real64">
 											<ValueList>
@@ -8529,14 +8527,17 @@
 										</Property>
 										<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
 										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="ReflectionsVolume" Type="Real64">
 											<ValueList>
 												<Value>-7</Value>
 											</ValueList>
 										</Property>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATN_GL_Projectile_Passby" ID="{CA3441E2-7543-4DA2-9926-A4784F1B2467}" WorkUnitID="{20BE0795-7455-4CA3-828E-F9A931FD597B}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
 										</Reference>
@@ -8562,7 +8563,6 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
 														<Value>-200</Value>

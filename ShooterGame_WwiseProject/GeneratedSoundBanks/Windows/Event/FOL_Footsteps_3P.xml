@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1409859314" Type="Event" GUID="{1D12CBC8-581A-4CFB-8BB3-EDC75ED09C05}" Language="SFX" Hash="{EA24FF80-7654-B575-7CEC-97AF4DF2B996}">
+		<SoundBank Id="1409859314" Type="Event" GUID="{1D12CBC8-581A-4CFB-8BB3-EDC75ED09C05}" Language="SFX" Hash="{56A68503-706D-0384-0C66-96ECDE6C4363}">
 			<ObjectPath>FOL_Footsteps_3P</ObjectPath>
 			<ShortName>FOL_Footsteps_3P</ShortName>
 			<Path>Event/FOL_Footsteps_3P.bnk</Path>
@@ -428,7 +428,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1409859314" Name="FOL_Footsteps_3P" ObjectPath="\Events\Foley\3P\FOL_Footsteps_3P\FOL_Footsteps_3P" GUID="{1D12CBC8-581A-4CFB-8BB3-EDC75ED09C05}" MaxAttenuation="8000" DurationType="OneShot" DurationMin="0.39275295" DurationMax="0.6445269">
+				<Event Id="1409859314" Name="FOL_Footsteps_3P" ObjectPath="\Events\Foley\3P\FOL_Footsteps_3P\FOL_Footsteps_3P" GUID="{1D12CBC8-581A-4CFB-8BB3-EDC75ED09C05}" MaxAttenuation="6000" DurationType="OneShot" DurationMin="0.39275295" DurationMax="0.6445269">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="1488713918" GUID="{02773C27-1839-4638-A2AF-91E103D925E3}"/>
@@ -846,5 +846,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BB5B9153-DAC0-8F02-D7DB-32400629B55F}</FileHash>
+	<FileHash>{AC7624DA-3993-9693-52ED-C6FACE2B5CE4}</FileHash>
 </SoundBanksInfo>
