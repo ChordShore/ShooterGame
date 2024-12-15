@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="34535531" Type="Event" GUID="{698F3492-0906-40D0-90BD-FD8AB68AC5B9}" Language="SFX" Hash="{268C5FDE-BA67-C908-1B56-49540B5A3D8D}">
+		<SoundBank Id="34535531" Type="Event" GUID="{698F3492-0906-40D0-90BD-FD8AB68AC5B9}" Language="SFX" Hash="{45672859-F574-870D-84E3-EDE1BEC212A4}">
 			<ObjectPath>AR_Selectfire</ObjectPath>
 			<ShortName>AR_Selectfire</ShortName>
 			<Path>Event/AR_Selectfire.bnk</Path>
@@ -31,7 +31,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="67622880" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{8164E5A0-A4F6-2F91-B830-A5E6859C4E41}">
+		<SoundBank Id="67622880" Type="Event" GUID="{5A54AC83-F422-4792-AC35-2D1FD7FBCC4B}" Language="SFX" Hash="{13273428-7E2A-6DB8-64EE-82E4CD3893B4}">
 			<ObjectPath>AMB_HoverCars_Spline_R</ObjectPath>
 			<ShortName>AMB_HoverCars_Spline_R</ShortName>
 			<Path>Event/AMB_HoverCars_Spline_R.bnk</Path>
@@ -55,7 +55,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="67622910" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{1E69C0F9-BD26-C79A-1F17-ABE48486B914}">
+		<SoundBank Id="67622910" Type="Event" GUID="{2FF3B5EC-518B-4316-903C-EEC1ABC647E5}" Language="SFX" Hash="{D6F9CCE8-4052-60F2-5D0C-BA60CC10BB60}">
 			<ObjectPath>AMB_HoverCars_Spline_L</ObjectPath>
 			<ShortName>AMB_HoverCars_Spline_L</ShortName>
 			<Path>Event/AMB_HoverCars_Spline_L.bnk</Path>
@@ -79,7 +79,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{AE247C9D-F1CE-97D9-9714-CBA525EEDECE}">
+		<SoundBank Id="85412153" Type="User" GUID="{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}" Language="SFX" Hash="{5DFDE307-24D6-2631-F3BA-BCB1720B32B7}">
 			<ObjectPath>\SoundBanks\Ambience\Ambience</ObjectPath>
 			<ShortName>Ambience</ShortName>
 			<Path>Ambience.bnk</Path>
@@ -248,7 +248,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{EA32FEE5-CE93-A0E8-71AE-BF304B1158E8}">
+		<SoundBank Id="247557814" Type="User" GUID="{E4E1B551-3907-4673-8D70-D72000D8EB19}" Language="SFX" Hash="{1543C0E4-518F-4123-8162-659FC32183D7}">
 			<ObjectPath>\SoundBanks\Foley\Foley</ObjectPath>
 			<ShortName>Foley</ShortName>
 			<Path>Foley.bnk</Path>
@@ -1108,7 +1108,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="262625171" Type="Event" GUID="{0DA8BBE2-35ED-455A-AC53-823AD682E725}" Language="SFX" Hash="{273044DF-EEE8-5A8B-E516-7DEA924AA4FF}">
+		<SoundBank Id="262625171" Type="Event" GUID="{0DA8BBE2-35ED-455A-AC53-823AD682E725}" Language="SFX" Hash="{63B6A976-7073-7D54-A63B-3CC9393FC9A1}">
 			<ObjectPath>AR_Shoot_LP_3P</ObjectPath>
 			<ShortName>AR_Shoot_LP_3P</ShortName>
 			<Path>Event/AR_Shoot_LP_3P.bnk</Path>
@@ -1219,9 +1219,6 @@
 					<MediaRefs>
 						<MediaRef Id="635329318"/>
 					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
-					</AuxBusRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="301467384" GUID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}" Default="true"/>
@@ -1371,7 +1368,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{7A14186D-A316-E99F-9F17-9042BA3DE75A}">
+		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{AAA57715-F36D-B9FD-53E5-FCBDFD8F23E1}">
 			<ObjectPath>AR_Shoot_Stop</ObjectPath>
 			<ShortName>AR_Shoot_Stop</ShortName>
 			<Path>Event/AR_Shoot_Stop.bnk</Path>
@@ -1472,7 +1469,7 @@
 				<GameParameter Id="2583655610" Name="PAR_AR_AmmoCount" ObjectPath="\Game Parameters\Weapons\PAR_AR_AmmoCount" GUID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="636673922" Type="Event" GUID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}" Language="SFX" Hash="{8635F94B-A566-E07A-D4AA-98FE61DA2BE2}">
+		<SoundBank Id="636673922" Type="Event" GUID="{7228D143-91CD-48AB-B419-E16DEE2BF95F}" Language="SFX" Hash="{AA4A24FB-CB07-F958-9FD9-0390F74E7907}">
 			<ObjectPath>AMB_RoomGusts_SmallEntrance_Interior</ObjectPath>
 			<ShortName>AMB_RoomGusts_SmallEntrance_Interior</ShortName>
 			<Path>Event/AMB_RoomGusts_SmallEntrance_Interior.bnk</Path>
@@ -1501,7 +1498,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="677842196" Type="Event" GUID="{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}" Language="SFX" Hash="{82893F78-0601-3795-D5CE-55FFAF046F7A}">
+		<SoundBank Id="677842196" Type="Event" GUID="{D37ACCD8-5FB6-48D1-A410-005BBBF9FE69}" Language="SFX" Hash="{FA334CE4-9B54-FE41-3639-D322D34C5106}">
 			<ObjectPath>FOL_Armor</ObjectPath>
 			<ShortName>FOL_Armor</ShortName>
 			<Path>Event/FOL_Armor.bnk</Path>
@@ -1587,7 +1584,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="849782850" Type="Event" GUID="{D351862C-9224-46EA-B214-195532B40959}" Language="SFX" Hash="{ED7C1320-8DB8-DE84-E187-B625550E18D5}">
+		<SoundBank Id="849782850" Type="Event" GUID="{D351862C-9224-46EA-B214-195532B40959}" Language="SFX" Hash="{DF3C6956-8A98-9492-6DDB-2D4B22693F62}">
 			<ObjectPath>FOL_FallWhoosh</ObjectPath>
 			<ShortName>FOL_FallWhoosh</ShortName>
 			<Path>Event/FOL_FallWhoosh.bnk</Path>
@@ -1616,7 +1613,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{C6894C8B-B434-89DD-7D44-01CCE0146B7B}">
+		<SoundBank Id="977986739" Type="Event" GUID="{EDC025BC-408A-4306-A308-2C0B4ADBA1F6}" Language="SFX" Hash="{C9296E39-0745-13A6-86F8-DACB4ACCD15A}">
 			<ObjectPath>AMB_ScifiDrones</ObjectPath>
 			<ShortName>AMB_ScifiDrones</ShortName>
 			<Path>Event/AMB_ScifiDrones.bnk</Path>
@@ -1808,7 +1805,7 @@
 				<Event Id="3006080354" Name="UI_Toggle" ObjectPath="\Events\Interface\UI_Toggle" GUID="{797C0C31-AE30-4A12-9686-6408980D163E}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1233309807" Type="Event" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" Language="SFX" Hash="{BF89206C-BBFE-A9F2-7F73-A77089BA1ED5}">
+		<SoundBank Id="1233309807" Type="Event" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" Language="SFX" Hash="{010E7B95-9584-97FF-10A6-2A6F3FC5FCB6}">
 			<ObjectPath>AR_Shoot_Stop_3P</ObjectPath>
 			<ShortName>AR_Shoot_Stop_3P</ShortName>
 			<Path>Event/AR_Shoot_Stop_3P.bnk</Path>
@@ -1880,7 +1877,7 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
-				<Event Id="1233309807" Name="AR_Shoot_Stop_3P" ObjectPath="\Events\Weapons\3P\Shooting\Shoot\AR_Shoot_Stop_3P" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" MaxAttenuation="8000" DurationType="OneShot" DurationMin="1.4926512" DurationMax="1.4926512">
+				<Event Id="1233309807" Name="AR_Shoot_Stop_3P" ObjectPath="\Events\Weapons\3P\Shooting\Shoot\AR_Shoot_Stop_3P" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" MaxAttenuation="13000" DurationType="OneShot" DurationMin="1.4088752" DurationMax="1.4206908">
 					<MediaRefs>
 						<MediaRef Id="25638055"/>
 						<MediaRef Id="92565130"/>
@@ -1900,9 +1897,6 @@
 							<PluginRef Id="2781261543"/>
 						</ShareSets>
 					</PluginRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
-					</AuxBusRefs>
 				</Event>
 			</Events>
 			<GameParameters>
@@ -1947,7 +1941,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="1322180291" Type="Event" GUID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}" Language="SFX" Hash="{D9C4E183-8F82-A988-D739-E5053401ECA7}">
+		<SoundBank Id="1322180291" Type="Event" GUID="{4B78F868-FA3E-491F-A6E3-30D4CF29E94D}" Language="SFX" Hash="{1A135F8E-9FA8-F4DD-7B66-8DA131F82CF3}">
 			<ObjectPath>AMB_PhoneBox_ErrorRecording</ObjectPath>
 			<ShortName>AMB_PhoneBox_ErrorRecording</ShortName>
 			<Path>Event/AMB_PhoneBox_ErrorRecording.bnk</Path>
@@ -1972,7 +1966,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{80CDE6A2-8CF5-A457-99EE-006A57B794E1}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{6D5A2652-9288-A6E2-4A2E-F1F3F3976259}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -2273,7 +2267,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1409859314" Type="Event" GUID="{1D12CBC8-581A-4CFB-8BB3-EDC75ED09C05}" Language="SFX" Hash="{BB7C20DC-4C5A-2938-E06D-3F92CD3DA9F0}">
+		<SoundBank Id="1409859314" Type="Event" GUID="{1D12CBC8-581A-4CFB-8BB3-EDC75ED09C05}" Language="SFX" Hash="{EA24FF80-7654-B575-7CEC-97AF4DF2B996}">
 			<ObjectPath>FOL_Footsteps_3P</ObjectPath>
 			<ShortName>FOL_Footsteps_3P</ShortName>
 			<Path>Event/FOL_Footsteps_3P.bnk</Path>
@@ -2700,7 +2694,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1409859314" Name="FOL_Footsteps_3P" ObjectPath="\Events\Foley\3P\FOL_Footsteps_3P\FOL_Footsteps_3P" GUID="{1D12CBC8-581A-4CFB-8BB3-EDC75ED09C05}" MaxAttenuation="5000" DurationType="OneShot" DurationMin="0.39275295" DurationMax="0.6445269">
+				<Event Id="1409859314" Name="FOL_Footsteps_3P" ObjectPath="\Events\Foley\3P\FOL_Footsteps_3P\FOL_Footsteps_3P" GUID="{1D12CBC8-581A-4CFB-8BB3-EDC75ED09C05}" MaxAttenuation="8000" DurationType="OneShot" DurationMin="0.39275295" DurationMax="0.6445269">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2775298153" Id="1488713918" GUID="{02773C27-1839-4638-A2AF-91E103D925E3}"/>
@@ -3117,7 +3111,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{2724A046-80AD-C6CD-765C-D86DBC4A06B9}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{8C000239-D23F-FF0A-569D-331DEE9DFF3D}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -3128,11 +3122,11 @@
 				</File>
 				<File Id="22665926" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Ricochet_19999D4F.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Ricochet_4D6F04EE.wem</CachePath>
 				</File>
 				<File Id="25023274" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Ricochet_6B872F5D.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Ricochet_A8D98838.wem</CachePath>
 				</File>
 				<File Id="25638055" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
@@ -3140,15 +3134,15 @@
 				</File>
 				<File Id="45099652" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Metal_D34FCA49.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Metal_DA6EEC18.wem</CachePath>
 				</File>
 				<File Id="45919945" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Metal_A1A8E76F.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Metal_6A488712.wem</CachePath>
 				</File>
 				<File Id="49084382" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Glass_28C19F38.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Glass_9E4C15A5.wem</CachePath>
 				</File>
 				<File Id="68927910" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Close_Atrium.wav</ShortName>
@@ -3156,11 +3150,11 @@
 				</File>
 				<File Id="87576484" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Flesh_034CD99F.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Flesh_49CD569A.wem</CachePath>
 				</File>
 				<File Id="88459464" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Grass_D0351B81.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Grass_96AF98D8.wem</CachePath>
 				</File>
 				<File Id="92565130" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
@@ -3168,11 +3162,11 @@
 				</File>
 				<File Id="94164344" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Grass_932ED73E.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Grass_BBB9A197.wem</CachePath>
 				</File>
 				<File Id="104580085" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Tile_D058E49B.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Tile_E051BD22.wem</CachePath>
 				</File>
 				<File Id="122584535" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
@@ -3180,11 +3174,11 @@
 				</File>
 				<File Id="125279518" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Glass_0FD3871E.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Glass_79301AB3.wem</CachePath>
 				</File>
 				<File Id="125544455" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Tile_00AF708D.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Tile_172AB3BC.wem</CachePath>
 				</File>
 				<File Id="132631597" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
@@ -3192,15 +3186,15 @@
 				</File>
 				<File Id="137651490" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Tile_4205CA99.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Tile_389123EC.wem</CachePath>
 				</File>
 				<File Id="144733127" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Ricochet_F64E55B0.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Ricochet_E4B3C4ED.wem</CachePath>
 				</File>
 				<File Id="157149023" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Tile_43FFC3D2.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Tile_79601A8F.wem</CachePath>
 				</File>
 				<File Id="166846503" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AR_Shot_Pulse.wav</ShortName>
@@ -3212,11 +3206,11 @@
 				</File>
 				<File Id="173902783" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Grass_965985AA.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Grass_C07C0713.wem</CachePath>
 				</File>
 				<File Id="175573853" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Tile_9548DE72.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Tile_F7BA5327.wem</CachePath>
 				</File>
 				<File Id="175929226" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AR_Shot_Tail_Atrium.wav</ShortName>
@@ -3228,11 +3222,11 @@
 				</File>
 				<File Id="212130178" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Flesh_1A711870.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Flesh_F4F74F15.wem</CachePath>
 				</File>
 				<File Id="224555482" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Ricochet_DCEA7187.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Ricochet_0C0617AE.wem</CachePath>
 				</File>
 				<File Id="228004887" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AR_Shot_Transient.wav</ShortName>
@@ -3240,7 +3234,7 @@
 				</File>
 				<File Id="237600041" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Ricochet_72ED4143.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Ricochet_EA2E125E.wem</CachePath>
 				</File>
 				<File Id="249724546" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Room.wav</ShortName>
@@ -3248,15 +3242,15 @@
 				</File>
 				<File Id="253415750" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Metal_E018673F.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Metal_E2AC4976.wem</CachePath>
 				</File>
 				<File Id="256862727" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Tile_4F82CB8B.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Tile_606E787A.wem</CachePath>
 				</File>
 				<File Id="286257198" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Grass_F924D300.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Grass_98A65B59.wem</CachePath>
 				</File>
 				<File Id="298571565" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
@@ -3264,7 +3258,7 @@
 				</File>
 				<File Id="300548913" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Flesh_9709169F.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Flesh_66A8E72E.wem</CachePath>
 				</File>
 				<File Id="304041726" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AR_Dryfire.wav</ShortName>
@@ -3272,7 +3266,7 @@
 				</File>
 				<File Id="310418379" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Ricochet_8C9C6933.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Ricochet_A80FE3BA.wem</CachePath>
 				</File>
 				<File Id="310455440" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
@@ -3284,15 +3278,15 @@
 				</File>
 				<File Id="313857663" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Ricochet_17CED5F6.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Ricochet_FF39326B.wem</CachePath>
 				</File>
 				<File Id="315119022" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Tile_B3F63D9B.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Tile_D60C1D26.wem</CachePath>
 				</File>
 				<File Id="340692458" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Metal_1E86B468.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Metal_19111371.wem</CachePath>
 				</File>
 				<File Id="345176474" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AR_Shot_LFE.wav</ShortName>
@@ -3304,7 +3298,7 @@
 				</File>
 				<File Id="363327242" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Flesh_DE24E519.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Flesh_5F00BB68.wem</CachePath>
 				</File>
 				<File Id="364992105" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
@@ -3320,15 +3314,15 @@
 				</File>
 				<File Id="375528492" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Metal_69D190F3.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Metal_23BD5BF2.wem</CachePath>
 				</File>
 				<File Id="387089385" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Ricochet_5690EA96.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Ricochet_EA110593.wem</CachePath>
 				</File>
 				<File Id="392185353" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Metal_A13A6E1A.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Metal_1053854B.wem</CachePath>
 				</File>
 				<File Id="402662610" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Tail_Atrium.wav</ShortName>
@@ -3340,11 +3334,11 @@
 				</File>
 				<File Id="424618199" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Flesh_9B98E534.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Flesh_61E4D195.wem</CachePath>
 				</File>
 				<File Id="424697877" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Flesh_7FE95D06.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Flesh_7E3A77CB.wem</CachePath>
 				</File>
 				<File Id="431394652" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Mech_1.wav</ShortName>
@@ -3356,15 +3350,15 @@
 				</File>
 				<File Id="434620812" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Tile_08E3A046.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Tile_9430ECFF.wem</CachePath>
 				</File>
 				<File Id="435584254" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Glass_5027CD47.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Glass_2D4C62CE.wem</CachePath>
 				</File>
 				<File Id="448085293" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Grass_E33B1179.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Grass_F8E387DC.wem</CachePath>
 				</File>
 				<File Id="469990783" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
@@ -3384,19 +3378,19 @@
 				</File>
 				<File Id="491179187" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Grass_E6C52006.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Grass_1ECE514B.wem</CachePath>
 				</File>
 				<File Id="502368110" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Glass_96F85241.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Glass_99BD4B08.wem</CachePath>
 				</File>
 				<File Id="502639675" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Glass_0D37E5ED.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Glass_A60AEC58.wem</CachePath>
 				</File>
 				<File Id="508430474" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Metal_BDC9673F.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Metal_E87C3AD2.wem</CachePath>
 				</File>
 				<File Id="514770190" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Atrium.wav</ShortName>
@@ -3404,7 +3398,7 @@
 				</File>
 				<File Id="519715684" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Glass_1CD63756.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Glass_72A2AE47.wem</CachePath>
 				</File>
 				<File Id="530330132" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
@@ -3424,7 +3418,7 @@
 				</File>
 				<File Id="555455356" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Tile_1F5613E8.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Tile_E25E72E5.wem</CachePath>
 				</File>
 				<File Id="560147879" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
@@ -3432,7 +3426,7 @@
 				</File>
 				<File Id="565627633" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Metal_14749F76.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Metal_0F50B2FF.wem</CachePath>
 				</File>
 				<File Id="576977623" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Spawn.wav</ShortName>
@@ -3440,19 +3434,19 @@
 				</File>
 				<File Id="578759834" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Glass_59583E27.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Glass_41E681A6.wem</CachePath>
 				</File>
 				<File Id="583749861" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Tile_042C8F40.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Tile_B7B9B941.wem</CachePath>
 				</File>
 				<File Id="601057526" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Metal_566E9B35.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Metal_9225E2EC.wem</CachePath>
 				</File>
 				<File Id="624042849" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Reload.wav</ShortName>
-					<CachePath>SFX/GL_Reload_10C4C929.wem</CachePath>
+					<CachePath>SFX/GL_Reload_5F1F99A8.wem</CachePath>
 				</File>
 				<File Id="630130873" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
@@ -3464,11 +3458,11 @@
 				</File>
 				<File Id="643117582" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Grass_401A036E.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Grass_C8671EB7.wem</CachePath>
 				</File>
 				<File Id="646450526" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Ricochet_9ED5BB43.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Ricochet_319DA572.wem</CachePath>
 				</File>
 				<File Id="649546232" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Close_Room.wav</ShortName>
@@ -3476,7 +3470,7 @@
 				</File>
 				<File Id="650928932" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Grass_28BE71FB.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Grass_06AC75B2.wem</CachePath>
 				</File>
 				<File Id="666983815" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
@@ -3484,7 +3478,7 @@
 				</File>
 				<File Id="669510815" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Equip.wav</ShortName>
-					<CachePath>SFX/GL_Equip_10C4C929.wem</CachePath>
+					<CachePath>SFX/GL_Equip_5F1F99A8.wem</CachePath>
 				</File>
 				<File Id="676321132" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
@@ -3500,15 +3494,15 @@
 				</File>
 				<File Id="713162547" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Glass_F8BC8EBE.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Glass_5746D0DF.wem</CachePath>
 				</File>
 				<File Id="718995715" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Grass_EF76A4ED.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Grass_FAC2EEBC.wem</CachePath>
 				</File>
 				<File Id="723972485" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Metal_F2E1FC3B.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Metal_26F58F2A.wem</CachePath>
 				</File>
 				<File Id="736273374" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
@@ -3516,7 +3510,7 @@
 				</File>
 				<File Id="745025731" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Grass_09CED60B.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Grass_D406D506.wem</CachePath>
 				</File>
 				<File Id="758183093" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Spawn.wav</ShortName>
@@ -3528,15 +3522,15 @@
 				</File>
 				<File Id="772788603" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Glass_AEDE6C59.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Glass_6CBEF430.wem</CachePath>
 				</File>
 				<File Id="776609040" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Tile_E940285E.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Tile_D5903293.wem</CachePath>
 				</File>
 				<File Id="781212311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AR_Reload.wav</ShortName>
-					<CachePath>SFX/AR_Reload_10C4C929.wem</CachePath>
+					<CachePath>SFX/AR_Reload_5F1F99A8.wem</CachePath>
 				</File>
 				<File Id="790486722" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Room.wav</ShortName>
@@ -3544,7 +3538,7 @@
 				</File>
 				<File Id="797639163" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Ricochet_05B2593D.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Ricochet_3176A340.wem</CachePath>
 				</File>
 				<File Id="801983389" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Spawn.wav</ShortName>
@@ -3556,7 +3550,7 @@
 				</File>
 				<File Id="809278308" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Ricochet_01D5A3B4.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Ricochet_0D025D95.wem</CachePath>
 				</File>
 				<File Id="811684578" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Dryfire.wav</ShortName>
@@ -3572,7 +3566,7 @@
 				</File>
 				<File Id="826746919" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Grass_9BF08E9B.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Grass_63C95152.wem</CachePath>
 				</File>
 				<File Id="832229830" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
@@ -3584,15 +3578,15 @@
 				</File>
 				<File Id="869087166" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AR_Equip.wav</ShortName>
-					<CachePath>SFX/AR_Equip_10C4C929.wem</CachePath>
+					<CachePath>SFX/AR_Equip_5F1F99A8.wem</CachePath>
 				</File>
 				<File Id="885452196" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Flesh_2359DC23.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Flesh_A303F24A.wem</CachePath>
 				</File>
 				<File Id="891167383" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Glass_686B01A0.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Glass_8279B8F1.wem</CachePath>
 				</File>
 				<File Id="912217750" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Room.wav</ShortName>
@@ -3604,7 +3598,7 @@
 				</File>
 				<File Id="931298175" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Flesh_D4DCD82F.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Flesh_2D86797E.wem</CachePath>
 				</File>
 				<File Id="939444335" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Close_Spawn.wav</ShortName>
@@ -3612,11 +3606,11 @@
 				</File>
 				<File Id="954200902" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Glass_DB849362.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Glass_0A3EC457.wem</CachePath>
 				</File>
 				<File Id="970865366" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Flesh_6B32FA48.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Flesh_272C9749.wem</CachePath>
 				</File>
 				<File Id="978521279" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Transient.wav</ShortName>
@@ -3624,19 +3618,19 @@
 				</File>
 				<File Id="993604397" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Grass_D5382946.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Grass_B3A5FF3B.wem</CachePath>
 				</File>
 				<File Id="1013597634" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Metal_29BC796A.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Metal_0D97081F.wem</CachePath>
 				</File>
 				<File Id="1020111277" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Metal_4AAC4F5F.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Metal_DD9058F2.wem</CachePath>
 				</File>
 				<File Id="1027071831" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Ricochet_5991E3FE.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Ricochet_74B6BC13.wem</CachePath>
 				</File>
 				<File Id="1029793749" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
@@ -3656,51 +3650,51 @@
 				</File>
 				<File Id="1043739804" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Flesh_061D8025.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Flesh_18717EF0.wem</CachePath>
 				</File>
 				<File Id="1046176772" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Tile_47DDB83F.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Tile_D760308A.wem</CachePath>
 				</File>
 				<File Id="1050382712" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Glass_BBEDFD1B.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Glass_39FF90A2.wem</CachePath>
 				</File>
 				<File Id="1054821943" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Flesh_9DFD2E59.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Flesh_5E05F0A4.wem</CachePath>
 				</File>
 				<File Id="1059409407" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
-					<CachePath>SFX/WEP_AR_Impact_Flesh_6EB45B77.wem</CachePath>
+					<CachePath>SFX/WEP_AR_Impact_Flesh_5B9E4416.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
 				<Custom>
-					<Plugin Id="80733955" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_11\Silence" GUID="{2DD58B39-CFE1-42B6-8F56-F6F18E6D9678}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="98828101" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_14\Silence" GUID="{16C87DA6-21D4-4A30-BBBA-4C1E0ACA6444}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="102475396" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_16\Silence" GUID="{44ACFA9E-E8AB-4E62-B74F-8FD1B1E24050}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="110368995" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_21\Silence" GUID="{7DA5E6A7-F363-4309-8F7D-3E1A6454D813}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="155800367" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_12\Silence" GUID="{C31C7BC0-10A1-40C4-9BC5-9FF1E292D551}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="234761888" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_09\Silence" GUID="{920BD289-2149-4079-A275-ED16EB2691E5}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="243453820" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_15\Silence" GUID="{5DA5F965-D2A2-42EE-A331-0195DF3922CD}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="244607585" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_10\Silence" GUID="{E761AC3B-6B9F-4B79-ACB1-8A70D1C0B507}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="282608671" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_23\Silence" GUID="{497615A7-BB06-482D-AA67-4965A6067ADB}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="313120099" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_08\Silence" GUID="{1ECD4E7C-4CE8-4173-8077-4975E7404DF9}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="369132060" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_07\Silence" GUID="{B3375FDE-6608-4FE5-ABD3-353B9871081B}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="418202071" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_06\Silence" GUID="{EB9BD79F-AB12-4D32-92D2-FE44C23073DA}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="490987904" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_04\Silence" GUID="{192C2A6F-A48E-4EFB-9BF7-5767A1667A70}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="504685997" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_03\Silence" GUID="{F4233598-43A6-4FD6-9B18-37DFA5C72D1C}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="642390327" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_05\Silence" GUID="{BDE7AA81-EE1D-417E-8A9E-4FCE8DAACD38}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="691415351" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_22\Silence" GUID="{0AA505E8-3B4B-4635-9812-5D935857514B}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="737563750" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_13\Silence" GUID="{1543A0C9-384D-4D95-B4A3-EEE8B6C0908D}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="766715695" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_19\Silence" GUID="{D39C15D8-B14F-4309-A3C8-888E2DBA36DA}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="770586436" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_24\Silence" GUID="{D4E1A877-E989-4DB7-88E6-99D628C2141C}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="779331365" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_18\Silence" GUID="{3BFB35DC-35CD-4B17-B1E8-D3A827278C51}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="862122751" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_02\Silence" GUID="{2801EEF6-E93F-4BB3-8A0F-1690A5CA0D58}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="900087465" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_20\Silence" GUID="{E1B11188-FD33-4782-A590-2CE7ABAF513E}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="932739902" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_17\Silence" GUID="{03B191CD-9387-4765-B742-C50CED4300BC}" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="934461864" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Shooting\WEP_Impact\AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_01\Silence" GUID="{4C8C34B6-5626-4F64-913D-CDCACC242C16}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="80733955" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_11\Silence" GUID="{2DD58B39-CFE1-42B6-8F56-F6F18E6D9678}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="98828101" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_14\Silence" GUID="{16C87DA6-21D4-4A30-BBBA-4C1E0ACA6444}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="102475396" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_16\Silence" GUID="{44ACFA9E-E8AB-4E62-B74F-8FD1B1E24050}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="110368995" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_21\Silence" GUID="{7DA5E6A7-F363-4309-8F7D-3E1A6454D813}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="155800367" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_12\Silence" GUID="{C31C7BC0-10A1-40C4-9BC5-9FF1E292D551}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="234761888" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_09\Silence" GUID="{920BD289-2149-4079-A275-ED16EB2691E5}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="243453820" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_15\Silence" GUID="{5DA5F965-D2A2-42EE-A331-0195DF3922CD}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="244607585" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_10\Silence" GUID="{E761AC3B-6B9F-4B79-ACB1-8A70D1C0B507}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="282608671" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_23\Silence" GUID="{497615A7-BB06-482D-AA67-4965A6067ADB}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="313120099" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_08\Silence" GUID="{1ECD4E7C-4CE8-4173-8077-4975E7404DF9}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="369132060" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_07\Silence" GUID="{B3375FDE-6608-4FE5-ABD3-353B9871081B}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="418202071" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_06\Silence" GUID="{EB9BD79F-AB12-4D32-92D2-FE44C23073DA}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="490987904" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_04\Silence" GUID="{192C2A6F-A48E-4EFB-9BF7-5767A1667A70}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="504685997" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_03\Silence" GUID="{F4233598-43A6-4FD6-9B18-37DFA5C72D1C}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="642390327" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_05\Silence" GUID="{BDE7AA81-EE1D-417E-8A9E-4FCE8DAACD38}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="691415351" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_22\Silence" GUID="{0AA505E8-3B4B-4635-9812-5D935857514B}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="737563750" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_13\Silence" GUID="{1543A0C9-384D-4D95-B4A3-EEE8B6C0908D}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="766715695" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_19\Silence" GUID="{D39C15D8-B14F-4309-A3C8-888E2DBA36DA}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="770586436" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_24\Silence" GUID="{D4E1A877-E989-4DB7-88E6-99D628C2141C}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="779331365" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_18\Silence" GUID="{3BFB35DC-35CD-4B17-B1E8-D3A827278C51}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="862122751" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_02\Silence" GUID="{2801EEF6-E93F-4BB3-8A0F-1690A5CA0D58}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="900087465" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_20\Silence" GUID="{E1B11188-FD33-4782-A590-2CE7ABAF513E}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="932739902" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_17\Silence" GUID="{03B191CD-9387-4765-B742-C50CED4300BC}" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="934461864" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Weapons\WEP_1P\Projectiles\WEP_AR_Impact\AR_Impact_Materials\AR_Impact_Ricochet\Silence_01\Silence" GUID="{4C8C34B6-5626-4F64-913D-CDCACC242C16}" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
 				<ShareSets>
 					<Plugin Id="2258521792" Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ObjectPath="\Effects\Factory Effects\Peak Limiter\Brick_Wall_Minus_1dB_Peak_Slow_Release" GUID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" LibName="Wwise Peak Limiter" LibId="7208963"/>
@@ -4436,7 +4430,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1478305162" Type="Event" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" Language="SFX" Hash="{62CC89C6-0D76-BE66-08B5-013D633180A2}">
+		<SoundBank Id="1478305162" Type="Event" GUID="{838EFBCF-7300-40E4-B598-D1699C261CB8}" Language="SFX" Hash="{9F0E2FEA-ECB6-2BFE-65E1-559B5AEC303C}">
 			<ObjectPath>AMB_WindGusts_Static_Play</ObjectPath>
 			<ShortName>AMB_WindGusts_Static_Play</ShortName>
 			<Path>Event/AMB_WindGusts_Static_Play.bnk</Path>
@@ -4527,7 +4521,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2151963051" Type="User" GUID="{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}" Language="SFX" Hash="{FFFEF585-DD3A-24B0-1B7F-7352D3BFFEBF}">
+		<SoundBank Id="2151963051" Type="User" GUID="{9B5F982E-635F-4DAB-BF5A-CEECBA04915D}" Language="SFX" Hash="{8A636A3F-9E04-A312-BED2-5FB5FAA6D190}">
 			<ObjectPath>\SoundBanks\Items\Items</ObjectPath>
 			<ShortName>Items</ShortName>
 			<Path>Items.bnk</Path>
@@ -4538,7 +4532,7 @@
 				</File>
 				<File Id="661048761" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ITM_Health.wav</ShortName>
-					<CachePath>SFX/ITM_Health_10C4C929.wem</CachePath>
+					<CachePath>SFX/ITM_Health_5F1F99A8.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -4560,7 +4554,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2223887322" Type="Event" GUID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}" Language="SFX" Hash="{9525E10C-2AF7-89DC-835C-1DAE582CDB8E}">
+		<SoundBank Id="2223887322" Type="Event" GUID="{0132EE33-73C5-4567-8F57-4CEBB3C5FAA0}" Language="SFX" Hash="{B92BEDF3-0006-CBD9-6C5B-DFF6FAB1485B}">
 			<ObjectPath>WEP_Target_Disengage_OS</ObjectPath>
 			<ShortName>WEP_Target_Disengage_OS</ShortName>
 			<Path>Event/WEP_Target_Disengage_OS.bnk</Path>
@@ -4606,7 +4600,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2289907698" Type="Event" GUID="{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}" Language="SFX" Hash="{792FF909-4740-D5E5-03D7-DEEE90055D3D}">
+		<SoundBank Id="2289907698" Type="Event" GUID="{B5D47CC2-B5AA-4627-B3D8-CA0C273C40B5}" Language="SFX" Hash="{C5124574-1818-55B9-3BCD-4C460A313EBA}">
 			<ObjectPath>ITM_Ammo_GL</ObjectPath>
 			<ShortName>ITM_Ammo_GL</ShortName>
 			<Path>Event/ITM_Ammo_GL.bnk</Path>
@@ -4628,7 +4622,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2333830951" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{933F81E2-E056-FA5B-F984-D1494E3EBC6F}">
+		<SoundBank Id="2333830951" Type="Event" GUID="{1139BF59-E796-44F8-A41A-58F596E277FE}" Language="SFX" Hash="{E67B5E9C-3C18-6C93-4356-8E42E1AFB8F1}">
 			<ObjectPath>AMB_EnergyPillar_L</ObjectPath>
 			<ShortName>AMB_EnergyPillar_L</ShortName>
 			<Path>Event/AMB_EnergyPillar_L.bnk</Path>
@@ -4650,7 +4644,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{5FA45972-7C7E-E418-E6A5-4077ACC60D79}">
+		<SoundBank Id="2333830952" Type="Event" GUID="{59B52E0A-A590-4C41-B895-B6222DEA8792}" Language="SFX" Hash="{673AABC7-86D7-56B5-73F0-E8371788D04D}">
 			<ObjectPath>AMB_EnergyPillar_C</ObjectPath>
 			<ShortName>AMB_EnergyPillar_C</ShortName>
 			<Path>Event/AMB_EnergyPillar_C.bnk</Path>
@@ -4688,7 +4682,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{741BDF62-1FC0-CA2A-0D00-6A916191AD66}">
+		<SoundBank Id="2395369600" Type="Event" GUID="{1660A5C5-5059-4DB0-9085-DAA0E9BA29BA}" Language="SFX" Hash="{0E388DFD-42BD-0F03-1E87-FFF4282DCCB9}">
 			<ObjectPath>FOL_Footstep_L</ObjectPath>
 			<ShortName>FOL_Footstep_L</ShortName>
 			<Path>Event/FOL_Footstep_L.bnk</Path>
@@ -5382,7 +5376,7 @@
 				<Event Id="2480860729" Name="GL_PassBy_LP_Stop" ObjectPath="\Events\Weapons\Shooting\Travel\GL_PassBy_LP_Stop" GUID="{4ABC7647-EB94-46FC-82E0-92911FB3B773}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2496008984" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{BC33B03C-5FDF-68EE-902B-08B3CD7E8851}">
+		<SoundBank Id="2496008984" Type="Event" GUID="{607158ED-DBF4-47F2-BC8F-47CBBBB00D87}" Language="SFX" Hash="{42825D5A-1C46-0E1A-CDBD-35AAE32AF0E5}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_7</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_7</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_7.bnk</Path>
@@ -5437,7 +5431,7 @@
 				<GameParameter Id="2940353649" Name="PAR_Distance_HoverCars_PS7" ObjectPath="\Game Parameters\Ambience\PAR_Distance_HoverCars_PS7" GUID="{A9E05F56-72E1-4F09-B1DD-9F4116A61B28}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{17416483-2E76-2904-919C-1F2553FBF40F}">
+		<SoundBank Id="2496008986" Type="Event" GUID="{1D314042-7C11-4C0F-BDEF-CFB03382CA47}" Language="SFX" Hash="{BE81FA99-AB63-598F-3417-B04DFE424BEE}">
 			<ObjectPath>AMB_HoverCars_ParticleStream_5</ObjectPath>
 			<ShortName>AMB_HoverCars_ParticleStream_5</ShortName>
 			<Path>Event/AMB_HoverCars_ParticleStream_5.bnk</Path>
@@ -5536,7 +5530,7 @@
 				<Event Id="1107702071" Name="STN_Respawn" ObjectPath="\Events\Stingers\STN_Respawn" GUID="{BBB29E50-6BB3-4588-B482-6A65A05E69A3}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2992962930" Type="Event" GUID="{3C0DA367-FE08-40AC-B96C-0BCFE38BE080}" Language="SFX" Hash="{899AF77C-80A6-35D6-0BE8-179DE2A56641}">
+		<SoundBank Id="2992962930" Type="Event" GUID="{3C0DA367-FE08-40AC-B96C-0BCFE38BE080}" Language="SFX" Hash="{D07382C2-0248-260C-676E-6871E0B864B4}">
 			<ObjectPath>AMB_BarrierFence</ObjectPath>
 			<ShortName>AMB_BarrierFence</ShortName>
 			<Path>Event/AMB_BarrierFence.bnk</Path>
@@ -5593,6 +5587,25 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
+		<SoundBank Id="3783818085" Type="Event" GUID="{71C9AFA8-EF94-4712-AA3A-EA7EDA5643E4}" Language="SFX" Hash="{32037069-5DAF-9A36-6031-6A9A74475B71}">
+			<ObjectPath>AR_Reload_OS_3P</ObjectPath>
+			<ShortName>AR_Reload_OS_3P</ShortName>
+			<Path>Event/AR_Reload_OS_3P.bnk</Path>
+			<Media>
+				<File Id="781212311" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AR_Reload.wav</ShortName>
+					<Path>Media/781212311.wem</Path>
+					<CachePath>SFX/AR_Reload_5F1F99A8.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3783818085" Name="AR_Reload_OS_3P" ObjectPath="\Events\Weapons\3P\Reloading\AR_Reload_OS_3P" GUID="{71C9AFA8-EF94-4712-AA3A-EA7EDA5643E4}" MaxAttenuation="5000" DurationType="OneShot" DurationMin="1.6517799" DurationMax="1.8540605">
+					<MediaRefs>
+						<MediaRef Id="781212311"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="3814800052" Type="Bus" GUID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}" Language="SFX" Hash="{277F9DDD-9BFE-7C35-DB21-2004F1009564}">
 			<ObjectPath>Highrise_Room</ObjectPath>
 			<ShortName>Highrise_Room</ShortName>
@@ -5612,7 +5625,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3838114450" Type="Event" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" Language="SFX" Hash="{A7FD1894-8DC7-7EFA-D64C-BDDFAB3AA070}">
+		<SoundBank Id="3838114450" Type="Event" GUID="{1635F222-A233-45E5-B0C4-8A8C46A88E68}" Language="SFX" Hash="{298F7DF2-6571-EDDC-BE9F-E8F4FB5D419C}">
 			<ObjectPath>AR_Shoot_Empty</ObjectPath>
 			<ShortName>AR_Shoot_Empty</ShortName>
 			<Path>Event/AR_Shoot_Empty.bnk</Path>
@@ -5652,7 +5665,7 @@
 			<ShortName>Dialogue</ShortName>
 			<Path>Dialogue.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4134637028" Type="Event" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" Language="SFX" Hash="{F5753FAE-549A-9AFB-E417-70F410D900C0}">
+		<SoundBank Id="4134637028" Type="Event" GUID="{1D9BEA0D-36C3-4DCA-B91C-C3AFBA3FA270}" Language="SFX" Hash="{160BFA55-2D8B-37AA-D3EF-2784C0C2ECC2}">
 			<ObjectPath>AMB_RoomGusts_SmallEntrance_Exterior</ObjectPath>
 			<ShortName>AMB_RoomGusts_SmallEntrance_Exterior</ShortName>
 			<Path>Event/AMB_RoomGusts_SmallEntrance_Exterior.bnk</Path>
@@ -5682,5 +5695,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9C899BA9-A7AE-EE51-3947-0A7770E095FF}</FileHash>
+	<FileHash>{0E33A5C5-2461-54ED-6D75-B7D2C15F0F68}</FileHash>
 </SoundBanksInfo>

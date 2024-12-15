@@ -20,11 +20,6 @@
 							</ValueList>
 						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-20</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -40,16 +35,18 @@
 					<ChildrenList>
 						<ActorMixer Name="ITM_Health" ID="{36A8EF21-72F4-415D-B490-43DF69C50EDC}" ShortID="224126432">
 							<PropertyList>
+								<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
 										<Value>10</Value>
 									</ValueList>
 								</Property>
-								<Property Name="Volume" Type="Real64">
+								<Property Name="MakeUpGain" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-13</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverrideHdrEnvelope" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -61,13 +58,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="ITM_Health" ID="{FED307BB-29F8-40F9-A3C0-D1AA126FA037}" ShortID="561864205">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -106,11 +96,6 @@
 							</ValueList>
 						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-20</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -125,6 +110,19 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="ITM_Ammo_AR" ID="{5E062AB6-478C-40EC-A9C9-B5ACE839B46D}" ShortID="465931624">
+							<PropertyList>
+								<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -135,13 +133,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="ITM_Ammo_AR" ID="{8B60B0F9-3649-4AA9-880E-1BAF3254F9A5}" ShortID="181032238">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -167,9 +158,14 @@
 						</ActorMixer>
 						<ActorMixer Name="ITM_Ammo_GL" ID="{07BA116E-D68C-402A-A25C-FAB1257E20AF}" ShortID="190363229">
 							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

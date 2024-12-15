@@ -1,0 +1,49 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "145",
+  "SoundBanks": [
+   {
+    "Id": "3783818085",
+    "Type": "Event",
+    "GUID": "{71C9AFA8-EF94-4712-AA3A-EA7EDA5643E4}",
+    "Language": "SFX",
+    "Hash": "{32037069-5DAF-9A36-6031-6A9A74475B71}",
+    "ObjectPath": "AR_Reload_OS_3P",
+    "ShortName": "AR_Reload_OS_3P",
+    "Path": "Event/AR_Reload_OS_3P.bnk",
+    "Media": [
+     {
+      "Id": "781212311",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "AR_Reload.wav",
+      "Path": "Media/781212311.wem",
+      "CachePath": "SFX/AR_Reload_5F1F99A8.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3783818085",
+      "Name": "AR_Reload_OS_3P",
+      "ObjectPath": "\\Events\\Weapons\\3P\\Reloading\\AR_Reload_OS_3P",
+      "GUID": "{71C9AFA8-EF94-4712-AA3A-EA7EDA5643E4}",
+      "MaxAttenuation": "5000",
+      "DurationType": "OneShot",
+      "DurationMin": "1.6517799",
+      "DurationMax": "1.8540605",
+      "MediaRefs": [
+       {
+        "Id": "781212311"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{8E6BA5D7-7338-40ED-60E0-C9C14C8C8D75}"
+ }
+}

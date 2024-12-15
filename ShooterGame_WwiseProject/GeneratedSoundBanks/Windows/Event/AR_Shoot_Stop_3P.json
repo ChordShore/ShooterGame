@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}",
     "Language": "SFX",
-    "Hash": "{BF89206C-BBFE-A9F2-7F73-A77089BA1ED5}",
+    "Hash": "{010E7B95-9584-97FF-10A6-2A6F3FC5FCB6}",
     "ObjectPath": "AR_Shoot_Stop_3P",
     "ShortName": "AR_Shoot_Stop_3P",
     "Path": "Event/AR_Shoot_Stop_3P.bnk",
@@ -142,10 +142,10 @@
       "Name": "AR_Shoot_Stop_3P",
       "ObjectPath": "\\Events\\Weapons\\3P\\Shooting\\Shoot\\AR_Shoot_Stop_3P",
       "GUID": "{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}",
-      "MaxAttenuation": "8000",
+      "MaxAttenuation": "13000",
       "DurationType": "OneShot",
-      "DurationMin": "1.4926512",
-      "DurationMax": "1.4926512",
+      "DurationMin": "1.4088752",
+      "DurationMax": "1.4206908",
       "MediaRefs": [
        {
         "Id": "25638055"
@@ -190,15 +190,7 @@
          "Id": "2781261543"
         }
        ]
-      },
-      "AuxBusRefs": [
-       {
-        "Id": "3348775760",
-        "Name": "Highrise_EarlyReflections",
-        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
-        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
-       }
-      ]
+      }
      }
     ],
     "GameParameters": [
@@ -211,6 +203,6 @@
     ]
    }
   ],
-  "FileHash": "{19F73FCC-5B54-5206-FFA5-C40078506258}"
+  "FileHash": "{E75C0EBB-EBC9-2CBD-23D6-613644E34B04}"
  }
 }

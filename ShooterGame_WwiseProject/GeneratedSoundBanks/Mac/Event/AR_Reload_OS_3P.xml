@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<SoundBanks>
+		<SoundBank Id="3783818085" Type="Event" GUID="{71C9AFA8-EF94-4712-AA3A-EA7EDA5643E4}" Language="SFX" Hash="{32037069-5DAF-9A36-6031-6A9A74475B71}">
+			<ObjectPath>AR_Reload_OS_3P</ObjectPath>
+			<ShortName>AR_Reload_OS_3P</ShortName>
+			<Path>Event/AR_Reload_OS_3P.bnk</Path>
+			<Media>
+				<File Id="781212311" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AR_Reload.wav</ShortName>
+					<Path>Media/781212311.wem</Path>
+					<CachePath>SFX/AR_Reload_5F1F99A8.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3783818085" Name="AR_Reload_OS_3P" ObjectPath="\Events\Weapons\3P\Reloading\AR_Reload_OS_3P" GUID="{71C9AFA8-EF94-4712-AA3A-EA7EDA5643E4}" MaxAttenuation="5000" DurationType="OneShot" DurationMin="1.6517799" DurationMax="1.8540605">
+					<MediaRefs>
+						<MediaRef Id="781212311"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{A145F529-E1EB-366D-6C37-6C37D8666B7D}</FileHash>
+</SoundBanksInfo>

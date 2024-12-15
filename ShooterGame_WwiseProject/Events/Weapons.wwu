@@ -229,7 +229,7 @@
 								<Action Name="" ID="{4ABB8D84-CF4C-490E-AF7C-C0258FB621EE}" ShortID="836851278">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="WEP_Targeting_Engage_Switch" ID="{8C561696-9BB5-4EEF-93EE-D34F59452806}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+											<ObjectRef Name="WEP_Engage_Switch" ID="{8C561696-9BB5-4EEF-93EE-D34F59452806}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -240,7 +240,7 @@
 								<Action Name="" ID="{789AD460-B622-439E-BD46-E931C4F975C8}" ShortID="387145255">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="WEP_Targeting_Disengage_Switch" ID="{EF01A6E5-7DB7-40F5-AF7F-626B16562D49}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+											<ObjectRef Name="WEP_Disengage_Switch" ID="{EF01A6E5-7DB7-40F5-AF7F-626B16562D49}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -339,6 +339,21 @@
 										</Event>
 									</ChildrenList>
 								</Folder>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Reloading" ID="{03D633D6-2D1E-466B-B667-16936E32839D}" ShortID="957971010">
+							<ChildrenList>
+								<Event Name="AR_Reload_OS_3P" ID="{71C9AFA8-EF94-4712-AA3A-EA7EDA5643E4}">
+									<ChildrenList>
+										<Action Name="" ID="{226B8252-58C4-4F30-AAA1-6BDADA0D8102}" ShortID="55757784">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AR_Reload" ID="{BD02166F-F1AF-4593-BF85-B41AD6D8874C}" WorkUnitID="{2B4370EC-6088-46A6-82A0-6B40500E98AD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

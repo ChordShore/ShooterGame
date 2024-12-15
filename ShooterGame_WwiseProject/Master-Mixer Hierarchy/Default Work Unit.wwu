@@ -27,7 +27,7 @@
 								</Property>
 								<Property Name="HdrThreshold" Type="Real64">
 									<ValueList>
-										<Value>-24</Value>
+										<Value>-8</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -358,35 +358,6 @@
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 										<Property Name="RecoveryTime" Type="Real64" Value="0"/>
 									</PropertyList>
-									<DuckingList>
-										<DuckItem>
-											<BusRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}"/>
-											<DuckingParam>
-												<Volume>-3</Volume>
-												<FadeInTime>0.100000001490116</FadeInTime>
-												<FadeOutTime>0</FadeOutTime>
-												<FadeCurve>FadeLinear</FadeCurve>
-											</DuckingParam>
-										</DuckItem>
-										<DuckItem>
-											<BusRef Name="AMB_Rooms" ID="{07982599-3460-4AB7-8018-8A8B6A4BEF5E}"/>
-											<DuckingParam>
-												<Volume>-3</Volume>
-												<FadeInTime>0.100000001490116</FadeInTime>
-												<FadeOutTime>0</FadeOutTime>
-												<FadeCurve>FadeLinear</FadeCurve>
-											</DuckingParam>
-										</DuckItem>
-										<DuckItem>
-											<BusRef Name="Foley" ID="{686337CC-9F96-4AB3-9330-70E747D77E14}"/>
-											<DuckingParam>
-												<Volume>-3</Volume>
-												<FadeInTime>0.100000001490116</FadeInTime>
-												<FadeOutTime>0</FadeOutTime>
-												<FadeCurve>FadeLinear</FadeCurve>
-											</DuckingParam>
-										</DuckItem>
-									</DuckingList>
 								</Bus>
 								<Bus Name="Dialogue" ID="{80C87677-6DFA-46DD-8E4C-337CF0B1357D}">
 									<PropertyList>
@@ -669,7 +640,7 @@
 																						<SegmentShape>SCurve</SegmentShape>
 																					</Point>
 																					<Point>
-																						<XPos>-0</XPos>
+																						<XPos>0</XPos>
 																						<YPos>-200</YPos>
 																						<Flags>0</Flags>
 																					</Point>
