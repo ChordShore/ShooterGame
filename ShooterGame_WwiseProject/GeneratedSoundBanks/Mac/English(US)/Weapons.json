@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{2ABF8492-5DCC-3A52-A3A3-AA258A9A0D81}",
+    "Hash": "{D3E13132-6006-3A8E-D4CE-60D4B6BBF943}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -397,7 +397,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_LFE.wav",
-      "CachePath": "SFX/GL_LFE_2066F9EC.wem"
+      "CachePath": "SFX/GL_LFE_C0D1FB18.wem"
      },
      {
       "Id": "373309000",
@@ -469,7 +469,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Mech_1.wav",
-      "CachePath": "SFX/GL_Mech_1_2066F9EC.wem"
+      "CachePath": "SFX/GL_Mech_1_C0D1FB18.wem"
      },
      {
       "Id": "432981530",
@@ -613,7 +613,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Mech_3.wav",
-      "CachePath": "SFX/GL_Mech_3_2066F9EC.wem"
+      "CachePath": "SFX/GL_Mech_3_C0D1FB18.wem"
      },
      {
       "Id": "555455356",
@@ -765,7 +765,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Tail_Atrium.wav",
-      "CachePath": "SFX/GL_Tail_Atrium_2066F9EC.wem"
+      "CachePath": "SFX/GL_Tail_Atrium_C0D1FB18.wem"
      },
      {
       "Id": "713162547",
@@ -877,7 +877,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Tail_Spawn.wav",
-      "CachePath": "SFX/GL_Tail_Spawn_FAF56659.wem"
+      "CachePath": "SFX/GL_Tail_Spawn_33FBD11D.wem"
      },
      {
       "Id": "809278308",
@@ -901,7 +901,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Tail_Room.wav",
-      "CachePath": "SFX/GL_Tail_Room_3553D263.wem"
+      "CachePath": "SFX/GL_Tail_Room_CE081D4F.wem"
      },
      {
       "Id": "826207383",
@@ -973,7 +973,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Pulse.wav",
-      "CachePath": "SFX/GL_Pulse_2066F9EC.wem"
+      "CachePath": "SFX/GL_Pulse_C0D1FB18.wem"
      },
      {
       "Id": "931298175",
@@ -1013,7 +1013,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Transient.wav",
-      "CachePath": "SFX/GL_Transient_2066F9EC.wem"
+      "CachePath": "SFX/GL_Transient_C0D1FB18.wem"
      },
      {
       "Id": "993604397",
@@ -1077,7 +1077,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Mech_2.wav",
-      "CachePath": "SFX/GL_Mech_2_2066F9EC.wem"
+      "CachePath": "SFX/GL_Mech_2_C0D1FB18.wem"
      },
      {
       "Id": "1043739804",
@@ -1317,6 +1317,14 @@
      ],
      "ShareSets": [
       {
+       "Id": "1459522457",
+       "Name": "Brick_Wall_Minus_1dB_Peak_Fast_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Fast_Release",
+       "GUID": "{2144284E-7ADD-4341-86A4-4E468BEC9A2D}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      },
+      {
        "Id": "2258521792",
        "Name": "Brick_Wall_Minus_1dB_Peak_Slow_Release",
        "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Slow_Release",
@@ -1433,7 +1441,14 @@
          {
           "Id": "1059409407"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "1459522457"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1479,7 +1494,14 @@
          {
           "Id": "993604397"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "1459522457"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1636,6 +1658,11 @@
           {
            "Id": "934461864"
           }
+         ],
+         "ShareSets": [
+          {
+           "Id": "1459522457"
+          }
          ]
         }
        },
@@ -1683,7 +1710,14 @@
          {
           "Id": "1046176772"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "1459522457"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1841,6 +1875,11 @@
           {
            "Id": "934461864"
           }
+         ],
+         "ShareSets": [
+          {
+           "Id": "1459522457"
+          }
          ]
         }
        },
@@ -1888,7 +1927,14 @@
          {
           "Id": "1050382712"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "1459522457"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -1934,7 +1980,14 @@
          {
           "Id": "993604397"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "1459522457"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -2090,6 +2143,11 @@
           },
           {
            "Id": "934461864"
+          }
+         ],
+         "ShareSets": [
+          {
+           "Id": "1459522457"
           }
          ]
         }
@@ -2966,7 +3024,14 @@
          {
           "Id": "1036012855"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2781261543"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -2998,7 +3063,14 @@
          {
           "Id": "1036012855"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2781261543"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -3026,7 +3098,14 @@
          {
           "Id": "1036012855"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2781261543"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -3057,7 +3136,14 @@
          {
           "Id": "1036012855"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2781261543"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -3088,7 +3174,14 @@
          {
           "Id": "1036012855"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2781261543"
+          }
+         ]
+        }
        }
       ]
      },
@@ -3291,6 +3384,6 @@
     ]
    }
   ],
-  "FileHash": "{97B825C8-7164-44EE-020D-B5D2D0C0A587}"
+  "FileHash": "{34611FEB-DD9A-4ADA-D554-D34C97AB723F}"
  }
 }

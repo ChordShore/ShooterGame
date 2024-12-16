@@ -252,9 +252,15 @@
 								</Bus>
 								<Bus Name="Weapons" ID="{1BC77837-C5B2-4563-B3F7-CF715B366F0C}">
 									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Color" Type="int16" Value="10"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>
+									<ReferenceList/>
 									<ChildrenList>
 										<Folder Name="Impacts" ID="{E3E60A0D-5A15-49AF-9C71-54A33A15148A}" ShortID="348850173">
 											<ChildrenList>
@@ -356,8 +362,28 @@
 									<PropertyList>
 										<Property Name="Color" Type="int16" Value="8"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
-										<Property Name="RecoveryTime" Type="Real64" Value="0"/>
+										<Property Name="RecoveryTime" Type="Real64" Value="0.1"/>
 									</PropertyList>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="AMB_Emitters" ID="{BE08F17C-F6BD-4E81-81FD-A6F7AEF631CE}"/>
+											<DuckingParam>
+												<Volume>-2</Volume>
+												<FadeInTime>0.100000001490116</FadeInTime>
+												<FadeOutTime>0</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+										<DuckItem>
+											<BusRef Name="Foley" ID="{686337CC-9F96-4AB3-9330-70E747D77E14}"/>
+											<DuckingParam>
+												<Volume>-2</Volume>
+												<FadeInTime>0.100000001490116</FadeInTime>
+												<FadeOutTime>0</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
 								</Bus>
 								<Bus Name="Dialogue" ID="{80C87677-6DFA-46DD-8E4C-337CF0B1357D}">
 									<PropertyList>
@@ -664,6 +690,11 @@
 								</Bus>
 								<Bus Name="Foley" ID="{686337CC-9F96-4AB3-9330-70E747D77E14}">
 									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Color" Type="int16" Value="2"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>

@@ -159,7 +159,7 @@
     "Type": "User",
     "GUID": "{BCB53ACE-11FB-4F41-BC46-CEE7FE13EED1}",
     "Language": "SFX",
-    "Hash": "{5DFDE307-24D6-2631-F3BA-BCB1720B32B7}",
+    "Hash": "{67ACE671-F8C3-6B73-2D51-6A34245F39F9}",
     "ObjectPath": "\\SoundBanks\\Ambience\\Ambience",
     "ShortName": "Ambience",
     "Path": "Ambience.bnk",
@@ -3090,7 +3090,7 @@
     "Type": "Event",
     "GUID": "{BD84793E-1D49-48EB-ACC4-F1DA575556CD}",
     "Language": "SFX",
-    "Hash": "{AAA57715-F36D-B9FD-53E5-FCBDFD8F23E1}",
+    "Hash": "{F7F6201F-2757-9A83-4BC3-84C4B8C61FE1}",
     "ObjectPath": "AR_Shoot_Stop",
     "ShortName": "AR_Shoot_Stop",
     "Path": "Event/AR_Shoot_Stop.bnk",
@@ -4369,7 +4369,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{6D5A2652-9288-A6E2-4A2E-F1F3F3976259}",
+    "Hash": "{FBB23A0F-975C-7DFC-DA95-033526B920C1}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -7389,7 +7389,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{2ABF8492-5DCC-3A52-A3A3-AA258A9A0D81}",
+    "Hash": "{D3E13132-6006-3A8E-D4CE-60D4B6BBF943}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -7776,7 +7776,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_LFE.wav",
-      "CachePath": "SFX/GL_LFE_2066F9EC.wem"
+      "CachePath": "SFX/GL_LFE_C0D1FB18.wem"
      },
      {
       "Id": "373309000",
@@ -7848,7 +7848,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Mech_1.wav",
-      "CachePath": "SFX/GL_Mech_1_2066F9EC.wem"
+      "CachePath": "SFX/GL_Mech_1_C0D1FB18.wem"
      },
      {
       "Id": "432981530",
@@ -7992,7 +7992,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Mech_3.wav",
-      "CachePath": "SFX/GL_Mech_3_2066F9EC.wem"
+      "CachePath": "SFX/GL_Mech_3_C0D1FB18.wem"
      },
      {
       "Id": "555455356",
@@ -8144,7 +8144,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Tail_Atrium.wav",
-      "CachePath": "SFX/GL_Tail_Atrium_2066F9EC.wem"
+      "CachePath": "SFX/GL_Tail_Atrium_C0D1FB18.wem"
      },
      {
       "Id": "713162547",
@@ -8256,7 +8256,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Tail_Spawn.wav",
-      "CachePath": "SFX/GL_Tail_Spawn_FAF56659.wem"
+      "CachePath": "SFX/GL_Tail_Spawn_33FBD11D.wem"
      },
      {
       "Id": "809278308",
@@ -8280,7 +8280,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Tail_Room.wav",
-      "CachePath": "SFX/GL_Tail_Room_3553D263.wem"
+      "CachePath": "SFX/GL_Tail_Room_CE081D4F.wem"
      },
      {
       "Id": "826207383",
@@ -8352,7 +8352,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Pulse.wav",
-      "CachePath": "SFX/GL_Pulse_2066F9EC.wem"
+      "CachePath": "SFX/GL_Pulse_C0D1FB18.wem"
      },
      {
       "Id": "931298175",
@@ -8392,7 +8392,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Transient.wav",
-      "CachePath": "SFX/GL_Transient_2066F9EC.wem"
+      "CachePath": "SFX/GL_Transient_C0D1FB18.wem"
      },
      {
       "Id": "993604397",
@@ -8456,7 +8456,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GL_Mech_2.wav",
-      "CachePath": "SFX/GL_Mech_2_2066F9EC.wem"
+      "CachePath": "SFX/GL_Mech_2_C0D1FB18.wem"
      },
      {
       "Id": "1043739804",
@@ -8696,6 +8696,14 @@
      ],
      "ShareSets": [
       {
+       "Id": "1459522457",
+       "Name": "Brick_Wall_Minus_1dB_Peak_Fast_Release",
+       "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Fast_Release",
+       "GUID": "{2144284E-7ADD-4341-86A4-4E468BEC9A2D}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      },
+      {
        "Id": "2258521792",
        "Name": "Brick_Wall_Minus_1dB_Peak_Slow_Release",
        "ObjectPath": "\\Effects\\Factory Effects\\Peak Limiter\\Brick_Wall_Minus_1dB_Peak_Slow_Release",
@@ -8812,7 +8820,14 @@
          {
           "Id": "1059409407"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "1459522457"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -8858,7 +8873,14 @@
          {
           "Id": "993604397"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "1459522457"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -9015,6 +9037,11 @@
           {
            "Id": "934461864"
           }
+         ],
+         "ShareSets": [
+          {
+           "Id": "1459522457"
+          }
          ]
         }
        },
@@ -9062,7 +9089,14 @@
          {
           "Id": "1046176772"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "1459522457"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -9220,6 +9254,11 @@
           {
            "Id": "934461864"
           }
+         ],
+         "ShareSets": [
+          {
+           "Id": "1459522457"
+          }
          ]
         }
        },
@@ -9267,7 +9306,14 @@
          {
           "Id": "1050382712"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "1459522457"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -9313,7 +9359,14 @@
          {
           "Id": "993604397"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "1459522457"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -9469,6 +9522,11 @@
           },
           {
            "Id": "934461864"
+          }
+         ],
+         "ShareSets": [
+          {
+           "Id": "1459522457"
           }
          ]
         }
@@ -10345,7 +10403,14 @@
          {
           "Id": "1036012855"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2781261543"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -10377,7 +10442,14 @@
          {
           "Id": "1036012855"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2781261543"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -10405,7 +10477,14 @@
          {
           "Id": "1036012855"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2781261543"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -10436,7 +10515,14 @@
          {
           "Id": "1036012855"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2781261543"
+          }
+         ]
+        }
        },
        {
         "SwitchValue": {
@@ -10467,7 +10553,14 @@
          {
           "Id": "1036012855"
          }
-        ]
+        ],
+        "PluginRefs": {
+         "ShareSets": [
+          {
+           "Id": "2781261543"
+          }
+         ]
+        }
        }
       ]
      },
@@ -13241,7 +13334,7 @@
     "Type": "Event",
     "GUID": "{1635F222-A233-45E5-B0C4-8A8C46A88E68}",
     "Language": "SFX",
-    "Hash": "{298F7DF2-6571-EDDC-BE9F-E8F4FB5D419C}",
+    "Hash": "{F08E1503-74A7-E83F-BE39-0282D75F91F5}",
     "ObjectPath": "AR_Shoot_Empty",
     "ShortName": "AR_Shoot_Empty",
     "Path": "Event/AR_Shoot_Empty.bnk",
@@ -13374,6 +13467,6 @@
     ]
    }
   ],
-  "FileHash": "{14EBD42A-78AE-C2F6-7657-7D19C6C67001}"
+  "FileHash": "{8CC23BB3-B244-6EEC-5B1D-CF397E19F5BD}"
  }
 }
