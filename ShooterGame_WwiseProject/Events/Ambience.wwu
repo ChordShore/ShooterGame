@@ -26,6 +26,16 @@
 														</Reference>
 													</ReferenceList>
 												</Action>
+												<Action Name="" ID="{A0CC8C29-ADA2-4127-894B-7AB8B4EBD684}" ShortID="471129952">
+													<PropertyList>
+														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_Highrise_Room_LP" ID="{C985A30E-FDD4-457A-A79F-78619E2D34D0}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
 												<Action Name="" ID="{C84F9EBD-6451-45AD-973C-31ED61DCFF2C}" ShortID="760211197">
 													<PropertyList>
 														<Property Name="ActionType" Type="int16" Value="36"/>
@@ -43,16 +53,6 @@
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_Highrise_Room_LP" ID="{C985A30E-FDD4-457A-A79F-78619E2D34D0}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-												<Action Name="" ID="{A0CC8C29-ADA2-4127-894B-7AB8B4EBD684}" ShortID="471129952">
-													<PropertyList>
-														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
@@ -99,6 +99,16 @@
 														</Reference>
 													</ReferenceList>
 												</Action>
+												<Action Name="" ID="{CB5A4126-AA5F-4881-AC67-D1FB68F1F388}" ShortID="765146383">
+													<PropertyList>
+														<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_Rooms_Spawn_LP" ID="{6880E55D-A8DE-4B30-9F31-9B0FC0B9E9EE}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
 												<Action Name="" ID="{79BFA0B1-B2D7-43A8-AB05-7C745A9F9F49}" ShortID="1061214545">
 													<PropertyList>
 														<Property Name="ActionType" Type="int16" Value="36"/>
@@ -116,16 +126,6 @@
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_Rooms_Spawn_LP" ID="{6880E55D-A8DE-4B30-9F31-9B0FC0B9E9EE}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-												<Action Name="" ID="{CB5A4126-AA5F-4881-AC67-D1FB68F1F388}" ShortID="765146383">
-													<PropertyList>
-														<Property Name="FadeTime" Type="Real64" Value="0.2"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
@@ -176,6 +176,16 @@
 														</Reference>
 													</ReferenceList>
 												</Action>
+												<Action Name="" ID="{42AE8C05-7965-4301-9B4D-E296688A1A51}" ShortID="542414162">
+													<PropertyList>
+														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AMB_Highrise_Atrium_LP" ID="{80131EEB-9187-4D6B-B4A5-409448CB1573}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
 												<Action Name="" ID="{1C1959FD-5A53-48D6-BF8A-34D5C5BDD023}" ShortID="477790392">
 													<PropertyList>
 														<Property Name="ActionType" Type="int16" Value="36"/>
@@ -192,16 +202,6 @@
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="AMB_Highrise_Atrium_LP" ID="{80131EEB-9187-4D6B-B4A5-409448CB1573}" WorkUnitID="{1AA67785-F95F-4EAF-BB1F-C7A201C21E61}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-												<Action Name="" ID="{42AE8C05-7965-4301-9B4D-E296688A1A51}" ShortID="542414162">
-													<PropertyList>
-														<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
