@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{D3E13132-6006-3A8E-D4CE-60D4B6BBF943}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{AF74561F-D3E6-143C-C669-48F240B112BD}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -177,10 +177,6 @@
 				<File Id="340692458" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Metal_19111371.wem</CachePath>
-				</File>
-				<File Id="345176474" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AR_Shot_LFE.wav</ShortName>
-					<CachePath>SFX/AR_Shot_LFE_C0D1FB18.wem</CachePath>
 				</File>
 				<File Id="350098340" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Spawn.wav</ShortName>
@@ -361,6 +357,10 @@
 				<File Id="650928932" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Grass_06AC75B2.wem</CachePath>
+				</File>
+				<File Id="657027243" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_LFE.wav</ShortName>
+					<CachePath>SFX/AR_Shot_LFE_E558B247.wem</CachePath>
 				</File>
 				<File Id="666983815" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
@@ -913,8 +913,28 @@
 				</Event>
 				<Event Id="3035132243" Name="AR_Shoot_LP" ObjectPath="\Events\Weapons\Shooting\Shoot\AR_Shoot_LP" GUID="{027202E3-540C-4144-873B-7DCDD76899B6}" DurationType="Infinite">
 					<MediaRefs>
+						<MediaRef Id="25638055"/>
+						<MediaRef Id="92565130"/>
+						<MediaRef Id="166846503"/>
+						<MediaRef Id="228004887"/>
+						<MediaRef Id="312448983"/>
+						<MediaRef Id="373309000"/>
+						<MediaRef Id="548026506"/>
+						<MediaRef Id="560147879"/>
+						<MediaRef Id="630130873"/>
 						<MediaRef Id="635329318"/>
+						<MediaRef Id="657027243"/>
+						<MediaRef Id="666983815"/>
+						<MediaRef Id="676321132"/>
+						<MediaRef Id="736273374"/>
+						<MediaRef Id="832229830"/>
+						<MediaRef Id="1033448803"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2781261543"/>
+						</ShareSets>
+					</PluginRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
@@ -922,22 +942,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="301467384" GUID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}" Default="true"/>
 							<MediaRefs>
-								<MediaRef Id="25638055"/>
-								<MediaRef Id="92565130"/>
-								<MediaRef Id="166846503"/>
-								<MediaRef Id="228004887"/>
-								<MediaRef Id="312448983"/>
-								<MediaRef Id="345176474"/>
-								<MediaRef Id="373309000"/>
 								<MediaRef Id="470590754"/>
-								<MediaRef Id="548026506"/>
-								<MediaRef Id="560147879"/>
-								<MediaRef Id="630130873"/>
-								<MediaRef Id="666983815"/>
-								<MediaRef Id="676321132"/>
-								<MediaRef Id="736273374"/>
-								<MediaRef Id="832229830"/>
-								<MediaRef Id="1033448803"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -948,22 +953,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="877225536" GUID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 							<MediaRefs>
-								<MediaRef Id="25638055"/>
-								<MediaRef Id="92565130"/>
-								<MediaRef Id="166846503"/>
 								<MediaRef Id="175929226"/>
-								<MediaRef Id="228004887"/>
-								<MediaRef Id="312448983"/>
-								<MediaRef Id="345176474"/>
-								<MediaRef Id="373309000"/>
-								<MediaRef Id="548026506"/>
-								<MediaRef Id="560147879"/>
-								<MediaRef Id="630130873"/>
-								<MediaRef Id="666983815"/>
-								<MediaRef Id="676321132"/>
-								<MediaRef Id="736273374"/>
-								<MediaRef Id="832229830"/>
-								<MediaRef Id="1033448803"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -974,22 +964,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="748895195" GUID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
 							<MediaRefs>
-								<MediaRef Id="25638055"/>
-								<MediaRef Id="92565130"/>
-								<MediaRef Id="166846503"/>
 								<MediaRef Id="175929226"/>
-								<MediaRef Id="228004887"/>
-								<MediaRef Id="312448983"/>
-								<MediaRef Id="345176474"/>
-								<MediaRef Id="373309000"/>
-								<MediaRef Id="548026506"/>
-								<MediaRef Id="560147879"/>
-								<MediaRef Id="630130873"/>
-								<MediaRef Id="666983815"/>
-								<MediaRef Id="676321132"/>
-								<MediaRef Id="736273374"/>
-								<MediaRef Id="832229830"/>
-								<MediaRef Id="1033448803"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -1001,21 +976,6 @@
 							<SwitchValue GroupType="State" GroupId="747849153" Id="1657765358" GUID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 							<MediaRefs>
 								<MediaRef Id="14501665"/>
-								<MediaRef Id="25638055"/>
-								<MediaRef Id="92565130"/>
-								<MediaRef Id="166846503"/>
-								<MediaRef Id="228004887"/>
-								<MediaRef Id="312448983"/>
-								<MediaRef Id="345176474"/>
-								<MediaRef Id="373309000"/>
-								<MediaRef Id="548026506"/>
-								<MediaRef Id="560147879"/>
-								<MediaRef Id="630130873"/>
-								<MediaRef Id="666983815"/>
-								<MediaRef Id="676321132"/>
-								<MediaRef Id="736273374"/>
-								<MediaRef Id="832229830"/>
-								<MediaRef Id="1033448803"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -1026,22 +986,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="949156522" GUID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
 							<MediaRefs>
-								<MediaRef Id="25638055"/>
-								<MediaRef Id="92565130"/>
-								<MediaRef Id="166846503"/>
 								<MediaRef Id="175929226"/>
-								<MediaRef Id="228004887"/>
-								<MediaRef Id="312448983"/>
-								<MediaRef Id="345176474"/>
-								<MediaRef Id="373309000"/>
-								<MediaRef Id="548026506"/>
-								<MediaRef Id="560147879"/>
-								<MediaRef Id="630130873"/>
-								<MediaRef Id="666983815"/>
-								<MediaRef Id="676321132"/>
-								<MediaRef Id="736273374"/>
-								<MediaRef Id="832229830"/>
-								<MediaRef Id="1033448803"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -1375,5 +1320,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C0E74CEE-6609-9671-B0A8-5BA7957478F9}</FileHash>
+	<FileHash>{70109F70-79D1-9304-102B-E241EA478E30}</FileHash>
 </SoundBanksInfo>
