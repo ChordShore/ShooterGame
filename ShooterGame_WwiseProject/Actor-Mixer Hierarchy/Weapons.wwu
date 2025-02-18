@@ -1375,14 +1375,10 @@
 																					</ValueList>
 																				</Property>
 																				<Property Name="Lowpass" Type="int16">
-																					<ValueList>
-																						<Value>10</Value>
-																					</ValueList>
 																					<ModifierList>
 																						<ModifierInfo>
 																							<Modifier Name="" ID="{1A0D07C4-899E-49A5-B8AB-4DE0D0E2501D}">
 																								<PropertyList>
-																									<Property Name="Enabled" Type="bool" Value="True"/>
 																									<Property Name="Max" Type="Real64" Value="5"/>
 																									<Property Name="Min" Type="Real64" Value="-25"/>
 																								</PropertyList>
@@ -1487,6 +1483,12 @@
 																														<YPos>900</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Log1</SegmentShape>
+																													</Point>
+																													<Point>
+																														<XPos>15</XPos>
+																														<YPos>12</YPos>
+																														<Flags>0</Flags>
+																														<SegmentShape>Exp1</SegmentShape>
 																													</Point>
 																													<Point>
 																														<XPos>30</XPos>
@@ -1769,7 +1771,9 @@
 																			</ValueList>
 																		</Property>
 																		<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
+																		<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 																		<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+																		<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																		<Property Name="ReflectionsVolume" Type="Real64">
 																			<ValueList>
 																				<Value>-2</Value>
@@ -9798,7 +9802,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<BlendContainer Name="AR_Stack" ID="{92CF7A0F-F120-4373-A72C-11EAB9BD69FC}" ShortID="586527025">
+														<BlendContainer Name="AR_Stack" ID="{F1D34814-99AA-4AB0-A52A-EDB645F05BDD}" ShortID="714888765">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -9808,7 +9812,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<BlendContainer Name="AR_Shot_Constructor" ID="{12D7E65A-1D49-442B-B9BB-8CD9D9DF1F6C}" ShortID="351410989">
+																<BlendContainer Name="AR_Shot_Constructor" ID="{D3F1F12D-F000-4AE5-A16F-243E34552F01}" ShortID="831534917">
 																	<PropertyList>
 																		<Property Name="GameAuxSendVolume" Type="Real64">
 																			<ValueList>
@@ -9839,7 +9843,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<RandomSequenceContainer Name="AR_Mech" ID="{A9F9BBEF-597F-49BE-93A6-B49D49F2CEB1}" ShortID="731538159">
+																		<RandomSequenceContainer Name="AR_Mech" ID="{DDEA5FFC-A489-487B-89D9-04EE45CD2971}" ShortID="962520676">
 																			<PropertyList>
 																				<Property Name="GameAuxSendVolume" Type="Real64">
 																					<ValueList>
@@ -9860,7 +9864,7 @@
 																				<Property Name="Pitch" Type="int32">
 																					<ModifierList>
 																						<ModifierInfo>
-																							<Modifier Name="" ID="{711368B2-633B-46A5-80CE-E6C3BEA08C5D}">
+																							<Modifier Name="" ID="{B79BC9F5-39D1-4B24-8EC1-358C87ECE2CE}">
 																								<PropertyList>
 																									<Property Name="Enabled" Type="bool" Value="True"/>
 																									<Property Name="Max" Type="Real64" Value="50"/>
@@ -9897,7 +9901,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="AR_Shot_Mech" ID="{E908D288-EE09-40EA-957B-01AA77C2C120}" ShortID="1046247143">
+																				<Sound Name="AR_Shot_Mech" ID="{6D316057-9EA4-4107-B0F4-4134616A0490}" ShortID="439467070">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -9907,7 +9911,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="AR_Shot_Mech" ID="{73D50D65-362B-4577-A49A-2A308C7B28FE}">
+																						<AudioFileSource Name="AR_Shot_Mech" ID="{3DAD45FE-7747-4B99-8EC9-CD24A8EAE7FB}">
 																							<Language>SFX</Language>
 																							<AudioFile>AR_Shot_Mech.wav</AudioFile>
 																							<MediaIDList>
@@ -9916,12 +9920,12 @@
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="AR_Shot_Mech" ID="{73D50D65-362B-4577-A49A-2A308C7B28FE}" Platform="Linked"/>
+																						<ActiveSource Name="AR_Shot_Mech" ID="{3DAD45FE-7747-4B99-8EC9-CD24A8EAE7FB}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
 																		</RandomSequenceContainer>
-																		<RandomSequenceContainer Name="AR_Transient" ID="{C8C9F979-CDCC-446A-9C55-1E4A47E6607D}" ShortID="1052239757">
+																		<RandomSequenceContainer Name="AR_Transient" ID="{50F95FE2-D62E-4E56-8F57-716DF2552F52}" ShortID="583380604">
 																			<PropertyList>
 																				<Property Name="GameAuxSendVolume" Type="Real64">
 																					<ValueList>
@@ -9937,7 +9941,7 @@
 																				<Property Name="Pitch" Type="int32">
 																					<ModifierList>
 																						<ModifierInfo>
-																							<Modifier Name="" ID="{91390E91-2F32-4D45-9681-92D723C426F8}">
+																							<Modifier Name="" ID="{A864ECF1-0320-4678-ACA7-B77A539A6B32}">
 																								<PropertyList>
 																									<Property Name="Enabled" Type="bool" Value="True"/>
 																									<Property Name="Max" Type="Real64" Value="50"/>
@@ -9979,7 +9983,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="AR_Shot_Transient" ID="{66DFE1F6-AB06-42A8-A5FD-5913C1456802}" ShortID="62079722">
+																				<Sound Name="AR_Shot_Transient" ID="{BF2C15BB-2602-4FFE-8F53-A1A4B95681B8}" ShortID="302743876">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -9989,7 +9993,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="AR_Shot_Transient" ID="{DAD00253-45AF-4CD1-89A4-2B127B43A1C1}">
+																						<AudioFileSource Name="AR_Shot_Transient" ID="{515F2000-5E88-4B2D-BED5-90076F98413E}">
 																							<Language>SFX</Language>
 																							<AudioFile>AR_Shot_Transient.wav</AudioFile>
 																							<MediaIDList>
@@ -9998,12 +10002,12 @@
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="AR_Shot_Transient" ID="{DAD00253-45AF-4CD1-89A4-2B127B43A1C1}" Platform="Linked"/>
+																						<ActiveSource Name="AR_Shot_Transient" ID="{515F2000-5E88-4B2D-BED5-90076F98413E}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
 																		</RandomSequenceContainer>
-																		<RandomSequenceContainer Name="AR_Pulse" ID="{07F2B198-D7C1-49EF-A563-1B1549215913}" ShortID="924729107">
+																		<RandomSequenceContainer Name="AR_Pulse" ID="{FFD7A037-FC99-4173-8F59-B0967C9DE370}" ShortID="884184894">
 																			<PropertyList>
 																				<Property Name="GameAuxSendVolume" Type="Real64">
 																					<ValueList>
@@ -10017,14 +10021,10 @@
 																					</ValueList>
 																				</Property>
 																				<Property Name="Lowpass" Type="int16">
-																					<ValueList>
-																						<Value>10</Value>
-																					</ValueList>
 																					<ModifierList>
 																						<ModifierInfo>
-																							<Modifier Name="" ID="{61148BDB-9D26-4C43-8084-8BA4063AD7EF}">
+																							<Modifier Name="" ID="{6069E98C-985F-4909-A9E0-E29C94C6AD46}">
 																								<PropertyList>
-																									<Property Name="Enabled" Type="bool" Value="True"/>
 																									<Property Name="Max" Type="Real64" Value="5"/>
 																									<Property Name="Min" Type="Real64" Value="-25"/>
 																								</PropertyList>
@@ -10040,7 +10040,7 @@
 																				<Property Name="Pitch" Type="int32">
 																					<ModifierList>
 																						<ModifierInfo>
-																							<Modifier Name="" ID="{462D3F49-3E29-4CF2-A38A-B5B49BC597C7}">
+																							<Modifier Name="" ID="{DD2C60CD-C964-4BA8-8819-46ECE0DB3FFA}">
 																								<PropertyList>
 																									<Property Name="Enabled" Type="bool" Value="True"/>
 																									<Property Name="Max" Type="Real64" Value="75"/>
@@ -10082,7 +10082,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="AR_Shot_Pulse" ID="{663F46CC-14E7-4847-BDDD-29DC6633ED25}" ShortID="600837081">
+																				<Sound Name="AR_Shot_Pulse" ID="{25211277-6DCF-41C4-B9E9-DD4045676C0C}" ShortID="648302628">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -10092,7 +10092,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="AR_Shot_Pulse" ID="{C2FB8BBD-2B9F-47DB-843E-E92FF0A04B24}">
+																						<AudioFileSource Name="AR_Shot_Pulse" ID="{F0EFC169-99F6-4D0C-831D-C934923B42F6}">
 																							<Language>SFX</Language>
 																							<AudioFile>AR_Shot_Pulse.wav</AudioFile>
 																							<MediaIDList>
@@ -10101,7 +10101,7 @@
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="AR_Shot_Pulse" ID="{C2FB8BBD-2B9F-47DB-843E-E92FF0A04B24}" Platform="Linked"/>
+																						<ActiveSource Name="AR_Shot_Pulse" ID="{F0EFC169-99F6-4D0C-831D-C934923B42F6}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
@@ -10109,7 +10109,7 @@
 																				<ObjectList Name="RTPC">
 																					<Reference>
 																						<Local>
-																							<RTPC Name="" ID="{E1371A14-8374-4A15-9EE7-41E1D926D248}" ShortID="419730464">
+																							<RTPC Name="" ID="{18F2237A-E5F6-4C7D-B320-384385670810}" ShortID="182028925">
 																								<PropertyList>
 																									<Property Name="PropertyName" Type="string" Value="Pitch"/>
 																								</PropertyList>
@@ -10119,7 +10119,7 @@
 																									</Reference>
 																									<Reference Name="Curve">
 																										<Custom>
-																											<Curve Name="" ID="{575BE8F1-0BAD-400D-B876-523D9C6647AB}">
+																											<Curve Name="" ID="{C6B97C71-07C2-4A79-A8C0-CB06B2B8DA6A}">
 																												<PropertyList>
 																													<Property Name="Flags" Type="int32" Value="65537"/>
 																												</PropertyList>
@@ -10129,6 +10129,12 @@
 																														<YPos>900</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Log1</SegmentShape>
+																													</Point>
+																													<Point>
+																														<XPos>15</XPos>
+																														<YPos>12</YPos>
+																														<Flags>0</Flags>
+																														<SegmentShape>Exp1</SegmentShape>
 																													</Point>
 																													<Point>
 																														<XPos>30</XPos>
@@ -10145,7 +10151,7 @@
 																					</Reference>
 																					<Reference>
 																						<Local>
-																							<RTPC Name="" ID="{2E7DAD2C-7B64-484D-9C22-E06ED41D06D2}" ShortID="715359610">
+																							<RTPC Name="" ID="{C410892F-1699-4197-B312-1EB0A17F0CF0}" ShortID="875721600">
 																								<PropertyList>
 																									<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
 																								</PropertyList>
@@ -10155,7 +10161,7 @@
 																									</Reference>
 																									<Reference Name="Curve">
 																										<Custom>
-																											<Curve Name="" ID="{14F338D7-EFA8-4B6E-A9B2-1035B8C2D766}">
+																											<Curve Name="" ID="{1DBD1D55-B635-47BB-9AE8-B7DFD06DA273}">
 																												<PropertyList>
 																													<Property Name="Flags" Type="int32" Value="3"/>
 																												</PropertyList>
@@ -10181,7 +10187,7 @@
 																				</ObjectList>
 																			</ObjectLists>
 																		</RandomSequenceContainer>
-																		<RandomSequenceContainer Name="AR_LFE" ID="{D1AF70BD-7831-4918-A30E-6DC48BD480BA}" ShortID="957261122">
+																		<RandomSequenceContainer Name="AR_LFE" ID="{28A76DB1-2C47-4DE3-813D-33AFD42CE61F}" ShortID="765138905">
 																			<PropertyList>
 																				<Property Name="GameAuxSendVolume" Type="Real64">
 																					<ValueList>
@@ -10197,7 +10203,7 @@
 																				<Property Name="Lowpass" Type="int16">
 																					<ModifierList>
 																						<ModifierInfo>
-																							<Modifier Name="" ID="{A2A9A3FD-4ECE-4278-A02A-EBAAB1118540}"/>
+																							<Modifier Name="" ID="{27EA058C-BFB5-4585-8CD9-A4D74CA7703E}"/>
 																						</ModifierInfo>
 																					</ModifierList>
 																				</Property>
@@ -10209,7 +10215,7 @@
 																				<Property Name="Pitch" Type="int32">
 																					<ModifierList>
 																						<ModifierInfo>
-																							<Modifier Name="" ID="{4919F8CF-AD6C-4381-984D-8BF9BE4DBB0B}">
+																							<Modifier Name="" ID="{95D93733-D51C-4F49-A883-15427EEC48EC}">
 																								<PropertyList>
 																									<Property Name="Enabled" Type="bool" Value="True"/>
 																									<Property Name="Max" Type="Real64" Value="50"/>
@@ -10246,7 +10252,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="AR_Shot_LFE" ID="{97D8A40E-7651-42F4-A688-A9A54CBAA46F}" ShortID="159052793">
+																				<Sound Name="AR_Shot_LFE" ID="{303FF72A-97B8-4638-AD1E-B9F9377FDB93}" ShortID="1021177511">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -10256,7 +10262,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="AR_Shot_LFE" ID="{40714BA6-2E75-4B8B-B7F5-5042576049A3}">
+																						<AudioFileSource Name="AR_Shot_LFE" ID="{3129CA60-A5C2-4686-8B9F-B8E84A9055A2}">
 																							<PropertyList>
 																								<Property Name="ChannelConfigOverride" Type="int64" Value="49410"/>
 																							</PropertyList>
@@ -10268,12 +10274,12 @@
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="AR_Shot_LFE" ID="{40714BA6-2E75-4B8B-B7F5-5042576049A3}" Platform="Linked"/>
+																						<ActiveSource Name="AR_Shot_LFE" ID="{3129CA60-A5C2-4686-8B9F-B8E84A9055A2}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
 																		</RandomSequenceContainer>
-																		<RandomSequenceContainer Name="AR_Empty_Rattle" ID="{CD115305-1DAC-43D5-AEC5-675DE2C66821}" ShortID="595355630">
+																		<RandomSequenceContainer Name="AR_Empty_Rattle" ID="{22817311-0E25-4246-8879-AA9E2C34F74A}" ShortID="204468951">
 																			<PropertyList>
 																				<Property Name="GameAuxSendVolume" Type="Real64">
 																					<ValueList>
@@ -10313,7 +10319,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="AR_Empty_Rattle" ID="{4F4D9D3A-7BA3-46F5-BD3F-6146E3853BD2}" ShortID="655070570">
+																				<Sound Name="AR_Empty_Rattle" ID="{E41F3C44-0549-4D76-B456-EF96F157D02A}" ShortID="394018063">
 																					<PropertyList>
 																						<Property Name="GameAuxSendVolume" Type="Real64">
 																							<ValueList>
@@ -10342,7 +10348,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="AR_Empty_Rattle" ID="{0F99611A-BB07-49AD-8CFB-3F34038BF743}">
+																						<AudioFileSource Name="AR_Empty_Rattle" ID="{51AE9294-7F5E-4C4A-87FB-9387842AFC8C}">
 																							<Language>SFX</Language>
 																							<AudioFile>AR_Empty_Rattle.wav</AudioFile>
 																							<MediaIDList>
@@ -10351,7 +10357,7 @@
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="AR_Empty_Rattle" ID="{0F99611A-BB07-49AD-8CFB-3F34038BF743}" Platform="Linked"/>
+																						<ActiveSource Name="AR_Empty_Rattle" ID="{51AE9294-7F5E-4C4A-87FB-9387842AFC8C}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
@@ -10359,7 +10365,7 @@
 																				<ObjectList Name="RTPC">
 																					<Reference>
 																						<Local>
-																							<RTPC Name="" ID="{EE0264CC-70F4-4430-A1FD-AF9D1C100A3F}" ShortID="549524900">
+																							<RTPC Name="" ID="{B7C0367C-D3EF-4C0A-928C-14800CB34406}" ShortID="1029624485">
 																								<PropertyList>
 																									<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
 																								</PropertyList>
@@ -10369,7 +10375,7 @@
 																									</Reference>
 																									<Reference Name="Curve">
 																										<Custom>
-																											<Curve Name="" ID="{5750DBE9-6DA3-424C-98F2-926FAD365785}">
+																											<Curve Name="" ID="{B4B417B1-09C9-46C9-B9C2-EB64CF7A0ABE}">
 																												<PropertyList>
 																													<Property Name="Flags" Type="int32" Value="3"/>
 																												</PropertyList>
@@ -10403,7 +10409,7 @@
 																		</RandomSequenceContainer>
 																	</ChildrenList>
 																</BlendContainer>
-																<SwitchContainer Name="AR_Tail_Constructor" ID="{A2B5468A-0132-4009-B9EA-D9F6E3ED998A}" ShortID="358797465">
+																<SwitchContainer Name="AR_Tail_Constructor" ID="{69E233CA-3AB1-46F3-9D1E-AB6A397B3363}" ShortID="1017546403">
 																	<PropertyList>
 																		<Property Name="GameAuxSendVolume" Type="Real64">
 																			<ValueList>
@@ -10411,7 +10417,9 @@
 																			</ValueList>
 																		</Property>
 																		<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
+																		<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 																		<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+																		<Property Name="OverridePositioning" Type="bool" Value="True"/>
 																		<Property Name="ReflectionsVolume" Type="Real64">
 																			<ValueList>
 																				<Value>-2</Value>
@@ -10421,7 +10429,7 @@
 																		<Property Name="Volume" Type="Real64">
 																			<ModifierList>
 																				<ModifierInfo>
-																					<Modifier Name="" ID="{51F21DB5-6ECE-4D7B-A49D-A5B2FD2DE3AF}"/>
+																					<Modifier Name="" ID="{15632603-D431-4308-9003-584DB83816D4}"/>
 																				</ModifierInfo>
 																			</ModifierList>
 																		</Property>
@@ -10447,7 +10455,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<RandomSequenceContainer Name="AR_Tail_Spawn" ID="{E1756426-9FBF-4BE8-9F8D-C03CB6F07A98}" ShortID="338059272">
+																		<RandomSequenceContainer Name="AR_Tail_Spawn" ID="{7A99B730-C4A0-4B41-BD6F-A1A6035A2659}" ShortID="916434069">
 																			<PropertyList>
 																				<Property Name="InitialDelay" Type="Real64">
 																					<ValueList>
@@ -10462,7 +10470,7 @@
 																				<Property Name="Pitch" Type="int32">
 																					<ModifierList>
 																						<ModifierInfo>
-																							<Modifier Name="" ID="{99D8A60E-2381-4963-9DAA-74B5C708B5B1}">
+																							<Modifier Name="" ID="{F1E758A8-7F97-43D6-996D-2F923B3B06A6}">
 																								<PropertyList>
 																									<Property Name="Enabled" Type="bool" Value="True"/>
 																									<Property Name="Max" Type="Real64" Value="50"/>
@@ -10492,7 +10500,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="AR_Shot_Tail_Spawn" ID="{41C80EA2-829E-41B1-AE4D-C22549840C0D}" ShortID="838023018">
+																				<Sound Name="AR_Shot_Tail_Spawn" ID="{54271460-B51C-4724-8CD9-00CC5DB5AD4D}" ShortID="441808110">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -10502,7 +10510,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="AR_Shot_Tail_Spawn" ID="{74ABBF08-38D8-44FE-BB70-BBBEED218720}">
+																						<AudioFileSource Name="AR_Shot_Tail_Spawn" ID="{45550214-1416-469E-80A3-2A195880D409}">
 																							<Language>SFX</Language>
 																							<AudioFile>AR_Shot_Tail_Spawn.wav</AudioFile>
 																							<MediaIDList>
@@ -10511,12 +10519,12 @@
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="AR_Shot_Tail_Spawn" ID="{74ABBF08-38D8-44FE-BB70-BBBEED218720}" Platform="Linked"/>
+																						<ActiveSource Name="AR_Shot_Tail_Spawn" ID="{45550214-1416-469E-80A3-2A195880D409}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
 																		</RandomSequenceContainer>
-																		<RandomSequenceContainer Name="AR_Tail_Atrium" ID="{8CC95639-4322-4350-8557-F03EA8D2E75E}" ShortID="824498099">
+																		<RandomSequenceContainer Name="AR_Tail_Atrium" ID="{4E320586-9EAD-4EC7-AA43-3728C830824F}" ShortID="274020652">
 																			<PropertyList>
 																				<Property Name="InitialDelay" Type="Real64">
 																					<ValueList>
@@ -10531,7 +10539,7 @@
 																				<Property Name="Pitch" Type="int32">
 																					<ModifierList>
 																						<ModifierInfo>
-																							<Modifier Name="" ID="{98AD2AA8-1163-4091-A973-F333E776C0A7}">
+																							<Modifier Name="" ID="{6BF81AF3-2A4A-43A2-B435-54A6851B751C}">
 																								<PropertyList>
 																									<Property Name="Enabled" Type="bool" Value="True"/>
 																									<Property Name="Max" Type="Real64" Value="50"/>
@@ -10561,7 +10569,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="AR_Shot_Tail_Atrium" ID="{F404DF78-A453-4EC6-BB1D-FEBB3A4F9799}" ShortID="737000925">
+																				<Sound Name="AR_Shot_Tail_Atrium" ID="{5C597E5F-4760-4FD5-8B70-106C7D0CFD97}" ShortID="984691175">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -10571,7 +10579,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="AR_Shot_Tail_Atrium" ID="{6F6C1954-8471-4BC5-9460-F483F8B21114}">
+																						<AudioFileSource Name="AR_Shot_Tail_Atrium" ID="{0AA66E8F-6925-4023-8C89-9219D15A2779}">
 																							<Language>SFX</Language>
 																							<AudioFile>AR_Shot_Tail_Atrium.wav</AudioFile>
 																							<MediaIDList>
@@ -10580,12 +10588,12 @@
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="AR_Shot_Tail_Atrium" ID="{6F6C1954-8471-4BC5-9460-F483F8B21114}" Platform="Linked"/>
+																						<ActiveSource Name="AR_Shot_Tail_Atrium" ID="{0AA66E8F-6925-4023-8C89-9219D15A2779}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
 																		</RandomSequenceContainer>
-																		<RandomSequenceContainer Name="AR_Tail_Room" ID="{E1D0BDDF-2DCE-4110-B773-1CCE43C6FD08}" ShortID="417649858">
+																		<RandomSequenceContainer Name="AR_Tail_Room" ID="{37BE1318-D527-4881-878B-C332AB9DB4FB}" ShortID="755265940">
 																			<PropertyList>
 																				<Property Name="InitialDelay" Type="Real64">
 																					<ValueList>
@@ -10600,7 +10608,7 @@
 																				<Property Name="Pitch" Type="int32">
 																					<ModifierList>
 																						<ModifierInfo>
-																							<Modifier Name="" ID="{304EB3F2-01AB-4FA3-8AF7-C35310C46FEE}">
+																							<Modifier Name="" ID="{F217DDAB-90C4-434F-8EA2-632E5231F4CD}">
 																								<PropertyList>
 																									<Property Name="Enabled" Type="bool" Value="True"/>
 																									<Property Name="Max" Type="Real64" Value="50"/>
@@ -10630,7 +10638,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<Sound Name="AR_Shot_Tail_Room" ID="{361BCD2D-E1AC-4D9D-8584-3069EF468A30}" ShortID="948762525">
+																				<Sound Name="AR_Shot_Tail_Room" ID="{06E58DEC-DE72-4C28-A692-687414720446}" ShortID="285371011">
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -10640,7 +10648,7 @@
 																						</Reference>
 																					</ReferenceList>
 																					<ChildrenList>
-																						<AudioFileSource Name="AR_Shot_Tail_Room" ID="{4145DF9D-D515-4F32-8E68-DB226156FC6C}">
+																						<AudioFileSource Name="AR_Shot_Tail_Room" ID="{CFF3899E-A995-45A0-9C85-76DC2103F028}">
 																							<Language>SFX</Language>
 																							<AudioFile>AR_Shot_Tail_Room.wav</AudioFile>
 																							<MediaIDList>
@@ -10649,7 +10657,7 @@
 																						</AudioFileSource>
 																					</ChildrenList>
 																					<ActiveSourceList>
-																						<ActiveSource Name="AR_Shot_Tail_Room" ID="{4145DF9D-D515-4F32-8E68-DB226156FC6C}" Platform="Linked"/>
+																						<ActiveSource Name="AR_Shot_Tail_Room" ID="{CFF3899E-A995-45A0-9C85-76DC2103F028}" Platform="Linked"/>
 																					</ActiveSourceList>
 																				</Sound>
 																			</ChildrenList>
@@ -10659,7 +10667,7 @@
 																		<ObjectList Name="RTPC">
 																			<Reference>
 																				<Local>
-																					<RTPC Name="" ID="{DBB15CA1-D194-4F95-8156-7BD6AA208572}" ShortID="787106877">
+																					<RTPC Name="" ID="{3B75AA5C-CE88-4F9E-ACDD-88992432D5DF}" ShortID="463752537">
 																						<PropertyList>
 																							<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
 																						</PropertyList>
@@ -10669,7 +10677,7 @@
 																							</Reference>
 																							<Reference Name="Curve">
 																								<Custom>
-																									<Curve Name="" ID="{25807CC8-85BD-4529-AEE8-040D6F51380A}">
+																									<Curve Name="" ID="{0D623E6D-FFA7-41F8-9B13-91422298941C}">
 																										<PropertyList>
 																											<Property Name="Flags" Type="int32" Value="3"/>
 																										</PropertyList>
@@ -10698,50 +10706,50 @@
 																	<GroupingInfo>
 																		<GroupingBehaviorList>
 																			<GroupingBehavior>
-																				<ItemRef Name="AR_Tail_Spawn" ID="{E1756426-9FBF-4BE8-9F8D-C03CB6F07A98}"/>
+																				<ItemRef Name="AR_Tail_Room" ID="{37BE1318-D527-4881-878B-C332AB9DB4FB}"/>
 																			</GroupingBehavior>
 																			<GroupingBehavior>
-																				<ItemRef Name="AR_Tail_Atrium" ID="{8CC95639-4322-4350-8557-F03EA8D2E75E}"/>
+																				<ItemRef Name="AR_Tail_Spawn" ID="{7A99B730-C4A0-4B41-BD6F-A1A6035A2659}"/>
 																			</GroupingBehavior>
 																			<GroupingBehavior>
-																				<ItemRef Name="AR_Tail_Room" ID="{E1D0BDDF-2DCE-4110-B773-1CCE43C6FD08}"/>
+																				<ItemRef Name="AR_Tail_Atrium" ID="{4E320586-9EAD-4EC7-AA43-3728C830824F}"/>
 																			</GroupingBehavior>
 																		</GroupingBehaviorList>
 																		<GroupingList>
 																			<Grouping>
 																				<SwitchRef Name="STA_Indoors_Spawn" ID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
 																				<ItemList>
-																					<ItemRef Name="AR_Tail_Spawn" ID="{E1756426-9FBF-4BE8-9F8D-C03CB6F07A98}"/>
+																					<ItemRef Name="AR_Tail_Spawn" ID="{7A99B730-C4A0-4B41-BD6F-A1A6035A2659}"/>
 																				</ItemList>
 																			</Grouping>
 																			<Grouping>
 																				<SwitchRef Name="STA_Outdoors_Atrium" ID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 																				<ItemList>
-																					<ItemRef Name="AR_Tail_Atrium" ID="{8CC95639-4322-4350-8557-F03EA8D2E75E}"/>
+																					<ItemRef Name="AR_Tail_Atrium" ID="{4E320586-9EAD-4EC7-AA43-3728C830824F}"/>
 																				</ItemList>
 																			</Grouping>
 																			<Grouping>
 																				<SwitchRef Name="None" ID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
 																				<ItemList>
-																					<ItemRef Name="AR_Tail_Atrium" ID="{8CC95639-4322-4350-8557-F03EA8D2E75E}"/>
+																					<ItemRef Name="AR_Tail_Atrium" ID="{4E320586-9EAD-4EC7-AA43-3728C830824F}"/>
 																				</ItemList>
 																			</Grouping>
 																			<Grouping>
 																				<SwitchRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 																				<ItemList>
-																					<ItemRef Name="AR_Tail_Room" ID="{E1D0BDDF-2DCE-4110-B773-1CCE43C6FD08}"/>
+																					<ItemRef Name="AR_Tail_Room" ID="{37BE1318-D527-4881-878B-C332AB9DB4FB}"/>
 																				</ItemList>
 																			</Grouping>
 																			<Grouping>
 																				<SwitchRef Name="STA_Outdoors_Balcony_Center" ID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
 																				<ItemList>
-																					<ItemRef Name="AR_Tail_Atrium" ID="{8CC95639-4322-4350-8557-F03EA8D2E75E}"/>
+																					<ItemRef Name="AR_Tail_Atrium" ID="{4E320586-9EAD-4EC7-AA43-3728C830824F}"/>
 																				</ItemList>
 																			</Grouping>
 																		</GroupingList>
 																	</GroupingInfo>
 																</SwitchContainer>
-																<RandomSequenceContainer Name="AR_Casings" ID="{DA249591-68C5-4D8D-B575-4D73089A9423}" ShortID="984996987">
+																<RandomSequenceContainer Name="AR_Casings" ID="{90D7A508-C3E3-44B8-AEF1-CADC77B23B6A}" ShortID="70554519">
 																	<PropertyList>
 																		<Property Name="3DPosition" Type="int16" Value="2"/>
 																		<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -10767,7 +10775,7 @@
 																		<Property Name="Pitch" Type="int32">
 																			<ModifierList>
 																				<ModifierInfo>
-																					<Modifier Name="" ID="{CDB9A04C-6C28-4E2E-9400-22815BDF9B4B}">
+																					<Modifier Name="" ID="{2D918BF5-93A8-44C7-A796-9E943A69307D}">
 																						<PropertyList>
 																							<Property Name="Enabled" Type="bool" Value="True"/>
 																							<Property Name="Max" Type="Real64" Value="100"/>
@@ -10806,7 +10814,7 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<Sound Name="WEP_AR_Casings_01" ID="{194B9ECD-D824-452C-912F-F728C5F2CC98}" ShortID="741624680">
+																		<Sound Name="WEP_AR_Casings_01" ID="{514388FE-F3F3-4A84-ABCD-8CB541ABA123}" ShortID="243885958">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -10816,7 +10824,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="WEP_AR_Casings" ID="{84E9E50B-EFD4-433C-B2D1-D563A9B3A9C4}">
+																				<AudioFileSource Name="WEP_AR_Casings" ID="{97790C0C-4164-4201-ACCE-D0FAB26FCC4C}">
 																					<PropertyList>
 																						<Property Name="LoopBegin" Type="Real64" Value="0"/>
 																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
@@ -10830,10 +10838,10 @@
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
-																				<ActiveSource Name="WEP_AR_Casings" ID="{84E9E50B-EFD4-433C-B2D1-D563A9B3A9C4}" Platform="Linked"/>
+																				<ActiveSource Name="WEP_AR_Casings" ID="{97790C0C-4164-4201-ACCE-D0FAB26FCC4C}" Platform="Linked"/>
 																			</ActiveSourceList>
 																		</Sound>
-																		<Sound Name="WEP_AR_Casings_02" ID="{B327D504-BAF6-4FFB-B613-CFEF1F39D983}" ShortID="459224976">
+																		<Sound Name="WEP_AR_Casings_02" ID="{E4CAFE3E-FB56-4618-8A57-A164C84DC6B7}" ShortID="507389518">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -10843,7 +10851,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="WEP_AR_Casings" ID="{5468E4FD-22F8-4914-94B1-418977E2BC67}">
+																				<AudioFileSource Name="WEP_AR_Casings" ID="{E747CA19-D3ED-4811-BE5A-F140A96D56B4}">
 																					<PropertyList>
 																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																						<Property Name="TrimBegin" Type="Real64" Value="1.24489503386005"/>
@@ -10857,10 +10865,10 @@
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
-																				<ActiveSource Name="WEP_AR_Casings" ID="{5468E4FD-22F8-4914-94B1-418977E2BC67}" Platform="Linked"/>
+																				<ActiveSource Name="WEP_AR_Casings" ID="{E747CA19-D3ED-4811-BE5A-F140A96D56B4}" Platform="Linked"/>
 																			</ActiveSourceList>
 																		</Sound>
-																		<Sound Name="WEP_AR_Casings_03" ID="{A7075A9A-8F27-4859-8E83-67D9BCA06B4F}" ShortID="271737883">
+																		<Sound Name="WEP_AR_Casings_03" ID="{1E5A505B-A4F9-4291-8F15-80219674D04A}" ShortID="496717991">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -10870,7 +10878,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="WEP_AR_Casings" ID="{A669D5AC-7A04-4F29-B067-84955457C962}">
+																				<AudioFileSource Name="WEP_AR_Casings" ID="{9C76B90E-BA48-42C7-A931-7309B9D6A22C}">
 																					<PropertyList>
 																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																						<Property Name="TrimBegin" Type="Real64" Value="2.52437048532731"/>
@@ -10884,10 +10892,10 @@
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
-																				<ActiveSource Name="WEP_AR_Casings" ID="{A669D5AC-7A04-4F29-B067-84955457C962}" Platform="Linked"/>
+																				<ActiveSource Name="WEP_AR_Casings" ID="{9C76B90E-BA48-42C7-A931-7309B9D6A22C}" Platform="Linked"/>
 																			</ActiveSourceList>
 																		</Sound>
-																		<Sound Name="WEP_AR_Casings_04" ID="{1024C4FA-A3B6-4D75-9281-C9D71E19DD0D}" ShortID="791916057">
+																		<Sound Name="WEP_AR_Casings_04" ID="{AD2717F5-AB8D-4D45-87BA-B023D3D33594}" ShortID="441427086">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -10897,7 +10905,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="WEP_AR_Casings" ID="{77A3B2EA-D044-4115-B787-3B27BFBBCF56}">
+																				<AudioFileSource Name="WEP_AR_Casings" ID="{DD6CA8BD-6393-4497-83FE-023E83A1E85F}">
 																					<PropertyList>
 																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																						<Property Name="TrimBegin" Type="Real64" Value="3.79231913092551"/>
@@ -10911,10 +10919,10 @@
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
-																				<ActiveSource Name="WEP_AR_Casings" ID="{77A3B2EA-D044-4115-B787-3B27BFBBCF56}" Platform="Linked"/>
+																				<ActiveSource Name="WEP_AR_Casings" ID="{DD6CA8BD-6393-4497-83FE-023E83A1E85F}" Platform="Linked"/>
 																			</ActiveSourceList>
 																		</Sound>
-																		<Sound Name="WEP_AR_Casings_05" ID="{8DCCCEFC-A779-4E5C-97EE-183A61B1270D}" ShortID="874040333">
+																		<Sound Name="WEP_AR_Casings_05" ID="{8C587495-5073-4F46-AA52-7E979818513F}" ShortID="812874359">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -10924,7 +10932,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="WEP_AR_Casings" ID="{6C500B34-ADDF-49F4-BFF9-26CD6B0717BD}">
+																				<AudioFileSource Name="WEP_AR_Casings" ID="{6D6EB203-20A7-4E80-9005-41B32093B6D5}">
 																					<PropertyList>
 																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																						<Property Name="TrimBegin" Type="Real64" Value="5.06603117945824"/>
@@ -10938,10 +10946,10 @@
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
-																				<ActiveSource Name="WEP_AR_Casings" ID="{6C500B34-ADDF-49F4-BFF9-26CD6B0717BD}" Platform="Linked"/>
+																				<ActiveSource Name="WEP_AR_Casings" ID="{6D6EB203-20A7-4E80-9005-41B32093B6D5}" Platform="Linked"/>
 																			</ActiveSourceList>
 																		</Sound>
-																		<Sound Name="WEP_AR_Casings_06" ID="{9DA2DA27-4EBE-49A5-8105-7646B5335F34}" ShortID="484719341">
+																		<Sound Name="WEP_AR_Casings_06" ID="{485182A5-3868-4101-9B1A-AAF049DA853D}" ShortID="917753751">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -10951,7 +10959,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="WEP_AR_Casings" ID="{B8CF389C-C058-4F5A-BC26-B73D8377D8DD}">
+																				<AudioFileSource Name="WEP_AR_Casings" ID="{1C1FD2F0-08C0-4998-8981-9308F1203540}">
 																					<PropertyList>
 																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																						<Property Name="TrimBegin" Type="Real64" Value="6.35127003386005"/>
@@ -10965,10 +10973,10 @@
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
-																				<ActiveSource Name="WEP_AR_Casings" ID="{B8CF389C-C058-4F5A-BC26-B73D8377D8DD}" Platform="Linked"/>
+																				<ActiveSource Name="WEP_AR_Casings" ID="{1C1FD2F0-08C0-4998-8981-9308F1203540}" Platform="Linked"/>
 																			</ActiveSourceList>
 																		</Sound>
-																		<Sound Name="WEP_AR_Casings_07" ID="{FCF9A8C5-51EB-4483-BCB8-7451064B0FA5}" ShortID="470107118">
+																		<Sound Name="WEP_AR_Casings_07" ID="{506E9A8E-16C8-45B2-9C11-1540DC409FF3}" ShortID="483548558">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -10978,7 +10986,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="WEP_AR_Casings" ID="{C780F11E-DEA2-4B6D-8EBC-92059233D7FA}">
+																				<AudioFileSource Name="WEP_AR_Casings" ID="{D05A0EBA-4391-4DAF-A89B-993BD906FEC9}">
 																					<PropertyList>
 																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																						<Property Name="TrimBegin" Type="Real64" Value="7.62498208239278"/>
@@ -10992,10 +11000,10 @@
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
-																				<ActiveSource Name="WEP_AR_Casings" ID="{C780F11E-DEA2-4B6D-8EBC-92059233D7FA}" Platform="Linked"/>
+																				<ActiveSource Name="WEP_AR_Casings" ID="{D05A0EBA-4391-4DAF-A89B-993BD906FEC9}" Platform="Linked"/>
 																			</ActiveSourceList>
 																		</Sound>
-																		<Sound Name="WEP_AR_Casings_08" ID="{F440AB25-7DB6-47F4-A7CA-0F61D4F5F605}" ShortID="38091413">
+																		<Sound Name="WEP_AR_Casings_08" ID="{2E87924B-5CD1-4D28-B26C-04D52F9C7327}" ShortID="322052381">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -11005,7 +11013,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="WEP_AR_Casings" ID="{9146FAF6-6336-41ED-B43B-6746C7C2F081}">
+																				<AudioFileSource Name="WEP_AR_Casings" ID="{A29F34A6-DCEF-4F9A-8890-97BC1BB51759}">
 																					<PropertyList>
 																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																						<Property Name="TrimBegin" Type="Real64" Value="8.89293072799097"/>
@@ -11019,10 +11027,10 @@
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
-																				<ActiveSource Name="WEP_AR_Casings" ID="{9146FAF6-6336-41ED-B43B-6746C7C2F081}" Platform="Linked"/>
+																				<ActiveSource Name="WEP_AR_Casings" ID="{A29F34A6-DCEF-4F9A-8890-97BC1BB51759}" Platform="Linked"/>
 																			</ActiveSourceList>
 																		</Sound>
-																		<Sound Name="WEP_AR_Casings_09" ID="{85C9E0C3-B8CC-4C02-A33B-FE4D7A0C5B01}" ShortID="490628131">
+																		<Sound Name="WEP_AR_Casings_09" ID="{5824B065-FA38-4FEA-BC6D-AA8542EBFA09}" ShortID="291762764">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -11032,7 +11040,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="WEP_AR_Casings" ID="{F6245E33-913B-405C-9E04-3DC3D372053B}">
+																				<AudioFileSource Name="WEP_AR_Casings" ID="{EEA7AB60-6829-47DB-B7D0-BD1BBC93F7F9}">
 																					<PropertyList>
 																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																						<Property Name="TrimBegin" Type="Real64" Value="10.1839329853273"/>
@@ -11046,10 +11054,10 @@
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
-																				<ActiveSource Name="WEP_AR_Casings" ID="{F6245E33-913B-405C-9E04-3DC3D372053B}" Platform="Linked"/>
+																				<ActiveSource Name="WEP_AR_Casings" ID="{EEA7AB60-6829-47DB-B7D0-BD1BBC93F7F9}" Platform="Linked"/>
 																			</ActiveSourceList>
 																		</Sound>
-																		<Sound Name="WEP_AR_Casings_10" ID="{9B21E8FC-1814-4A61-9ABA-373EE166865C}" ShortID="817892336">
+																		<Sound Name="WEP_AR_Casings_10" ID="{D805CE5D-E3A5-4EBA-B310-0C525249169D}" ShortID="691333635">
 																			<ReferenceList>
 																				<Reference Name="Conversion">
 																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -11059,7 +11067,7 @@
 																				</Reference>
 																			</ReferenceList>
 																			<ChildrenList>
-																				<AudioFileSource Name="WEP_AR_Casings" ID="{EDC24492-D0B3-4BA1-8C2A-0075CE5148C8}">
+																				<AudioFileSource Name="WEP_AR_Casings" ID="{8CC0555C-A5D2-4778-910F-1DB36F22CBAA}">
 																					<PropertyList>
 																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																						<Property Name="TrimBegin" Type="Real64" Value="11.4518816309255"/>
@@ -11072,24 +11080,24 @@
 																				</AudioFileSource>
 																			</ChildrenList>
 																			<ActiveSourceList>
-																				<ActiveSource Name="WEP_AR_Casings" ID="{EDC24492-D0B3-4BA1-8C2A-0075CE5148C8}" Platform="Linked"/>
+																				<ActiveSource Name="WEP_AR_Casings" ID="{8CC0555C-A5D2-4778-910F-1DB36F22CBAA}" Platform="Linked"/>
 																			</ActiveSourceList>
 																		</Sound>
 																	</ChildrenList>
 																	<PositioningInfo>
-																		<Panner Name="" ID="{D755C84D-A8CF-43B0-B8B6-D5AC4239C1AD}">
+																		<Panner Name="" ID="{52D63511-D437-4ABC-8187-80812654EB3A}">
 																			<PropertyList>
 																				<Property Name="PanX" Type="Real64" Value="41.850683491062"/>
 																				<Property Name="PanY" Type="Real64" Value="44.668911335578"/>
 																			</PropertyList>
 																		</Panner>
-																		<Position Name="" ID="{C03BBFFA-059F-4E98-85CE-ECAC87D96421}">
+																		<Position Name="" ID="{9A2C56A7-BE48-45D2-AB0C-81D5AD076791}">
 																			<PropertyList>
 																				<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
 																				<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
 																			</PropertyList>
 																			<ChildrenList>
-																				<Path2D Name="AR_Casings_Path_01" ID="{8BAF79B5-78BC-4E4E-8A8E-AA5623F9B1CD}">
+																				<Path2D Name="AR_Casings_Path_01" ID="{19A4FF18-84F2-4D59-BA28-155B77B7BA60}">
 																					<PointList>
 																						<Point>
 																							<XPos>10.8772</XPos>
@@ -11117,7 +11125,7 @@
 																						</Point>
 																					</PointList>
 																				</Path2D>
-																				<Path2D Name="AR_Casings_Path_02" ID="{856F2AF6-18B2-4260-A27B-AE80DCD61EC9}">
+																				<Path2D Name="AR_Casings_Path_02" ID="{AC551010-FB68-400B-87C2-A9D5F3D06432}">
 																					<PointList>
 																						<Point>
 																							<XPos>11.22807</XPos>
@@ -11145,7 +11153,7 @@
 																						</Point>
 																					</PointList>
 																				</Path2D>
-																				<Path2D Name="AR_Casings_Path_03" ID="{90EFFA04-CE77-47E3-8F16-95FE3C784A00}">
+																				<Path2D Name="AR_Casings_Path_03" ID="{29762301-5477-4580-81FD-B802FE170B53}">
 																					<PointList>
 																						<Point>
 																							<XPos>11.22808</XPos>

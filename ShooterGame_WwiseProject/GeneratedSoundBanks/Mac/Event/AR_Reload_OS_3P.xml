@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="3783818085" Type="Event" GUID="{71C9AFA8-EF94-4712-AA3A-EA7EDA5643E4}" Language="SFX" Hash="{32037069-5DAF-9A36-6031-6A9A74475B71}">
+		<SoundBank Id="3783818085" Type="Event" GUID="{71C9AFA8-EF94-4712-AA3A-EA7EDA5643E4}" Language="SFX" Hash="{929292C7-3784-44F5-ECC7-878FD157AE31}">
 			<ObjectPath>AR_Reload_OS_3P</ObjectPath>
 			<ShortName>AR_Reload_OS_3P</ShortName>
 			<Path>Event/AR_Reload_OS_3P.bnk</Path>
@@ -17,9 +17,12 @@
 					<MediaRefs>
 						<MediaRef Id="781212311"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A145F529-E1EB-366D-6C37-6C37D8666B7D}</FileHash>
+	<FileHash>{F37DC71B-F66C-46CE-6E0B-52078775058F}</FileHash>
 </SoundBanksInfo>

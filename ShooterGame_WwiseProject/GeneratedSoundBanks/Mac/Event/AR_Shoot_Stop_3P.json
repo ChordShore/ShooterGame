@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}",
     "Language": "SFX",
-    "Hash": "{010E7B95-9584-97FF-10A6-2A6F3FC5FCB6}",
+    "Hash": "{230BCA91-B762-ADB8-72FD-08262B46A975}",
     "ObjectPath": "AR_Shoot_Stop_3P",
     "ShortName": "AR_Shoot_Stop_3P",
     "Path": "Event/AR_Shoot_Stop_3P.bnk",
@@ -190,7 +190,15 @@
          "Id": "2781261543"
         }
        ]
-      }
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3348775760",
+        "Name": "Highrise_EarlyReflections",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Diegetic\\Auxiliaries\\Highrise\\Highrise_EarlyReflections",
+        "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"
+       }
+      ]
      }
     ],
     "GameParameters": [
@@ -203,6 +211,6 @@
     ]
    }
   ],
-  "FileHash": "{38252CAB-859F-FA06-DA83-9DB684460BF8}"
+  "FileHash": "{42BC233E-8D91-92B5-8D56-35A597AE9B54}"
  }
 }

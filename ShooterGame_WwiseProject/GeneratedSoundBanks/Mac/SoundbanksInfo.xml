@@ -1108,7 +1108,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="262625171" Type="Event" GUID="{0DA8BBE2-35ED-455A-AC53-823AD682E725}" Language="SFX" Hash="{D5F56815-1A8D-DC4F-2191-C73311D7969E}">
+		<SoundBank Id="262625171" Type="Event" GUID="{0DA8BBE2-35ED-455A-AC53-823AD682E725}" Language="SFX" Hash="{EF6F872A-65E5-F4EB-FA63-4BFC0908A5DB}">
 			<ObjectPath>AR_Shoot_LP_3P</ObjectPath>
 			<ShortName>AR_Shoot_LP_3P</ShortName>
 			<Path>Event/AR_Shoot_LP_3P.bnk</Path>
@@ -1316,7 +1316,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{B19A641B-F439-A676-5C0F-3A5D2311C4D6}">
+		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{B0000567-1878-7F5C-77F0-AA435CF4BC3D}">
 			<ObjectPath>AR_Shoot_Stop</ObjectPath>
 			<ShortName>AR_Shoot_Stop</ShortName>
 			<Path>Event/AR_Shoot_Stop.bnk</Path>
@@ -1753,7 +1753,7 @@
 				<Event Id="3006080354" Name="UI_Toggle" ObjectPath="\Events\Interface\UI_Toggle" GUID="{797C0C31-AE30-4A12-9686-6408980D163E}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1233309807" Type="Event" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" Language="SFX" Hash="{010E7B95-9584-97FF-10A6-2A6F3FC5FCB6}">
+		<SoundBank Id="1233309807" Type="Event" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" Language="SFX" Hash="{230BCA91-B762-ADB8-72FD-08262B46A975}">
 			<ObjectPath>AR_Shoot_Stop_3P</ObjectPath>
 			<ShortName>AR_Shoot_Stop_3P</ShortName>
 			<Path>Event/AR_Shoot_Stop_3P.bnk</Path>
@@ -1845,6 +1845,9 @@
 							<PluginRef Id="2781261543"/>
 						</ShareSets>
 					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 			<GameParameters>
@@ -3059,7 +3062,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{AF74561F-D3E6-143C-C669-48F240B112BD}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{BBA7E077-33F1-1FD0-8C92-18E846FDD1EC}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -5534,7 +5537,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3783818085" Type="Event" GUID="{71C9AFA8-EF94-4712-AA3A-EA7EDA5643E4}" Language="SFX" Hash="{32037069-5DAF-9A36-6031-6A9A74475B71}">
+		<SoundBank Id="3783818085" Type="Event" GUID="{71C9AFA8-EF94-4712-AA3A-EA7EDA5643E4}" Language="SFX" Hash="{929292C7-3784-44F5-ECC7-878FD157AE31}">
 			<ObjectPath>AR_Reload_OS_3P</ObjectPath>
 			<ShortName>AR_Reload_OS_3P</ShortName>
 			<Path>Event/AR_Reload_OS_3P.bnk</Path>
@@ -5550,6 +5553,9 @@
 					<MediaRefs>
 						<MediaRef Id="781212311"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
@@ -5642,5 +5648,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{790C87F1-04C2-91F8-5F45-02B7F6827904}</FileHash>
+	<FileHash>{D30A1CF1-1E6D-EFF7-A088-170DE410D3C1}</FileHash>
 </SoundBanksInfo>

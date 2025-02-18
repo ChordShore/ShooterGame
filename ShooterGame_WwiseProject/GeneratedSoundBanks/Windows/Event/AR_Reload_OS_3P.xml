@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="3783818085" Type="Event" GUID="{71C9AFA8-EF94-4712-AA3A-EA7EDA5643E4}" Language="SFX" Hash="{32037069-5DAF-9A36-6031-6A9A74475B71}">
+		<SoundBank Id="3783818085" Type="Event" GUID="{71C9AFA8-EF94-4712-AA3A-EA7EDA5643E4}" Language="SFX" Hash="{929292C7-3784-44F5-ECC7-878FD157AE31}">
 			<ObjectPath>AR_Reload_OS_3P</ObjectPath>
 			<ShortName>AR_Reload_OS_3P</ShortName>
 			<Path>Event/AR_Reload_OS_3P.bnk</Path>
@@ -17,9 +17,12 @@
 					<MediaRefs>
 						<MediaRef Id="781212311"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7462C306-2926-9D97-7EB5-83644B69D3E3}</FileHash>
+	<FileHash>{26CF17B0-623E-E4EE-DAAD-88B183E84244}</FileHash>
 </SoundBanksInfo>
