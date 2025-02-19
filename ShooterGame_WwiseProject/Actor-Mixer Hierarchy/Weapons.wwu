@@ -6651,6 +6651,7 @@
 										</Property>
 										<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="10"/>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="MakeUpGain" Type="Real64">
 											<ValueList>
@@ -6765,6 +6766,13 @@
 													</ReferenceList>
 													<ChildrenList>
 														<RandomSequenceContainer Name="GL_Impact_Far_Atrium" ID="{B813928A-AE5A-43AA-BFC2-31F4805FB1B7}" ShortID="73837875">
+															<PropertyList>
+																<Property Name="MakeUpGain" Type="Real64">
+																	<ValueList>
+																		<Value>7</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -6788,10 +6796,46 @@
 																			<PropertyList>
 																				<Property Name="FadeOutDuration" Type="Real64" Value="0.725132665537998"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="4.71762781226486"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="5.45771611072301"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>GL_Impact_Far_Atrium.wav</AudioFile>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="HdrEnvelope">
+																					<Curve Name="" ID="{641CE4EA-4E09-49DA-AC3E-A29925B7BF83}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>2.5758531592146E-06</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.001</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.22873</XPos>
+																								<YPos>0.15488</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>5.42085</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>21.8181875</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
 																			<MediaIDList>
 																				<MediaID ID="1032557313"/>
 																			</MediaIDList>
@@ -6816,11 +6860,42 @@
 																				<Property Name="FadeInDuration" Type="Real64" Value="0.0511858352144472"/>
 																				<Property Name="FadeOutDuration" Type="Real64" Value="0.725132665537998"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="4.67497294958616"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="9.34994589917231"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="5.43428432073153"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="10.9358493958683"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>GL_Impact_Far_Atrium.wav</AudioFile>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="HdrEnvelope">
+																					<Curve Name="" ID="{5CB3DF2E-0538-49FB-9885-A735CE74D42C}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>2.5758531592146E-06</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>3.7</XPos>
+																								<YPos>0.0215985532850027</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>5.66883</XPos>
+																								<YPos>0.14018</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>21.8181875</XPos>
+																								<YPos>0.00255790888331831</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
 																			<MediaIDList>
 																				<MediaID ID="514770190"/>
 																			</MediaIDList>
@@ -6830,19 +6905,7 @@
 																		<ActiveSource Name="GL_Impact_Far_Atrium" ID="{0BD0F76F-CC0B-47F2-AA37-5651555320E7}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-															</ChildrenList>
-														</RandomSequenceContainer>
-														<RandomSequenceContainer Name="GL_Impact_Near_Atrium" ID="{9E9F668E-A893-4F39-96D3-8A474913B655}" ShortID="95820808">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<Sound Name="GL_Impact_Close_Atrium" ID="{3A541C41-8E36-455F-A18D-33FECFF5F117}" ShortID="842110259">
+																<Sound Name="GL_Impact_Far_Atrium_03" ID="{2FCB2487-42BE-41B5-A221-0ADBB1B241B0}" ShortID="287059936">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -6852,16 +6915,92 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="GL_Impact_Close_Atrium" ID="{384E1B67-03BB-4395-BBA2-1AA849F542A1}">
+																		<AudioFileSource Name="GL_Impact_Far_Atrium" ID="{5E20176B-B1B4-4136-9399-9D34B0C751BB}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.0672807544052869"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.365238381057267"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="10.8994822136564"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="16.387669465859"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
-																			<AudioFile>GL_Impact_Close_Atrium.wav</AudioFile>
+																			<AudioFile>GL_Impact_Far_Atrium.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="68927910"/>
+																				<MediaID ID="1009471635"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="GL_Impact_Close_Atrium" ID="{384E1B67-03BB-4395-BBA2-1AA849F542A1}" Platform="Linked"/>
+																		<ActiveSource Name="GL_Impact_Far_Atrium" ID="{5E20176B-B1B4-4136-9399-9D34B0C751BB}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="GL_Impact_Far_Atrium_04" ID="{C83972DF-6563-4292-9CF3-A814E5E5F860}" ShortID="64235302">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="GL_Impact_Far_Atrium" ID="{DC137D9B-39DA-47AA-B007-256A87EAA9CF}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.0768922907488996"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.682419080396475"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="16.339611784141"/>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>GL_Impact_Far_Atrium.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="680229344"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="GL_Impact_Far_Atrium" ID="{DC137D9B-39DA-47AA-B007-256A87EAA9CF}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="GL_Impact_Near_Atrium" ID="{9E9F668E-A893-4F39-96D3-8A474913B655}" ShortID="95820808">
+															<PropertyList>
+																<Property Name="MakeUpGain" Type="Real64">
+																	<ValueList>
+																		<Value>7</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="GL_Impact_Near_Atrium" ID="{72168DEC-326B-4ECF-BB86-CBBF14E175F4}" ShortID="504348401">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="GL_Impact_Near_Atrium" ID="{4FF7CA11-292B-49C1-9404-E2240795E08C}">
+																			<Language>SFX</Language>
+																			<AudioFile>GL_Impact_Near_Atrium.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="213830674"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="GL_Impact_Near_Atrium" ID="{4FF7CA11-292B-49C1-9404-E2240795E08C}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -6870,7 +7009,7 @@
 															<PropertyList>
 																<Property Name="MakeUpGain" Type="Real64">
 																	<ValueList>
-																		<Value>3</Value>
+																		<Value>6</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -7396,6 +7535,13 @@
 													</ReferenceList>
 													<ChildrenList>
 														<RandomSequenceContainer Name="GL_Impact_Far_Room" ID="{335B887D-B6EC-4655-9A79-443D28AA7162}" ShortID="856226046">
+															<PropertyList>
+																<Property Name="MakeUpGain" Type="Real64">
+																	<ValueList>
+																		<Value>3</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -7417,12 +7563,44 @@
 																	<ChildrenList>
 																		<AudioFileSource Name="GL_Impact_Far_Room" ID="{761555BF-7844-44BE-83AF-C36FCFB2FEAF}">
 																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.102980726872247"/>
 																				<Property Name="FadeOutDuration" Type="Real64" Value="0.886517607223476"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																				<Property Name="TrimEnd" Type="Real64" Value="3.90489898419865"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>GL_Impact_Far_Room.wav</AudioFile>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="HdrEnvelope">
+																					<Curve Name="" ID="{9E2E74FB-8FDA-4FC9-87A0-ECB4A299D253}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>3.34289262937659E-10</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.32</XPos>
+																								<YPos>0.30217</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>3.92818</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>15.5844166666667</XPos>
+																								<YPos>0.000174676330061629</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
 																			<MediaIDList>
 																				<MediaID ID="912217750"/>
 																			</MediaIDList>
@@ -7444,6 +7622,7 @@
 																	<ChildrenList>
 																		<AudioFileSource Name="GL_Impact_Far_Room" ID="{C6C2FC72-C7FD-4071-AEB6-E0BFD101A111}">
 																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.0617884361233481"/>
 																				<Property Name="FadeOutDuration" Type="Real64" Value="0.886517607223476"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																				<Property Name="TrimBegin" Type="Real64" Value="3.89786313017306"/>
@@ -7451,6 +7630,42 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>GL_Impact_Far_Room.wav</AudioFile>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="HdrEnvelope">
+																					<Curve Name="" ID="{9472282F-E49A-4EFA-9753-49B5747D9D0C}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>3.34289262937659E-10</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>3.90318</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>4.1689</XPos>
+																								<YPos>0.37406</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>7.0013</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>15.5844166666667</XPos>
+																								<YPos>0.000174676330061629</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
 																			<MediaIDList>
 																				<MediaID ID="790486722"/>
 																			</MediaIDList>
@@ -7479,6 +7694,42 @@
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>GL_Impact_Far_Room.wav</AudioFile>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="HdrEnvelope">
+																					<Curve Name="" ID="{20017A4A-0E31-4B97-86D2-B613BF1E9D84}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>7.79584</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>8.33797</XPos>
+																								<YPos>0.34148</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>11.66424</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>15.5844166666667</XPos>
+																								<YPos>0.000177468871697783</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
 																			<MediaIDList>
 																				<MediaID ID="249724546"/>
 																			</MediaIDList>
@@ -7500,12 +7751,44 @@
 																	<ChildrenList>
 																		<AudioFileSource Name="GL_Impact_Far_Room" ID="{9FBA647A-983B-4543-9E11-C8009F060FFD}">
 																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.0686538179148304"/>
 																				<Property Name="FadeOutDuration" Type="Real64" Value="0.886517607223476"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																				<Property Name="TrimBegin" Type="Real64" Value="11.6865535364936"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>GL_Impact_Far_Room.wav</AudioFile>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="HdrEnvelope">
+																					<Curve Name="" ID="{59922818-8BB2-4818-9B42-855687C358B5}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>11.69539</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>12.21</XPos>
+																								<YPos>0.340147912502289</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>15.5844166666667</XPos>
+																								<YPos>0.000177468871697783</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
 																			<MediaIDList>
 																				<MediaID ID="473819520"/>
 																			</MediaIDList>
@@ -7521,7 +7804,7 @@
 															<PropertyList>
 																<Property Name="MakeUpGain" Type="Real64">
 																	<ValueList>
-																		<Value>3</Value>
+																		<Value>6</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -7992,6 +8275,13 @@
 															</ChildrenList>
 														</BlendContainer>
 														<RandomSequenceContainer Name="GL_Impact_Near_Room" ID="{F9BCCF9C-6A6D-46B6-97BB-70917C2D77D3}" ShortID="126229591">
+															<PropertyList>
+																<Property Name="MakeUpGain" Type="Real64">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -8001,7 +8291,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="GL_Impact_Near_Room" ID="{CBE7178D-422A-4A77-AF78-3F700C4A0E34}" ShortID="334593701">
+																<Sound Name="GL_Impact_Near_Room" ID="{F71EBFF9-515A-4C15-B493-8761C09574AB}" ShortID="552281087">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -8011,16 +8301,16 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="GL_Impact_Close_Room" ID="{E5926C0A-501A-423A-BACB-FB7F10087E27}">
+																		<AudioFileSource Name="GL_Impact_Near_Room" ID="{3A69060E-5250-43A0-9DF3-C72518CD0982}">
 																			<Language>SFX</Language>
-																			<AudioFile>GL_Impact_Close_Room.wav</AudioFile>
+																			<AudioFile>GL_Impact_Near_Room.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="649546232"/>
+																				<MediaID ID="435279422"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="GL_Impact_Close_Room" ID="{E5926C0A-501A-423A-BACB-FB7F10087E27}" Platform="Linked"/>
+																		<ActiveSource Name="GL_Impact_Near_Room" ID="{3A69060E-5250-43A0-9DF3-C72518CD0982}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -8051,14 +8341,14 @@
 																	<CrossfadingInfo>
 																		<LeftEdgePos>2000</LeftEdgePos>
 																		<LeftFadingMode>Automatic</LeftFadingMode>
-																		<RightEdgePos>9000</RightEdgePos>
+																		<RightEdgePos>8000</RightEdgePos>
 																		<RightFadingMode>Automatic</RightFadingMode>
 																	</CrossfadingInfo>
 																</BlendTrackAssoc>
 																<BlendTrackAssoc>
 																	<ItemRef Name="GL_Impact_Far_Room" ID="{335B887D-B6EC-4655-9A79-443D28AA7162}"/>
 																	<CrossfadingInfo>
-																		<LeftEdgePos>7000</LeftEdgePos>
+																		<LeftEdgePos>5000</LeftEdgePos>
 																		<LeftFadingMode>Automatic</LeftFadingMode>
 																		<RightEdgePos>12000</RightEdgePos>
 																		<RightFadingMode>Automatic</RightFadingMode>
@@ -8082,7 +8372,7 @@
 															<PropertyList>
 																<Property Name="MakeUpGain" Type="Real64">
 																	<ValueList>
-																		<Value>3</Value>
+																		<Value>6</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -8546,7 +8836,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="GL_Impact_Close_Spawn" ID="{FDA56076-C7A5-4E89-A63F-D84BD38492F5}" ShortID="478966878">
+																<Sound Name="GL_Impact_Near_Spawn" ID="{E41392B5-0DC3-4687-B5DC-0C32655EA47B}" ShortID="466484659">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -8556,21 +8846,28 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="GL_Impact_Close_Spawn" ID="{67F4DD6A-698E-4162-BBA8-58B042FAF9C8}">
+																		<AudioFileSource Name="GL_Impact_Near_Spawn" ID="{CB0B8098-1EEA-4CF0-84B1-B2B244867F31}">
 																			<Language>SFX</Language>
-																			<AudioFile>GL_Impact_Close_Spawn.wav</AudioFile>
+																			<AudioFile>GL_Impact_Near_Spawn.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="939444335"/>
+																				<MediaID ID="773622114"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="GL_Impact_Close_Spawn" ID="{67F4DD6A-698E-4162-BBA8-58B042FAF9C8}" Platform="Linked"/>
+																		<ActiveSource Name="GL_Impact_Near_Spawn" ID="{CB0B8098-1EEA-4CF0-84B1-B2B244867F31}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
 														</RandomSequenceContainer>
 														<RandomSequenceContainer Name="GL_Impact_Far_Spawn" ID="{F0770058-6B78-4021-8A95-E8684B64283E}" ShortID="693237252">
+															<PropertyList>
+																<Property Name="MakeUpGain" Type="Real64">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -8594,10 +8891,41 @@
 																			<PropertyList>
 																				<Property Name="FadeOutDuration" Type="Real64" Value="0.965320278404816"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="2.94521186982694"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="3.10998103282253"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>GL_Impact_Far_Spawn.wav</AudioFile>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="HdrEnvelope">
+																					<Curve Name="" ID="{EF442490-878A-4D2C-AA79-F5A4ACB1B1BA}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.55</XPos>
+																								<YPos>0.351545751094818</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1.15561</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>15.5844166666667</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
 																			<MediaIDList>
 																				<MediaID ID="350098340"/>
 																			</MediaIDList>
@@ -8622,10 +8950,46 @@
 																				<Property Name="FadeOutDuration" Type="Real64" Value="0.965320278404816"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																				<Property Name="TrimBegin" Type="Real64" Value="2.92058635252069"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="5.65401877351392"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="6.23757622578998"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>GL_Impact_Far_Spawn.wav</AudioFile>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="HdrEnvelope">
+																					<Curve Name="" ID="{53E5A423-6CA5-4A18-8D38-222B79F0B5BF}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>2.92294</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>3.64488</XPos>
+																								<YPos>0.36691</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>5.61911</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>15.5844166666667</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
 																			<MediaIDList>
 																				<MediaID ID="758183093"/>
 																			</MediaIDList>
@@ -8647,13 +9011,50 @@
 																	<ChildrenList>
 																		<AudioFileSource Name="GL_Impact_Far_Spawn" ID="{31FE145E-D725-4FC2-B324-821F3229EFF9}">
 																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.0549230543318657"/>
 																				<Property Name="FadeOutDuration" Type="Real64" Value="0.965320278404816"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="5.64416856659142"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="8.0919449868322"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="6.24832216424193"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="9.32771370929916"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>GL_Impact_Far_Spawn.wav</AudioFile>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="HdrEnvelope">
+																					<Curve Name="" ID="{B621299C-3F52-4187-8681-143445367BB7}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>6.24477</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>6.92544</XPos>
+																								<YPos>0.35021</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>8.26695</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>15.5844166666667</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
 																			<MediaIDList>
 																				<MediaID ID="576977623"/>
 																			</MediaIDList>
@@ -8675,12 +9076,50 @@
 																	<ChildrenList>
 																		<AudioFileSource Name="GL_Impact_Far_Spawn" ID="{27D9933B-07F2-41A2-ACBE-5C9523AB5901}">
 																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.0961153450807632"/>
 																				<Property Name="FadeOutDuration" Type="Real64" Value="0.965320278404816"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimBegin" Type="Real64" Value="8.08701988337096"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="9.33651936942089"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="12.4332064243759"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>GL_Impact_Far_Spawn.wav</AudioFile>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="HdrEnvelope">
+																					<Curve Name="" ID="{DDBC3426-7C0E-4129-97A8-6BD8F1FE46AC}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>9.33965</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>9.89652</XPos>
+																								<YPos>0.37159</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>11.47874</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>15.5844166666667</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
 																			<MediaIDList>
 																				<MediaID ID="801983389"/>
 																			</MediaIDList>

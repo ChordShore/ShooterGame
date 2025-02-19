@@ -41,7 +41,7 @@
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
 						</VolumeWetUserUsage>
 						<LowPassFilterUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+							<CurveUsageInfo Platform="Linked" CurveToUse="None">
 								<Curve Name="LowPassFilter" ID="{7936CB50-9174-410A-88D5-78D6513B8546}">
 									<PropertyList>
 										<Property Name="Flags" Type="int32" Value="65537"/>
@@ -63,7 +63,7 @@
 							</CurveUsageInfo>
 						</LowPassFilterUsage>
 						<HighPassFilterUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+							<CurveUsageInfo Platform="Linked" CurveToUse="None">
 								<Curve Name="HighPassFilter" ID="{0B3D73ED-C8E6-4A31-9CDE-9E4E1663FFE2}">
 									<PropertyList>
 										<Property Name="Flags" Type="int32" Value="65537"/>

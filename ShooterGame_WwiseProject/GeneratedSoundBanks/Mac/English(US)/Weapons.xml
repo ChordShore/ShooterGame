@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{BBA7E077-33F1-1FD0-8C92-18E846FDD1EC}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{B0B6900C-0696-BC97-51F2-9CFFE985B425}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -33,10 +33,6 @@
 				<File Id="49084382" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Glass_9E4C15A5.wem</CachePath>
-				</File>
-				<File Id="68927910" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>GL_Impact_Close_Atrium.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Close_Atrium_C0D1FB18.wem</CachePath>
 				</File>
 				<File Id="87576484" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
@@ -114,6 +110,10 @@
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Flesh_F4F74F15.wem</CachePath>
 				</File>
+				<File Id="213830674" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GL_Impact_Near_Atrium.wav</ShortName>
+					<CachePath>SFX/GL_Impact_Near_Atrium_C0D1FB18.wem</CachePath>
+				</File>
 				<File Id="224555482" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Ricochet_0C0617AE.wem</CachePath>
@@ -128,7 +128,7 @@
 				</File>
 				<File Id="249724546" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Room.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Room_911FC85F.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Room_01E87C4B.wem</CachePath>
 				</File>
 				<File Id="253415750" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
@@ -180,7 +180,7 @@
 				</File>
 				<File Id="350098340" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Spawn.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Spawn_74B97CEA.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Spawn_E25A40E2.wem</CachePath>
 				</File>
 				<File Id="363327242" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
@@ -238,6 +238,10 @@
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Tile_9430ECFF.wem</CachePath>
 				</File>
+				<File Id="435279422" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GL_Impact_Near_Room.wav</ShortName>
+					<CachePath>SFX/GL_Impact_Near_Room_C0D1FB18.wem</CachePath>
+				</File>
 				<File Id="435584254" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Glass_2D4C62CE.wem</CachePath>
@@ -256,7 +260,7 @@
 				</File>
 				<File Id="473819520" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Room.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Room_992AAE40.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Room_44B4E546.wem</CachePath>
 				</File>
 				<File Id="483668572" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
@@ -280,7 +284,7 @@
 				</File>
 				<File Id="514770190" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Atrium.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Atrium_6A28898E.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Atrium_CA0EB05B.wem</CachePath>
 				</File>
 				<File Id="519715684" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
@@ -316,7 +320,7 @@
 				</File>
 				<File Id="576977623" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Spawn.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Spawn_540E4E40.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Spawn_5EC90F46.wem</CachePath>
 				</File>
 				<File Id="578759834" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
@@ -350,10 +354,6 @@
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Ricochet_319DA572.wem</CachePath>
 				</File>
-				<File Id="649546232" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>GL_Impact_Close_Room.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Close_Room_C0D1FB18.wem</CachePath>
-				</File>
 				<File Id="650928932" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Grass_06AC75B2.wem</CachePath>
@@ -373,6 +373,10 @@
 				<File Id="676321132" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Casings_66DD9C72.wem</CachePath>
+				</File>
+				<File Id="680229344" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GL_Impact_Far_Atrium.wav</ShortName>
+					<CachePath>SFX/GL_Impact_Far_Atrium_4EBFFC0B.wem</CachePath>
 				</File>
 				<File Id="687525484" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Aim.wav</ShortName>
@@ -404,7 +408,7 @@
 				</File>
 				<File Id="758183093" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Spawn.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Spawn_47321D74.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Spawn_1CD94AAC.wem</CachePath>
 				</File>
 				<File Id="763314345" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Tail_Spawn.wav</ShortName>
@@ -413,6 +417,10 @@
 				<File Id="772788603" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Glass_6CBEF430.wem</CachePath>
+				</File>
+				<File Id="773622114" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GL_Impact_Near_Spawn.wav</ShortName>
+					<CachePath>SFX/GL_Impact_Near_Spawn_C0D1FB18.wem</CachePath>
 				</File>
 				<File Id="776609040" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
@@ -424,7 +432,7 @@
 				</File>
 				<File Id="790486722" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Room.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Room_A8C6C509.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Room_32B6385B.wem</CachePath>
 				</File>
 				<File Id="797639163" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
@@ -432,7 +440,7 @@
 				</File>
 				<File Id="801983389" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Spawn.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Spawn_FC0573E6.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Spawn_1675E7F2.wem</CachePath>
 				</File>
 				<File Id="807012812" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Tail_Spawn.wav</ShortName>
@@ -480,7 +488,7 @@
 				</File>
 				<File Id="912217750" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Room.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Room_28728987.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Room_4AA59B70.wem</CachePath>
 				</File>
 				<File Id="928118353" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Pulse.wav</ShortName>
@@ -489,10 +497,6 @@
 				<File Id="931298175" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Flesh_2D86797E.wem</CachePath>
-				</File>
-				<File Id="939444335" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>GL_Impact_Close_Spawn.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Close_Spawn_C0D1FB18.wem</CachePath>
 				</File>
 				<File Id="954200902" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
@@ -509,6 +513,10 @@
 				<File Id="993604397" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Grass_B3A5FF3B.wem</CachePath>
+				</File>
+				<File Id="1009471635" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GL_Impact_Far_Atrium.wav</ShortName>
+					<CachePath>SFX/GL_Impact_Far_Atrium_4E965051.wem</CachePath>
 				</File>
 				<File Id="1013597634" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
@@ -528,7 +536,7 @@
 				</File>
 				<File Id="1032557313" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Atrium.wav</ShortName>
-					<CachePath>SFX/GL_Impact_Far_Atrium_77D6F086.wem</CachePath>
+					<CachePath>SFX/GL_Impact_Far_Atrium_F9AEA5C5.wem</CachePath>
 				</File>
 				<File Id="1033448803" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
@@ -1013,7 +1021,7 @@
 						<AuxBusRef Id="3348775760" Name="Highrise_EarlyReflections" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Diegetic\Auxiliaries\Highrise\Highrise_EarlyReflections" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="477299258" Name="GL_Impact_OS" ObjectPath="\Events\Weapons\Shooting\Impact\GL_Impact_OS" GUID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}" MaxAttenuation="15000" DurationType="OneShot" DurationMin="4.596805" DurationMax="5.19974">
+				<Event Id="477299258" Name="GL_Impact_OS" ObjectPath="\Events\Weapons\Shooting\Impact\GL_Impact_OS" GUID="{3FA3D47C-E701-4113-B86A-0EFBB1EE1241}" MaxAttenuation="15000" DurationType="OneShot" DurationMin="7.5387435" DurationMax="8.461954">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="301467384" GUID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}"/>
@@ -1032,10 +1040,10 @@
 								<MediaRef Id="576977623"/>
 								<MediaRef Id="758183093"/>
 								<MediaRef Id="763314345"/>
+								<MediaRef Id="773622114"/>
 								<MediaRef Id="801983389"/>
 								<MediaRef Id="826207383"/>
 								<MediaRef Id="848710380"/>
-								<MediaRef Id="939444335"/>
 								<MediaRef Id="1029793749"/>
 							</MediaRefs>
 							<PluginRefs>
@@ -1047,9 +1055,9 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="877225536" GUID="{E9597652-781B-4852-95B1-CADA7D874365}" Default="true"/>
 							<MediaRefs>
-								<MediaRef Id="68927910"/>
 								<MediaRef Id="122584535"/>
 								<MediaRef Id="132631597"/>
+								<MediaRef Id="213830674"/>
 								<MediaRef Id="298571565"/>
 								<MediaRef Id="310455440"/>
 								<MediaRef Id="364992105"/>
@@ -1060,8 +1068,10 @@
 								<MediaRef Id="514770190"/>
 								<MediaRef Id="530330132"/>
 								<MediaRef Id="545835261"/>
+								<MediaRef Id="680229344"/>
 								<MediaRef Id="826207383"/>
 								<MediaRef Id="848710380"/>
+								<MediaRef Id="1009471635"/>
 								<MediaRef Id="1029793749"/>
 								<MediaRef Id="1032557313"/>
 							</MediaRefs>
@@ -1074,9 +1084,9 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="748895195" GUID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
 							<MediaRefs>
-								<MediaRef Id="68927910"/>
 								<MediaRef Id="122584535"/>
 								<MediaRef Id="132631597"/>
+								<MediaRef Id="213830674"/>
 								<MediaRef Id="298571565"/>
 								<MediaRef Id="310455440"/>
 								<MediaRef Id="364992105"/>
@@ -1087,8 +1097,10 @@
 								<MediaRef Id="514770190"/>
 								<MediaRef Id="530330132"/>
 								<MediaRef Id="545835261"/>
+								<MediaRef Id="680229344"/>
 								<MediaRef Id="826207383"/>
 								<MediaRef Id="848710380"/>
+								<MediaRef Id="1009471635"/>
 								<MediaRef Id="1029793749"/>
 								<MediaRef Id="1032557313"/>
 							</MediaRefs>
@@ -1109,12 +1121,12 @@
 								<MediaRef Id="310455440"/>
 								<MediaRef Id="364992105"/>
 								<MediaRef Id="421270597"/>
+								<MediaRef Id="435279422"/>
 								<MediaRef Id="469990783"/>
 								<MediaRef Id="473819520"/>
 								<MediaRef Id="483668572"/>
 								<MediaRef Id="530330132"/>
 								<MediaRef Id="545835261"/>
-								<MediaRef Id="649546232"/>
 								<MediaRef Id="790486722"/>
 								<MediaRef Id="826207383"/>
 								<MediaRef Id="848710380"/>
@@ -1130,9 +1142,9 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="949156522" GUID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
 							<MediaRefs>
-								<MediaRef Id="68927910"/>
 								<MediaRef Id="122584535"/>
 								<MediaRef Id="132631597"/>
+								<MediaRef Id="213830674"/>
 								<MediaRef Id="298571565"/>
 								<MediaRef Id="310455440"/>
 								<MediaRef Id="364992105"/>
@@ -1143,8 +1155,10 @@
 								<MediaRef Id="514770190"/>
 								<MediaRef Id="530330132"/>
 								<MediaRef Id="545835261"/>
+								<MediaRef Id="680229344"/>
 								<MediaRef Id="826207383"/>
 								<MediaRef Id="848710380"/>
+								<MediaRef Id="1009471635"/>
 								<MediaRef Id="1029793749"/>
 								<MediaRef Id="1032557313"/>
 							</MediaRefs>
@@ -1320,5 +1334,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2CAC039C-78C1-7F2F-3F0D-925BD9F9171B}</FileHash>
+	<FileHash>{798BB711-7E27-F55A-2D30-108E754C450D}</FileHash>
 </SoundBanksInfo>
