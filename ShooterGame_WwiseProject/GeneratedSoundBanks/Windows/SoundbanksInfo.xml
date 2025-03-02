@@ -1108,16 +1108,11 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="262625171" Type="Event" GUID="{0DA8BBE2-35ED-455A-AC53-823AD682E725}" Language="SFX" Hash="{EF6F872A-65E5-F4EB-FA63-4BFC0908A5DB}">
+		<SoundBank Id="262625171" Type="Event" GUID="{0DA8BBE2-35ED-455A-AC53-823AD682E725}" Language="SFX" Hash="{0056DEA2-9263-9F1F-8ADB-76D0E3BE32B2}">
 			<ObjectPath>AR_Shoot_LP_3P</ObjectPath>
 			<ShortName>AR_Shoot_LP_3P</ShortName>
 			<Path>Event/AR_Shoot_LP_3P.bnk</Path>
 			<Media>
-				<File Id="14501665" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AR_Shot_Tail_Room.wav</ShortName>
-					<Path>Media/14501665.wem</Path>
-					<CachePath>SFX/AR_Shot_Tail_Room_C0D1FB18.wem</CachePath>
-				</File>
 				<File Id="25638055" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
 					<Path>Media/25638055.wem</Path>
@@ -1128,45 +1123,30 @@
 					<Path>Media/92565130.wem</Path>
 					<CachePath>SFX/WEP_AR_Casings_449FFE22.wem</CachePath>
 				</File>
-				<File Id="166846503" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AR_Shot_Pulse.wav</ShortName>
-					<Path>Media/166846503.wem</Path>
-					<CachePath>SFX/AR_Shot_Pulse_C0D1FB18.wem</CachePath>
-				</File>
-				<File Id="175929226" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AR_Shot_Tail_Atrium.wav</ShortName>
-					<Path>Media/175929226.wem</Path>
-					<CachePath>SFX/AR_Shot_Tail_Atrium_C0D1FB18.wem</CachePath>
-				</File>
-				<File Id="228004887" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AR_Shot_Transient.wav</ShortName>
-					<Path>Media/228004887.wem</Path>
-					<CachePath>SFX/AR_Shot_Transient_C0D1FB18.wem</CachePath>
+				<File Id="147372489" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AR_Shot_LFE.wav</ShortName>
+					<Path>Media/147372489.wem</Path>
+					<CachePath>SFX/AR_Shot_LFE_E3376BE6.wem</CachePath>
 				</File>
 				<File Id="312448983" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
 					<Path>Media/312448983.wem</Path>
 					<CachePath>SFX/WEP_AR_Casings_45427A39.wem</CachePath>
 				</File>
-				<File Id="373309000" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AR_Shot_Mech.wav</ShortName>
-					<Path>Media/373309000.wem</Path>
-					<CachePath>SFX/AR_Shot_Mech_C0D1FB18.wem</CachePath>
-				</File>
-				<File Id="470590754" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AR_Shot_Tail_Spawn.wav</ShortName>
-					<Path>Media/470590754.wem</Path>
-					<CachePath>SFX/AR_Shot_Tail_Spawn_C0D1FB18.wem</CachePath>
-				</File>
-				<File Id="548026506" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AR_Empty_Rattle.wav</ShortName>
-					<Path>Media/548026506.wem</Path>
-					<CachePath>SFX/AR_Empty_Rattle_C0D1FB18.wem</CachePath>
+				<File Id="412540483" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AR_Shot_Rattle.wav</ShortName>
+					<Path>Media/412540483.wem</Path>
+					<CachePath>SFX/AR_Shot_Rattle_A6751151.wem</CachePath>
 				</File>
 				<File Id="560147879" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
 					<Path>Media/560147879.wem</Path>
 					<CachePath>SFX/WEP_AR_Casings_FA689FA7.wem</CachePath>
+				</File>
+				<File Id="567127076" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AR_Shot_Transient.wav</ShortName>
+					<Path>Media/567127076.wem</Path>
+					<CachePath>SFX/AR_Shot_Transient_A9F4F905.wem</CachePath>
 				</File>
 				<File Id="630130873" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
@@ -1177,11 +1157,6 @@
 					<ShortName>AR_Shot_InitialTransient.wav</ShortName>
 					<Path>Media/635329318.wem</Path>
 					<CachePath>SFX/AR_Shot_InitialTransient_C0D1FB18.wem</CachePath>
-				</File>
-				<File Id="657027243" Language="SFX" Streaming="false" Location="Loose">
-					<ShortName>AR_Shot_LFE.wav</ShortName>
-					<Path>Media/657027243.wem</Path>
-					<CachePath>SFX/AR_Shot_LFE_E558B247.wem</CachePath>
 				</File>
 				<File Id="666983815" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
@@ -1198,10 +1173,35 @@
 					<Path>Media/736273374.wem</Path>
 					<CachePath>SFX/WEP_AR_Casings_F8802C62.wem</CachePath>
 				</File>
+				<File Id="740616738" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AR_Shot_Pulse.wav</ShortName>
+					<Path>Media/740616738.wem</Path>
+					<CachePath>SFX/AR_Shot_Pulse_B02CDE11.wem</CachePath>
+				</File>
 				<File Id="832229830" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
 					<Path>Media/832229830.wem</Path>
 					<CachePath>SFX/WEP_AR_Casings_83F6225D.wem</CachePath>
+				</File>
+				<File Id="835669510" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AR_Shot_Tail_Atrium.wav</ShortName>
+					<Path>Media/835669510.wem</Path>
+					<CachePath>SFX/AR_Shot_Tail_Atrium_0DC3515A.wem</CachePath>
+				</File>
+				<File Id="867674999" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AR_Shot_Tail_Room.wav</ShortName>
+					<Path>Media/867674999.wem</Path>
+					<CachePath>SFX/AR_Shot_Tail_Room_2FF20255.wem</CachePath>
+				</File>
+				<File Id="933038228" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AR_Shot_Mech.wav</ShortName>
+					<Path>Media/933038228.wem</Path>
+					<CachePath>SFX/AR_Shot_Mech_5A723C0A.wem</CachePath>
+				</File>
+				<File Id="939305707" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>AR_Shot_Tail_Spawn.wav</ShortName>
+					<Path>Media/939305707.wem</Path>
+					<CachePath>SFX/AR_Shot_Tail_Spawn_C2214053.wem</CachePath>
 				</File>
 				<File Id="1033448803" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
@@ -1219,19 +1219,19 @@
 					<MediaRefs>
 						<MediaRef Id="25638055"/>
 						<MediaRef Id="92565130"/>
-						<MediaRef Id="166846503"/>
-						<MediaRef Id="228004887"/>
+						<MediaRef Id="147372489"/>
 						<MediaRef Id="312448983"/>
-						<MediaRef Id="373309000"/>
-						<MediaRef Id="548026506"/>
+						<MediaRef Id="412540483"/>
 						<MediaRef Id="560147879"/>
+						<MediaRef Id="567127076"/>
 						<MediaRef Id="630130873"/>
 						<MediaRef Id="635329318"/>
-						<MediaRef Id="657027243"/>
 						<MediaRef Id="666983815"/>
 						<MediaRef Id="676321132"/>
 						<MediaRef Id="736273374"/>
+						<MediaRef Id="740616738"/>
 						<MediaRef Id="832229830"/>
+						<MediaRef Id="933038228"/>
 						<MediaRef Id="1033448803"/>
 					</MediaRefs>
 					<PluginRefs>
@@ -1246,7 +1246,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="301467384" GUID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}" Default="true"/>
 							<MediaRefs>
-								<MediaRef Id="470590754"/>
+								<MediaRef Id="939305707"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -1257,7 +1257,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="877225536" GUID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 							<MediaRefs>
-								<MediaRef Id="175929226"/>
+								<MediaRef Id="835669510"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -1268,7 +1268,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="748895195" GUID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
 							<MediaRefs>
-								<MediaRef Id="175929226"/>
+								<MediaRef Id="835669510"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -1279,7 +1279,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="1657765358" GUID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 							<MediaRefs>
-								<MediaRef Id="14501665"/>
+								<MediaRef Id="867674999"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -1290,7 +1290,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="949156522" GUID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
 							<MediaRefs>
-								<MediaRef Id="175929226"/>
+								<MediaRef Id="835669510"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -1316,7 +1316,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{B0000567-1878-7F5C-77F0-AA435CF4BC3D}">
+		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{CFA0B2B8-383E-16DF-FB1F-E10CD00DB336}">
 			<ObjectPath>AR_Shoot_Stop</ObjectPath>
 			<ShortName>AR_Shoot_Stop</ShortName>
 			<Path>Event/AR_Shoot_Stop.bnk</Path>
@@ -1388,7 +1388,7 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
-				<Event Id="588697279" Name="AR_Shoot_Stop" ObjectPath="\Events\Weapons\Shooting\Shoot\AR_Shoot_Stop" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" DurationType="OneShot" DurationMin="1.6754444" DurationMax="1.6754444">
+				<Event Id="588697279" Name="AR_Shoot_Stop" ObjectPath="\Events\Weapons\Shooting\Shoot\AR_Shoot_Stop" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" DurationType="OneShot" DurationMin="2.5973194" DurationMax="2.5973194">
 					<MediaRefs>
 						<MediaRef Id="25638055"/>
 						<MediaRef Id="92565130"/>
@@ -1753,7 +1753,7 @@
 				<Event Id="3006080354" Name="UI_Toggle" ObjectPath="\Events\Interface\UI_Toggle" GUID="{797C0C31-AE30-4A12-9686-6408980D163E}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1233309807" Type="Event" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" Language="SFX" Hash="{230BCA91-B762-ADB8-72FD-08262B46A975}">
+		<SoundBank Id="1233309807" Type="Event" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" Language="SFX" Hash="{398998D1-3318-307A-48A8-29EE49C887FF}">
 			<ObjectPath>AR_Shoot_Stop_3P</ObjectPath>
 			<ShortName>AR_Shoot_Stop_3P</ShortName>
 			<Path>Event/AR_Shoot_Stop_3P.bnk</Path>
@@ -1825,7 +1825,7 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
-				<Event Id="1233309807" Name="AR_Shoot_Stop_3P" ObjectPath="\Events\Weapons\3P\Shooting\Shoot\AR_Shoot_Stop_3P" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" MaxAttenuation="13000" DurationType="OneShot" DurationMin="1.4088752" DurationMax="1.4206908">
+				<Event Id="1233309807" Name="AR_Shoot_Stop_3P" ObjectPath="\Events\Weapons\3P\Shooting\Shoot\AR_Shoot_Stop_3P" GUID="{6CA10D5C-CD3F-490C-A8B9-374BB2F49A57}" MaxAttenuation="13000" DurationType="OneShot" DurationMin="2.751764" DurationMax="2.751764">
 					<MediaRefs>
 						<MediaRef Id="25638055"/>
 						<MediaRef Id="92565130"/>
@@ -3062,15 +3062,11 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{DFC67057-7CCA-F136-A95B-BF22B62CD45F}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{97B4A9C9-BC6D-0007-0E8B-8C70FAB1383C}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
 			<Media>
-				<File Id="14501665" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AR_Shot_Tail_Room.wav</ShortName>
-					<CachePath>SFX/AR_Shot_Tail_Room_C0D1FB18.wem</CachePath>
-				</File>
 				<File Id="22665926" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Ricochet_4D6F04EE.wem</CachePath>
@@ -3139,13 +3135,13 @@
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Ricochet_E4B3C4ED.wem</CachePath>
 				</File>
+				<File Id="147372489" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_LFE.wav</ShortName>
+					<CachePath>SFX/AR_Shot_LFE_E3376BE6.wem</CachePath>
+				</File>
 				<File Id="157149023" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Tile_79601A8F.wem</CachePath>
-				</File>
-				<File Id="166846503" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AR_Shot_Pulse.wav</ShortName>
-					<CachePath>SFX/AR_Shot_Pulse_C0D1FB18.wem</CachePath>
 				</File>
 				<File Id="167120583" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_PassBy_LP.wav</ShortName>
@@ -3158,10 +3154,6 @@
 				<File Id="175573853" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Tile_F7BA5327.wem</CachePath>
-				</File>
-				<File Id="175929226" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AR_Shot_Tail_Atrium.wav</ShortName>
-					<CachePath>SFX/AR_Shot_Tail_Atrium_C0D1FB18.wem</CachePath>
 				</File>
 				<File Id="208798616" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Tail_Room.wav</ShortName>
@@ -3178,10 +3170,6 @@
 				<File Id="224555482" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Ricochet_0C0617AE.wem</CachePath>
-				</File>
-				<File Id="228004887" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AR_Shot_Transient.wav</ShortName>
-					<CachePath>SFX/AR_Shot_Transient_C0D1FB18.wem</CachePath>
 				</File>
 				<File Id="237600041" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Ricochet.wav</ShortName>
@@ -3255,10 +3243,6 @@
 					<ShortName>GL_LFE.wav</ShortName>
 					<CachePath>SFX/GL_LFE_C0D1FB18.wem</CachePath>
 				</File>
-				<File Id="373309000" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AR_Shot_Mech.wav</ShortName>
-					<CachePath>SFX/AR_Shot_Mech_C0D1FB18.wem</CachePath>
-				</File>
 				<File Id="375528492" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Metal_23BD5BF2.wem</CachePath>
@@ -3274,6 +3258,10 @@
 				<File Id="402662610" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Tail_Atrium.wav</ShortName>
 					<CachePath>SFX/GL_Impact_Tail_Atrium_C0D1FB18.wem</CachePath>
+				</File>
+				<File Id="412540483" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_Rattle.wav</ShortName>
+					<CachePath>SFX/AR_Shot_Rattle_A6751151.wem</CachePath>
 				</File>
 				<File Id="421270597" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
@@ -3315,10 +3303,6 @@
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
 					<CachePath>SFX/GL_Impact_Explosion_Stem_9D961E9A.wem</CachePath>
 				</File>
-				<File Id="470590754" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AR_Shot_Tail_Spawn.wav</ShortName>
-					<CachePath>SFX/AR_Shot_Tail_Spawn_C0D1FB18.wem</CachePath>
-				</File>
 				<File Id="473819520" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Room.wav</ShortName>
 					<CachePath>SFX/GL_Impact_Far_Room_44B4E546.wem</CachePath>
@@ -3359,10 +3343,6 @@
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
 					<CachePath>SFX/GL_Impact_Explosion_Stem_EB0CE9F5.wem</CachePath>
 				</File>
-				<File Id="548026506" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AR_Empty_Rattle.wav</ShortName>
-					<CachePath>SFX/AR_Empty_Rattle_C0D1FB18.wem</CachePath>
-				</File>
 				<File Id="554984534" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Mech_3.wav</ShortName>
 					<CachePath>SFX/GL_Mech_3_C0D1FB18.wem</CachePath>
@@ -3378,6 +3358,10 @@
 				<File Id="565627633" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Metal_0F50B2FF.wem</CachePath>
+				</File>
+				<File Id="567127076" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_Transient.wav</ShortName>
+					<CachePath>SFX/AR_Shot_Transient_A9F4F905.wem</CachePath>
 				</File>
 				<File Id="576977623" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Spawn.wav</ShortName>
@@ -3419,10 +3403,6 @@
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Grass_06AC75B2.wem</CachePath>
 				</File>
-				<File Id="657027243" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AR_Shot_LFE.wav</ShortName>
-					<CachePath>SFX/AR_Shot_LFE_E558B247.wem</CachePath>
-				</File>
 				<File Id="666983815" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Casings_747995F8.wem</CachePath>
@@ -3462,6 +3442,10 @@
 				<File Id="736273374" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Casings_F8802C62.wem</CachePath>
+				</File>
+				<File Id="740616738" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_Pulse.wav</ShortName>
+					<CachePath>SFX/AR_Shot_Pulse_B02CDE11.wem</CachePath>
 				</File>
 				<File Id="745025731" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
@@ -3531,9 +3515,17 @@
 					<ShortName>WEP_AR_Casings.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Casings_83F6225D.wem</CachePath>
 				</File>
+				<File Id="835669510" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_Tail_Atrium.wav</ShortName>
+					<CachePath>SFX/AR_Shot_Tail_Atrium_0DC3515A.wem</CachePath>
+				</File>
 				<File Id="848710380" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Explosion_Stem.wav</ShortName>
 					<CachePath>SFX/GL_Impact_Explosion_Stem_85A7F71B.wem</CachePath>
+				</File>
+				<File Id="867674999" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_Tail_Room.wav</ShortName>
+					<CachePath>SFX/AR_Shot_Tail_Room_2FF20255.wem</CachePath>
 				</File>
 				<File Id="869087166" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AR_Equip.wav</ShortName>
@@ -3558,6 +3550,14 @@
 				<File Id="931298175" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Flesh_2D86797E.wem</CachePath>
+				</File>
+				<File Id="933038228" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_Mech.wav</ShortName>
+					<CachePath>SFX/AR_Shot_Mech_5A723C0A.wem</CachePath>
+				</File>
+				<File Id="939305707" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_Tail_Spawn.wav</ShortName>
+					<CachePath>SFX/AR_Shot_Tail_Spawn_C2214053.wem</CachePath>
 				</File>
 				<File Id="954200902" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
@@ -3972,7 +3972,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="429698657" Name="AR_Reload_OS" ObjectPath="\Events\Weapons\Reloading\AR_Reload_OS" GUID="{6E436856-4CBE-4BA5-B184-21225058CE02}" DurationType="OneShot" DurationMin="1.6517799" DurationMax="1.8540605">
+				<Event Id="429698657" Name="AR_Reload_OS" ObjectPath="\Events\Weapons\Reloading\AR_Reload_OS" GUID="{6E436856-4CBE-4BA5-B184-21225058CE02}" DurationType="OneShot" DurationMin="2.47767" DurationMax="2.7810907">
 					<MediaRefs>
 						<MediaRef Id="781212311"/>
 					</MediaRefs>
@@ -3984,19 +3984,19 @@
 					<MediaRefs>
 						<MediaRef Id="25638055"/>
 						<MediaRef Id="92565130"/>
-						<MediaRef Id="166846503"/>
-						<MediaRef Id="228004887"/>
+						<MediaRef Id="147372489"/>
 						<MediaRef Id="312448983"/>
-						<MediaRef Id="373309000"/>
-						<MediaRef Id="548026506"/>
+						<MediaRef Id="412540483"/>
 						<MediaRef Id="560147879"/>
+						<MediaRef Id="567127076"/>
 						<MediaRef Id="630130873"/>
 						<MediaRef Id="635329318"/>
-						<MediaRef Id="657027243"/>
 						<MediaRef Id="666983815"/>
 						<MediaRef Id="676321132"/>
 						<MediaRef Id="736273374"/>
+						<MediaRef Id="740616738"/>
 						<MediaRef Id="832229830"/>
+						<MediaRef Id="933038228"/>
 						<MediaRef Id="1033448803"/>
 					</MediaRefs>
 					<PluginRefs>
@@ -4011,7 +4011,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="301467384" GUID="{2C1C780E-EFA5-4772-8620-E06CA40932F3}" Default="true"/>
 							<MediaRefs>
-								<MediaRef Id="470590754"/>
+								<MediaRef Id="939305707"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -4022,7 +4022,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="877225536" GUID="{E9597652-781B-4852-95B1-CADA7D874365}"/>
 							<MediaRefs>
-								<MediaRef Id="175929226"/>
+								<MediaRef Id="835669510"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -4033,7 +4033,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="748895195" GUID="{C7162D63-5030-4C71-878E-49C2A4492744}"/>
 							<MediaRefs>
-								<MediaRef Id="175929226"/>
+								<MediaRef Id="835669510"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -4044,7 +4044,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="1657765358" GUID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 							<MediaRefs>
-								<MediaRef Id="14501665"/>
+								<MediaRef Id="867674999"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -4055,7 +4055,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="747849153" Id="949156522" GUID="{72B927E3-2951-4E7F-B493-1DD0425F5518}"/>
 							<MediaRefs>
-								<MediaRef Id="175929226"/>
+								<MediaRef Id="835669510"/>
 							</MediaRefs>
 							<PluginRefs>
 								<ShareSets>
@@ -5551,7 +5551,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3783818085" Type="Event" GUID="{71C9AFA8-EF94-4712-AA3A-EA7EDA5643E4}" Language="SFX" Hash="{929292C7-3784-44F5-ECC7-878FD157AE31}">
+		<SoundBank Id="3783818085" Type="Event" GUID="{71C9AFA8-EF94-4712-AA3A-EA7EDA5643E4}" Language="SFX" Hash="{A40F350D-8B07-BF3B-D53C-736E7B406FD1}">
 			<ObjectPath>AR_Reload_OS_3P</ObjectPath>
 			<ShortName>AR_Reload_OS_3P</ShortName>
 			<Path>Event/AR_Reload_OS_3P.bnk</Path>
@@ -5563,7 +5563,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3783818085" Name="AR_Reload_OS_3P" ObjectPath="\Events\Weapons\3P\Reloading\AR_Reload_OS_3P" GUID="{71C9AFA8-EF94-4712-AA3A-EA7EDA5643E4}" MaxAttenuation="5000" DurationType="OneShot" DurationMin="1.6517799" DurationMax="1.8540605">
+				<Event Id="3783818085" Name="AR_Reload_OS_3P" ObjectPath="\Events\Weapons\3P\Reloading\AR_Reload_OS_3P" GUID="{71C9AFA8-EF94-4712-AA3A-EA7EDA5643E4}" MaxAttenuation="5000" DurationType="OneShot" DurationMin="2.47767" DurationMax="2.7810907">
 					<MediaRefs>
 						<MediaRef Id="781212311"/>
 					</MediaRefs>
@@ -5627,5 +5627,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7DB1234E-1C77-CECF-05E2-B38D922A2A82}</FileHash>
+	<FileHash>{33CC1610-99FD-CCC4-C68A-DE28253A22A4}</FileHash>
 </SoundBanksInfo>
