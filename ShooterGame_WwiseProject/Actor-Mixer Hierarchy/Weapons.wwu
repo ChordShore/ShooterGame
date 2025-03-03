@@ -433,7 +433,7 @@
 																</Property>
 																<Property Name="Pitch" Type="int32">
 																	<ValueList>
-																		<Value>100</Value>
+																		<Value>-100</Value>
 																	</ValueList>
 																	<ModifierList>
 																		<ModifierInfo>
@@ -1112,10 +1112,13 @@
 														</Property>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>14</Value>
+																<Value>8</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-150</Value>
+															</ValueList>
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{BF074DF5-B95A-4CFB-A36B-DEFE678E8FD0}">
@@ -1257,7 +1260,12 @@
 																				<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
 																				<Property Name="InitialDelay" Type="Real64">
 																					<ValueList>
-																						<Value>0.07</Value>
+																						<Value>0.075</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="MakeUpGain" Type="Real64">
+																					<ValueList>
+																						<Value>2</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
@@ -1357,7 +1365,7 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>6</YPos>
+																														<YPos>7</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Log1</SegmentShape>
 																													</Point>
@@ -1630,7 +1638,7 @@
 																				<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
 																				<Property Name="InitialDelay" Type="Real64">
 																					<ValueList>
-																						<Value>0.04</Value>
+																						<Value>0.05</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="Lowpass" Type="int16">
@@ -1647,6 +1655,11 @@
 																							</Modifier>
 																						</ModifierInfo>
 																					</ModifierList>
+																				</Property>
+																				<Property Name="MakeUpGain" Type="Real64">
+																					<ValueList>
+																						<Value>-2</Value>
+																					</ValueList>
 																				</Property>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
 																					<ValueList>
@@ -1745,19 +1758,19 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>1700</YPos>
+																														<YPos>500</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Log1</SegmentShape>
 																													</Point>
 																													<Point>
 																														<XPos>25</XPos>
-																														<YPos>12</YPos>
+																														<YPos>-390</YPos>
 																														<Flags>0</Flags>
 																														<SegmentShape>Exp1</SegmentShape>
 																													</Point>
 																													<Point>
 																														<XPos>30</XPos>
-																														<YPos>0</YPos>
+																														<YPos>-400</YPos>
 																														<Flags>37</Flags>
 																													</Point>
 																												</PointList>
@@ -1787,7 +1800,7 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>1</YPos>
+																														<YPos>-4</YPos>
 																														<Flags>5</Flags>
 																													</Point>
 																													<Point>
@@ -2027,7 +2040,7 @@
 																				<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
 																				<Property Name="InitialDelay" Type="Real64">
 																					<ValueList>
-																						<Value>0.085</Value>
+																						<Value>0.09</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="Lowpass" Type="int16">
@@ -2039,7 +2052,7 @@
 																				</Property>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>7</Value>
+																						<Value>12</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
@@ -2138,15 +2151,9 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>6</YPos>
+																														<YPos>7</YPos>
 																														<Flags>5</Flags>
-																														<SegmentShape>Log2</SegmentShape>
-																													</Point>
-																													<Point>
-																														<XPos>5</XPos>
-																														<YPos>2.80403</YPos>
-																														<Flags>0</Flags>
-																														<SegmentShape>Exp1</SegmentShape>
+																														<SegmentShape>Exp2</SegmentShape>
 																													</Point>
 																													<Point>
 																														<XPos>25</XPos>
@@ -2261,7 +2268,7 @@
 																										<PointList>
 																											<Point>
 																												<XPos>0</XPos>
-																												<YPos>-2</YPos>
+																												<YPos>-3.5</YPos>
 																												<Flags>5</Flags>
 																												<SegmentShape>Exp2</SegmentShape>
 																											</Point>
@@ -4721,7 +4728,15 @@
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="AR_Impact_Grass" ID="{2D4D0B06-5E9C-41E5-822B-699745F145C8}" ShortID="1026593347">
 													<PropertyList>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>400</Value>
+															</ValueList>
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{21F36B1C-DD8C-4276-9239-E4DD823173B2}">
