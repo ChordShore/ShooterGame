@@ -1278,11 +1278,6 @@
 																						<Value>0.075</Value>
 																					</ValueList>
 																				</Property>
-																				<Property Name="MakeUpGain" Type="Real64">
-																					<ValueList>
-																						<Value>-1</Value>
-																					</ValueList>
-																				</Property>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
 																					<ValueList>
 																						<Value>2</Value>
@@ -1490,7 +1485,7 @@
 																				<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>12</Value>
+																						<Value>13</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
@@ -1743,9 +1738,14 @@
 																					</ValueList>
 																				</Property>
 																				<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
+																				<Property Name="Highpass" Type="int16">
+																					<ValueList>
+																						<Value>20</Value>
+																					</ValueList>
+																				</Property>
 																				<Property Name="InitialDelay" Type="Real64">
 																					<ValueList>
-																						<Value>0.06</Value>
+																						<Value>0.02</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="Lowpass" Type="int16">
@@ -1757,7 +1757,7 @@
 																							<Modifier Name="" ID="{1A0D07C4-899E-49A5-B8AB-4DE0D0E2501D}">
 																								<PropertyList>
 																									<Property Name="Enabled" Type="bool" Value="True"/>
-																									<Property Name="Min" Type="Real64" Value="-25"/>
+																									<Property Name="Min" Type="Real64" Value="-15"/>
 																								</PropertyList>
 																							</Modifier>
 																						</ModifierInfo>
@@ -1765,7 +1765,7 @@
 																				</Property>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>-2</Value>
+																						<Value>6</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
@@ -1775,15 +1775,15 @@
 																				</Property>
 																				<Property Name="Pitch" Type="int32">
 																					<ValueList>
-																						<Value>-250</Value>
+																						<Value>-400</Value>
 																					</ValueList>
 																					<ModifierList>
 																						<ModifierInfo>
 																							<Modifier Name="" ID="{753A8E39-FB5A-452C-B240-237D1D59052E}">
 																								<PropertyList>
 																									<Property Name="Enabled" Type="bool" Value="True"/>
-																									<Property Name="Max" Type="Real64" Value="75"/>
-																									<Property Name="Min" Type="Real64" Value="-75"/>
+																									<Property Name="Max" Type="Real64" Value="100"/>
+																									<Property Name="Min" Type="Real64" Value="-100"/>
 																								</PropertyList>
 																							</Modifier>
 																						</ModifierInfo>
@@ -1828,14 +1828,15 @@
 																					<ChildrenList>
 																						<AudioFileSource Name="AR_Shot_Pulse" ID="{2654524E-12E1-4943-8BA8-E2AE084D9877}">
 																							<PropertyList>
-																								<Property Name="LoopBegin" Type="Real64" Value="0.0726872246696035"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.1618858945189"/>
 																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																								<Property Name="TrimBegin" Type="Real64" Value="0.0726872246696035"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="0.234573119188504"/>
 																							</PropertyList>
 																							<Language>SFX</Language>
 																							<AudioFile>AR_Shot_Pulse.wav</AudioFile>
 																							<MediaIDList>
-																								<MediaID ID="740616738"/>
+																								<MediaID ID="166846503"/>
 																							</MediaIDList>
 																						</AudioFileSource>
 																					</ChildrenList>
@@ -1865,19 +1866,13 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>700</YPos>
+																														<YPos>300</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Log1</SegmentShape>
 																													</Point>
 																													<Point>
-																														<XPos>15</XPos>
-																														<YPos>-390</YPos>
-																														<Flags>0</Flags>
-																														<SegmentShape>Exp1</SegmentShape>
-																													</Point>
-																													<Point>
 																														<XPos>30</XPos>
-																														<YPos>-400</YPos>
+																														<YPos>-100</YPos>
 																														<Flags>37</Flags>
 																													</Point>
 																												</PointList>
@@ -1907,13 +1902,13 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>-2</YPos>
+																														<YPos>3</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Log2</SegmentShape>
 																													</Point>
 																													<Point>
-																														<XPos>15</XPos>
-																														<YPos>-0</YPos>
+																														<XPos>20</XPos>
+																														<YPos>0</YPos>
 																														<Flags>0</Flags>
 																													</Point>
 																													<Point>
@@ -1958,7 +1953,7 @@
 																													</Point>
 																													<Point>
 																														<XPos>30</XPos>
-																														<YPos>15</YPos>
+																														<YPos>0</YPos>
 																														<Flags>37</Flags>
 																													</Point>
 																												</PointList>
@@ -1988,8 +1983,44 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>-0</YPos>
+																														<YPos>0</YPos>
 																														<Flags>5</Flags>
+																													</Point>
+																													<Point>
+																														<XPos>30</XPos>
+																														<YPos>0</YPos>
+																														<Flags>37</Flags>
+																													</Point>
+																												</PointList>
+																											</Curve>
+																										</Custom>
+																									</Reference>
+																								</ReferenceList>
+																							</RTPC>
+																						</Local>
+																					</Reference>
+																					<Reference>
+																						<Local>
+																							<RTPC Name="" ID="{5AFAC073-A829-43EE-AB5B-ACB81FEC599E}" ShortID="999869885">
+																								<PropertyList>
+																									<Property Name="PropertyName" Type="string" Value="Highpass"/>
+																								</PropertyList>
+																								<ReferenceList>
+																									<Reference Name="ControlInput">
+																										<ObjectRef Name="PAR_AR_AmmoCount" ID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																									</Reference>
+																									<Reference Name="Curve">
+																										<Custom>
+																											<Curve Name="" ID="{E2A0C542-62A2-44F0-BFCE-FAD835A9230B}">
+																												<PropertyList>
+																													<Property Name="Flags" Type="int32" Value="65537"/>
+																												</PropertyList>
+																												<PointList>
+																													<Point>
+																														<XPos>0</XPos>
+																														<YPos>5</YPos>
+																														<Flags>5</Flags>
+																														<SegmentShape>Log1</SegmentShape>
 																													</Point>
 																													<Point>
 																														<XPos>30</XPos>
@@ -2039,7 +2070,7 @@
 																				</Property>
 																				<Property Name="Pitch" Type="int32">
 																					<ValueList>
-																						<Value>-150</Value>
+																						<Value>-200</Value>
 																					</ValueList>
 																					<ModifierList>
 																						<ModifierInfo>
@@ -2178,7 +2209,7 @@
 																													</Point>
 																													<Point>
 																														<XPos>20</XPos>
-																														<YPos>-0</YPos>
+																														<YPos>0</YPos>
 																														<Flags>0</Flags>
 																														<SegmentShape>Exp3</SegmentShape>
 																													</Point>
@@ -2220,7 +2251,7 @@
 																				</Property>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>7</Value>
+																						<Value>8</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="MaxSoundPerInstance" Type="int16">

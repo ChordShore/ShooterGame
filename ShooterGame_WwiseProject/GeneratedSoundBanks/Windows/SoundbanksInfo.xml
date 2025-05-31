@@ -3062,7 +3062,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{05251DAA-7DB7-D8D0-90DD-7714C5FB3569}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{B6F6464F-7DAD-E9A4-13EF-7DCA95843750}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -3142,6 +3142,10 @@
 				<File Id="157149023" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Tile.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Tile_79601A8F.wem</CachePath>
+				</File>
+				<File Id="166846503" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_Pulse.wav</ShortName>
+					<CachePath>SFX/AR_Shot_Pulse_5214EDBB.wem</CachePath>
 				</File>
 				<File Id="167120583" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_PassBy_LP.wav</ShortName>
@@ -3442,10 +3446,6 @@
 				<File Id="736273374" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Casings_F8802C62.wem</CachePath>
-				</File>
-				<File Id="740616738" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AR_Shot_Pulse.wav</ShortName>
-					<CachePath>SFX/AR_Shot_Pulse_B02CDE11.wem</CachePath>
 				</File>
 				<File Id="745025731" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
@@ -3985,6 +3985,7 @@
 						<MediaRef Id="25638055"/>
 						<MediaRef Id="92565130"/>
 						<MediaRef Id="147372489"/>
+						<MediaRef Id="166846503"/>
 						<MediaRef Id="312448983"/>
 						<MediaRef Id="412540483"/>
 						<MediaRef Id="560147879"/>
@@ -3994,7 +3995,6 @@
 						<MediaRef Id="666983815"/>
 						<MediaRef Id="676321132"/>
 						<MediaRef Id="736273374"/>
-						<MediaRef Id="740616738"/>
 						<MediaRef Id="832229830"/>
 						<MediaRef Id="933038228"/>
 						<MediaRef Id="1033448803"/>
@@ -5627,5 +5627,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A87A86EA-B8ED-E808-87D3-CD438E0430A8}</FileHash>
+	<FileHash>{DCFDD915-EE26-1DFA-05D2-2FCAF777FD6C}</FileHash>
 </SoundBanksInfo>

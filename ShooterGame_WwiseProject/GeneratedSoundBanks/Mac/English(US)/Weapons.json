@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{05251DAA-7DB7-D8D0-90DD-7714C5FB3569}",
+    "Hash": "{B6F6464F-7DAD-E9A4-13EF-7DCA95843750}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -166,6 +166,14 @@
       "Location": "Memory",
       "ShortName": "WEP_AR_Impact_Tile.wav",
       "CachePath": "SFX/WEP_AR_Impact_Tile_79601A8F.wem"
+     },
+     {
+      "Id": "166846503",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AR_Shot_Pulse.wav",
+      "CachePath": "SFX/AR_Shot_Pulse_5214EDBB.wem"
      },
      {
       "Id": "167120583",
@@ -766,14 +774,6 @@
       "Location": "Memory",
       "ShortName": "WEP_AR_Casings.wav",
       "CachePath": "SFX/WEP_AR_Casings_F8802C62.wem"
-     },
-     {
-      "Id": "740616738",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AR_Shot_Pulse.wav",
-      "CachePath": "SFX/AR_Shot_Pulse_B02CDE11.wem"
      },
      {
       "Id": "745025731",
@@ -2209,6 +2209,9 @@
         "Id": "147372489"
        },
        {
+        "Id": "166846503"
+       },
+       {
         "Id": "312448983"
        },
        {
@@ -2234,9 +2237,6 @@
        },
        {
         "Id": "736273374"
-       },
-       {
-        "Id": "740616738"
        },
        {
         "Id": "832229830"
@@ -3245,6 +3245,6 @@
     ]
    }
   ],
-  "FileHash": "{80EBF849-E5E9-D3C1-B1DF-B43E70522AC4}"
+  "FileHash": "{120B8BF7-6F22-C76B-6487-F020FA084E1D}"
  }
 }
