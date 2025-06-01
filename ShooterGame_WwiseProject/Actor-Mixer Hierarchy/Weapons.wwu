@@ -390,7 +390,7 @@
 														</Property>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>-6</Value>
+																<Value>-4</Value>
 															</ValueList>
 														</Property>
 														<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
@@ -503,7 +503,7 @@
 																</Property>
 																<Property Name="MakeUpGain" Type="Real64">
 																	<ValueList>
-																		<Value>2</Value>
+																		<Value>4</Value>
 																	</ValueList>
 																</Property>
 																<Property Name="ReflectionsVolume" Type="Real64">
@@ -1117,7 +1117,7 @@
 														</Property>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>5</Value>
+																<Value>6</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Pitch" Type="int32">
@@ -1185,7 +1185,7 @@
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.08"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.09"/>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="ReflectionsVolume" Type="Real64">
 															<ValueList>
@@ -1372,7 +1372,7 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>9</YPos>
+																														<YPos>7</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Log1</SegmentShape>
 																													</Point>
@@ -1414,7 +1414,7 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>15</YPos>
+																														<YPos>0</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Log1</SegmentShape>
 																													</Point>
@@ -1426,7 +1426,7 @@
 																													</Point>
 																													<Point>
 																														<XPos>30</XPos>
-																														<YPos>0</YPos>
+																														<YPos>15</YPos>
 																														<Flags>37</Flags>
 																													</Point>
 																												</PointList>
@@ -1485,7 +1485,7 @@
 																				<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>13</Value>
+																						<Value>14</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
@@ -1627,15 +1627,15 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>-8</YPos>
+																														<YPos>-10</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Log1</SegmentShape>
 																													</Point>
 																													<Point>
-																														<XPos>15</XPos>
+																														<XPos>20</XPos>
 																														<YPos>0</YPos>
 																														<Flags>0</Flags>
-																														<SegmentShape>Exp2</SegmentShape>
+																														<SegmentShape>Exp1</SegmentShape>
 																													</Point>
 																													<Point>
 																														<XPos>30</XPos>
@@ -1745,7 +1745,7 @@
 																				</Property>
 																				<Property Name="InitialDelay" Type="Real64">
 																					<ValueList>
-																						<Value>0.02</Value>
+																						<Value>0.04</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="Lowpass" Type="int16">
@@ -1765,7 +1765,7 @@
 																				</Property>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>6</Value>
+																						<Value>7</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
@@ -1902,9 +1902,9 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>3</YPos>
+																														<YPos>4</YPos>
 																														<Flags>5</Flags>
-																														<SegmentShape>Log2</SegmentShape>
+																														<SegmentShape>Log3</SegmentShape>
 																													</Point>
 																													<Point>
 																														<XPos>20</XPos>
@@ -2060,7 +2060,7 @@
 																				</Property>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>12</Value>
+																						<Value>14</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
@@ -2203,9 +2203,9 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>-5</YPos>
+																														<YPos>-8</YPos>
 																														<Flags>5</Flags>
-																														<SegmentShape>Log3</SegmentShape>
+																														<SegmentShape>Log2</SegmentShape>
 																													</Point>
 																													<Point>
 																														<XPos>20</XPos>
@@ -2352,7 +2352,7 @@
 																														<XPos>0</XPos>
 																														<YPos>10</YPos>
 																														<Flags>5</Flags>
-																														<SegmentShape>Exp1</SegmentShape>
+																														<SegmentShape>Exp2</SegmentShape>
 																													</Point>
 																													<Point>
 																														<XPos>29.999</XPos>
@@ -2500,7 +2500,7 @@
 																		<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 																		<Property Name="InitialDelay" Type="Real64">
 																			<ValueList>
-																				<Value>0.06</Value>
+																				<Value>0.05</Value>
 																			</ValueList>
 																		</Property>
 																		<Property Name="MakeUpGain" Type="Real64">
