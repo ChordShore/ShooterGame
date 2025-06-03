@@ -1117,7 +1117,7 @@
 														</Property>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>6</Value>
+																<Value>8</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Pitch" Type="int32">
@@ -1166,6 +1166,88 @@
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{BC407511-3BA4-4C07-8EC9-45B3921802B7}" ShortID="916515748">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="PAR_AR_AmmoCount" ID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{ED9FF8EB-D480-439D-977E-0B2CA9C5FC86}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-2</YPos>
+																								<Flags>5</Flags>
+																								<SegmentShape>Log3</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>15</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																								<SegmentShape>Exp3</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>30</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{A30949D1-B36B-48EF-BCCA-EF353E53C512}" ShortID="1042351022">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Pitch"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="PAR_AR_AmmoCount" ID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{345AC23D-235C-4969-A87C-CA079ABC0A31}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="65537"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>5</Flags>
+																								<SegmentShape>Log1</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>30</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
 													<ActiveSourceList>
 														<ActiveSource Name="AR_Shot_InitialTransient" ID="{7ECE54A8-D664-49A2-BF50-10BC0418CADB}" Platform="Linked"/>
 													</ActiveSourceList>
@@ -1179,13 +1261,13 @@
 														</Property>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>-2</Value>
+																<Value>-6</Value>
 															</ValueList>
 														</Property>
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.09"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.08"/>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="ReflectionsVolume" Type="Real64">
 															<ValueList>
@@ -1275,7 +1357,12 @@
 																				<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
 																				<Property Name="InitialDelay" Type="Real64">
 																					<ValueList>
-																						<Value>0.075</Value>
+																						<Value>0.08</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="MakeUpGain" Type="Real64">
+																					<ValueList>
+																						<Value>3</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
@@ -1372,7 +1459,7 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>7</YPos>
+																														<YPos>9</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Log1</SegmentShape>
 																													</Point>
@@ -1384,7 +1471,7 @@
 																													</Point>
 																													<Point>
 																														<XPos>30</XPos>
-																														<YPos>-2</YPos>
+																														<YPos>-1</YPos>
 																														<Flags>37</Flags>
 																													</Point>
 																												</PointList>
@@ -1456,7 +1543,7 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>0.2</YPos>
+																														<YPos>0.3</YPos>
 																														<Flags>5</Flags>
 																													</Point>
 																													<Point>
@@ -1485,8 +1572,17 @@
 																				<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>14</Value>
+																						<Value>17</Value>
 																					</ValueList>
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{37AE9B08-662D-44C7-9006-60F8C47B5CA4}">
+																								<PropertyList>
+																									<Property Name="Min" Type="Real64" Value="-6"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
 																				</Property>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
 																					<ValueList>
@@ -1494,9 +1590,6 @@
 																					</ValueList>
 																				</Property>
 																				<Property Name="Pitch" Type="int32">
-																					<ValueList>
-																						<Value>50</Value>
-																					</ValueList>
 																					<ModifierList>
 																						<ModifierInfo>
 																							<Modifier Name="" ID="{EFA84CD6-5795-4DD4-826C-98D0969A5A0D}">
@@ -1738,26 +1831,18 @@
 																					</ValueList>
 																				</Property>
 																				<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
-																				<Property Name="Highpass" Type="int16">
-																					<ValueList>
-																						<Value>20</Value>
-																					</ValueList>
-																				</Property>
 																				<Property Name="InitialDelay" Type="Real64">
 																					<ValueList>
-																						<Value>0.04</Value>
+																						<Value>0.05</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="Lowpass" Type="int16">
-																					<ValueList>
-																						<Value>20</Value>
-																					</ValueList>
 																					<ModifierList>
 																						<ModifierInfo>
 																							<Modifier Name="" ID="{1A0D07C4-899E-49A5-B8AB-4DE0D0E2501D}">
 																								<PropertyList>
 																									<Property Name="Enabled" Type="bool" Value="True"/>
-																									<Property Name="Min" Type="Real64" Value="-15"/>
+																									<Property Name="Max" Type="Real64" Value="40"/>
 																								</PropertyList>
 																							</Modifier>
 																						</ModifierInfo>
@@ -1765,8 +1850,18 @@
 																				</Property>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>7</Value>
+																						<Value>4</Value>
 																					</ValueList>
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{EAE49092-8786-4794-AB0D-60AF21FCAE24}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Min" Type="Real64" Value="-8"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
 																				</Property>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
 																					<ValueList>
@@ -1866,7 +1961,7 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>300</YPos>
+																														<YPos>700</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Log1</SegmentShape>
 																													</Point>
@@ -1907,7 +2002,7 @@
 																														<SegmentShape>Log3</SegmentShape>
 																													</Point>
 																													<Point>
-																														<XPos>20</XPos>
+																														<XPos>25</XPos>
 																														<YPos>0</YPos>
 																														<Flags>0</Flags>
 																													</Point>
@@ -2018,7 +2113,7 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>5</YPos>
+																														<YPos>0</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Log1</SegmentShape>
 																													</Point>
@@ -2239,7 +2334,7 @@
 																				<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
 																				<Property Name="InitialDelay" Type="Real64">
 																					<ValueList>
-																						<Value>0.08</Value>
+																						<Value>0.1</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="Lowpass" Type="int16">
@@ -2251,7 +2346,7 @@
 																				</Property>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>8</Value>
+																						<Value>9</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
@@ -2350,9 +2445,15 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>10</YPos>
+																														<YPos>13</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Exp2</SegmentShape>
+																													</Point>
+																													<Point>
+																														<XPos>16</XPos>
+																														<YPos>-0.03887</YPos>
+																														<Flags>0</Flags>
+																														<SegmentShape>Log2</SegmentShape>
 																													</Point>
 																													<Point>
 																														<XPos>29.999</XPos>
@@ -2391,7 +2492,7 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>900</YPos>
+																														<YPos>1000</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Exp1</SegmentShape>
 																													</Point>
@@ -2427,7 +2528,7 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>0.7</YPos>
+																														<YPos>1.1</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Exp1</SegmentShape>
 																													</Point>
@@ -2469,7 +2570,7 @@
 																										<PointList>
 																											<Point>
 																												<XPos>0</XPos>
-																												<YPos>-3.5</YPos>
+																												<YPos>-1.5</YPos>
 																												<Flags>5</Flags>
 																												<SegmentShape>Exp2</SegmentShape>
 																											</Point>
@@ -3332,7 +3433,7 @@
 																						<PointList>
 																							<Point>
 																								<XPos>0</XPos>
-																								<YPos>-1</YPos>
+																								<YPos>-0</YPos>
 																								<Flags>5</Flags>
 																								<SegmentShape>Log2</SegmentShape>
 																							</Point>
