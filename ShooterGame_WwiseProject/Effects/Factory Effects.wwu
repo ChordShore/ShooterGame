@@ -172,8 +172,8 @@
 										<StateRef Name="STA_Indoors_Room" ID="{8A683FAA-7476-4C8B-A437-13E5E8FE9888}"/>
 										<CustomState Name="" ID="{5C4CC105-D51A-413B-8A05-C4F72DAD13A6}" ShortID="651584360">
 											<PropertyList>
-												<Property Name="Feedback" Type="Real32" Value="25"/>
-												<Property Name="WetDryMix" Type="Real32" Value="30"/>
+												<Property Name="Feedback" Type="Real32" Value="20"/>
+												<Property Name="WetDryMix" Type="Real32" Value="20"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -1316,7 +1316,7 @@
 								<Effect Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
 										<Property Name="DecayTime" Type="Real32" Value="1.1"/>
-										<Property Name="Density" Type="Real32" Value="70"/>
+										<Property Name="Density" Type="Real32" Value="50"/>
 										<Property Name="Diffusion" Type="Real32" Value="35"/>
 										<Property Name="ERLevel" Type="Real32" Value="-23"/>
 										<Property Name="ERPattern" Type="int32" Value="26"/>

@@ -1316,7 +1316,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{DB91DCC2-B62D-B739-D470-DBEFE82C9E81}">
+		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{9CC26FE6-D02A-C50C-1C18-4E71BE2B7C34}">
 			<ObjectPath>AR_Shoot_Stop</ObjectPath>
 			<ShortName>AR_Shoot_Stop</ShortName>
 			<Path>Event/AR_Shoot_Stop.bnk</Path>
@@ -1917,7 +1917,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{4D6B0928-BEE5-A026-3689-12040932EB6B}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{22105AC0-5696-9C2F-3B74-C65C008F1733}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -3062,7 +3062,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{A00B63A9-AD77-C462-576B-71B51F59B71E}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{E7FDD545-A0D2-FD65-F745-F23944211AC5}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -3575,6 +3575,10 @@
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Grass_B3A5FF3B.wem</CachePath>
 				</File>
+				<File Id="1008072208" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_Mech_2.1.wav</ShortName>
+					<CachePath>SFX/AR_Shot_Mech_2.1_948CB31F.wem</CachePath>
+				</File>
 				<File Id="1009471635" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Atrium.wav</ShortName>
 					<CachePath>SFX/GL_Impact_Far_Atrium_4E965051.wem</CachePath>
@@ -3997,6 +4001,7 @@
 						<MediaRef Id="736273374"/>
 						<MediaRef Id="832229830"/>
 						<MediaRef Id="933038228"/>
+						<MediaRef Id="1008072208"/>
 						<MediaRef Id="1033448803"/>
 					</MediaRefs>
 					<PluginRefs>
@@ -5488,7 +5493,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3348775760" Type="Bus" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" Language="SFX" Hash="{F2991BE8-694B-08F9-28AE-5F21180E72F2}">
+		<SoundBank Id="3348775760" Type="Bus" GUID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" Language="SFX" Hash="{444F863C-C567-A801-470C-E3BB4B3E362A}">
 			<ObjectPath>Highrise_EarlyReflections</ObjectPath>
 			<ShortName>Highrise_EarlyReflections</ShortName>
 			<Path>Bus/Highrise_EarlyReflections.bnk</Path>
@@ -5548,7 +5553,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3814800052" Type="Bus" GUID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}" Language="SFX" Hash="{277F9DDD-9BFE-7C35-DB21-2004F1009564}">
+		<SoundBank Id="3814800052" Type="Bus" GUID="{37B304F5-72C5-4988-84FA-0475BEFB7C26}" Language="SFX" Hash="{48EA2922-1AB4-83F2-29CD-50365016E068}">
 			<ObjectPath>Highrise_Room</ObjectPath>
 			<ShortName>Highrise_Room</ShortName>
 			<Path>Bus/Highrise_Room.bnk</Path>
@@ -5602,5 +5607,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{999C957C-6F34-8F58-74C2-6DA0C0DF428C}</FileHash>
+	<FileHash>{27D2C80E-66BD-5E51-2728-1B15E75E38E4}</FileHash>
 </SoundBanksInfo>

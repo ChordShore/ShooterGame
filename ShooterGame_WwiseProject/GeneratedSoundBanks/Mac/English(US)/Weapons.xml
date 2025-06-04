@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{A00B63A9-AD77-C462-576B-71B51F59B71E}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{E7FDD545-A0D2-FD65-F745-F23944211AC5}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -514,6 +514,10 @@
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Grass_B3A5FF3B.wem</CachePath>
 				</File>
+				<File Id="1008072208" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_Mech_2.1.wav</ShortName>
+					<CachePath>SFX/AR_Shot_Mech_2.1_948CB31F.wem</CachePath>
+				</File>
 				<File Id="1009471635" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Atrium.wav</ShortName>
 					<CachePath>SFX/GL_Impact_Far_Atrium_4E965051.wem</CachePath>
@@ -936,6 +940,7 @@
 						<MediaRef Id="736273374"/>
 						<MediaRef Id="832229830"/>
 						<MediaRef Id="933038228"/>
+						<MediaRef Id="1008072208"/>
 						<MediaRef Id="1033448803"/>
 					</MediaRefs>
 					<PluginRefs>
@@ -1309,5 +1314,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{CADB5E32-0A11-6A78-F254-A3C15FC14E6F}</FileHash>
+	<FileHash>{67D6D575-DE80-0E09-3779-AC2582DFF0D5}</FileHash>
 </SoundBanksInfo>

@@ -2925,7 +2925,7 @@
     "Type": "Event",
     "GUID": "{BD84793E-1D49-48EB-ACC4-F1DA575556CD}",
     "Language": "SFX",
-    "Hash": "{DB91DCC2-B62D-B739-D470-DBEFE82C9E81}",
+    "Hash": "{9CC26FE6-D02A-C50C-1C18-4E71BE2B7C34}",
     "ObjectPath": "AR_Shoot_Stop",
     "ShortName": "AR_Shoot_Stop",
     "Path": "Event/AR_Shoot_Stop.bnk",
@@ -4212,7 +4212,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{4D6B0928-BEE5-A026-3689-12040932EB6B}",
+    "Hash": "{22105AC0-5696-9C2F-3B74-C65C008F1733}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -7232,7 +7232,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{A00B63A9-AD77-C462-576B-71B51F59B71E}",
+    "Hash": "{E7FDD545-A0D2-FD65-F745-F23944211AC5}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -8252,6 +8252,14 @@
       "Location": "Memory",
       "ShortName": "WEP_AR_Impact_Grass.wav",
       "CachePath": "SFX/WEP_AR_Impact_Grass_B3A5FF3B.wem"
+     },
+     {
+      "Id": "1008072208",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AR_Shot_Mech_2.1.wav",
+      "CachePath": "SFX/AR_Shot_Mech_2.1_948CB31F.wem"
      },
      {
       "Id": "1009471635",
@@ -9465,6 +9473,9 @@
        },
        {
         "Id": "933038228"
+       },
+       {
+        "Id": "1008072208"
        },
        {
         "Id": "1033448803"
@@ -12854,7 +12865,7 @@
     "Type": "Bus",
     "GUID": "{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}",
     "Language": "SFX",
-    "Hash": "{F2991BE8-694B-08F9-28AE-5F21180E72F2}",
+    "Hash": "{444F863C-C567-A801-470C-E3BB4B3E362A}",
     "ObjectPath": "Highrise_EarlyReflections",
     "ShortName": "Highrise_EarlyReflections",
     "Path": "Bus/Highrise_EarlyReflections.bnk",
@@ -12974,7 +12985,7 @@
     "Type": "Bus",
     "GUID": "{37B304F5-72C5-4988-84FA-0475BEFB7C26}",
     "Language": "SFX",
-    "Hash": "{277F9DDD-9BFE-7C35-DB21-2004F1009564}",
+    "Hash": "{48EA2922-1AB4-83F2-29CD-50365016E068}",
     "ObjectPath": "Highrise_Room",
     "ShortName": "Highrise_Room",
     "Path": "Bus/Highrise_Room.bnk",
@@ -13072,6 +13083,6 @@
     ]
    }
   ],
-  "FileHash": "{13954D5B-3EF7-01B3-3636-14636BAF2926}"
+  "FileHash": "{F7A26710-48E1-42E8-56A4-F5801341AD22}"
  }
 }
