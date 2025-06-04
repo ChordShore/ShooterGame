@@ -1316,7 +1316,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{9CC26FE6-D02A-C50C-1C18-4E71BE2B7C34}">
+		<SoundBank Id="588697279" Type="Event" GUID="{BD84793E-1D49-48EB-ACC4-F1DA575556CD}" Language="SFX" Hash="{BC59109C-DE1C-2B17-FD9D-D5B934AB7DFE}">
 			<ObjectPath>AR_Shoot_Stop</ObjectPath>
 			<ShortName>AR_Shoot_Stop</ShortName>
 			<Path>Event/AR_Shoot_Stop.bnk</Path>
@@ -1917,7 +1917,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{22105AC0-5696-9C2F-3B74-C65C008F1733}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{21D7F525-8540-ACB4-CA6C-F0307ED17DC5}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -3062,7 +3062,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{E7FDD545-A0D2-FD65-F745-F23944211AC5}">
+		<SoundBank Id="1467963052" Type="User" GUID="{DC93E019-DD16-4986-955C-DC3CA3F54DB8}" Language="English(US)" Hash="{22A956E4-FA62-3DEB-0931-9C4388062808}">
 			<ObjectPath>\SoundBanks\Weapons\Weapons</ObjectPath>
 			<ShortName>Weapons</ShortName>
 			<Path>English(US)/Weapons.bnk</Path>
@@ -3090,6 +3090,10 @@
 				<File Id="49084382" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Glass.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Glass_9E4C15A5.wem</CachePath>
+				</File>
+				<File Id="77911442" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_Mech_2.2.wav</ShortName>
+					<CachePath>SFX/AR_Shot_Mech_2.2_5BFFB43B.wem</CachePath>
 				</File>
 				<File Id="87576484" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Flesh.wav</ShortName>
@@ -3230,6 +3234,10 @@
 				<File Id="340692458" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Metal.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Impact_Metal_19111371.wem</CachePath>
+				</File>
+				<File Id="344377677" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AR_Shot_InitialTransient.wav</ShortName>
+					<CachePath>SFX/AR_Shot_InitialTransient_81DF1DFA.wem</CachePath>
 				</File>
 				<File Id="350098340" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Spawn.wav</ShortName>
@@ -3390,10 +3398,6 @@
 				<File Id="630130873" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Casings.wav</ShortName>
 					<CachePath>SFX/WEP_AR_Casings_9A9B8D0D.wem</CachePath>
-				</File>
-				<File Id="635329318" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AR_Shot_InitialTransient.wav</ShortName>
-					<CachePath>SFX/AR_Shot_InitialTransient_C0D1FB18.wem</CachePath>
 				</File>
 				<File Id="643117582" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WEP_AR_Impact_Grass.wav</ShortName>
@@ -3577,7 +3581,7 @@
 				</File>
 				<File Id="1008072208" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AR_Shot_Mech_2.1.wav</ShortName>
-					<CachePath>SFX/AR_Shot_Mech_2.1_948CB31F.wem</CachePath>
+					<CachePath>SFX/AR_Shot_Mech_2.1_074418E6.wem</CachePath>
 				</File>
 				<File Id="1009471635" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GL_Impact_Far_Atrium.wav</ShortName>
@@ -3987,15 +3991,16 @@
 				<Event Id="3035132243" Name="AR_Shoot_LP" ObjectPath="\Events\Weapons\Shooting\Shoot\AR_Shoot_LP" GUID="{027202E3-540C-4144-873B-7DCDD76899B6}" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="25638055"/>
+						<MediaRef Id="77911442"/>
 						<MediaRef Id="92565130"/>
 						<MediaRef Id="147372489"/>
 						<MediaRef Id="166846503"/>
 						<MediaRef Id="312448983"/>
+						<MediaRef Id="344377677"/>
 						<MediaRef Id="412540483"/>
 						<MediaRef Id="560147879"/>
 						<MediaRef Id="567127076"/>
 						<MediaRef Id="630130873"/>
-						<MediaRef Id="635329318"/>
 						<MediaRef Id="666983815"/>
 						<MediaRef Id="676321132"/>
 						<MediaRef Id="736273374"/>
@@ -5607,5 +5612,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{27D2C80E-66BD-5E51-2728-1B15E75E38E4}</FileHash>
+	<FileHash>{16394797-BA09-819A-0C93-127D2614E6F0}</FileHash>
 </SoundBanksInfo>

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{E7FDD545-A0D2-FD65-F745-F23944211AC5}",
+    "Hash": "{22A956E4-FA62-3DEB-0931-9C4388062808}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -62,6 +62,14 @@
       "Location": "Memory",
       "ShortName": "WEP_AR_Impact_Glass.wav",
       "CachePath": "SFX/WEP_AR_Impact_Glass_9E4C15A5.wem"
+     },
+     {
+      "Id": "77911442",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AR_Shot_Mech_2.2.wav",
+      "CachePath": "SFX/AR_Shot_Mech_2.2_5BFFB43B.wem"
      },
      {
       "Id": "87576484",
@@ -342,6 +350,14 @@
       "Location": "Memory",
       "ShortName": "WEP_AR_Impact_Metal.wav",
       "CachePath": "SFX/WEP_AR_Impact_Metal_19111371.wem"
+     },
+     {
+      "Id": "344377677",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AR_Shot_InitialTransient.wav",
+      "CachePath": "SFX/AR_Shot_InitialTransient_81DF1DFA.wem"
      },
      {
       "Id": "350098340",
@@ -662,14 +678,6 @@
       "Location": "Memory",
       "ShortName": "WEP_AR_Casings.wav",
       "CachePath": "SFX/WEP_AR_Casings_9A9B8D0D.wem"
-     },
-     {
-      "Id": "635329318",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AR_Shot_InitialTransient.wav",
-      "CachePath": "SFX/AR_Shot_InitialTransient_C0D1FB18.wem"
      },
      {
       "Id": "643117582",
@@ -1037,7 +1045,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AR_Shot_Mech_2.1.wav",
-      "CachePath": "SFX/AR_Shot_Mech_2.1_948CB31F.wem"
+      "CachePath": "SFX/AR_Shot_Mech_2.1_074418E6.wem"
      },
      {
       "Id": "1009471635",
@@ -2211,6 +2219,9 @@
         "Id": "25638055"
        },
        {
+        "Id": "77911442"
+       },
+       {
         "Id": "92565130"
        },
        {
@@ -2223,6 +2234,9 @@
         "Id": "312448983"
        },
        {
+        "Id": "344377677"
+       },
+       {
         "Id": "412540483"
        },
        {
@@ -2233,9 +2247,6 @@
        },
        {
         "Id": "630130873"
-       },
-       {
-        "Id": "635329318"
        },
        {
         "Id": "666983815"
@@ -3221,6 +3232,6 @@
     ]
    }
   ],
-  "FileHash": "{92F13521-EDA3-5AE4-0E2E-DA5B1A77E934}"
+  "FileHash": "{284AF15C-1DB6-C74E-DE90-65F6BD0C99F2}"
  }
 }

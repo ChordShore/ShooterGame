@@ -343,7 +343,7 @@
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="10"/>
 										<Property Name="MakeUpGain" Type="Real64">
 											<ValueList>
-												<Value>-13</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
@@ -686,7 +686,7 @@
 														</Property>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>5</Value>
+																<Value>6</Value>
 															</ValueList>
 														</Property>
 														<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
@@ -1123,7 +1123,7 @@
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.08"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.09"/>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="ReflectionsVolume" Type="Real64">
 															<ValueList>
@@ -1211,9 +1211,24 @@
 																					</ValueList>
 																				</Property>
 																				<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
+																				<Property Name="InitialDelay" Type="Real64">
+																					<ValueList>
+																						<Value>0.04</Value>
+																					</ValueList>
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{6429945E-C4C1-4FEE-BBBD-698AB1C6B840}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="0.01"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>3</Value>
+																						<Value>-3</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
@@ -1222,6 +1237,9 @@
 																					</ValueList>
 																				</Property>
 																				<Property Name="Pitch" Type="int32">
+																					<ValueList>
+																						<Value>-100</Value>
+																					</ValueList>
 																					<ModifierList>
 																						<ModifierInfo>
 																							<Modifier Name="" ID="{76C5222A-A974-4C9B-AD5E-296C86CF0D18}">
@@ -1262,6 +1280,19 @@
 																			</ReferenceList>
 																			<ChildrenList>
 																				<BlendContainer Name="Mech_Tester" ID="{71D36947-D281-4E0E-BA29-F07C85B21390}" ShortID="458532571">
+																					<PropertyList>
+																						<Property Name="InitialDelay" Type="Real64">
+																							<ModifierList>
+																								<ModifierInfo>
+																									<Modifier Name="" ID="{C83CDDBB-0918-4F97-9227-195053274117}">
+																										<PropertyList>
+																											<Property Name="Max" Type="Real64" Value="0.01"/>
+																										</PropertyList>
+																									</Modifier>
+																								</ModifierInfo>
+																							</ModifierList>
+																						</Property>
+																					</PropertyList>
 																					<ReferenceList>
 																						<Reference Name="Conversion">
 																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
@@ -1279,14 +1310,14 @@
 																									</ValueList>
 																								</Property>
 																								<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
-																								<Property Name="InitialDelay" Type="Real64">
-																									<ValueList>
-																										<Value>0.06</Value>
-																									</ValueList>
-																								</Property>
 																								<Property Name="MakeUpGain" Type="Real64">
 																									<ValueList>
-																										<Value>6</Value>
+																										<Value>4</Value>
+																									</ValueList>
+																								</Property>
+																								<Property Name="Pitch" Type="int32">
+																									<ValueList>
+																										<Value>-200</Value>
 																									</ValueList>
 																								</Property>
 																								<Property Name="ReflectionsVolume" Type="Real64">
@@ -1295,6 +1326,11 @@
 																									</ValueList>
 																								</Property>
 																								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																								<Property Name="Volume" Type="Real64">
+																									<ValueList>
+																										<Value>-96</Value>
+																									</ValueList>
+																								</Property>
 																							</PropertyList>
 																							<ReferenceList>
 																								<Reference Name="Conversion">
@@ -1336,11 +1372,6 @@
 																									</ValueList>
 																								</Property>
 																								<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
-																								<Property Name="InitialDelay" Type="Real64">
-																									<ValueList>
-																										<Value>0.07</Value>
-																									</ValueList>
-																								</Property>
 																								<Property Name="MakeUpGain" Type="Real64">
 																									<ValueList>
 																										<Value>12</Value>
@@ -1402,6 +1433,76 @@
 																								<ActiveSource Name="AR_Shot_Mech_2_1" ID="{C703BED6-9189-4BF8-8743-0717DD228FC9}" Platform="Linked"/>
 																							</ActiveSourceList>
 																						</Sound>
+																						<Sound Name="AR_Shot_Mech_2_2" ID="{96B87D09-6855-4200-8C14-E40946E846A3}" ShortID="788960189">
+																							<PropertyList>
+																								<Property Name="GameAuxSendVolume" Type="Real64">
+																									<ValueList>
+																										<Value>-6</Value>
+																									</ValueList>
+																								</Property>
+																								<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
+																								<Property Name="MakeUpGain" Type="Real64">
+																									<ValueList>
+																										<Value>14</Value>
+																									</ValueList>
+																								</Property>
+																								<Property Name="Pitch" Type="int32">
+																									<ValueList>
+																										<Value>700</Value>
+																									</ValueList>
+																									<ModifierList>
+																										<ModifierInfo>
+																											<Modifier Name="" ID="{447A98A0-DCFE-4836-AF63-0EECA608B314}">
+																												<PropertyList>
+																													<Property Name="Enabled" Type="bool" Value="True"/>
+																													<Property Name="Max" Type="Real64" Value="50"/>
+																													<Property Name="Min" Type="Real64" Value="-50"/>
+																												</PropertyList>
+																											</Modifier>
+																										</ModifierInfo>
+																									</ModifierList>
+																								</Property>
+																								<Property Name="ReflectionsVolume" Type="Real64">
+																									<ValueList>
+																										<Value>-2</Value>
+																									</ValueList>
+																								</Property>
+																								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																							</PropertyList>
+																							<ReferenceList>
+																								<Reference Name="Conversion">
+																									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D6CFCF53-668F-4A7F-B806-9061ABFF7449}"/>
+																								</Reference>
+																								<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+																									<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Slow_Release" ID="{E0BA4DE6-A10C-49AF-A3E4-C5F71BA79EE6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																								</Reference>
+																								<Reference Name="OutputBus">
+																									<ObjectRef Name="AR_Shoot" ID="{3D3B38C5-3BC0-4447-86DE-206228E9859C}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																								<Reference Name="ReflectionsAuxSend">
+																									<ObjectRef Name="Highrise_EarlyReflections" ID="{EFDFADBC-CF4E-4A31-9DAB-28D0784E5E7D}" WorkUnitID="{5CAEE53A-6269-42C7-AE7B-49FF492A164C}"/>
+																								</Reference>
+																							</ReferenceList>
+																							<ChildrenList>
+																								<AudioFileSource Name="AR_Shot_Mech_2_2" ID="{8D8EDE20-3B03-41B4-805F-C123B4F9684F}">
+																									<PropertyList>
+																										<Property Name="FadeInDuration" Type="Real64" Value="9.32400932401045E-05"/>
+																										<Property Name="FadeOutDuration" Type="Real64" Value="0.320364763149351"/>
+																										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																										<Property Name="TrimBegin" Type="Real64" Value="0.0700240745230247"/>
+																										<Property Name="TrimEnd" Type="Real64" Value="0.964791474300978"/>
+																									</PropertyList>
+																									<Language>SFX</Language>
+																									<AudioFile>AR_Shot_Mech_2.2.wav</AudioFile>
+																									<MediaIDList>
+																										<MediaID ID="77911442"/>
+																									</MediaIDList>
+																								</AudioFileSource>
+																							</ChildrenList>
+																							<ActiveSourceList>
+																								<ActiveSource Name="AR_Shot_Mech_2_2" ID="{8D8EDE20-3B03-41B4-805F-C123B4F9684F}" Platform="Linked"/>
+																							</ActiveSourceList>
+																						</Sound>
 																					</ChildrenList>
 																				</BlendContainer>
 																			</ChildrenList>
@@ -1426,9 +1527,9 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>9</YPos>
+																														<YPos>12</YPos>
 																														<Flags>5</Flags>
-																														<SegmentShape>Exp1</SegmentShape>
+																														<SegmentShape>Log1</SegmentShape>
 																													</Point>
 																													<Point>
 																														<XPos>25</XPos>
@@ -1491,6 +1592,118 @@
 																							</RTPC>
 																						</Local>
 																					</Reference>
+																					<Reference>
+																						<Local>
+																							<RTPC Name="" ID="{25FC5CA3-1D40-4F1C-816B-7AC391B80A59}" ShortID="395902234">
+																								<PropertyList>
+																									<Property Name="PropertyName" Type="string" Value="Pitch"/>
+																								</PropertyList>
+																								<ReferenceList>
+																									<Reference Name="ControlInput">
+																										<ObjectRef Name="PAR_AR_AmmoCount" ID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																									</Reference>
+																									<Reference Name="Curve">
+																										<Custom>
+																											<Curve Name="" ID="{236BF4FB-03B9-4A9C-8F56-EF21693B35CB}">
+																												<PropertyList>
+																													<Property Name="Flags" Type="int32" Value="65537"/>
+																												</PropertyList>
+																												<PointList>
+																													<Point>
+																														<XPos>0</XPos>
+																														<YPos>400</YPos>
+																														<Flags>5</Flags>
+																														<SegmentShape>Log1</SegmentShape>
+																													</Point>
+																													<Point>
+																														<XPos>29</XPos>
+																														<YPos>0</YPos>
+																														<Flags>37</Flags>
+																													</Point>
+																												</PointList>
+																											</Curve>
+																										</Custom>
+																									</Reference>
+																								</ReferenceList>
+																							</RTPC>
+																						</Local>
+																					</Reference>
+																					<Reference>
+																						<Local>
+																							<RTPC Name="" ID="{2013E711-338F-4425-B103-6DD82AB7D36F}" ShortID="72393985">
+																								<PropertyList>
+																									<Property Name="PropertyName" Type="string" Value="InitialDelay"/>
+																								</PropertyList>
+																								<ReferenceList>
+																									<Reference Name="ControlInput">
+																										<ObjectRef Name="PAR_AR_AmmoCount" ID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																									</Reference>
+																									<Reference Name="Curve">
+																										<Custom>
+																											<Curve Name="" ID="{0B53E70C-C1EA-44B0-9120-3EA1A4F74DFD}">
+																												<PropertyList>
+																													<Property Name="Flags" Type="int32" Value="1"/>
+																												</PropertyList>
+																												<PointList>
+																													<Point>
+																														<XPos>0</XPos>
+																														<YPos>0</YPos>
+																														<Flags>5</Flags>
+																													</Point>
+																													<Point>
+																														<XPos>29</XPos>
+																														<YPos>0</YPos>
+																														<Flags>37</Flags>
+																													</Point>
+																												</PointList>
+																											</Curve>
+																										</Custom>
+																									</Reference>
+																								</ReferenceList>
+																							</RTPC>
+																						</Local>
+																					</Reference>
+																					<Reference>
+																						<Local>
+																							<RTPC Name="" ID="{ABFB0D62-CA17-4255-953E-FD88780CF14F}" ShortID="771223676">
+																								<PropertyList>
+																									<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+																								</PropertyList>
+																								<ReferenceList>
+																									<Reference Name="ControlInput">
+																										<ObjectRef Name="PAR_AR_AmmoCount" ID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																									</Reference>
+																									<Reference Name="Curve">
+																										<Custom>
+																											<Curve Name="" ID="{D16015FE-9A00-45BC-B711-4B62C2EB4B1A}">
+																												<PropertyList>
+																													<Property Name="Flags" Type="int32" Value="65537"/>
+																												</PropertyList>
+																												<PointList>
+																													<Point>
+																														<XPos>0</XPos>
+																														<YPos>25</YPos>
+																														<Flags>5</Flags>
+																														<SegmentShape>Log1</SegmentShape>
+																													</Point>
+																													<Point>
+																														<XPos>15</XPos>
+																														<YPos>0</YPos>
+																														<Flags>0</Flags>
+																													</Point>
+																													<Point>
+																														<XPos>29</XPos>
+																														<YPos>0</YPos>
+																														<Flags>37</Flags>
+																													</Point>
+																												</PointList>
+																											</Curve>
+																										</Custom>
+																									</Reference>
+																								</ReferenceList>
+																							</RTPC>
+																						</Local>
+																					</Reference>
 																				</ObjectList>
 																			</ObjectLists>
 																		</RandomSequenceContainer>
@@ -1504,7 +1717,7 @@
 																				<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>17</Value>
+																						<Value>18</Value>
 																					</ValueList>
 																					<ModifierList>
 																						<ModifierInfo>
@@ -1652,7 +1865,7 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>-10</YPos>
+																														<YPos>-8</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Log1</SegmentShape>
 																													</Point>
@@ -1767,6 +1980,16 @@
 																					<ValueList>
 																						<Value>0.03</Value>
 																					</ValueList>
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{C5E9A749-3FFC-44C1-A5DC-01D02BF39512}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="0.03"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
 																				</Property>
 																				<Property Name="Lowpass" Type="int16">
 																					<ModifierList>
@@ -1782,7 +2005,7 @@
 																				</Property>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>5</Value>
+																						<Value>8</Value>
 																					</ValueList>
 																					<ModifierList>
 																						<ModifierInfo>
@@ -1802,7 +2025,7 @@
 																				</Property>
 																				<Property Name="Pitch" Type="int32">
 																					<ValueList>
-																						<Value>-400</Value>
+																						<Value>-600</Value>
 																					</ValueList>
 																					<ModifierList>
 																						<ModifierInfo>
@@ -1929,7 +2152,7 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>4</YPos>
+																														<YPos>6</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Log3</SegmentShape>
 																													</Point>
@@ -1991,42 +2214,6 @@
 																							</RTPC>
 																						</Local>
 																					</Reference>
-																					<Reference>
-																						<Local>
-																							<RTPC Name="" ID="{5AFAC073-A829-43EE-AB5B-ACB81FEC599E}" ShortID="999869885">
-																								<PropertyList>
-																									<Property Name="PropertyName" Type="string" Value="Highpass"/>
-																								</PropertyList>
-																								<ReferenceList>
-																									<Reference Name="ControlInput">
-																										<ObjectRef Name="PAR_AR_AmmoCount" ID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
-																									</Reference>
-																									<Reference Name="Curve">
-																										<Custom>
-																											<Curve Name="" ID="{E2A0C542-62A2-44F0-BFCE-FAD835A9230B}">
-																												<PropertyList>
-																													<Property Name="Flags" Type="int32" Value="65537"/>
-																												</PropertyList>
-																												<PointList>
-																													<Point>
-																														<XPos>0</XPos>
-																														<YPos>0</YPos>
-																														<Flags>5</Flags>
-																														<SegmentShape>Log1</SegmentShape>
-																													</Point>
-																													<Point>
-																														<XPos>29</XPos>
-																														<YPos>0</YPos>
-																														<Flags>37</Flags>
-																													</Point>
-																												</PointList>
-																											</Curve>
-																										</Custom>
-																									</Reference>
-																								</ReferenceList>
-																							</RTPC>
-																						</Local>
-																					</Reference>
 																				</ObjectList>
 																			</ObjectLists>
 																		</RandomSequenceContainer>
@@ -2047,7 +2234,7 @@
 																				</Property>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>14</Value>
+																						<Value>17</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
@@ -2226,8 +2413,18 @@
 																				<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
 																				<Property Name="InitialDelay" Type="Real64">
 																					<ValueList>
-																						<Value>0.06</Value>
+																						<Value>0.05</Value>
 																					</ValueList>
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{66A883EB-561E-429E-A09F-713AC8B3DE38}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="0.01"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
 																				</Property>
 																				<Property Name="Lowpass" Type="int16">
 																					<ModifierList>
@@ -2238,7 +2435,7 @@
 																				</Property>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>9</Value>
+																						<Value>10</Value>
 																					</ValueList>
 																				</Property>
 																				<Property Name="MaxSoundPerInstance" Type="int16">
@@ -2247,9 +2444,6 @@
 																					</ValueList>
 																				</Property>
 																				<Property Name="Pitch" Type="int32">
-																					<ValueList>
-																						<Value>-200</Value>
-																					</ValueList>
 																					<ModifierList>
 																						<ModifierInfo>
 																							<Modifier Name="" ID="{5898856D-AADA-4861-93F8-C1BC0D89A112}">
@@ -2337,13 +2531,13 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>13</YPos>
+																														<YPos>10</YPos>
 																														<Flags>5</Flags>
-																														<SegmentShape>Exp2</SegmentShape>
+																														<SegmentShape>Log1</SegmentShape>
 																													</Point>
 																													<Point>
 																														<XPos>20</XPos>
-																														<YPos>-0</YPos>
+																														<YPos>0</YPos>
 																														<Flags>0</Flags>
 																														<SegmentShape>Log2</SegmentShape>
 																													</Point>
@@ -2381,7 +2575,42 @@
 																														<XPos>0</XPos>
 																														<YPos>1000</YPos>
 																														<Flags>5</Flags>
-																														<SegmentShape>Exp1</SegmentShape>
+																														<SegmentShape>Log1</SegmentShape>
+																													</Point>
+																													<Point>
+																														<XPos>29</XPos>
+																														<YPos>0</YPos>
+																														<Flags>37</Flags>
+																													</Point>
+																												</PointList>
+																											</Curve>
+																										</Custom>
+																									</Reference>
+																								</ReferenceList>
+																							</RTPC>
+																						</Local>
+																					</Reference>
+																					<Reference>
+																						<Local>
+																							<RTPC Name="" ID="{CEC6B9B3-C503-47E9-91BB-15A7DC4DCD84}" ShortID="849093169">
+																								<PropertyList>
+																									<Property Name="PropertyName" Type="string" Value="InitialDelay"/>
+																								</PropertyList>
+																								<ReferenceList>
+																									<Reference Name="ControlInput">
+																										<ObjectRef Name="PAR_AR_AmmoCount" ID="{14EB3BFB-E3DA-4C99-8306-D5E1B54679C6}" WorkUnitID="{D8A174C3-015B-4343-8C66-5A04AD25C6D2}"/>
+																									</Reference>
+																									<Reference Name="Curve">
+																										<Custom>
+																											<Curve Name="" ID="{AD81F55D-88DE-4859-BCBA-7096F8BFFD49}">
+																												<PropertyList>
+																													<Property Name="Flags" Type="int32" Value="1"/>
+																												</PropertyList>
+																												<PointList>
+																													<Point>
+																														<XPos>0</XPos>
+																														<YPos>0.02</YPos>
+																														<Flags>5</Flags>
 																													</Point>
 																													<Point>
 																														<XPos>29</XPos>
@@ -3253,7 +3482,7 @@
 													<PropertyList>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>9</Value>
+																<Value>10</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Pitch" Type="int32">
@@ -3325,10 +3554,16 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="AR_Shot_InitialTransient" ID="{7ECE54A8-D664-49A2-BF50-10BC0418CADB}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.304357603795468"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.00333470389684031"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.307692307692308"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>AR_Shot_InitialTransient.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="635329318"/>
+																		<MediaID ID="344377677"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
@@ -3358,7 +3593,7 @@
 																						<PointList>
 																							<Point>
 																								<XPos>0</XPos>
-																								<YPos>0</YPos>
+																								<YPos>-100</YPos>
 																								<Flags>5</Flags>
 																								<SegmentShape>Log1</SegmentShape>
 																							</Point>
@@ -3394,12 +3629,12 @@
 																						<PointList>
 																							<Point>
 																								<XPos>0</XPos>
-																								<YPos>2</YPos>
+																								<YPos>1</YPos>
 																								<Flags>5</Flags>
-																								<SegmentShape>Log2</SegmentShape>
+																								<SegmentShape>Log1</SegmentShape>
 																							</Point>
 																							<Point>
-																								<XPos>20</XPos>
+																								<XPos>25</XPos>
 																								<YPos>0</YPos>
 																								<Flags>0</Flags>
 																							</Point>

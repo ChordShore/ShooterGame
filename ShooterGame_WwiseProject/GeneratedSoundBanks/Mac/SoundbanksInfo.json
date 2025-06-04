@@ -2925,7 +2925,7 @@
     "Type": "Event",
     "GUID": "{BD84793E-1D49-48EB-ACC4-F1DA575556CD}",
     "Language": "SFX",
-    "Hash": "{9CC26FE6-D02A-C50C-1C18-4E71BE2B7C34}",
+    "Hash": "{BC59109C-DE1C-2B17-FD9D-D5B934AB7DFE}",
     "ObjectPath": "AR_Shoot_Stop",
     "ShortName": "AR_Shoot_Stop",
     "Path": "Event/AR_Shoot_Stop.bnk",
@@ -4212,7 +4212,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{8A8D80A9-BC9C-8B6E-31FB-9E5536C3CACF}",
+    "Hash": "{9162B4C1-A430-98B6-03D8-32D8397755CD}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -7232,7 +7232,7 @@
     "Type": "User",
     "GUID": "{DC93E019-DD16-4986-955C-DC3CA3F54DB8}",
     "Language": "English(US)",
-    "Hash": "{E7FDD545-A0D2-FD65-F745-F23944211AC5}",
+    "Hash": "{22A956E4-FA62-3DEB-0931-9C4388062808}",
     "ObjectPath": "\\SoundBanks\\Weapons\\Weapons",
     "ShortName": "Weapons",
     "Path": "English(US)/Weapons.bnk",
@@ -7284,6 +7284,14 @@
       "Location": "Memory",
       "ShortName": "WEP_AR_Impact_Glass.wav",
       "CachePath": "SFX/WEP_AR_Impact_Glass_9E4C15A5.wem"
+     },
+     {
+      "Id": "77911442",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AR_Shot_Mech_2.2.wav",
+      "CachePath": "SFX/AR_Shot_Mech_2.2_5BFFB43B.wem"
      },
      {
       "Id": "87576484",
@@ -7564,6 +7572,14 @@
       "Location": "Memory",
       "ShortName": "WEP_AR_Impact_Metal.wav",
       "CachePath": "SFX/WEP_AR_Impact_Metal_19111371.wem"
+     },
+     {
+      "Id": "344377677",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AR_Shot_InitialTransient.wav",
+      "CachePath": "SFX/AR_Shot_InitialTransient_81DF1DFA.wem"
      },
      {
       "Id": "350098340",
@@ -7884,14 +7900,6 @@
       "Location": "Memory",
       "ShortName": "WEP_AR_Casings.wav",
       "CachePath": "SFX/WEP_AR_Casings_9A9B8D0D.wem"
-     },
-     {
-      "Id": "635329318",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AR_Shot_InitialTransient.wav",
-      "CachePath": "SFX/AR_Shot_InitialTransient_C0D1FB18.wem"
      },
      {
       "Id": "643117582",
@@ -8259,7 +8267,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AR_Shot_Mech_2.1.wav",
-      "CachePath": "SFX/AR_Shot_Mech_2.1_948CB31F.wem"
+      "CachePath": "SFX/AR_Shot_Mech_2.1_074418E6.wem"
      },
      {
       "Id": "1009471635",
@@ -9433,6 +9441,9 @@
         "Id": "25638055"
        },
        {
+        "Id": "77911442"
+       },
+       {
         "Id": "92565130"
        },
        {
@@ -9445,6 +9456,9 @@
         "Id": "312448983"
        },
        {
+        "Id": "344377677"
+       },
+       {
         "Id": "412540483"
        },
        {
@@ -9455,9 +9469,6 @@
        },
        {
         "Id": "630130873"
-       },
-       {
-        "Id": "635329318"
        },
        {
         "Id": "666983815"
@@ -13083,6 +13094,6 @@
     ]
    }
   ],
-  "FileHash": "{5221FA3B-0FEC-833D-1EB7-B738F1F897AC}"
+  "FileHash": "{075D8621-0096-4F03-F820-7E3E2DB02516}"
  }
 }
