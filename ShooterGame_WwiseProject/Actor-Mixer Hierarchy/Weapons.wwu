@@ -1168,6 +1168,11 @@
 																			</ValueList>
 																		</Property>
 																		<Property Name="HdrEnableEnvelope" Type="bool" Value="True"/>
+																		<Property Name="Inclusion" Type="bool">
+																			<ValueList>
+																				<Value>False</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="Lowpass" Type="int16">
 																			<ModifierList>
 																				<ModifierInfo>
