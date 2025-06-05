@@ -16,7 +16,7 @@
 						</Property>
 						<Property Name="MakeUpGain" Type="Real64">
 							<ValueList>
-								<Value>-2</Value>
+								<Value>-4</Value>
 							</ValueList>
 						</Property>
 						<Property Name="ReflectionsVolume" Type="Real64">
@@ -343,7 +343,7 @@
 										<Property Name="HdrEnvelopeSensitivity" Type="Real64" Value="10"/>
 										<Property Name="MakeUpGain" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
@@ -390,7 +390,7 @@
 														</Property>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>2</Value>
+																<Value>-4</Value>
 															</ValueList>
 														</Property>
 														<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
@@ -428,7 +428,7 @@
 																</Property>
 																<Property Name="MakeUpGain" Type="Real64">
 																	<ValueList>
-																		<Value>8</Value>
+																		<Value>6</Value>
 																	</ValueList>
 																</Property>
 																<Property Name="Pitch" Type="int32">
@@ -686,7 +686,7 @@
 														</Property>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>6</Value>
+																<Value>-4</Value>
 															</ValueList>
 														</Property>
 														<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
@@ -1117,7 +1117,7 @@
 														</Property>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>-6</Value>
+																<Value>-10</Value>
 															</ValueList>
 														</Property>
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
@@ -2888,7 +2888,7 @@
 																				</Property>
 																				<Property Name="Pitch" Type="int32">
 																					<ValueList>
-																						<Value>-100</Value>
+																						<Value>150</Value>
 																					</ValueList>
 																					<ModifierList>
 																						<ModifierInfo>
@@ -3497,7 +3497,7 @@
 																		</Property>
 																		<Property Name="MakeUpGain" Type="Real64">
 																			<ValueList>
-																				<Value>-2</Value>
+																				<Value>-1</Value>
 																			</ValueList>
 																		</Property>
 																		<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -4005,7 +4005,7 @@
 																				</Property>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>22</Value>
+																						<Value>20</Value>
 																					</ValueList>
 																					<ModifierList>
 																						<ModifierInfo>
@@ -4023,13 +4023,16 @@
 																					</ValueList>
 																				</Property>
 																				<Property Name="Pitch" Type="int32">
+																					<ValueList>
+																						<Value>400</Value>
+																					</ValueList>
 																					<ModifierList>
 																						<ModifierInfo>
 																							<Modifier Name="" ID="{BA6CD220-195E-4AC8-BA06-EBC6FD3CE984}">
 																								<PropertyList>
 																									<Property Name="Enabled" Type="bool" Value="True"/>
-																									<Property Name="Max" Type="Real64" Value="50"/>
-																									<Property Name="Min" Type="Real64" Value="-50"/>
+																									<Property Name="Max" Type="Real64" Value="25"/>
+																									<Property Name="Min" Type="Real64" Value="-25"/>
 																								</PropertyList>
 																							</Modifier>
 																						</ModifierInfo>
@@ -4415,7 +4418,7 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>-8</YPos>
+																														<YPos>-4</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Log1</SegmentShape>
 																													</Point>
@@ -4427,7 +4430,7 @@
 																													</Point>
 																													<Point>
 																														<XPos>29</XPos>
-																														<YPos>1</YPos>
+																														<YPos>2</YPos>
 																														<Flags>37</Flags>
 																													</Point>
 																												</PointList>
@@ -4555,7 +4558,7 @@
 																				</Property>
 																				<Property Name="MakeUpGain" Type="Real64">
 																					<ValueList>
-																						<Value>15</Value>
+																						<Value>13</Value>
 																					</ValueList>
 																					<ModifierList>
 																						<ModifierInfo>
@@ -5135,7 +5138,7 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>1000</YPos>
+																														<YPos>900</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Log1</SegmentShape>
 																													</Point>
@@ -5494,8 +5497,14 @@
 																										<PointList>
 																											<Point>
 																												<XPos>0</XPos>
-																												<YPos>-1.5</YPos>
+																												<YPos>-3</YPos>
 																												<Flags>5</Flags>
+																												<SegmentShape>Exp2</SegmentShape>
+																											</Point>
+																											<Point>
+																												<XPos>5.00044</XPos>
+																												<YPos>-1.5</YPos>
+																												<Flags>0</Flags>
 																												<SegmentShape>Exp2</SegmentShape>
 																											</Point>
 																											<Point>
@@ -5522,7 +5531,7 @@
 													<PropertyList>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>10</Value>
+																<Value>-2</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Pitch" Type="int32">
