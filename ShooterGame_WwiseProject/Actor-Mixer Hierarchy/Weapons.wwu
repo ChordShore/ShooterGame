@@ -1117,7 +1117,7 @@
 														</Property>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>-10</Value>
+																<Value>-11</Value>
 															</ValueList>
 														</Property>
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
@@ -1162,6 +1162,7 @@
 															<ChildrenList>
 																<BlendContainer Name="AR_Shot_Constructor" ID="{06A67D6D-C132-42BF-AB02-AE324E130600}" ShortID="980947726">
 																	<PropertyList>
+																		<Property Name="Color" Type="int16" Value="27"/>
 																		<Property Name="GameAuxSendVolume" Type="Real64">
 																			<ValueList>
 																				<Value>-6</Value>
@@ -1185,6 +1186,7 @@
 																				<Value>-2</Value>
 																			</ValueList>
 																		</Property>
+																		<Property Name="OverrideColor" Type="bool" Value="True"/>
 																		<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
 																		<Property Name="ReflectionsVolume" Type="Real64">
 																			<ValueList>
@@ -3486,7 +3488,7 @@
 																</RandomSequenceContainer>
 																<BlendContainer Name="AR_Shot_Constructor_v2" ID="{05CF1D1E-FD40-4517-8625-7BFC970EA932}" ShortID="308089859">
 																	<PropertyList>
-																		<Property Name="Color" Type="int16" Value="11"/>
+																		<Property Name="Color" Type="int16" Value="10"/>
 																		<Property Name="GameAuxSendVolume" Type="Real64">
 																			<ValueList>
 																				<Value>-6</Value>
@@ -3499,11 +3501,6 @@
 																					<Modifier Name="" ID="{6302AD0C-10FE-4885-8E1C-5A9DFA12BC2A}"/>
 																				</ModifierInfo>
 																			</ModifierList>
-																		</Property>
-																		<Property Name="MakeUpGain" Type="Real64">
-																			<ValueList>
-																				<Value>-1</Value>
-																			</ValueList>
 																		</Property>
 																		<Property Name="OverrideColor" Type="bool" Value="True"/>
 																		<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
@@ -4423,7 +4420,7 @@
 																												<PointList>
 																													<Point>
 																														<XPos>0</XPos>
-																														<YPos>-4</YPos>
+																														<YPos>-3</YPos>
 																														<Flags>5</Flags>
 																														<SegmentShape>Log1</SegmentShape>
 																													</Point>
@@ -5536,7 +5533,7 @@
 													<PropertyList>
 														<Property Name="MakeUpGain" Type="Real64">
 															<ValueList>
-																<Value>-2</Value>
+																<Value>-4.5</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Pitch" Type="int32">
